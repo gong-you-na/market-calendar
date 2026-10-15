@@ -1,4 +1,4 @@
-/* 마켓 캘린더 — data/*.json을 읽어 렌더. 데이터는 예약 작업이 갱신하며 이 파일은 손대지 않아도 됩니다. */
+/* WizView — data/*.json을 읽어 렌더. 데이터는 예약 작업이 갱신하며 이 파일은 손대지 않아도 됩니다. */
 (async function () {
   const $ = (s) => document.querySelector(s);
   const V = Date.now();
@@ -104,7 +104,6 @@
     try { const t = new Date(u.replace(" KST", "+09:00").replace(" ", "T")); stale = (kstNow - t) > 1000 * 60 * 60 * 30; } catch (e) { }
     el.classList.toggle("stale", stale);
     el.innerHTML = `<span class="dot"></span><span>일정 ${esc(u)}${m ? ` · 시세 ${esc(m.replace(" KST", ""))}` : ""}</span>`;
-    if (CFG && CFG.brand) $("#brand").textContent = CFG.brand;
   })();
 
   /* ── 시장 체온계 ── */
@@ -317,7 +316,7 @@
       const mc = MK && MK.companies && MK.companies.find((x) => x.ticker === tk);
       const s = c.stats || {}, n = c.next;
       let nextTxt = "";
-      if (n && n.date) nextTxt = `<span>다음 발표 <b>${esc(n.date)}</b> (${n.rt === "pre" ? "장전" : "장후"})</span><span>컨센서스 EPS <b>${n.est_eps !== null && n.est_eps !== undefined ? "$" + fmtN(n.est_eps, 2) : "—"}</b></span><span>전년 동기 <b>${n.last_year_eps !== null && n.last_year_eps !== undefined ? "$" + fmtN(n.last_year_eps, 2) : "—"}</b></span>`;
+      if (n && n.date) nextTxt = `<span>다음 발표 <b>${esc(n.date)}</b> 현지 ${n.rt === "pre" ? "장전" : "장후"}${n.rt === "post" ? " (한국시간 다음 날 새벽)" : " (한국시간 당일 밤)"}</span><span>컨센서스 EPS <b>${n.est_eps !== null && n.est_eps !== undefined ? "$" + fmtN(n.est_eps, 2) : "—"}</b></span><span>전년 동기 <b>${n.last_year_eps !== null && n.last_year_eps !== undefined ? "$" + fmtN(n.last_year_eps, 2) : "—"}</b></span>`;
       else {
         const last = c.history[0];
         nextTxt = `<span>최근 발표 <b>${esc(last ? last.date : "—")}</b></span><span>다음 발표일 <b>미확정</b> (통상 ${last ? (parse(last.date).getMonth() + 4) % 12 || 12 : "—"}월 중순)</span>`;
@@ -350,6 +349,15 @@
   $("#months").addEventListener("click", (e) => { const b = e.target.closest("button[data-m]"); if (!b) return; month = b.dataset.m; renderMonths(); renderCal(); });
   $("#chips").addEventListener("click", (e) => { const b = e.target.closest(".chip"); if (!b) return; filter = b.dataset.f; document.querySelectorAll(".chip").forEach((c) => c.classList.toggle("on", c === b)); renderCal(); });
   $("#seg").addEventListener("click", (e) => { const b = e.target.closest("button[data-v]"); if (!b) return; view = b.dataset.v; document.querySelectorAll("#seg button").forEach((c) => c.classList.toggle("on", c === b)); renderCal(); });
+
+  /* ── 테마 ── */
+  (function () {
+    const root = document.documentElement, btn = $("#theme");
+    const mq = window.matchMedia("(prefers-color-scheme: dark)");
+    const current = () => root.getAttribute("data-theme") || (mq.matches ? "dark" : "light");
+    const apply = (t) => { root.setAttribute("data-theme", t); try { localStorage.setItem("wv-theme", t); } catch (e) { } };
+    btn.addEventListener("click", () => apply(current() === "dark" ? "light" : "dark"));
+  })();
 
   renderTemp(); renderWeek(); renderMonths(); renderCal(); renderCos(); renderChangelog();
 })();

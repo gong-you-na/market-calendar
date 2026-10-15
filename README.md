@@ -1,4 +1,4 @@
-# 위즈덤투스 마켓 캘린더 (자동 갱신)
+# WizView — 위즈덤투스 투자 클리닉 (자동 갱신)
 
 - `index.html` / `app.js` / `style.css` — 페이지. `data/*.json`을 읽어 렌더.
 - `data/events.json` — 일정(한국시간, 롤링). 예약 작업이 갱신.
