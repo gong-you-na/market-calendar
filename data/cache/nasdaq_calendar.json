@@ -1,0 +1,425 @@
+{
+ "2026-07-22": [
+  {
+   "eps": "$0.04",
+   "surprise": "-87.5",
+   "time": "time-not-supplied",
+   "symbol": "TSLA",
+   "name": "Tesla, Inc. ",
+   "marketCap": "$1,481,988,640,000",
+   "fiscalQuarterEnding": "Jun/2026",
+   "epsForecast": "$0.32",
+   "noOfEsts": "10"
+  },
+  {
+   "eps": "$2.47",
+   "surprise": "-22.08",
+   "time": "time-not-supplied",
+   "symbol": "GEV",
+   "name": "GE Vernova Inc.",
+   "marketCap": "$267,409,572,000",
+   "fiscalQuarterEnding": "Jun/2026",
+   "epsForecast": "$3.17",
+   "noOfEsts": "8"
+  }
+ ],
+ "2026-04-22": [
+  {
+   "eps": "$0.18",
+   "surprise": "-14.29",
+   "time": "time-not-supplied",
+   "symbol": "TSLA",
+   "name": "Tesla, Inc. ",
+   "marketCap": "$1,481,988,640,000",
+   "fiscalQuarterEnding": "Mar/2026",
+   "epsForecast": "$0.21",
+   "noOfEsts": "10"
+  },
+  {
+   "eps": "$1.98",
+   "surprise": "7.61",
+   "time": "time-not-supplied",
+   "symbol": "GEV",
+   "name": "GE Vernova Inc.",
+   "marketCap": "$267,409,572,000",
+   "fiscalQuarterEnding": "Mar/2026",
+   "epsForecast": "$1.84",
+   "noOfEsts": "8"
+  }
+ ],
+ "2026-01-28": [
+  {
+   "eps": "$0.31",
+   "surprise": "-8.82",
+   "time": "time-not-supplied",
+   "symbol": "TSLA",
+   "name": "Tesla, Inc. ",
+   "marketCap": "$1,481,988,640,000",
+   "fiscalQuarterEnding": "Dec/2025",
+   "epsForecast": "$0.34",
+   "noOfEsts": "12"
+  },
+  {
+   "eps": "$13.39",
+   "surprise": "339.02",
+   "time": "time-not-supplied",
+   "symbol": "GEV",
+   "name": "GE Vernova Inc.",
+   "marketCap": "$267,409,572,000",
+   "fiscalQuarterEnding": "Dec/2025",
+   "epsForecast": "$3.05",
+   "noOfEsts": "9"
+  }
+ ],
+ "2025-10-22": [
+  {
+   "eps": "$0.37",
+   "surprise": "-9.76",
+   "time": "time-not-supplied",
+   "symbol": "TSLA",
+   "name": "Tesla, Inc. ",
+   "marketCap": "$1,481,988,640,000",
+   "fiscalQuarterEnding": "Sep/2025",
+   "epsForecast": "$0.41",
+   "noOfEsts": "11"
+  },
+  {
+   "eps": "$1.64",
+   "surprise": "-7.87",
+   "time": "time-not-supplied",
+   "symbol": "GEV",
+   "name": "GE Vernova Inc.",
+   "marketCap": "$267,409,572,000",
+   "fiscalQuarterEnding": "Sep/2025",
+   "epsForecast": "$1.78",
+   "noOfEsts": "7"
+  }
+ ],
+ "2025-07-23": [
+  {
+   "eps": "$0.27",
+   "surprise": "-6.9",
+   "time": "time-not-supplied",
+   "symbol": "TSLA",
+   "name": "Tesla, Inc. ",
+   "marketCap": "$1,481,988,640,000",
+   "fiscalQuarterEnding": "Jun/2025",
+   "epsForecast": "$0.29",
+   "noOfEsts": "11"
+  },
+  {
+   "eps": "$1.86",
+   "surprise": "16.25",
+   "time": "time-not-supplied",
+   "symbol": "GEV",
+   "name": "GE Vernova Inc.",
+   "marketCap": "$267,409,572,000",
+   "fiscalQuarterEnding": "Jun/2025",
+   "epsForecast": "$1.60",
+   "noOfEsts": "7"
+  }
+ ],
+ "2025-04-23": [
+  {
+   "eps": "$0.91",
+   "surprise": "102.22",
+   "time": "time-not-supplied",
+   "symbol": "GEV",
+   "name": "GE Vernova Inc.",
+   "marketCap": "$267,409,572,000",
+   "fiscalQuarterEnding": "Mar/2025",
+   "epsForecast": "$0.45",
+   "noOfEsts": "8"
+  }
+ ],
+ "2025-04-24": [],
+ "2025-04-22": [
+  {
+   "eps": "$0.15",
+   "surprise": "-57.14",
+   "time": "time-not-supplied",
+   "symbol": "TSLA",
+   "name": "Tesla, Inc. ",
+   "marketCap": "$1,481,988,640,000",
+   "fiscalQuarterEnding": "Mar/2025",
+   "epsForecast": "$0.35",
+   "noOfEsts": "7"
+  }
+ ],
+ "2025-01-29": [
+  {
+   "eps": "$0.66",
+   "surprise": "6.45",
+   "time": "time-not-supplied",
+   "symbol": "TSLA",
+   "name": "Tesla, Inc. ",
+   "marketCap": "$1,481,988,640,000",
+   "fiscalQuarterEnding": "Dec/2024",
+   "epsForecast": "$0.62",
+   "noOfEsts": "8"
+  }
+ ],
+ "2024-10-23": [
+  {
+   "eps": "$0.62",
+   "surprise": "34.78",
+   "time": "time-not-supplied",
+   "symbol": "TSLA",
+   "name": "Tesla, Inc. ",
+   "marketCap": "$1,481,988,640,000",
+   "fiscalQuarterEnding": "Sep/2024",
+   "epsForecast": "$0.46",
+   "noOfEsts": "9"
+  },
+  {
+   "eps": "$0.35",
+   "surprise": "59.09",
+   "time": "time-not-supplied",
+   "symbol": "GEV",
+   "name": "GE Vernova Inc.",
+   "marketCap": "$267,409,572,000",
+   "fiscalQuarterEnding": "Sep/2024",
+   "epsForecast": "$0.22",
+   "noOfEsts": "8"
+  }
+ ],
+ "2025-01-30": [],
+ "2025-01-28": [],
+ "2025-01-31": [],
+ "2025-01-27": [],
+ "2025-02-03": [],
+ "2025-01-24": [],
+ "2025-02-04": [],
+ "2025-01-23": [],
+ "2025-02-05": [],
+ "2025-01-22": [
+  {
+   "eps": "$1.73",
+   "surprise": "-25.43",
+   "time": "time-not-supplied",
+   "symbol": "GEV",
+   "name": "GE Vernova Inc.",
+   "marketCap": "$267,409,572,000",
+   "fiscalQuarterEnding": "Dec/2024",
+   "epsForecast": "$2.32",
+   "noOfEsts": "5"
+  }
+ ],
+ "2026-10-13": [
+  {
+   "eps": "$5.75",
+   "surprise": "-3.2",
+   "time": "time-not-supplied",
+   "symbol": "JPM",
+   "name": "J P Morgan Chase & Co",
+   "marketCap": "$881,002,680,000",
+   "fiscalQuarterEnding": "Sep/2026",
+   "epsForecast": "$5.94",
+   "noOfEsts": "6"
+  }
+ ],
+ "2026-07-14": [
+  {
+   "eps": "$6.14",
+   "surprise": "9.84",
+   "time": "time-not-supplied",
+   "symbol": "JPM",
+   "name": "J P Morgan Chase & Co",
+   "marketCap": "$881,002,680,000",
+   "fiscalQuarterEnding": "Jun/2026",
+   "epsForecast": "$5.59",
+   "noOfEsts": "5"
+  }
+ ],
+ "2026-04-14": [
+  {
+   "eps": "$5.94",
+   "surprise": "8.2",
+   "time": "time-not-supplied",
+   "symbol": "JPM",
+   "name": "J P Morgan Chase & Co",
+   "marketCap": "$881,002,680,000",
+   "fiscalQuarterEnding": "Mar/2026",
+   "epsForecast": "$5.49",
+   "noOfEsts": "6"
+  }
+ ],
+ "2026-01-13": [
+  {
+   "eps": "$5.23",
+   "surprise": "7.39",
+   "time": "time-not-supplied",
+   "symbol": "JPM",
+   "name": "J P Morgan Chase & Co",
+   "marketCap": "$888,631,660,000",
+   "fiscalQuarterEnding": "Dec/2025",
+   "epsForecast": "$4.87",
+   "noOfEsts": "9"
+  }
+ ],
+ "2025-10-14": [
+  {
+   "eps": "$5.07",
+   "surprise": "4.97",
+   "time": "time-not-supplied",
+   "symbol": "JPM",
+   "name": "J P Morgan Chase & Co",
+   "marketCap": "$881,002,680,000",
+   "fiscalQuarterEnding": "Sep/2025",
+   "epsForecast": "$4.83",
+   "noOfEsts": "9"
+  }
+ ],
+ "2025-07-15": [
+  {
+   "eps": "$4.96",
+   "surprise": "9.98",
+   "time": "time-not-supplied",
+   "symbol": "JPM",
+   "name": "J P Morgan Chase & Co",
+   "marketCap": "$888,631,660,000",
+   "fiscalQuarterEnding": "Jun/2025",
+   "epsForecast": "$4.51",
+   "noOfEsts": "10"
+  }
+ ],
+ "2025-04-15": [],
+ "2025-04-16": [],
+ "2025-04-14": [],
+ "2025-04-17": [],
+ "2025-04-18": [],
+ "2025-04-11": [
+  {
+   "eps": "$5.07",
+   "surprise": "9.74",
+   "time": "time-not-supplied",
+   "symbol": "JPM",
+   "name": "J P Morgan Chase & Co",
+   "marketCap": "$881,002,680,000",
+   "fiscalQuarterEnding": "Mar/2025",
+   "epsForecast": "$4.62",
+   "noOfEsts": "9"
+  }
+ ],
+ "2025-01-14": [],
+ "2025-01-15": [
+  {
+   "eps": "$4.81",
+   "surprise": "19.35",
+   "time": "time-not-supplied",
+   "symbol": "JPM",
+   "name": "J P Morgan Chase & Co",
+   "marketCap": "$881,002,680,000",
+   "fiscalQuarterEnding": "Dec/2024",
+   "epsForecast": "$4.03",
+   "noOfEsts": "8"
+  }
+ ],
+ "2026-08-05": [
+  {
+   "eps": "$8.38",
+   "surprise": "39.43",
+   "time": "time-not-supplied",
+   "symbol": "LLY",
+   "name": "Eli Lilly and Company",
+   "marketCap": "$1,098,102,410,000",
+   "fiscalQuarterEnding": "Jun/2026",
+   "epsForecast": "$6.01",
+   "noOfEsts": "3"
+  }
+ ],
+ "2026-04-30": [
+  {
+   "eps": "$8.55",
+   "surprise": "21.1",
+   "time": "time-not-supplied",
+   "symbol": "LLY",
+   "name": "Eli Lilly and Company",
+   "marketCap": "$1,098,102,410,000",
+   "fiscalQuarterEnding": "Mar/2026",
+   "epsForecast": "$7.06",
+   "noOfEsts": "6"
+  }
+ ],
+ "2026-02-04": [
+  {
+   "eps": "$7.54",
+   "surprise": "7.87",
+   "time": "time-not-supplied",
+   "symbol": "LLY",
+   "name": "Eli Lilly and Company",
+   "marketCap": "$1,098,102,410,000",
+   "fiscalQuarterEnding": "Dec/2025",
+   "epsForecast": "$6.99",
+   "noOfEsts": "9"
+  }
+ ],
+ "2025-10-30": [
+  {
+   "eps": "$7.02",
+   "surprise": "16.61",
+   "time": "time-not-supplied",
+   "symbol": "LLY",
+   "name": "Eli Lilly and Company",
+   "marketCap": "$1,098,102,410,000",
+   "fiscalQuarterEnding": "Sep/2025",
+   "epsForecast": "$6.02",
+   "noOfEsts": "8"
+  }
+ ],
+ "2025-08-06": [],
+ "2025-08-07": [
+  {
+   "eps": "$6.31",
+   "surprise": "12.48",
+   "time": "time-not-supplied",
+   "symbol": "LLY",
+   "name": "Eli Lilly and Company",
+   "marketCap": "$1,098,102,410,000",
+   "fiscalQuarterEnding": "Jun/2025",
+   "epsForecast": "$5.61",
+   "noOfEsts": "9"
+  }
+ ],
+ "2025-05-01": [
+  {
+   "eps": "$3.34",
+   "surprise": "-5.11",
+   "time": "time-not-supplied",
+   "symbol": "LLY",
+   "name": "Eli Lilly and Company",
+   "marketCap": "$1,098,102,410,000",
+   "fiscalQuarterEnding": "Mar/2025",
+   "epsForecast": "$3.52",
+   "noOfEsts": "9"
+  }
+ ],
+ "2025-02-06": [
+  {
+   "eps": "$5.32",
+   "surprise": "5.77",
+   "time": "time-not-supplied",
+   "symbol": "LLY",
+   "name": "Eli Lilly and Company",
+   "marketCap": "$1,098,102,410,000",
+   "fiscalQuarterEnding": "Dec/2024",
+   "epsForecast": "$5.03",
+   "noOfEsts": "8"
+  }
+ ],
+ "2024-10-31": [],
+ "2024-11-01": [],
+ "2024-10-30": [
+  {
+   "eps": "$1.18",
+   "surprise": "-22.37",
+   "time": "time-not-supplied",
+   "symbol": "LLY",
+   "name": "Eli Lilly and Company",
+   "marketCap": "$1,098,102,410,000",
+   "fiscalQuarterEnding": "Sep/2024",
+   "epsForecast": "$1.52",
+   "noOfEsts": "7"
+  }
+ ]
+}

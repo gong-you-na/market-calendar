@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>마켓 캘린더 — 위즈덤투스 투자 클리닉</title>
+<meta name="description" content="거시경제 일정과 학습기업 실적 일정, 실적 반응 히스토리, 시장 체온계를 한 화면에서 확인하는 자동 갱신 캘린더">
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.9/static/pretendard.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23B8923A'/%3E%3Crect x='7' y='9' width='18' height='15' rx='3' fill='%23fff'/%3E%3Crect x='7' y='9' width='18' height='5' rx='2' fill='%23191F28'/%3E%3C/svg%3E">
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-in">
+    <div class="brand">
+      <span class="eyebrow" id="brand">US INSIGHT · 위즈덤투스 투자 클리닉</span>
+      <h1>마켓 캘린더</h1>
+    </div>
+    <div class="top-right">
+      <div class="updated" id="updated"><span class="dot"></span><span>갱신 확인 중…</span></div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <!-- 시장 체온계 -->
+  <section class="sec">
+    <div class="sec-h">
+      <h2>시장 체온계</h2>
+      <span class="sec-sub" id="tempAsof"></span>
+    </div>
+    <div class="temp" id="temp"></div>
+  </section>
+
+  <!-- 다음 7일 -->
+  <section class="sec">
+    <div class="sec-h">
+      <h2>다음 7일</h2>
+      <span class="sec-sub">한국시간 기준</span>
+    </div>
+    <div class="week" id="week"></div>
+  </section>
+
+  <!-- 캘린더 -->
+  <section class="sec">
+    <div class="toolbar">
+      <div class="months" id="months"></div>
+      <div class="chips" id="chips">
+        <button class="chip on" data-f="all">전체</button>
+        <button class="chip" data-f="macro">거시·지표</button>
+        <button class="chip t1" data-f="t1">1군 Core</button>
+        <button class="chip t2" data-f="t2">2군 Steady</button>
+        <button class="chip t3" data-f="t3">3군 Challenge</button>
+      </div>
+      <div class="seg" id="seg">
+        <button class="on" data-v="grid">달력</button>
+        <button data-v="list">목록</button>
+      </div>
+    </div>
+
+    <div class="cal-layout">
+      <div class="cal" id="cal"></div>
+      <aside class="panel" id="panel">
+        <div class="panel-h">
+          <div>
+            <div class="panel-eyebrow">오늘의 진단서</div>
+            <div class="panel-no" id="chartNo">CHART NO. —</div>
+          </div>
+          <span class="wt">W.T</span>
+        </div>
+        <div class="panel-body" id="panelBody"></div>
+      </aside>
+    </div>
+
+    <div class="legend">
+      <span><i class="mk econ"></i>경제지표</span>
+      <span><i class="mk fomc"></i>FOMC</span>
+      <span><i class="mk t1"></i>1군 Core</span>
+      <span><i class="mk t2"></i>2군 Steady</span>
+      <span><i class="mk t3"></i>3군 Challenge</span>
+      <span><i class="mk hol"></i>휴장·시장 이벤트</span>
+      <span>★ 예상일(확정 전)</span>
+      <span>◆◆◆ 정밀 · ◆◆ 주요 · ◆ 정기</span>
+    </div>
+  </section>
+
+  <!-- 학습기업 실적 히스토리 -->
+  <section class="sec">
+    <div class="sec-h">
+      <h2>학습기업 실적 반응 히스토리</h2>
+      <span class="sec-sub">최근 8분기 · 발표 전후 5거래일 · 출처 Nasdaq·Yahoo Finance</span>
+    </div>
+    <div class="cos" id="cos"></div>
+  </section>
+
+  <section class="sec changes">
+    <div class="sec-h"><h2>변경 이력</h2></div>
+    <ul id="changelog"></ul>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <span>US INSIGHT · 위즈덤투스 투자 클리닉</span>
+    <span>본 캘린더는 공개된 일정과 발표 수치를 자동으로 수집해 정리한 학습 자료이며, 투자 추천이 아닙니다. 수치 출처는 각 항목에 표시됩니다.</span>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
