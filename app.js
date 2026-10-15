@@ -2,7 +2,8 @@
 (async function () {
   const $ = (s) => document.querySelector(s);
   const V = Date.now();
-  const get = (f) => fetch(`data/${f}?v=${V}`).then((r) => r.ok ? r.json() : null).catch(() => null);
+  const get = (f) => (window.__DATA && window.__DATA[f]) ? Promise.resolve(window.__DATA[f])
+    : fetch(`data/${f}?v=${V}`).then((r) => r.ok ? r.json() : null).catch(() => null);
   const [CFG, EV, ER, MK, TERMS] = await Promise.all([
     get("config.json"), get("events.json"), get("earnings.json"), get("market.json"), get("terms.json")]);
   const DAYS = (EV && EV.days) || {};
