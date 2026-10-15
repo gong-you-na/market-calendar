@@ -8,4 +8,4 @@
 - `scripts/` — 숫자 데이터 수집 스크립트. `AUTOMATION.md` — 예약 작업 런북.
 
 로컬 확인: `python3 -m http.server 8765` → http://localhost:8765
-- `topics/` — **WizTopics** 데일리 토픽 보드(`/topics/`). 예약 작업이 `topics/data/YYYY-MM-DD.json`을 매일 07시 전 갱신. 런북 `topics/AUTOMATION.md`.
+- 데일리 토픽 보드는 별도 저장소 [wiztopics](https://github.com/gong-you-na/wiztopics) → https://wiztopics.netlify.app (이 저장소의 `data/*.json`을 읽기 전용으로 재사용).
