@@ -1,10 +1,50 @@
 {
- "updated": "2026-10-15 17:02 KST",
+ "updated": "2026-10-15 23:20 KST",
  "note": "날짜는 한국시간 기준. ★ 예상일은 공식 일정 확정 전. 숫자 출처는 각 항목의 src 참조.",
  "changelog": [
   {
    "at": "2026-10-15 17:02",
    "msg": "초기 데이터 생성: 10월 이관(9월 고용보고서 '연기' → 10/2 발표 완료로 정정), 11~12월 일정 추가"
+  },
+  {
+   "at": "2026-10-15 23:20",
+   "msg": "10/15 9월 PPI(+1.3% m/m, 6.3% y/y)·소매판매(+0.8%) 발표 수치 추가(BLS·Census + Reuters·Benzinga 교차 확인)"
+  },
+  {
+   "at": "2026-10-15 23:20",
+   "msg": "10/9 미시간대 10월 예비치(46.3, 1년 기대인플레 4.7%) 발표 수치 추가"
+  },
+  {
+   "at": "2026-10-15 23:20",
+   "msg": "10/23 미시간대 10월 확정치 일정 추가(미시간대 공식 '다음 발표' 안내)"
+  },
+  {
+   "at": "2026-10-15 23:20",
+   "msg": "ISM 10월 제조업(현지 11/2)·서비스업(현지 11/4) 일정 ISM 공식 캘린더로 확정, ★ 제거"
+  },
+  {
+   "at": "2026-10-15 23:20",
+   "msg": "9월 JOLTS 11/3 → 11/4 새벽 0시로 변경(현지 11/3 10시, BLS 11월 일정 확인)"
+  },
+  {
+   "at": "2026-10-15 23:20",
+   "msg": "11월 ISM 제조업 PMI 12/1 → 12/2 새벽 0시로 변경·확정(ISM 공식 캘린더), ★ 제거"
+  },
+  {
+   "at": "2026-10-15 23:20",
+   "msg": "10월 JOLTS 12/2 시각 표기 '새벽 0시'로 통일(BLS 12월 일정 확인)"
+  },
+  {
+   "at": "2026-10-15 23:20",
+   "msg": "12/4 11월 ISM 서비스업 PMI 일정 추가(ISM 공식 캘린더)"
+  },
+  {
+   "at": "2026-10-15 23:20",
+   "msg": "미시간대 11월 예비치 11/13 → 11/7(현지 11/6)로 변경, 공식 일정 미게시로 ★ 유지"
+  },
+  {
+   "at": "2026-10-15 23:20",
+   "msg": "11/17 미국 10월 수출입물가지수 일정 추가(BLS 11월 일정)"
   }
  ],
  "days": {
@@ -200,9 +240,57 @@
     "src": [
      {
       "name": "미시간대",
-      "url": "https://data.sca.isr.umich.edu/"
+      "url": "https://www.sca.isr.umich.edu/"
+     },
+     {
+      "name": "Trading Economics",
+      "url": "https://tradingeconomics.com/united-states/consumer-confidence"
+     },
+     {
+      "name": "Advisor Perspectives",
+      "url": "https://www.advisorperspectives.com/dshort/updates/2026/10/09/consumer-sentiment-falls-again-in-october"
      }
-    ]
+    ],
+    "result": {
+     "actual": "46.3",
+     "est": "47.6",
+     "prev": "48.1",
+     "dir": "down",
+     "head": "소비자심리 46.3(전월 48.1, 컨센서스 47.6) · 1년 기대인플레 4.7% · 장기 3.5%",
+     "note": "10월 예비치 소비자심리지수 46.3(9월 확정 48.1, 컨센서스 47.6). 현재여건 44.7(9월 50.9), 기대지수 47.3(9월 46.3). 1년 기대인플레이션 4.7%(9월 4.6%), 장기(5년) 3.5%(9월 3.4%).",
+     "rows": [
+      [
+       "소비자심리지수",
+       "46.3",
+       "47.6",
+       "9월 48.1"
+      ],
+      [
+       "현재여건",
+       "44.7",
+       "—",
+       "9월 50.9"
+      ],
+      [
+       "기대지수",
+       "47.3",
+       "—",
+       "9월 46.3"
+      ],
+      [
+       "1년 기대인플레",
+       "4.7%",
+       "—",
+       "9월 4.6%"
+      ],
+      [
+       "5년 기대인플레",
+       "3.5%",
+       "—",
+       "9월 3.4%"
+      ]
+     ]
+    }
    }
   ],
   "2026-10-13": [
@@ -353,14 +441,68 @@
     ],
     "src": [
      {
-      "name": "BLS",
-      "url": "https://www.bls.gov/schedule/news_release/current_year.asp"
+      "name": "BLS PPI 보도자료",
+      "url": "https://www.bls.gov/news.release/archives/ppi_10152026.htm"
      },
      {
-      "name": "fedratecalc 경제캘린더",
-      "url": "https://fedratecalc.com/us-economic-calendar/"
+      "name": "Census 소매판매 보도자료",
+      "url": "https://www.census.gov/retail/marts/www/marts_current.pdf"
+     },
+     {
+      "name": "Reuters(Investing.com)",
+      "url": "https://www.investing.com/news/economic-indicators/us-retail-sales-beat-expectations-in-september-on-higher-gasoline-prices-4951732"
+     },
+     {
+      "name": "Benzinga",
+      "url": "https://www.benzinga.com/markets/economic-data/26/10/62379313/producer-inflation-september-ppi-6-3-percent"
      }
-    ]
+    ],
+    "result": {
+     "actual": "PPI +1.3%",
+     "est": "+0.5%",
+     "prev": "+0.5%",
+     "dir": "up",
+     "head": "PPI 전월比 +1.3%(컨센서스 +0.5%) · 전년比 6.3% · 소매판매 +0.8%(컨센서스 +0.3%)",
+     "note": "9월 PPI(최종수요) 전월比 +1.3%(컨센서스 +0.5%, 8월 +0.4%→+0.5% 수정), 전년比 6.3%(8월 5.6%). 근원(식품·에너지 제외) 전월比 +0.7%(컨센서스 +0.3%), 전년比 5.0%. 식품·에너지·무역 제외 전월比 +0.5%, 전년比 5.0%. 에너지 +10.8%, 식품 +1.2%. 9월 소매판매 전월比 +0.8%(컨센서스 +0.3%, 8월 +1.1%→+1.3% 수정), 전년比 6.3%. 자동차 제외 +0.9%, 자동차·주유소 제외 +0.2%, 주유소 +6.4%. 근원 소매판매(자동차·휘발유·건자재·외식 제외) +0.1%(컨센서스 +0.3%).",
+     "rows": [
+      [
+       "PPI 전월比",
+       "+1.3%",
+       "+0.5%",
+       "8월 +0.5%(수정)"
+      ],
+      [
+       "PPI 전년比",
+       "6.3%",
+       "5.3%",
+       "8월 5.6%"
+      ],
+      [
+       "근원 PPI 전월比",
+       "+0.7%",
+       "+0.3%",
+       "전년比 5.0%"
+      ],
+      [
+       "소매판매 전월比",
+       "+0.8%",
+       "+0.3%",
+       "8월 +1.3%(수정)"
+      ],
+      [
+       "자동차·주유소 제외",
+       "+0.2%",
+       "—",
+       "주유소 +6.4%"
+      ],
+      [
+       "근원 소매판매",
+       "+0.1%",
+       "+0.3%",
+       "8월 +1.2%"
+      ]
+     ]
+    }
    }
   ],
   "2026-10-16": [
@@ -424,6 +566,28 @@
      {
       "name": "한국은행",
       "url": "https://www.bok.or.kr/portal/singl/crncyPolicyMtg/listYear.do"
+     }
+    ]
+   }
+  ],
+  "2026-10-23": [
+   {
+    "t": "econ",
+    "n": "미시간대 소비자심리·기대인플레이션(확정치)",
+    "imp": 1,
+    "time": "밤 11시",
+    "why": "10월 확정치. 예비치는 소비자심리 46.3, 1년 기대인플레이션 4.7%, 장기 3.5%였습니다. 현지 10/23 오전 10시 발표.",
+    "watch": "기대인플레이션 1년·5년 수치",
+    "stocks": [
+     [
+      "소비·성장주 전반",
+      0
+     ]
+    ],
+    "src": [
+     {
+      "name": "미시간대",
+      "url": "https://www.sca.isr.umich.edu/"
      }
     ]
    }
@@ -592,7 +756,6 @@
     "n": "10월 ISM 제조업 PMI",
     "imp": 1,
     "time": "새벽 0시",
-    "est": true,
     "why": "미국 제조업 PMI. 9월 수치는 54.5, 물가지불 77.9였습니다. 현지 11/2 오전 10시 발표(한국시간 11/3 0시).",
     "watch": "50선, 신규주문·물가지불",
     "stocks": [
@@ -605,25 +768,6 @@
      {
       "name": "ISM",
       "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/"
-     }
-    ]
-   },
-   {
-    "t": "econ",
-    "n": "9월 구인건수(JOLTS)",
-    "imp": 1,
-    "time": "밤 12시",
-    "why": "BLS의 구인·이직 통계. 8월 구인은 727만 건이었습니다. 현지 11/3 오전 10시 발표(한국시간 11/4 0시).",
-    "watch": "구인 건수, 이직률",
-    "stocks": [],
-    "src": [
-     {
-      "name": "BLS",
-      "url": "https://www.bls.gov/schedule/news_release/current_year.asp"
-     },
-     {
-      "name": "fedratecalc 경제캘린더",
-      "url": "https://fedratecalc.com/us-economic-calendar/"
      }
     ]
    },
@@ -648,13 +792,33 @@
     ]
    }
   ],
+  "2026-11-04": [
+   {
+    "t": "econ",
+    "n": "9월 구인건수(JOLTS)",
+    "imp": 1,
+    "time": "새벽 0시",
+    "why": "BLS의 구인·이직 통계. 8월 구인은 727만 건이었습니다. 현지 11/3 오전 10시 발표(한국시간 11/4 0시).",
+    "watch": "구인 건수, 이직률",
+    "stocks": [],
+    "src": [
+     {
+      "name": "BLS",
+      "url": "https://www.bls.gov/schedule/news_release/current_year.asp"
+     },
+     {
+      "name": "fedratecalc 경제캘린더",
+      "url": "https://fedratecalc.com/us-economic-calendar/"
+     }
+    ]
+   }
+  ],
   "2026-11-05": [
    {
     "t": "econ",
     "n": "10월 ISM 서비스업 PMI",
     "imp": 1,
     "time": "새벽 0시",
-    "est": true,
     "why": "미국 서비스업 PMI. 9월 수치는 54.9, 가격 지수 74.0이었습니다. 현지 11/4 발표.",
     "watch": "고용·물가 항목",
     "stocks": [],
@@ -688,6 +852,24 @@
      {
       "name": "fedratecalc 경제캘린더",
       "url": "https://fedratecalc.com/us-economic-calendar/"
+     }
+    ]
+   }
+  ],
+  "2026-11-07": [
+   {
+    "t": "econ",
+    "n": "미시간대 소비자심리·기대인플레이션(예비치)",
+    "imp": 1,
+    "time": "새벽 0시",
+    "est": true,
+    "why": "11월 예비치. 소비자 심리 지수와 1년·5년 기대인플레이션이 발표됩니다. 현지 11/6 오전 10시 발표 예정(한국시간 11/7 0시).",
+    "watch": "기대인플레이션 1년·5년",
+    "stocks": [],
+    "src": [
+     {
+      "name": "미시간대",
+      "url": "https://data.sca.isr.umich.edu/"
      }
     ]
    }
@@ -741,22 +923,6 @@
       "url": "https://fedratecalc.com/us-economic-calendar/"
      }
     ]
-   },
-   {
-    "t": "econ",
-    "n": "미시간대 소비자심리·기대인플레이션(예비치)",
-    "imp": 1,
-    "time": "밤 12시",
-    "est": true,
-    "why": "11월 예비치. 소비자 심리 지수와 1년·5년 기대인플레이션이 발표됩니다.",
-    "watch": "기대인플레이션 1년·5년",
-    "stocks": [],
-    "src": [
-     {
-      "name": "미시간대",
-      "url": "https://data.sca.isr.umich.edu/"
-     }
-    ]
    }
   ],
   "2026-11-17": [
@@ -777,6 +943,21 @@
      {
       "name": "fedratecalc 경제캘린더",
       "url": "https://fedratecalc.com/us-economic-calendar/"
+     }
+    ]
+   },
+   {
+    "t": "econ",
+    "n": "미국 10월 수출입물가지수",
+    "imp": 1,
+    "time": "밤 10시 30분",
+    "why": "BLS 수입·수출 물가지수 10월치. 현지 11/17 오전 8시 30분 발표.",
+    "watch": "수입물가 전월比",
+    "stocks": [],
+    "src": [
+     {
+      "name": "BLS 11월 일정",
+      "url": "https://www.bls.gov/schedule/2026/11_sched_list.htm"
      }
     ]
    }
@@ -861,14 +1042,13 @@
     ]
    }
   ],
-  "2026-12-01": [
+  "2026-12-02": [
    {
     "t": "econ",
     "n": "11월 ISM 제조업 PMI",
     "imp": 1,
     "time": "새벽 0시",
-    "est": true,
-    "why": "미국 제조업 PMI 11월치. 현지 12/1 오전 10시 발표.",
+    "why": "미국 제조업 PMI 11월치. 현지 12/1 오전 10시 발표(한국시간 12/2 0시).",
     "watch": "50선, 물가지불",
     "stocks": [
      [
@@ -882,15 +1062,13 @@
       "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/"
      }
     ]
-   }
-  ],
-  "2026-12-02": [
+   },
    {
     "t": "econ",
     "n": "10월 구인건수(JOLTS)",
     "imp": 1,
-    "time": "밤 12시",
-    "why": "BLS 구인·이직 통계. 현지 12/1 오전 10시 발표.",
+    "time": "새벽 0시",
+    "why": "BLS 구인·이직 통계. 현지 12/1 오전 10시 발표(한국시간 12/2 0시).",
     "watch": "구인 건수",
     "stocks": [],
     "src": [
@@ -927,6 +1105,26 @@
      {
       "name": "fedratecalc 경제캘린더",
       "url": "https://fedratecalc.com/us-economic-calendar/"
+     }
+    ]
+   },
+   {
+    "t": "econ",
+    "n": "11월 ISM 서비스업 PMI",
+    "imp": 1,
+    "time": "새벽 0시",
+    "why": "미국 서비스업 PMI 11월치. 현지 12/3 오전 10시 발표(한국시간 12/4 0시).",
+    "watch": "50선, 물가지불",
+    "stocks": [
+     [
+      "소비·빅테크 전반",
+      0
+     ]
+    ],
+    "src": [
+     {
+      "name": "ISM",
+      "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/rob-report-calendar/"
      }
     ]
    }
