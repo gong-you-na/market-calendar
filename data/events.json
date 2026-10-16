@@ -1,7 +1,27 @@
 {
- "updated": "2026-10-16 22:45 KST",
+ "updated": "2026-10-17 07:15 KST",
  "note": "날짜는 한국시간 기준. ★ 예상일은 공식 일정 확정 전. 숫자 출처는 각 항목의 src 참조.",
  "changelog": [
+  {
+   "at": "2026-10-17 07:15",
+   "msg": "10/29 FOMC: CME FedWatch 10월 인상 확률 10/16 16.1%(10/15 27.7%)로 갱신(ActionForex·Cointelegraph 교차 확인)"
+  },
+  {
+   "at": "2026-10-17 07:15",
+   "msg": "12/16 미국 11월 소매판매 일정 추가(센서스국 공식 일정 + fedratecalc 교차 확인)"
+  },
+  {
+   "at": "2026-10-17 07:15",
+   "msg": "11/7 미시간대 11월 예비치: 경제캘린더 2곳 11/6 표기 확인(공식 미확인, ★ 유지)"
+  },
+  {
+   "at": "2026-10-17 07:15",
+   "msg": "BEA 공식 일정으로 10/29 3분기 GDP 속보치·9월 PCE, 11/25 GDP 잠정치·10월 PCE 교차 확인(변경 없음); BLS 10/30 고용비용지수·11/10 CPI·12/10 CPI 확인"
+  },
+  {
+   "at": "2026-10-17 07:15",
+   "msg": "실적 일정 대조: TSLA 10/22(현지 10/21 장후)·GEV 10/28·LLY 10/29 earnings.json과 일치(변경 없음)"
+  },
   {
    "at": "2026-10-16 22:45",
    "msg": "10/16 9월 수출입물가지수 발표 수치 추가(수입 +1.1% m/m·8.1% y/y, 수출 +2.2% m/m; BLS + Reuters·investingLive 교차 확인)"
@@ -724,7 +744,7 @@
     "n": "10월 FOMC 기준금리 결정",
     "imp": 3,
     "time": "새벽 3시",
-    "why": "현지 10/27~28 회의 결과가 한국시간 29일 새벽 3시에 발표됩니다. 9월 회의에서 기준금리를 0.25%p 올려 3.75~4.00%가 됐습니다. 이번 회의에는 {{점도표}}가 없고, {{성명서}}와 의장 기자회견이 있습니다. CME FedWatch 기준 10/15 0.25%p 인상 확률 33.8%(9월 PPI 발표 전 29.3%).",
+    "why": "현지 10/27~28 회의 결과가 한국시간 29일 새벽 3시에 발표됩니다. 9월 회의에서 기준금리를 0.25%p 올려 3.75~4.00%가 됐습니다. 이번 회의에는 {{점도표}}가 없고, {{성명서}}와 의장 기자회견이 있습니다. CME FedWatch 기준 10/16 0.25%p 인상 확률 16.1%·동결 83.9%(10/15 27.7%, 1주 전 17.7%; 코인텔레그래프는 같은 날 15%, 전일 27%로 보도). 워시 의장은 10/16 IMF·세계은행 연차총회(방콕)에서 회의 결과를 예단하지 않는다고 말했습니다.",
     "watch": "금리 결정, 성명서 문구 변화, 기자회견",
     "stocks": [
      [
@@ -746,8 +766,12 @@
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
      },
      {
-      "name": "InvestmentNews(10/15, CME FedWatch)",
-      "url": "https://www.investmentnews.com/equities/ppi-comes-in-much-hotter-than-expected-putting-more-rate-hike-pressure-on-the-fed/268612"
+      "name": "ActionForex(10/16, CME FedWatch)",
+      "url": "https://www.actionforex.com/action-insight/market-overview/657759-dollar-extends-slide-as-fed-warsh-refuses-to-revive-october-hike-bets/"
+     },
+     {
+      "name": "Cointelegraph(10/16, CME FedWatch)",
+      "url": "https://cointelegraph.com/markets/bitcoin-price-steadies-82k-fed-warsh-avoids-rate-hike-hints"
      }
     ]
    },
@@ -981,13 +1005,17 @@
     "imp": 1,
     "time": "새벽 0시",
     "est": true,
-    "why": "11월 예비치. 소비자 심리 지수와 1년·5년 기대인플레이션이 발표됩니다. 현지 11/6 오전 10시 발표 예정(한국시간 11/7 0시).",
+    "why": "11월 예비치. 소비자 심리 지수와 1년·5년 기대인플레이션이 발표됩니다. 현지 11/6 오전 10시 발표 예정(한국시간 11/7 0시). 경제캘린더 2곳(financecalendar·energyexch)이 11/6 10시로 표기하고 있으며 미시간대 공식 일정은 미확인입니다.",
     "watch": "기대인플레이션 1년·5년",
     "stocks": [],
     "src": [
      {
       "name": "미시간대",
       "url": "https://data.sca.isr.umich.edu/"
+     },
+     {
+      "name": "financecalendar",
+      "url": "https://www.financecalendar.com/event/us-university-of-michigan-consumer-sentiment-november-2026/"
      }
     ]
    }
@@ -1362,6 +1390,32 @@
      {
       "name": "fedratecalc 경제캘린더",
       "url": "https://fedratecalc.com/us-economic-calendar/"
+     }
+    ]
+   }
+  ],
+  "2026-12-16": [
+   {
+    "t": "econ",
+    "n": "미국 11월 소매판매",
+    "imp": 2,
+    "time": "밤 10시 30분",
+    "why": "미국 소매판매 11월치. 자동차·휘발유를 제외한 수치가 함께 발표됩니다. 현지 12/16 오전 8시 30분 발표(센서스국 공식 일정).",
+    "watch": "자동차 제외 소매판매 전월比",
+    "stocks": [
+     [
+      "소비·빅테크 전반",
+      0
+     ]
+    ],
+    "src": [
+     {
+      "name": "센서스국 일정",
+      "url": "https://www.census.gov/retail/release_schedule.html"
+     },
+     {
+      "name": "fedratecalc 경제캘린더",
+      "url": "https://fedratecalc.com/retail-sales-release-date/"
      }
     ]
    }
