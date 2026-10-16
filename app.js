@@ -4,8 +4,8 @@
   const V = Date.now();
   const get = (f) => (window.__DATA && window.__DATA[f]) ? Promise.resolve(window.__DATA[f])
     : fetch(`data/${f}?v=${V}`).then((r) => r.ok ? r.json() : null).catch(() => null);
-  const [CFG, EV, ER, MK, TERMS] = await Promise.all([
-    get("config.json"), get("events.json"), get("earnings.json"), get("market.json"), get("terms.json")]);
+  const [CFG, EV, ER, MK, TERMS, HM, XR] = await Promise.all([
+    get("config.json"), get("events.json"), get("earnings.json"), get("market.json"), get("terms.json"), get("heatmap.json"), get("xray.json")]);
   const DAYS = (EV && EV.days) || {};
   const WEEK_KO = ["일", "월", "화", "수", "목", "금", "토"];
   const TIER = (CFG && CFG.tiers) || {};
@@ -360,4 +360,108 @@
   })();
 
   renderTemp(); renderWeek(); renderMonths(); renderCal(); renderCos(); renderChangelog();
+  /* ══════════ 히트맵 ══════════ */
+  let hmMarket = "us", hmPeriod = "d1";
+  function renderHM() {
+    if (!HM || !window.renderHeatmap) return;
+    const data = HM[hmMarket]; if (!data) return;
+    const el = $("#hm");
+    renderHeatmap(el, data, { period: hmPeriod, tiers: TIER, extra: (d) => {
+      const base = d.t.split(".")[0], c = ER && ER.companies && ER.companies[base]; if (!c) return "";
+      const s = c.stats || {}, n = c.next;
+      return `<div class="tt-x">${n && n.date ? `다음 실적 ${esc(n.date)} · ` : ""}최근 ${s.n}분기 EPS 상회 ${s.beats}회 · 반응일 상승 ${s.ups}회</div>`;
+    } });
+    const idx = HM.index || {};
+    const names = hmMarket === "us" ? [["^GSPC", "S&P 500"], ["^IXIC", "나스닥"], ["^DJI", "다우"], ["^RUT", "러셀 2000"]] : [["^KS11", "코스피"], ["^KQ11", "코스닥"]];
+    $("#hmIdx").innerHTML = names.map(([k, lb]) => { const v = idx[k]; if (!v) return ""; return `<span>${lb}<b>${fmtN(v.p, 0)}</b><b class="${ud(v.d1)}">${sign(v.d1, 2)}%</b></span>`; }).join("")
+      + `<span>${hmMarket === "us" ? "S&P 500" : "코스피 상위"} ${data.stocks.length}종목 · ${data.sectors.length}섹터</span>`;
+    $("#hmAsof").textContent = `${esc(HM.updated)} 기준 · 1일 등락은 장외 시간엔 프리·애프터마켓 가격이 반영될 수 있음`;
+  }
+  $("#hmMarket").addEventListener("click", (e) => { const b = e.target.closest("button[data-m]"); if (!b) return; hmMarket = b.dataset.m; document.querySelectorAll("#hmMarket button").forEach((c) => c.classList.toggle("on", c === b)); renderHM(); });
+  $("#hmPeriod").addEventListener("click", (e) => { const b = e.target.closest("button[data-p]"); if (!b) return; hmPeriod = b.dataset.p; document.querySelectorAll("#hmPeriod button").forEach((c) => c.classList.toggle("on", c === b)); renderHM(); });
+  let hmT; window.addEventListener("resize", () => { clearTimeout(hmT); hmT = setTimeout(renderHM, 150); });
+
+  /* ══════════ 엑스레이 ══════════ */
+  let xrSym = null, xrChart = null, xrOpts = { months: window.innerWidth < 640 ? 3 : 6, profile: "v60", options: "all", showMA: { 20: true, 50: true, 200: true }, showOI: true, showProfile: true };
+  function xrFacts(d) {
+    const P = d.profile, O = d.options, S = O && (O[xrOpts.options === "off" ? "all" : xrOpts.options] || O.all);
+    const chg = (d.price / d.prev - 1) * 100;
+    const cw = S && S.walls.call[0], pw = S && S.walls.put[0];
+    const live = d.live ? `<span class="live">LIVE</span>` : "";
+    $("#xrTop").innerHTML = `<div class="nm">${esc(d.name)} <small>${esc(d.en)} · ${esc(xrSym)}</small><span class="badge t${d.tier}">${esc(tierLabel(d.tier))}</span>${live}</div>
+      <div class="px"><b>$${fmtN(d.price, 2)}</b><span class="${ud(chg)}">${sign(chg, 2)}% (${sign(d.price - d.prev, 2)})</span><small style="color:var(--grey2);font-size:.72rem">${esc(d.asof)}${d.live ? " 장중" : " 종가"}</small></div>`;
+    $("#xrFacts").innerHTML = `
+      <div class="fact"><div class="fl">최대 매물대 POC</div><div class="fv">$${fmtN(P.poc, 2)}<small>현재가 대비 ${sign((d.price / P.poc - 1) * 100, 1)}%</small></div></div>
+      <div class="fact"><div class="fl">가치영역 70%</div><div class="fv">$${fmtN(P.va_lo, 0)}–${fmtN(P.va_hi, 0)}<small>${d.price < P.va_lo ? "현재가 영역 아래" : d.price > P.va_hi ? "현재가 영역 위" : "현재가 영역 안"}</small></div></div>
+      <div class="fact"><div class="fl">콜 벽 (저항)</div><div class="fv up">${cw ? "$" + fmtN(cw.k, 0) : "—"}<small>${cw ? "OI " + fmtN(cw.oi, 0) + " · " + esc(S.exp) : ""}</small></div></div>
+      <div class="fact"><div class="fl">풋 벽 (지지)</div><div class="fv down">${pw ? "$" + fmtN(pw.k, 0) : "—"}<small>${pw ? "OI " + fmtN(pw.oi, 0) + " · " + esc(S.exp) : ""}</small></div></div>
+      <div class="fact"><div class="fl">맥스페인</div><div class="fv">${S && S.maxpain ? "$" + fmtN(S.maxpain, 0) : "—"}<small>${S ? esc(S.exp) : ""}</small></div></div>
+      <div class="fact"><div class="fl">풋/콜 OI 비율</div><div class="fv">${O ? fmtN(O.pcr, 2) : "—"}<small>${O ? (O.pcr > 1 ? "풋 우위" : "콜 우위") + " · 8만기 합" : ""}</small></div></div>`;
+  }
+  function renderXR() {
+    if (!XR || !XR.symbols || !window.XrayChart) return;
+    const syms = Object.keys(XR.symbols); if (!syms.length) return;
+    if (!xrSym) xrSym = syms[0];
+    $("#xrSym").innerHTML = syms.map((k) => `<button class="${k === xrSym ? "on" : ""}" data-s="${k}">${esc(XR.symbols[k].name)} <small>${k}</small></button>`).join("");
+    const d = XR.symbols[xrSym];
+    const opts = Object.assign({}, xrOpts, { showProfile: xrOpts.profile !== "off", showOI: xrOpts.options !== "off", profile: xrOpts.profile === "off" ? "v60" : xrOpts.profile, options: xrOpts.options === "off" ? "all" : xrOpts.options });
+    if (!xrChart) xrChart = new XrayChart($("#xrCanvas"), d, opts); else { xrChart.update(d); xrChart.set(opts); }
+    xrFacts(d);
+    $("#xrAsof").textContent = `${esc(XR.updated)} 기준 · 매물대 Yahoo 5분봉 · 옵션 CBOE 지연`;
+  }
+  $("#xrSym").addEventListener("click", (e) => { const b = e.target.closest("button[data-s]"); if (!b) return; xrSym = b.dataset.s; renderXR(); });
+  $("#xrMonths").addEventListener("click", (e) => { const b = e.target.closest("button[data-v]"); if (!b) return; xrOpts.months = +b.dataset.v; document.querySelectorAll("#xrMonths button").forEach((c) => c.classList.toggle("on", c === b)); renderXR(); });
+  $("#xrProfile").addEventListener("click", (e) => { const b = e.target.closest("button[data-v]"); if (!b) return; xrOpts.profile = b.dataset.v; document.querySelectorAll("#xrProfile button").forEach((c) => c.classList.toggle("on", c === b)); renderXR(); });
+  $("#xrOpt").addEventListener("click", (e) => { const b = e.target.closest("button[data-v]"); if (!b) return; xrOpts.options = b.dataset.v; document.querySelectorAll("#xrOpt button").forEach((c) => c.classList.toggle("on", c === b)); renderXR(); });
+  $("#xrMA").addEventListener("change", (e) => { const i = e.target; if (i.dataset.k) { xrOpts.showMA[i.dataset.k] = i.checked; renderXR(); } });
+  // 테마 바뀌면 캔버스·히트맵 다시 그림
+  new MutationObserver(() => { if (xrChart) xrChart.draw(); renderHM(); }).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+
+  /* ══════════ 실시간 (Netlify Function 프록시, 있으면) ══════════ */
+  async function liveRefresh() {
+    try {
+      const ping = await fetch("/.netlify/functions/yf?ping=1", { cache: "no-store" }); if (!ping.ok) return;
+    } catch (e) { return; }
+    // 1) 엑스레이 종목 최신 일봉(오늘 봉 포함) → 마지막 캔들 교체/추가
+    if (XR && XR.symbols) {
+      for (const sym of Object.keys(XR.symbols)) {
+        try {
+          const r = await fetch(`/.netlify/functions/yf?kind=chart&symbol=${encodeURIComponent(sym)}&range=5d&interval=1d`, { cache: "no-store" }); if (!r.ok) continue;
+          const j = await r.json(); const res = j.chart.result[0], ts = res.timestamp, q = res.indicators.quote[0];
+          const d = XR.symbols[sym]; const lastT = d.candles[d.candles.length - 1].t;
+          ts.forEach((t, i) => { if (q.close[i] == null) return; const bar = { t, o: +q.open[i].toFixed(2), h: +q.high[i].toFixed(2), l: +q.low[i].toFixed(2), c: +q.close[i].toFixed(2), v: q.volume[i] || 0 };
+            const sameDay = Math.abs(t - lastT) < 86400 * 0.6;
+            if (sameDay) d.candles[d.candles.length - 1] = bar; else if (t > lastT) { d.candles.push(bar); } });
+          const last = d.candles[d.candles.length - 1]; d.prev = d.candles[d.candles.length - 2].c; d.price = last.c; d.live = res.meta && res.meta.marketState === "REGULAR"; d.asof = new Date(last.t * 1000).toISOString().slice(0, 10);
+          // MA 재계산(마지막 값들만)
+          const closes = d.candles.map((c) => c.c);
+          for (const n of [20, 50, 200]) { const arr = d.ma[String(n)]; while (arr.length < closes.length) arr.push(null); for (let i = Math.max(0, closes.length - 3); i < closes.length; i++) arr[i] = i >= n - 1 ? +(closes.slice(i - n + 1, i + 1).reduce((a, b) => a + b, 0) / n).toFixed(2) : null; }
+        } catch (e) { }
+      }
+      renderXR();
+    }
+    // 2) 체온계 현재가
+    if (MK && MK.items) {
+      try {
+        const syms = MK.items.map((i) => i.symbol).join(",");
+        const r = await fetch(`/.netlify/functions/yf?kind=spark&symbols=${encodeURIComponent(syms)}`, { cache: "no-store" });
+        if (r.ok) { const j = await r.json(); let touched = false; for (const it of MK.items) { const v = j[it.symbol]; if (!v || v.fulldayPrice == null) continue; const dec = ({ tnx: 2, dxy: 1, krw: 0, gold: 0, vix: 1 })[it.key] ?? 0; it.value = +v.fulldayPrice.toFixed(dec); it.prev = +(v.chartPreviousClose ?? it.prev).toFixed(dec); it.chg = +(it.value - it.prev).toFixed(dec); it.pct = +((it.value / it.prev - 1) * 100).toFixed(2); touched = true; } if (touched) { renderTemp(); $("#tempAsof").textContent += " · 실시간 갱신"; } }
+      } catch (e) { }
+    }
+    // 3) 히트맵 1일 등락률 (미장·국장 현재 탭만, 20개씩)
+    if (HM) {
+      try {
+        const data = HM[hmMarket]; const syms = data.stocks.map((s) => s.t); let touched = false;
+        for (let i = 0; i < syms.length; i += 20) {
+          const r = await fetch(`/.netlify/functions/yf?kind=spark&symbols=${encodeURIComponent(syms.slice(i, i + 20).join(","))}`, { cache: "no-store" }); if (!r.ok) continue;
+          const j = await r.json(); for (const s of data.stocks) { const v = j[s.t]; if (v && v.fulldayChangePercent != null) { s.d1 = +v.fulldayChangePercent.toFixed(2); s.p = v.fulldayPrice ?? s.p; touched = true; } }
+        }
+        if (touched) { renderHM(); $("#hmAsof").textContent = "실시간(지연 시세) 갱신 · " + new Date().toLocaleTimeString("ko-KR", { hour: "2-digit", minute: "2-digit" }); }
+      } catch (e) { }
+    }
+  }
+
+  renderHM(); renderXR();
+  liveRefresh(); setInterval(liveRefresh, 5 * 60 * 1000);
+
 })();

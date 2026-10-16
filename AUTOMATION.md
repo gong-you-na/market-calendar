@@ -9,10 +9,16 @@
 3. **날짜는 한국시간 기준.** 미국 8:30 ET 발표 = 밤 9:30(서머타임) / 밤 10:30(11/1 이후). 2:00 PM ET(FOMC) = 새벽 3시 / 4시. 장후(after-hours) 실적은 **미국 날짜 +1일**에 기록하고 `time`에 "현지 M/D 장후"를 적는다. 장전 실적은 미국 날짜 그대로.
 4. **변경은 changelog에 남긴다.** 날짜 변경, 결과 추가, 일정 추가·삭제를 `events.json.changelog`에 한 줄씩(`at`, `msg`).
 
+## 실행 시각 (하루 3회, KST)
+- **장전 22:40** — 미국 8:30 ET 지표(고용·CPI·PPI·소매판매·PCE·GDP) 직후, 개장 전후. 당일 지표 result 입력이 최우선.
+- **장중 02:10** — 미국 장 중반. 히트맵·체온계·엑스레이 숫자 갱신 + 전날 못 채운 result 보완.
+- **장 마감 07:10** — 종가·장후 실적·FOMC 결과 반영, 다음 60일 일정 교차 확인, 변경 이력 정리.
+
 ## 매 실행 절차
 ```
-bash scripts/run_numbers.sh          # 1) 시세·VIX·실적 히스토리·다음 발표일(Nasdaq) 갱신
+bash scripts/run_numbers.sh          # 1) 시세·VIX / 히트맵(S&P500·코스피) / 엑스레이(1군 매물대·옵션) / 실적 히스토리 갱신
 ```
+`run_numbers.sh`는 네 스크립트 중 하나가 실패해도 나머지는 진행하고 마지막에 실패 여부를 종료코드로 알립니다. 실패한 스크립트 이름을 보고에 적습니다.
 2) `data/events.json` 갱신 (Claude가 직접 편집)
    - **발표 완료 처리**: 오늘(KST) 이전 날짜 중 `result`가 없는 `econ`/`fomc` 이벤트 → 웹 검색으로 발표 수치 확인 → `result` 추가
      - `result` 형식: `{actual, est, prev, dir(up|down|flat), head, note, rows?[[항목,발표,예상,비고]], trend?[{l,v}]}`
@@ -38,5 +44,11 @@ git add data && git commit -m "data: YYYY-MM-DD HH:MM KST 자동 갱신 — <변
 ```
 `{{용어}}` 표기는 `terms.json`의 키와 일치할 때 클릭형 풀이가 됩니다.
 
+## 데이터 파일 역할
+- `events.json` 일정·결과(Claude가 편집) · `earnings.json` 8분기 실적·반응 · `market.json` 체온계·VIX
+- `heatmap.json` S&P500 전 종목 + 코스피 상위 60 (1D/1W/1M, 시총, 섹터). 유니버스 캐시 `cache/universe_*.json`은 7일마다 자동 갱신(`--refresh-universe`로 강제).
+- `xray.json` 1군 종목 일봉 1년·MA·60/20일 매물대(POC·가치영역)·CBOE 옵션 OI(다음/월간/8만기 합, 콜·풋 벽, 맥스페인, P/C)
+- 브라우저는 `/.netlify/functions/yf`(Yahoo·CBOE 중계)로 5분마다 실시간 보정하므로, 예약 작업은 "기준 스냅샷"을 만드는 역할입니다.
+
 ## 학습기업 추가·변경
-`data/config.json`의 `companies`에 `{ticker, name, en, tier, theme, rt(pre|post)}`를 추가하고 `run_numbers.sh`를 실행하면 히스토리가 자동 수집됩니다.
+`data/config.json`의 `companies`에 `{ticker, name, en, tier, theme, rt(pre|post)}`를 추가하고 `run_numbers.sh`를 실행하면 히스토리가 자동 수집됩니다. tier 1 종목은 엑스레이에도 자동 포함됩니다. 히트맵 테두리는 tier로, 관심종목은 `update_heatmap.py`의 `WATCH`로 관리합니다.

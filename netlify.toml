@@ -12,3 +12,7 @@
   [headers.values]
     X-Frame-Options = "SAMEORIGIN"
     X-Content-Type-Options = "nosniff"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
