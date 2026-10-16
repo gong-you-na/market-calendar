@@ -1,7 +1,11 @@
 {
- "updated": "2026-10-16 07:20 KST",
+ "updated": "2026-10-16 22:45 KST",
  "note": "날짜는 한국시간 기준. ★ 예상일은 공식 일정 확정 전. 숫자 출처는 각 항목의 src 참조.",
  "changelog": [
+  {
+   "at": "2026-10-16 22:45",
+   "msg": "10/16 9월 수출입물가지수 발표 수치 추가(수입 +1.1% m/m·8.1% y/y, 수출 +2.2% m/m; BLS + Reuters·investingLive 교차 확인)"
+  },
   {
    "at": "2026-10-15 17:02",
    "msg": "초기 데이터 생성: 10월 이관(9월 고용보고서 '연기' → 10/2 발표 완료로 정정), 11~12월 일정 추가"
@@ -553,9 +557,51 @@
     "src": [
      {
       "name": "BLS",
-      "url": "https://www.bls.gov/schedule/news_release/current_year.asp"
+      "url": "https://www.bls.gov/mxp/"
+     },
+     {
+      "name": "Reuters(Investing.com)",
+      "url": "https://www.investing.com/news/economy-news/us-import-prices-increase-more-than-expected-in-september-4954066"
+     },
+     {
+      "name": "investingLive",
+      "url": "https://investinglive.com/news/us-september-import-price-index-1-1-vs-0-8-expected/"
      }
-    ]
+    ],
+    "result": {
+     "actual": "수입물가 +1.1%",
+     "est": "+0.8%",
+     "prev": "+0.5%",
+     "dir": "up",
+     "head": "수입물가 전월比 +1.1%(컨센서스 +0.8%) · 전년比 8.1% · 수출물가 +2.2%(컨센서스 +1.0%)",
+     "note": "9월 수입물가 전월比 +1.1%(컨센서스 +0.8%, 8월 +0.7%→+0.5% 수정), 전년比 8.1%(8월 7.0%). BLS는 비연료 수입품 가격 상승이 주도했다고 밝혔습니다. 9월 수출물가 전월比 +2.2%(컨센서스 +1.0%, 8월 +0.6%→+1.2% 수정), 전년比 11.6%. 수입물가 지수는 관세를 포함하지 않습니다.",
+     "rows": [
+      [
+       "수입물가 전월比",
+       "+1.1%",
+       "+0.8%",
+       "8월 +0.5%(수정)"
+      ],
+      [
+       "수입물가 전년比",
+       "8.1%",
+       "—",
+       "8월 7.0%"
+      ],
+      [
+       "수출물가 전월比",
+       "+2.2%",
+       "+1.0%",
+       "8월 +1.2%(수정)"
+      ],
+      [
+       "수출물가 전년比",
+       "11.6%",
+       "—",
+       "8월 8.6%"
+      ]
+     ]
+    }
    }
   ],
   "2026-10-22": [
