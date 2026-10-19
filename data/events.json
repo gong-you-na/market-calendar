@@ -1,7 +1,23 @@
 {
- "updated": "2026-10-17 07:15 KST",
+ "updated": "2026-10-19 22:50 KST",
  "note": "날짜는 한국시간 기준. ★ 예상일은 공식 일정 확정 전. 숫자 출처는 각 항목의 src 참조.",
  "changelog": [
+  {
+   "at": "2026-10-19 22:50",
+   "msg": "10/29 FOMC: CME FedWatch 10/19 동결 84%·인상 약 16%로 갱신(Vantage Markets·Blockhead 교차 확인)"
+  },
+  {
+   "at": "2026-10-19 22:50",
+   "msg": "10/19(월) 미국 8:30 ET 주요 지표 발표 없음(경제캘린더 확인) — result 입력 대상 없음; 10/13~16 result 전부 입력 완료 상태"
+  },
+  {
+   "at": "2026-10-19 22:50",
+   "msg": "실적 일정 대조: TSLA 10/22(현지 10/21 장후)·GEV 10/28·LLY 10/29 earnings.json과 일치(변경 없음)"
+  },
+  {
+   "at": "2026-10-19 22:50",
+   "msg": "11/7·11/21 미시간대 11월 예비치·확정치: 경제캘린더 3곳 현지 11/6·11/20 표기(한국시간 11/7·11/21 새벽 0시와 일치), 미시간대 공식 일정 미확인으로 ★ 유지"
+  },
   {
    "at": "2026-10-17 07:15",
    "msg": "10/29 FOMC: CME FedWatch 10월 인상 확률 10/16 16.1%(10/15 27.7%)로 갱신(ActionForex·Cointelegraph 교차 확인)"
@@ -744,7 +760,7 @@
     "n": "10월 FOMC 기준금리 결정",
     "imp": 3,
     "time": "새벽 3시",
-    "why": "현지 10/27~28 회의 결과가 한국시간 29일 새벽 3시에 발표됩니다. 9월 회의에서 기준금리를 0.25%p 올려 3.75~4.00%가 됐습니다. 이번 회의에는 {{점도표}}가 없고, {{성명서}}와 의장 기자회견이 있습니다. CME FedWatch 기준 10/16 0.25%p 인상 확률 16.1%·동결 83.9%(10/15 27.7%, 1주 전 17.7%; 코인텔레그래프는 같은 날 15%, 전일 27%로 보도). 워시 의장은 10/16 IMF·세계은행 연차총회(방콕)에서 회의 결과를 예단하지 않는다고 말했습니다.",
+    "why": "현지 10/27~28 회의 결과가 한국시간 29일 새벽 3시에 발표됩니다. 9월 회의에서 기준금리를 0.25%p 올려 3.75~4.00%가 됐습니다. 이번 회의에는 {{점도표}}가 없고, {{성명서}}와 의장 기자회견이 있습니다. CME FedWatch 기준 10/16 0.25%p 인상 확률 16.1%·동결 83.9%(10/15 27.7%, 1주 전 17.7%; 코인텔레그래프는 같은 날 15%, 전일 27%로 보도). 10/19 기준 동결 84%·인상 약 16%(Vantage Markets; 블록헤드는 주말 인상 확률 15.5%로 보도). 워시 의장은 10/16 IMF·세계은행 연차총회(방콕)에서 회의 결과를 예단하지 않는다고 말했습니다.",
     "watch": "금리 결정, 성명서 문구 변화, 기자회견",
     "stocks": [
      [
@@ -772,6 +788,14 @@
      {
       "name": "Cointelegraph(10/16, CME FedWatch)",
       "url": "https://cointelegraph.com/markets/bitcoin-price-steadies-82k-fed-warsh-avoids-rate-hike-hints"
+     },
+     {
+      "name": "Vantage Markets(10/19, FedWatch)",
+      "url": "https://vantagemarkets.com/market-analysis/why-eurusd-recovered-french-unrest-fed-hold-october-19-2026"
+     },
+     {
+      "name": "Blockhead(10/19, FedWatch)",
+      "url": "https://blockhead.co/2026/10/19/bitcoin-clings-on-as-a-silent-fed-100-oil-and-an-ai-wobble-take-the-wheel"
      }
     ]
    },
