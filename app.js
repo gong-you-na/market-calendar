@@ -10,9 +10,11 @@
     try { const r = await fetch(LIVE + f + "?v=" + Math.floor(V / 300000), { cache: "no-store" }); if (r.ok) { const j = await r.json(); if (j && j.updated) return j; } } catch (e) { }
     return get(f);
   };
-  const [CFG, EV, ER, MK, TERMS, HM, TOOTH, NEWS, VOICES, LIQ] = await Promise.all([
+  const [CFG, EV, ER, MK, TERMS, HM, TOOTH, NEWS, VOICES, LIQ, PEOPLE] = await Promise.all([
     get("config.json"), get("events.json"), get("earnings.json"), get("market.json"), get("terms.json"), get("heatmap.json"),
-    get("tooth.json"), getLive("news.json"), getLive("voices.json"), getLive("liq.json")]);
+    get("tooth.json"), getLive("news.json"), getLive("voices.json"), getLive("liq.json"), get("people.json")]);
+  // 인물 사진·크레딧은 배포본 people.json 기준(live 브랜치 사본이 오래됐을 수 있음)
+  if (VOICES && VOICES.people && PEOPLE && PEOPLE.people) { const by = {}; PEOPLE.people.forEach((p) => (by[p.id] = p)); VOICES.people.forEach((p) => { const q = by[p.id]; if (q) { if (q.img) p.img = q.img; if (q.img_credit) p.img_credit = q.img_credit; } }); }
   const DAYS = (EV && EV.days) || {};
   const WEEK_KO = ["일", "월", "화", "수", "목", "금", "토"];
   const TIER = (CFG && CFG.tiers) || {};
