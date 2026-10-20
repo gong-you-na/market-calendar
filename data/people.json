@@ -83,7 +83,14 @@
    "en": "Hyun Song Shin",
    "role": "한국은행 총재(2026.4~)",
    "wiki": "Hyun Song Shin",
-   "x": ""
+   "x": "",
+   "img_credit": {
+    "file": "Hyun_Song_Shin,_deputy_del_Banco_de_Pagos_Internacionales_-_Día_2_-_3era_reunión_de_ministros_de_Finanzas_y_Presidentes_de_Bancos_Centrales_(cropped).jpg",
+    "license": "CC BY 2.0",
+    "artist": "G20 Argentina",
+    "url": "https://commons.wikimedia.org/wiki/File:Hyun_Song_Shin,_deputy_del_Banco_de_Pagos_Internacionales_-_D%C3%ADa_2_-_3era_reuni%C3%B3n_de_ministros_de_Finanzas_y_Presidentes_de_Bancos_Centrales_(cropped).jpg"
+   },
+   "img": "assets/people/shin.jpg"
   },
   {
    "id": "musk",
