@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>WizView — 위즈덤투스 투자 클리닉</title>
-<meta name="description" content="WizView — 시장 체온계, 오늘의 주요 이슈, S&P500·코스피·ETF 히트맵, 비트코인 청산맵, 거시·실적 일정, 주요 인물의 한마디를 한 화면에서 보는 위즈덤투스 투자 클리닉의 자동 갱신 보드">
+<meta name="description" content="WizView — 시장 체온계, 데일리 시장 브리핑, S&P500·코스피·ETF 히트맵, 비트코인 청산맵, 거시·실적 일정, 주요 인물의 한마디를 한 화면에서 보는 위즈덤투스 투자 클리닉의 자동 갱신 보드">
 <meta name="color-scheme" content="light dark">
 <script>(function(){try{var t=localStorage.getItem("wv-theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
 <link rel="preconnect" href="https://cdnjs.cloudflare.com">
@@ -29,7 +29,7 @@
     </div>
   </div>
   <nav class="wrap secnav" aria-label="섹션 이동">
-    <a href="#sec-tooth">투쓰의 한마디</a><a href="#sec-temp">체온계</a><a href="#sec-issues">주요 이슈</a><a href="#sec-heatmap">히트맵</a><a href="#sec-liq">BTC 청산맵</a><a href="#sec-week">일정</a><a href="#sec-cos">실적</a><a href="#sec-voices">인물의 한마디</a>
+    <a href="#sec-tooth">투쓰의 한마디</a><a href="#sec-temp">체온계</a><a href="#sec-brief">시장 브리핑</a><a href="#sec-heatmap">히트맵</a><a href="#sec-liq">BTC 청산맵</a><a href="#sec-week">일정</a><a href="#sec-cos">실적</a><a href="#sec-voices">인물의 한마디</a>
   </nav>
 </header>
 
@@ -55,19 +55,13 @@
     <div class="temp-scroll"><div class="temp" id="temp"></div></div>
   </section>
 
-  <!-- 오늘의 주요 이슈 (매시간 자동 수집 헤드라인) -->
-  <section class="sec" id="sec-issues">
+  <!-- 데일리 시장 브리핑 (예약 작업이 문장으로 작성, data/brief.json) -->
+  <section class="sec" id="sec-brief">
     <div class="sec-h">
-      <h2>오늘의 주요 이슈</h2>
-      <span class="sec-sub" id="newsAsof"></span>
-      <div class="sec-tools">
-        <div class="seg sm" id="newsRegion"><button class="on" data-r="all">전체</button><button data-r="us">해외</button><button data-r="kr">국내</button></div>
-      </div>
+      <h2>데일리 시장 브리핑</h2>
+      <span class="sec-sub" id="briefAsof"></span>
     </div>
-    <div class="news-top" id="newsTop"></div>
-    <div class="news-more" id="newsMore" hidden></div>
-    <button class="more-btn" id="newsMoreBtn">더보기</button>
-    <p class="fine">헤드라인은 Bloomberg·CNBC·Reuters·WSJ·연합뉴스·한국경제·매일경제·조선비즈 원문 그대로이며 WizView의 해석이 아닙니다. 1시간 단위 자동 수집.</p>
+    <div class="brief" id="brief"></div>
   </section>
 
   <!-- 히트맵 -->

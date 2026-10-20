@@ -371,22 +371,18 @@ svg.spark{display:block;width:100%;height:110px}
 .secnav a:hover{background:var(--card);border-color:var(--line);color:var(--ink)}
 html{scroll-padding-top:110px}
 
-/* ───────── 오늘의 주요 이슈 ───────── */
-.news-top{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
-.news{display:flex;flex-direction:column;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;text-decoration:none;color:var(--ink);min-width:0;transition:border-color .12s}
-.news:hover{border-color:var(--gold-line)}
-.news.big{min-height:118px;border-left:4px solid var(--gold)}
-.news.big.kr{border-left-color:var(--t1)}
-.news-src{display:flex;align-items:center;gap:8px;font-size:.72rem;color:var(--grey2);font-weight:600}
-.src-tag{font-size:.68rem;font-weight:800;padding:2px 7px;border-radius:6px;background:var(--gold-soft);color:var(--gold-deep)}
-.src-tag.kr{background:var(--t1-soft);color:var(--t1)}
-.news-t{font-size:1rem;font-weight:800;line-height:1.4;letter-spacing:-.01em}
-.news-more[hidden]{display:none}
-.news-more{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:10px}
-.news-more .news{padding:11px 14px;border-radius:var(--r2);gap:4px}
-.news-more .news-t{font-size:.86rem;font-weight:700}
-.more-btn{margin-top:10px;width:100%;padding:11px;border-radius:999px;background:var(--card);border:1px solid var(--line);font-weight:800;font-size:.84rem;color:var(--grey)}
-.more-btn:hover{color:var(--ink);border-color:var(--line2)}
+/* ───────── 데일리 시장 브리핑 ───────── */
+.brief-card{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:var(--r);padding:20px 24px 16px}
+.brief-t{font-size:1.15rem;font-weight:800;letter-spacing:-.01em;margin-bottom:10px}
+.brief-t span{color:var(--grey2);font-weight:700}
+.brief-card p{margin:0 0 10px;font-size:1rem;line-height:1.75;color:var(--ink);word-break:keep-all}
+.brief-card p:last-of-type{margin-bottom:0}
+.brief-card.empty p{color:var(--grey2)}
+.brief-meta{font-size:.72rem;color:var(--grey2);margin-top:10px;font-weight:600}
+.brief-old{background:var(--card);border:1px solid var(--line);border-radius:var(--r3);padding:12px 14px;margin-top:6px}
+.brief-old-h{font-size:.8rem;font-weight:800;color:var(--gold-deep);margin-bottom:4px}
+.brief-old p{margin:0;font-size:.88rem;line-height:1.65;color:var(--ink2);word-break:keep-all}
+@media (max-width:760px){.brief-card{padding:16px 16px 12px}.brief-card p{font-size:.95rem}}
 
 /* ───────── 비트코인 청산맵 ───────── */
 .liq{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:12px;align-items:start}
@@ -417,8 +413,8 @@ html{scroll-padding-top:110px}
 .ls-now{text-align:center;font-size:.72rem;font-weight:800;color:var(--gold-deep);padding:4px;border-top:1px dashed var(--gold-line);border-bottom:1px dashed var(--gold-line);margin:4px 0}
 .ls-sub{font-size:.68rem;color:var(--grey2);margin-top:6px;line-height:1.4}
 .ls-card.recent .ls-row{font-size:.74rem}
-@media (max-width:1100px){.liq{grid-template-columns:1fr}.liq-side{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.news-top{grid-template-columns:1fr}.news.big{min-height:0}}
-@media (max-width:760px){.liq-canvas{height:360px}.liq-side{grid-template-columns:1fr}.news-more{grid-template-columns:1fr}.sec-tools{margin-left:0;width:100%}.hm-head{font-size:.6rem}.secnav{padding:0 14px 8px}}
+@media (max-width:1100px){.liq{grid-template-columns:1fr}.liq-side{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:760px){.liq-canvas{height:360px}.liq-side{grid-template-columns:1fr}.sec-tools{margin-left:0;width:100%}.hm-head{font-size:.6rem}.secnav{padding:0 14px 8px}}
 .hm-tile .hm-n{font-size:.62rem;font-weight:600;opacity:.9;max-width:95%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin-top:2px}
 
 /* ───────── 주요 인물의 한마디 ───────── */

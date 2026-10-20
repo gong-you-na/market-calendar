@@ -10,9 +10,9 @@
     try { const r = await fetch(LIVE + f + "?v=" + Math.floor(V / 300000), { cache: "no-store" }); if (r.ok) { const j = await r.json(); if (j && j.updated) return j; } } catch (e) { }
     return get(f);
   };
-  const [CFG, EV, ER, MK, TERMS, HM, TOOTH, NEWS, VOICES, LIQ, PEOPLE] = await Promise.all([
+  const [CFG, EV, ER, MK, TERMS, HM, TOOTH, BRIEF, VOICES, LIQ, PEOPLE] = await Promise.all([
     get("config.json"), get("events.json"), get("earnings.json"), get("market.json"), get("terms.json"), get("heatmap.json"),
-    get("tooth.json"), getLive("news.json"), getLive("voices.json"), getLive("liq.json"), get("people.json")]);
+    get("tooth.json"), get("brief.json"), getLive("voices.json"), getLive("liq.json"), get("people.json")]);
   // 인물 사진·크레딧은 배포본 people.json 기준(live 브랜치 사본이 오래됐을 수 있음)
   if (VOICES && VOICES.people && PEOPLE && PEOPLE.people) { const by = {}; PEOPLE.people.forEach((p) => (by[p.id] = p)); VOICES.people.forEach((p) => { const q = by[p.id]; if (q) { if (q.img) p.img = q.img; if (q.img_credit) p.img_credit = q.img_credit; } }); }
   const DAYS = (EV && EV.days) || {};
@@ -112,8 +112,7 @@
     let stale = false;
     try { const t = new Date(u.replace(" KST", "+09:00").replace(" ", "T")); stale = (kstNow - t) > 1000 * 60 * 60 * 30; } catch (e) { }
     el.classList.toggle("stale", stale);
-    const n = NEWS && NEWS.updated;
-    el.innerHTML = `<span class="dot"></span><span>일정 ${esc(u)}${m ? ` · 시세 ${esc(m.replace(" KST", ""))}` : ""}${n ? ` · 이슈 ${esc(n.replace(" KST", ""))}` : ""}</span>`;
+    el.innerHTML = `<span class="dot"></span><span>일정 ${esc(u)}${m ? ` · 시세 ${esc(m.replace(" KST", ""))}` : ""}</span>`;
   })();
 
   /* ── 투쓰의 한마디 ── */
@@ -173,28 +172,18 @@
   }
   $("#tempTab").addEventListener("click", (e) => { const b = e.target.closest("button[data-t]"); if (!b) return; tempTab = b.dataset.t; document.querySelectorAll("#tempTab button").forEach((c) => c.classList.toggle("on", c === b)); renderTemp(); });
 
-  /* ── 오늘의 주요 이슈 ── */
-  let newsRegion = "all", newsOpen = false;
+  /* ── 데일리 시장 브리핑 ── */
   const ago = (isoUtc) => { const m = Math.round((Date.now() - new Date(isoUtc)) / 60000); if (m < 60) return `${Math.max(1, m)}분 전`; const h = Math.floor(m / 60); if (h < 24) return `${h}시간 전`; return `${Math.floor(h / 24)}일 전`; };
-  function newsCard(it, big) {
-    return `<a class="news ${big ? "big" : ""} ${it.region}" href="${esc(it.url)}" target="_blank" rel="noopener">
-      <div class="news-src"><span class="src-tag ${it.region}">${esc(it.source)}</span><span class="news-ago">${ago(it.at)}</span></div>
-      <div class="news-t">${esc(it.title)}</div></a>`;
+  const dateTitle = (d) => { const [y, m, dd] = d.split("-").map(Number); return `${y}년 ${m}월 ${dd}일`; };
+  function renderBrief() {
+    const box = $("#brief"); const items = (BRIEF && BRIEF.items) || [];
+    if (!items.length) { box.innerHTML = `<div class="brief-card empty"><div class="brief-t">데일리 시장 브리핑</div><p>오늘 브리핑이 아직 작성되지 않았습니다.</p></div>`; $("#briefAsof").textContent = ""; return; }
+    const cur = items[0];
+    const paras = String(cur.text || "").split(/\n{2,}/).map((t) => `<p>${termify(esc(t)).replace(/\n/g, "<br>")}</p>`).join("");
+    box.innerHTML = `<div class="brief-card"><div class="brief-t">${esc(cur.title || "데일리 시장 브리핑")} <span>| ${dateTitle(cur.date)}</span></div>${paras}${cur.at ? `<div class="brief-meta">${esc(cur.at)} 작성${cur.updated ? ` · ${esc(cur.updated)} 갱신` : ""}</div>` : ""}</div>`
+      + (items.length > 1 ? `<details class="tooth-prev"><summary>지난 브리핑 ${items.length - 1}건</summary>${items.slice(1, 8).map((b) => `<div class="brief-old"><div class="brief-old-h">${esc(dateTitle(b.date))}</div><p>${esc(b.text)}</p></div>`).join("")}</details>` : "");
+    $("#briefAsof").textContent = `${cur.at || cur.date} 기준 · 장전·장 마감 예약 작업이 작성`;
   }
-  function renderNews() {
-    const box = $("#newsTop"), more = $("#newsMore");
-    if (!NEWS || !NEWS.items) { box.innerHTML = `<div class="news big">이슈 데이터를 불러오지 못했습니다.</div>`; return; }
-    const all = NEWS.items.filter((i) => newsRegion === "all" || i.region === newsRegion);
-    const topIds = new Set(NEWS.top || []);
-    let top = all.filter((i) => topIds.has(i.id)); if (top.length < 3) top = top.concat(all.filter((i) => !topIds.has(i.id)).slice(0, 3 - top.length));
-    const rest = all.filter((i) => !top.includes(i)).sort((a, b) => b.at.localeCompare(a.at));
-    box.innerHTML = top.map((i) => newsCard(i, true)).join("");
-    more.innerHTML = rest.slice(0, 40).map((i) => newsCard(i, false)).join("");
-    more.hidden = !newsOpen; $("#newsMoreBtn").textContent = newsOpen ? "접기" : `더보기 (${rest.length}건)`;
-    $("#newsAsof").textContent = `${esc(NEWS.updated)} 갱신 · 매시간 자동 수집 · 출처 ${(NEWS.sources || []).join("·")}`;
-  }
-  $("#newsRegion").addEventListener("click", (e) => { const b = e.target.closest("button[data-r]"); if (!b) return; newsRegion = b.dataset.r; document.querySelectorAll("#newsRegion button").forEach((c) => c.classList.toggle("on", c === b)); renderNews(); });
-  $("#newsMoreBtn").addEventListener("click", () => { newsOpen = !newsOpen; renderNews(); });
 
   /* ── 이벤트 필터 ── */
   const evsOf = (dIso) => {
@@ -408,7 +397,7 @@
     btn.addEventListener("click", () => apply(current() === "dark" ? "light" : "dark"));
   })();
 
-  renderTooth(); renderTemp(); renderNews(); renderWeek(); renderMonths(); renderCal(); renderCos(); renderChangelog();
+  renderTooth(); renderTemp(); renderBrief(); renderWeek(); renderMonths(); renderCal(); renderCos(); renderChangelog();
   /* ══════════ 히트맵 ══════════ */
   let hmMarket = "us", hmPeriod = "d1";
   function renderHM() {
@@ -517,6 +506,6 @@
   renderHM(); renderLiq(); renderVoices();
   liveRefresh(); setInterval(liveRefresh, 5 * 60 * 1000);
   // 매시간 파일(이슈·인물·청산맵)은 30분마다 다시 읽음
-  setInterval(async () => { const [n, v, l] = await Promise.all([getLive("news.json"), getLive("voices.json"), getLive("liq.json")]); if (n && NEWS && n.updated !== NEWS.updated) { Object.assign(NEWS, n); renderNews(); } if (v && VOICES && v.updated !== VOICES.updated) { Object.assign(VOICES, v); renderVoices(); } if (l && LIQ && l.updated !== LIQ.updated) { Object.assign(LIQ, l); renderLiq(); } }, 30 * 60 * 1000);
+  setInterval(async () => { const [v, l] = await Promise.all([getLive("voices.json"), getLive("liq.json")]); if (v && VOICES && v.updated !== VOICES.updated) { Object.assign(VOICES, v); renderVoices(); } if (l && LIQ && l.updated !== LIQ.updated) { Object.assign(LIQ, l); renderLiq(); } }, 30 * 60 * 1000);
 
 })();

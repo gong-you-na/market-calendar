@@ -1,5 +1,5 @@
 name: hourly-live-data
-# 매시간: 주요 이슈(뉴스 헤드라인)·주요 인물 발언·비트코인 청산맵을 갱신해 `live` 브랜치에만 올립니다.
+# 매시간: 주요 인물 발언·비트코인 청산맵을 갱신해 `live` 브랜치에만 올립니다.
 # main 에는 커밋하지 않으므로 Netlify 재배포가 일어나지 않고, 페이지는 raw.githubusercontent.com/.../live/data/*.json 을 직접 읽습니다.
 on:
   schedule:
@@ -20,14 +20,14 @@ jobs:
           fetch-depth: 1
       - name: Seed state from live branch (rolling caches, previous items)
         run: |
-          git fetch --depth 1 origin live && git checkout origin/live -- data/news.json data/voices.json data/liq.json data/cache/liq_events.json || echo "no live branch yet"
+          git fetch --depth 1 origin live && git checkout origin/live -- data/voices.json data/liq.json data/cache/liq_events.json || echo "no live branch yet"
       - name: Run hourly scripts
         run: bash scripts/run_hourly.sh
       - name: Publish to live branch (single orphan commit, no history)
         run: |
           set -e
           mkdir -p /tmp/live/data/cache
-          cp data/news.json data/voices.json data/liq.json /tmp/live/data/
+          cp data/voices.json data/liq.json /tmp/live/data/
           cp data/cache/liq_events.json /tmp/live/data/cache/ 2>/dev/null || true
           cd /tmp/live
           git init -q -b live

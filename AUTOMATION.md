@@ -16,10 +16,11 @@
 
 ## 매 실행 절차
 ```
-bash scripts/run_numbers.sh          # 1) 시세·VIX / 히트맵(S&P500·코스피·ETF) / 실적 히스토리 + 이슈·인물·청산맵(run_hourly.sh) 갱신
+bash scripts/run_numbers.sh          # 1) 시세·VIX / 히트맵(S&P500·코스피·ETF) / 실적 히스토리 + 인물·청산맵(run_hourly.sh) 갱신
 ```
 `run_numbers.sh`는 스크립트 하나가 실패해도 나머지는 진행하고 마지막에 실패 여부를 종료코드로 알립니다. 실패한 스크립트 이름을 보고에 적습니다.
-(이슈·인물·청산맵은 GitHub Actions가 매시간 `live` 브랜치에 올리므로 예약 작업의 사본 갱신은 보조용입니다.)
+(인물·청산맵은 GitHub Actions가 매시간 `live` 브랜치에 올리므로 예약 작업의 사본 갱신은 보조용입니다.)
+1-2) `data/brief.json` 데일리 시장 브리핑 작성·갱신 (장전·장 마감 실행만, 아래 절 참고)
 2) `data/events.json` 갱신 (Claude가 직접 편집)
    - **발표 완료 처리**: 오늘(KST) 이전 날짜 중 `result`가 없는 `econ`/`fomc` 이벤트 → 웹 검색으로 발표 수치 확인 → `result` 추가
      - `result` 형식: `{actual, est, prev, dir(up|down|flat), head, note, rows?[[항목,발표,예상,비고]], trend?[{l,v}]}`
@@ -36,14 +37,20 @@ git add data && git commit -m "data: YYYY-MM-DD HH:MM KST 자동 갱신 — <변
 ```
 5) 완료 보고(짧게): 바뀐 항목만. 바뀐 게 없으면 "변경 없음".
 
+## 데일리 시장 브리핑 (`data/brief.json`, 예약 작업이 문장으로 작성)
+- **장전 22:40 실행**에서 그날 브리핑을 새로 쓴다: `items` 맨 앞에 `{"date":"YYYY-MM-DD(KST)","title":"데일리 시장 브리핑","at":"YYYY-MM-DD HH:MM KST","text":"..."}`. 같은 날짜 항목이 이미 있으면 `text`를 덮어쓰고 `updated`에 시각을 적는다. **장 마감 07:10 실행**에서는 미국 마감·장후 실적을 반영해 그날(KST) 항목을 갱신한다. 장중 02:10 실행은 손대지 않는다.
+- 형식: 제목 없이 본문만, 3~5문장 한 단락(필요하면 빈 줄로 두 단락까지). 뉴스 제목 나열이 아니라 **하나의 흐름으로 읽히는 문장**. 예: "AI·반도체는 과매도 반등에 성공했지만, 장기금리가 다시 상승하고 시장 폭은 오히려 약했습니다. 중국 GDP는 예상보다 좋았으나 부동산투자 -20.6%가 남아 있어, 정책 기대는 금리 인하보다 첨단제조업·기술금융 지원으로 이동했습니다. 원유는 만기 임박 WTI만 급등하고 차월물은 하락해 ‘공급 쇼크’와 ‘만기 왜곡’을 구분해야 하는 시장입니다."
+- 내용: 전날 미국·당일 한국 시장의 핵심 움직임과 그 이유(지표·실적·금리·유가·환율·정책), 오늘 밤~내일 확인할 일정. 수치는 출처 2곳 교차 확인한 것만, 종목 매매 권유·목표가·'사라/팔라' 금지. 구조와 원인을 설명하는 문장은 허용.
+- 운영자가 채팅으로 문장을 주면 그대로 그날 항목에 넣는다. 지난 브리핑은 최근 14일치만 남긴다.
+
 ## 운영자가 채팅으로 전달하는 것 (Claude가 즉시 반영)
 - **투쓰의 한마디**: 운영자가 문장을 주면 `data/tooth.json.items` 맨 앞에 `{"at":"YYYY-MM-DD HH:MM","text":"...","title":""}`을 추가(이전 항목은 남겨 '지난 한마디'로 표시). 문장은 전달받은 그대로, 임의로 고치거나 해석을 덧붙이지 않는다. 비우라고 하면 `items`를 `[]`로.
 - **주요 인물 발언(직접 입력)**: 운영자가 인물·발언·출처(링크)·시각을 주면 `data/voices_manual.json`에 `{"person":"<people.json id>","text":"...","url":"...","src":"X" 등,"at":"ISO8601(+00:00)","lang":"en|ko"}` 추가. `update_voices.py`가 자동 항목과 합치며 수동 항목은 항상 보존. 새 인물이면 `data/people.json`에 먼저 추가(`id`,`name`,`en`,`role`,`wiki`,`x`,`sources`)하고 `python3 scripts/fetch_people_photos.py`로 사진을 받는다.
 - 둘 다 `python3 -c "import json;json.load(open(...))"` 검증 후 바로 커밋·푸시(Netlify 자동 배포). changelog에는 적지 않는다(일정 변경이 아님).
 
 ## 매시간 자동 갱신 (GitHub Actions, 사람 개입 없음)
-- `.github/workflows/hourly.yml` → `scripts/run_hourly.sh`(`update_news.py`·`update_voices.py`·`update_liq.py`) → `live` 브랜치에 orphan 커밋으로 force-push. main 은 건드리지 않으므로 Netlify 배포가 일어나지 않고, 페이지(`app.js`)는 `https://raw.githubusercontent.com/gong-you-na/market-calendar/live/data/*.json` 을 먼저 읽고 실패하면 배포본 `data/` 를 쓴다.
-- 뉴스: WSJ(RSS)·Bloomberg·CNBC·Reuters(Google News RSS)·연합뉴스·한국경제(RSS)·매일경제·조선비즈(Google News). 헤드라인 원문 그대로, 해석 없음. 상위 3개는 매체 가중치·키워드·시각으로 자동 선정(미국·한국 최소 1개씩).
+- `.github/workflows/hourly.yml` → `scripts/run_hourly.sh`(`update_voices.py`·`update_liq.py`) → `live` 브랜치에 orphan 커밋으로 force-push. main 은 건드리지 않으므로 Netlify 배포가 일어나지 않고, 페이지(`app.js`)는 `https://raw.githubusercontent.com/gong-you-na/market-calendar/live/data/*.json` 을 먼저 읽고 실패하면 배포본 `data/` 를 쓴다.
+- (뉴스 헤드라인 수집은 2026-10-20 폐지 — '오늘의 주요 이슈' 대신 '데일리 시장 브리핑' 문장을 예약 작업이 작성)
 - 인물: 트럼프는 trumpstruth.org RSS(Truth Social 공개 아카이브) 원문, 나머지는 Google News 헤드라인(영문·국문). X API는 유료라 쓰지 않는다.
 - 청산맵: OKX(캔들·OI 히스토리·공개 청산 체결·롱숏비율)·Bitget·Hyperliquid·Kraken(캔들·OI·펀딩). Binance·Bybit는 미국 IP 차단(451/403)이라 자동 제외되며 코드엔 남아 있어 접근 가능한 환경에서 실행하면 합산된다. 레버리지 10·25·50·100배 청산가에 신규 포지션 추정치를 누적하는 자체 추정이며 Coinglass 수치와 다르다.
 - 사진: `.github/workflows/photos.yml`(수동 실행)이 Wikimedia Commons 공개 라이선스 사진을 `assets/people/`에 받아 main 에 커밋. 예약 작업 환경(공유 IP)에서는 Wikimedia API가 429를 돌려줄 수 있다.
@@ -62,7 +69,7 @@ git add data && git commit -m "data: YYYY-MM-DD HH:MM KST 자동 갱신 — <변
 - `heatmap.json` S&P500 전 종목 + 코스피 상위 60 (1D/1W/1M, 시총, 섹터). 유니버스 캐시 `cache/universe_*.json`은 7일마다 자동 갱신(`--refresh-universe`로 강제).
 - `heatmap.json.etf` ETF 79종(finviz ETF 맵 그룹 + 해외 EWY·EWT·EWJ·EWZ·FXI·INDA·EEM·EFA + 레버리지 SOXS·SOXL·TQQQ·SQQQ·TSLL + 원자재·코인). 타일 크기는 운용자산(AUM) 제곱근, 캐시 `cache/universe_etf.json` 7일.
 - `market.json` 항목: 미국 탭(S&P500·나스닥·VIX·10년물·달러·금·WTI) / 한국 탭(코스피·코스닥·원/달러·비트코인+업비트 원화·김치프리미엄). 순서·탭은 `config.json.market[].tab`.
-- `news.json` / `voices.json` / `liq.json` / `tooth.json` / `people.json` / `voices_manual.json` — 위 "매시간 자동 갱신"·"운영자가 채팅으로 전달하는 것" 참고.
+- `brief.json` / `voices.json` / `liq.json` / `tooth.json` / `people.json` / `voices_manual.json` — 위 "데일리 시장 브리핑"·"매시간 자동 갱신"·"운영자가 채팅으로 전달하는 것" 참고.
 - 브라우저는 `/.netlify/functions/yf`(Yahoo·CBOE 중계)로 5분마다 실시간 보정하고, 매시간 파일은 30분마다 다시 읽으므로, 예약 작업은 "기준 스냅샷"을 만드는 역할입니다.
 
 ## 학습기업 추가·변경
