@@ -4,8 +4,15 @@
   const V = Date.now();
   const get = (f) => (window.__DATA && window.__DATA[f]) ? Promise.resolve(window.__DATA[f])
     : fetch(`data/${f}?v=${V}`).then((r) => r.ok ? r.json() : null).catch(() => null);
-  const [CFG, EV, ER, MK, TERMS, HM, XR] = await Promise.all([
-    get("config.json"), get("events.json"), get("earnings.json"), get("market.json"), get("terms.json"), get("heatmap.json"), get("xray.json")]);
+  // 매시간 갱신 파일(이슈·인물·청산맵)은 `live` 브랜치(raw.githubusercontent)를 먼저 읽고, 실패하면 배포본 data/ 사용
+  const LIVE = "https://raw.githubusercontent.com/gong-you-na/market-calendar/live/data/";
+  const getLive = async (f) => {
+    try { const r = await fetch(LIVE + f + "?v=" + Math.floor(V / 300000), { cache: "no-store" }); if (r.ok) { const j = await r.json(); if (j && j.updated) return j; } } catch (e) { }
+    return get(f);
+  };
+  const [CFG, EV, ER, MK, TERMS, HM, TOOTH, NEWS, VOICES, LIQ] = await Promise.all([
+    get("config.json"), get("events.json"), get("earnings.json"), get("market.json"), get("terms.json"), get("heatmap.json"),
+    get("tooth.json"), getLive("news.json"), getLive("voices.json"), getLive("liq.json")]);
   const DAYS = (EV && EV.days) || {};
   const WEEK_KO = ["일", "월", "화", "수", "목", "금", "토"];
   const TIER = (CFG && CFG.tiers) || {};
@@ -103,18 +110,33 @@
     let stale = false;
     try { const t = new Date(u.replace(" KST", "+09:00").replace(" ", "T")); stale = (kstNow - t) > 1000 * 60 * 60 * 30; } catch (e) { }
     el.classList.toggle("stale", stale);
-    el.innerHTML = `<span class="dot"></span><span>일정 ${esc(u)}${m ? ` · 시세 ${esc(m.replace(" KST", ""))}` : ""}</span>`;
+    const n = NEWS && NEWS.updated;
+    el.innerHTML = `<span class="dot"></span><span>일정 ${esc(u)}${m ? ` · 시세 ${esc(m.replace(" KST", ""))}` : ""}${n ? ` · 이슈 ${esc(n.replace(" KST", ""))}` : ""}</span>`;
   })();
 
-  /* ── 시장 체온계 ── */
+  /* ── 투쓰의 한마디 ── */
+  function renderTooth() {
+    const box = $("#tooth"); const items = (TOOTH && TOOTH.items) || [];
+    if (!items.length) { box.innerHTML = `<div class="tooth-card empty"><span class="wt">W.T</span><div class="tooth-body"><div class="tooth-txt">오늘의 한마디가 아직 없습니다.</div><div class="tooth-meta">운영자가 전달하면 이 자리에 올라옵니다.</div></div></div>`; $("#toothAsof").textContent = ""; return; }
+    const cur = items[0];
+    box.innerHTML = `<div class="tooth-card"><span class="wt">W.T</span><div class="tooth-body"><div class="tooth-txt">${esc(cur.text).replace(/\n/g, "<br>")}</div><div class="tooth-meta">${esc(cur.at || "")}${cur.title ? " · " + esc(cur.title) : ""}</div></div></div>`
+      + (items.length > 1 ? `<details class="tooth-prev"><summary>지난 한마디 ${items.length - 1}건</summary>${items.slice(1, 8).map((t) => `<div class="tooth-old"><time>${esc(t.at || "")}</time><span>${esc(t.text)}</span></div>`).join("")}</details>` : "");
+    $("#toothAsof").textContent = cur.at ? `${cur.at} 기준` : "";
+  }
+
+  /* ── 시장 체온계 (미국 / 한국 탭) ── */
+  let tempTab = "us";
   function renderTemp() {
     const box = $("#temp");
     if (!MK || !MK.items) { box.innerHTML = `<div class="tile">시세 데이터를 불러오지 못했습니다.</div>`; return; }
-    const dec = (k) => ({ tnx: 2, dxy: 1, krw: 0, gold: 0, vix: 1, spx: 0, ndx: 0, kospi: 0 }[k] ?? 2);
-    const order = ["vix", "tnx", "dxy", "krw", "gold", "spx", "ndx", "kospi"];
-    const items = order.map((k) => MK.items.find((i) => i.key === k)).filter(Boolean);
+    const cfgM = (CFG && CFG.market) || [];
+    const decOf = (k) => (cfgM.find((m) => m.key === k) || {}).decimals ?? 2;
+    const tabOf = (k) => (cfgM.find((m) => m.key === k) || {}).tab || "us";
+    const order = cfgM.map((m) => m.key);
+    const items = order.map((k) => MK.items.find((i) => i.key === k)).filter((i) => i && tabOf(i.key) === tempTab);
+    box.style.setProperty("--n", items.length);
     box.innerHTML = items.map((it) => {
-      const d = dec(it.key), c = ud(it.chg), col = c === "up" ? "var(--up)" : c === "down" ? "var(--down)" : "var(--grey3)";
+      const d = decOf(it.key), c = ud(it.chg), col = c === "up" ? "var(--up)" : c === "down" ? "var(--down)" : "var(--grey3)";
       const unitPre = it.unit === "$" ? "$" : "", unitPost = it.unit && it.unit !== "$" ? it.unit : "";
       let baseTxt = "";
       if (it.baseline !== null && it.baseline !== undefined) {
@@ -123,6 +145,7 @@
         const dtxt = it.key === "tnx" ? `${sign(diff, 2)}%p` : it.key === "krw" ? `${sign(diff, 0)}원` : it.key === "gold" ? `${sign(diff, 0)}` : sign(diff, 1);
         baseTxt = `<div class="base">${esc(it.baseline_label)} · ${rel} (${dtxt})</div>`;
       }
+      if (it.key === "btc" && it.krw) baseTxt = `<div class="base">업비트 <b>${fmtN(it.krw, 0)}원</b> (${sign(it.krw_pct, 2)}%)${it.premium_pct !== undefined ? ` · 김치 프리미엄 ${sign(it.premium_pct, 2)}%` : ""}</div>`;
       if (it.key === "vix") {
         const bandIdx = Math.max(0, (CFG.vix_bands || []).findIndex((b) => it.value < b.max));
         const pos = Math.min(100, Math.max(0, it.value / 50 * 100));
@@ -132,20 +155,44 @@
           <div class="ch ${c}">${sign(it.chg, 1)} (${sign(it.pct, 2)}%)</div>
           <div class="gauge"><i style="left:${pos.toFixed(1)}%"></i></div>
           <div class="gauge-lb"><span>0</span><span>15 안정</span><span>20 보통</span><span>30 경계</span><span>50</span></div>
-          <div class="meta">1년 평균 ${fmtN(it.avg1y, 1)} · 1년 범위 ${fmtN(it.lo1y, 1)}~${fmtN(it.hi1y, 1)} · 30일 ${fmtN(it.lo30, 1)}~${fmtN(it.hi30, 1)}</div>
+          <div class="meta">1년 평균 ${fmtN(it.avg1y, 1)} · 범위 ${fmtN(it.lo1y, 1)}~${fmtN(it.hi1y, 1)} · 30일 ${fmtN(it.lo30, 1)}~${fmtN(it.hi30, 1)}</div>
         </div>`;
       }
       return `<div class="tile">
         <div class="lb">${esc(it.label)}</div>
         <div class="v">${unitPre}${fmtN(it.value, d)}<small>${esc(unitPost)}</small></div>
         <div class="ch ${c}">${sign(it.chg, d)} (${sign(it.pct, 2)}%)</div>
-        ${spark(it.spark.map((p) => ({ v: p.v })), { w: 160, h: 34, color: col, labels: false, base: it.baseline ?? null, strokeW: 1.8 })}
-        ${baseTxt}
+        ${spark(it.spark.map((p) => ({ v: p.v })), { w: 220, h: 54, color: col, labels: false, base: it.baseline ?? null, strokeW: 2 })}
+        ${baseTxt || `<div class="base">30일 ${unitPre}${fmtN(it.lo30, d)}~${fmtN(it.hi30, d)}${esc(unitPost)}</div>`}
       </div>`;
     }).join("");
     const asof = items.map((i) => i.asof).sort().pop();
-    $("#tempAsof").textContent = `종가·현재가 기준 ${asof || ""} · 전일 대비 · 출처 Yahoo Finance`;
+    $("#tempAsof").textContent = `종가·현재가 기준 ${asof || ""} · 전일 대비 · 출처 Yahoo Finance${tempTab === "kr" ? "·업비트" : ""}${MK.live ? " · 실시간 갱신" : ""}`;
   }
+  $("#tempTab").addEventListener("click", (e) => { const b = e.target.closest("button[data-t]"); if (!b) return; tempTab = b.dataset.t; document.querySelectorAll("#tempTab button").forEach((c) => c.classList.toggle("on", c === b)); renderTemp(); });
+
+  /* ── 오늘의 주요 이슈 ── */
+  let newsRegion = "all", newsOpen = false;
+  const ago = (isoUtc) => { const m = Math.round((Date.now() - new Date(isoUtc)) / 60000); if (m < 60) return `${Math.max(1, m)}분 전`; const h = Math.floor(m / 60); if (h < 24) return `${h}시간 전`; return `${Math.floor(h / 24)}일 전`; };
+  function newsCard(it, big) {
+    return `<a class="news ${big ? "big" : ""} ${it.region}" href="${esc(it.url)}" target="_blank" rel="noopener">
+      <div class="news-src"><span class="src-tag ${it.region}">${esc(it.source)}</span><span class="news-ago">${ago(it.at)}</span></div>
+      <div class="news-t">${esc(it.title)}</div></a>`;
+  }
+  function renderNews() {
+    const box = $("#newsTop"), more = $("#newsMore");
+    if (!NEWS || !NEWS.items) { box.innerHTML = `<div class="news big">이슈 데이터를 불러오지 못했습니다.</div>`; return; }
+    const all = NEWS.items.filter((i) => newsRegion === "all" || i.region === newsRegion);
+    const topIds = new Set(NEWS.top || []);
+    let top = all.filter((i) => topIds.has(i.id)); if (top.length < 3) top = top.concat(all.filter((i) => !topIds.has(i.id)).slice(0, 3 - top.length));
+    const rest = all.filter((i) => !top.includes(i)).sort((a, b) => b.at.localeCompare(a.at));
+    box.innerHTML = top.map((i) => newsCard(i, true)).join("");
+    more.innerHTML = rest.slice(0, 40).map((i) => newsCard(i, false)).join("");
+    more.hidden = !newsOpen; $("#newsMoreBtn").textContent = newsOpen ? "접기" : `더보기 (${rest.length}건)`;
+    $("#newsAsof").textContent = `${esc(NEWS.updated)} 갱신 · 매시간 자동 수집 · 출처 ${(NEWS.sources || []).join("·")}`;
+  }
+  $("#newsRegion").addEventListener("click", (e) => { const b = e.target.closest("button[data-r]"); if (!b) return; newsRegion = b.dataset.r; document.querySelectorAll("#newsRegion button").forEach((c) => c.classList.toggle("on", c === b)); renderNews(); });
+  $("#newsMoreBtn").addEventListener("click", () => { newsOpen = !newsOpen; renderNews(); });
 
   /* ── 이벤트 필터 ── */
   const evsOf = (dIso) => {
@@ -359,93 +406,97 @@
     btn.addEventListener("click", () => apply(current() === "dark" ? "light" : "dark"));
   })();
 
-  renderTemp(); renderWeek(); renderMonths(); renderCal(); renderCos(); renderChangelog();
+  renderTooth(); renderTemp(); renderNews(); renderWeek(); renderMonths(); renderCal(); renderCos(); renderChangelog();
   /* ══════════ 히트맵 ══════════ */
   let hmMarket = "us", hmPeriod = "d1";
   function renderHM() {
     if (!HM || !window.renderHeatmap) return;
     const data = HM[hmMarket]; if (!data) return;
     const el = $("#hm");
-    renderHeatmap(el, data, { period: hmPeriod, tiers: TIER, extra: (d) => {
+    renderHeatmap(el, data, { period: hmPeriod, tiers: TIER, etf: hmMarket === "etf", extra: (d) => {
       const base = d.t.split(".")[0], c = ER && ER.companies && ER.companies[base]; if (!c) return "";
       const s = c.stats || {}, n = c.next;
       return `<div class="tt-x">${n && n.date ? `다음 실적 ${esc(n.date)} · ` : ""}최근 ${s.n}분기 EPS 상회 ${s.beats}회 · 반응일 상승 ${s.ups}회</div>`;
     } });
     const idx = HM.index || {};
-    const names = hmMarket === "us" ? [["^GSPC", "S&P 500"], ["^IXIC", "나스닥"], ["^DJI", "다우"], ["^RUT", "러셀 2000"]] : [["^KS11", "코스피"], ["^KQ11", "코스닥"]];
+    const names = hmMarket === "kr" ? [["^KS11", "코스피"], ["^KQ11", "코스닥"]] : [["^GSPC", "S&P 500"], ["^IXIC", "나스닥"], ["^DJI", "다우"], ["^RUT", "러셀 2000"]];
     $("#hmIdx").innerHTML = names.map(([k, lb]) => { const v = idx[k]; if (!v) return ""; return `<span>${lb}<b>${fmtN(v.p, 0)}</b><b class="${ud(v.d1)}">${sign(v.d1, 2)}%</b></span>`; }).join("")
-      + `<span>${hmMarket === "us" ? "S&P 500" : "코스피 상위"} ${data.stocks.length}종목 · ${data.sectors.length}섹터</span>`;
+      + `<span>${hmMarket === "us" ? "S&P 500" : hmMarket === "kr" ? "코스피 상위" : "ETF"} ${data.stocks.length}종목 · ${data.sectors.length}${hmMarket === "etf" ? "그룹" : "섹터"}</span>`;
+    $("#hmLegendNote").textContent = hmMarket === "etf" ? "타일 크기 = 운용자산(AUM, 제곱근 비례) · 그룹 구성 finviz ETF 맵 기준 + 한국·대만·일본·브라질·반도체 레버리지 · 출처 Yahoo Finance·StockAnalysis" : "타일 크기 = 시가총액 · 출처 Yahoo Finance · S&P 500 구성 Wikipedia/StockAnalysis";
     $("#hmAsof").textContent = `${esc(HM.updated)} 기준 · 1일 등락은 장외 시간엔 프리·애프터마켓 가격이 반영될 수 있음`;
   }
   $("#hmMarket").addEventListener("click", (e) => { const b = e.target.closest("button[data-m]"); if (!b) return; hmMarket = b.dataset.m; document.querySelectorAll("#hmMarket button").forEach((c) => c.classList.toggle("on", c === b)); renderHM(); });
   $("#hmPeriod").addEventListener("click", (e) => { const b = e.target.closest("button[data-p]"); if (!b) return; hmPeriod = b.dataset.p; document.querySelectorAll("#hmPeriod button").forEach((c) => c.classList.toggle("on", c === b)); renderHM(); });
   let hmT; window.addEventListener("resize", () => { clearTimeout(hmT); hmT = setTimeout(renderHM, 150); });
 
-  /* ══════════ 엑스레이 ══════════ */
-  let xrSym = null, xrChart = null, xrOpts = { months: window.innerWidth < 640 ? 3 : 6, profile: "v60", options: "all", showMA: { 20: true, 50: true, 200: true }, showOI: true, showProfile: true };
-  function xrFacts(d) {
-    const P = d.profile, O = d.options, S = O && (O[xrOpts.options === "off" ? "all" : xrOpts.options] || O.all);
-    const chg = (d.price / d.prev - 1) * 100;
-    const cw = S && S.walls.call[0], pw = S && S.walls.put[0];
-    const live = d.live ? `<span class="live">LIVE</span>` : "";
-    $("#xrTop").innerHTML = `<div class="nm">${esc(d.name)} <small>${esc(d.en)} · ${esc(xrSym)}</small><span class="badge t${d.tier}">${esc(tierLabel(d.tier))}</span>${live}</div>
-      <div class="px"><b>$${fmtN(d.price, 2)}</b><span class="${ud(chg)}">${sign(chg, 2)}% (${sign(d.price - d.prev, 2)})</span><small style="color:var(--grey2);font-size:.72rem">${esc(d.asof)}${d.live ? " 장중" : " 종가"}</small></div>`;
-    $("#xrFacts").innerHTML = `
-      <div class="fact"><div class="fl">최대 매물대 POC</div><div class="fv">$${fmtN(P.poc, 2)}<small>현재가 대비 ${sign((d.price / P.poc - 1) * 100, 1)}%</small></div></div>
-      <div class="fact"><div class="fl">가치영역 70%</div><div class="fv">$${fmtN(P.va_lo, 0)}–${fmtN(P.va_hi, 0)}<small>${d.price < P.va_lo ? "현재가 영역 아래" : d.price > P.va_hi ? "현재가 영역 위" : "현재가 영역 안"}</small></div></div>
-      <div class="fact"><div class="fl">콜 벽 (저항)</div><div class="fv up">${cw ? "$" + fmtN(cw.k, 0) : "—"}<small>${cw ? "OI " + fmtN(cw.oi, 0) + " · " + esc(S.exp) : ""}</small></div></div>
-      <div class="fact"><div class="fl">풋 벽 (지지)</div><div class="fv down">${pw ? "$" + fmtN(pw.k, 0) : "—"}<small>${pw ? "OI " + fmtN(pw.oi, 0) + " · " + esc(S.exp) : ""}</small></div></div>
-      <div class="fact"><div class="fl">맥스페인</div><div class="fv">${S && S.maxpain ? "$" + fmtN(S.maxpain, 0) : "—"}<small>${S ? esc(S.exp) : ""}</small></div></div>
-      <div class="fact"><div class="fl">풋/콜 OI 비율</div><div class="fv">${O ? fmtN(O.pcr, 2) : "—"}<small>${O ? (O.pcr > 1 ? "풋 우위" : "콜 우위") + " · 8만기 합" : ""}</small></div></div>`;
+  /* ══════════ 비트코인 청산맵 ══════════ */
+  let liqMap = null, liqDays = 3;
+  function renderLiq() {
+    if (!LIQ || !LIQ.grid || !window.LiqMap) { $("#liqTop").innerHTML = `<div class="nm">청산맵 데이터를 불러오지 못했습니다.</div>`; return; }
+    const U = window.liqFmt.usd;
+    const chg = LIQ.prev24 ? (LIQ.price / LIQ.prev24 - 1) * 100 : 0;
+    $("#liqTop").innerHTML = `<div class="nm">비트코인 <small>BTC 무기한 선물 · ${(LIQ.sources || []).join("·")} 합산</small>${LIQ.live ? `<span class="live">LIVE</span>` : ""}</div>
+      <div class="px"><b>$${fmtN(LIQ.price, 0)}</b><span class="${ud(chg)}">${sign(chg, 2)}% <small>24h</small></span></div>`;
+    if (!liqMap) liqMap = new LiqMap($("#liqCanvas"), $("#liqTip"), LIQ, { days: liqDays }); else { liqMap.update(LIQ); liqMap.set({ days: liqDays }); }
+    const l24 = LIQ.liq24h || {}, tot = (l24.long_usd || 0) + (l24.short_usd || 0);
+    const above = (LIQ.levels || []).filter((l) => l.p > LIQ.price).sort((a, b) => b.usd - a.usd).slice(0, 3).sort((a, b) => a.p - b.p);
+    const below = (LIQ.levels || []).filter((l) => l.p < LIQ.price).sort((a, b) => b.usd - a.usd).slice(0, 3).sort((a, b) => b.p - a.p);
+    $("#liqSide").innerHTML = `
+      <div class="ls-card"><div class="ls-l">24시간 실제 청산 <small>${esc(l24.src || "")}</small></div>
+        <div class="ls-bar"><i class="long" style="width:${tot ? (l24.long_usd / tot * 100).toFixed(1) : 50}%"></i></div>
+        <div class="ls-row"><span class="long">롱 ${U(l24.long_usd || 0)}</span><span class="short">숏 ${U(l24.short_usd || 0)}</span></div><div class="ls-sub">${l24.n || 0}건 체결</div></div>
+      <div class="ls-card"><div class="ls-l">추정 청산 밀집 구간 <small>현재가 기준</small></div>
+        ${above.map((l) => `<div class="ls-row lv"><span>$${fmtN(l.p, 0)} <em>숏 청산</em></span><b class="short">${U(l.usd)}</b></div>`).join("")}
+        <div class="ls-now">현재가 $${fmtN(LIQ.price, 0)}</div>
+        ${below.map((l) => `<div class="ls-row lv"><span>$${fmtN(l.p, 0)} <em>롱 청산</em></span><b class="long">${U(l.usd)}</b></div>`).join("")}</div>
+      <div class="ls-card"><div class="ls-l">미결제약정(OI) <small>거래소별</small></div>
+        ${(LIQ.exchanges || []).map((e) => `<div class="ls-row"><span>${esc(e.name)}</span><b>${U(e.oi_usd)} <small>펀딩 ${sign(e.funding, 4)}%</small></b></div>`).join("")}
+        <div class="ls-row tot"><span>합계</span><b>${U(LIQ.oi_total_usd || 0)}</b></div>
+        <div class="ls-sub">평균 펀딩비(8h) ${LIQ.funding_avg !== null && LIQ.funding_avg !== undefined ? sign(LIQ.funding_avg, 4) + "%" : "—"} · 롱/숏 계정 비율 ${LIQ.lsr ? fmtN(LIQ.lsr, 2) : "—"} (OKX)</div></div>
+      <div class="ls-card recent"><div class="ls-l">최근 청산 체결</div>
+        ${(LIQ.recent || []).slice(0, 8).map((r) => `<div class="ls-row"><span><em class="${r.side}">${r.side === "long" ? "롱" : "숏"}</em> $${fmtN(r.px, 0)}</span><b>${U(r.usd)} <small>${new Date(r.t * 1000).toLocaleTimeString("ko-KR", { hour: "2-digit", minute: "2-digit", hour12: false, timeZone: "Asia/Seoul" })}</small></b></div>`).join("")}</div>`;
+    $("#liqAsof").textContent = `${esc(LIQ.updated)} 갱신 · 매시간 · 바이낸스·바이비트는 미국 서버 접근 제한으로 제외`;
+    $("#liqMethod").textContent = LIQ.method || "";
   }
-  function renderXR() {
-    if (!XR || !XR.symbols || !window.XrayChart) return;
-    const syms = Object.keys(XR.symbols); if (!syms.length) return;
-    if (!xrSym) xrSym = syms[0];
-    $("#xrSym").innerHTML = syms.map((k) => `<button class="${k === xrSym ? "on" : ""}" data-s="${k}">${esc(XR.symbols[k].name)} <small>${k}</small></button>`).join("");
-    const d = XR.symbols[xrSym];
-    const opts = Object.assign({}, xrOpts, { showProfile: xrOpts.profile !== "off", showOI: xrOpts.options !== "off", profile: xrOpts.profile === "off" ? "v60" : xrOpts.profile, options: xrOpts.options === "off" ? "all" : xrOpts.options });
-    if (!xrChart) xrChart = new XrayChart($("#xrCanvas"), d, opts); else { xrChart.update(d); xrChart.set(opts); }
-    xrFacts(d);
-    $("#xrAsof").textContent = `${esc(XR.updated)} 기준 · 매물대 Yahoo 5분봉 · 옵션 CBOE 지연`;
+  $("#liqRange").addEventListener("click", (e) => { const b = e.target.closest("button[data-r]"); if (!b) return; liqDays = +b.dataset.r; document.querySelectorAll("#liqRange button").forEach((c) => c.classList.toggle("on", c === b)); if (liqMap) liqMap.set({ days: liqDays }); });
+
+  /* ══════════ 주요 인물의 한마디 ══════════ */
+  let vPerson = null, vKind = "all";
+  const initials = (p) => esc((p.en || p.name || "?").split(" ").map((w) => w[0]).join("").slice(0, 2).toUpperCase());
+  function renderVoices() {
+    const pe = $("#people"), vo = $("#voices");
+    if (!VOICES || !VOICES.people) { pe.innerHTML = ""; vo.innerHTML = `<div class="v-empty">인물 데이터를 불러오지 못했습니다.</div>`; return; }
+    const items = VOICES.items || [];
+    const cnt = (id) => items.filter((v) => v.person === id && (vKind === "all" || v.kind === vKind)).length;
+    pe.innerHTML = `<button class="person ${vPerson === null ? "on" : ""}" data-p=""><span class="avatar all">ALL</span><span class="pn">전체</span><span class="pr">최신순</span></button>` + VOICES.people.map((p) => `<button class="person ${vPerson === p.id ? "on" : ""}" data-p="${esc(p.id)}">
+        <span class="avatar">${p.img ? `<img src="${esc(p.img)}?v=${V}" alt="${esc(p.name)}" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('b'),{textContent:'${initials(p)}'}))">` : `<b>${initials(p)}</b>`}</span>
+        <span class="pn">${esc(p.name)}</span><span class="pr">${esc(p.role)}</span>${cnt(p.id) ? `<span class="pc">${cnt(p.id)}</span>` : ""}</button>`).join("");
+    const byId = {}; VOICES.people.forEach((p) => (byId[p.id] = p));
+    const list = items.filter((v) => (!vPerson || v.person === vPerson) && (vKind === "all" || v.kind === vKind)).slice(0, vPerson ? 60 : 36);
+    const sel = vPerson && byId[vPerson];
+    vo.innerHTML = (sel ? `<div class="v-head"><span class="avatar lg">${sel.img ? `<img src="${esc(sel.img)}?v=${V}" alt="">` : `<b>${initials(sel)}</b>`}</span><div><div class="v-name">${esc(sel.name)} <small>${esc(sel.en)} · ${esc(sel.role)}</small></div><div class="v-links">${sel.x ? `<a href="https://x.com/${esc(sel.x)}" target="_blank" rel="noopener">X @${esc(sel.x)}</a>` : ""}${sel.truth ? `<a href="https://truthsocial.com/@${esc(sel.truth)}" target="_blank" rel="noopener">Truth Social</a>` : ""}${sel.img_credit && sel.img_credit.url ? `<a href="${esc(sel.img_credit.url)}" target="_blank" rel="noopener" class="credit">사진 ${esc(sel.img_credit.license || "Wikimedia")}</a>` : ""}</div></div></div>` : "")
+      + (list.length ? `<div class="bubbles">${list.map((v) => { const p = byId[v.person] || {}; return `<div class="bubble k-${v.kind}">
+          <span class="avatar sm">${p.img ? `<img src="${esc(p.img)}?v=${V}" alt="">` : `<b>${initials(p)}</b>`}</span>
+          <div class="bb"><div class="bb-h"><b>${esc(p.name || v.person)}</b><span class="kind ${v.kind}">${v.kind === "post" ? "원문 게시물" : v.kind === "manual" ? "직접 입력" : "보도"}</span><span class="src">${esc(v.src || "")}</span><time>${ago(v.at)}</time></div>
+          <div class="bb-t">${esc(v.text)}</div>${v.url ? `<a class="bb-l" href="${esc(v.url)}" target="_blank" rel="noopener">${v.kind === "post" ? "원문 보기" : v.kind === "manual" ? "출처" : "기사 보기"} ↗</a>` : ""}</div></div>`; }).join("")}</div>` : `<div class="v-empty">표시할 발언이 없습니다.</div>`);
+    $("#voicesAsof").textContent = `${esc(VOICES.updated)} 갱신 · 매시간 · ${VOICES.people.length}명`;
   }
-  $("#xrSym").addEventListener("click", (e) => { const b = e.target.closest("button[data-s]"); if (!b) return; xrSym = b.dataset.s; renderXR(); });
-  $("#xrMonths").addEventListener("click", (e) => { const b = e.target.closest("button[data-v]"); if (!b) return; xrOpts.months = +b.dataset.v; document.querySelectorAll("#xrMonths button").forEach((c) => c.classList.toggle("on", c === b)); renderXR(); });
-  $("#xrProfile").addEventListener("click", (e) => { const b = e.target.closest("button[data-v]"); if (!b) return; xrOpts.profile = b.dataset.v; document.querySelectorAll("#xrProfile button").forEach((c) => c.classList.toggle("on", c === b)); renderXR(); });
-  $("#xrOpt").addEventListener("click", (e) => { const b = e.target.closest("button[data-v]"); if (!b) return; xrOpts.options = b.dataset.v; document.querySelectorAll("#xrOpt button").forEach((c) => c.classList.toggle("on", c === b)); renderXR(); });
-  $("#xrMA").addEventListener("change", (e) => { const i = e.target; if (i.dataset.k) { xrOpts.showMA[i.dataset.k] = i.checked; renderXR(); } });
+  $("#people").addEventListener("click", (e) => { const b = e.target.closest("button[data-p]"); if (!b) return; vPerson = b.dataset.p || null; renderVoices(); });
+  $("#voicesKind").addEventListener("click", (e) => { const b = e.target.closest("button[data-k]"); if (!b) return; vKind = b.dataset.k; document.querySelectorAll("#voicesKind button").forEach((c) => c.classList.toggle("on", c === b)); renderVoices(); });
   // 테마 바뀌면 캔버스·히트맵 다시 그림
-  new MutationObserver(() => { if (xrChart) xrChart.draw(); renderHM(); }).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+  new MutationObserver(() => { if (liqMap) liqMap.draw(); renderHM(); }).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
 
   /* ══════════ 실시간 (Netlify Function 프록시, 있으면) ══════════ */
   async function liveRefresh() {
     try {
       const ping = await fetch("/.netlify/functions/yf?ping=1", { cache: "no-store" }); if (!ping.ok) return;
     } catch (e) { return; }
-    // 1) 엑스레이 종목 최신 일봉(오늘 봉 포함) → 마지막 캔들 교체/추가
-    if (XR && XR.symbols) {
-      for (const sym of Object.keys(XR.symbols)) {
-        try {
-          const r = await fetch(`/.netlify/functions/yf?kind=chart&symbol=${encodeURIComponent(sym)}&range=5d&interval=1d`, { cache: "no-store" }); if (!r.ok) continue;
-          const j = await r.json(); const res = j.chart.result[0], ts = res.timestamp, q = res.indicators.quote[0];
-          const d = XR.symbols[sym]; const lastT = d.candles[d.candles.length - 1].t;
-          ts.forEach((t, i) => { if (q.close[i] == null) return; const bar = { t, o: +q.open[i].toFixed(2), h: +q.high[i].toFixed(2), l: +q.low[i].toFixed(2), c: +q.close[i].toFixed(2), v: q.volume[i] || 0 };
-            const sameDay = Math.abs(t - lastT) < 86400 * 0.6;
-            if (sameDay) d.candles[d.candles.length - 1] = bar; else if (t > lastT) { d.candles.push(bar); } });
-          const last = d.candles[d.candles.length - 1]; d.prev = d.candles[d.candles.length - 2].c; d.price = last.c; d.live = res.meta && res.meta.marketState === "REGULAR"; d.asof = new Date(last.t * 1000).toISOString().slice(0, 10);
-          // MA 재계산(마지막 값들만)
-          const closes = d.candles.map((c) => c.c);
-          for (const n of [20, 50, 200]) { const arr = d.ma[String(n)]; while (arr.length < closes.length) arr.push(null); for (let i = Math.max(0, closes.length - 3); i < closes.length; i++) arr[i] = i >= n - 1 ? +(closes.slice(i - n + 1, i + 1).reduce((a, b) => a + b, 0) / n).toFixed(2) : null; }
-        } catch (e) { }
-      }
-      renderXR();
-    }
     // 2) 체온계 현재가
     if (MK && MK.items) {
       try {
         const syms = MK.items.map((i) => i.symbol).join(",");
         const r = await fetch(`/.netlify/functions/yf?kind=spark&symbols=${encodeURIComponent(syms)}`, { cache: "no-store" });
-        if (r.ok) { const j = await r.json(); let touched = false; for (const it of MK.items) { const v = j[it.symbol]; if (!v || v.fulldayPrice == null) continue; const dec = ({ tnx: 2, dxy: 1, krw: 0, gold: 0, vix: 1 })[it.key] ?? 0; it.value = +v.fulldayPrice.toFixed(dec); it.prev = +(v.chartPreviousClose ?? it.prev).toFixed(dec); it.chg = +(it.value - it.prev).toFixed(dec); it.pct = +((it.value / it.prev - 1) * 100).toFixed(2); touched = true; } if (touched) { renderTemp(); $("#tempAsof").textContent += " · 실시간 갱신"; } }
+        if (r.ok) { const j = await r.json(); let touched = false; for (const it of MK.items) { const v = j[it.symbol]; if (!v || v.fulldayPrice == null) continue; const dec = ({ tnx: 2, dxy: 1, krw: 0, gold: 0, vix: 1, wti: 2 })[it.key] ?? 0; it.value = +v.fulldayPrice.toFixed(dec); it.prev = +(v.chartPreviousClose ?? it.prev).toFixed(dec); it.chg = +(it.value - it.prev).toFixed(dec); it.pct = +((it.value / it.prev - 1) * 100).toFixed(2); touched = true; if (it.key === "btc" && LIQ && LIQ.grid) { LIQ.price = Math.round(it.value); LIQ.live = true; } } if (touched) { MK.live = true; renderTemp(); if (LIQ && LIQ.live) renderLiq(); } }
       } catch (e) { }
     }
     // 3) 히트맵 1일 등락률 (미장·국장 현재 탭만, 20개씩)
@@ -461,7 +512,9 @@
     }
   }
 
-  renderHM(); renderXR();
+  renderHM(); renderLiq(); renderVoices();
   liveRefresh(); setInterval(liveRefresh, 5 * 60 * 1000);
+  // 매시간 파일(이슈·인물·청산맵)은 30분마다 다시 읽음
+  setInterval(async () => { const [n, v, l] = await Promise.all([getLive("news.json"), getLive("voices.json"), getLive("liq.json")]); if (n && NEWS && n.updated !== NEWS.updated) { Object.assign(NEWS, n); renderNews(); } if (v && VOICES && v.updated !== VOICES.updated) { Object.assign(VOICES, v); renderVoices(); } if (l && LIQ && l.updated !== LIQ.updated) { Object.assign(LIQ, l); renderLiq(); } }, 30 * 60 * 1000);
 
 })();

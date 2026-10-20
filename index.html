@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>WizView — 위즈덤투스 투자 클리닉</title>
-<meta name="description" content="WizView — 시장 체온계·VIX, 거시·실적 일정, 학습기업 실적 반응 히스토리를 한 화면에서 보는 위즈덤투스 투자 클리닉의 자동 갱신 보드">
+<meta name="description" content="WizView — 시장 체온계, 오늘의 주요 이슈, S&P500·코스피·ETF 히트맵, 비트코인 청산맵, 거시·실적 일정, 주요 인물의 한마디를 한 화면에서 보는 위즈덤투스 투자 클리닉의 자동 갱신 보드">
 <meta name="color-scheme" content="light dark">
 <script>(function(){try{var t=localStorage.getItem("wv-theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
 <link rel="preconnect" href="https://cdnjs.cloudflare.com">
@@ -28,16 +28,46 @@
       </button>
     </div>
   </div>
+  <nav class="wrap secnav" aria-label="섹션 이동">
+    <a href="#sec-tooth">투쓰의 한마디</a><a href="#sec-temp">체온계</a><a href="#sec-issues">주요 이슈</a><a href="#sec-heatmap">히트맵</a><a href="#sec-liq">BTC 청산맵</a><a href="#sec-week">일정</a><a href="#sec-cos">실적</a><a href="#sec-voices">인물의 한마디</a>
+  </nav>
 </header>
 
 <main class="wrap">
-  <!-- 시장 체온계 -->
-  <section class="sec">
+  <!-- 투쓰의 한마디 (운영자가 채팅으로 전달 → Claude가 data/tooth.json 갱신) -->
+  <section class="sec" id="sec-tooth">
+    <div class="sec-h">
+      <h2>투쓰의 한마디</h2>
+      <span class="sec-sub" id="toothAsof"></span>
+    </div>
+    <div class="tooth" id="tooth"></div>
+  </section>
+
+  <!-- 시장 체온계: 미국 / 한국 탭 -->
+  <section class="sec" id="sec-temp">
     <div class="sec-h">
       <h2>시장 체온계</h2>
       <span class="sec-sub" id="tempAsof"></span>
+      <div class="sec-tools">
+        <div class="seg" id="tempTab"><button class="on" data-t="us">미국</button><button data-t="kr">한국</button></div>
+      </div>
     </div>
-    <div class="temp" id="temp"></div>
+    <div class="temp-scroll"><div class="temp" id="temp"></div></div>
+  </section>
+
+  <!-- 오늘의 주요 이슈 (매시간 자동 수집 헤드라인) -->
+  <section class="sec" id="sec-issues">
+    <div class="sec-h">
+      <h2>오늘의 주요 이슈</h2>
+      <span class="sec-sub" id="newsAsof"></span>
+      <div class="sec-tools">
+        <div class="seg sm" id="newsRegion"><button class="on" data-r="all">전체</button><button data-r="us">해외</button><button data-r="kr">국내</button></div>
+      </div>
+    </div>
+    <div class="news-top" id="newsTop"></div>
+    <div class="news-more" id="newsMore" hidden></div>
+    <button class="more-btn" id="newsMoreBtn">더보기</button>
+    <p class="fine">헤드라인은 Bloomberg·CNBC·Reuters·WSJ·연합뉴스·한국경제·매일경제·조선비즈 원문 그대로이며 WizView의 해석이 아닙니다. 1시간 단위 자동 수집.</p>
   </section>
 
   <!-- 히트맵 -->
@@ -46,7 +76,7 @@
       <h2>히트맵</h2>
       <span class="sec-sub" id="hmAsof"></span>
       <div class="sec-tools">
-        <div class="seg sm" id="hmMarket"><button class="on" data-m="us">미장 S&amp;P 500</button><button data-m="kr">국장 코스피</button></div>
+        <div class="seg sm" id="hmMarket"><button class="on" data-m="us">미장 S&amp;P 500</button><button data-m="kr">국장 코스피</button><button data-m="etf">ETF</button></div>
         <div class="seg sm" id="hmPeriod"><button class="on" data-p="d1">1일</button><button data-p="w1">1주</button><button data-p="m1">1개월</button></div>
       </div>
     </div>
@@ -55,35 +85,32 @@
     <div class="legend hm-legend">
       <span><i class="sw" style="background:#3182F6"></i>-3%</span><span><i class="sw" style="background:#9fc3fb"></i>-1%</span><span><i class="sw" style="background:#ECE9E2;border:1px solid var(--line2)"></i>0</span><span><i class="sw" style="background:#f6a5ab"></i>+1%</span><span><i class="sw" style="background:#F04452"></i>+3%</span>
       <span class="gap"></span>
-      <span><i class="sw tier t1"></i>1군 Core</span><span><i class="sw tier t2"></i>2군 Steady</span><span><i class="sw tier t3"></i>3군 Challenge</span><span>타일 크기 = 시가총액 · 출처 Yahoo Finance · S&amp;P 500 구성 Wikipedia/StockAnalysis</span>
+      <span><i class="sw tier t1"></i>1군 Core</span><span><i class="sw tier t2"></i>2군 Steady</span><span><i class="sw tier t3"></i>3군 Challenge</span><span id="hmLegendNote">타일 크기 = 시가총액 · 출처 Yahoo Finance · S&amp;P 500 구성 Wikipedia/StockAnalysis</span>
     </div>
   </section>
 
-  <!-- 엑스레이: 매물·옵션 지도 -->
-  <section class="sec" id="sec-xray">
+  <!-- 비트코인 청산맵 (자체 추정) -->
+  <section class="sec" id="sec-liq">
     <div class="sec-h">
-      <h2>엑스레이 <span class="h2-sub">매물·옵션 지도</span></h2>
-      <span class="sec-sub" id="xrAsof"></span>
+      <h2>비트코인 청산맵 <span class="h2-sub">추정 청산 밀집 구간</span></h2>
+      <span class="sec-sub" id="liqAsof"></span>
       <div class="sec-tools">
-        <div class="seg sm" id="xrSym"></div>
+        <div class="seg sm" id="liqRange"><button data-r="1">24시간</button><button class="on" data-r="3">3일</button><button data-r="7">7일</button></div>
       </div>
     </div>
-    <div class="xr">
-      <div class="xr-top" id="xrTop"></div>
-      <div class="xr-tools">
-        <div class="seg sm" id="xrMonths"><button data-v="3">3개월</button><button class="on" data-v="6">6개월</button><button data-v="12">1년</button></div>
-        <div class="seg sm" id="xrProfile"><button class="on" data-v="v60">매물대 60일</button><button data-v="v20">20일</button><button data-v="off">끄기</button></div>
-        <div class="seg sm" id="xrOpt"><button class="on" data-v="all">옵션 8만기 합</button><button data-v="monthly">월간</button><button data-v="next">다음 만기</button><button data-v="off">끄기</button></div>
-        <div class="chk" id="xrMA"><label><input type="checkbox" data-k="20" checked> MA20</label><label><input type="checkbox" data-k="50" checked> MA50</label><label><input type="checkbox" data-k="200" checked> MA200</label></div>
+    <div class="liq">
+      <div class="liq-main">
+        <div class="liq-top" id="liqTop"></div>
+        <div class="liq-canvas"><canvas id="liqCanvas"></canvas><div class="liq-tip" id="liqTip"></div></div>
+        <div class="liq-scale"><span>적음</span><i></i><span>청산 밀집</span></div>
       </div>
-      <div class="xr-canvas"><canvas id="xrCanvas"></canvas></div>
-      <div class="xr-facts" id="xrFacts"></div>
-      <p class="fine">매물대 = 최근 60(20)거래일 5분봉 거래량을 가격대별로 합산(토스증권 '매물대'와 같은 방식). 금색 = 거래량 상위 70% 가치영역, 점선 = 최대 매물대(POC). 옵션 벽 = CBOE 미결제약정(OI)이 가장 많은 행사가(빨강 콜·파랑 풋, 지연 시세). 맥스페인 = 옵션 매수자 손실이 가장 큰 가격. 모두 공개 데이터의 집계이며 매매 신호가 아닙니다.</p>
+      <aside class="liq-side" id="liqSide"></aside>
     </div>
+    <p class="fine" id="liqMethod"></p>
   </section>
 
   <!-- 다음 7일 -->
-  <section class="sec">
+  <section class="sec" id="sec-week">
     <div class="sec-h">
       <h2>다음 7일</h2>
       <span class="sec-sub">한국시간 기준</span>
@@ -135,7 +162,7 @@
   </section>
 
   <!-- 학습기업 실적 히스토리 -->
-  <section class="sec">
+  <section class="sec" id="sec-cos">
     <div class="sec-h">
       <h2>학습기업 실적 반응 히스토리</h2>
       <span class="sec-sub">최근 8분기 · 발표 전후 5거래일 · 출처 Nasdaq·Yahoo Finance</span>
@@ -147,6 +174,20 @@
     <div class="sec-h"><h2>변경 이력</h2></div>
     <ul id="changelog"></ul>
   </section>
+
+  <!-- 주요 인물의 한마디 -->
+  <section class="sec" id="sec-voices">
+    <div class="sec-h">
+      <h2>주요 인물의 한마디</h2>
+      <span class="sec-sub" id="voicesAsof"></span>
+      <div class="sec-tools">
+        <div class="seg sm" id="voicesKind"><button class="on" data-k="all">전체</button><button data-k="post">원문 게시물</button><button data-k="news">보도 헤드라인</button><button data-k="manual">직접 입력</button></div>
+      </div>
+    </div>
+    <div class="people" id="people"></div>
+    <div class="voices" id="voices"></div>
+    <p class="fine">트럼프는 Truth Social 원문 게시물(공개 아카이브), 그 외 인물은 발언을 보도한 기사 헤드라인(Google News)을 1시간 단위로 수집합니다. 원문 트윗은 X API를 쓰지 않아 기사 링크로 연결됩니다. '직접 입력'은 운영자가 채팅으로 전달한 발언. 사진: Wikimedia Commons 공개 라이선스.</p>
+  </section>
 </main>
 
 <footer class="foot">
@@ -157,7 +198,7 @@
 </footer>
 
 <script src="heatmap.js"></script>
-<script src="chart.js"></script>
+<script src="liq.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

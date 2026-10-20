@@ -1,0 +1,1836 @@
+{
+ "updated": "2026-10-20 16:28 KST",
+ "people": [
+  {
+   "id": "trump",
+   "name": "도널드 트럼프",
+   "en": "Donald Trump",
+   "role": "미국 대통령",
+   "x": "realDonaldTrump",
+   "truth": "realDonaldTrump",
+   "img": null,
+   "img_credit": null,
+   "n": 40,
+   "latest": "2026-10-20T05:00:45+00:00"
+  },
+  {
+   "id": "warsh",
+   "name": "케빈 워시",
+   "en": "Kevin Warsh",
+   "role": "연준 의장",
+   "x": "",
+   "truth": null,
+   "img": null,
+   "img_credit": null,
+   "n": 20,
+   "latest": "2026-10-20T03:32:02+00:00"
+  },
+  {
+   "id": "bessent",
+   "name": "스콧 베센트",
+   "en": "Scott Bessent",
+   "role": "미국 재무장관",
+   "x": "SecScottBessent",
+   "truth": null,
+   "img": null,
+   "img_credit": null,
+   "n": 9,
+   "latest": "2026-10-19T02:49:58+00:00"
+  },
+  {
+   "id": "lutnick",
+   "name": "하워드 러트닉",
+   "en": "Howard Lutnick",
+   "role": "미국 상무장관",
+   "x": "howardlutnick",
+   "truth": null,
+   "img": null,
+   "img_credit": null,
+   "n": 4,
+   "latest": "2026-10-19T23:23:32+00:00"
+  },
+  {
+   "id": "rhee",
+   "name": "이창용",
+   "en": "Rhee Chang-yong",
+   "role": "한국은행 총재",
+   "x": "",
+   "truth": null,
+   "img": null,
+   "img_credit": null,
+   "n": 1,
+   "latest": "2026-10-18T12:43:07+00:00"
+  },
+  {
+   "id": "musk",
+   "name": "일론 머스크",
+   "en": "Elon Musk",
+   "role": "테슬라·xAI CEO",
+   "x": "elonmusk",
+   "truth": null,
+   "img": null,
+   "img_credit": null,
+   "n": 40,
+   "latest": "2026-10-20T07:22:36+00:00"
+  },
+  {
+   "id": "huang",
+   "name": "젠슨 황",
+   "en": "Jensen Huang",
+   "role": "엔비디아 CEO",
+   "x": "",
+   "truth": null,
+   "img": null,
+   "img_credit": null,
+   "n": 10,
+   "latest": "2026-10-20T06:19:31+00:00"
+  },
+  {
+   "id": "cook",
+   "name": "팀 쿡",
+   "en": "Tim Cook",
+   "role": "애플 CEO",
+   "x": "tim_cook",
+   "truth": null,
+   "img": null,
+   "img_credit": null,
+   "n": 7,
+   "latest": "2026-10-20T00:06:29+00:00"
+  },
+  {
+   "id": "nadella",
+   "name": "사티아 나델라",
+   "en": "Satya Nadella",
+   "role": "마이크로소프트 CEO",
+   "x": "satyanadella",
+   "truth": null,
+   "img": null,
+   "img_credit": null,
+   "n": 5,
+   "latest": "2026-10-19T18:32:04+00:00"
+  },
+  {
+   "id": "zuckerberg",
+   "name": "마크 저커버그",
+   "en": "Mark Zuckerberg",
+   "role": "메타 CEO",
+   "x": "",
+   "truth": null,
+   "img": null,
+   "img_credit": null,
+   "n": 10,
+   "latest": "2026-10-20T05:30:28+00:00"
+  },
+  {
+   "id": "altman",
+   "name": "샘 올트먼",
+   "en": "Sam Altman",
+   "role": "OpenAI CEO",
+   "x": "sama",
+   "truth": null,
+   "img": null,
+   "img_credit": null,
+   "n": 6,
+   "latest": "2026-10-20T02:02:04+00:00"
+  },
+  {
+   "id": "pichai",
+   "name": "순다르 피차이",
+   "en": "Sundar Pichai",
+   "role": "알파벳(구글) CEO",
+   "x": "sundarpichai",
+   "truth": null,
+   "img": null,
+   "img_credit": null,
+   "n": 0,
+   "latest": null
+  },
+  {
+   "id": "jassy",
+   "name": "앤디 재시",
+   "en": "Andy Jassy",
+   "role": "아마존 CEO",
+   "x": "ajassy",
+   "truth": null,
+   "img": null,
+   "img_credit": null,
+   "n": 0,
+   "latest": null
+  },
+  {
+   "id": "dimon",
+   "name": "제이미 다이먼",
+   "en": "Jamie Dimon",
+   "role": "JP모건 CEO",
+   "x": "",
+   "truth": null,
+   "img": null,
+   "img_credit": null,
+   "n": 14,
+   "latest": "2026-10-20T06:53:00+00:00"
+  }
+ ],
+ "items": [
+  {
+   "person": "musk",
+   "kind": "news",
+   "src": "Benzinga",
+   "text": "로스 거버, 머스크의 테슬라 로드스터 공개에 “마케팅용 시연일 뿐”",
+   "url": "https://news.google.com/rss/articles/CBMi1gJBVV95cUxOWE8tTVFxVXJxNXZ2OGEwdkhBR0RZQmhiR2tEVy1scUZ2UkFneThVVVZOa0tsM2g1VkVheDhXdnpoM2FVdml1c3RYUmJIb0o5c0pXRi1Eal9pb0N4ZTJTQzhhRzg5UWpNOEw1M1ozMGtuYWNyTEVlenI5akNoNXNOYzBlV05DQlY4ajdjOFRPeHVVbWFNenh3aWZnLWJHU2p1OTZFdlY1OFVPSTB4T1AzcHRpbWthUFVfQnRtOXRuMktyVnFRNjk5aHFyODdVUHBZZWQtNk5EUmg4VXFmUzBEVVJrUkRNRzFzRk9UR2lCM2diSy1fMWQzR0hhRUdOaVJsOFoyNUVEd0dSYkt1VHc4U3ZVNUJZVGtIdU5nT2RKTnpEOWpabUFGLWI1dkY2bmNDTDJyb3FNM0RIZW5HdzN6cjJUa25LUGo2d2RfVFVDOGRKX1VFTEE?oc=5",
+   "at": "2026-10-20T07:22:36+00:00",
+   "lang": "ko",
+   "id": "da6255bc4b"
+  },
+  {
+   "person": "dimon",
+   "kind": "news",
+   "src": "The Times of India",
+   "text": "America's largest bank CEO Jamie Dimon makes it clear at earnings call that not giving AI Agents access t",
+   "url": "https://news.google.com/rss/articles/CBMi4AJBVV95cUxOM0p3R2wzai1ab3ZZRWhYY2t3T2ptdFltTVJzNE5pWURhaXY1cTRRc1NFVHJUbXd3WjlEUHdDaHlDMFViUDlkV0EyWFJtbHNZRGhCcHNpQW1aNGdMb0dBYXF1a3lmc1o0ZjU3RDNiZThBTkZFQkNadWNlYUdqb0oxMFc0b3BaN1FsUHVKSktsWjVhNWo4ZG9HOXZqU0dGM2YtSloweEdzRy0zTWd6dGNBajhBd3FzUlJCT1QyeEt5N21qY3JGT2pfMDNBZWJUbUN0cmZ3RVVVZGpOR2xYWkNzaG9lbzBwaGpGYmdEUXhfd3VPQUhEaHRlUUVhWU9EZzFfUnl4WngwRmxwdmF1Q0FYVkR2ZElVenJ6bEYtNTBEOFpsRERtY1JpV0NhaHNJQ29HWmpXTjNWazFPYUlNbjRTdjhFU2IzSnZoZHBiMTdtOVRiMWhFenlMN25UMVlGUy1q0gHmAkFVX3lxTE4xbjRvOGdmalJQdFh5RkF1VlBEMmpEcXpFUllkVDk5U3lfUzJGaFZNeE82MU92N2lkSWY0ZjNhWkFHemhTM2ZHOWc4NFlkSXVuaU0yVGRCREh4NlJOaEdGbm1JLWNaeUJDNjJlTVQwVlQxalZCOXJOT1Frc3VadUhXQ3puOXZzbk5qNGQtdkx6aFRnLUQ2eWUtVmkyWjZkRFc2cUo0YXlIZDRKZ1ltZ0FFOWlqdFFJR1FKRFZPdXdja1ptUXI2NGJvdkU3THhhb2N2OTFhb1NFX2FGTXV1d2l2RGw0T084N0JvMThOQ1RDaU10TW9ISV9xU1M1cnN2ZGpIckZMRVFubmZlUUIxMTliWTVWNFNiQ3BsM3ZJNFpNRzJndkY0RXRFRlFBVHNTRE5nUDlmcjZLYl9sclNXZkZFTk9uYWluQjdGMk1UWEN3cnNXaXZheTZCcXg2b1RnYV9ubjlwVHc?oc=5",
+   "at": "2026-10-20T06:53:00+00:00",
+   "lang": "en",
+   "id": "1510dc611c"
+  },
+  {
+   "person": "huang",
+   "kind": "news",
+   "src": "파이낸셜뉴스",
+   "text": "Germany to Sign AI Pact With Nvidia After Jensen Huang's Criticism",
+   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9pYWl4bHZSRUpPOGhqdzNzZndVNWNVc1JxdVVQWmFwWVo4VnBjNUlCSzJxR2ZoZEF3UnJKWVVmRlJQN0xJb3dMMGRteUs4Z0ZSZjRZZDRGRm4?oc=5",
+   "at": "2026-10-20T06:19:31+00:00",
+   "lang": "en",
+   "id": "dc1d489c65"
+  },
+  {
+   "person": "musk",
+   "kind": "news",
+   "src": "Benzinga",
+   "text": "Elon Musk Just Dropped a Big Hint About SpaceX’s $28.5 Trillion Opportunity — ‘It Is Vastly Higher Than T",
+   "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNNmZYeTlaekZCdE5NNF9OaVVtem81UnQtVk8tbGJaNEF1dUJOVXU3c2RHcFlTU1BsOHNYRGVnNHdheUdQMUlvd2M3a1hvQWl2dnFYa2x0aW5XSDF6WVgyVlR6OEFrWHN5UHo0a3BZUHlRa2NmRnRFR3dxOUV5RjZWaWpaV1Bhb2hDeW1FeExDeDJ0T0E3TEVCMzFqd2RxTkhLRmIzWC1OWWlEakJraWxleFZ2N0RPLXZJanR1UzNsY3hxZWszUExUNG9MWnViWVM5YzEwU0NWbzF4UFBlYVQtMmFHRjgyV2JHNTRlOQ?oc=5",
+   "at": "2026-10-20T06:19:21+00:00",
+   "lang": "en",
+   "id": "dd950467de"
+  },
+  {
+   "person": "zuckerberg",
+   "kind": "news",
+   "src": "IOL",
+   "text": "Mark Zuckerberg slammed again on screen in 'The Social Reckoning' movie",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOUlNjTTM3REttMWs0MTJoWE5EaUR4blZxelF0UkdvR2ZvZFVVR2txUDE3LWdmNHA0MmZQMXk0NWdGckxiT1VVd0kxQ0FjN2hsTFMzWUxDNGZFRkVzS1RDallWdmp2dXVjS1RFR0VkRTdkWXZKajF4X1pTcUVmOWxtRzRxcEVaNzFWenJGZjBkV3kySnoxZzlNN1REVmV3aVM1UlJmUk12SUhpa2c3bWZ1WlN3SmR1enN5TUVUM2JrZmxWMldmUEc3cEUtMjM?oc=5",
+   "at": "2026-10-20T05:30:28+00:00",
+   "lang": "en",
+   "id": "d78325ba10"
+  },
+  {
+   "person": "trump",
+   "kind": "news",
+   "src": "BBC",
+   "text": "How is the US economy really doing under President Trump?",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBqRmtfa3RCcTJzNmZEOUxnT0VIN0NGVTg1cU9SOUQyaS1na0ZDaGJ3WFdnSWNza1pscWh4bk9RTlhaVG9Zd1dwMENtNHhXZXVFOU1pM3U2cUVKTTg?oc=5",
+   "at": "2026-10-20T05:00:45+00:00",
+   "lang": "en",
+   "id": "d40f1f7d49"
+  },
+  {
+   "person": "trump",
+   "kind": "post",
+   "src": "Truth Social",
+   "text": "Trace Gallagher, of FoxNews, is a very talented journalist, and a wonderful guy. He also happens to be “street smart,” and wise! His new book, “Turns Out They Were Right All Along,” which is a Top Seller, is FANTASTIC. Get it now! President DONALD J. TRUMP",
+   "url": "https://truthsocial.com/@realDonaldTrump/117471449851979312",
+   "at": "2026-10-20T04:54:34+00:00",
+   "lang": "en",
+   "id": "e87ce34125"
+  },
+  {
+   "person": "trump",
+   "kind": "post",
+   "src": "Truth Social",
+   "text": "Trump says voters should ‘look at France’ to see ‘what’s at stake’ in midterm elections:",
+   "url": "https://truthsocial.com/@realDonaldTrump/117471344462712217",
+   "at": "2026-10-20T04:27:46+00:00",
+   "lang": "en",
+   "id": "39d8a1501f"
+  },
+  {
+   "person": "trump",
+   "kind": "news",
+   "src": "The Washington Post",
+   "text": "Tracking Trump: Trump attacks Zelensky; Putin proposes meeting with U.S., China; Trump calls judge a ‘lunatic’; and more",
+   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNaVJRVUUzX1c3RHQ5WlVCNHRkM2pkdEpEOHhxZFNCZ2k5SDdUT3gzRFl2dFhxM05qVHJCYWNFX2pMSXlHcGhhYmpYaHRmSnV5a0h2Nzg0TW9ReU5jdmpoanBMaXFONmJyb1ljYkt5cS1vM2diV19BQ2RVUnp2RmdaWlhTWnAxUUoydW5MbjlIdmpXSGZwZkZoUVdSb1Rtc25VNEJRcV9zS2F4RlI2WFUwQjZrYWxhRjMzREJyUWlkcTZ2UHFNOEhzb2hPR0JkY25YSG13TW5jY20wSE81dExOOFpTb2V5V0hrZzFJUGctMWtEazhCZmE4?oc=5",
+   "at": "2026-10-20T04:24:47+00:00",
+   "lang": "en",
+   "id": "532a7347e6"
+  },
+  {
+   "person": "trump",
+   "kind": "post",
+   "src": "Truth Social",
+   "text": "Trump's Kansas Crowd 'Blew the Roof Off the Arena':",
+   "url": "https://truthsocial.com/@realDonaldTrump/117471257185488161",
+   "at": "2026-10-20T04:05:34+00:00",
+   "lang": "en",
+   "id": "8f50517de0"
+  },
+  {
+   "person": "trump",
+   "kind": "post",
+   "src": "Truth Social",
+   "text": "59 Cities throughout the World have a Triumphal Arch. Washington, D.C., is the only one that doesn’t. With the Arc de Triomphe, in Paris, under siege by the Radical Left Lunatics who have taken over the country, we will assume only 58 remain! President DONALD J. TRUMP",
+   "url": "https://truthsocial.com/@realDonaldTrump/117471239022307669",
+   "at": "2026-10-20T04:00:57+00:00",
+   "lang": "en",
+   "id": "5f828fc893"
+  },
+  {
+   "person": "trump",
+   "kind": "post",
+   "src": "Truth Social",
+   "text": "“Trash Island,” Washington, D.C., the nickname for the broken and dilapidated Golf Course that is the subject of frivolous litigation in the United States Court System, before a judge that seems not to want Greatness for our Capital or our Nation (but who knows?), has been badly managed for so many decades that it is a completely nonviable and unsafe Project. Our Plan, developed to the Highest Levels and Standards of Golf, will turn Trash Island into an Island of Beauty and Success! It will be one of the Most Wonderful and Spectacular Golf Courses anywhere in the World. The United States Depar",
+   "url": "https://truthsocial.com/@realDonaldTrump/117471169697500011",
+   "at": "2026-10-20T03:43:19+00:00",
+   "lang": "en",
+   "id": "a4f45cd24c"
+  },
+  {
+   "person": "warsh",
+   "kind": "news",
+   "src": "연합인포맥스",
+   "text": "BofA \"연준 10월 금리인상 전망 유지…워시 믿어보기로\" |",
+   "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5SZDE1Q1NCWXdMSU5rZ1AzU0xiMkJIVzJtc1hEdkR4elVNQjBKQTZxb1IwMFk3UzBhTXY3a0tJck9OR0dobk9FS0tWaXBxa3VhRkZZRFo5RU50Zk1zTERQcDdRMXhvZVhMRWl2UEtnZ3U3d2FO?oc=5",
+   "at": "2026-10-20T03:32:02+00:00",
+   "lang": "ko",
+   "id": "182e2ff10b"
+  },
+  {
+   "person": "zuckerberg",
+   "kind": "news",
+   "src": "Mashable",
+   "text": "Mark Zuckerberg attempting to drink Guinness goes predictably viral",
+   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5Ba1FCZWFkNU5kSVFFMXYydTdVUDV5eHEwbEQ2ZzZpdFR1LUF5VTB2eG9GZ0pGc29CUkpfTGFHam55QkNaVzhPQndzUUY4ZGtQN1VmRXJjd0wwVXZFX2hJ?oc=5",
+   "at": "2026-10-20T02:04:27+00:00",
+   "lang": "en",
+   "id": "213bc667ba"
+  },
+  {
+   "person": "altman",
+   "kind": "news",
+   "src": "연합뉴스",
+   "text": "올트먼, AI 안전개발 세갈래 제시…\"IAEA형 기구 선호\"",
+   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5FOGRRTERHd19NWXdhX3FQRGZkY2J4bGw2VzlWVFRUM2dZbUwwT3hkVDRGYzBwdDMxVHpab2pEQkFwTFdJN2NOY1FBamtobHNYMVVtZ1ZZUWdmYVkyVjdCZ9IBYEFVX3lxTE5FOGRRTERHd19NWXdhX3FQRGZkY2J4bGw2VzlWVFRUM2dZbUwwT3hkVDRGYzBwdDMxVHpab2pEQkFwTFdJN2NOY1FBamtobHNYMVVtZ1ZZUWdmYVkyVjdCZw?oc=5",
+   "at": "2026-10-20T02:02:04+00:00",
+   "lang": "ko",
+   "id": "c2b47624b5"
+  },
+  {
+   "person": "huang",
+   "kind": "news",
+   "src": "조선일보",
+   "text": "젠슨 황에게 배운 투자법… 엔비디아 출신 VC \"창업자 평가, 실패 극복이 중요 요소\"",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNei1wbm9GbF9yY1Z6VVd6akNDRi0ySGl4dzJLdHZvTlVmNGUzMHo2U0UxMlBvc1QwZGhhQWVVa3R0WjBYMXZfWWZubVJ3eFFUVXJrMnV2bGwtZnNHTlc3RlNZRFFCbi03VXZTb2VPa0tqMU5lUHlnWkJZWG9VSllrN0VQRQ?oc=5",
+   "at": "2026-10-20T01:43:00+00:00",
+   "lang": "ko",
+   "id": "6f638c78be"
+  },
+  {
+   "person": "trump",
+   "kind": "post",
+   "src": "Truth Social",
+   "text": "We must defeat Crazy Cindy Holscher, and elect Ty Masterson to be the next Governor of Kansas. Cindy Holscher is the Most Radical Candidate ever to run for Kansas Governor. Even Laura Kelly said Holscher is too extreme. Cindy Holscher supported RAISING your Property Taxes, and stripping Parents of their Parental Rights. She voted for Men in Women’s Sports, and Men in Girls’ Locker Rooms. She said that Jesus was gay and transgender, and that her role model, as Governor, would be Gavin Newscum, which means Homelessness, Corruption, High Crime, and High Costs. GET OUT AND VOTE FOR TY MASTERSON! P",
+   "url": "https://truthsocial.com/@realDonaldTrump/117470630578550684",
+   "at": "2026-10-20T01:26:13+00:00",
+   "lang": "en",
+   "id": "e8f4d80aa8"
+  },
+  {
+   "person": "altman",
+   "kind": "news",
+   "src": "primetimer.com",
+   "text": "Sam Altman accuses sister Ann of using abuse lawsuit to \"drive traffic\" to her social media and podcasts",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOS1J6SjdmV0pFRGlhNy13QjVQX1VnaHlLTWFhR2ZrT1BsZHN5OF9mdE1MRmFmQXJ3Z3Q3WnJGbmdVbGJ6YjZJeG5FVUFjcVp1R1FMNWl1M0dRbjY3bVc2bDE1bjhQOXM2SlpTaUthVkFzeWoycTJaYzY2UE9wdDlqb1hMRHdPMkFTX2Q0MTA2cEtPU1Z1OVp6RFAtS0dYcnBfcU1ZcUVGaHRqTXR0TUw4dkZrcTZnSkF2bDlrbWhELTI1MG1pbUpBZ3dZRXVfRHc?oc=5",
+   "at": "2026-10-20T01:26:00+00:00",
+   "lang": "en",
+   "id": "e2523fd4d1"
+  },
+  {
+   "person": "trump",
+   "kind": "post",
+   "src": "Truth Social",
+   "text": "Roger Marshall is all that stands between the people of Kansas and Communists controlling the United States Senate. Unlike Adam Hamilton, he is endorsed by the N.R.A. and the Kansas Farm Bureau. He will vote for Low Taxes, Less Regulations, a thriving Kansas Oil and Gas Industry, and NO Illegal Immigration! President DONALD J. TRUMP",
+   "url": "https://truthsocial.com/@realDonaldTrump/117470610998962876",
+   "at": "2026-10-20T01:21:14+00:00",
+   "lang": "en",
+   "id": "9aa9bbf404"
+  },
+  {
+   "person": "trump",
+   "kind": "post",
+   "src": "Truth Social",
+   "text": "On Election Night, Kansas is going to prove that America does not belong to those who HATE IT, America belongs to those who LOVE IT! President DONALD J. TRUMP",
+   "url": "https://truthsocial.com/@realDonaldTrump/117470606096661361",
+   "at": "2026-10-20T01:19:59+00:00",
+   "lang": "en",
+   "id": "8be2496f80"
+  },
+  {
+   "person": "trump",
+   "kind": "post",
+   "src": "Truth Social",
+   "text": "We achieved more in two years than any other presidency in the History of our Country, but now, the Radical Left Dumocrats want to burn it all down. Every single Dumocrat in Congress voted AGAINST our Record Tax Cuts, AGAINST No Tax on Tips, AGAINST No Tax on Overtime, and AGAINST No Tax on Social Security for our Great Seniors. They voted against VOTER I.D., against Proof of Citizenship, AGAINST securing the Border. They voted IN FAVOR of the Worst Inflation and Highest Energy Costs in American History, IN FAVOR of the Transgender mutilization of your Children, and IN FAVOR of Men in Women’s ",
+   "url": "https://truthsocial.com/@realDonaldTrump/117470605435315443",
+   "at": "2026-10-20T01:19:49+00:00",
+   "lang": "en",
+   "id": "402dc968f5"
+  },
+  {
+   "person": "trump",
+   "kind": "post",
+   "src": "Truth Social",
+   "text": "We abolished all discriminatory “Diversity, Equity, and Inclusion” policies throughout the Federal Government. We got Critical Race Theory and Transgender insanity out of our Schools, and we made ENGLISH the Official Language of the United States! President DONALD J. TRUMP",
+   "url": "https://truthsocial.com/@realDonaldTrump/117470600629608396",
+   "at": "2026-10-20T01:18:36+00:00",
+   "lang": "en",
+   "id": "f69f62b2ae"
+  },
+  {
+   "person": "trump",
+   "kind": "post",
+   "src": "Truth Social",
+   "text": "Just today, I signed a Historic Executive Order on Women’s Health, supported by our incredible First Lady. With Melania’s leadership, we are creating a new Women’s Health Division at our National Institutes of Health, to promote new Research, Technology, and Treatments, and ensure American Women have access to the Best Healthcare anywhere in the World! President DONALD J. TRUMP",
+   "url": "https://truthsocial.com/@realDonaldTrump/117470599886832710",
+   "at": "2026-10-20T01:18:24+00:00",
+   "lang": "en",
+   "id": "8bad53399b"
+  },
+  {
+   "person": "trump",
+   "kind": "post",
+   "src": "Truth Social",
+   "text": "Under my Most Favored Nation Agreements on Drug Prices, we went from paying the HIGHEST Drug Prices anywhere in the World, to paying the LOWEST Drug Prices, with Price Differences of 300, 400, 500, 600, or even 700%! President DONALD J. TRUMP",
+   "url": "https://truthsocial.com/@realDonaldTrump/117470598444052539",
+   "at": "2026-10-20T01:18:02+00:00",
+   "lang": "en",
+   "id": "f837e632a8"
+  },
+  {
+   "person": "trump",
+   "kind": "post",
+   "src": "Truth Social",
+   "text": "Two weeks ago, I signed an Executive Order waiving the Off-Road requirement for Red-Dye Diesel, allowing Farmers, Truckers, and anyone else to fill up with Diesel totally TAX FREE. Here in Kansas, your Dumocrat Governor, Laura Kelly, is REFUSING to give you this much-needed relief. If you want low-cost Diesel Fuel, you must VOTE FOR TY MASTERSON FOR GOVERNOR! Tonight, I am also pleased to announce that the Department of Agriculture will be launching a new “Harvest Fuel Relief Program,” providing our Farmers with 8 BILLION DOLLARS in support to offset Diesel costs during this Harvest Season, an",
+   "url": "https://truthsocial.com/@realDonaldTrump/117470597708924695",
+   "at": "2026-10-20T01:17:51+00:00",
+   "lang": "en",
+   "id": "6e74aae140"
+  },
+  {
+   "person": "trump",
+   "kind": "post",
+   "src": "Truth Social",
+   "text": "To protect Family Farms, we ended the unfair Estate Tax, or Death Tax. My Administration also announced the Highest Biofuel Production Targets in History, which will create 4 Billion Dollars in new Farm Income and demand for Kansas Farmers. I also gave Kansas a waiver to sell E-15 All-Year-Round and, with Roger Marshall in the Senate, we will make Year-Round E-15 PERMANENT! President DONALD J. TRUMP",
+   "url": "https://truthsocial.com/@realDonaldTrump/117470595904971292",
+   "at": "2026-10-20T01:17:23+00:00",
+   "lang": "en",
+   "id": "8552057028"
+  },
+  {
+   "person": "trump",
+   "kind": "post",
+   "src": "Truth Social",
+   "text": "Thanks to a Republican Congress, I signed THE GREAT BIG BEAUTIFUL BILL, delivering THE LARGEST TAX CUTS IN AMERICAN HISTORY. We gave you NO TAX ON TIPS, NO TAX ON OVERTIME, and NO TAX ON SOCIAL SECURITY for our Great Seniors! President DONALD J. TRUMP",
+   "url": "https://truthsocial.com/@realDonaldTrump/117470594815032154",
+   "at": "2026-10-20T01:17:07+00:00",
+   "lang": "en",
+   "id": "680bc4aec4"
+  },
+  {
+   "person": "trump",
+   "kind": "post",
+   "src": "Truth Social",
+   "text": "Since I took Office, we achieved the largest drop in Violent Crime EVER RECORDED. The Murder Rate is at the lowest level in 125 years, since the year 1900! President DONALD J. TRUMP",
+   "url": "https://truthsocial.com/@realDonaldTrump/117470593220109602",
+   "at": "2026-10-20T01:16:42+00:00",
+   "lang": "en",
+   "id": "502bac9520"
+  },
+  {
+   "person": "trump",
+   "kind": "post",
+   "src": "Truth Social",
+   "text": "We inherited the Worst Border in American History, and we turned it into the Strongest and Most Secure Border in the History of our Country. In the past 17 months, ZERO Illegal Aliens have been admitted to the United States! President DONALD J. TRUMP",
+   "url": "https://truthsocial.com/@realDonaldTrump/117470592459221432",
+   "at": "2026-10-20T01:16:31+00:00",
+   "lang": "en",
+   "id": "d9f4174741"
+  },
+  {
+   "person": "trump",
+   "kind": "post",
+   "src": "Truth Social",
+   "text": "The choice in this Election is very simple. You can vote for the Radical Left Dumocrat Communists to loot your Wealth, raise your Taxes by 5 Trillion Dollars, annihilate your Borders, decimate Kansas Farms, mutilate your Children, and give 25 Million Illegal Aliens Amnesty and the Right to Vote. OR, you can DEFEAT the Dumocrat Communists, and VOTE FOR MORE MONEY IN YOUR POCKETS, BIGGER PAYCHECKS FOR YOUR FAMILIES, LOWER TAXES, LESS CRIME, A BOOMING KANSAS ECONOMY, AND NO AMNESTY FOR ILLEGAL ALIENS. YOU MUST VOTE REPUBLICAN! President DONALD J. TRUMP",
+   "url": "https://truthsocial.com/@realDonaldTrump/117470591632121393",
+   "at": "2026-10-20T01:16:18+00:00",
+   "lang": "en",
+   "id": "5efd87c9d0"
+  },
+  {
+   "person": "trump",
+   "kind": "post",
+   "src": "Truth Social",
+   "text": "Less than two years ago, Radical Left Dumocrats handed us the DARK AGE of America, but we quickly turned it into the GOLDEN AGE of America. Despite all the damage Dumocrats caused, our Nation is doing better now than ever before, but the Fake News Media refuses to talk about our Record Setting Numbers, so today, I AM GOING TO DO IT MYSELF:It was just announced that under Republican Leadership, Incomes for Hardworking Americans have soared to the Highest Level EVER RECORDED. More Americans are working today than at any time in the History of our Country! The Poverty Rate has just reached its lo",
+   "url": "https://truthsocial.com/@realDonaldTrump/117470533012557706",
+   "at": "2026-10-20T01:01:24+00:00",
+   "lang": "en",
+   "id": "b72a56cfa6"
+  },
+  {
+   "person": "trump",
+   "kind": "news",
+   "src": "Reuters",
+   "text": "Trump says Mexico and US are close to trade deal",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPX3Bkc0ZpcWlrNVo2Y0VQaUlDNFdrXzB5Vmg1OHBLZFd0UVd3dnJkV1QxY2FUWTYyMHlzUHc0NjVoR0U0dllIZGtTZGpoY05xcDlxdVU2cWxNVG92VTNablpxbE5ubUdUWFRidzN0V0c0ZFJGUlY3NnNvbk1LVE1idVFKUUNyS3RPRTQ1NWJmdGZmMUhxQm5j?oc=5",
+   "at": "2026-10-20T01:00:00+00:00",
+   "lang": "en",
+   "id": "a89e23e261"
+  },
+  {
+   "person": "trump",
+   "kind": "news",
+   "src": "머니투데이",
+   "text": "트럼프, 비핵화 의제라지만…우크라이나 빼고 중·러와 회담 시사 - 머니투데이",
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBraUtKTDQwTl82NWhhajZsZTR6bVkzOHNGMjZZWWcyME1pLU1wWVVKbU5BU1lFSGlWM0ZQM1RSdjZ5MnVvYjllVFFTZi1ZT3NjbG1GOUhiWGoxaGNWNVJfS3hpNmhQYmNxRWVxQmxn0gFuQVVfeXFMUGtpS0pMNDBOXzY1aGFqNmxlNHptWTM4c0YyNllZZzIwTWktTXBZVUptTkFTWUVIaVYzRlAzVFJ2NnkydW9iOWVUUVNmLVlPc2NsbUY5SGJYajFoY1Y1Ul9LeGk2aFBiY3FFZXFCbGc?oc=5",
+   "at": "2026-10-20T00:43:19+00:00",
+   "lang": "ko",
+   "id": "58cb73f15d"
+  },
+  {
+   "person": "huang",
+   "kind": "news",
+   "src": "뉴시스",
+   "text": "젠슨 황 \"AI는 인간 역량 강화, 대체하진 못해\"",
+   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE43T1pOYWdFV2QtaHBPd3V4STFTVDBlUXFWNUdMYTRTNGZYamY0TDYycHV1U285LXA2andnZUxDdkZ6dVBYaHVRcUpYV0FYU1NVQWxVQnNMUTFZSWszUFdLX0RGM2FpSi1ZOVdrTEVLZkFmZHNYQWVZcdIBeEFVX3lxTE43T1pOYWdFV2QtaHBPd3V4STFTVDBlUXFWNUdMYTRTNGZYamY0TDYycHV1U285LXA2andnZUxDdkZ6dVBYaHVRcUpYV0FYU1NVQWxVQnNMUTFZSWszUFdLX0RGM2FpSi1ZOVdrTEVLZkFmZHNYQWVZcQ?oc=5",
+   "at": "2026-10-20T00:41:47+00:00",
+   "lang": "ko",
+   "id": "add0bfe092"
+  },
+  {
+   "person": "huang",
+   "kind": "news",
+   "src": "뉴시스",
+   "text": "메르츠 독일 총리와 대담하는 젠슨 황 CEO",
+   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1GSlRnMmoxN3NwMDBYLVZlMVBNSHItVjF6SlMzdnYxZEFCaE9fQmxyb1JNZTFLNmgzTU9tWDVIUXd2X3VCYV9aOHJGRDRJZTlJby1lenBMZzdGdThTOFRWUHhtNC1qRWJlZk52RTJqbGxyLWVWRVZRbNIBeEFVX3lxTE1GSlRnMmoxN3NwMDBYLVZlMVBNSHItVjF6SlMzdnYxZEFCaE9fQmxyb1JNZTFLNmgzTU9tWDVIUXd2X3VCYV9aOHJGRDRJZTlJby1lenBMZzdGdThTOFRWUHhtNC1qRWJlZk52RTJqbGxyLWVWRVZRbA?oc=5",
+   "at": "2026-10-20T00:41:47+00:00",
+   "lang": "ko",
+   "id": "02c1ed3e78"
+  },
+  {
+   "person": "trump",
+   "kind": "post",
+   "src": "Truth Social",
+   "text": "The last time the Radical Dumocrats had power, they gave us the Worst Inflation in American History, the Highest Energy Prices in American History, the Worst Trade Deficit in American History, they allowed 25 million people to pour across our Borders from all over the World and, if they win the Midterms, they will DO IT ALL AGAIN! President DONALD J. TRUMP",
+   "url": "https://truthsocial.com/@realDonaldTrump/117470443395506989",
+   "at": "2026-10-20T00:38:36+00:00",
+   "lang": "en",
+   "id": "aca386c415"
+  },
+  {
+   "person": "trump",
+   "kind": "post",
+   "src": "Truth Social",
+   "text": "Senator Roger Marshall’s opponent, Adam Hamilton, is a Radical Left Phony who is pretending to be a moderate because he does not have the courage to tell Kansas the truth about who he really is. Hamilton opposed my Travel Ban to keep Terrorists and Extremists out of our Country. He supports flooding Kansas with unvetted refugees from the most dangerous places on earth. Adam Hamilton used church dollars to fund anti-religious transgender activists who openly mock Jesus. He promotes a document listing 125 different genders, and directs his followers to 7 different websites to make children trans",
+   "url": "https://truthsocial.com/@realDonaldTrump/117470441097872597",
+   "at": "2026-10-20T00:38:01+00:00",
+   "lang": "en",
+   "id": "b332d2fc1c"
+  },
+  {
+   "person": "trump",
+   "kind": "post",
+   "src": "Truth Social",
+   "text": "The Dumocrats are the Party of Abdul Mohammed al-Sayed, Ilhan Omar, Rashida Tlaib, A.O.C., James TalaFREAKO, Elizabeth “Pocahontas” Warren, Maxine Waters, Chuck Schumer, and Nancy Pelosi, representing all the Fraudsters, Thieves, and Thugs driving around in luxury cars, while receiving welfare checks paid for by American Taxpayers. A vote for ANY Democrat this year is a vote to let that small and dangerous group of Extremists hold all of America hostage. In 15 days, we are going to re-elect Roger Marshall, and DEFEAT the Communists, Jihadists, and corrupt anti-American Lunatics once and for al",
+   "url": "https://truthsocial.com/@realDonaldTrump/117470395373605336",
+   "at": "2026-10-20T00:26:24+00:00",
+   "lang": "en",
+   "id": "6a98fe41b0"
+  },
+  {
+   "person": "trump",
+   "kind": "post",
+   "src": "Truth Social",
+   "text": "The Dumocrat Agenda is a plan to extinguish Western Civilization. They want to open the Borders, shut down the Power Plants, set loose the Criminals, turn your Children transgender, confiscate your money, and raise up the Palestinian Flag, while they defile the American Flag. All of us here tonight represent the Greatest Nation in World History, with the most extraordinary People, the most incredible Art, most Advanced Technology, the most Exceptional Culture ever to exist and, perhaps most importantly, the Greatest Military in the World — and we will not let anyone take it away! President DON",
+   "url": "https://truthsocial.com/@realDonaldTrump/117470380723173497",
+   "at": "2026-10-20T00:22:40+00:00",
+   "lang": "en",
+   "id": "f18ffc133c"
+  },
+  {
+   "person": "trump",
+   "kind": "post",
+   "src": "Truth Social",
+   "text": "If you want to see what is at stake in this Election, just look at what is happening in France — A once-great nation that is being conquered, looted, and burned to the ground by migrants, jihadists, and Communists who hate Christianity, and Western Civilization, itself. As we are seeing in Europe, Globalist Leftwing Politicians have treasonously imported millions of Third World Migrants who are totally incompatible with Western Values, and despise everything that makes France great. They have surrendered their country to vandals who could have never built it themselves, and who refuse to assim",
+   "url": "https://truthsocial.com/@realDonaldTrump/117470376164503349",
+   "at": "2026-10-20T00:21:30+00:00",
+   "lang": "en",
+   "id": "aab969acf0"
+  },
+  {
+   "person": "trump",
+   "kind": "post",
+   "src": "Truth Social",
+   "text": "15 days from now, the People of Kansas are going to RE-ELECT the great ROGER MARSHALL to the United States Senate, elect Ty Masterson as your next Governor, and we are going to WIN a Republican House and a Republican Senate! In this Election, I am asking you to pretend I’m on the Ballot. When I’m on the Ballot, 48% more people show up. Please pretend I’m on the ballot. Early Voting in Kansas is available in many areas RIGHT NOW, and across the State on October 27th. The deadline to request a Mail-In Ballot is also October 27th, and return it by Election Day, November 3rd.  Whatever you do, GET",
+   "url": "https://truthsocial.com/@realDonaldTrump/117470368203080253",
+   "at": "2026-10-20T00:19:29+00:00",
+   "lang": "en",
+   "id": "571b546d77"
+  },
+  {
+   "person": "musk",
+   "kind": "news",
+   "src": "Semafor",
+   "text": "Musk to gift SpaceX shares to American children",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNNmxVUU9jOGVwV3p1SDhkajAydlMtLUZaSTdqMXZ4T3JRMEhHT3FEVTRDWlRsN0Q2U3BMWG5jQ1hkUG5YSEd3MDd2OEpfa21sMmlYbU1wYWhIVnRpZ1daNkg1WUJZM3M5X2FxZURQNng1NjdYRVl5WnU2M3ZPbjRUUk9xdzRIRVlKQW1LX3cxemh2S01w?oc=5",
+   "at": "2026-10-20T00:10:00+00:00",
+   "lang": "en",
+   "id": "97bcc8cf42"
+  },
+  {
+   "person": "cook",
+   "kind": "news",
+   "src": "Stocktwits",
+   "text": "MU Stock Gains On Micron's $10B AI Memory Bet – Nvidia's Jensen Huang, Apple's Tim Cook Back Research Push",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPMFlaTERXVHBlYkFrTHZURU45YlBUNW1UemNaQmVXTVBOSWswV2JybjgtbWRvLXI2QjdtMzY4YmZ4b24tRVpweEQtLVF5Rlo2N0ZtWXkzd2tFOWdQaUg4ektDXzI0Unl2ZDVTNGNIU2p3aFdFMktCdnBqblZUSlBWczVYaThFQVVaOE5SVU5MWjZLZE9wbFZLbFo2MktjcU0yeTg3ZzR4SV9Od1RuWlpTZjZ0cTdOemVab0I1ajZ2b3Fzdw?oc=5",
+   "at": "2026-10-20T00:06:29+00:00",
+   "lang": "en",
+   "id": "9558988769"
+  },
+  {
+   "person": "altman",
+   "kind": "news",
+   "src": "The Information",
+   "text": "Altman Describes Three Endgames for AI, Including One Where a Single Firm ‘Melts Everyone Else’s GPUs’",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPZUFiX0dWX2hQMnh6dE1sME5MeWdsa1hDc2MwNjhoSVlxRW8wZEoxRHlBZTV0MFBSYnBmQmRRQ2xPcTIza3BodTVfR3paX2lyOFQweDNadTgzdmVCdWFBMlNJYWZnZkJzd2VJd1lkSXlRZnNGRU13VXFwWjdCR2ktMDN3LS1yX0p0dWQzdHIxdHlxSEVkU1VkTkk1Wnd4OGk2VS1lc3hLZ29wWUloREZLUUNLdnkta1RJRUZrckdFX045dGQz?oc=5",
+   "at": "2026-10-19T23:47:00+00:00",
+   "lang": "en",
+   "id": "0c534f7161"
+  },
+  {
+   "person": "warsh",
+   "kind": "news",
+   "src": "The Edge Malaysia",
+   "text": "Fed's Warsh sees US economic tailwinds, mum on rate-path view",
+   "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9PaWI4ajROdzhpMVdmZzhNQ1ZjSGtOc1FhVVdfWDVfeHNoa2pzWXNGbXZHZGNQTWJ1SnVzbWpNWEpYUFdDNHY2d2pkQlkwamEx?oc=5",
+   "at": "2026-10-19T23:46:07+00:00",
+   "lang": "en",
+   "id": "f629c2591d"
+  },
+  {
+   "person": "trump",
+   "kind": "news",
+   "src": "이데일리TV",
+   "text": "트럼프, 내달 김정은 회담 여부에 \"모르겠다\"…기대감 낮추나",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1keEczS0tnSEl6VmJSUHV1bGRUcG5CTVhFaWR5TmdBTlVsMm1jX3lMbFhJLTA0cTFfeWRXb2NzSkYtSDlJRTBjcDIteC1RdTVyZFpBMXFPOEZmTkVSVjRzNXJKQjFkdGVqS01tVDVpQlgtTmRTVDRMN1lWcw?oc=5",
+   "at": "2026-10-19T23:40:00+00:00",
+   "lang": "ko",
+   "id": "80ea1d7ba5"
+  },
+  {
+   "person": "lutnick",
+   "kind": "news",
+   "src": "뉴스1",
+   "text": "美 러트닉·버검 장관, 트럼프 유세 동행에 불법 정치활동 논란",
+   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5EVFRsbnJuTVYyRzVRXzd3U0pUWGhxOVloc21VY0l2d0dXQkExY29xdDBSYngxTGVuRm85a3J5X0tJTmFFemprVlI0VE42OE9nRml5V1BpRXE?oc=5",
+   "at": "2026-10-19T23:23:32+00:00",
+   "lang": "ko",
+   "id": "9a14f00c23"
+  },
+  {
+   "person": "huang",
+   "kind": "news",
+   "src": "머니투데이",
+   "text": "젠슨 황 \"AI 다음 물결은 피지컬 AI…다시는 이런 기회 없다\" [IT썰] - 머니투데이",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9YNllOWC1VamFwenE2ZlNBNFp5bzMzdzFuRHNKRy1COXJvS3EyQjAzellJMVU2c2ZmODVCVmRtTXpvVXh6bFNkNm5Sd2ZycHJhNnJ0aElyeFZYX1BDLXF2c3V6RWlxZGfSAWxBVV95cUxQT2Z0b2h5Y2dibTlzRE84Q1htNlhObjV2UHEydll3WjZ4azZyYV84cUxndGM5V253aVZnMUdQbU5NaUpqQVRsYl9taFBXNGh6alJIcTRESGk2cGg0YVFMMTlCeXlRQkVKNURuQ2w?oc=5",
+   "at": "2026-10-19T23:22:47+00:00",
+   "lang": "ko",
+   "id": "d8528a6135"
+  },
+  {
+   "person": "musk",
+   "kind": "news",
+   "src": "cbs19.tv",
+   "text": "Elon Musk says every child in America will get 1 SpaceX share next year",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPLVFENENzOVJKbW1tVmFLS01DV1ZMLUFmR3huYi1Pc3VCSk9HOGNqYTVnMndqY3E1QTVrLVUyeHVhT2IxUlZfeE5ualJ1T1RLenNNSFUtQ3FxMW1RMG5LYTBPNzRINndyNUcyZzNUdEhWMy1FRnBJb2pGbHBQVDZuZ0UzZ1dVUGI1NDhYU1I1bHpoR0FORGZBUDNFRTVMWGtaaDZodnJQS0hsWTQ0elp0Z3B3?oc=5",
+   "at": "2026-10-19T23:16:00+00:00",
+   "lang": "en",
+   "id": "8df1a29035"
+  },
+  {
+   "person": "dimon",
+   "kind": "news",
+   "src": "Yahoo Finance",
+   "text": "Jamie Dimon says AI will shrink the work week to 3.5 days and push incomes to $300K per person in 30 years",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOdFd2QWJ1ZTB2S3BCMmRhcWtnUUJSdzhQQlRseUVxTHJla0VVRk9lUXdNVjZIN2RLQWVyaDJSeDE5dzBxLWZPbUJiVXdYcmIxNTdDSElLejJ3b2NUUU96UlplQ0xDZklpT3ROTjlxZ2F5bFlwaFc1T19mUTd1dEZmcm9YT2RMU2JzclFDMFlpcEpBZ2lT?oc=5",
+   "at": "2026-10-19T22:44:00+00:00",
+   "lang": "en",
+   "id": "57fff0eadc"
+  },
+  {
+   "person": "trump",
+   "kind": "news",
+   "src": "시티타임스 CityTimes",
+   "text": "트럼프 “시진핑 원하면 푸틴과 3자 회담”…JP모건 “코어위브 부채 우려 과도, AI 사업성 견조” [오늘 아침 글로벌시장 핫이슈]",
+   "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5OR2N4OF9YX1FLSTVKWW92U2E0ZEdQLWxQMFhsVGNhYWJTYkI4VElWd1NQYmZSeFBrdFBFSVNpR2VNdGpOVlhpWUxNMEFreXdzZ1F4ZzFNX3ZPelVWYm5UdExIY05JTjhocFdoSkNvM0tQQdIBckFVX3lxTE5OR2N4OF9YX1FLSTVKWW92U2E0ZEdQLWxQMFhsVGNhYWJTYkI4VElWd1NQYmZSeFBrdFBFSVNpR2VNdGpOVlhpWUxNMEFreXdzZ1F4ZzFNX3ZPelVWYm5UdExIY05JTjhocFdoSkNvM0tQQQ?oc=5",
+   "at": "2026-10-19T22:42:13+00:00",
+   "lang": "ko",
+   "id": "99776fc547"
+  },
+  {
+   "person": "musk",
+   "kind": "news",
+   "src": "The Verge",
+   "text": "Elon Musk’s proposed SpaceX stock giveaway would go into ‘Trump Accounts’",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1VYmpGb0xmOGt6UDNtZ2Z6VXJzbGdrTEVBZVh0ZURtOFFjYmpYRWV2VkpGVTFlVDZScThrQU9BQ3hpUXZfeHJRdkd4U0tWNlIzZmlnaGx4MXE5TDdTU1hNNW5zQ09ZT2h5NmRUYXRNVC1ZSVlEb2JF?oc=5",
+   "at": "2026-10-19T22:30:42+00:00",
+   "lang": "en",
+   "id": "4bf7c47f38"
+  },
+  {
+   "person": "trump",
+   "kind": "news",
+   "src": "연합뉴스",
+   "text": "트럼프, 내달 中서 김정은과 회담 여부에 \"모르겠다\"(종합)",
+   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5YLW1EU01SOWdjMDIyOHJaNnAxVDVjc1BJR3ZQZlBWNUk5MU44QWxtem5jZlptMkJWTW0tTGJoSmFxYnVBb1hVd0tQNEtaY1hNdVR1MDhRbk81RkJWc09GQdIBYEFVX3lxTE5YLW1EU01SOWdjMDIyOHJaNnAxVDVjc1BJR3ZQZlBWNUk5MU44QWxtem5jZlptMkJWTW0tTGJoSmFxYnVBb1hVd0tQNEtaY1hNdVR1MDhRbk81RkJWc09GQQ?oc=5",
+   "at": "2026-10-19T22:18:06+00:00",
+   "lang": "ko",
+   "id": "2ef438146d"
+  },
+  {
+   "person": "musk",
+   "kind": "news",
+   "src": "The New York Times",
+   "text": "Elon Musk Says He Will Give a SpaceX Share to ‘Every Kid in America’",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQckE2dFR2Rkx1NUU3SG42MGRCRndvR1B1TVBEZHNZREQza1ZieFk4NXRoQkRDbUVvQ05WMHYzX19seFRGSG1idzlTMlZnTFVYSWpHOGc0dmJpQXdqUGR4MDBXM0YtdjNDMWpKT1hYQU9wNDAtVnJwa09YQWFLc0dfUTRuOW4yNE0xMXFCdzViUHJXU21ESlVR?oc=5",
+   "at": "2026-10-19T22:12:02+00:00",
+   "lang": "en",
+   "id": "46ff589d0e"
+  },
+  {
+   "person": "trump",
+   "kind": "post",
+   "src": "Truth Social",
+   "text": "Kansas Senate Dem nominee Adam Hamilton accused of shielding ‘child predator’ who volunteered for his church in mid-2000s:",
+   "url": "https://truthsocial.com/@realDonaldTrump/117469853201214681",
+   "at": "2026-10-19T22:08:31+00:00",
+   "lang": "en",
+   "id": "303d45fe86"
+  },
+  {
+   "person": "musk",
+   "kind": "news",
+   "src": "The Washington Post",
+   "text": "Elon Musk says he’ll give a SpaceX share to every American child",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPRklGSGE2QUJjNDV5WTllLXpaREpPTXFEU2lmQld4ZlJ4eDJ4N2J4b2F5eUg0VXpSdjkwOTJGU0RUSk9fMkVkZWFGYWxHQnI1QkE0X1VmOTFIVnBiek1STENoYVV3WnFLdmh0WVV0aENHQUFUUE1QOVZHa3Foel9hcC1DNmhocEJiZkwyQXZ3aHVtNDRnRnMxX1JFTTl4Nm9Obko4UFRmZk16QXF5cDJQRUdB?oc=5",
+   "at": "2026-10-19T22:06:06+00:00",
+   "lang": "en",
+   "id": "0df256994e"
+  },
+  {
+   "person": "warsh",
+   "kind": "news",
+   "src": "코인리더스",
+   "text": "미국, 12월 전 추가 금리 인상?...\"워시의 침묵이 곧 신호\"",
+   "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5UVE1peW9OamlSTlMyS1FiNEpMY044T1o5bnFXemRGVUhXeWVsWGhsVENsVzBLN0kyc3NKaVgyMXVQUDQzMHprNVhn?oc=5",
+   "at": "2026-10-19T22:00:00+00:00",
+   "lang": "ko",
+   "id": "f82bc6d51e"
+  },
+  {
+   "person": "trump",
+   "kind": "news",
+   "src": "파이낸셜뉴스",
+   "text": "美 트럼프, 다음달 미중러 정상회담 \"中이 원하면 할 것\"",
+   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4yMkNBQURlOEtDUkE3OG9ycEh0YkJWZzlBYjY4Y3NHRUczRHBER0F3Uk5mWjNmaGRFVHlJbk40a0FyMFhtUGtld25GZ01OYVZqWVgyMDVUMlRSQQ?oc=5",
+   "at": "2026-10-19T21:50:02+00:00",
+   "lang": "ko",
+   "id": "eb87a40945"
+  },
+  {
+   "person": "musk",
+   "kind": "news",
+   "src": "Yahoo Finance",
+   "text": "SPCX Stock Alert: Elon Musk Pledges to Give a SpaceX Share to Each Child in the U.S.",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQV3J0bWpsU3RYelBwN29heWRsRC1KTGswbjhQaFV4cG05WWJnRFdoYTM5VDhNTmJVWGVaMXJSb21scUNWU1lXT3laSl9qUTEtRnJQX09mT3BDS3FkdTA3eERwOTdHbUVmY2w4bGxFX2laRGptcnpNdVdYSGpFclVNYkprQl84S3hUX0lBek5SQXNET3hIM3c?oc=5",
+   "at": "2026-10-19T21:43:15+00:00",
+   "lang": "en",
+   "id": "498dc09dba"
+  },
+  {
+   "person": "musk",
+   "kind": "news",
+   "src": "CBS News",
+   "text": "Elon Musk pledges a share of SpaceX company to \"every kid in America\"",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNV1Bzd28tc2wxWXZVczV1eEZsaXNFUko0bWNKYi1IN3dWQjM1aUlEZDBNRkxRLXRob25IN3BJUlFuODVNblRFeFlYTVFtY2QyMDNqRktpbnppZTQ2U3Z3UVJTTHozeWdYMDZJRXVTVUpZTjFFdmxKVW11akxKZmh5Q2hvMFNaQXo0R3dGVDZxTUlwUWZpNHNiVTQyeGxOVHBXS1N2OEo0Yw?oc=5",
+   "at": "2026-10-19T21:28:00+00:00",
+   "lang": "en",
+   "id": "a4c10cfc13"
+  },
+  {
+   "person": "trump",
+   "kind": "news",
+   "src": "연합뉴스",
+   "text": "트럼프, '젤렌스키 배제' 종전협상론…\"푸틴·시진핑과 회담 용의\"",
+   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9lQjBJcUpMbERuUmZzeFpHV0Z2Wk5VcE5Lbno2akpJMHRuSGF6emRjS0hlM3hXNDRITUtwLVNTeGFYTHVkREtWcUhYSUFlNHhxQ0NaeXRvSWFxUHVlOGtKZNIBYEFVX3lxTE9lQjBJcUpMbERuUmZzeFpHV0Z2Wk5VcE5Lbno2akpJMHRuSGF6emRjS0hlM3hXNDRITUtwLVNTeGFYTHVkREtWcUhYSUFlNHhxQ0NaeXRvSWFxUHVlOGtKZA?oc=5",
+   "at": "2026-10-19T21:26:29+00:00",
+   "lang": "ko",
+   "id": "131230527c"
+  },
+  {
+   "person": "musk",
+   "kind": "news",
+   "src": "WSJ",
+   "text": "Musk Vows to Give Each U.S. Child a SpaceX Share",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxONnEzdmRoVkFpTFdKZnNNTjBrUXVkdXVUOUp5cmVoYzlscUFydDd2SWpKYjhta080R3ZQTFlwY0FHX0wtWVVjTDR1T3dxZUNyaC1JcXlsSm9hOHFJdjlUY0hXNWF3QTBaX3I4SHdLeGlET3NBVjlMSHc3WGVBZEdva25Uc1ZZUmpZWjlhN093?oc=5",
+   "at": "2026-10-19T21:21:00+00:00",
+   "lang": "en",
+   "id": "2935cbb7a7"
+  },
+  {
+   "person": "trump",
+   "kind": "post",
+   "src": "Truth Social",
+   "text": "🚨 NEVADA!Early Voting, in-person, opened in the Great State of Nevada this past weekend. If you have a mail-in ballot, return it immediately and, if not, GO VOTE at the Polls RIGHT NOW, and get everyone you know to VOTE FOR THE REPUBLICAN IN EVERY RACE, UP AND DOWN THE BALLOT!Whether you VOTE early, absentee, by mail, or in-person, Republicans must SWAMP the Radical Left Dumocrats with massive turnout! In Nevada, you can cast your early Vote, in-person, all the way through October 30th. SO IMPORTANT — PLEASE GET OUT AND VOTE. MAGA! President DONALD J. TRUMPFind your Voting Location here:",
+   "url": "https://truthsocial.com/@realDonaldTrump/117469664819644244",
+   "at": "2026-10-19T21:20:36+00:00",
+   "lang": "en",
+   "id": "4102a5a23e"
+  },
+  {
+   "person": "trump",
+   "kind": "post",
+   "src": "Truth Social",
+   "text": "🚨 TEXAS!Early Voting, in-person, opened in the Great State of Texas TODAY, October 19th. If you have a mail-in ballot, return it immediately and, if not, GO VOTE at the Polls RIGHT NOW, and get everyone you know to VOTE FOR THE REPUBLICAN IN EVERY RACE, UP AND DOWN THE BALLOT!Whether you VOTE early, absentee, by mail, or in-person, Republicans must SWAMP the Radical Left Dumocrats with massive turnout! In Texas, you can cast your early Vote, in-person, all the way through October 30th. SO IMPORTANT — PLEASE GET OUT AND VOTE. MAGA! President DONALD J. TRUMPFind your Voting Location here:",
+   "url": "https://truthsocial.com/@realDonaldTrump/117469660815396195",
+   "at": "2026-10-19T21:19:35+00:00",
+   "lang": "en",
+   "id": "43ba503fc3"
+  },
+  {
+   "person": "musk",
+   "kind": "news",
+   "src": "Yahoo Finance",
+   "text": "Anthropic Gives 5% of Itself to the Public. Musk Answers by Giving Away SpaceX Shares",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPUFowSHF6MU9iYXVFVnFaaS1PdEEwVmNiTEdFc2I2LVpRMFlEbGlwcGFZd0ZNUHdHWXVtbnlDUjJrMkkteTVuc0h5cHpPWW5MVnV6ZVZlc0xidXhPbmR3eFJydDdVV3JrVmQzZnJmRy03U0ZIREhqVHBHb1A3OUEwWlBmTjVNMDZ3UFhxTjVhMTgtQjY1VTFWMEpSZw?oc=5",
+   "at": "2026-10-19T21:15:04+00:00",
+   "lang": "en",
+   "id": "60c1990634"
+  },
+  {
+   "person": "musk",
+   "kind": "news",
+   "src": "Yahoo Finance",
+   "text": "Elon Musk pledges one SpaceX share to every child in America — a $10.5 billion giveaway with major unknowns",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNT2NJRkdITThENXhicEFUNjJHc0VDQXl5Z1BNRklGSXVuODFJMWUxN2Fkczg5OGZkSWIwbTRHMk5OemUzVjFxUDg3cVNWZWNfUWw5ZGpLOVdDamlHV1JQelJFWnVGZHZKTmhRQzEwY1pwazg1VGtzSExfMElmZ1duUWc5TWtuZ2FIZlY0bG93SVpkQzFoWFIxdQ?oc=5",
+   "at": "2026-10-19T21:00:00+00:00",
+   "lang": "en",
+   "id": "fb821281f6"
+  },
+  {
+   "person": "trump",
+   "kind": "post",
+   "src": "Truth Social",
+   "text": "A BIG THANK YOU to our legendary friend, Elon Musk, for his incredible generosity in giving SpaceX Stock to millions of American children through TRUMP ACCOUNTS! This is exactly what was envisioned when we created TRUMP ACCOUNTS — Bringing together the GREAT PRIVATE SECTOR, Elon and so many more, to invest in our children, by far our greatest and most important asset, and give every American Child a piece of the American Dream. Thank you Elon! President DONALD J. TRUMP",
+   "url": "https://truthsocial.com/@realDonaldTrump/117469511233475082",
+   "at": "2026-10-19T20:41:33+00:00",
+   "lang": "en",
+   "id": "83573da0c3"
+  },
+  {
+   "person": "musk",
+   "kind": "news",
+   "src": "MarketWatch",
+   "text": "Why Elon Musk, Anthropic and other AI titans are giving away shares",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNUElKUlVjT3hIcUYwQzVtMW91ZkJWUmVrWDdLZEdLN3BTdWdlRWVBMWFhVEwtN1lOQzlCQnZvb1pDSF9lV25qd2ZCZ3NVR0EtenF5dmpORXJ1TWRITzN4UmlQZDNCbzdlb29kdXFmcEJ2T3hYVE42TWNVNGhtbzdsTGI3RndHRW8yd1ZXSFlOS1dob0FhTHE1eUFtbkwtVzVmUnZjNDY0VmpuTU0xbnc?oc=5",
+   "at": "2026-10-19T19:30:00+00:00",
+   "lang": "en",
+   "id": "a0c0eda111"
+  },
+  {
+   "person": "trump",
+   "kind": "post",
+   "src": "Truth Social",
+   "text": "A big WIN for Massapequa and DJT!NY plans to drop part of Native American logo ban in ‘huge victory’ for Massapequa:",
+   "url": "https://truthsocial.com/@realDonaldTrump/117469140644731762",
+   "at": "2026-10-19T19:07:18+00:00",
+   "lang": "en",
+   "id": "2bc2226988"
+  },
+  {
+   "person": "trump",
+   "kind": "post",
+   "src": "Truth Social",
+   "text": "New Mexico should immediately change its name to New America. We are not Mexico, we are the United States of America! The name would add great value and prestige to the State! Home Values and Incomes would rise, and you would be even prouder while saluting our beautiful American Flag! Maybe even the Crooked Elections, that New Mexico is known for, would become honest again! President DONALD J. TRUMP",
+   "url": "https://truthsocial.com/@realDonaldTrump/117469138178317492",
+   "at": "2026-10-19T19:06:40+00:00",
+   "lang": "en",
+   "id": "aeaa2e14f1"
+  },
+  {
+   "person": "musk",
+   "kind": "news",
+   "src": "ABC News - Breaking News, Latest News an",
+   "text": "Elon Musk vows to give a share of SpaceX stock to every US child - ABC News",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNMTJlOGlkUHFkanhqYmZjcFZIcUpNcmFhWlVpVGpERlZyZ0JaRDIzQUFtSlpWbEpkZmlRY0xvN3FLYTRxVEcwVkp6ajJ3T1oyOElBTWRqaEo1Vm9QQmlKT0tkUTJXaDVXTGZOUU92OGRlcjVfNHB1OW5MdF85OGRRSEFCRkk1RlczREV6bjFRdExnWmPSAZgBQVVfeXFMTTMyRjkyeEwyYlh4Zk0tQ29hQmxFZFd0dlY2T3ZBeW13QlpzM3IzWVN0cFFSRkZoM3N5Y0x5eXJVb2IzMzlzMVRXV0JQTjVLOGItTmJoWHlFTDdmZzU1Wkxla2RMR3QyTmx1dHo5b0psMmFLLVptVGhoV05aNEUwWFhJaVUyODFlTk02YUFKVUdyWl8tMmZVS3E?oc=5",
+   "at": "2026-10-19T19:01:06+00:00",
+   "lang": "en",
+   "id": "20682976d9"
+  },
+  {
+   "person": "nadella",
+   "kind": "news",
+   "src": "The Economic Times",
+   "text": "From radical transparency to a 48-hour rule: How Melinda French Gates, Ray Dalio, Satya Nadella and David Shelley approach employee feedback",
+   "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxPQnk5YllqS3FGQzVRN0tzMkExWXlnZnVNSDNkYk9kN2ZEQ0RkdFlOclFvQXpFUXA4bUhaSm9PSjVVU0FYSVVIbk9tc1lyWVdyQmFOVzVVOWdxZ0l1X2FCZkdlNk5UaURTYkNmRzNMS1Rrem14cHRHd0JTZmJRMnZxOElrS0NQTjBFSXNsUF9uWVl2Ni0wY2F5MDJsRk14ZmtDUG5vRE1sVXFuZnFlTGFoMnJBSFZXR0FyOXdVWUNGUXoyNjdQNk5uTlg4VksySnNHRUNmSE9RNGFqaGFERUxIcXVrMWFqU2lERmVSSWtIX1BEd21NOTBoVUpxR1ZDS196R0lQXzJhcVJJZmNTeG1xWlJua2o4bDh1emxLNXF4QUZlN2p1aXZCSnN3Mmt3M3hmOUE?oc=5",
+   "at": "2026-10-19T18:32:04+00:00",
+   "lang": "en",
+   "id": "aabb3a290c"
+  },
+  {
+   "person": "warsh",
+   "kind": "news",
+   "src": "Yahoo Finance",
+   "text": "Kevin Warsh Says 'I Have Failed,' Admitting That He Neglected Bank Supervision in First 148 Days",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQTkdsWWMtSDJGa21IWkZudXpCZVpibGhHdklaOW5tTU5HQlZpWFdoZU5odHdtZ1NWZDRNcDBIclhNUXVTd3RWOWNFSnRKTHhBTk1jQWo0Z3Bwal9rVWV0SUtnVDRLempSSVFuX2RHT1VYVFRFc2s5M1UwTDlEWU1IZ2s3YW5kVkFlc3VGdlZLNG4wcGsybkdueHY0WENnVG8?oc=5",
+   "at": "2026-10-19T18:00:11+00:00",
+   "lang": "en",
+   "id": "2478470f64"
+  },
+  {
+   "person": "dimon",
+   "kind": "news",
+   "src": "The Hill",
+   "text": "Dimon says US economy ‘booming,’ but warns about ‘inflationary’ events",
+   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1IUGRuTC1HTTFKRkk1SnFKYUhSZXg4UkFuazBRM1p0ODhXdWdBenZENUdYZWxYUlVXUGRCUmFIQmdrYktJX1c5TFhWOXc2aExFTHR1ekVxLVRmTjFzenRERHU3VkpSdWVMTm1RTk9pdER4VHPSAXhBVV95cUxQT1phNlAwQ2tsd2pPZTIzQ0J4dG9vcnhxUTFGcVdZblE4MHg1UXdoLVJNSGg2aXc1d3c3aExPY3h3T0E3eUFNTlk0X21vdjBRalI1Ums4UHl0Ymp3cUF5c2NrRUtpZHJCWW0wWG9QeHJuZTdWTThCWWY?oc=5",
+   "at": "2026-10-19T17:50:00+00:00",
+   "lang": "en",
+   "id": "16861e7814"
+  },
+  {
+   "person": "huang",
+   "kind": "news",
+   "src": "Yahoo Finance",
+   "text": "Jensen Huang: Token Costs Are Falling “30, 40 Times per Year.” That’s Nvidia’s Plan",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOQzRkbHdMLU12RHRUOUhQZG9OemtfZUZCUE9lUlhNVGFqNkl3bVJyWlpvN2lnNkhodnlxb0l5Z24wQ0pELWRkNGQ4dmNGOHJxQ1IxQU9UR0RkdnljR2x4dm1MRkxCTDBhTDIwdUQ5RHVDMGxCWC03Uy1ZbVUtQkwwRkVJOG5zOFJTY3Jfc193UWU3N1VEVlc4T1JfSko?oc=5",
+   "at": "2026-10-19T17:49:18+00:00",
+   "lang": "en",
+   "id": "7e1105cd2d"
+  },
+  {
+   "person": "dimon",
+   "kind": "news",
+   "src": "Fox Business",
+   "text": "Jamie Dimon warns of 5 economic threats lurking 'under the surface'",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPVXNjTmFKSUZJSUNOQVpyUjJhSmxYS0V2dGk0Z09OYkZ2MHhuWmpXRzYzUHd5cXIza0podHY0am0xSjVPcUJxWmNXMWxUTmFPYldveXV0cWZ0Zm92UmVqMTJiLW02el95c0VpbUxxTmFjV09YS0g0RnVURVlVd2dSaVRtck1VT1NOVi1IVW4xNTl0WjBFTzVkNlRR0gGfAUFVX3lxTE1qTEtFLW5leHVoM2NteV82cE9SR3l6ZGlmR0Y1aFJqeFZPZFhGZmxJc3JRUHotampBUmoyeUxGQ0gyTy05cWtSSkZWeE9melRobk5RTVlKeXJvQTExTkVsUWtETzhOaWRUV284TWMybWYtZWcxM3FIYWRGb043Yzg0Ri0wTFhhTEIwT01CYXJxMnoxYVg4dXNEa2xLS19LSQ?oc=5",
+   "at": "2026-10-19T17:38:00+00:00",
+   "lang": "en",
+   "id": "51596e1e20"
+  },
+  {
+   "person": "zuckerberg",
+   "kind": "news",
+   "src": "Yahoo Finance UK",
+   "text": "Michael Dell Passes Mark Zuckerberg As Fifth Richest Person In The World As Tech Stocks Rally",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOc3hpd0c4ei1DRFVPdGtsUUFxd2FlYTY5eHc2YjZ2enRldUdVZkhfb2NnMURaU19jbmduclJEWEp1a3llbV9WQlgyZmN3NjNYTWxPT1NJZWtoYXJHYTE5M1FMejBKNVRfLW5xMGF0YnowaTBfUTlCcXpDSW5RdnFhd3BVdGp1UGZJbncwQQ?oc=5",
+   "at": "2026-10-19T17:16:44+00:00",
+   "lang": "en",
+   "id": "52fc080216"
+  },
+  {
+   "person": "lutnick",
+   "kind": "news",
+   "src": "MEXICONOW",
+   "text": "Lutnick Challenges Tariff Reduction for Mexico",
+   "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1Pano5ZFEzdWdnVmZTVThqY2R6R0EwSUxkamswNXc3Wjg5M0luQ2ktalRWY04wNG04TWRubk1SZ0N2VnVjNDJGM3Jlb3NzeFBkSDhWdW43N0FyNGhuTzBOamFEN25zdWlxdldCZDFHbDhyQzdYUjAxRGdR?oc=5",
+   "at": "2026-10-19T17:14:50+00:00",
+   "lang": "en",
+   "id": "1da9addeba"
+  },
+  {
+   "person": "musk",
+   "kind": "news",
+   "src": "Forbes",
+   "text": "Universal Basic Capital: Elon Musk Giving Out SpaceX Shares Is Part Of Broader AI Plan",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQN2tXTGZVRXBGSUdkY3FpZGV3T21fS0ozQ2xwUHdNSlkyNkNRb0I2YXU5VkVxUTVESEpoNEsxY2VTN0ZOQUdFdjFGaUVJcHNxYkJzM1hneHpZZHFVRVpDWm1jRlc4ZDVfZG44QWRxc1p1Tmp4Sy05bVhXUkhWTllScThvOUhMbFk3V3I2MHhlcDRrMXVoSE1jc2k4bDhMemFNUUJDby1WcVY2TDVUQ01yWTdFbWUxV1RQU3YtYjdUWkJuMkVVMUFwLUxJS3ZWZXpmaW1MZHQxbFA2V19ydUN1Q2xsd01hM3M?oc=5",
+   "at": "2026-10-19T16:45:34+00:00",
+   "lang": "en",
+   "id": "c739989e64"
+  },
+  {
+   "person": "huang",
+   "kind": "news",
+   "src": "Yahoo Finance",
+   "text": "Jensen Huang: “Two Gigawatts to Us Is Like $80 Billion.” 43 New Gigawatts Coming in 2027",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPQzhtUGxKQXlPYktwUXRWOXpOWnJZRy1PTHMtOWZESDBQOE5hbE9CY3NWNFZlck1mTnlCSTBfeERDczFNUjlfZUd1UzJwWi1WbWtpT3NoUi1NbVZXLWxtQzAwcW9EY0F2MFgwbk5yOXZOWkIzQ0pMcTVjM2w2REw4WjZrNE4xall4NktXQmY1LW1IeEU5ME1Ccg?oc=5",
+   "at": "2026-10-19T16:32:35+00:00",
+   "lang": "en",
+   "id": "eaf0c75010"
+  },
+  {
+   "person": "musk",
+   "kind": "news",
+   "src": "Yahoo Finance",
+   "text": "Elon Musk Challenges Jeff Bezos' Blue Origin and Other SpaceX Rivals, Says They Still Can’t Catch Starship — ‘Even Their Future Plans Are Behind’",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPSDlwVkFKNnBNZnN3MlF2cjljajlsWlotdWdqRTdhSmZaVmstVEROWV9CVC1BV3B0N0NlbGt2QzNGSjl6dEt4enp1UElTR2gybzJXV2hzRmZENUtBSXh6YkpNUEpQTmhGRk9uSHVYRF9Lb1F5RW0zV2NmMXRLY19rT2JWSXdNTGJIZFJvX0JrN1F4SmZSS1ZZ?oc=5",
+   "at": "2026-10-19T16:30:22+00:00",
+   "lang": "en",
+   "id": "2e3a6b9fb6"
+  },
+  {
+   "person": "huang",
+   "kind": "news",
+   "src": "Yahoo Finance",
+   "text": "Jensen Huang Declares NVIDIA Can Win “in the Absence of Any AI Labs”",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQc2xkS0tSQUpOQi1pNjc1dDhtR3dxUUhJcV84QWYtdG0wUFUxcGs2OE9mQ3lOT0ZFc1pIZ3RNYU5EY2FfWmJYY1NwZ0dkR1R6NFNvUF9aLWw0bTZQc3ZqMDYtdnV6N05yaTBsN2V4ZlhoM3JkVTllR0lFRU5WLThQSXlONng3M21vQ0ZnT1ZoNmFTVDJkTnVHLTEtWXc?oc=5",
+   "at": "2026-10-19T16:12:37+00:00",
+   "lang": "en",
+   "id": "286d57c6c7"
+  },
+  {
+   "person": "altman",
+   "kind": "news",
+   "src": "The Times of India",
+   "text": "Google Brain co-founder Andrew Ng to Dario Amodei, Sam Altman and Elon Musk: ‘You are making up safety ar",
+   "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxPSnp3NXhKV2FDWmVVZTZ5MVpPVU5IVGhpdF80M1p3b3ByZFlrY0VWOURZZjVzd0VHaHZ0VWZaQUQtVU9WZjJOV3pIdmJjbzdYTDFxSm9CRmpmV3F2VHp1SDJXWmxPeDFWSXY0eWVlenNOSmdKcXQxR1daYk0tUzlmMk1mWEpydjNNRDNkZzl3b1BlXzVRSFdvOWs3NjdVYU9kOWFOclpldGtQYkdUTnBkcDVrZUxoS1NaRVpmUjVqaGRKeE13cl9tOWZXc2hSUnFiQ2pLN09qenQxVmdPUGlvQ254Z19zSW5rU1NQU3c5VUJubTBJOWJyakNKYmFWazFoUS04bmVxZXdBRkctX2ZNek9RaTQ2a1c5VEZ3eWltVm82WGdHOUZQb3YtVjTSAbICQVVfeXFMUGUyRktZUHFSVWlKLUNxNkd3cjV2RXltU0ZKaGVTVmtlUTNhZmRvd3hwc29XSDJ5VzBIQWxLZFZFNmNMSkFqalhHZWE0Ynh2RHZIRGJLOUtkbnFRclRIWldjN2tWd0M1YVNVRVFwWjBxNng3ZXRIRXFGUmRXZVFveko0eUpmUEY1TTJ3Z3EtS0s2TmQwOEhDVzlrU2d1RGc4d05KNVNrWTFMazdBUHl2YkJmV2hkbVZTenp3SVlHWGhfelF2MzB4aGdDTkVZOFo1dGJaVW9SdE4tUnV6akN4REp6d2J2akhYOFZ0Q1dUSDNvZEJWdzB4blZLclBuQWF5bmFvd3VMMEpRemdtd0dlRUZ1YlAzalBBY19hbXN2TDJIMFdUSUNJRUN3bVhPTmkzVzR3?oc=5",
+   "at": "2026-10-19T15:27:00+00:00",
+   "lang": "en",
+   "id": "734aebaee0"
+  },
+  {
+   "person": "dimon",
+   "kind": "news",
+   "src": "Yahoo Finance",
+   "text": "Jamie Dimon Just Listed 5 Market Risks Hiding 'Under the Surface.' JPMorgan Is Already Feeling The Heat.",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOU3g4a0pTeGFlLUk3c3JNcDRiaDE4OVJJdkNWUkNYSmZTWllIb2QxcGQ3RXBIQkZlSUktYWdVc1drVTZpUnRoVmJDa1QzT3hkaG5BQXFvaE1fR0d3aENVYmpvNTRDQS1hUVZQRGlHaS1mM19NUDFnYXpCZkZXUkxrXzNFc1dWYy1HcWRMWnhEZm56SmlM?oc=5",
+   "at": "2026-10-19T15:21:27+00:00",
+   "lang": "en",
+   "id": "ecf2a312df"
+  },
+  {
+   "person": "warsh",
+   "kind": "news",
+   "src": "openPR.com",
+   "text": "Best Crypto to Buy in October 2026? Warsh Calms Hike Fears, and Pepe's Peak Points to 142x for Pepeto",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQQkxqODR5RG9nRElIMnNoUnNDRF9CbHFFX2pod3R3ZG9fRmFrTnBlRG1lRk50dEk0RkduRllQVllKN1ZEcDdvZ2lOb0lEdXhINUUwUFhZcXAzajF2NTh6UWFiU0pBNWc5OExrdkV6Rnl4SXV1eGJzRzQ4b2VBSkk2NzZXMVJ0Sl9aNWRwNVZWTndiU29rbUhoRw?oc=5",
+   "at": "2026-10-19T14:59:17+00:00",
+   "lang": "en",
+   "id": "bab17910b3"
+  },
+  {
+   "person": "musk",
+   "kind": "news",
+   "src": "Fortune",
+   "text": "Billionaire Elon Musk says he’ll give every kid in America shares of SpaceX next year",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPNnNpczdqQ3BTWl91R2tfZEZuOFJDaHVwM0F3aWxxVG9lUUFaWGNlbGNSR25KMnl2dlhNR1RkcmhORzNhaWxfZmdENzYweF9oUWpmWHdqbHptRmgzTkdkYTZJUlAzaXZxcTZuUmtWWkVvT1JtZ1lBZkRIc3FWQ1pFVFUtLXRRMGRkQW55N183Z2xNWGZDV1picHdvU2F1MFJVS09tVy00dVRnOF93V3VTWW1QaHVFY0N5aTRVR1RZLTN2dXJk?oc=5",
+   "at": "2026-10-19T14:32:00+00:00",
+   "lang": "en",
+   "id": "c82df83f27"
+  },
+  {
+   "person": "musk",
+   "kind": "news",
+   "src": "Yahoo Finance",
+   "text": "Elon Musk Pledges a SpaceX Share to Every Kid in America",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOVWcwdEYyNkgyd1djUkdiZzlHVGlkam9yS1Qzb24zbjFWN2t3ZnJIZC1ySHpFd3djOWRzd3YtRHVKQW9oQ2M2M1hDUC03OGd4Q2VaYU9lMkVEeGxWRkgyVzdSdXhLZVEwTmsxVVpVSm43M1BTRkVFTF9RSTRLbDU4d0syNDlhSVdWaDhQYU85TjZ5NG5ueWZ4dldrTQ?oc=5",
+   "at": "2026-10-19T14:21:40+00:00",
+   "lang": "en",
+   "id": "06633a2e10"
+  },
+  {
+   "person": "musk",
+   "kind": "news",
+   "src": "The Verge",
+   "text": "Elon Musk promises to give one SpaceX share to every child in the US",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5iZE01c1l4cHhYSGxYTEJPcGpUYmQ3NUIwaEhFQXVzTkQ4Vk1aQmhuQ0ZYT1dFOS1CZ1VMUG50MDlRdVdjX1lhUm9SeWM4ejVLdEpaUTl3NHVDYnQ5ejFrV1pHMHV0UE8xMEJnbGxWVklJb3B5QWJ5R0d2Ujh5VGc?oc=5",
+   "at": "2026-10-19T14:20:11+00:00",
+   "lang": "en",
+   "id": "30a4a8b15a"
+  },
+  {
+   "person": "zuckerberg",
+   "kind": "news",
+   "src": "IMDb",
+   "text": "Aaron Sorkin Says It ‘Never Occurred’ to Him That Jesse Eisenberg Wouldn’t Play Mark Zuckerberg in ‘The Social Reckoning,’ Claims the Paycheck Was a ‘Disincentive’",
+   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1XUU52ZUpvYW5CamZoVGc5d2RzUEhETjhkWWZ4OUdpSHlOTUVuQVVSQ2h1bHJ4eEZlODY4cG9GUWNEWnJjanQ5YmdPNEwwR1Bmemc?oc=5",
+   "at": "2026-10-19T14:11:05+00:00",
+   "lang": "en",
+   "id": "f04a0632ac"
+  },
+  {
+   "person": "zuckerberg",
+   "kind": "news",
+   "src": "The Times of India",
+   "text": "Mark Zuckerberg on what he thinks about Alexandr Wang’s ‘deranged’ posting, says: 'it just cracks me up'",
+   "url": "https://news.google.com/rss/articles/CBMiywJBVV95cUxNOUwyeGJ4Z3M3MkhYMmM3TWZxNFdZRU5EUHJKODZOMC1sazZKNkZLOFZrZ2k2ejFZVUp1MlJ5dlVoaEE1X0pkTlZWQzF2aGZwWGdyVF91UWgwRHBleDRrN092LU1KN1JzSjc0eFZacXBpQjhWVnNvRVpNUnRvUHA0a0pUNFpIQllVZHA0RUxFZzVBQjc0ZXpBd2pMMVp6RkxWUmFDZk9SZVc5bzQ1T0JFNnZydmljNHJCSTBjdjZVTVc1MkZmZV9rVGYxNWEwUUJ1ZUxWS2VKME5kSUlqbTZlTzJpSFhod0dKSnpqcExabm5tMVFTa0VWc29yX2RjT2d6MlctR0dWSUlDMjZMRUZsc0NBYXZOVHdhVURPQnVIVVFUZzRSbzFDd1V5bjhMR1ZMRWRCdFhFeUtPWFlHTmRBQURhLXBPNmc4aEUw0gHQAkFVX3lxTE1HSDdOQ1ZKTEdyUkp2NFBlNFFVaUJsR3ZRVGhMVy15UElrbWR6dDROamRoMjVVT0w1bkdSYWtudXB5WnUzZHBJbWFGbWxCa3pUeDh1c2VIUlVIUjNPTmI5cUVFTF9Ec1hPaXFQRFVBZHMxZFdheVIxb1dTR3ktZHAxQml1TUNocXJ2dXJjemFsVDZOaExpQlZCNkV3eUJqQkx6OXJGcTdfaUlLVFEwVUx3ZjNqY2dCMmJoeWtjVjEtc0FGd3FaMGVtOXFtZmhqSDFTV3VPMmh3YmloVFlTUklWX1RnUkoyZEF6dFVKYVktRElrdnEyS1VpQnZiN3hBdUluQjYzOUNUalJ5d2JJVmlVNUxTVUkzMkZmS3ZrQkxaRHpCVWVqbk1sZmVJX0lCbFVzelB5eWk1UG44ejBxRjlzU0l4czZFY0FWNTlDUXcxbA?oc=5",
+   "at": "2026-10-19T13:48:00+00:00",
+   "lang": "en",
+   "id": "e4e822e5f0"
+  },
+  {
+   "person": "dimon",
+   "kind": "news",
+   "src": "WSJ",
+   "text": "Jamie Dimon Ignores the Noise, While Hermès Seeks Suburban Wealth",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPTXN3bzNVbHdyVGlCaUR6elFqcmpaV2Z6c2ZJdk05SWZXbk1adXRnZEIwRjZUTEpFUEFmZHFVaW1JVGlwVWZPTERDLXg5SzJhOHI4Y19Wcmc0UkFyVVNtM1d0c2lPMWRmQ29Od2NiZnN0c0dFYXotME1JVGFEY2U0Vk43am9ySURxM0NWTmtrc20xMDJFQjBtMldyREpKdnNUZzFPNjl3?oc=5",
+   "at": "2026-10-19T13:25:18+00:00",
+   "lang": "en",
+   "id": "382850430a"
+  },
+  {
+   "person": "musk",
+   "kind": "news",
+   "src": "뉴시스",
+   "text": "\"美 어린이 모두에게 스페이스X 주식 1주씩\"…머스크, 파격 약속",
+   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5zc0E1SXp5LTZqaHUtR25rUEFoYWVna25VaWpfM3JRb2R2NE56UlV3T0NtVWUxVDJyNmJPeG5UcmpsOWdUeDZfV3JFQ0VYeC1xN2dpaXNwMmhBRENVT1RMSDlNUjBQaThjbzRvZ296SldjM2NORHBIdtIBeEFVX3lxTE5zc0E1SXp5LTZqaHUtR25rUEFoYWVna25VaWpfM3JRb2R2NE56UlV3T0NtVWUxVDJyNmJPeG5UcmpsOWdUeDZfV3JFQ0VYeC1xN2dpaXNwMmhBRENVT1RMSDlNUjBQaThjbzRvZ296SldjM2NORHBIdg?oc=5",
+   "at": "2026-10-19T13:12:03+00:00",
+   "lang": "ko",
+   "id": "08d27be519"
+  },
+  {
+   "person": "dimon",
+   "kind": "news",
+   "src": "WSJ",
+   "text": "Jamie Dimon Tells Leaders to Ramp Up Cyber Defenses",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQcWpSUDZsODV3MEpPMEZDQmhCVTNkRGFROFNPT19Sa3F3VXh2OGlSQ1ZhX0lKRFZPN1RkR3RRUWRZdnpMUzNXNkxBYy1zUE9sSkRRU0czNGVXXzVQc3ZNbTJXOUVuaXF4cV9GSU9BeWJYamxVcjUyRmVUUVREQTRwdjhrOVBRTnVlbmFCM1Q0aXVZZUNGcjE0?oc=5",
+   "at": "2026-10-19T12:50:00+00:00",
+   "lang": "en",
+   "id": "af9f25dc16"
+  },
+  {
+   "person": "musk",
+   "kind": "news",
+   "src": "Reuters",
+   "text": "SpaceX, Tesla earnings to test Musk's AI spending ambitions as merger talk grows",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNdi1oa1VDTm0wMUJualVQRU5ieHFCQmFCejlxdEx1cEM3am1WaEV4LVJwRGVab29QU05IUl9fYzhsaFFFSk5hVGtTZFFLNGNOUVNFMjJ4RkE2b2RCdVJmN0t5UmVBeWpPb2ZwMThLcVRkVENsdFhRc0JOUml0Z3F3MFg5bDhsNmZrX2tuS1ZkRFl2elAzd0p0ZDlFb0E1MF9malVCZXhEZnJqRUFYMUxFNDV5ZmRrZkYxZndkWGthUEpPQVdOTHAtMHBVTQ?oc=5",
+   "at": "2026-10-19T12:27:14+00:00",
+   "lang": "en",
+   "id": "387e4b481c"
+  },
+  {
+   "person": "musk",
+   "kind": "news",
+   "src": "매일경제",
+   "text": "“美 모든 아이에 주식 1주씩”…머스크 약속, 105억달러 규모",
+   "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE40R2hhaUdfTElPUFdzc2xCd29JazBSRVRrX2VuNjlOUGFHVV9tcVlpWmVoRHRjV3BlMTdnU1BhLU5lQU5TdkE?oc=5",
+   "at": "2026-10-19T12:24:47+00:00",
+   "lang": "ko",
+   "id": "4568f02166"
+  },
+  {
+   "person": "zuckerberg",
+   "kind": "news",
+   "src": "Howl.link",
+   "text": "Give it to Mang Joe, not Zuckerberg: PasaHero wants jeepney riders to be the next ad channel",
+   "url": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE93aWNkX1ZDdnk0T1hudjRiLXI2Q0hhTUNRdDlrV3VGRkk1Wkp2R2VjMVpOSFRvcVQ2dlFj?oc=5",
+   "at": "2026-10-19T12:23:23+00:00",
+   "lang": "en",
+   "id": "6a5ce247a3"
+  },
+  {
+   "person": "musk",
+   "kind": "news",
+   "src": "Yahoo Finance",
+   "text": "Elon Musk says he's giving SpaceX stock to every kid in America",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQMEVVd3RFb3M0MFpJelFtS3o0ekhENlpaT1hrSFpIZzc5NGhoTTZUb2Q5RjNpbU13cVhESjhhSkhyM2lrcHFGYjNVZFN0Sy00bm1fb2JMSTdsbnE5ZWFXeVdoZ1BvSWs4dTZJYzNMemVUSU13d2VHS1VPVURCdlM5WjlVNlhfSHJEeExPcEF2OVZQTmFidFlBZzd0ZFU1aGNtbWZfS01Fam51WTdBQl9BMHBuNkoyNkh6VzBteUVYTDBvZlFo?oc=5",
+   "at": "2026-10-19T12:15:04+00:00",
+   "lang": "en",
+   "id": "5d467a7a43"
+  },
+  {
+   "person": "warsh",
+   "kind": "news",
+   "src": "www.equiti.com",
+   "text": "Kevin Warsh gives no signal on October Fed rate decision",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOa1JiV0VfdzVhUWFZc1VIT0w0UHhZQlg3eG9HVUEyakNqaHdIYl9KTUNSNENpUDZ0azJ0SE1aS0phMXVtRjBCdVd4Z2JwUTVjRWtTMFJfNWpUVTZJeWFJU2xTVzA2UjcwTEFnNFk2aFpjMWxMejMyTHVtZHJWREpNOXhiNmE0d2E5Z2U3dGdJVzdQVHJ3R3hpcnJuUGpVR3laOHlN?oc=5",
+   "at": "2026-10-19T12:14:08+00:00",
+   "lang": "en",
+   "id": "cad711cc0e"
+  },
+  {
+   "person": "musk",
+   "kind": "news",
+   "src": "The Straits Times",
+   "text": "Musk says he will gift SpaceX shares to ‘every kid in America’",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOZkpqMkJWRlBsRmZKdnZQLVg5aVBPLXBLZEtVT2R3UzlkNlZVNkpIUEV3bkdtSUtTS1RhdlpTT0s4QURqR1dURFVPOWZHWXdPM3RNMTN2Q2ZBbnZ1NW9VQ1ZES0N4RFBpbndpdnZfbTR3TFNvel9GNTBZd1hjeTEwU21BM3ZNZnVrTlFpeFY0Q09XcmJwQmY0UV9EVDNVU0FlZkp0LUJKdmlaRzFZSkE?oc=5",
+   "at": "2026-10-19T12:14:00+00:00",
+   "lang": "en",
+   "id": "90db4c7cfc"
+  },
+  {
+   "person": "musk",
+   "kind": "news",
+   "src": "한국경제",
+   "text": "\"갈취 수준\" 삼전닉스 겨냥한 머스크…전문가는 정면반박",
+   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1ZVlp2aFRUbFFSTWl6Ylp1VmRsRjR2WjhSV3JTSkVlNXpCalRRRlBMbUY0VkV5X3VxRTdLNzBRYkdENTdQejVTQkJOaWhiSHQyd2VseVFhYzhxZw?oc=5",
+   "at": "2026-10-19T12:04:55+00:00",
+   "lang": "ko",
+   "id": "0c2643174a"
+  },
+  {
+   "person": "musk",
+   "kind": "news",
+   "src": "CBS News",
+   "text": "Elon Musk says he plans to gift a SpaceX share to every child in the U.S.",
+   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1kSXY1eUVBSVU1ZVZFUTRmMlY2UXhLMnpXQUd1dlJVWjZGOHVObEJzWUR1c0x1Y2pBWGlpRnREb1pobkFmcFg2UUdIb0VsaDkyVW05VFZKY1czaE5MSjNrN1I0WWZ4SkRoMnBlSVV1WkhFWmc?oc=5",
+   "at": "2026-10-19T11:51:00+00:00",
+   "lang": "en",
+   "id": "23159661cf"
+  },
+  {
+   "person": "musk",
+   "kind": "news",
+   "src": "연합뉴스",
+   "text": "머스크 \"내년 미국 모든 어린이에 스페이스X 1주씩 줄 것\"",
+   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9vbE9XeTVYZ1BKaFpRYzBuajFqcXQ0aEZLMnkyTGhpa1h4THVIOVhBdmlZZ3k0NEV2YXlOems1ZkF5c1h5SDhFTHJYS0FHMy1OX3RWdE1kckgycDNISWtnZtIBYEFVX3lxTE9vbE9XeTVYZ1BKaFpRYzBuajFqcXQ0aEZLMnkyTGhpa1h4THVIOVhBdmlZZ3k0NEV2YXlOems1ZkF5c1h5SDhFTHJYS0FHMy1OX3RWdE1kckgycDNISWtnZg?oc=5",
+   "at": "2026-10-19T11:50:24+00:00",
+   "lang": "ko",
+   "id": "4bea83a3bf"
+  },
+  {
+   "person": "dimon",
+   "kind": "news",
+   "src": "WSJ",
+   "text": "Jamie Dimon’s View on the U.S. Economy: Booming, but War and Inflation Pose Risks",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQM09VcGQwTFJlbHZDcWt0VnUwSml4ZTJuNTdxLU01cGoyYjN0UWVZcVpkOWlzRzU3VlhPZDZ0RmNfZmdOVjQ0TjJNcU5VQUhJWUNGeHJLZnhQOU1ZVlp2VndBZXNPZUNSVHVqMmM5cXBsLVZoQlNlMTNGaW1MOGxpMnA4LThmNDlmSlJHQWg2eWY3eEFQVTNINWE5LXRCT181YUpPMlRXSS1Wc1NWR1B0TElkSmFsekNUQWc?oc=5",
+   "at": "2026-10-19T11:14:44+00:00",
+   "lang": "en",
+   "id": "92b2148c44"
+  },
+  {
+   "person": "lutnick",
+   "kind": "news",
+   "src": "WION",
+   "text": "Trump Commerce Secretary Howard Lutnick’s family fortune more than doubles to $7.3 billion, outpacing his boss",
+   "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQLW5jUy1lUTNkWENySE00SjQwNk10VzRGSEwtWVFKUk85QkFXelNPUkxnWkhtSlphRm9aOWlHZmNaSktYcnQ2bHctUVRralQzeTA1SmlyRVdFNzNMS2dueWFGaDRKcmFreC10bDEwSXllVDM5dXJXMDZ2NkRTVXV6UVU4b3hqNE5kZUZzaTBRLWdnaW9OQnAxb1pLdkljUTJiVlFGYkxEVzg3a01EMUhBRE02bzdQSTFSQTdILUxGRlRjWHVPcWp2SnhhZFhJZ2lleWsySzltQXdNQ09HZTVhSU03aG5uX0JMR3FQVdIB7AFBVV95cUxQLW5jUy1lUTNkWENySE00SjQwNk10VzRGSEwtWVFKUk85QkFXelNPUkxnWkhtSlphRm9aOWlHZmNaSktYcnQ2bHctUVRralQzeTA1SmlyRVdFNzNMS2dueWFGaDRKcmFreC10bDEwSXllVDM5dXJXMDZ2NkRTVXV6UVU4b3hqNE5kZUZzaTBRLWdnaW9OQnAxb1pLdkljUTJiVlFGYkxEVzg3a01EMUhBRE02bzdQSTFSQTdILUxGRlRjWHVPcWp2SnhhZFhJZ2lleWsySzltQXdNQ09HZTVhSU03aG5uX0JMR3FQVQ?oc=5",
+   "at": "2026-10-19T10:54:00+00:00",
+   "lang": "en",
+   "id": "f418be27b6"
+  },
+  {
+   "person": "warsh",
+   "kind": "news",
+   "src": "صحيفة مال",
+   "text": "Gold Edges Higher as Traders Ease Rate-Hike Bets on Warsh Speech",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1RbkJ0XzF3ZF9HVzZJRHdNdTJhX19QZDRGUTVJaVN2TFdCOHBhcTh2SFZSU1pLUkY0Uy1PZzY2SmlIUjQ3UmVUZmFwNURRVTdzTEd5bXByWThZUUVQSVdEcmw4TENweXQwZGNN?oc=5",
+   "at": "2026-10-19T10:52:48+00:00",
+   "lang": "en",
+   "id": "b5251a4581"
+  },
+  {
+   "person": "dimon",
+   "kind": "news",
+   "src": "Investing.com",
+   "text": "U.S. economy is \"booming,\" JPMorgan’s Dimon says",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNLTJwRTl6OVZZRDhSdURwOUFGbWk3d3FBeFBkQzJsWEtEd1lYRDhZZW9lc2JBWnJuZHBCSnhmQ0RQWUp2elhOZ2JYaXNNWWtqOUZUekZqN0VkbU56ZDJIRzhGclQ0cU1PeW5qX2VaLVlfTXBmZ3ZLUTJFQjhOMEpFNkhRREdPTm9RSHNtVjJTSTBXY1ZPa0lIN2Jn?oc=5",
+   "at": "2026-10-19T10:51:28+00:00",
+   "lang": "en",
+   "id": "6653205ec2"
+  },
+  {
+   "person": "dimon",
+   "kind": "news",
+   "src": "Investing.com 한국어",
+   "text": "JP모건 다이먼 CEO \"미국 경제는 호황 중\"",
+   "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5CMTFGNU5TSWpmTFp5V3JpaDBRWmZnQkhoYjhMUDJ3ZHJhV1k3Q2tHYUhrYmFrOGRhTWxlVGxBVFE4M1A5d3J5eW83eGhxcFI4SjNDMnhPRlppNFN4YXI5SmU0ZWxGOGZNbEE?oc=5",
+   "at": "2026-10-19T10:49:00+00:00",
+   "lang": "ko",
+   "id": "25708db6b2"
+  },
+  {
+   "person": "musk",
+   "kind": "news",
+   "src": "The Times",
+   "text": "Elon Musk’s $10bn SpaceX share giveaway to every American child",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQY0xtYzBmMThWanFVOHd6YnZkYkExQ0tycnU5a3hzeklHMmZ1N2YxVkhPSlpUTFUwckhfMmtUeDRjbUxpaFZUdmw5eWZ1a2FpX2J6bWZuc3otQV9NZmRqcW1BRUJyMnQ0UVZVbGg1empEZnFYZWM3Ulc2Mm1rVHROVTE2VWdHaEc1MkczNV9YbTJGRktBOGZmOGJ6dmNtbHNJN1RGM3haWW5FTUxyN1A0NkRheHhhMkx5WGFsNzRmYXltZw?oc=5",
+   "at": "2026-10-19T10:47:50+00:00",
+   "lang": "en",
+   "id": "572563e4f6"
+  },
+  {
+   "person": "musk",
+   "kind": "news",
+   "src": "Axios",
+   "text": "Musk pledges 1 SpaceX share for every child in America",
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE81UlloWk5HZXliZ1dGY2VMWUo2bTdtdWt3c2ZySGwtVEt6a2NIOUFsTFdheHhOcmtzckVwTVFYX1NjYXNzSVJveXprazlkMWxsQ1FSMUVHMGpKS3U3WlhEM1FHdVVobkw2UDJBR2xR?oc=5",
+   "at": "2026-10-19T10:32:36+00:00",
+   "lang": "en",
+   "id": "0d38da0d15"
+  },
+  {
+   "person": "warsh",
+   "kind": "news",
+   "src": "Globest",
+   "text": "Warsh Remarks Reinforce Expectations for an October Rate Pause",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNTWNWUkRYXy1kcl9wNDBpbktLbHVUazQ4dnFKb2ZHTkRlaWZ4c1lxSHJGU0QyLWtLbklYV0VtdU9kak14N2hoRzI2ZkU5d2NwWktqZl9fYXlyeTRtcGZJZzNiU1gzdUQ0WTRwU0owSDFxN2FIbHY1QmdCczVvSVdURXkxX1FfbGw4RzJVLURNR1pIalVweTRZUVB2TTlJTWc?oc=5",
+   "at": "2026-10-19T10:27:50+00:00",
+   "lang": "en",
+   "id": "3b858e1152"
+  },
+  {
+   "person": "dimon",
+   "kind": "news",
+   "src": "WSJ",
+   "text": "Jamie Dimon’s National-Security Pledge Finances $230 Billion in First Year",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxONy04cmdSQ1BHQWRRNFhXejlTdndSR196Uy1RMENHS0RveERuUkpQMDhBejhtOVRZcU5Ma0JyV0JhYmxWZVZuRU5rc1NldXpQTGxFMHFCX2I1ajFISXZ5Z3V1aVRFRlE2RnVSdnBiM3hMQnNPOURYNVJoZVpMWnNyUTVlT2NqYWVBX1NTWWhDdWJNS0V1ajZvRktWMTRYSUxUbUhfMXROcUJxMk03Mkt2Wm1Qb1BPbVQw?oc=5",
+   "at": "2026-10-19T10:01:00+00:00",
+   "lang": "en",
+   "id": "aef8c5b52c"
+  },
+  {
+   "person": "warsh",
+   "kind": "news",
+   "src": "Real Investment Advice",
+   "text": "Warsh Says Little: Market Hears Hold",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOSkFCenhfS0NTWWpaZWEzaE1YQ0tnamxZZ0dCLUtuZ21HYk9ualZIZzdCUHQ3cHdydDNKOWZVSTZNNlZ4RUtwRU5lVG5seG84QTIzLWdjeVpZT04xQnhXb0kzYi1LUUxIWmtLb2hYN01nVmp1YnItczJ4QzBzZ3Z5VUtzcEc2QXhNT28tRQ?oc=5",
+   "at": "2026-10-19T09:42:51+00:00",
+   "lang": "en",
+   "id": "457feb2b0d"
+  },
+  {
+   "person": "musk",
+   "kind": "news",
+   "src": "BBC",
+   "text": "Musk and Anthropic pledge public share giveaways",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE96d1pfMGRCUGNicWlMXzlMckdGTGlnMGJyM1ZwR3lxb2xoRG5BR19QaWNDVDBPVXFXRVhQd2lDM0RfTXNNMGE1WFgwNVR3R3MxQV9rV2lseGRSZ28?oc=5",
+   "at": "2026-10-19T09:38:25+00:00",
+   "lang": "en",
+   "id": "2d58e4f727"
+  },
+  {
+   "person": "musk",
+   "kind": "news",
+   "src": "이데일리TV",
+   "text": "삼전닉스 겨냥한 머스크에 반박 나왔다…\"반도체 가격은 시장이 결정\"",
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBBcXM4dmltRXQxcUhfUm90emNKMHlrN0p5Z1BDRTFEVWFZYnFHcHMzY3Q3ZEcyVEtTUnNGb25uVDhiMktfa0w2SmhTTm5fSlMxeDViZmhTOWNURkZOc3R3bHRqMEVkQmxsWWVRVjYzS2pQMkRXSXJoVVJ0akw?oc=5",
+   "at": "2026-10-19T09:28:00+00:00",
+   "lang": "ko",
+   "id": "3d6dd4f71b"
+  },
+  {
+   "person": "warsh",
+   "kind": "news",
+   "src": "The Motley Fool",
+   "text": "3 Words From Fed Chair Kevin Warsh Suggest the Worst Is Yet to Come for Wall Street",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQUjZpVlpmM3N2YU1BRngtSmVMdGdCSmx5eGJwUFZTMkxpODVaNEhsQTNLYnpxcm16c3hmRlJ4MHJub0xXVlZVNU14a29KNEZyRUV3b0FGUjdXNHhtbmVDeC1icTZsSTNkMU4zazhId3ZkaC04YUdDS3pXQzhPUTVLb21FcXpDR3I1V1ZnUTloQ3pwaFNHZ1UzQ0RLb3p2Y29oaFNrWHNGa2RCTlhNS2NJRzRnSTNhRDBy?oc=5",
+   "at": "2026-10-19T09:06:00+00:00",
+   "lang": "en",
+   "id": "1543a5d543"
+  },
+  {
+   "person": "musk",
+   "kind": "news",
+   "src": "Forbes",
+   "text": "Elon Musk Says He’ll Give Every Child In America One SpaceX Share Next Year",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNczNhSE5XRGplLWhrSVNCYlo4WjJkQks0cEg0NWNubjNUaHNlZUpabFZJUlBVY2NlWXhQU0otczBGUFV2bVRwUEM5R1FadnZnWENSWXlmMDdIX2c4Z0FtWXlseDZVZ0xPTExsT2N6UVhfSVlXOWdZY3JIekctc2l5MlFIYkNaWlRDTENOUGtjY2o4Si1vYXpVRjdEZzd0dDBnSWVmSkFHbUoyOFItcUpGX1JxVFlHSFhqZThCbFphN3VJZjdmMnln?oc=5",
+   "at": "2026-10-19T09:04:20+00:00",
+   "lang": "en",
+   "id": "71ba46d15a"
+  },
+  {
+   "person": "musk",
+   "kind": "news",
+   "src": "Yahoo Finance",
+   "text": "Elon Musk says he is going to give SpaceX stock away to kids",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQSS12ZWsxOUN0NXJnSFNFb0dxbi1uZnZnNEpSLTQ2dW9VeTlEd1E4MGJMaHRKSjdMbU9RdzMwUE9aNllHVDRJSlYybmpZMnBhb2dKNzBEN2Ztc2RkZHpKc3M5bUhNSWQ2QklIMlFZVW5qeDlySk5ud1hyTGh1enhSNWxlaUVKc1M1aTRIQmc0c2dEODhzT2Z1TXdiSnhic19qbkhHNmZRVnJVRnNtNW9FWE5CeTVQVGNEZUVkOWJFeGhRZw?oc=5",
+   "at": "2026-10-19T09:03:05+00:00",
+   "lang": "en",
+   "id": "ff4fe0b30d"
+  },
+  {
+   "person": "musk",
+   "kind": "news",
+   "src": "Bloomberg.com",
+   "text": "Musk Says He’ll Gift SpaceX Shares to ‘Every Kid in America’",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNNUNlQWZkbHFJbmR0U3dTTXhlcXNBaktwcV9NZkEtSV9MYXlGcVlwS0FpV1lpSktYVFRCcWp1cWlIVGdYNWlBd3JsS2thdVVTNnBzOHZuV1B4QU95dHdnai1BUFQ3Y2FrUG0zV3gzN1hJcDUtWFpaa1BmbnZNelFXQ29QRHBvTWFXNmt5a2pQd1AzX3g4WVVES3BQdm4wYlRvOVZsbTlUbVE5bGY0b29udw?oc=5",
+   "at": "2026-10-19T08:56:49+00:00",
+   "lang": "en",
+   "id": "c6c4bc6101"
+  },
+  {
+   "person": "musk",
+   "kind": "news",
+   "src": "Business Insider",
+   "text": "Elon Musk says he'll give every child in America a share in SpaceX",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNWDdibU5nUGN2NlhHSHJESDQ0cXVfM241eVBCUzVudEhhNjRvWklWdjFwaDNJcFlvQnBUb2FDSXFScWV6SU1QNkpnSDg2dUdDajVVYndIa2xSZlpyX05fdFlrTzhsc21RbGR3VmdGbnMya3pJRlhuQjNSZVJWenZvanJ1T25ISWs1am9Kd0w0emZta3ZrQ0x4SThtMnV4QQ?oc=5",
+   "at": "2026-10-19T08:43:00+00:00",
+   "lang": "en",
+   "id": "83c82da369"
+  },
+  {
+   "person": "musk",
+   "kind": "news",
+   "src": "CNBC",
+   "text": "Elon Musk says he'll give a SpaceX share to every child in America next year",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5zZ2J5LXU2VUdyQVQxQkVTdFIzYmM0N0tuUmZkdGJpZjlibDZKLUlpWjFOam1FQk5vd2FPSmpqaFJfTnhoVVByUFM2RThiYkJDejJyMW1Ba0VtazdaWlVtN1p1T1o2dWFHdTVrSEN3TEp2OS1KU0VYQ0ZfVXB1U2fSAYQBQVVfeXFMUGQzM0tBelFUcHJIdFMtT2VIZC13d195el9JWGd2NWtHMENjZUNDR1NyOVUwM2QxNzNDQkZHd01XeGtDeTZlbWtlYVZFSFVHY1JyUzdLVlBqWHpBYVI5UzZOUnpjWUJJSF8wUE5SQUZFQkpkaDkwOGdhTERDUG10bEVKMEN5?oc=5",
+   "at": "2026-10-19T08:39:30+00:00",
+   "lang": "en",
+   "id": "1b3d85938c"
+  },
+  {
+   "person": "musk",
+   "kind": "news",
+   "src": "전자신문",
+   "text": "韓 반도체 저격수 된 머스크…中 메모리 띄우고 삼전닉스 흔드는 속셈?",
+   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE45Um5QZjBUYzBLd0VnSWFodkc4THkwMDg0cTdDeS16aHBSZjQzYjliaGwxa0Vqa3BIdV95bnVYa1FfVHkzT1c0ckhVWGx5dw?oc=5",
+   "at": "2026-10-19T08:20:30+00:00",
+   "lang": "ko",
+   "id": "288496e0a9"
+  },
+  {
+   "person": "musk",
+   "kind": "news",
+   "src": "Yahoo Finance",
+   "text": "SpaceX throttled Starlink in Ukraine. Neither Trump nor Elon Musk wants to own the decision.",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxON2xkY21sNjY1X29qLUtFN0xNVzM2OUdqV0N5VFhYRXh4cFlSaFV3VU04LXZqMG5KWldEaURoY1U5Z1I2TVNsVHBfZVo2akRhSjExSElpdzZaMVlLWGVJRlFUaGFIVDh1TFdfX09tVkhzeGVRY3FwUV9Ga3BzUTd0S3hLQjY0cXYyVFVIUEx2VnUzYjRVVXVTNm5UUjNKQkwtZy0xVEJObmNEUWVQVXU5TXo1MTZJLTFWUk1ITGF1YVloU1k5TFN4T0ktNkJyQk5rUkFjX2V1cUxieWIwRlJ1QTVhQ0Y?oc=5",
+   "at": "2026-10-19T08:17:49+00:00",
+   "lang": "en",
+   "id": "6b2eb0d574"
+  },
+  {
+   "person": "warsh",
+   "kind": "news",
+   "src": "BigGo Finance",
+   "text": "Warsh Remarks Extinguish October Rate-Hike Expectations; Gold Futures Top $4,200 as ANZ Calls for $5,000 by 2027",
+   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1BWm5DY3k5UU5NZ2VHTFRjNzNnMXlQZXM1cFo3MTB2eFVCWE9RWGhwelZDQWNXck0tN3Y5dXIzWDNybUQ4WnVyUUVDRGdyb1J5UTRnUFYzLURwbWJVNnh3NkNaOW9ZVEo2c1NfNVRvenV0dWxrdWc?oc=5",
+   "at": "2026-10-19T07:25:00+00:00",
+   "lang": "en",
+   "id": "8e52fa5f1e"
+  },
+  {
+   "person": "musk",
+   "kind": "news",
+   "src": "머니투데이",
+   "text": "中 반도체 띄운 머스크, 삼전닉스 겨냥했나…왜 - 머니투데이",
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE8wR24wT21QdHBnQXZLdUhSeGoxdHlYbmg3Sld0NTR5dmRmM2JIaG9nUFNkNHB2TzhLU0RYQ0R3VVpITFRKd0MwU1pwVVZKMVZSbzlvdzZ6c0NwUGhSamxTTG9XYzJtQ3V0V21mdjln0gFuQVVfeXFMTzBHbjBPbVB0cGdBdkt1SFJ4ajF0eVhuaDdKV3Q1NHl2ZGYzYkhob2dQU2Q0cHZPOEtTRFhDRHdVWkhMVEp3QzBTWnBVVkoxVlJvOW93NnpzQ3BQaFJqbFNMb1djMm1DdXRXbWZ2OWc?oc=5",
+   "at": "2026-10-19T06:32:51+00:00",
+   "lang": "ko",
+   "id": "2a73df16bd"
+  },
+  {
+   "person": "altman",
+   "kind": "news",
+   "src": "Times Now",
+   "text": "OpenAI Is Building Its Own Humanoid Robot, CEO Sam Altman Confirms",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOWm9WMFBTV0dibXNCS3JSc1VmWndNQ0pHWkZiX1Ffc01nUHBua2VzQlk1Z2JsS3VRR3BFbjJjcXhYbUJWeVp2eGptOEx2V0xPZlIwWnVoNUVuaWt4dlVIT1YxbmtLRDBTOEJpQ0FaOWgtOG9BRndZR05QeFZUSGVsaG5ZUFRZNUR0M25CRndOM0FPQ2ExdmR4eFlwSjE3M1dNaU01aHNCc050NVFYTUwxZHZoQXZUNkxOU3I5eVk3TUJrMVZiZjZpNXVyZ9IB0AFBVV95cUxQakJGcnhEaXRzQmY1TlQzUGpVVm9RTENvTVlOV0J4dDV1SjNqRjEwTlJWQkJRc1d4Nnoxd2lCRVpMMG5PdmFHdERLUzVzZ3Nwd2ttSl9FR1BMSTY3NjRTa2w5N0s3eGJ4R2k3dFFFd3B4ZTBUZnJaWUVsT0FQZHJXdXlWR0VadVBkN1o2U0NQVFBlWkVQVktabUtHVEZKdTAyMVBKdDVsNUtrdWZlTHg5ZWlKbmtZSFVMSERSRXozYlVTTEJMSWsyUzVGUlRpZnJp?oc=5",
+   "at": "2026-10-19T05:47:36+00:00",
+   "lang": "en",
+   "id": "14ad754827"
+  },
+  {
+   "person": "musk",
+   "kind": "news",
+   "src": "Benzinga",
+   "text": "일론 머스크 “테슬라 가치 대부분은 옵티머스·사이버캡이 차지할 것”",
+   "url": "https://news.google.com/rss/articles/CBMiygJBVV95cUxQZnpBcTJESy1Bb0pEYVRaeWhtUXpXbDBnSDFGUl8ySHV1dUdablRYVWpkWWtQckhmdFNXUGxhT0pYWWp2ZUF3Q1ZERDd6a3J5dERoWE1DZkZJZ0dhWEdvdEJKSVZLdnloUjhvbEU2Y0RBSlVXMFNNdFpWc3RUeHpKdTBZaUpyUG93WVJYMF82VFJfb0FGWjVEVjZwWTZxUHZ0U2JrUndIbjItMl9oLU93anpvLTM4aFByRVhZSjF6Q1BiTlZ4YS1MajdBcjd6bWMwUldSSlh1NzEtNDN6QTc5TUJYZS13MlR1Q0l4aHg1MmVfc01paGFpNWt4M2NycG1jcWp1R1RZN2dQX1VjQTlWRE40TGoyUFpVZHkwNmUyV3hHcC1XckdMdHNpcTJnZXh1Mm5RY1VJVGJIZ1JSdXdFcG05dFdzS1N2MGc?oc=5",
+   "at": "2026-10-19T05:17:47+00:00",
+   "lang": "ko",
+   "id": "765a0aae7b"
+  },
+  {
+   "person": "warsh",
+   "kind": "news",
+   "src": "네이버 프리미엄콘텐츠",
+   "text": "케빈 워시 연준 의장의 새 원칙: \"결과를 미리 정하지 않는다. AI가 잡음 걸러낸다\"",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNOEZVMHJmYkpIUE5IREEwU3piQkJQcmJnRGV1RGRqSVJmLW1BdXRGNHRZX09Gd09nMDB3VlhhR0s1N0p0TVYtVW83b0p5MkVrc1VwRURnNFB4MU85bG5NUWplQ0NjZTE0QzlyR3JzTUFzMHVoXzhvU1hGMFUtSVZqTkk4UDVJTVhJ?oc=5",
+   "at": "2026-10-19T04:37:00+00:00",
+   "lang": "ko",
+   "id": "fe4c4cc4ac"
+  },
+  {
+   "person": "lutnick",
+   "kind": "news",
+   "src": "매일경제TV",
+   "text": "[CEO인사이트] 3,500억 달러를 둘러싼 네 개의 셈법…트럼프·이재명·김정관·러트닉",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE44SzliRTExcUxhZHItUWZEVGU2bUhjYVlQZ0stdDJJQ0pVT1pxakk5alE1VnhURUwwZHpiYXhTSjF1X2tBS2RhX25mWDBSNzhRVkNNalZmRnVkb2Nlc3gxdXlsSXpqTDFW?oc=5",
+   "at": "2026-10-19T04:00:00+00:00",
+   "lang": "ko",
+   "id": "dc3bf7a737"
+  },
+  {
+   "person": "nadella",
+   "kind": "news",
+   "src": "Vietnam.vn",
+   "text": "마이크로소프트 CEO 사티아 나델라가 경고한 인공지능 기반 컴퓨터의 보안 위험.",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPdjFJVzFxOF8wUVhXN2ViYi1kRGJtVVRWLUNpRng3azN1bTVrb3Y2UVY5ZGhRRlJwMGlZQlB3N2JVYVdiOUY2QjRoOEtfXzdEajJiNndIV3l0THJFRjJCQ193dDR5X0lFb1BrSDBIZ2dwNC1qOFIwd3V5ZzRodGVQdUhOblZaYzBlWjNGUmV3VUd3eFMzU0RqTWxveW9kYlFQUXM3QWxMWTdqWUtnZUdyVU94UEtlTDhjWlE?oc=5",
+   "at": "2026-10-19T03:57:06+00:00",
+   "lang": "ko",
+   "id": "578cf5e237"
+  },
+  {
+   "person": "nadella",
+   "kind": "news",
+   "src": "Stocktwits",
+   "text": "MSFT Stock Dips Overnight: Satya Nadella Calls Anthropic’s Fable 5 ‘Editorially Controlled’ Amid Backlash Over Safeguards",
+   "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOeG92VzhrOGhub245THpqQTVoSmw4cUVxckpNdGlxQlJHc2IyYzVqbnNaSHlmUFJjakZmMWVfNmdDN3NxM2ZZd1YxblhkaHZGSlZpS0VVLUZGX1ZLaF9iZDk2dGt6dS05UmhFYTh0R25oR1M3SFNYejEwUml1elE4NFZkUmFveUxKTHZSV1JqdmNsTWhnM09xZHhQWGZaSUhqS3BtcnFyMlB1ZnF2bzdNM0FEVFdUT2I1MERpNDdSVV8tX2NIam8xckxsSzBKMThndWtvNkFhQl8wUXp5cjNCRkpDa2lEODNrLW9NdE5xWGxRbkpmT0VGd3R3M3VrZmhEQXF4dXRQYUFpY1A4OEJJ?oc=5",
+   "at": "2026-10-19T03:35:37+00:00",
+   "lang": "en",
+   "id": "971b2d2bd2"
+  },
+  {
+   "person": "zuckerberg",
+   "kind": "news",
+   "src": "The Times of India",
+   "text": "Meta’s ‘highest-paid employee’ Alexandr Wang on the WhatsApp message from Mark Zuckerberg that changed hi",
+   "url": "https://news.google.com/rss/articles/CBMitAJBVV95cUxQSnFoWEZSb0hPcmRlU1FuWFRtSUNJSWhwaXNsSUtRNU56Z0Fzb3AzU3ZOd1JYZDN6YWd6aE9QcXg5M2FwTnVBZjlIdTVVbEx6cXdlcHV6Y2VzSllwLWE5ZGw5bWRYWERGam5XamM0bS1GaDRaLWtMWldrX2lKaTlDcVdNc0lXbXNOUF9scFk4bFIwTzhaSC1JclBYZTh4MVFDbmNhT0libHVvWTBwN3NKNU5ZQVBjdEh5SU5yTDZaWGx5T0E2dXhLUkgzVC1LUk1PTDZZbE5oZzVoVXMwOHZFckFoQWhOMjNTSk5RbHhJV2xMakI4Q2YzTFQzZjFpMXNxQXQzMllKZFYwamprZ3lDWTc5Q2k2YnFtM1FfR0ZiLUJ1bDRFV2xQMFhZYmJBazRISWVYUtIBugJBVV95cUxOVDFkWnA3aDVtODlOektvdW1qdmV1VkQ3STZVSVgza1NvQkpPWktrVGtrbWU3Mk1wSlQ5YmNNbndham1hMy00TVlLZUNWSlMwSFRWOG1wSm4wdmRPenVKc1E2LVhSU2NnS2NuMXdtbGtaYVpVOTZJeWlRa2lGbzJYMGNPRnU2QjdueHBNZ2hVaVFWNC0zUDBicEFlRlBXMHVnbGpNRUhoc0Fycko1TF9ZOThROC1LdHpWalRCcFZUYXBtYjFyX1lmM04tMkhIQmpLMlBCYm5KOXZyOW95NE1yOEMtYU9UNEtDc0o4THFkdEY5YlpTNm5wYm8zYXpkTVViZ3NJME13LUVfYVpzYkZQbUI2T1pNeDVTVFNERWs2Z3pmMnRKZUpvclVQd2xLNlR3elVuUmhQVnZVdw?oc=5",
+   "at": "2026-10-19T03:03:00+00:00",
+   "lang": "en",
+   "id": "e3f953a5f8"
+  },
+  {
+   "person": "bessent",
+   "kind": "news",
+   "src": "Benzinga",
+   "text": "Scott Bessent Blames ‘Energy Shock’ for Hot Inflation",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQNDh0M1VFSFpEOFJ6ZHlodjlHUm56OEpYVnFSSzdzSnFaOWROVDdhREp6Q1FqTi1FeUVxekJBeUpLX25SaTBjV1BoUEdYeTd3QkZxSzQ1WFBlRTRwTnlPel9mV0UwbEFndzF4Yy12ejdFa2M4Z1hxTnRxQzhMUFlRVk8yV3lHNzJtS3Bpdy1vdi1KMmNmV1Z1d0cyUmowSjhmVExLa19wdG4wN3hqaUJfTEFyZmw4Mk1BMzhnbXZEOVpCNjZUemlSWl8yVXpZbEE?oc=5",
+   "at": "2026-10-19T02:49:58+00:00",
+   "lang": "en",
+   "id": "bb59d1e99d"
+  },
+  {
+   "person": "warsh",
+   "kind": "news",
+   "src": "더구루",
+   "text": "워시 美 연준 의장, 미국 경제 회복력 자신…금리 경로에 대해서는 함구",
+   "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9qNTZyLTlnQ2JoVndOSmVHRm43eFFjNl9VYmtGYUFCZWRJUGQzRVFQdTFEekdrUXBmcXdqaGVDQmloRzB0ZXBtWVc2SlRmeXI5UjFERFdvMFFDWGk1VTV4TjBkaw?oc=5",
+   "at": "2026-10-19T02:46:14+00:00",
+   "lang": "ko",
+   "id": "b3b353ee77"
+  },
+  {
+   "person": "warsh",
+   "kind": "news",
+   "src": "Moomoo",
+   "text": "Fed's Warsh Says AI Will Change Monetary Policy Conduct",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNZWczVElZd0N5YnJSdGJXc1hmQy13bDB2U1NodGNXM2o5aE9sZGh3RHJkUFByU2dpdzFZT0I3WjhzUjFySDUzNjhLdFVuODVCUTFaMUVHeHl4ei1ETk9IaVY0YTJ4eklVZzNwZ0JWR1pJZGh6TVFrV2cwX2xpR0w4MEl2amw0aHRWRkx2VFk1eHNEMXBpa083RDRGc2doYXg2bEE?oc=5",
+   "at": "2026-10-19T02:27:32+00:00",
+   "lang": "en",
+   "id": "51dbdb89b0"
+  },
+  {
+   "person": "warsh",
+   "kind": "news",
+   "src": "Yahoo Finance UK",
+   "text": "Gold rises as Warsh remarks temper Fed hike bets, futures top $4,200",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOQ1FUb0VZNnVtMmVoeHNlLTFsM3RrRW5pdm5LdDdVZVIxbHpGT1RCcWppM2s0Ukt1eW5qN3hxS2tnbEx0Nm1YdHJ5bWlTMm9QQUFpTUlvZkhNcGtQeS16amx3V284M05jTUpaRGp0bVp3eDZ6ME9hSGN1SWRmQ3pUY3FjMVA?oc=5",
+   "at": "2026-10-19T01:42:00+00:00",
+   "lang": "en",
+   "id": "1471f4af45"
+  },
+  {
+   "person": "warsh",
+   "kind": "news",
+   "src": "Yahoo Finance",
+   "text": "Gold rises as Warsh remarks curb Fed hike bets",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNZ2k1aEVHLU5ncGVhTjBIeV9FRUdYOTBxbF82dlBFRFJobHEyR1FSZi16OGZVd3FXNlpDLWwySGhJSHo5djk3Ymt2ZWJGMUJBVDVzbFItaFdLQTZQNnJjNGxUZWMxc3E5eWpGV3BSOHZtaEVYM1FjSkswc1oyY3NpU1VaRWpqS0xmeHRNaG9GZnlMSW50TUdkek1DVWlHUjU0?oc=5",
+   "at": "2026-10-19T01:34:00+00:00",
+   "lang": "en",
+   "id": "0b8e672d3d"
+  },
+  {
+   "person": "altman",
+   "kind": "news",
+   "src": "Fortune",
+   "text": "Zoom and big financial firms add 'Proof of Human' badges from Sam Altman's World to stop fraud and deep fakes",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQUlZPR0wzMFl3RmFpMmVXODM3bGoydy1EcjNHTlhaaUtPdVRsdWUxalFMckRCZjV2RlJoVFJRYjExZG5yRkdiWnhZa1kzbzVXMlJySzFYMnlNcDdHbjIzamNrVU1aUEh0dmctYlozczRkWVNJcHpwUVB3S3JMMXFyY0ptdjJIeXdsUVpUUG9KMWl1R2pVcVhoWnJDZm0?oc=5",
+   "at": "2026-10-19T01:00:00+00:00",
+   "lang": "en",
+   "id": "fe13de3924"
+  },
+  {
+   "person": "cook",
+   "kind": "news",
+   "src": "디지털데일리",
+   "text": "\"공급망 관리 대가 팀쿡 가자마자\"…애플 아이폰 듀오 공급부족 알면서 70개국 동시 출시 강행",
+   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1aSXphaXIwdDdGZUlaS196czY1cHZFc2JYZU52bDY1RWZZQUdOR2lZWEJ4VmZxWnJKWmF3R2wzRFZVYmNISGtZS1BQQ01sTk5Qel83amZhcHhyb09mVGxvcXBtWEw?oc=5",
+   "at": "2026-10-19T00:03:18+00:00",
+   "lang": "ko",
+   "id": "8266b23c98"
+  },
+  {
+   "person": "cook",
+   "kind": "news",
+   "src": "Digit",
+   "text": "Tim Cook reportedly realised Apple may no longer ignore foldable phones, leading to iPhone Ultra: Report",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQbHZfR1RlTHlJOTZTcEZZNEFXSWtFQ1Z1UE5pSkx2SXJmbEVYWmtKaHJwV1cxMEVybl83OEFOQXJBbzlFYkNjRGJZSVpGNUp1S0V6RWtCeUV2UmdzUENLbTJvLW1JWlhhLUl0R3cya0QtamFkQjVhSFlDV2EwZ0ZWMkwzTlRUQVBRYkt3TTZMVmF4LXNnV2p1MktoaDlSTFdYYnByam5ia004WTQwSEYzZTBIeGVwWkFwRTFhY1l0ZWh3X2phZW1CT0xJRUxuc2tVRTJxNHpLZURrVlY4NDQxctIB5wFBVV95cUxQOFhQZ1E3WVlOZXRLUmMyazJULVpGVEJNSllKZjVKZ3NWcWRGVTFxUGhfWWxrWnpIZGJFTHlqV1d4ZUlNRlpNaHBCdllSd3N3dnQ5MjhPVmpiLUlqODJUX2M2XzJGX3ZtUktMaFFLakxwaG9XRnRiSk9uY0hhM2I4NGhJeVhvdzE5NElVckxzcnI5YlZDNzZfdGhBT0I4XzR6R1RzaVRSc3N3aG5PcTZ4TkRMTzNzRERUbTBaSEo4TGk2X1gwWDlmWHFNYm95RUo0dGx4YzQtTFBkT1hkM1MyNTlLbmlHNHc?oc=5",
+   "at": "2026-10-19T00:00:00+00:00",
+   "lang": "en",
+   "id": "38ff8e6f8b"
+  },
+  {
+   "person": "warsh",
+   "kind": "news",
+   "src": "Stocktwits",
+   "text": "Warsh Criticizes Fed’s 2020 Framework, Says It Wasn’t First Central Bank To Seek ‘A Little More Inflation And End Up With A Lot More’",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQdUVIdE9iM3hWdE9nbWlNUE9iNF9mODBiSXpCMUxWeGgtcTVvNTZLUXJmQWRaMHF5VGFoTktncVR1QVhKQ1ZfcTJ4YzExTzBZWF9LTm40M3BoZ0VNZXJZek81Q29KaVF4UnRfWDFnZFBoX1g2XzlqeF9QLUdLVjJFWnJ1NVhwN3N3S3hIYjRTellpeWVQWThhMlk2SE9oQ1l3Snp4Zm5OVmdMdzgyUS0tQXJmcUg2d2xBbjVRUmRyTUVBQ3JHVXNrb182b2JJdTJYTGc?oc=5",
+   "at": "2026-10-18T23:01:07+00:00",
+   "lang": "en",
+   "id": "8c8f12f1ec"
+  },
+  {
+   "person": "huang",
+   "kind": "news",
+   "src": "SBS Biz",
+   "text": "[기업이슈] 젠슨 황 모두 지나갈 일…펀더멘털은 변하지 않아",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBxMDMyVG1qUkRuZXA0N3h5bGxhS2ljVmxYUGQ4dDRnN1MzbFU1eWRqaE9jdnJQRFpHbm14a2NGNnlUOHFJME5Fb195Z01kX0FieXhz0gFYQVVfeXFMT25URm01V0RFNTFRNXdfNDBhTVlmeGRDM1VCWXNMT0pqZjdRRGdJdVdlVjBRdHMyLWFIWGJFUTJvdlVzdWg3SzdEX3Z0V1NMQy1FTndhOExNRg?oc=5",
+   "at": "2026-10-18T22:49:00+00:00",
+   "lang": "ko",
+   "id": "96b7a338e9"
+  },
+  {
+   "person": "bessent",
+   "kind": "news",
+   "src": "The Hill",
+   "text": "Bessent says there was no sanctions relief for Russia after US diesel deal",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNYjFLWlBtU3YtQlJUVnk3c2E1ZkpTQjdHenlRQXlfYmFHQ3BrSFVfa1RvZ1NmRHoxaUlQVi1PNXkzdU53TGZwclBGRHJJblVkcWZuc1RZN200aTBBTUxlbjVpa0tmYkRJTUUwUUxFbnRYaTlHU3JQa2pIZERWOV9SUEpTNHBjMVU3R3lxaktR0gGTAUFVX3lxTE1YZVBGZE5yR25IYU92TVFmS1JYemlmUWMzd2NqSzV1c21GczVVRjBtZjJqWkt0Nk44bXBjUVFtUjZ5d3VNOFJsZGlmOG1JaU1pRjg5TTlrOXdzeXFWanJSR3NSTnpLRVdYYkdnb0RQY3J5MWx2VmhOMS1RQl9Rc0tRSGhKT3dSdDlFeUhDaWpyekdRcw?oc=5",
+   "at": "2026-10-18T21:05:00+00:00",
+   "lang": "en",
+   "id": "7737058d5c"
+  },
+  {
+   "person": "bessent",
+   "kind": "news",
+   "src": "The Hill",
+   "text": "Bessent: Dropping oil prices before 2026 ends ‘will depend’ on Iran conflict",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQZXhScDl0djgxWExLSzlHQ1pCR3JWVHEtZDNTNlltU3BwYTVua045RTFSaW1hUnpEbE1yWlpzY191N0pGZU5LMHE0YjM2bHNMRTFiV3lfMFNUN1lINFF3dllxSWFQckpvMkt3T1JvdUVDdDEzN0VmUmw2OGJsSXc2azFfRFdLaThhNmxMeDdiSm3SAZYBQVVfeXFMUEhINElWNEUyODNpTWU2dE5jY1RPYzJTTUNzVy1fbWl6Y2Q1cUI3SEszOTBLWnNLRVhGeTIwS29DYkpZVHRQZUU5cFpkQ2FJLV8tSmw1TUdYLXNWc0xxS1RGdV96X0otNmdGb1hiTXZVbGZQc0xzZy1fbjkwU0VFQm4wdndhYllNSlNHaWNOLUpkcGl1QWdB?oc=5",
+   "at": "2026-10-18T18:58:00+00:00",
+   "lang": "en",
+   "id": "547932222c"
+  },
+  {
+   "person": "bessent",
+   "kind": "news",
+   "src": "Times Now",
+   "text": "Why Trump Waived Russia Sanctions: Wright, Rubio and Bessent Offer Conflicting Answers",
+   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOV3h2UmhaX28wVTlYWktKM0VwV0xHQkN0R3lIaFkwd1hFODN6ekFkNnlZakRrOUMtZE9vLW11MDBDc3BEd1lkRjllMWM5blljSkFVdGw2a3ctSEs3Mmp0cy13blhWbm9iRm1RUUx1RkNJZHlidXQwQTZWNE50SklSU0tobWY4Z1otRlNoaTk5dXpWeEhyZnZ0bXFrbnVPR2lCcnoyU2UtclFRT1I5UXo1M3EzOG94SWF0VjRHMzZabzJHZW5EQThjYU9LVi1FdkZtXzRyUFJ3VkJOemp3aWh2TE9B0gHnAUFVX3lxTE1yeldrVVFsNm5nVFZKMFdnWE0wOURlUDBXbTllS2pQUVlTMUhMWGxCVFBqMDdJODk0THV4M3JTVEpZUnJBNGNPQjhIdms0Njg5WHE1Q1BmWWZhX0JVek1Rc0UxZGdzR3o1TThsTVhqTWcyTGxyZFY1d21BZkRzdk9GZVNObldUbmZ5VVBkcF9tT2l3WDVJSWF5Y0JYWWoyek1hMjZOVXYwUWRjSUk3OV92ZnY2LXhwSjF4bFRjdEcybmFLZUpjTmtJcEdSOXJ0ZE01dF9mVXllMTdMalB2eDdwY2hIUzhRSQ?oc=5",
+   "at": "2026-10-18T18:22:02+00:00",
+   "lang": "en",
+   "id": "04d8601ec2"
+  },
+  {
+   "person": "warsh",
+   "kind": "news",
+   "src": "Unisba Media",
+   "text": "Warsh Signals Optimism On US Growth Potential |Bloomberg Businessweek Daily 7/1/2026 Jackson Blake (3r1CJpU11F)",
+   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPbXhFWDZBZDBmU2J2M3FoUnotdUZmU0NnV3dRa18zVzJhRTZWbldIMGREODhqQ2FyNm5XTXVjeEJyd1BKRV9hZ1FJYjEtZzRhaWNIbURmSWtHMU1KdXZrNlZSRGRzMHpJYTdlTTNzb3hqNkdsalI3MVJhWFBzeTZxVEFB?oc=5",
+   "at": "2026-10-18T17:44:55+00:00",
+   "lang": "en",
+   "id": "43be7689ce"
+  },
+  {
+   "person": "nadella",
+   "kind": "news",
+   "src": "얼리어답터뉴스",
+   "text": "나델라의 경고: AI 에이전트 시대, '멈추는 권한'이 설계의 출발점이다",
+   "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE91YUN3dGRKQzNKM1ZoWG5nYy16V3FURTFkRVR4T01LUzNVOFRhU05feVA4U083OGJDUm1nTk1mS28zV09O?oc=5",
+   "at": "2026-10-18T17:10:38+00:00",
+   "lang": "ko",
+   "id": "887fdd6331"
+  },
+  {
+   "person": "nadella",
+   "kind": "news",
+   "src": "유스연합",
+   "text": "나델라의 'AI 비상 브레이크' 발언이 바꾸는 기업용 AI 구매 기준",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9McXZvdGF6dWZLVDFaWW5WOERreTVYY1B2WHVQZ2cySVBaSVNjRHJJRW1Kd3VGTHJTR3JUYkkxOEx0VXJrYl9KTjV3ODd1VFFQTDZZ?oc=5",
+   "at": "2026-10-18T17:07:18+00:00",
+   "lang": "ko",
+   "id": "2afa9785ef"
+  },
+  {
+   "person": "bessent",
+   "kind": "news",
+   "src": "The Hill",
+   "text": "Bessent: Zelensky ‘should be careful’ with ‘reckless’ comments that US slowed down Starlink",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNaWtieFNKWnBLNzVVRURWQ3RlUXNMejBPcHpEdklwS0hhQ1dOR2pCV0Nwa2NnY1NNdWt6YUR4TWhvSElrdFZ4VEV4M2tmaXFQclhoTnV4ajg4MUNNNTJGbTJGRngzTjBSQjRpZlFDdEZYT3B4cU81OUZiX1JSaWcxOdIBhgFBVV95cUxORG5OVnZoRk96WE1pMTVCeXJyREI5R0Z3NWxtMWp1SmdPVEc2UUllRWpYWUQ0bTdDT19TUEtMZTR0c253NUJuRExoMExiN2tKa2x2M2hzX1VtSUZha3pVUEpMeTI2OGl5UE1zdktRaEZzZHdqRXR6MFJNZXBnRTNrVXU4WHZ1UQ?oc=5",
+   "at": "2026-10-18T16:48:00+00:00",
+   "lang": "en",
+   "id": "55c3dabf72"
+  },
+  {
+   "person": "bessent",
+   "kind": "news",
+   "src": "CNBC",
+   "text": "Bessent warns Zelenskyy to 'be very careful' about claims U.S. is throttling Starlink",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQbktXSXE4Y21XR1NVYUlvLURKVVExNlNOZkNfRzRzTmpBU2Z5MzZMaGNxV25LY0prMXI1Mm5qcklXMVVGNXZTRXd5NTZOaTR5WWIzOVA4RzJmWHVCR3dXdmJ2Q0pfbE5tYXFUNkJzWHFyMDVZZ2FSaVNucFBxcmQ0d9IBhgFBVV95cUxNR2ZNUENKSGl5ZWEySEYwVmZtTl8yc0xwNW5jMjByRzZic2toSVU4NDNHal9rZWhvUUI4S0dtS0xLUHJ2aTQ4YTVSYkFwcVpsaGV0amxOMWdvM2s4TFJ3d19sMDZ2YXJiU0ZVTXZjUk1zYl9qVzUxZGRGLXRHWWVJWlJPSUhBQQ?oc=5",
+   "at": "2026-10-18T14:37:36+00:00",
+   "lang": "en",
+   "id": "12aa7e457d"
+  },
+  {
+   "person": "huang",
+   "kind": "news",
+   "src": "동아일보",
+   "text": "[특파원 칼럼/곽도영]‘AI 규제 필요 없다’는 젠슨 황, 이번엔 틀렸다",
+   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE50d0NkTll2RThORURuT2hiYllQcVVMdjk2ZEF5cDhPbFFFb2FfeWVIVFlYTklVSndVSkRxNW1NR2IyTV9zT1pMbEhJeHlXQkZ3d2h0akI3MTIxa3d0eHpBQXRRNk9zVzhwUjFTdVRaaVZSM3JQdWfSAWZBVV95cUxPWDNWREZSbjZTTHlkc1BpUzBkTE15MWplVlpwcFVBM09sSlVxVmRYMzJ0ZUlDV3FDTlNxdG5fdEN2bGFxemwwajhrM3Q2QnlWQmZWVHhlakN4di0zZVJzcm9OTzZBeGc?oc=5",
+   "at": "2026-10-18T14:15:00+00:00",
+   "lang": "ko",
+   "id": "2d0d9f20b2"
+  },
+  {
+   "person": "bessent",
+   "kind": "news",
+   "src": "NBC News",
+   "text": "Scott Bessent says Zelenskyy is ‘reckless’ for saying U.S. government caused Starlink lag",
+   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNYVdnWW1oQU1NZWVFN2dhX25jVWNpYVQ1YmpHRERNbVRBQ1d3dDdCX0NQTmdMNzE4cmVxcDAybmFsLUMxdERaaUxqcnFNc0lCVWtUeDdTYi1lanlBVTZsdkhuQjVuZFRRYl9Qc3ZJbnoxUzN1RV9yUGhyUlR4ZjV6OHRfS3pjZDUyMDdjNEpkRDA4eGlENTNtcmVpejYzckZNdkNaSDRXQnJ4OU12dVMtTXlzQ0FiU3l4Z3NpbmJjTWJwNGo4QlBCOGFvN2tlSzNxczJTMF95Z1p3OHZT?oc=5",
+   "at": "2026-10-18T14:09:59+00:00",
+   "lang": "en",
+   "id": "a7b7fdca84"
+  },
+  {
+   "person": "bessent",
+   "kind": "news",
+   "src": "NBC News",
+   "text": "Scott Bessent says ‘no one has been tougher on Russian sanctions’ than Trump: Full interview",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOWmFFTXh3cHZJMmJTanlMT20yZzZOd29FMENoR1JoNkg2b0NDU0x4dmlqSzVtWTJkNVJoWmg2eDY5QlF4VHRpVzBSQ1VjR2JOdElTMW02ekpLRkd3bXBFcnIwWUo1UjZCa0ZHWTgxU2xmazVRMzRVaHVCaGxSU0NGb2M5bmNHOGhadXdFZWtJSFBjUmhmUWNfSFM1cVRpMWJZNXdnLVFjemxVTGo2NnlxdkU5cFgzbkpSNHNhcTRiNzRjTExLZXVENUlkaHItU2g4aElpdnFKdi02TTg0eThjYg?oc=5",
+   "at": "2026-10-18T14:04:58+00:00",
+   "lang": "en",
+   "id": "d2a5e7e348"
+  },
+  {
+   "person": "bessent",
+   "kind": "news",
+   "src": "NBC News",
+   "text": "Scott Bessent says prices will come down after Iran war: ‘we will get to the other side’",
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPX3pMdGo4RnV3dUFGY296STN2LVI2N3JoVTd3UzNWbEp6Ykh2U2RVX2J4N2I2eHpiVFRYdlFIcG0wMEpFVmphTnVKUjVYMDVKNktBaDdzbXlyYmYzbVdWZDRIUU55OVQ4STVLSE9Rb2ZyTjdSS2k5YWlMYlJBWVBNc2FDVnJXQ0ZrN3JyMDAwaHNkYW16cDE5b2J0N0NDVTRaYUZPczUybkVRdUxjS3BGR0lEejlOY0pHVWh2X04tN2I4ZnNYN1l6bEx5SjV2ck1ZVGQ4VktWQXY2NlU?oc=5",
+   "at": "2026-10-18T13:58:44+00:00",
+   "lang": "en",
+   "id": "6ac59872b4"
+  },
+  {
+   "person": "cook",
+   "kind": "news",
+   "src": "Fortune",
+   "text": "Tim Cook says late Apple cofounder Steve Jobs gave him this advice before becoming CEO",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQNnVadmtteUgxM2FTLXFab0VqU0MxcDVCMVJieFV2cFlOb25kYUZZSXR5UGdIeUxETzhiVDRMSGJxMEpUMFVwV3kyVW5tWXpLV1hZVXB2MnpWQkpMcm5vNTFyMVc5ZlJyU3lpdFZQT2ZSM3Vjd09ObjJpcEVaMmd3WV9nOUVsTlpsNVpFN2lEelVZLTFwSUpUSk1YVmhSZUVuMktIUHRTUXR6dTktb3ZkUzRXemFGRkZtOXRQX1JGVWhPOTg?oc=5",
+   "at": "2026-10-18T13:16:00+00:00",
+   "lang": "en",
+   "id": "5eb5e422cf"
+  },
+  {
+   "person": "rhee",
+   "kind": "news",
+   "src": "브런치",
+   "text": "슈카와 이창용",
+   "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE91RjhpSEd1R2lKczh0TWtzc21xbXdLNG9tOVEzR1BJTDVwcVByQXUzdjc2RmxUMXdvdmQ0NWNaOHlYTmFrTWc?oc=5",
+   "at": "2026-10-18T12:43:07+00:00",
+   "lang": "ko",
+   "id": "b0f1ffe2ce"
+  },
+  {
+   "person": "dimon",
+   "kind": "news",
+   "src": "Yahoo Finance",
+   "text": "‘Could easily go to $5,000, $10,000’: Jamie Dimon predicted gold’s 2026 surge. Here's where its price may go in 2027",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNaWQ4dll3djUzRTVFSjc0Smh6S0hfYm0tU1dLSnExclAzUlg5eEd5STZxZnNQeVRiS3RLR3lWeGNacENZeUlWWUN1anpVcUtCZVhaRy13ZVNyTS1CMHpzNjlQdTF2OVlsSERfZWlNcGhuZmJVelBjQzZrMlZhLWt5Yi1mZWowT092Ny1SVW8yTmlHQUFLQ1E?oc=5",
+   "at": "2026-10-18T11:40:00+00:00",
+   "lang": "en",
+   "id": "b00d0a6a27"
+  },
+  {
+   "person": "zuckerberg",
+   "kind": "news",
+   "src": "The Star",
+   "text": "Mark Zuckerberg dresses up, but can fashion work its magic on Meta’s image?",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOSURoOGlncUhwTFRuQ0xrR253dEctd2RhUUI1YmFGclVXZzNXMWV5UXNJZWJ0M29oQ2c2cDVkc2ZhNDd0Ylc2SlNmcE1KRDZiOVlhUDh3VW9xNmpZcjVjQ200bFRldllkMmtqdm5QQzgwX3QzbHVxWkhSbGNPb1VkdVJHUV9GZnBVWEMtM19iUVZRVnBzbTRteF84bUpzTzlJS3JSZEZfUWUzX0xNQVhkZHBYSFFNNEE5T0dJZzZWcUJmSUpz?oc=5",
+   "at": "2026-10-18T11:00:00+00:00",
+   "lang": "en",
+   "id": "5ed751a937"
+  },
+  {
+   "person": "dimon",
+   "kind": "news",
+   "src": "Yahoo Finance",
+   "text": "As borrowing costs spike, Jamie Dimon asks corporate America: 'Are you prepared?' You should ask yourself the same thing",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPMEZVenN4a3NBNVhmRU10eGxrSnh2aDFFRnFFaWdiMVNKbGlUR25fRGxkWERKbWJOTFBEWFFmU0txS2ppRFRMT0JFaWZmZXdWYkJ3bU5pb1hNeEF6QWtNYjNPYlJEd1NWN0Rzc3cwaHVqdld4V2c3NTNrZE9HVW1ZZzhCWnB2TkFBYXJ2SkxFZFNlUzN0enp3X3Y1RjlhaDA?oc=5",
+   "at": "2026-10-18T10:40:00+00:00",
+   "lang": "en",
+   "id": "6725607405"
+  },
+  {
+   "person": "zuckerberg",
+   "kind": "news",
+   "src": "Storyboard18",
+   "text": "How Alexandr Wang won Mark Zuckerberg's $100 billion AI bet",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPSXVHdmVsaXRXUlRsQnBUWkFCTkVTVlJUYzJ0WmUyN3IxR05jYUttMFhEOWVSZUhmMjhISlNaeU9oMm1fOVFFd19RME1IZ0VkcTE5QVVIcElDWHNkMjBWS0xrWndKYUZnQ2hQbVN5d2JKQU5zUEJqQVFjeFJtSGRTb2pxVl9kdVl4anRrWFk2WFhQLVVZNU5kUXp3Q2ROeWJaYlBJODFaNGJIZUFsZlhz0gG0AUFVX3lxTE1CQ0s0UzhrWUNRQVpfSUlSUmJjUmFYcmVZZm5BbVRELXZ6MnZzR0NuVm1UTW8teU10RUhGRS1SZUZKWEwzZXJYcmpRby14dFB3bEIxZWRBdlVtQU0xUkxFNldkRUI1T0VjYUw2QTJxZGF4RkhGZ25tdEFBNC1nZXBwZ1pVQk9zR3pKT2FsZG1zTUhjaFlnU19uYTdHaEp1enJmdzFBTHJxeFpSNUhpekdFd1lVMQ?oc=5",
+   "at": "2026-10-18T10:31:02+00:00",
+   "lang": "en",
+   "id": "d9c16b8d74"
+  },
+  {
+   "person": "dimon",
+   "kind": "news",
+   "src": "Yahoo Finance",
+   "text": "What Does JPMorgan Chase (JPM) Face If Jamie Dimon Is Right On Rates?",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOTVptb3p1QkcwdUw0UFBPcDFPcXlLaFhtbXc0aHJKWV81OEVXS2RMa0h4T0JjVFE1ZVFnQ1gwRFlxc1oyWDRoN0pmakxseUI2VGJOU0s3M25QaXRsWXR2bFdOczktaXFWbFRQTXMzVlJSUFJRR29tZzVRM214Vkg4dmNoX1pNclA0YkZrR2hab1NYeEdzVlpLUw?oc=5",
+   "at": "2026-10-18T09:15:38+00:00",
+   "lang": "en",
+   "id": "a34cff28a3"
+  },
+  {
+   "person": "warsh",
+   "kind": "news",
+   "src": "Hot Springs Sentinel Record",
+   "text": "Fed chair Warsh says price stability is key but shies away from signals about rates",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPazF5cEF4TFdielBYTmsxaGpGaVZXTlpCcy16eWVQeEVqTVh0VlNrbDFTQmhOSVVoZXM5NGJOWUdtSGwyZVNlQzUzZDJ0OVR1cHpKQmFnSDUxX1Zsd3VBWWJMOG1ZWmZBQWpxMzc1WE9CLXRJMHRwMk5fM3V6c251bF8wY05ERUZNU2ZMdWtrZ2c?oc=5",
+   "at": "2026-10-18T09:00:00+00:00",
+   "lang": "en",
+   "id": "ba86dd1170"
+  },
+  {
+   "person": "cook",
+   "kind": "news",
+   "src": "Mashable",
+   "text": "Tim Cook says Apple is working on self-driving car technology",
+   "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFA5Y0E1cGNSaTZJMHVyeFpuUlRmNTQ5UWdnbkkyVTEwUTB6NmE4TzhxUnk2Mk9PeW53dzZvU204TzZkV3ZlWG9jcWR3Wkt6OUdqb3RPUFVweWtoZ3VsUnhaNncxOEhRejUyUDIwdw?oc=5",
+   "at": "2026-10-18T09:00:00+00:00",
+   "lang": "en",
+   "id": "8046c53e24"
+  },
+  {
+   "person": "cook",
+   "kind": "news",
+   "src": "Mashable",
+   "text": "Tim Cook's new Twitter name calls out Trump's 'Tim Apple' flub",
+   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE05MVpNR01WMS1Qa2NoMWRfMEVMWldNcWI3Qy1yZTdEWFNUMkltSktfaWhKVUJWNWpUcHU5VXVnWnRzUzFJb3E4VVdmY2hQalJNckltX1I3S1ZmYUhaRmhoeHZBQXJNZlozZktQeUpuUQ?oc=5",
+   "at": "2026-10-18T09:00:00+00:00",
+   "lang": "en",
+   "id": "4f4e0b329d"
+  },
+  {
+   "person": "warsh",
+   "kind": "news",
+   "src": "Bitbo",
+   "text": "Bitcoin Steadies Near $82K as Warsh Sidesteps Rate Hike Talk",
+   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1uS2hNM2RDOTYwUmFJVHRWck5pUHlHSFVXWmN3OW9ZNmJlM2pPMklGbzJFM3p4TEpycEhZUXZneEpnZU1QS204UjFhT1FkSTFsSzNIVlZ1UWwtejl4VkpEcDhRSGI?oc=5",
+   "at": "2026-10-18T08:50:00+00:00",
+   "lang": "en",
+   "id": "b87c3b7c1b"
+  },
+  {
+   "person": "zuckerberg",
+   "kind": "news",
+   "src": "Mashable",
+   "text": "Facebook blocks Trump indefinitely, Zuckerberg says the risks 'are simply too great'",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNSWVELW5taU42cVBtRGFxalNmTkc0bm1ldVl0dExlQTQ4OXZQaDhaNzdFWVMtRDlDOTFZU2ZrUDJmaXBDREd1VHEtVGFtTlJMcm5zeFpxT25naDU2amNTajlFd0hNNEptQ2o4aGszQ1lRbXF2dVVfdFpIdGpCdmQybl9PYXdHZjZHX0loVU9SaFU2NlBaRjNKaWhaRVJvQlFwSDRXMVNaWVNmMG5lV0dkbjJBZU1yUXhiYVo4OFlIdE1DbDBnNUVSc2VZYlh5OGo0WUhHYlJXcmNIaUlMZmxsdw?oc=5",
+   "at": "2026-10-18T07:56:35+00:00",
+   "lang": "en",
+   "id": "1ec52d2e5f"
+  },
+  {
+   "person": "cook",
+   "kind": "news",
+   "src": "VOI.ID",
+   "text": "아이폰 듀오는 중국에서만 생산되며 팀 쿡은 이유를 밝힙니다.",
+   "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTFBBMVpCUkkwWk1Lanp4eVk4VE8zendDVXlBOEtTcDZSVXJSaG40RFFhQVp6SDFOVkthZG1uT3FIejhGUdIBQkFVX3lxTFBBMVpCUkkwWk1Lanp4eVk4VE8zendDVXlBOEtTcDZSVXJSaG40RFFhQVp6SDFOVkthZG1uT3FIejhGUQ?oc=5",
+   "at": "2026-10-18T07:54:07+00:00",
+   "lang": "ko",
+   "id": "711901b1cc"
+  }
+ ],
+ "note": "Truth Social은 원문 게시물, 그 외는 발언을 보도한 기사 헤드라인입니다(원문 트윗은 X API 미사용). '직접 입력'은 운영자가 전달한 발언."
+}

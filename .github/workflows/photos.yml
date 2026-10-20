@@ -1,0 +1,18 @@
+name: people-photos
+# 수동 실행: 주요 인물 프로필 사진(Wikimedia Commons 공개 라이선스)을 받아 main 에 커밋합니다.
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/fetch_people_photos.py --force
+      - run: |
+          git config user.name wisdomtooth-bot
+          git config user.email bot@wisdomtooth.local
+          git add assets/people data/people.json
+          git diff --cached --quiet || git commit -m "assets: 주요 인물 프로필 사진(Wikimedia Commons) 갱신"
+          git pull --rebase origin main && git push origin HEAD:main

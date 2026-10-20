@@ -80,6 +80,53 @@ KR_LIST = [  # 코스피 시총 상위 + 학습 관련 (티커, 이름, 섹터)
 ]
 
 
+ETF_LIST = [  # finviz ETF 맵 구성 + 요청 종목(EWT·EWY·EWJ·EWZ·SOXS). (티커, 이름, 그룹)
+    ("SPY", "S&P 500", "미국 지수"), ("QQQ", "나스닥 100", "미국 지수"), ("DIA", "다우", "미국 지수"), ("IWM", "러셀 2000", "미국 지수"),
+    ("VGT", "Vanguard IT", "기술"), ("XLK", "SPDR 기술", "기술"), ("SMH", "VanEck 반도체", "기술"), ("SOXX", "iShares 반도체", "기술"), ("TECL", "기술 3x", "기술"),
+    ("IYW", "iShares 기술", "기술"), ("FDN", "인터넷", "기술"), ("QTEC", "나스닥 기술", "기술"), ("FTEC", "Fidelity IT", "기술"), ("XSD", "SPDR 반도체", "기술"), ("FXL", "First Trust 기술", "기술"), ("IGV", "소프트웨어", "기술"),
+    ("XLE", "SPDR 에너지", "에너지"), ("XOP", "석유가스 탐사", "에너지"), ("IYE", "iShares 에너지", "에너지"), ("VDE", "Vanguard 에너지", "에너지"), ("ERX", "에너지 2x", "에너지"), ("AMLP", "MLP", "에너지"), ("OIH", "유전 서비스", "에너지"),
+    ("XLY", "SPDR 임의소비재", "임의소비재"), ("XRT", "소매", "임의소비재"), ("XHB", "주택건설", "임의소비재"), ("ITB", "주택건설 iShares", "임의소비재"),
+    ("XLV", "SPDR 헬스케어", "헬스케어"), ("XBI", "바이오 SPDR", "헬스케어"), ("IBB", "바이오 iShares", "헬스케어"), ("IHI", "의료기기", "헬스케어"), ("IYH", "iShares 헬스케어", "헬스케어"), ("VHT", "Vanguard 헬스케어", "헬스케어"),
+    ("IYR", "iShares 부동산", "부동산"), ("VNQ", "Vanguard 리츠", "부동산"), ("SCHH", "Schwab 리츠", "부동산"),
+    ("XLB", "SPDR 소재", "소재"), ("XME", "금속·광산", "소재"), ("IYM", "iShares 소재", "소재"), ("GDX", "금광", "소재"),
+    ("XLF", "SPDR 금융", "금융"), ("KRE", "지역은행", "금융"), ("KBWB", "은행", "금융"), ("KBE", "SPDR 은행", "금융"), ("FAS", "금융 3x", "금융"), ("VFH", "Vanguard 금융", "금융"), ("IYF", "iShares 금융", "금융"), ("KIE", "보험", "금융"),
+    ("XLI", "SPDR 산업재", "산업재"), ("ITA", "항공우주·방산", "산업재"), ("AIRR", "미국 제조", "산업재"), ("IYT", "운송", "산업재"), ("IYJ", "iShares 산업재", "산업재"), ("PAVE", "인프라", "산업재"),
+    ("XLC", "SPDR 커뮤니케이션", "커뮤니케이션"), ("IYZ", "통신", "커뮤니케이션"), ("VOX", "Vanguard 커뮤니케이션", "커뮤니케이션"),
+    ("XLU", "SPDR 유틸리티", "유틸리티"), ("VPU", "Vanguard 유틸리티", "유틸리티"),
+    ("XLP", "SPDR 필수소비재", "필수소비재"), ("VDC", "Vanguard 필수소비재", "필수소비재"),
+    ("EWY", "한국", "해외"), ("EWT", "대만", "해외"), ("EWJ", "일본", "해외"), ("EWZ", "브라질", "해외"), ("FXI", "중국 대형주", "해외"), ("INDA", "인도", "해외"), ("EEM", "신흥국", "해외"), ("EFA", "선진국", "해외"),
+    ("SOXS", "반도체 -3x", "레버리지·인버스"), ("SOXL", "반도체 3x", "레버리지·인버스"), ("TQQQ", "나스닥 3x", "레버리지·인버스"), ("SQQQ", "나스닥 -3x", "레버리지·인버스"), ("TSLL", "테슬라 2x", "레버리지·인버스"),
+    ("GLD", "금", "원자재·코인"), ("SLV", "은", "원자재·코인"), ("USO", "원유", "원자재·코인"), ("IBIT", "비트코인", "원자재·코인"), ("TLT", "미 장기국채", "원자재·코인"),
+]
+
+
+def universe_etf():
+    cache = load("cache/universe_etf.json", None)
+    if cache and not REFRESH and (dt.date.today() - dt.date.fromisoformat(cache["asof"])).days < 7:
+        have = {i["t"] for i in cache["items"]}
+        if all(t in have for t, _, _ in ETF_LIST):
+            return cache["items"]
+    print("[info] refreshing ETF universe (AUM)")
+
+    def one(row):
+        t, name, grp = row
+        aum = None
+        try:
+            s = get_text(f"https://stockanalysis.com/etf/{t.lower()}/")
+            i = s.find("Assets")
+            m = re.search(r"\$([\d.,]+)\s*([TBM])", re.sub("<[^>]+>", " ", s[i:i + 400]))
+            if m:
+                aum = parse_cap(m.group(1) + m.group(2))
+        except Exception as e:
+            print("[warn] etf aum", t, e, file=sys.stderr)
+        return {"t": t, "n": name, "sector": grp, "ind": "ETF", "cap": aum or 5e8}
+
+    with ThreadPoolExecutor(6) as ex:
+        items = list(ex.map(one, ETF_LIST))
+    save("cache/universe_etf.json", {"asof": dt.date.today().isoformat(), "items": items})
+    return items
+
+
 def universe_kr():
     cache = load("cache/universe_kr.json", None)
     if cache and not REFRESH and (dt.date.today() - dt.date.fromisoformat(cache["asof"])).days < 7:
@@ -173,6 +220,10 @@ def build(items, tag):
 out = {"updated": now_kst().strftime("%Y-%m-%d %H:%M KST")}
 out["us"] = build(universe_us(), "US")
 out["kr"] = build(universe_kr(), "KR")
+try:
+    out["etf"] = build(universe_etf(), "ETF")
+except Exception as e:
+    print("[warn] etf heatmap failed:", e, file=sys.stderr)
 # 지수 요약
 idx = spark(["^GSPC", "^IXIC", "^DJI", "^RUT", "^KS11", "^KQ11"])
 out["index"] = {k: {"p": v["p"], "d1": round(v["d1"], 2) if v["d1"] is not None else None} for k, v in idx.items()}

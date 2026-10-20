@@ -2,7 +2,7 @@
 실행: python3 scripts/update_market.py
 """
 import datetime as dt
-from common import load, save, yahoo_daily, now_kst
+from common import load, save, yahoo_daily, now_kst, get_json
 
 cfg = load("config.json", {})
 out = {"updated": now_kst().strftime("%Y-%m-%d %H:%M KST"), "items": []}
@@ -40,6 +40,17 @@ for m in cfg["market"]:
             item["avg1y"] = round(sum(vals) / len(vals), 1)
             item["hi1y"] = round(max(vals), 1)
             item["lo1y"] = round(min(vals), 1)
+    if m["key"] == "btc":
+        # 업비트 원화 가격(공개 API) → 김치 프리미엄(사실 수치)
+        ub = get_json("https://api.upbit.com/v1/ticker?markets=KRW-BTC")
+        fx = next((i for i in out["items"] if i["key"] == "krw"), None)
+        try:
+            item["krw"] = round(ub[0]["trade_price"])
+            item["krw_pct"] = round(ub[0]["signed_change_rate"] * 100, 2)
+            if fx:
+                item["premium_pct"] = round((item["krw"] / (last["c"] * fx["value"]) - 1) * 100, 2)
+        except Exception:
+            pass
     out["items"].append(item)
 
 # 학습기업 현재가 + 50일선 이격도
