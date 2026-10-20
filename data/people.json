@@ -1,5 +1,5 @@
 {
- "note": "주요 인물의 한마디 — 수집 대상. sources: truth(트럼프 Truth Social 공개 아카이브 RSS) · gnews(Google News RSS, 발언을 보도한 기사 헤드라인). 사진은 Wikimedia Commons 공개 라이선스(img_credit).",
+ "note": "주요 인물의 한마디 — 2026년 발언 아카이브(수동 관리). 사진은 Wikimedia Commons 공개 라이선스(img_credit). 발언 추가는 data/voices.json items에 직접.",
  "people": [
   {
    "id": "trump",
@@ -9,21 +9,6 @@
    "wiki": "Donald Trump",
    "x": "realDonaldTrump",
    "truth": "realDonaldTrump",
-   "sources": [
-    {
-     "type": "truth"
-    },
-    {
-     "type": "gnews",
-     "q": "\"Trump\" (says OR said OR warns OR tells OR posts) (tariff OR Fed OR rates OR market OR China OR trade OR economy)",
-     "lang": "en"
-    },
-    {
-     "type": "gnews",
-     "q": "트럼프 (발언 OR 말했다 OR 밝혔다) (관세 OR 연준 OR 금리 OR 중국 OR 증시)",
-     "lang": "ko"
-    }
-   ],
    "img_credit": {
     "file": "Official_Presidential_Portrait_of_President_Donald_J._Trump_(2025).jpg",
     "license": "Public domain",
@@ -39,18 +24,6 @@
    "role": "연준 의장",
    "wiki": "Kevin Warsh",
    "x": "",
-   "sources": [
-    {
-     "type": "gnews",
-     "q": "\"Warsh\" (says OR said OR warns OR signals OR tells OR speech OR testimony)",
-     "lang": "en"
-    },
-    {
-     "type": "gnews",
-     "q": "워시 연준 의장",
-     "lang": "ko"
-    }
-   ],
    "img_credit": {
     "file": "Official_portrait_of_Kevin_M._Warsh_(cropped)2.jpg",
     "license": "Public domain",
@@ -66,18 +39,6 @@
    "role": "미국 재무장관",
    "wiki": "Scott Bessent",
    "x": "SecScottBessent",
-   "sources": [
-    {
-     "type": "gnews",
-     "q": "\"Bessent\" (says OR said OR warns OR tells OR interview)",
-     "lang": "en"
-    },
-    {
-     "type": "gnews",
-     "q": "베센트 재무장관",
-     "lang": "ko"
-    }
-   ],
    "img_credit": {
     "file": "Official_portrait_of_Treasury_Secretary_Scott_Bessent_(borderless)_(cropped).jpg",
     "license": "Public domain",
@@ -93,18 +54,6 @@
    "role": "미국 상무장관",
    "wiki": "Howard Lutnick",
    "x": "howardlutnick",
-   "sources": [
-    {
-     "type": "gnews",
-     "q": "\"Lutnick\" (says OR said OR warns OR tells OR interview)",
-     "lang": "en"
-    },
-    {
-     "type": "gnews",
-     "q": "러트닉 상무장관",
-     "lang": "ko"
-    }
-   ],
    "img_credit": {
     "file": "Howard_Lutnick_2025.jpg",
     "license": "Public domain",
@@ -117,16 +66,9 @@
    "id": "rhee",
    "name": "이창용",
    "en": "Rhee Chang-yong",
-   "role": "한국은행 총재",
+   "role": "전 한국은행 총재(~2026.4)",
    "wiki": "Rhee Chang-yong",
    "x": "",
-   "sources": [
-    {
-     "type": "gnews",
-     "q": "이창용 총재 (발언 OR 말했다 OR 밝혔다 OR 간담회 OR 금통위)",
-     "lang": "ko"
-    }
-   ],
    "img_credit": {
     "file": "Speaker_Woo_Won-shik_visits_Bank_of_Korea_to_discuss_stabilizing_financial_markets_(cropped).jpg",
     "license": "KOGL Type 1",
@@ -136,24 +78,20 @@
    "img": "assets/people/rhee.jpg"
   },
   {
+   "id": "shin",
+   "name": "신현송",
+   "en": "Hyun Song Shin",
+   "role": "한국은행 총재(2026.4~)",
+   "wiki": "Hyun Song Shin",
+   "x": ""
+  },
+  {
    "id": "musk",
    "name": "일론 머스크",
    "en": "Elon Musk",
    "role": "테슬라·xAI CEO",
    "wiki": "Elon Musk",
    "x": "elonmusk",
-   "sources": [
-    {
-     "type": "gnews",
-     "q": "\"Musk\" (says OR said OR posts OR tweets OR writes OR warns) (Tesla OR X OR xAI OR robotaxi OR Optimus OR SpaceX)",
-     "lang": "en"
-    },
-    {
-     "type": "gnews",
-     "q": "머스크 (발언 OR 말했다 OR 밝혔다 OR 게시) (테슬라 OR 로보택시 OR 옵티머스)",
-     "lang": "ko"
-    }
-   ],
    "img_credit": {
     "file": "Elon_Musk_-_54820081119_(cropped).jpg",
     "license": "CC BY-SA 4.0",
@@ -169,18 +107,6 @@
    "role": "엔비디아 CEO",
    "wiki": "Jensen Huang",
    "x": "",
-   "sources": [
-    {
-     "type": "gnews",
-     "q": "\"Jensen Huang\" (says OR said OR tells OR interview OR keynote)",
-     "lang": "en"
-    },
-    {
-     "type": "gnews",
-     "q": "젠슨 황 (발언 OR 말했다 OR 밝혔다)",
-     "lang": "ko"
-    }
-   ],
    "img_credit": {
     "file": "Jen-Hsun_Huang_2025.jpg",
     "license": "Public domain",
@@ -193,21 +119,9 @@
    "id": "cook",
    "name": "팀 쿡",
    "en": "Tim Cook",
-   "role": "애플 CEO",
+   "role": "애플 이사회 의장(전 CEO, 2026.9~)",
    "wiki": "Tim Cook",
    "x": "tim_cook",
-   "sources": [
-    {
-     "type": "gnews",
-     "q": "\"Tim Cook\" (says OR said OR tells OR interview OR earnings call)",
-     "lang": "en"
-    },
-    {
-     "type": "gnews",
-     "q": "팀 쿡 애플 (발언 OR 말했다 OR 밝혔다)",
-     "lang": "ko"
-    }
-   ],
    "img_credit": {
     "file": "Tim_Cook_in_New_York_City_-_2026_(cropped).jpg",
     "license": "CC BY 4.0",
@@ -223,18 +137,6 @@
    "role": "마이크로소프트 CEO",
    "wiki": "Satya Nadella",
    "x": "satyanadella",
-   "sources": [
-    {
-     "type": "gnews",
-     "q": "\"Nadella\" (says OR said OR tells OR interview OR earnings call)",
-     "lang": "en"
-    },
-    {
-     "type": "gnews",
-     "q": "나델라 마이크로소프트",
-     "lang": "ko"
-    }
-   ],
    "img_credit": {
     "file": "MS-Exec-Nadella-Satya-2017-08-31-22_(cropped).jpg",
     "license": "CC BY-SA 4.0",
@@ -250,18 +152,6 @@
    "role": "메타 CEO",
    "wiki": "Mark Zuckerberg",
    "x": "",
-   "sources": [
-    {
-     "type": "gnews",
-     "q": "\"Zuckerberg\" (says OR said OR tells OR interview OR posts)",
-     "lang": "en"
-    },
-    {
-     "type": "gnews",
-     "q": "저커버그 메타 (발언 OR 말했다 OR 밝혔다)",
-     "lang": "ko"
-    }
-   ],
    "img_credit": {
     "file": "P20260929DT-1655_(55561811540)_(cropped_2).jpg",
     "license": "Public domain",
@@ -277,18 +167,6 @@
    "role": "OpenAI CEO",
    "wiki": "Sam Altman",
    "x": "sama",
-   "sources": [
-    {
-     "type": "gnews",
-     "q": "\"Sam Altman\" (says OR said OR tells OR interview OR posts)",
-     "lang": "en"
-    },
-    {
-     "type": "gnews",
-     "q": "올트먼 오픈AI (발언 OR 말했다 OR 밝혔다)",
-     "lang": "ko"
-    }
-   ],
    "img_credit": {
     "file": "Meeting_with_Masayoshi_Son_and_Sam_Altman_(February_3,_2025)_(3x4_cropped_on_Altman).jpg",
     "license": "CC BY 4.0",
@@ -304,18 +182,6 @@
    "role": "알파벳(구글) CEO",
    "wiki": "Sundar Pichai",
    "x": "sundarpichai",
-   "sources": [
-    {
-     "type": "gnews",
-     "q": "\"Pichai\" (says OR said OR tells OR interview OR earnings call)",
-     "lang": "en"
-    },
-    {
-     "type": "gnews",
-     "q": "피차이 구글 (발언 OR 말했다 OR 밝혔다)",
-     "lang": "ko"
-    }
-   ],
    "img_credit": {
     "file": "Sundar_Pichai_-_2023_(cropped).jpg",
     "license": "CC BY 4.0",
@@ -331,18 +197,6 @@
    "role": "아마존 CEO",
    "wiki": "Andy Jassy",
    "x": "ajassy",
-   "sources": [
-    {
-     "type": "gnews",
-     "q": "\"Jassy\" (says OR said OR tells OR interview OR earnings call)",
-     "lang": "en"
-    },
-    {
-     "type": "gnews",
-     "q": "재시 아마존 CEO",
-     "lang": "ko"
-    }
-   ],
    "img_credit": {
     "file": "Andy_Jassy.jpg",
     "license": "CC BY-SA 4.0",
@@ -358,18 +212,6 @@
    "role": "JP모건 CEO",
    "wiki": "Jamie Dimon",
    "x": "",
-   "sources": [
-    {
-     "type": "gnews",
-     "q": "\"Dimon\" (says OR said OR warns OR tells OR interview)",
-     "lang": "en"
-    },
-    {
-     "type": "gnews",
-     "q": "다이먼 JP모건 (발언 OR 말했다 OR 경고)",
-     "lang": "ko"
-    }
-   ],
    "img_credit": {
     "file": "Chancellor_Rachel_Reeves_meets_Jamie_Dimon_(54838700663)_(cropped)_(cropped).jpg",
     "license": "OGL 3",

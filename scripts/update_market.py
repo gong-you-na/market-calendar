@@ -71,4 +71,13 @@ for c in cfg["companies"]:
         "spark": [{"d": r["d"], "v": r["c"]} for r in rows[-30:]],
     })
 
+# 비트코인 관련주(청산맵 옆 카드): 현재가·1일·1주 등락
+out["btc_stocks"] = []
+for b in cfg.get("btc_stocks", []):
+    rows = yahoo_daily(b["t"], range_="1mo")
+    if len(rows) < 2:
+        continue
+    last, prev = rows[-1], rows[-2]
+    w = rows[-6]["c"] if len(rows) >= 6 else rows[0]["c"]
+    out["btc_stocks"].append({"t": b["t"], "n": b["n"], "p": last["c"], "asof": last["d"], "d1": round((last["c"] / prev["c"] - 1) * 100, 2), "w1": round((last["c"] / w - 1) * 100, 2)})
 save("market.json", out)

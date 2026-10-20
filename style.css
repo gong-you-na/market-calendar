@@ -77,8 +77,14 @@ h1,h2,h3,h4{margin:0;font-weight:700;letter-spacing:-.01em}
 .sec-h{display:flex;align-items:baseline;gap:12px;margin:0 2px 12px}
 .sec-h h2{font-size:1.05rem}
 .sec-sub{font-size:.78rem;color:var(--grey2)}
+.sec-cad{flex-basis:100%;order:10;font-size:.72rem;color:var(--grey3);font-weight:600;margin-top:-4px}
+.sec-cad::before{content:"갱신 주기 · ";color:var(--grey2)}
 
 /* ───────── 투쓰의 한마디 ───────── */
+.tooth-card.link{text-decoration:none;color:inherit;transition:border-color .12s,transform .12s}
+.tooth-card.link:hover{border-color:var(--gold);transform:translateY(-1px)}
+.tooth-card.link .tooth-txt{color:var(--ink)}
+.tooth-card .tooth-body{display:flex;flex-direction:column;min-width:0}
 .tooth-card{display:flex;gap:14px;align-items:flex-start;background:linear-gradient(135deg,var(--gold-soft),var(--card) 60%);border:1px solid var(--gold-line);border-radius:var(--r);padding:18px 20px;min-height:76px}
 .tooth-card .wt{flex:none;width:44px;height:44px;font-size:.78rem}
 .tooth-txt{font-size:1.08rem;font-weight:700;line-height:1.55;color:var(--ink);word-break:keep-all}
@@ -371,19 +377,6 @@ svg.spark{display:block;width:100%;height:110px}
 .secnav a:hover{background:var(--card);border-color:var(--line);color:var(--ink)}
 html{scroll-padding-top:110px}
 
-/* ───────── 데일리 시장 브리핑 ───────── */
-.brief-card{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:var(--r);padding:20px 24px 16px}
-.brief-t{font-size:1.15rem;font-weight:800;letter-spacing:-.01em;margin-bottom:10px}
-.brief-t span{color:var(--grey2);font-weight:700}
-.brief-card p{margin:0 0 10px;font-size:1rem;line-height:1.75;color:var(--ink);word-break:keep-all}
-.brief-card p:last-of-type{margin-bottom:0}
-.brief-card.empty p{color:var(--grey2)}
-.brief-meta{font-size:.72rem;color:var(--grey2);margin-top:10px;font-weight:600}
-.brief-old{background:var(--card);border:1px solid var(--line);border-radius:var(--r3);padding:12px 14px;margin-top:6px}
-.brief-old-h{font-size:.8rem;font-weight:800;color:var(--gold-deep);margin-bottom:4px}
-.brief-old p{margin:0;font-size:.88rem;line-height:1.65;color:var(--ink2);word-break:keep-all}
-@media (max-width:760px){.brief-card{padding:16px 16px 12px}.brief-card p{font-size:.95rem}}
-
 /* ───────── 비트코인 청산맵 ───────── */
 .liq{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:12px;align-items:start}
 .liq-main{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px 14px 12px;min-width:0}
@@ -412,7 +405,12 @@ html{scroll-padding-top:110px}
 .ls-row.lv{background:var(--card2);border-radius:8px;padding:5px 8px;margin:3px 0}
 .ls-now{text-align:center;font-size:.72rem;font-weight:800;color:var(--gold-deep);padding:4px;border-top:1px dashed var(--gold-line);border-bottom:1px dashed var(--gold-line);margin:4px 0}
 .ls-sub{font-size:.68rem;color:var(--grey2);margin-top:6px;line-height:1.4}
-.ls-card.recent .ls-row{font-size:.74rem}
+.ls-card.stocks .ls-row.st{display:grid;grid-template-columns:1.25fr .95fr .75fr .85fr;align-items:center;gap:4px;padding:5px 0;border-bottom:1px dashed var(--line);font-size:.76rem;white-space:nowrap}
+.ls-card.stocks .ls-row.st:last-of-type{border-bottom:0}
+.ls-card.stocks .ls-row.st b{font-weight:800}.ls-card.stocks .ls-row.st span small{display:block;font-size:.62rem;color:var(--grey2);font-weight:600;line-height:1.1;overflow:hidden;text-overflow:ellipsis}
+.ls-card.stocks .ls-row.st .px{text-align:right;font-weight:700;color:var(--ink)}
+.ls-card.stocks .ls-row.st b.up{color:var(--up)}.ls-card.stocks .ls-row.st b.down{color:var(--down)}.ls-card.stocks .ls-row.st b{text-align:right}
+.ls-card.stocks .ls-row.st small.w{text-align:right;font-size:.66rem;font-weight:700;color:var(--grey2)}.ls-card.stocks small.w.up{color:var(--up)}.ls-card.stocks small.w.down{color:var(--down)}
 @media (max-width:1100px){.liq{grid-template-columns:1fr}.liq-side{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:760px){.liq-canvas{height:360px}.liq-side{grid-template-columns:1fr}.sec-tools{margin-left:0;width:100%}.hm-head{font-size:.6rem}.secnav{padding:0 14px 8px}}
 .hm-tile .hm-n{font-size:.62rem;font-weight:600;opacity:.9;max-width:95%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin-top:2px}
@@ -435,6 +433,12 @@ html{scroll-padding-top:110px}
 .v-links{display:flex;gap:10px;margin-top:4px;font-size:.74rem;font-weight:700}
 .v-links a{color:var(--gold-deep);text-decoration:none;border-bottom:1px solid var(--gold-line)}.v-links a.credit{color:var(--grey2);border-color:var(--line2);font-weight:600}
 .bubbles{display:flex;flex-direction:column;gap:10px}
+.v-date{font-size:.8rem;font-weight:800;color:var(--gold-deep);margin:10px 0 0;padding-left:50px;position:relative}
+.v-date::before{content:"";position:absolute;left:14px;top:50%;width:24px;border-top:2px solid var(--gold-line)}
+.v-cnt{color:var(--grey2);font-weight:600}
+.bb-h .role{color:var(--grey2);font-weight:600}
+.bb-q{margin-top:6px;font-size:.84rem;color:var(--ink2);font-style:italic;border-left:3px solid var(--gold-line);padding:2px 10px;line-height:1.5}
+.bb-l.plain{border:0;color:var(--grey2);cursor:default}
 .bubble{display:flex;gap:10px;align-items:flex-start}
 .bb{position:relative;background:var(--card);border:1px solid var(--line);border-radius:4px var(--r2) var(--r2) var(--r2);padding:10px 14px 10px;flex:1;min-width:0}
 .bb::before{content:"";position:absolute;left:-7px;top:12px;border:6px solid transparent;border-right-color:var(--line);border-left:0}

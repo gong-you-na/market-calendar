@@ -10,9 +10,9 @@
     try { const r = await fetch(LIVE + f + "?v=" + Math.floor(V / 300000), { cache: "no-store" }); if (r.ok) { const j = await r.json(); if (j && j.updated) return j; } } catch (e) { }
     return get(f);
   };
-  const [CFG, EV, ER, MK, TERMS, HM, TOOTH, BRIEF, VOICES, LIQ, PEOPLE] = await Promise.all([
+  const [CFG, EV, ER, MK, TERMS, HM, VOICES, LIQ, PEOPLE] = await Promise.all([
     get("config.json"), get("events.json"), get("earnings.json"), get("market.json"), get("terms.json"), get("heatmap.json"),
-    get("tooth.json"), get("brief.json"), getLive("voices.json"), getLive("liq.json"), get("people.json")]);
+    get("voices.json"), getLive("liq.json"), get("people.json")]);
   // 인물 사진·크레딧은 배포본 people.json 기준(live 브랜치 사본이 오래됐을 수 있음)
   if (VOICES && VOICES.people && PEOPLE && PEOPLE.people) { const by = {}; PEOPLE.people.forEach((p) => (by[p.id] = p)); VOICES.people.forEach((p) => { const q = by[p.id]; if (q) { if (q.img) p.img = q.img; if (q.img_credit) p.img_credit = q.img_credit; } }); }
   const DAYS = (EV && EV.days) || {};
@@ -115,16 +115,6 @@
     el.innerHTML = `<span class="dot"></span><span>일정 ${esc(u)}${m ? ` · 시세 ${esc(m.replace(" KST", ""))}` : ""}</span>`;
   })();
 
-  /* ── 투쓰의 한마디 ── */
-  function renderTooth() {
-    const box = $("#tooth"); const items = (TOOTH && TOOTH.items) || [];
-    if (!items.length) { box.innerHTML = `<div class="tooth-card empty"><span class="wt">W.T</span><div class="tooth-body"><div class="tooth-txt">오늘의 한마디가 아직 없습니다.</div><div class="tooth-meta">운영자가 전달하면 이 자리에 올라옵니다.</div></div></div>`; $("#toothAsof").textContent = ""; return; }
-    const cur = items[0];
-    box.innerHTML = `<div class="tooth-card"><span class="wt">W.T</span><div class="tooth-body"><div class="tooth-txt">${esc(cur.text).replace(/\n/g, "<br>")}</div><div class="tooth-meta">${esc(cur.at || "")}${cur.title ? " · " + esc(cur.title) : ""}</div></div></div>`
-      + (items.length > 1 ? `<details class="tooth-prev"><summary>지난 한마디 ${items.length - 1}건</summary>${items.slice(1, 8).map((t) => `<div class="tooth-old"><time>${esc(t.at || "")}</time><span>${esc(t.text)}</span></div>`).join("")}</details>` : "");
-    $("#toothAsof").textContent = cur.at ? `${cur.at} 기준` : "";
-  }
-
   /* ── 시장 체온계 (미국 / 한국 탭) ── */
   let tempTab = "us";
   function renderTemp() {
@@ -172,18 +162,7 @@
   }
   $("#tempTab").addEventListener("click", (e) => { const b = e.target.closest("button[data-t]"); if (!b) return; tempTab = b.dataset.t; document.querySelectorAll("#tempTab button").forEach((c) => c.classList.toggle("on", c === b)); renderTemp(); });
 
-  /* ── 데일리 시장 브리핑 ── */
-  const ago = (isoUtc) => { const m = Math.round((Date.now() - new Date(isoUtc)) / 60000); if (m < 60) return `${Math.max(1, m)}분 전`; const h = Math.floor(m / 60); if (h < 24) return `${h}시간 전`; return `${Math.floor(h / 24)}일 전`; };
-  const dateTitle = (d) => { const [y, m, dd] = d.split("-").map(Number); return `${y}년 ${m}월 ${dd}일`; };
-  function renderBrief() {
-    const box = $("#brief"); const items = (BRIEF && BRIEF.items) || [];
-    if (!items.length) { box.innerHTML = `<div class="brief-card empty"><div class="brief-t">데일리 시장 브리핑</div><p>오늘 브리핑이 아직 작성되지 않았습니다.</p></div>`; $("#briefAsof").textContent = ""; return; }
-    const cur = items[0];
-    const paras = String(cur.text || "").split(/\n{2,}/).map((t) => `<p>${termify(esc(t)).replace(/\n/g, "<br>")}</p>`).join("");
-    box.innerHTML = `<div class="brief-card"><div class="brief-t">${esc(cur.title || "데일리 시장 브리핑")} <span>| ${dateTitle(cur.date)}</span></div>${paras}${cur.at ? `<div class="brief-meta">${esc(cur.at)} 작성${cur.updated ? ` · ${esc(cur.updated)} 갱신` : ""}</div>` : ""}</div>`
-      + (items.length > 1 ? `<details class="tooth-prev"><summary>지난 브리핑 ${items.length - 1}건</summary>${items.slice(1, 8).map((b) => `<div class="brief-old"><div class="brief-old-h">${esc(dateTitle(b.date))}</div><p>${esc(b.text)}</p></div>`).join("")}</details>` : "");
-    $("#briefAsof").textContent = `${cur.at || cur.date} 기준 · 장전·장 마감 예약 작업이 작성`;
-  }
+  const dateKo = (d) => { const [y, m, dd] = d.split("-").map(Number); return `${y}년 ${m}월 ${dd}일`; };
 
   /* ── 이벤트 필터 ── */
   const evsOf = (dIso) => {
@@ -397,7 +376,7 @@
     btn.addEventListener("click", () => apply(current() === "dark" ? "light" : "dark"));
   })();
 
-  renderTooth(); renderTemp(); renderBrief(); renderWeek(); renderMonths(); renderCal(); renderCos(); renderChangelog();
+  renderTemp(); renderWeek(); renderMonths(); renderCal(); renderCos(); renderChangelog();
   /* ══════════ 히트맵 ══════════ */
   let hmMarket = "us", hmPeriod = "d1";
   function renderHM() {
@@ -440,40 +419,44 @@
         ${above.map((l) => `<div class="ls-row lv"><span>$${fmtN(l.p, 0)} <em>숏 청산</em></span><b class="short">${U(l.usd)}</b></div>`).join("")}
         <div class="ls-now">현재가 $${fmtN(LIQ.price, 0)}</div>
         ${below.map((l) => `<div class="ls-row lv"><span>$${fmtN(l.p, 0)} <em>롱 청산</em></span><b class="long">${U(l.usd)}</b></div>`).join("")}</div>
-      <div class="ls-card"><div class="ls-l">미결제약정(OI) <small>거래소별</small></div>
-        ${(LIQ.exchanges || []).map((e) => `<div class="ls-row"><span>${esc(e.name)}</span><b>${U(e.oi_usd)} <small>펀딩 ${sign(e.funding, 4)}%</small></b></div>`).join("")}
-        <div class="ls-row tot"><span>합계</span><b>${U(LIQ.oi_total_usd || 0)}</b></div>
-        <div class="ls-sub">평균 펀딩비(8h) ${LIQ.funding_avg !== null && LIQ.funding_avg !== undefined ? sign(LIQ.funding_avg, 4) + "%" : "—"} · 롱/숏 계정 비율 ${LIQ.lsr ? fmtN(LIQ.lsr, 2) : "—"} (OKX)</div></div>
-      <div class="ls-card recent"><div class="ls-l">최근 청산 체결</div>
-        ${(LIQ.recent || []).slice(0, 8).map((r) => `<div class="ls-row"><span><em class="${r.side}">${r.side === "long" ? "롱" : "숏"}</em> $${fmtN(r.px, 0)}</span><b>${U(r.usd)} <small>${new Date(r.t * 1000).toLocaleTimeString("ko-KR", { hour: "2-digit", minute: "2-digit", hour12: false, timeZone: "Asia/Seoul" })}</small></b></div>`).join("")}</div>`;
-    $("#liqAsof").textContent = `${esc(LIQ.updated)} 갱신 · 매시간 · 바이낸스·바이비트는 미국 서버 접근 제한으로 제외`;
+      <div class="ls-card stocks"><div class="ls-l">비트코인 관련주 <small>${(MK && MK.btc_stocks && MK.btc_stocks[0]) ? esc(MK.btc_stocks[0].asof) + " 종가" : ""}${MK && MK.liveStocks ? " · 5분 보정" : ""}</small></div>
+        ${((MK && MK.btc_stocks) || []).map((b) => `<div class="ls-row st"><span><b>${esc(b.t)}</b><small>${esc(b.n)}</small></span><span class="px">$${fmtN(b.p, 2)}</span><b class="${ud(b.d1)}">${sign(b.d1, 2)}%</b><small class="w ${ud(b.w1)}">1주 ${sign(b.w1, 1)}%</small></div>`).join("") || `<div class="ls-sub">관련주 데이터 없음</div>`}
+        <div class="ls-sub">출처 Yahoo Finance · 종가 기준 1일·1주 등락 · 구성은 config.json btc_stocks</div></div>`;
+    $("#liqAsof").textContent = `${esc(LIQ.updated)} 갱신 · OI 합계 ${window.liqFmt.usd(LIQ.oi_total_usd || 0)} · 평균 펀딩 ${LIQ.funding_avg !== null && LIQ.funding_avg !== undefined ? sign(LIQ.funding_avg, 4) + "%" : "—"} · 바이낸스·바이비트는 미국 서버 접근 제한으로 제외`;
     $("#liqMethod").textContent = LIQ.method || "";
   }
   $("#liqRange").addEventListener("click", (e) => { const b = e.target.closest("button[data-r]"); if (!b) return; liqDays = +b.dataset.r; document.querySelectorAll("#liqRange button").forEach((c) => c.classList.toggle("on", c === b)); if (liqMap) liqMap.set({ days: liqDays }); });
 
-  /* ══════════ 주요 인물의 한마디 ══════════ */
-  let vPerson = null, vKind = "all";
+  /* ══════════ 주요 인물의 한마디 (2026년 발언 아카이브, 수동) ══════════ */
+  let vPerson = null;
   const initials = (p) => esc((p.en || p.name || "?").split(" ").map((w) => w[0]).join("").slice(0, 2).toUpperCase());
+  const avatarOf = (p, cls) => `<span class="avatar ${cls || ""}">${p.img ? `<img src="${esc(p.img)}?v=${V}" alt="${esc(p.name || "")}" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('b'),{textContent:'${initials(p)}'}))">` : `<b>${initials(p)}</b>`}</span>`;
   function renderVoices() {
     const pe = $("#people"), vo = $("#voices");
     if (!VOICES || !VOICES.people) { pe.innerHTML = ""; vo.innerHTML = `<div class="v-empty">인물 데이터를 불러오지 못했습니다.</div>`; return; }
-    const items = VOICES.items || [];
-    const cnt = (id) => items.filter((v) => v.person === id && (vKind === "all" || v.kind === vKind)).length;
-    pe.innerHTML = `<button class="person ${vPerson === null ? "on" : ""}" data-p=""><span class="avatar all">ALL</span><span class="pn">전체</span><span class="pr">최신순</span></button>` + VOICES.people.map((p) => `<button class="person ${vPerson === p.id ? "on" : ""}" data-p="${esc(p.id)}">
-        <span class="avatar">${p.img ? `<img src="${esc(p.img)}?v=${V}" alt="${esc(p.name)}" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('b'),{textContent:'${initials(p)}'}))">` : `<b>${initials(p)}</b>`}</span>
-        <span class="pn">${esc(p.name)}</span><span class="pr">${esc(p.role)}</span>${cnt(p.id) ? `<span class="pc">${cnt(p.id)}</span>` : ""}</button>`).join("");
+    const items = (VOICES.items || []).slice().sort((x, y) => y.date.localeCompare(x.date));
     const byId = {}; VOICES.people.forEach((p) => (byId[p.id] = p));
-    const list = items.filter((v) => (!vPerson || v.person === vPerson) && (vKind === "all" || v.kind === vKind)).slice(0, vPerson ? 60 : 36);
+    const cnt = (id) => items.filter((v) => v.person === id).length;
+    pe.innerHTML = `<button class="person ${vPerson === null ? "on" : ""}" data-p=""><span class="avatar all">ALL</span><span class="pn">전체</span><span class="pr">최신순</span></button>` + VOICES.people.map((p) => `<button class="person ${vPerson === p.id ? "on" : ""}" data-p="${esc(p.id)}">${avatarOf(p)}<span class="pn">${esc(p.name)}</span><span class="pr">${esc(p.role)}</span>${cnt(p.id) ? `<span class="pc">${cnt(p.id)}</span>` : ""}</button>`).join("");
+    const list = items.filter((v) => !vPerson || v.person === vPerson).slice(0, vPerson ? 200 : 60);
     const sel = vPerson && byId[vPerson];
-    vo.innerHTML = (sel ? `<div class="v-head"><span class="avatar lg">${sel.img ? `<img src="${esc(sel.img)}?v=${V}" alt="">` : `<b>${initials(sel)}</b>`}</span><div><div class="v-name">${esc(sel.name)} <small>${esc(sel.en)} · ${esc(sel.role)}</small></div><div class="v-links">${sel.x ? `<a href="https://x.com/${esc(sel.x)}" target="_blank" rel="noopener">X @${esc(sel.x)}</a>` : ""}${sel.truth ? `<a href="https://truthsocial.com/@${esc(sel.truth)}" target="_blank" rel="noopener">Truth Social</a>` : ""}${sel.img_credit && sel.img_credit.url ? `<a href="${esc(sel.img_credit.url)}" target="_blank" rel="noopener" class="credit">사진 ${esc(sel.img_credit.license || "Wikimedia")}</a>` : ""}</div></div></div>` : "")
-      + (list.length ? `<div class="bubbles">${list.map((v) => { const p = byId[v.person] || {}; return `<div class="bubble k-${v.kind}">
-          <span class="avatar sm">${p.img ? `<img src="${esc(p.img)}?v=${V}" alt="">` : `<b>${initials(p)}</b>`}</span>
-          <div class="bb"><div class="bb-h"><b>${esc(p.name || v.person)}</b><span class="kind ${v.kind}">${v.kind === "post" ? "원문 게시물" : v.kind === "manual" ? "직접 입력" : "보도"}</span><span class="src">${esc(v.src || "")}</span><time>${ago(v.at)}</time></div>
-          <div class="bb-t">${esc(v.text)}</div>${v.url ? `<a class="bb-l" href="${esc(v.url)}" target="_blank" rel="noopener">${v.kind === "post" ? "원문 보기" : v.kind === "manual" ? "출처" : "기사 보기"} ↗</a>` : ""}</div></div>`; }).join("")}</div>` : `<div class="v-empty">표시할 발언이 없습니다.</div>`);
-    $("#voicesAsof").textContent = `${esc(VOICES.updated)} 갱신 · 매시간 · ${VOICES.people.length}명`;
+    let head = "";
+    if (sel) {
+      const cr = sel.img_credit || {};
+      head = `<div class="v-head">${avatarOf(sel, "lg")}<div><div class="v-name">${esc(sel.name)} <small>${esc(sel.en)} · ${esc(sel.role)}</small></div><div class="v-links">${sel.x ? `<a href="https://x.com/${esc(sel.x)}" target="_blank" rel="noopener">X @${esc(sel.x)}</a>` : ""}${sel.truth ? `<a href="https://truthsocial.com/@${esc(sel.truth)}" target="_blank" rel="noopener">Truth Social</a>` : ""}<span class="v-cnt">2026년 발언 ${cnt(sel.id)}건</span>${cr.url ? `<a href="${esc(cr.url)}" target="_blank" rel="noopener" class="credit">사진: ${esc(cr.artist || "Wikimedia Commons")} · ${esc(cr.license || "")}</a>` : ""}</div></div></div>`;
+    }
+    // 날짜별 묶음
+    let html = "", lastDate = "";
+    for (const v of list) {
+      const p = byId[v.person] || {};
+      if (v.date !== lastDate) { html += `<div class="v-date">${esc(dateKo(v.date))}</div>`; lastDate = v.date; }
+      html += `<div class="bubble">${avatarOf(p, "sm")}<div class="bb"><div class="bb-h"><b>${esc(p.name || v.person)}</b><span class="role">${esc(p.role || "")}</span>${v.topic ? `<span class="kind">${esc(v.topic)}</span>` : ""}<time>${esc(v.context || "")}</time></div>
+        <div class="bb-t">${esc(v.text)}</div>${v.quote ? `<div class="bb-q">“${esc(v.quote)}”</div>` : ""}${v.url ? `<a class="bb-l" href="${esc(v.url)}" target="_blank" rel="noopener">출처 ${esc(v.src || "")} ↗</a>` : v.src ? `<span class="bb-l plain">출처 ${esc(v.src)}</span>` : ""}</div></div>`;
+    }
+    vo.innerHTML = head + (list.length ? `<div class="bubbles">${html}</div>` : `<div class="v-empty">아직 등록된 발언이 없습니다. 운영자가 추가하면 이 자리에 올라옵니다.</div>`);
+    $("#voicesAsof").textContent = `${esc(VOICES.period || "2026년")} · ${items.length}건 · ${VOICES.updated ? esc(VOICES.updated) + " 정리" : ""}`;
   }
-  $("#people").addEventListener("click", (e) => { const b = e.target.closest("button[data-p]"); if (!b) return; vPerson = b.dataset.p || null; renderVoices(); });
-  $("#voicesKind").addEventListener("click", (e) => { const b = e.target.closest("button[data-k]"); if (!b) return; vKind = b.dataset.k; document.querySelectorAll("#voicesKind button").forEach((c) => c.classList.toggle("on", c === b)); renderVoices(); });
+  $("#people").addEventListener("click", (e) => { const b = e.target.closest("button[data-p]"); if (!b) return; vPerson = b.dataset.p || null; renderVoices(); if (vPerson && window.innerWidth < 760) $("#voices").scrollIntoView({ behavior: "smooth", block: "start" }); });
   // 테마 바뀌면 캔버스·히트맵 다시 그림
   new MutationObserver(() => { if (liqMap) liqMap.draw(); renderHM(); }).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
 
@@ -488,6 +471,13 @@
         const syms = MK.items.map((i) => i.symbol).join(",");
         const r = await fetch(`/.netlify/functions/yf?kind=spark&symbols=${encodeURIComponent(syms)}`, { cache: "no-store" });
         if (r.ok) { const j = await r.json(); let touched = false; for (const it of MK.items) { const v = j[it.symbol]; if (!v || v.fulldayPrice == null) continue; const dec = ({ tnx: 2, dxy: 1, krw: 0, gold: 0, vix: 1, wti: 2 })[it.key] ?? 0; it.value = +v.fulldayPrice.toFixed(dec); it.prev = +(v.chartPreviousClose ?? it.prev).toFixed(dec); it.chg = +(it.value - it.prev).toFixed(dec); it.pct = +((it.value / it.prev - 1) * 100).toFixed(2); touched = true; if (it.key === "btc" && LIQ && LIQ.grid) { LIQ.price = Math.round(it.value); LIQ.live = true; } } if (touched) { MK.live = true; renderTemp(); if (LIQ && LIQ.live) renderLiq(); } }
+      } catch (e) { }
+    }
+    // 2-1) 비트코인 관련주
+    if (MK && MK.btc_stocks && MK.btc_stocks.length) {
+      try {
+        const r = await fetch(`/.netlify/functions/yf?kind=spark&symbols=${encodeURIComponent(MK.btc_stocks.map((b) => b.t).join(","))}`, { cache: "no-store" });
+        if (r.ok) { const j = await r.json(); let t = false; for (const b of MK.btc_stocks) { const v = j[b.t]; if (v && v.fulldayPrice != null) { b.p = +v.fulldayPrice.toFixed(2); if (v.fulldayChangePercent != null) b.d1 = +v.fulldayChangePercent.toFixed(2); t = true; } } if (t) { MK.liveStocks = true; renderLiq(); } }
       } catch (e) { }
     }
     // 3) 히트맵 1일 등락률 (미장·국장 현재 탭만, 20개씩)
@@ -506,6 +496,6 @@
   renderHM(); renderLiq(); renderVoices();
   liveRefresh(); setInterval(liveRefresh, 5 * 60 * 1000);
   // 매시간 파일(이슈·인물·청산맵)은 30분마다 다시 읽음
-  setInterval(async () => { const [v, l] = await Promise.all([getLive("voices.json"), getLive("liq.json")]); if (v && VOICES && v.updated !== VOICES.updated) { Object.assign(VOICES, v); renderVoices(); } if (l && LIQ && l.updated !== LIQ.updated) { Object.assign(LIQ, l); renderLiq(); } }, 30 * 60 * 1000);
+  setInterval(async () => { const l = await getLive("liq.json"); if (l && LIQ && l.updated !== LIQ.updated) { Object.assign(LIQ, l); renderLiq(); } }, 30 * 60 * 1000);
 
 })();
