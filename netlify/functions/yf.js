@@ -13,7 +13,7 @@ export default async (req) => {
   const q = (k) => url.searchParams.get(k) || "";
   const headers = { "content-type": "application/json; charset=utf-8", "access-control-allow-origin": "*" };
   if (q("ping")) return new Response(JSON.stringify({ ok: true, t: Date.now() }), { headers });
-  let target, ttl = 60;
+  let target, ttl = 300;  // CDN·브라우저 캐시 5분(동일 URL은 접속자 수와 무관하게 5분에 한 번만 야후 호출)
   const kind = q("kind");
   if (kind === "chart") {
     const s = q("symbol").toUpperCase(), r = q("range") || "5d", i = q("interval") || "1d";
@@ -30,7 +30,8 @@ export default async (req) => {
   try {
     const r = await fetch(target, { headers: { "User-Agent": UA, Accept: "application/json" } });
     const body = await r.text();
-    return new Response(body, { status: r.status, headers: { ...headers, "cache-control": `public, max-age=${ttl}, s-maxage=${ttl}` } });
+    const cc = `public, max-age=${ttl}, s-maxage=${ttl}, stale-while-revalidate=${ttl * 2}`;
+    return new Response(body, { status: r.status, headers: { ...headers, "cache-control": cc, "netlify-cdn-cache-control": cc, "netlify-vary": "query" } });
   } catch (e) {
     return new Response(JSON.stringify({ error: String(e) }), { status: 502, headers });
   }

@@ -38,7 +38,7 @@ git add data && git commit -m "data: YYYY-MM-DD HH:MM KST 자동 갱신 — <변
 
 ## 운영자가 채팅으로 전달하는 것 (Claude가 즉시 반영)
 - **투쓰의 한마디**: 페이지의 카드는 https://us-insight.com/club/67/contents?type=all 로 연결되는 링크일 뿐이며 본문은 사이트에 두지 않는다. 링크 주소를 바꾸라고 하면 `index.html`의 `#tooth` href만 수정.
-- **주요 인물의 한마디(2026년 발언 아카이브, 수동)**: 자동 수집하지 않는다. 운영자가 인물·날짜·발언·출처를 주면 `data/voices.json.items`에 `{"id":<md5 10자>,"person":"<people.json id>","date":"YYYY-MM-DD","text":"한국어 요약 1~2문장('~라고 말했다')","quote":"원문 짧은 인용(25단어 이내, 없으면 \"\")","context":"발언 장소·형식","src":"매체","url":"...","topic":"주제"}`를 추가하고 `updated`·`people[].n/latest`를 갱신. 발언 요약은 보도 내용 그대로, 평가·해석을 덧붙이지 않는다. 새 인물은 `data/people.json`에 `{id,name,en,role,wiki,x}` 추가 후 `photos.yml` 워크플로(수동 실행)로 사진을 받는다. 이창용은 2026-04-20 퇴임(후임 신현송), 팀 쿡은 2026-09-01부로 이사회 의장(후임 CEO 존 터너스) — 역할 문구는 `people.json.role`.
+- **주요 인물의 한마디(2026년 발언 아카이브, 수동)**: 자동 수집하지 않는다. 운영자가 인물·날짜·발언·출처를 주면 `data/voices.json.items`에 `{"id":<md5 10자>,"person":"<people.json id>","date":"YYYY-MM-DD","text":"한국어 요약 1~2문장('~라고 말했다')","quote":"원문 짧은 인용(25단어 이내, 없으면 \"\")","context":"발언 장소·형식","src":"매체","url":"...","topic":"주제"}`를 추가하고 `updated`·`people[].n/latest`를 갱신. 발언 요약은 보도 내용 그대로, 평가·해석을 덧붙이지 않는다. `src`·`url`은 계속 기록하되 2026-10-21부터 화면에는 출처를 표시하지 않는다(app.js에서 제거). 새 인물은 `data/people.json`에 `{id,name,en,role,wiki,x}` 추가 후 `photos.yml` 워크플로(수동 실행)로 사진을 받는다. 이창용은 2026-04-20 퇴임(후임 신현송), 팀 쿡은 2026-09-01부로 이사회 의장(후임 CEO 존 터너스) — 역할 문구는 `people.json.role`.
 - 둘 다 `python3 -c "import json;json.load(open(...))"` 검증 후 바로 커밋·푸시(Netlify 자동 배포). changelog에는 적지 않는다(일정 변경이 아님).
 
 ## 매시간 자동 갱신 (GitHub Actions, 사람 개입 없음)

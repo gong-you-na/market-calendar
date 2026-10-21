@@ -450,7 +450,7 @@
       const p = byId[v.person] || {};
       if (v.date !== lastDate) { html += `<div class="v-date">${esc(dateKo(v.date))}</div>`; lastDate = v.date; }
       html += `<div class="bubble">${avatarOf(p, "sm")}<div class="bb"><div class="bb-h"><b>${esc(p.name || v.person)}</b><span class="role">${esc(p.role || "")}</span>${v.topic ? `<span class="kind">${esc(v.topic)}</span>` : ""}<time>${esc(v.context || "")}</time></div>
-        <div class="bb-t">${esc(v.text)}</div>${v.quote ? `<div class="bb-q">“${esc(v.quote)}”</div>` : ""}${v.url ? `<a class="bb-l" href="${esc(v.url)}" target="_blank" rel="noopener">출처 ${esc(v.src || "")} ↗</a>` : v.src ? `<span class="bb-l plain">출처 ${esc(v.src)}</span>` : ""}</div></div>`;
+        <div class="bb-t">${esc(v.text)}</div>${v.quote ? `<div class="bb-q">“${esc(v.quote)}”</div>` : ""}</div></div>`;
     }
     vo.innerHTML = head + (list.length ? `<div class="bubbles">${html}</div>` : `<div class="v-empty">아직 등록된 발언이 없습니다. 운영자가 추가하면 이 자리에 올라옵니다.</div>`);
     $("#voicesAsof").textContent = `${esc(VOICES.period || "2026년")} · ${items.length}건 · ${VOICES.updated ? esc(VOICES.updated) + " 정리" : ""}`;
@@ -461,9 +461,12 @@
 
   /* ══════════ 실시간 (Netlify Function 프록시, 있으면) ══════════ */
   async function liveRefresh() {
-    try {
-      const ping = await fetch("/.netlify/functions/yf?ping=1", { cache: "no-store" }); if (!ping.ok) return;
-    } catch (e) { return; }
+    if (!liveRefresh.ok) {  // 함수 존재 확인은 처음 한 번만
+      try {
+        const ping = await fetch("/.netlify/functions/yf?ping=1", { cache: "no-store" }); if (!ping.ok) return;
+        liveRefresh.ok = true;
+      } catch (e) { return; }
+    }
     // 2) 체온계 현재가
     if (MK && MK.items) {
       try {
@@ -479,8 +482,9 @@
         if (r.ok) { const j = await r.json(); let t = false; for (const b of MK.btc_stocks) { const v = j[b.t]; if (v && v.fulldayPrice != null) { b.p = +v.fulldayPrice.toFixed(2); if (v.fulldayChangePercent != null) b.d1 = +v.fulldayChangePercent.toFixed(2); t = true; } } if (t) { MK.liveStocks = true; renderLiq(); } }
       } catch (e) { }
     }
-    // 3) 히트맵 1일 등락률 (미장·국장 현재 탭만, 20개씩)
-    if (HM) {
+    // 3) 히트맵 1일 등락률 (미장·국장 현재 탭만, 20개씩) — 호출이 많아(미장 26회) 15분에 한 번만
+    if (HM && (!liveRefresh.hmAt || Date.now() - liveRefresh.hmAt >= 15 * 60 * 1000)) {
+      liveRefresh.hmAt = Date.now();
       try {
         const data = HM[hmMarket]; const syms = data.stocks.map((s) => s.t); let touched = false;
         for (let i = 0; i < syms.length; i += 20) {
@@ -493,7 +497,8 @@
   }
 
   renderHM(); renderLiq(); renderVoices();
-  liveRefresh(); setInterval(liveRefresh, 5 * 60 * 1000);
+  // 체온계·비트코인 관련주는 5분, 히트맵은 15분 간격. 탭이 숨겨져 있으면(백그라운드) 호출하지 않는다.
+  liveRefresh(); setInterval(() => { if (!document.hidden) liveRefresh(); }, 5 * 60 * 1000);
   // 매시간 파일(이슈·인물·청산맵)은 30분마다 다시 읽음
   setInterval(async () => { const l = await getLive("liq.json"); if (l && LIQ && l.updated !== LIQ.updated) { Object.assign(LIQ, l); renderLiq(); } }, 30 * 60 * 1000);
 
