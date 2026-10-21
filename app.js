@@ -271,7 +271,7 @@
       h += `<div class="facts">
         <div class="fact"><div class="fl">컨센서스 EPS</div><div class="fv">${same && n.est_eps !== null && n.est_eps !== undefined ? `$${fmtN(n.est_eps, 2)}` : "—"}<small>${same && n.n_est ? `추정 ${esc(n.n_est)}곳` : ""}</small></div></div>
         <div class="fact"><div class="fl">전년 동기 EPS</div><div class="fv">${same && n.last_year_eps !== null && n.last_year_eps !== undefined ? `$${fmtN(n.last_year_eps, 2)}` : "—"}<small>${same && n.last_year_date ? esc(n.last_year_date) : ""}</small></div></div>
-        <div class="fact"><div class="fl">현재가 · 50일선 이격</div><div class="fv ${mc ? ud(mc.gap50) : ""}">${mc ? `$${fmtN(mc.price, 2)}` : "—"}<small>${mc ? `${sign(mc.gap50, 1)}%` : ""}</small></div></div>
+        <div class="fact"><div class="fl">현재가 · 50일선 이격</div><div class="fv ${mc ? ud(mc.gap50) : ""}">${mc ? (mc.mkt === "kr" ? `${fmtN(mc.price, 0)}원` : `$${fmtN(mc.price, 2)}`) : "—"}<small>${mc ? `${sign(mc.gap50, 1)}%` : ""}</small></div></div>
       </div>`;
     }
     const s = c.stats || {};
@@ -331,31 +331,29 @@
     const list = Object.entries(ER.companies).sort((a, b) => (a[1].tier - b[1].tier) || a[0].localeCompare(b[0]));
     box.innerHTML = list.map(([tk, c]) => {
       const mc = MK && MK.companies && MK.companies.find((x) => x.ticker === tk);
-      const s = c.stats || {}, n = c.next;
+      const s = c.stats || {}, n = c.next, kr = c.mkt === "kr";
+      const px = (v) => kr ? `${fmtN(v, 0)}원` : `$${fmtN(v, 2)}`;
       let nextTxt = "";
-      if (n && n.date) nextTxt = `<span>다음 발표 <b>${esc(n.date)}</b> 현지 ${n.rt === "pre" ? "장전" : "장후"}${n.rt === "post" ? " (한국시간 다음 날 새벽)" : " (한국시간 당일 밤)"}</span><span>컨센서스 EPS <b>${n.est_eps !== null && n.est_eps !== undefined ? "$" + fmtN(n.est_eps, 2) : "—"}</b></span><span>전년 동기 <b>${n.last_year_eps !== null && n.last_year_eps !== undefined ? "$" + fmtN(n.last_year_eps, 2) : "—"}</b></span>`;
+      if (kr) nextTxt = `<span>실적 반응 히스토리는 <b>미국 상장 기업만</b> 제공됩니다(출처 Nasdaq). 한국 종목은 현재가·50일선·히트맵 군 표시만 제공합니다.</span>`;
+      else if (!s.n && !(n && n.date)) nextTxt = `<span>Nasdaq 실적 데이터 <b>수집 대기 중</b> — 다음 갱신 때 자동으로 채워집니다.</span>`;
+      else if (n && n.date) nextTxt = `<span>다음 발표 <b>${esc(n.date)}</b> 현지 ${n.rt === "pre" ? "장전" : "장후"}${n.rt === "post" ? " (한국시간 다음 날 새벽)" : " (한국시간 당일 밤)"}</span><span>컨센서스 EPS <b>${n.est_eps !== null && n.est_eps !== undefined ? "$" + fmtN(n.est_eps, 2) : "—"}</b></span><span>전년 동기 <b>${n.last_year_eps !== null && n.last_year_eps !== undefined ? "$" + fmtN(n.last_year_eps, 2) : "—"}</b></span>`;
       else {
         const last = c.history[0];
         nextTxt = `<span>최근 발표 <b>${esc(last ? last.date : "—")}</b></span><span>다음 발표일 <b>미확정</b> (통상 ${last ? (parse(last.date).getMonth() + 4) % 12 || 12 : "—"}월 중순)</span>`;
       }
-      const summary = `${s.n}분기 중 EPS 컨센서스 상회 ${s.beats}회 · 반응일 상승 ${s.ups}회 · 상회했는데 하락 ${s.beat_and_down}회 · 반응일 평균 변동폭 ±${fmtN(s.avg_abs_move, 1)}%`;
+      const summary = s.n ? `${s.n}분기 중 EPS 컨센서스 상회 ${s.beats}회 · 반응일 상승 ${s.ups}회 · 상회했는데 하락 ${s.beat_and_down}회 · 반응일 평균 변동폭 ±${fmtN(s.avg_abs_move, 1)}%` : "";
+      const link = kr ? `<a href="https://finance.naver.com/item/main.naver?code=${esc(tk)}" target="_blank" rel="noopener">네이버 금융</a>` : `<a href="https://www.nasdaq.com/market-activity/stocks/${tk.toLowerCase()}/earnings" target="_blank" rel="noopener">Nasdaq</a>`;
       return `<div class="co" id="co-${tk}">
         <div class="co-h">
           <div class="nm">${esc(c.name)} <small>${esc(c.en)} · ${esc(tk)}</small><span class="badge t${c.tier}">${esc(tierLabel(c.tier))}</span></div>
-          ${mc ? `<div class="px"><div class="pv">$${fmtN(mc.price, 2)}</div><div class="pc ${ud(mc.pct1d)}">${sign(mc.pct1d, 2)}% <span style="color:var(--grey2);font-weight:600">· 50일선 ${sign(mc.gap50, 1)}%</span></div></div>` : ""}
+          ${mc ? `<div class="px"><div class="pv">${px(mc.price)}</div><div class="pc ${ud(mc.pct1d)}">${sign(mc.pct1d, 2)}% <span style="color:var(--grey2);font-weight:600">· 50일선 ${sign(mc.gap50, 1)}%</span></div></div>` : ""}
         </div>
         <div class="co-next">${nextTxt}</div>
-        <div class="co-sum">${esc(summary)}</div>
-        <div class="qgrid">${c.history.slice(0, 8).map(qCard).join("")}</div>
-        <div class="co-foot"><span>차트: 발표 전 종가=100, 회색=발표 전 5일, 색=반응일 이후 5일 · 장전 발표는 당일, 장후 발표는 다음 거래일이 반응일</span><a href="https://www.nasdaq.com/market-activity/stocks/${tk.toLowerCase()}/earnings" target="_blank" rel="noopener">Nasdaq</a></div>
+        ${summary ? `<div class="co-sum">${esc(summary)}</div>` : ""}
+        ${s.n ? `<div class="qgrid">${c.history.slice(0, 8).map(qCard).join("")}</div>` : ""}
+        <div class="co-foot"><span>${s.n ? "차트: 발표 전 종가=100, 회색=발표 전 5일, 색=반응일 이후 5일 · 장전 발표는 당일, 장후 발표는 다음 거래일이 반응일" : esc(c.theme || "")}</span>${link}</div>
       </div>`;
     }).join("");
-  }
-
-  /* ── 변경 이력 ── */
-  function renderChangelog() {
-    const cl = (EV && EV.changelog) || [];
-    $("#changelog").innerHTML = cl.slice(-8).reverse().map((c) => `<li><time>${esc(c.at)}</time><span>${esc(c.msg)}</span></li>`).join("") || `<li>변경 이력이 없습니다.</li>`;
   }
 
   /* ── 인터랙션 ── */
@@ -376,7 +374,7 @@
     btn.addEventListener("click", () => apply(current() === "dark" ? "light" : "dark"));
   })();
 
-  renderTemp(); renderWeek(); renderMonths(); renderCal(); renderCos(); renderChangelog();
+  renderTemp(); renderWeek(); renderMonths(); renderCal(); renderCos();
   /* ══════════ 히트맵 ══════════ */
   let hmMarket = "us", hmPeriod = "d1";
   function renderHM() {
@@ -386,6 +384,7 @@
     renderHeatmap(el, data, { period: hmPeriod, tiers: TIER, etf: hmMarket === "etf", extra: (d) => {
       const base = d.t.split(".")[0], c = ER && ER.companies && ER.companies[base]; if (!c) return "";
       const s = c.stats || {}, n = c.next;
+      if (!s.n) return `<div class="tt-x">${esc(c.theme || "")}${c.mkt === "kr" ? " · 실적 히스토리는 미국 상장 기업만 제공" : ""}</div>`;
       return `<div class="tt-x">${n && n.date ? `다음 실적 ${esc(n.date)} · ` : ""}최근 ${s.n}분기 EPS 상회 ${s.beats}회 · 반응일 상승 ${s.ups}회</div>`;
     } });
     const idx = HM.index || {};

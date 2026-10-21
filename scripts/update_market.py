@@ -56,14 +56,15 @@ for m in cfg["market"]:
 # 학습기업 현재가 + 50일선 이격도
 out["companies"] = []
 for c in cfg["companies"]:
-    rows = yahoo_daily(c["ticker"], range_="6mo")
+    rows = yahoo_daily(c.get("yf", c["ticker"]), range_="6mo")  # 한국 종목은 yf(예: 005930.KS)로 조회
     if len(rows) < 55:
+        print(f"[warn] {c['ticker']}: 일봉 {len(rows)}개 — 50일선 계산 불가, 건너뜀")
         continue
     closes = [r["c"] for r in rows]
     ma50 = sum(closes[-50:]) / 50
     last, prev = rows[-1], rows[-2]
     out["companies"].append({
-        "ticker": c["ticker"], "name": c["name"], "tier": c["tier"],
+        "ticker": c["ticker"], "name": c["name"], "tier": c["tier"], "mkt": c.get("mkt", "us"),
         "price": last["c"], "asof": last["d"],
         "pct1d": round((last["c"] / prev["c"] - 1) * 100, 2),
         "ma50": round(ma50, 2),

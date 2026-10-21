@@ -10,7 +10,9 @@ prev = load("earnings.json", {})
 NQ = 8
 WIN = cfg.get("reaction_window_days", 5)
 H = {"Accept": "application/json", "Origin": "https://www.nasdaq.com", "Referer": "https://www.nasdaq.com/"}
-SYMS = {c["ticker"] for c in cfg["companies"]}
+# 한국 종목(mkt:"kr")은 Nasdaq 데이터가 없으므로 실적 수집 대상에서 제외(카드에는 안내만 표시)
+US_COS = [c for c in cfg["companies"] if c.get("mkt", "us") == "us"]
+SYMS = {c["ticker"] for c in US_COS}
 
 
 def nq_date(s):  # '8/26/2026' -> date
@@ -36,10 +38,17 @@ def money(s):
 
 _cal_cache = load("cache/nasdaq_calendar.json", {})  # 과거 날짜는 바뀌지 않으므로 영구 캐시
 _today = dt.date.today()
+# 캐시는 당시 SYMS의 행만 보관하므로, 학습기업이 바뀌면(추가) 캐시를 비워 다시 받는다
+_bulk = _cal_cache.get("_syms") != sorted(SYMS)
+if _bulk:
+    _cal_cache = {"_syms": sorted(SYMS)}
+    print("[info] 학습기업 목록 변경 — Nasdaq 캘린더 캐시 초기화 후 최근 2년치 일괄 수집")
 
 
 def nq_calendar(date):
     k = date.isoformat()
+    if date.weekday() >= 5:
+        return []
     if k not in _cal_cache or date >= _today:
         j = get_json(f"https://api.nasdaq.com/api/calendar/earnings?date={k}", headers=H)
         rows = []
@@ -53,6 +62,35 @@ def nq_calendar(date):
             _cal_cache[k] = keep
         return keep
     return _cal_cache[k]
+
+
+def _fetch_day(k):
+    j = get_json(f"https://api.nasdaq.com/api/calendar/earnings?date={k}", headers=H)
+    try:
+        rows = j["data"]["rows"] or []
+    except Exception:
+        rows = []
+    return k, (None if j is None else [r for r in rows if r.get("symbol", "").upper() in SYMS])
+
+
+def bulk_scan(days=740, workers=6):
+    """캐시 초기화 직후 과거 거래일 전체를 병렬로 받아 캐시 채우기(이후 실행은 캐시만 사용)."""
+    from concurrent.futures import ThreadPoolExecutor
+    ks = [(_today - dt.timedelta(days=i)).isoformat() for i in range(1, days + 1)
+          if (_today - dt.timedelta(days=i)).weekday() < 5]
+    n_fail = 0
+    with ThreadPoolExecutor(max_workers=workers) as ex:
+        for k, keep in ex.map(_fetch_day, ks):
+            if keep is None:
+                n_fail += 1
+            else:
+                _cal_cache[k] = keep
+    save("cache/nasdaq_calendar.json", _cal_cache)
+    print(f"[info] 캘린더 일괄 수집 {len(ks)}일 중 실패 {n_fail}일")
+
+
+if _bulk:
+    bulk_scan()
 
 
 def cal_row(date, sym):
@@ -110,13 +148,14 @@ out = {"updated": now_kst().strftime("%Y-%m-%d %H:%M KST"), "companies": {}}
 today = dt.date.today()
 
 # 다음 발표일 탐색: 오늘~+75일 캘린더를 한 번 훑어 우리 종목만 추출
-syms = {c["ticker"] for c in cfg["companies"]}
+syms = SYMS
 upcoming = {}
-for i in range(0, 76):
-    d = today + dt.timedelta(days=i)
-    if d.weekday() >= 5:
-        continue
-    for r in nq_calendar(d):
+_future = [today + dt.timedelta(days=i) for i in range(0, 76) if (today + dt.timedelta(days=i)).weekday() < 5]
+from concurrent.futures import ThreadPoolExecutor as _TPE
+with _TPE(max_workers=6) as _ex:  # 미래 날짜는 캐시하지 않으므로 병렬로 미리 받아 둔다
+    _future_rows = dict(_ex.map(lambda d: (d, nq_calendar(d)), _future))
+for d in _future:
+    for r in _future_rows[d]:
         s = r.get("symbol", "").upper()
         if s in syms and s not in upcoming:
             upcoming[s] = {"date": d.isoformat(), "rt": rt_of(r, None),
@@ -130,6 +169,11 @@ print("[info] upcoming:", {k: v["date"] for k, v in upcoming.items()})
 
 for c in cfg["companies"]:
     sym = c["ticker"]
+    if c.get("mkt", "us") != "us":
+        out["companies"][sym] = {"name": c["name"], "en": c["en"], "tier": c["tier"], "theme": c["theme"], "mkt": c["mkt"],
+                                 "next": None, "history": [], "stats": {"n": 0}, "hist_index": {}}
+        print(f"[info] {sym}: {c['mkt']} 종목 — Nasdaq 실적 수집 제외")
+        continue
     hist = []
     rows = surprise_rows(sym)
     seen = set()
@@ -176,6 +220,40 @@ for c in cfg["companies"]:
             if lr:
                 return cand, lr
         return None, None
+    # earnings-surprise 응답이 비면(신규 종목·API 변경) 캘린더를 분기(약 91일) 간격으로 거슬러 탐색
+    def find_near(target, span=12):
+        for off in sorted(range(-span, span + 1), key=lambda o: (abs(o), o)):
+            cand = target + dt.timedelta(days=off)
+            if cand.weekday() >= 5 or cand in seen or cand >= today:
+                continue
+            lr = cal_row(cand, sym)
+            if lr:
+                return cand, lr
+        return None, None
+    if len(hist) < NQ:
+        known = sorted({dt.date.fromisoformat(h["date"]) for h in hist})
+        nxt0 = upcoming.get(sym)
+        anchor = known[0] if known else (dt.date.fromisoformat(nxt0["date"]) if nxt0 else None)
+        if anchor is None:  # 과거·미래 발표일을 모두 모르면 최근 100일(캐시)에서 가장 가까운 발표일을 먼저 찾는다
+            cand, lr = find_near(today - dt.timedelta(days=50), span=50)
+            if lr:
+                seen.add(cand); anchor = cand
+                e, f = money(lr.get("eps")), money(lr.get("epsForecast"))
+                sp = round((e - f) / abs(f) * 100, 2) if (e is not None and f not in (None, 0)) else None
+                hist.append({"date": cand.isoformat(), "fq": lr.get("fiscalQuarterEnding"), "eps": e, "est": f,
+                             "surprise_pct": sp, "rt": rt_of(lr, c.get("rt", "post")), "src": "Nasdaq"})
+            else:
+                anchor = today
+        miss = 0
+        while len(hist) < NQ and miss < 2:
+            cand, lr = find_near(anchor - dt.timedelta(days=91))
+            if not lr:
+                miss += 1; anchor -= dt.timedelta(days=91); continue
+            miss = 0; anchor = cand; seen.add(cand)
+            e, f = money(lr.get("eps")), money(lr.get("epsForecast"))
+            sp = round((e - f) / abs(f) * 100, 2) if (e is not None and f not in (None, 0)) else None
+            hist.append({"date": cand.isoformat(), "fq": lr.get("fiscalQuarterEnding"), "eps": e, "est": f,
+                         "surprise_pct": sp, "rt": rt_of(lr, c.get("rt", "post")), "src": "Nasdaq"})
     anchors = sorted({dt.date.fromisoformat(h["date"]) for h in hist}, reverse=True)
     while len(hist) < NQ and anchors:
         a = anchors.pop(0)
@@ -217,9 +295,18 @@ for c in cfg["companies"]:
         "max_down": round(min((h["reaction"]["pct"] for h in ups), default=0), 1),
     }
     nxt = upcoming.get(sym)
+    # config.json의 next_date(회사 IR 공지로 확인한 날짜)가 Nasdaq 캘린더와 다르면 IR 공지를 우선한다
+    nd = c.get("next_date")
+    if nd and (not nxt or nxt["date"] != nd):
+        if dt.date.fromisoformat(nd) < today:
+            nxt = None  # 이미 발표됨 — Nasdaq 캘린더가 갱신될 때까지 다음 발표일 미확정으로 둔다
+        else:
+            nxt = {"date": nd, "rt": c.get("rt", "post"), "est_eps": None, "n_est": None, "fq": None,
+                   "last_year_date": None, "last_year_eps": None, "source": "IR"}
+        print(f"[info] {sym}: next_date 우선 적용 {nd} (Nasdaq {upcoming.get(sym, {}).get('date')})")
     if nxt and nxt.get("rt") is None:
         nxt["rt"] = c.get("rt", "post")
-    out["companies"][sym] = {"name": c["name"], "en": c["en"], "tier": c["tier"], "theme": c["theme"],
+    out["companies"][sym] = {"name": c["name"], "en": c["en"], "tier": c["tier"], "theme": c["theme"], "mkt": "us",
                              "next": nxt, "history": hist, "stats": stats,
                              "hist_index": {h["date"]: h for h in hist}}
     print(f"[info] {sym}: {len(hist)}q, next={nxt and nxt['date']}, stats={stats}")

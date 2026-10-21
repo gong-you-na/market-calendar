@@ -1,7 +1,15 @@
 {
- "updated": "2026-10-21 07:20 KST",
+ "updated": "2026-10-21 08:10 KST",
  "note": "날짜는 한국시간 기준. ★ 예상일은 공식 일정 확정 전. 숫자 출처는 각 항목의 src 참조.",
  "changelog": [
+  {
+   "at": "2026-10-21 08:10",
+   "msg": "학습기업 확대(1·2·3군 33종목, config.json) — 실적 일정 추가: SPCX 10/21, BE 10/23, HOOD 10/28, GOOGL 10/29, AMZN 10/30, SNDK 10/30, INTC 10/30, TEM 11/02, PLTR 11/03, ETN 11/03, AMD 11/04, LITE 11/06, IREN 11/06, RKLB 11/10, OKLO 11/11, NVDA 11/19, DELL 11/25, MRVL 12/02, CRM 12/03, AVGO 12/11 (★는 Nasdaq 캘린더 예상일)"
+  },
+  {
+   "at": "2026-10-21 08:10",
+   "msg": "SPCX 3분기 실적 10/21(현지 10/20 장후) 발표 완료 — 매출 146억 달러·EPS $0.35 사실 추가(Nasdaq 캘린더 11/3 표기는 공식 공지와 달라 10/21로 기록)"
+  },
   {
    "at": "2026-10-21 07:20",
    "msg": "10/20(화)~10/21(수) 새벽 미국 주요 지표 발표 없음 — result 입력 대상 없음. 실적 일정 대조: TSLA 현지 10/21 장후→10/22, GEV 10/28 장전, LLY 10/29 장전(Nasdaq 캘린더) 일치, 변경 없음"
@@ -113,14 +121,6 @@
   {
    "at": "2026-10-15 23:20",
    "msg": "9월 JOLTS 11/3 → 11/4 새벽 0시로 변경(현지 11/3 10시, BLS 11월 일정 확인)"
-  },
-  {
-   "at": "2026-10-15 23:20",
-   "msg": "11월 ISM 제조업 PMI 12/1 → 12/2 새벽 0시로 변경·확정(ISM 공식 캘린더), ★ 제거"
-  },
-  {
-   "at": "2026-10-15 23:20",
-   "msg": "10월 JOLTS 12/2 시각 표기 '새벽 0시'로 통일(BLS 12월 일정 확인)"
   }
  ],
  "days": {
@@ -640,6 +640,42 @@
     }
    }
   ],
+  "2026-10-21": [
+   {
+    "t": "earn",
+    "n": "SpaceX 3분기 실적",
+    "imp": 3,
+    "tier": 3,
+    "ticker": "SPCX",
+    "time": "새벽 5시 (현지 10/20 장후)",
+    "why": "3군 우주·방산. 6월 상장 후 두 번째 분기 실적. 현지 10/20 장 마감 후 발표(공식 IR 공지). 발표 수치: 매출 146억 달러(전년比 +161%, 애널리스트 예상 128.6억 달러), 순이익 44억 달러·희석 EPS $0.35(상장 후 첫 분기 흑자), 영업이익 27.9억 달러. 부문별 매출은 AI(슈퍼인텔리전스) 75.6억 달러(2분기 25.6억 달러), 스타링크(커넥티비티) 52.5억 달러(전년比 +69%, 소비자 가입자 1,360만 명), 발사(스페이스) 17.7억 달러. 자본지출 196억 달러(AI 부문 164억 달러). 수치 가이던스는 제시하지 않았습니다.",
+    "watch": "매출·부문별 매출, 스타링크 가입자, 자본지출",
+    "stocks": [
+     [
+      "스페이스X",
+      1
+     ],
+     [
+      "우주·방산",
+      0
+     ]
+    ],
+    "src": [
+     {
+      "name": "SpaceX IR 공지(Tesla North 10/16)",
+      "url": "https://teslanorth.com/2026/10/16/spacex-q3-2026-results-webcast/"
+     },
+     {
+      "name": "Tesla North(10/20 실적)",
+      "url": "https://teslanorth.com/2026/10/20/spacex-q3-2026-results/"
+     },
+     {
+      "name": "Fortune(10/20 실적)",
+      "url": "https://fortune.com/2026/10/20/spacex-q3-profit-ai-si-elon-musk/"
+     }
+    ]
+   }
+  ],
   "2026-10-22": [
    {
     "t": "earn",
@@ -728,6 +764,32 @@
       "url": "https://www.sca.isr.umich.edu/"
      }
     ]
+   },
+   {
+    "t": "earn",
+    "n": "Bloom Energy 3분기 실적",
+    "imp": 1,
+    "tier": 3,
+    "ticker": "BE",
+    "time": "새벽 5시 (현지 10/22 장후)",
+    "why": "3군 전력. 고체산화물 연료전지 매출·데이터센터향 수주와 연간 매출 가이던스가 발표됩니다. 현지 10/22 장 마감 후 발표(Nasdaq 캘린더).",
+    "watch": "EPS·매출 vs 컨센서스, 연간 가이던스",
+    "stocks": [
+     [
+      "블룸 에너지",
+      1
+     ],
+     [
+      "전력",
+      0
+     ]
+    ],
+    "src": [
+     {
+      "name": "Nasdaq 실적 캘린더",
+      "url": "https://www.nasdaq.com/market-activity/earnings"
+     }
+    ]
    }
   ],
   "2026-10-28": [
@@ -758,6 +820,32 @@
      {
       "name": "GE Vernova IR 공지",
       "url": "https://www.gevernova.com/news/press-releases/ge-vernova-announce-third-quarter-2026-financial-results-october-28"
+     }
+    ]
+   },
+   {
+    "t": "earn",
+    "n": "Robinhood 3분기 실적",
+    "imp": 1,
+    "tier": 3,
+    "ticker": "HOOD",
+    "time": "새벽 5시 (현지 10/27 장후)",
+    "why": "3군 핀테크·디지털자산. 거래 수익(옵션·암호화폐·주식), 순이자수익, 자산 유입이 발표됩니다. 현지 10/27 장 마감 후 발표(Nasdaq 캘린더).",
+    "watch": "EPS·매출 vs 컨센서스, 암호화폐 거래 수익, 순예치금",
+    "stocks": [
+     [
+      "로빈후드",
+      1
+     ],
+     [
+      "핀테크·디지털자산",
+      0
+     ]
+    ],
+    "src": [
+     {
+      "name": "Nasdaq 실적 캘린더",
+      "url": "https://www.nasdaq.com/market-activity/earnings"
      }
     ]
    }
@@ -896,6 +984,32 @@
       "url": "https://www.stocktitan.net/news/LLY/lilly-confirms-date-and-conference-call-for-third-quarter-2026-lnv6qkcsz5rp.html"
      }
     ]
+   },
+   {
+    "t": "earn",
+    "n": "Alphabet 3분기 실적",
+    "imp": 3,
+    "tier": 1,
+    "ticker": "GOOGL",
+    "time": "새벽 5시 (현지 10/28 장후)",
+    "why": "1군 하이퍼스케일러. 검색·유튜브 광고 매출, 구글 클라우드 매출·영업이익, 자본지출이 발표됩니다. 현지 10/28 장 마감 후 발표(Nasdaq 캘린더).",
+    "watch": "EPS·매출 vs 컨센서스, 클라우드 성장률, 자본지출",
+    "stocks": [
+     [
+      "구글",
+      1
+     ],
+     [
+      "하이퍼스케일러",
+      0
+     ]
+    ],
+    "src": [
+     {
+      "name": "Nasdaq 실적 캘린더",
+      "url": "https://www.nasdaq.com/market-activity/earnings"
+     }
+    ]
    }
   ],
   "2026-10-30": [
@@ -913,6 +1027,84 @@
       "url": "https://www.bls.gov/schedule/news_release/current_year.asp"
      }
     ]
+   },
+   {
+    "t": "earn",
+    "n": "Amazon 3분기 실적",
+    "imp": 3,
+    "tier": 1,
+    "ticker": "AMZN",
+    "time": "새벽 5시 (현지 10/29 장후)",
+    "why": "1군 하이퍼스케일러. AWS 매출·영업이익, 북미·해외 리테일 영업이익, 4분기 매출·영업이익 가이던스가 발표됩니다. 현지 10/29 장 마감 후 발표(Nasdaq 캘린더).",
+    "watch": "EPS·매출 vs 컨센서스, AWS 성장률, 4분기 가이던스",
+    "stocks": [
+     [
+      "아마존",
+      1
+     ],
+     [
+      "하이퍼스케일러",
+      0
+     ]
+    ],
+    "src": [
+     {
+      "name": "Nasdaq 실적 캘린더",
+      "url": "https://www.nasdaq.com/market-activity/earnings"
+     }
+    ]
+   },
+   {
+    "t": "earn",
+    "n": "Sandisk FY27 1분기 실적",
+    "imp": 2,
+    "tier": 1,
+    "ticker": "SNDK",
+    "time": "새벽 5시 (현지 10/29 장후)",
+    "why": "1군 반도체(낸드). 낸드 플래시 출하·평균판매가격과 다음 분기 가이던스가 발표됩니다. 현지 10/29 장 마감 후 발표(Nasdaq 캘린더).",
+    "watch": "EPS·매출 vs 컨센서스, 낸드 가격, 다음 분기 가이던스",
+    "stocks": [
+     [
+      "샌디스크",
+      1
+     ],
+     [
+      "반도체",
+      0
+     ]
+    ],
+    "src": [
+     {
+      "name": "Nasdaq 실적 캘린더",
+      "url": "https://www.nasdaq.com/market-activity/earnings"
+     }
+    ]
+   },
+   {
+    "t": "earn",
+    "n": "Intel 3분기 실적",
+    "imp": 1,
+    "tier": 3,
+    "ticker": "INTC",
+    "time": "새벽 5시 (현지 10/29 장후)",
+    "why": "3군 반도체(고변동). 클라이언트·데이터센터 매출, 파운드리 부문 손익, 4분기 가이던스가 발표됩니다. 현지 10/29 장 마감 후 발표(Nasdaq 캘린더).",
+    "watch": "EPS·매출 vs 컨센서스, 파운드리 손익, 4분기 가이던스",
+    "stocks": [
+     [
+      "인텔",
+      1
+     ],
+     [
+      "반도체",
+      0
+     ]
+    ],
+    "src": [
+     {
+      "name": "Nasdaq 실적 캘린더",
+      "url": "https://www.nasdaq.com/market-activity/earnings"
+     }
+    ]
    }
   ],
   "2026-11-02": [
@@ -928,6 +1120,32 @@
      {
       "name": "NYSE 휴장일",
       "url": "https://www.nyse.com/markets/hours-calendars"
+     }
+    ]
+   },
+   {
+    "t": "earn",
+    "n": "Tempus AI 3분기 실적",
+    "imp": 1,
+    "tier": 3,
+    "ticker": "TEM",
+    "time": "밤 9시 (장전)",
+    "why": "3군 AI 소프트웨어·데이터. 유전체 검사·데이터 라이선스 매출과 연간 매출 가이던스가 발표됩니다. 현지 11/2 장전 발표(Nasdaq 캘린더).",
+    "watch": "EPS·매출 vs 컨센서스, 연간 가이던스",
+    "stocks": [
+     [
+      "템퍼스AI",
+      1
+     ],
+     [
+      "AI 소프트웨어·데이터",
+      0
+     ]
+    ],
+    "src": [
+     {
+      "name": "Nasdaq 실적 캘린더",
+      "url": "https://www.nasdaq.com/market-activity/earnings"
      }
     ]
    }
@@ -972,6 +1190,59 @@
       "url": "https://en.wikipedia.org/wiki/2026_United_States_elections"
      }
     ]
+   },
+   {
+    "t": "earn",
+    "n": "Palantir 3분기 실적",
+    "imp": 2,
+    "tier": 1,
+    "ticker": "PLTR",
+    "time": "새벽 6시 (현지 11/2 장후)",
+    "why": "1군 AI 소프트웨어·데이터. 미국 상업·정부 부문 매출과 연간 매출 가이던스가 발표됩니다. 현지 11/2 장 마감 후 발표(Nasdaq 캘린더).",
+    "watch": "EPS·매출 vs 컨센서스, 미국 상업 매출 성장률, 가이던스",
+    "stocks": [
+     [
+      "팔란티어",
+      1
+     ],
+     [
+      "AI 소프트웨어·데이터",
+      0
+     ]
+    ],
+    "src": [
+     {
+      "name": "Nasdaq 실적 캘린더",
+      "url": "https://www.nasdaq.com/market-activity/earnings"
+     }
+    ]
+   },
+   {
+    "t": "earn",
+    "n": "Eaton 3분기 실적",
+    "imp": 2,
+    "tier": 1,
+    "ticker": "ETN",
+    "time": "밤 9시 (장전)",
+    "est": true,
+    "why": "1군 전력·전기 인프라. 전기 부문(미주·글로벌) 매출·수주잔고와 연간 EPS 가이던스가 발표됩니다. 발표일은 Nasdaq 캘린더 기준 예상일이며 회사 공식 확정 전입니다.",
+    "watch": "EPS·매출 vs 컨센서스, 전기 부문 수주, 가이던스",
+    "stocks": [
+     [
+      "이튼",
+      1
+     ],
+     [
+      "전력 인프라",
+      0
+     ]
+    ],
+    "src": [
+     {
+      "name": "Nasdaq 실적 캘린더",
+      "url": "https://www.nasdaq.com/market-activity/earnings"
+     }
+    ]
    }
   ],
   "2026-11-04": [
@@ -991,6 +1262,32 @@
      {
       "name": "fedratecalc 경제캘린더",
       "url": "https://fedratecalc.com/us-economic-calendar/"
+     }
+    ]
+   },
+   {
+    "t": "earn",
+    "n": "AMD 3분기 실적",
+    "imp": 3,
+    "tier": 1,
+    "ticker": "AMD",
+    "time": "새벽 6시 (현지 11/3 장후)",
+    "why": "1군 반도체. 데이터센터(인스팅트 GPU·에픽 CPU) 매출과 4분기 매출 가이던스가 발표됩니다. 현지 11/3 장 마감 후 발표(Nasdaq 캘린더).",
+    "watch": "EPS·매출 vs 컨센서스, 데이터센터 매출, 4분기 가이던스",
+    "stocks": [
+     [
+      "AMD",
+      1
+     ],
+     [
+      "반도체",
+      0
+     ]
+    ],
+    "src": [
+     {
+      "name": "Nasdaq 실적 캘린더",
+      "url": "https://www.nasdaq.com/market-activity/earnings"
      }
     ]
    }
@@ -1034,6 +1331,59 @@
      {
       "name": "fedratecalc 경제캘린더",
       "url": "https://fedratecalc.com/us-economic-calendar/"
+     }
+    ]
+   },
+   {
+    "t": "earn",
+    "n": "Lumentum FY27 1분기 실적",
+    "imp": 1,
+    "tier": 3,
+    "ticker": "LITE",
+    "time": "새벽 6시 (현지 11/5 장후)",
+    "why": "3군 광통신. 클라우드·AI향 광모듈 매출과 다음 분기 가이던스가 발표됩니다. 현지 11/5 장 마감 후 발표(Nasdaq 캘린더).",
+    "watch": "EPS·매출 vs 컨센서스, 다음 분기 가이던스",
+    "stocks": [
+     [
+      "루멘텀",
+      1
+     ],
+     [
+      "광통신",
+      0
+     ]
+    ],
+    "src": [
+     {
+      "name": "Nasdaq 실적 캘린더",
+      "url": "https://www.nasdaq.com/market-activity/earnings"
+     }
+    ]
+   },
+   {
+    "t": "earn",
+    "n": "IREN FY27 1분기 실적",
+    "imp": 1,
+    "tier": 3,
+    "ticker": "IREN",
+    "time": "새벽 6시 (현지 11/5 장후)",
+    "est": true,
+    "why": "3군 AI 인프라. AI 클라우드(GPU) 매출과 비트코인 채굴 매출, 전력 용량이 발표됩니다. 발표일은 Nasdaq 캘린더 기준 예상일이며 회사 공식 확정 전입니다.",
+    "watch": "EPS·매출 vs 컨센서스, AI 클라우드 매출",
+    "stocks": [
+     [
+      "아이렌",
+      1
+     ],
+     [
+      "AI 인프라",
+      0
+     ]
+    ],
+    "src": [
+     {
+      "name": "Nasdaq 실적 캘린더",
+      "url": "https://www.nasdaq.com/market-activity/earnings"
      }
     ]
    }
@@ -1086,6 +1436,62 @@
      {
       "name": "fedratecalc 경제캘린더",
       "url": "https://fedratecalc.com/us-economic-calendar/"
+     }
+    ]
+   },
+   {
+    "t": "earn",
+    "n": "Rocket Lab 3분기 실적",
+    "imp": 1,
+    "tier": 3,
+    "ticker": "RKLB",
+    "time": "새벽 6시 (현지 11/9 장후)",
+    "est": true,
+    "why": "3군 우주·방산. 발사 서비스·우주 시스템 매출, 수주잔고, 4분기 가이던스가 발표됩니다. 발표일은 Nasdaq 캘린더 기준 예상일이며 회사 공식 확정 전입니다.",
+    "watch": "EPS·매출 vs 컨센서스, 수주잔고, 가이던스",
+    "stocks": [
+     [
+      "로켓랩",
+      1
+     ],
+     [
+      "우주·방산",
+      0
+     ]
+    ],
+    "src": [
+     {
+      "name": "Nasdaq 실적 캘린더",
+      "url": "https://www.nasdaq.com/market-activity/earnings"
+     }
+    ]
+   }
+  ],
+  "2026-11-11": [
+   {
+    "t": "earn",
+    "n": "Oklo 3분기 실적",
+    "imp": 1,
+    "tier": 3,
+    "ticker": "OKLO",
+    "time": "새벽 6시 (현지 11/10 장후)",
+    "est": true,
+    "why": "3군 원전. 소형모듈원자로(SMR) 개발 진행 상황과 영업손실·현금 보유액이 발표됩니다. 발표일은 Nasdaq 캘린더 기준 예상일이며 회사 공식 확정 전입니다.",
+    "watch": "EPS vs 컨센서스, 현금 보유액",
+    "stocks": [
+     [
+      "오클로",
+      1
+     ],
+     [
+      "원전",
+      0
+     ]
+    ],
+    "src": [
+     {
+      "name": "Nasdaq 실적 캘린더",
+      "url": "https://www.nasdaq.com/market-activity/earnings"
      }
     ]
    }
@@ -1163,6 +1569,33 @@
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
      }
     ]
+   },
+   {
+    "t": "earn",
+    "n": "NVIDIA FY27 3분기 실적",
+    "imp": 3,
+    "tier": 1,
+    "ticker": "NVDA",
+    "time": "새벽 6시 (현지 11/18 장후)",
+    "est": true,
+    "why": "1군 반도체. 데이터센터 매출과 다음 분기 매출 가이던스가 발표됩니다. 발표일은 Nasdaq 캘린더 기준 예상일이며 회사 공식 확정 전입니다.",
+    "watch": "EPS·매출 vs 컨센서스, 데이터센터 매출, 다음 분기 가이던스",
+    "stocks": [
+     [
+      "엔비디아",
+      1
+     ],
+     [
+      "반도체 섹터",
+      1
+     ]
+    ],
+    "src": [
+     {
+      "name": "Nasdaq 실적 캘린더",
+      "url": "https://www.nasdaq.com/market-activity/earnings"
+     }
+    ]
    }
   ],
   "2026-11-21": [
@@ -1209,6 +1642,33 @@
      {
       "name": "fedratecalc 경제캘린더",
       "url": "https://fedratecalc.com/us-economic-calendar/"
+     }
+    ]
+   },
+   {
+    "t": "earn",
+    "n": "Dell Technologies FY27 3분기 실적",
+    "imp": 2,
+    "tier": 1,
+    "ticker": "DELL",
+    "time": "새벽 6시 (현지 11/24 장후)",
+    "est": true,
+    "why": "1군 AI 인프라. AI 서버 수주·출하와 연간 가이던스가 발표됩니다. 발표일은 Nasdaq 캘린더 기준 예상일이며 회사 공식 확정 전입니다.",
+    "watch": "EPS·매출 vs 컨센서스, AI 서버 수주잔고",
+    "stocks": [
+     [
+      "델 테크놀로지",
+      1
+     ],
+     [
+      "AI 인프라",
+      0
+     ]
+    ],
+    "src": [
+     {
+      "name": "Nasdaq 실적 캘린더",
+      "url": "https://www.nasdaq.com/market-activity/earnings"
      }
     ]
    }
@@ -1287,6 +1747,62 @@
      {
       "name": "fedratecalc 경제캘린더",
       "url": "https://fedratecalc.com/us-economic-calendar/"
+     }
+    ]
+   },
+   {
+    "t": "earn",
+    "n": "Marvell Technology FY27 3분기 실적",
+    "imp": 2,
+    "tier": 1,
+    "ticker": "MRVL",
+    "time": "새벽 6시 (현지 12/1 장후)",
+    "est": true,
+    "why": "1군 반도체. 데이터센터(맞춤형 AI 칩·광통신) 매출과 다음 분기 가이던스가 발표됩니다. 발표일은 Nasdaq 캘린더 기준 예상일이며 회사 공식 확정 전입니다.",
+    "watch": "EPS·매출 vs 컨센서스, 데이터센터 매출, 가이던스",
+    "stocks": [
+     [
+      "마벨 테크",
+      1
+     ],
+     [
+      "반도체",
+      0
+     ]
+    ],
+    "src": [
+     {
+      "name": "Nasdaq 실적 캘린더",
+      "url": "https://www.nasdaq.com/market-activity/earnings"
+     }
+    ]
+   }
+  ],
+  "2026-12-03": [
+   {
+    "t": "earn",
+    "n": "Salesforce FY27 3분기 실적",
+    "imp": 1,
+    "tier": 3,
+    "ticker": "CRM",
+    "time": "새벽 6시 (현지 12/2 장후)",
+    "est": true,
+    "why": "3군 AI 소프트웨어·데이터. 구독 매출, 남은 계약 가치(cRPO), 연간 가이던스가 발표됩니다. 발표일은 Nasdaq 캘린더 기준 예상일이며 회사 공식 확정 전입니다.",
+    "watch": "EPS·매출 vs 컨센서스, cRPO, 가이던스",
+    "stocks": [
+     [
+      "세일즈포스",
+      1
+     ],
+     [
+      "AI 소프트웨어·데이터",
+      0
+     ]
+    ],
+    "src": [
+     {
+      "name": "Nasdaq 실적 캘린더",
+      "url": "https://www.nasdaq.com/market-activity/earnings"
      }
     ]
    }
@@ -1409,6 +1925,35 @@
      {
       "name": "fedratecalc 경제캘린더",
       "url": "https://fedratecalc.com/us-economic-calendar/"
+     }
+    ]
+   }
+  ],
+  "2026-12-11": [
+   {
+    "t": "earn",
+    "n": "Broadcom FY26 4분기 실적",
+    "imp": 3,
+    "tier": 1,
+    "ticker": "AVGO",
+    "time": "새벽 6시 (현지 12/10 장후)",
+    "est": true,
+    "why": "1군 반도체. AI 반도체 매출과 다음 분기 가이던스가 발표됩니다. 발표일은 Nasdaq 캘린더 기준 예상일이며 회사 공식 확정 전입니다.",
+    "watch": "EPS·매출 vs 컨센서스, AI 반도체 매출, 가이던스",
+    "stocks": [
+     [
+      "브로드컴",
+      1
+     ],
+     [
+      "반도체",
+      0
+     ]
+    ],
+    "src": [
+     {
+      "name": "Nasdaq 실적 캘린더",
+      "url": "https://www.nasdaq.com/market-activity/earnings"
      }
     ]
    }

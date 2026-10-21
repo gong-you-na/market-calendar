@@ -62,8 +62,12 @@ git add data && git commit -m "data: YYYY-MM-DD HH:MM KST 자동 갱신 — <변
 - `heatmap.json.etf` ETF 79종(finviz ETF 맵 그룹 + 해외 EWY·EWT·EWJ·EWZ·FXI·INDA·EEM·EFA + 레버리지 SOXS·SOXL·TQQQ·SQQQ·TSLL + 원자재·코인). 타일 크기는 운용자산(AUM) 제곱근, 캐시 `cache/universe_etf.json` 7일.
 - `market.json` 항목: 미국 탭(S&P500·나스닥·VIX·10년물·달러·금·WTI) / 한국 탭(코스피·코스닥·원/달러·비트코인+업비트 원화·김치프리미엄). 순서·탭은 `config.json.market[].tab`.
 - `voices.json`(수동 아카이브) / `liq.json`(매시간) / `people.json` / `market.json.btc_stocks`(청산맵 옆 비트코인 관련주, `config.json.btc_stocks`) — 위 "매시간 자동 갱신"·"운영자가 채팅으로 전달하는 것" 참고.
-- 페이지 순서: 투쓰의 한마디(링크) → 체온계 → 히트맵 → 마켓 캘린더(다음 7일·달력) → 청산맵 → 실적 → 변경 이력 → 인물의 한마디. 각 섹션 머리에 갱신 주기를 표시하므로 주기를 바꾸면 `index.html`의 `.sec-cad` 문구도 같이 고친다.
+- 페이지 순서: 투쓰의 한마디(링크) → 체온계 → 히트맵 → 마켓 캘린더(다음 7일·달력) → 청산맵 → 실적 → 인물의 한마디. (변경 이력 섹션은 2026-10-21 페이지에서 제거. `events.json.changelog`는 작업 기록용으로 계속 기록하되 화면에는 표시하지 않는다.) 각 섹션 머리에 갱신 주기를 표시하므로 주기를 바꾸면 `index.html`의 `.sec-cad` 문구도 같이 고친다.
 - 브라우저는 `/.netlify/functions/yf`(Yahoo·CBOE 중계)로 5분마다 실시간 보정하고, 매시간 파일은 30분마다 다시 읽으므로, 예약 작업은 "기준 스냅샷"을 만드는 역할입니다.
 
 ## 학습기업 추가·변경
 `data/config.json`의 `companies`에 `{ticker, name, en, tier, theme, rt(pre|post)}`를 추가하고 `run_numbers.sh`를 실행하면 히스토리가 자동 수집됩니다. 히트맵 테두리는 tier로, 관심종목은 `update_heatmap.py`의 `WATCH`로 관리합니다.
+- 2026-10-21부터 학습기업은 "미래를 바꿀 기업들" 이미지의 1·2·3군 33종목(ETF·현금성 자산 제외). 한국 종목은 `{ticker:"005930", mkt:"kr", yf:"005930.KS"}`처럼 6자리 코드를 ticker로 쓰고(히트맵 군 표시와 맞춤) `rt`는 생략. 실적 히스토리는 Nasdaq 데이터라 미국 상장 기업만 수집되며, 한국 종목 카드는 현재가·50일선만 표시한다.
+- 학습기업 목록이 바뀌면 `update_earnings.py`가 Nasdaq 캘린더 캐시(`cache/nasdaq_calendar.json`)를 비우고 최근 2년치를 병렬로 다시 받는다(한 번만 3~5분 소요). Nasdaq `earnings-surprise` API가 비어 있어도 캘린더를 분기 간격으로 거슬러 8분기를 채운다.
+- Nasdaq 캘린더 날짜가 회사 IR 공지와 다르면 `config.json` 해당 기업에 `next_date:"YYYY-MM-DD"`(미국 날짜)를 넣어 IR 공지를 우선시킨다(지난 날짜면 다음 발표일 미확정 처리). Nasdaq이 갱신되면 제거.
+- 새 학습기업의 실적 일정은 `earnings.json.next`(Nasdaq)를 보고 `events.json`에 `t:"earn"` 이벤트로 추가한다. Nasdaq `time`이 `time-not-supplied`인 날짜는 `est:true`로 두고 회사 IR 공지가 확인되면 제거한다.

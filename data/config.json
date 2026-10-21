@@ -18,11 +18,85 @@
  },
  "companies": [
   {
-   "ticker": "TSLA",
-   "name": "테슬라",
-   "en": "Tesla",
+   "ticker": "GOOGL",
+   "name": "구글",
+   "en": "Alphabet",
    "tier": 1,
-   "theme": "피지컬 AI·로봇",
+   "theme": "하이퍼스케일러",
+   "rt": "post"
+  },
+  {
+   "ticker": "AMZN",
+   "name": "아마존",
+   "en": "Amazon",
+   "tier": 1,
+   "theme": "하이퍼스케일러",
+   "rt": "post"
+  },
+  {
+   "ticker": "AMD",
+   "name": "AMD",
+   "en": "AMD",
+   "tier": 1,
+   "theme": "반도체",
+   "rt": "post"
+  },
+  {
+   "ticker": "NVDA",
+   "name": "엔비디아",
+   "en": "NVIDIA",
+   "tier": 1,
+   "theme": "반도체",
+   "rt": "post"
+  },
+  {
+   "ticker": "005930",
+   "name": "삼성전자",
+   "en": "Samsung Electronics",
+   "tier": 1,
+   "theme": "반도체",
+   "mkt": "kr",
+   "yf": "005930.KS"
+  },
+  {
+   "ticker": "000660",
+   "name": "SK하이닉스",
+   "en": "SK hynix",
+   "tier": 1,
+   "theme": "반도체",
+   "mkt": "kr",
+   "yf": "000660.KS"
+  },
+  {
+   "ticker": "MU",
+   "name": "마이크론",
+   "en": "Micron",
+   "tier": 1,
+   "theme": "반도체",
+   "rt": "post"
+  },
+  {
+   "ticker": "AVGO",
+   "name": "브로드컴",
+   "en": "Broadcom",
+   "tier": 1,
+   "theme": "반도체",
+   "rt": "post"
+  },
+  {
+   "ticker": "MRVL",
+   "name": "마벨 테크",
+   "en": "Marvell Technology",
+   "tier": 1,
+   "theme": "반도체",
+   "rt": "post"
+  },
+  {
+   "ticker": "SNDK",
+   "name": "샌디스크",
+   "en": "Sandisk",
+   "tier": 1,
+   "theme": "반도체",
    "rt": "post"
   },
   {
@@ -30,8 +104,85 @@
    "name": "GE버노바",
    "en": "GE Vernova",
    "tier": 1,
-   "theme": "전력 인프라",
+   "theme": "전력·전기 인프라",
    "rt": "pre"
+  },
+  {
+   "ticker": "ETN",
+   "name": "이튼",
+   "en": "Eaton",
+   "tier": 1,
+   "theme": "전력·전기 인프라",
+   "rt": "pre"
+  },
+  {
+   "ticker": "009150",
+   "name": "삼성전기",
+   "en": "Samsung Electro-Mechanics",
+   "tier": 1,
+   "theme": "전력·전기 인프라",
+   "mkt": "kr",
+   "yf": "009150.KS"
+  },
+  {
+   "ticker": "PLTR",
+   "name": "팔란티어",
+   "en": "Palantir",
+   "tier": 1,
+   "theme": "AI 소프트웨어·데이터",
+   "rt": "post"
+  },
+  {
+   "ticker": "017670",
+   "name": "SK텔레콤",
+   "en": "SK Telecom",
+   "tier": 1,
+   "theme": "AI 인프라",
+   "mkt": "kr",
+   "yf": "017670.KS"
+  },
+  {
+   "ticker": "DELL",
+   "name": "델 테크놀로지",
+   "en": "Dell Technologies",
+   "tier": 1,
+   "theme": "AI 인프라",
+   "rt": "post"
+  },
+  {
+   "ticker": "005380",
+   "name": "현대차",
+   "en": "Hyundai Motor",
+   "tier": 1,
+   "theme": "피지컬 AI",
+   "mkt": "kr",
+   "yf": "005380.KS"
+  },
+  {
+   "ticker": "012330",
+   "name": "현대모비스",
+   "en": "Hyundai Mobis",
+   "tier": 1,
+   "theme": "피지컬 AI",
+   "mkt": "kr",
+   "yf": "012330.KS"
+  },
+  {
+   "ticker": "066570",
+   "name": "LG전자",
+   "en": "LG Electronics",
+   "tier": 1,
+   "theme": "피지컬 AI",
+   "mkt": "kr",
+   "yf": "066570.KS"
+  },
+  {
+   "ticker": "TSLA",
+   "name": "테슬라",
+   "en": "Tesla",
+   "tier": 1,
+   "theme": "피지컬 AI·로봇",
+   "rt": "post"
   },
   {
    "ticker": "JPM",
@@ -48,6 +199,96 @@
    "tier": 2,
    "theme": "헬스케어",
    "rt": "pre"
+  },
+  {
+   "ticker": "INTC",
+   "name": "인텔",
+   "en": "Intel",
+   "tier": 3,
+   "theme": "반도체(고변동)",
+   "rt": "post"
+  },
+  {
+   "ticker": "035420",
+   "name": "네이버",
+   "en": "NAVER",
+   "tier": 3,
+   "theme": "AI 소프트웨어·데이터",
+   "mkt": "kr",
+   "yf": "035420.KS"
+  },
+  {
+   "ticker": "CRM",
+   "name": "세일즈포스",
+   "en": "Salesforce",
+   "tier": 3,
+   "theme": "AI 소프트웨어·데이터",
+   "rt": "post"
+  },
+  {
+   "ticker": "TEM",
+   "name": "템퍼스AI",
+   "en": "Tempus AI",
+   "tier": 3,
+   "theme": "AI 소프트웨어·데이터",
+   "rt": "post"
+  },
+  {
+   "ticker": "RKLB",
+   "name": "로켓랩",
+   "en": "Rocket Lab",
+   "tier": 3,
+   "theme": "우주·방산",
+   "rt": "post"
+  },
+  {
+   "ticker": "SPCX",
+   "name": "스페이스X",
+   "en": "SpaceX",
+   "tier": 3,
+   "theme": "우주·방산",
+   "rt": "post",
+   "next_date": "2026-10-20"
+  },
+  {
+   "ticker": "HOOD",
+   "name": "로빈후드",
+   "en": "Robinhood",
+   "tier": 3,
+   "theme": "핀테크·디지털자산",
+   "rt": "post"
+  },
+  {
+   "ticker": "IREN",
+   "name": "아이렌",
+   "en": "IREN",
+   "tier": 3,
+   "theme": "AI 인프라",
+   "rt": "post"
+  },
+  {
+   "ticker": "BE",
+   "name": "블룸 에너지",
+   "en": "Bloom Energy",
+   "tier": 3,
+   "theme": "전력",
+   "rt": "post"
+  },
+  {
+   "ticker": "OKLO",
+   "name": "오클로",
+   "en": "Oklo",
+   "tier": 3,
+   "theme": "원전",
+   "rt": "post"
+  },
+  {
+   "ticker": "LITE",
+   "name": "루멘텀",
+   "en": "Lumentum",
+   "tier": 3,
+   "theme": "광통신",
+   "rt": "post"
   }
  ],
  "market": [
