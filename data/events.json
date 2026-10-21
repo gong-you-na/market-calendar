@@ -1,7 +1,23 @@
 {
- "updated": "2026-10-21 08:10 KST",
+ "updated": "2026-10-21 22:40 KST",
  "note": "날짜는 한국시간 기준. ★ 예상일은 공식 일정 확정 전. 숫자 출처는 각 항목의 src 참조.",
  "changelog": [
+  {
+   "at": "2026-10-21 22:40",
+   "msg": "ETN 3분기 실적 11/03 공식 확정(회사 공지 10/20: 현지 11/3 NYSE 개장 전, 콜 11am ET) — ★예상일 해제"
+  },
+  {
+   "at": "2026-10-21 22:40",
+   "msg": "RKLB 3분기 실적 11/10(현지 11/9 장후) 공식 확정(회사 공지 10/20, 콜 2pm PT) — ★예상일 해제"
+  },
+  {
+   "at": "2026-10-21 22:40",
+   "msg": "한국 3분기 GDP 속보치 10/27(화) 오전 8시 추가 — 파이낸셜뉴스(10/20)·Trading Economics 2곳 일치, 2분기 +0.6%·1분기 +1.8% 기재"
+  },
+  {
+   "at": "2026-10-21 22:40",
+   "msg": "10/21(수) 밤 미국 주요 지표 발표 없음(fedratecalc 10월 캘린더 확인) — result 입력 대상 없음. 실적 일정 대조(earnings.json next 22종목) 전부 일치, 변경 없음. TEM 11/02 장전 회사 공지 확인(콜 8:45am ET) — 시각 표기 밤 9시→밤 10시 전후(서머타임 종료 반영). NVDA·IREN·OKLO 등 ★예상일은 회사 공지 미확인으로 유지"
+  },
   {
    "at": "2026-10-21 08:10",
    "msg": "학습기업 확대(1·2·3군 33종목, config.json) — 실적 일정 추가: SPCX 10/21, BE 10/23, HOOD 10/28, GOOGL 10/29, AMZN 10/30, SNDK 10/30, INTC 10/30, TEM 11/02, PLTR 11/03, ETN 11/03, AMD 11/04, LITE 11/06, IREN 11/06, RKLB 11/10, OKLO 11/11, NVDA 11/19, DELL 11/25, MRVL 12/02, CRM 12/03, AVGO 12/11 (★는 Nasdaq 캘린더 예상일)"
@@ -105,22 +121,6 @@
   {
    "at": "2026-10-15 23:20",
    "msg": "10/15 9월 PPI(+1.3% m/m, 6.3% y/y)·소매판매(+0.8%) 발표 수치 추가(BLS·Census + Reuters·Benzinga 교차 확인)"
-  },
-  {
-   "at": "2026-10-15 23:20",
-   "msg": "10/9 미시간대 10월 예비치(46.3, 1년 기대인플레 4.7%) 발표 수치 추가"
-  },
-  {
-   "at": "2026-10-15 23:20",
-   "msg": "10/23 미시간대 10월 확정치 일정 추가(미시간대 공식 '다음 발표' 안내)"
-  },
-  {
-   "at": "2026-10-15 23:20",
-   "msg": "ISM 10월 제조업(현지 11/2)·서비스업(현지 11/4) 일정 ISM 공식 캘린더로 확정, ★ 제거"
-  },
-  {
-   "at": "2026-10-15 23:20",
-   "msg": "9월 JOLTS 11/3 → 11/4 새벽 0시로 변경(현지 11/3 10시, BLS 11월 일정 확인)"
   }
  ],
  "days": {
@@ -792,6 +792,40 @@
     ]
    }
   ],
+  "2026-10-27": [
+   {
+    "t": "econ",
+    "n": "한국 3분기 GDP 속보치",
+    "imp": 2,
+    "time": "오전 8시",
+    "why": "한국은행이 발표하는 3분기 실질 국내총생산 {{속보치}}. 2분기는 전기比 +0.6%(9/7 잠정치), 1분기는 +1.8%였습니다. 발표일은 파이낸셜뉴스(10/20)·Trading Economics 캘린더(현지 10/26 23:00 GMT = 한국시간 10/27 오전 8시) 2곳이 10/27로 일치. 한국은행 공식 보도자료 일정은 발표 직전 게시됩니다.",
+    "watch": "전기比·전년比 성장률, 민간소비·설비투자·순수출 기여도",
+    "stocks": [
+     [
+      "코스피 전반",
+      1
+     ],
+     [
+      "건설·내수 섹터",
+      0
+     ]
+    ],
+    "src": [
+     {
+      "name": "한국은행 보도자료",
+      "url": "https://www.bok.or.kr/portal/bbs/B0000170/list.do?menuNo=200060"
+     },
+     {
+      "name": "파이낸셜뉴스(10/20)",
+      "url": "https://www.fnnews.com/news/202610200601410129"
+     },
+     {
+      "name": "Trading Economics",
+      "url": "https://ko.tradingeconomics.com/south-korea/gdp-growth"
+     }
+    ]
+   }
+  ],
   "2026-10-28": [
    {
     "t": "earn",
@@ -1129,8 +1163,8 @@
     "imp": 1,
     "tier": 3,
     "ticker": "TEM",
-    "time": "밤 9시 (장전)",
-    "why": "3군 AI 소프트웨어·데이터. 유전체 검사·데이터 라이선스 매출과 연간 매출 가이던스가 발표됩니다. 현지 11/2 장전 발표(Nasdaq 캘린더).",
+    "time": "밤 10시 전후 (장전)",
+    "why": "3군 AI 소프트웨어·데이터. 유전체 검사·데이터 라이선스 매출과 연간 매출 가이던스가 발표됩니다. 회사 공지: 현지 11/2(월) 미국 장 개장 전 발표, 콘퍼런스콜 오전 8시 45분 ET(한국시간 밤 10시 45분, 서머타임 종료 후).",
     "watch": "EPS·매출 vs 컨센서스, 연간 가이던스",
     "stocks": [
      [
@@ -1143,6 +1177,10 @@
      ]
     ],
     "src": [
+     {
+      "name": "Tempus 공지",
+      "url": "https://www.tempus.com/news/pr/tempus-to-report-third-quarter-2026-financial-results-on-november-2/"
+     },
      {
       "name": "Nasdaq 실적 캘린더",
       "url": "https://www.nasdaq.com/market-activity/earnings"
@@ -1223,9 +1261,8 @@
     "imp": 2,
     "tier": 1,
     "ticker": "ETN",
-    "time": "밤 9시 (장전)",
-    "est": true,
-    "why": "1군 전력·전기 인프라. 전기 부문(미주·글로벌) 매출·수주잔고와 연간 EPS 가이던스가 발표됩니다. 발표일은 Nasdaq 캘린더 기준 예상일이며 회사 공식 확정 전입니다.",
+    "time": "밤 10시 30분 전후 (장전)",
+    "why": "1군 전력·전기 인프라. 전기 부문(미주·글로벌) 매출·수주잔고와 연간 EPS 가이던스가 발표됩니다. 회사 공지(10/20): 현지 11/3(화) NYSE 개장 전 발표, 콘퍼런스콜 오전 11시 ET(한국시간 11/4 새벽 1시).",
     "watch": "EPS·매출 vs 컨센서스, 전기 부문 수주, 가이던스",
     "stocks": [
      [
@@ -1238,6 +1275,10 @@
      ]
     ],
     "src": [
+     {
+      "name": "Eaton 공지(BusinessWire 10/20)",
+      "url": "https://www.businesswire.com/news/home/20261020762951/en/Eaton-to-announce-third-quarter-2026-earnings-on-November-3-2026"
+     },
      {
       "name": "Nasdaq 실적 캘린더",
       "url": "https://www.nasdaq.com/market-activity/earnings"
@@ -1446,8 +1487,7 @@
     "tier": 3,
     "ticker": "RKLB",
     "time": "새벽 6시 (현지 11/9 장후)",
-    "est": true,
-    "why": "3군 우주·방산. 발사 서비스·우주 시스템 매출, 수주잔고, 4분기 가이던스가 발표됩니다. 발표일은 Nasdaq 캘린더 기준 예상일이며 회사 공식 확정 전입니다.",
+    "why": "3군 우주·방산. 발사 서비스·우주 시스템 매출, 수주잔고, 4분기 가이던스가 발표됩니다. 회사 공지(10/20): 현지 11/9(월) 미국 장 마감 후 발표, 콘퍼런스콜 오후 2시 PT(5시 ET, 한국시간 11/10 오전 7시).",
     "watch": "EPS·매출 vs 컨센서스, 수주잔고, 가이던스",
     "stocks": [
      [
@@ -1460,6 +1500,10 @@
      ]
     ],
     "src": [
+     {
+      "name": "Rocket Lab 공지(GlobeNewswire 10/20)",
+      "url": "https://www.globenewswire.com/news-release/2026/10/20/3385004/0/en/rocket-lab-announces-date-of-third-quarter-2026-financial-results.html"
+     },
      {
       "name": "Nasdaq 실적 캘린더",
       "url": "https://www.nasdaq.com/market-activity/earnings"
