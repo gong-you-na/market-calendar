@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22 16:29 KST",
+ "updated": "2026-10-22 16:37 KST",
  "mode": "manual",
  "period": "2026-01-01~2026-10-21",
  "note": "2026년 1월~10월 공개 발언 아카이브. 요약은 보도·공식 기록을 바탕으로 작성했고 원문은 각 링크에서 확인. 이후 발언은 운영자가 전달하면 Claude가 추가(수동).",
@@ -18,8 +18,8 @@
     "artist": "Daniel Torok",
     "url": "https://commons.wikimedia.org/wiki/File:Official_Presidential_Portrait_of_President_Donald_J._Trump_(2025).jpg"
    },
-   "n": 14,
-   "latest": "2026-10-06"
+   "n": 15,
+   "latest": "2026-10-21"
   },
   {
    "id": "warsh",
@@ -288,6 +288,17 @@
    "url": "",
    "topic": "AI·반도체",
    "id": "cc071838e1"
+  },
+  {
+   "person": "trump",
+   "date": "2026-10-21",
+   "text": "트럼프는 애플이 신형 아이폰용 펜실베이니아산 티타늄 1억 달러어치를 구매하기로 약속했다며 선거일에 이 투자를 기억하라고 썼다. 애플은 10/20 펜실베이니아 페리먼(Perryman)사와 3년간 최대 1억 달러 규모 티타늄 구매 계약을 발표했고, 첫 폴더블폰 아이폰 듀오 등에 쓰인다.",
+   "quote": "Now Apple is committing to purchasing 100 MILLION DOLLARS of PENNSYLVANIA Titanium for its NEW iPhone.",
+   "context": "Truth Social 게시물",
+   "src": "Newsquawk(헤드라인)·Reuters(계약 내용)",
+   "url": "https://www.newsquawk.com/headlines/us-president-trump-says-apple-aapl-is-committing-to-purchase-usd-100mln-worth-of-pennsylvania-titanium-for-its-new-iphone",
+   "topic": "미국 제조업",
+   "id": "c4ca47ef2d"
   },
   {
    "id": "d945b6853e",
