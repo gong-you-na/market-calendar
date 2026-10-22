@@ -3554,5 +3554,18 @@
    "epsForecast": "($0.11)",
    "noOfEsts": "2"
   }
+ ],
+ "2026-10-21": [
+  {
+   "eps": "$0.20",
+   "surprise": "-9.09",
+   "time": "time-not-supplied",
+   "symbol": "TSLA",
+   "name": "Tesla, Inc. ",
+   "marketCap": "$1,477,144,350,000",
+   "fiscalQuarterEnding": "Sep/2026",
+   "epsForecast": "$0.22",
+   "noOfEsts": "10"
+  }
  ]
 }
