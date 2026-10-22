@@ -1,7 +1,7 @@
 {
- "updated": "2026-10-20 18:30 KST",
+ "updated": "2026-10-22 11:35 KST",
  "mode": "manual",
- "period": "2026-01-01~2026-10-20",
+ "period": "2026-01-01~2026-10-21",
  "note": "2026년 1월~10월 공개 발언 아카이브. 요약은 보도·공식 기록을 바탕으로 작성했고 원문은 각 링크에서 확인. 이후 발언은 운영자가 전달하면 Claude가 추가(수동).",
  "people": [
   {
@@ -115,8 +115,8 @@
     "artist": "Gage Skidmore",
     "url": "https://commons.wikimedia.org/wiki/File:Elon_Musk_-_54820081119_(cropped).jpg"
    },
-   "n": 12,
-   "latest": "2026-10-15"
+   "n": 13,
+   "latest": "2026-10-20"
   },
   {
    "id": "huang",
@@ -132,8 +132,8 @@
     "artist": "The White House",
     "url": "https://commons.wikimedia.org/wiki/File:Jen-Hsun_Huang_2025.jpg"
    },
-   "n": 13,
-   "latest": "2026-10-16"
+   "n": 14,
+   "latest": "2026-10-21"
   },
   {
    "id": "cook",
@@ -183,8 +183,8 @@
     "artist": "The White House",
     "url": "https://commons.wikimedia.org/wiki/File:P20260929DT-1655_(55561811540)_(cropped_2).jpg"
    },
-   "n": 7,
-   "latest": "2026-10-13"
+   "n": 8,
+   "latest": "2026-10-21"
   },
   {
    "id": "altman",
@@ -256,6 +256,39 @@
   }
  ],
  "items": [
+  {
+   "id": "51e8706729",
+   "person": "zuckerberg",
+   "date": "2026-10-21",
+   "text": "저커버그는 메타 3분기 실적 발표에서 이번 분기 모두를 위한 개인 초지능으로 가는 큰 이정표들을 달성했다며 첫 프런티어 모델 Muse·Muse Wonder 출시를 들었고, 투자가 성과를 내고 있고 핵심 사업은 강하며 전반적으로 속도가 붙고 있다고 말했다. 3분기 매출은 646억 달러(전년 대비 +26%), 2026년 설비투자 전망은 1,350억~1,450억 달러로 조정됐다.",
+   "quote": "We hit major milestones this quarter toward delivering personal superintelligence for everyone. Our investments are paying off, the core business is strong.",
+   "context": "메타 2026년 3분기 실적 보도자료",
+   "src": "Meta IR",
+   "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+   "topic": "AI·실적"
+  },
+  {
+   "id": "c13656436a",
+   "person": "huang",
+   "date": "2026-10-21",
+   "text": "젠슨 황은 GTC 베를린에서 공급망 파트너 6곳(앰코·이비덴·KYEC·삼성전기·SPIL·유니마이크론)과의 생산능력 확대를 발표하며, 인류 역사상 최대 규모의 인프라 구축이 진행 중이고 수요는 엄청나며 제약 요인은 생산능력이라고 말했다. 기판 생산능력은 3년 내 2.5배, 테스트 능력은 2027년까지 2배로 늘린다고 밝혔다.",
+   "quote": "We are in the midst of the largest infrastructure buildout in human history. Demand is extraordinary. Capacity is the constraint.",
+   "context": "GTC 베를린 공급망 파트너 발표(NVIDIA 보도자료)",
+   "src": "NVIDIA 뉴스룸",
+   "url": "https://nvidianews.nvidia.com/news/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout",
+   "topic": "AI·반도체"
+  },
+  {
+   "id": "d945b6853e",
+   "person": "musk",
+   "date": "2026-10-20",
+   "text": "머스크는 스페이스X 3분기 실적 컨퍼런스콜에서 테슬라와의 합병이 좋은 생각이라고 보지만 결정은 양사 특별위원회에 달려 있다며, 주주 요청으로 두 회사 모두 특별위원회를 구성했고 자신은 이해상충 당사자라 논의에 참여할 수 없다고 말했다. 합병이 확실하다고 보는 것은 과장이라고 덧붙였다. 스페이스X 주가는 시간외에서 최대 8% 올랐고 테슬라는 다음 거래일 장중 3% 넘게 올랐다.",
+   "quote": "Do I think it would be a good idea? Yes. It's really up to the special committees of both companies.",
+   "context": "스페이스X 2026년 3분기 실적 컨퍼런스콜",
+   "src": "Benzinga",
+   "url": "https://www.benzinga.com/markets/tech/26/10/62484678/elon-musk-confirms-spacex-tesla-merger-committees-calls-deal-a-good-idea",
+   "topic": "테슬라·스페이스X"
+  },
   {
    "id": "37fe8c9a56",
    "person": "altman",
