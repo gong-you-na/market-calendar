@@ -3567,5 +3567,18 @@
    "epsForecast": "$0.22",
    "noOfEsts": "10"
   }
+ ],
+ "2026-10-22": [
+  {
+   "eps": "$0.76",
+   "surprise": "35.71",
+   "time": "time-not-supplied",
+   "symbol": "BE",
+   "name": "Bloom Energy Corporation",
+   "marketCap": "$70,253,609,000",
+   "fiscalQuarterEnding": "Sep/2026",
+   "epsForecast": "$0.56",
+   "noOfEsts": "5"
+  }
  ]
 }
