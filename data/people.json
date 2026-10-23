@@ -226,6 +226,14 @@
     "url": "https://commons.wikimedia.org/wiki/File:Chancellor_Rachel_Reeves_meets_Jamie_Dimon_(54838700663)_(cropped)_(cropped).jpg"
    },
    "img": "assets/people/dimon.jpg"
+  },
+  {
+   "id": "etc",
+   "name": "기타",
+   "en": "Others",
+   "role": "기타 인물(CEO·CFO 등, 사진 없음)",
+   "wiki": "",
+   "x": ""
   }
  ]
 }

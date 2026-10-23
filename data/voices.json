@@ -1,7 +1,7 @@
 {
- "updated": "2026-10-22 16:37 KST",
+ "updated": "2026-10-23 09:56 KST",
  "mode": "manual",
- "period": "2026-01-01~2026-10-21",
+ "period": "2026-01-01~2026-10-22",
  "note": "2026년 1월~10월 공개 발언 아카이브. 요약은 보도·공식 기록을 바탕으로 작성했고 원문은 각 링크에서 확인. 이후 발언은 운영자가 전달하면 Claude가 추가(수동).",
  "people": [
   {
@@ -18,8 +18,8 @@
     "artist": "Daniel Torok",
     "url": "https://commons.wikimedia.org/wiki/File:Official_Presidential_Portrait_of_President_Donald_J._Trump_(2025).jpg"
    },
-   "n": 15,
-   "latest": "2026-10-21"
+   "n": 16,
+   "latest": "2026-10-22"
   },
   {
    "id": "warsh",
@@ -132,8 +132,8 @@
     "artist": "The White House",
     "url": "https://commons.wikimedia.org/wiki/File:Jen-Hsun_Huang_2025.jpg"
    },
-   "n": 15,
-   "latest": "2026-10-21"
+   "n": 16,
+   "latest": "2026-10-22"
   },
   {
    "id": "cook",
@@ -253,6 +253,19 @@
    },
    "n": 11,
    "latest": "2026-10-13"
+  },
+  {
+   "id": "etc",
+   "name": "기타",
+   "en": "Others",
+   "role": "기타 인물(CEO·CFO 등, 사진 없음)",
+   "wiki": "",
+   "x": "",
+   "truth": null,
+   "img": null,
+   "img_credit": null,
+   "n": 2,
+   "latest": "2026-10-22"
   }
  ],
  "items": [
@@ -1839,6 +1852,50 @@
    "src": "뉴시스",
    "url": "https://www.newsis.com/view/NISX20260102_0003463352",
    "topic": "환율"
+  },
+  {
+   "person": "etc",
+   "date": "2026-10-21",
+   "text": "램리서치 CFO 더그 베팅거는 2027회계연도 1분기(9월 분기) 실적 컨퍼런스콜에서 12월 분기 매출 가이던스(86억 달러±4억 달러)가 단기 공급망 제약이 없었다면 조금 더 높았을 것이라며, 12월에 출하했을 물량은 시점 문제로 3월 분기에 출하된다고 말했다. 9월 분기 매출은 82.2억 달러(전년 대비 +54%), 조정 EPS 2.20달러였고 주가는 시간외에서 약 7% 내렸다.",
+   "quote": "This revenue guide would have been a bit higher if not for some near-term supply chain constraints that we are actively managing.",
+   "context": "램리서치 FY2027 1분기 실적 컨퍼런스콜",
+   "src": "Motley Fool 콜 트랜스크립트·Yahoo Finance",
+   "url": "https://www.fool.com/earnings/call-transcripts/2026/10/21/lam-research-lrcx-q1-2027-earnings-call-transcript/",
+   "topic": "AI·반도체",
+   "id": "f374df46c8"
+  },
+  {
+   "person": "etc",
+   "date": "2026-10-22",
+   "text": "웨스턴디지털 CEO 어빙 탄은 2027회계연도 1분기 실적 컨퍼런스콜에서 스토리지 수요가 핵심 클라우드·하이퍼스케일 고객을 넘어 엔터프라이즈 환경과 네오클라우드·AI 프런티어 랩 같은 새로운 시장으로 확대되고 있으며, 고객들이 더 장기적인 인프라 투자를 하면서 계획 기간을 다음 10년까지 늘리고 있다고 말했다. 분기 매출은 44억 달러(전년 대비 +55%), 비GAAP EPS 4.64달러, 다음 분기 매출 가이던스는 약 51억 달러였다.",
+   "quote": "Our customers are making longer-term infrastructure investments and continue to extend their planning horizons into the next decade.",
+   "context": "웨스턴디지털 FY2027 1분기 실적 컨퍼런스콜",
+   "src": "StockAnalysis 콜 트랜스크립트·Yahoo Finance",
+   "url": "https://stockanalysis.com/stocks/wdc/transcripts/725285-q1-2027/",
+   "topic": "AI·반도체",
+   "id": "f5d7b307f6"
+  },
+  {
+   "person": "trump",
+   "date": "2026-10-22",
+   "text": "트럼프는 이란이 미국 중간선거를 앞두고 유가를 끌어올리기 위해 할 수 있는 모든 일을 하고 있다며, 호르무즈 해협을 통과하는 석유량은 분쟁 시작 전보다 지금이 더 많은데도 이란이 가짜 공격과 기뢰 등을 꾸며내고 있다고 썼다. 이란은 절대 핵무기를 보유할 수 없고 앞으로도 보유하지 못할 것이라고 덧붙였다. (운영자 제공 헤드라인 중 \"이슬람 공화국을 궤멸시켰으며 조금 더 할 수도 있다\"는 발언은 원문 기사 미확인.)",
+   "quote": "Iran is doing everything they can to drive up the price of Oil prior to the U.S. Midterm Election.",
+   "context": "Truth Social 게시물",
+   "src": "Anews·Raw Story",
+   "url": "https://www.anews.com.tr/world/2026/10/22/trump-says-iran-is-trying-to-drive-up-oil-prices-before-the-midterm-elections",
+   "topic": "지정학·유가",
+   "id": "c04122137a"
+  },
+  {
+   "person": "huang",
+   "date": "2026-10-22",
+   "text": "젠슨 황은 CNBC 인터뷰에서 네오클라우드 수요가 차트를 뚫을 정도이고 그들의 역량은 탁월하다며, AI 전반에 걸쳐 수요가 너무 많아 자본이 부족한 상태지만 이는 해결될 것이고 GPU는 이제 하나의 자산군이 되어가고 있다고 말했다. 같은 날 코어위브 주가는 장전 최대 4% 내렸고 최근 6개월 약 50% 하락한 상태였다.",
+   "quote": "The demand for the neoclouds is off the charts. Because there's just so much demand across so many sectors of AI, there's a scarcity of capital.",
+   "context": "CNBC 'Morning Call' 인터뷰",
+   "src": "CNBC·Business Insider(Yahoo Finance UK)",
+   "url": "https://uk.finance.yahoo.com/news/jensen-huang-says-neocloud-demand-124427377.html",
+   "topic": "AI·반도체",
+   "id": "d72764252c"
   }
  ]
 }
