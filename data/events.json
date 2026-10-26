@@ -1,7 +1,35 @@
 {
- "updated": "2026-10-24 07:20 KST",
+ "updated": "2026-10-27 05:25 KST",
  "note": "날짜는 한국시간 기준. ★ 예상일은 공식 일정 확정 전. 숫자 출처는 각 항목의 src 참조.",
  "changelog": [
+  {
+   "at": "2026-10-27 05:25",
+   "msg": "OKLO 11/11(장후 예상) → 11/06(장전) 변경·★예상일 해제 — 회사 공지(10/23) 현지 11/6 개장 전 발표·콘퍼런스콜 8:30 ET, StockTitan·Nasdaq 캘린더(11/6 장전) 일치"
+  },
+  {
+   "at": "2026-10-27 05:25",
+   "msg": "12/25 미국·한국 증시 휴장(크리스마스)·12/24 미국 오후 1시 조기 폐장 추가(Kiplinger·GuruFocus 2곳 일치, 60일 범위 진입)"
+  },
+  {
+   "at": "2026-10-27 05:25",
+   "msg": "미국 3분기 GDP 속보치(10/29) why에 컨센서스 3.0~3.2% 추가(Newsquawk·Investing.com 10/26)"
+  },
+  {
+   "at": "2026-10-27 05:25",
+   "msg": "미국 9월 PCE(10/29) why에 컨센서스 헤드라인 3.6%·근원 3.1%(전월比 +0.5%/+0.3%) 추가(Newsquawk·Investing.com 10/26)"
+  },
+  {
+   "at": "2026-10-27 05:25",
+   "msg": "미국 3분기 고용비용지수(10/30) why에 2분기 +0.9%·전년比 3.4%(BLS)·컨센서스 +0.8%(Investing.com) 추가"
+  },
+  {
+   "at": "2026-10-27 05:25",
+   "msg": "10월 FOMC(10/29) why에 10/26 기준 확률 추가 — 인상 9~10%·동결 90~91%, 12월 인상 84~87%(Yardeni·Investing.com·Newsquawk)"
+  },
+  {
+   "at": "2026-10-27 05:25",
+   "msg": "한국 3분기 GDP 속보치(10/27) why에 한은 8월 전망 +0.3%·언론 0%대 후반 전망(한국경제·서울경제 10/25) 추가"
+  },
   {
    "at": "2026-10-24 07:20",
    "msg": "미시간대 10월 확정치 note에 발표일(10/23) 지수 변화 추가 — S&P500 -0.52%·나스닥 -0.21%·다우 -1.23%·10년물 4.99%(+3.5bp)(Yahoo Finance 마감)"
@@ -93,34 +121,6 @@
   {
    "at": "2026-10-21 22:40",
    "msg": "한국 3분기 GDP 속보치 10/27(화) 오전 8시 추가 — 파이낸셜뉴스(10/20)·Trading Economics 2곳 일치, 2분기 +0.6%·1분기 +1.8% 기재"
-  },
-  {
-   "at": "2026-10-21 22:40",
-   "msg": "10/21(수) 밤 미국 주요 지표 발표 없음(fedratecalc 10월 캘린더 확인) — result 입력 대상 없음. 실적 일정 대조(earnings.json next 22종목) 전부 일치, 변경 없음. TEM 11/02 장전 회사 공지 확인(콜 8:45am ET) — 시각 표기 밤 9시→밤 10시 전후(서머타임 종료 반영). NVDA·IREN·OKLO 등 ★예상일은 회사 공지 미확인으로 유지"
-  },
-  {
-   "at": "2026-10-21 08:10",
-   "msg": "학습기업 확대(1·2·3군 33종목, config.json) — 실적 일정 추가: SPCX 10/21, BE 10/23, HOOD 10/28, GOOGL 10/29, AMZN 10/30, SNDK 10/30, INTC 10/30, TEM 11/02, PLTR 11/03, ETN 11/03, AMD 11/04, LITE 11/06, IREN 11/06, RKLB 11/10, OKLO 11/11, NVDA 11/19, DELL 11/25, MRVL 12/02, CRM 12/03, AVGO 12/11 (★는 Nasdaq 캘린더 예상일)"
-  },
-  {
-   "at": "2026-10-21 08:10",
-   "msg": "SPCX 3분기 실적 10/21(현지 10/20 장후) 발표 완료 — 매출 146억 달러·EPS $0.35 사실 추가(Nasdaq 캘린더 11/3 표기는 공식 공지와 달라 10/21로 기록)"
-  },
-  {
-   "at": "2026-10-21 07:20",
-   "msg": "10/20(화)~10/21(수) 새벽 미국 주요 지표 발표 없음 — result 입력 대상 없음. 실적 일정 대조: TSLA 현지 10/21 장후→10/22, GEV 10/28 장전, LLY 10/29 장전(Nasdaq 캘린더) 일치, 변경 없음"
-  },
-  {
-   "at": "2026-10-21 07:20",
-   "msg": "10/29 FOMC: CME FedWatch 10/20 동결 83.9~86%·인상 약 14~16%(Beansprout·predictionmarketspicks) 추가"
-  },
-  {
-   "at": "2026-10-21 07:20",
-   "msg": "10/22 금통위: 이투데이 전문가 10인 전원 동결(10/15)·금투협 채권 설문 동결 93%(EBN 10/20) 추가"
-  },
-  {
-   "at": "2026-10-21 07:20",
-   "msg": "미시간대 공식 페이지 10/23 10월 확정치만 게시 — 11·12월 ★예상일 유지"
   }
  ],
  "days": {
@@ -928,7 +928,7 @@
     "n": "한국 3분기 GDP 속보치",
     "imp": 2,
     "time": "오전 8시",
-    "why": "한국은행이 발표하는 3분기 실질 국내총생산 {{속보치}}. 2분기는 전기比 +0.6%(9/7 잠정치), 1분기는 +1.8%였습니다. 발표일은 파이낸셜뉴스(10/20)·Trading Economics 캘린더(현지 10/26 23:00 GMT = 한국시간 10/27 오전 8시) 2곳이 10/27로 일치. 한국은행 공식 보도자료 일정은 발표 직전 게시됩니다. 증권사 전망(파이낸셜뉴스 10/20): 현대차증권 전기比 +0.8%, 메리츠증권 약 +1%. 정부 7월 전망 연간 3.0%.",
+    "why": "한국은행이 발표하는 3분기 실질 국내총생산 {{속보치}}. 2분기는 전기比 +0.6%(9/7 잠정치), 1분기는 +1.8%였습니다. 발표일은 파이낸셜뉴스(10/20)·Trading Economics 캘린더(현지 10/26 23:00 GMT = 한국시간 10/27 오전 8시) 2곳이 10/27로 일치. 한국은행 공식 보도자료 일정은 발표 직전 게시됩니다. 증권사 전망(파이낸셜뉴스 10/20): 현대차증권 전기比 +0.8%, 메리츠증권 약 +1%. 정부 7월 전망 연간 3.0%. 한국은행 8월 전망은 3분기 전기比 +0.3%(연간 3.3%)이며, 한국경제·서울경제(10/25)는 반도체 수출을 근거로 0%대 후반 전망을 보도했습니다.",
     "watch": "전기比·전년比 성장률, 민간소비·설비투자·순수출 기여도",
     "stocks": [
      [
@@ -952,6 +952,14 @@
      {
       "name": "Trading Economics",
       "url": "https://ko.tradingeconomics.com/south-korea/gdp-growth"
+     },
+     {
+      "name": "한국경제(10/25)",
+      "url": "https://www.hankyung.com/article/2026102535321"
+     },
+     {
+      "name": "서울경제(10/25)",
+      "url": "https://m.sedaily.com/article/20106037"
      }
     ]
    }
@@ -1020,7 +1028,7 @@
     "n": "10월 FOMC 기준금리 결정",
     "imp": 3,
     "time": "새벽 3시",
-    "why": "현지 10/27~28 회의 결과가 한국시간 29일 새벽 3시에 발표됩니다. 9월 회의에서 기준금리를 0.25%p 올려 3.75~4.00%가 됐습니다. 이번 회의에는 {{점도표}}가 없고, {{성명서}}와 의장 기자회견이 있습니다. CME FedWatch 기준 10/16 0.25%p 인상 확률 16.1%·동결 83.9%(10/15 27.7%, 1주 전 17.7%; 코인텔레그래프는 같은 날 15%, 전일 27%로 보도). 10/19 기준 동결 84~85.1%·인상 약 15~16%(Vantage Markets 84%, Beansprout FedWatch 페이지 85.1%; 블록헤드는 주말 인상 확률 15.5%로 보도). 워시 의장은 10/16 IMF·세계은행 연차총회(방콕)에서 회의 결과를 예단하지 않는다고 말했습니다. 10/20 기준 CME FedWatch 동결 83.9~86%·인상 약 14~16%(Beansprout 83.9%, predictionmarketspicks CME 선물 86%·Kalshi 85%). 10/23 기준 동결 93~94%·인상 약 5~7%(블룸버그 연방기금 선물 데이터 인상 약 5%, Kalshi·Polymarket 평균 인상 7%·동결 93%(DeFi Rate 10/23 18:20 ET), QSG 데일리 10/22 종가 기준 CME 결제 가격 동결 94%). 같은 자료들은 12/9 회의 0.25%p 인상 확률을 72~76%로 표시.",
+    "why": "현지 10/27~28 회의 결과가 한국시간 29일 새벽 3시에 발표됩니다. 9월 회의에서 기준금리를 0.25%p 올려 3.75~4.00%가 됐습니다. 이번 회의에는 {{점도표}}가 없고, {{성명서}}와 의장 기자회견이 있습니다. CME FedWatch 기준 10/16 0.25%p 인상 확률 16.1%·동결 83.9%(10/15 27.7%, 1주 전 17.7%; 코인텔레그래프는 같은 날 15%, 전일 27%로 보도). 10/19 기준 동결 84~85.1%·인상 약 15~16%(Vantage Markets 84%, Beansprout FedWatch 페이지 85.1%; 블록헤드는 주말 인상 확률 15.5%로 보도). 워시 의장은 10/16 IMF·세계은행 연차총회(방콕)에서 회의 결과를 예단하지 않는다고 말했습니다. 10/20 기준 CME FedWatch 동결 83.9~86%·인상 약 14~16%(Beansprout 83.9%, predictionmarketspicks CME 선물 86%·Kalshi 85%). 10/23 기준 동결 93~94%·인상 약 5~7%(블룸버그 연방기금 선물 데이터 인상 약 5%, Kalshi·Polymarket 평균 인상 7%·동결 93%(DeFi Rate 10/23 18:20 ET), QSG 데일리 10/22 종가 기준 CME 결제 가격 동결 94%). 같은 자료들은 12/9 회의 0.25%p 인상 확률을 72~76%로 표시. 10/26 기준 인상 확률 9~10%·동결 90~91%(Yardeni CME FedWatch 9%, Investing.com 연방기금 선물 9~10%, Newsquawk CME 약 10%), 12월 인상 확률 84~87%(Yardeni 84%, Investing.com 84~87%). 로이터 설문은 이코노미스트 100명 중 94명이 동결 전망(Newsquawk 인용).",
     "watch": "금리 결정, 성명서 문구 변화, 기자회견",
     "stocks": [
      [
@@ -1076,6 +1084,18 @@
      {
       "name": "QSG Daily Report(10/23)",
       "url": "https://qsgcap.substack.com/p/qsg-daily-report-friday-october-23"
+     },
+     {
+      "name": "Yardeni QuickTakes(10/26, CME FedWatch)",
+      "url": "https://www.yardeniquicktakes.com/economic-week-ahead-october-26-30/"
+     },
+     {
+      "name": "Investing.com(10/26, 연방기금 선물)",
+      "url": "https://www.investing.com/news/stock-market-news/fed-hold-expected-this-week-as-markets-watch-for-december-hike-signals-93CH-4973447"
+     },
+     {
+      "name": "Newsquawk(10/26)",
+      "url": "https://www.newsquawk.com/headlines/week-in-focus-26-30th-october-2026-fomc-boc-rbnz-ecb-boj-policy-decisions-us-pce"
      }
     ]
    },
@@ -1084,7 +1104,7 @@
     "n": "미국 3분기 GDP 속보치",
     "imp": 2,
     "time": "밤 9시 30분",
-    "why": "3분기 미국 GDP의 첫 번째 추정치({{속보치}}). 이후 11/25 잠정치, 12월 확정치로 두 번 수정됩니다. 2분기 확정치는 연율 +2.2%(잠정치 +1.5%에서 상향). 애틀랜타 연준 GDPNow 3분기 추정치는 3.5%(10/20 기준, 10/15 3.6%에서 하향)입니다.",
+    "why": "3분기 미국 GDP의 첫 번째 추정치({{속보치}}). 이후 11/25 잠정치, 12월 확정치로 두 번 수정됩니다. 2분기 확정치는 연율 +2.2%(잠정치 +1.5%에서 상향). 애틀랜타 연준 GDPNow 3분기 추정치는 3.5%(10/20 기준, 10/15 3.6%에서 하향)입니다. 컨센서스 연율 3.0~3.2%(Newsquawk 3.0%·Investing.com 3.2%, 10/26).",
     "watch": "연율 성장률, 개인소비 기여도",
     "stocks": [
      [
@@ -1104,6 +1124,14 @@
      {
       "name": "Trading Economics GDPNow",
       "url": "https://tradingeconomics.com/united-states/gdpnow"
+     },
+     {
+      "name": "Newsquawk(10/26 주간 전망)",
+      "url": "https://www.newsquawk.com/headlines/week-in-focus-26-30th-october-2026-fomc-boc-rbnz-ecb-boj-policy-decisions-us-pce"
+     },
+     {
+      "name": "Investing.com(10/26)",
+      "url": "https://www.investing.com/news/stock-market-news/fed-hold-expected-this-week-as-markets-watch-for-december-hike-signals-93CH-4973447"
      }
     ]
    },
@@ -1112,7 +1140,7 @@
     "n": "미국 9월 PCE 물가",
     "imp": 2,
     "time": "밤 9시 30분",
-    "why": "개인소비지출 물가지수({{PCE}}). 연준이 2% 물가 목표를 판단할 때 사용하는 지표로, 헤드라인과 근원이 함께 발표됩니다. 9월 CPI·PPI 발표 후 근원 PCE 추정치는 전월比 +0.32~0.34%, 전년比 3.1%(TD증권·Employ America, 10/15).",
+    "why": "개인소비지출 물가지수({{PCE}}). 연준이 2% 물가 목표를 판단할 때 사용하는 지표로, 헤드라인과 근원이 함께 발표됩니다. 9월 CPI·PPI 발표 후 근원 PCE 추정치는 전월比 +0.32~0.34%, 전년比 3.1%(TD증권·Employ America, 10/15). 컨센서스(Newsquawk·Investing.com, 10/26): 헤드라인 전월比 +0.5%·전년比 3.6%(8월 3.4%), 근원 전월比 +0.3%·전년比 3.1%(8월 3.0%). 클리블랜드 연준 나우캐스트는 헤드라인 +0.47%·근원 +0.28%(Yardeni 10/26 인용).",
     "watch": "근원 PCE 전월比·전년比",
     "stocks": [
      [
@@ -1132,6 +1160,18 @@
      {
       "name": "Employ America Core-Cast",
       "url": "https://www.employamerica.org/core-cast/september-2026-core-cast-post-ppi/"
+     },
+     {
+      "name": "Newsquawk(10/26 주간 전망)",
+      "url": "https://www.newsquawk.com/headlines/week-in-focus-26-30th-october-2026-fomc-boc-rbnz-ecb-boj-policy-decisions-us-pce"
+     },
+     {
+      "name": "Investing.com(10/26)",
+      "url": "https://www.investing.com/news/stock-market-news/fed-hold-expected-this-week-as-markets-watch-for-december-hike-signals-93CH-4973447"
+     },
+     {
+      "name": "Yardeni QuickTakes(10/26)",
+      "url": "https://www.yardeniquicktakes.com/economic-week-ahead-october-26-30/"
      }
     ]
    },
@@ -1198,13 +1238,21 @@
     "n": "미국 3분기 고용비용지수",
     "imp": 2,
     "time": "밤 9시 30분",
-    "why": "기업의 임금·복리후생 비용 변화를 분기별로 집계하는 지표({{고용비용지수}})입니다.",
+    "why": "기업의 임금·복리후생 비용 변화를 분기별로 집계하는 지표({{고용비용지수}})입니다. 2분기는 전기比 +0.9%(임금 +0.9%·복리후생 +1.0%), 전년比 3.4%였습니다. 현지 10/30 오전 8시 30분 발표(BLS). 컨센서스 +0.8%(Investing.com 10/26).",
     "watch": "전분기 대비 상승률",
     "stocks": [],
     "src": [
      {
       "name": "BLS",
       "url": "https://www.bls.gov/schedule/news_release/current_year.asp"
+     },
+     {
+      "name": "BLS 2분기 ECI 보도자료",
+      "url": "https://www.bls.gov/news.release/archives/eci_07312026.htm"
+     },
+     {
+      "name": "Investing.com(10/26)",
+      "url": "https://www.investing.com/news/stock-market-news/fed-hold-expected-this-week-as-markets-watch-for-december-hike-signals-93CH-4973447"
      }
     ]
    },
@@ -1573,6 +1621,40 @@
       "url": "https://www.nasdaq.com/market-activity/earnings"
      }
     ]
+   },
+   {
+    "t": "earn",
+    "n": "Oklo 3분기 실적",
+    "imp": 1,
+    "tier": 3,
+    "ticker": "OKLO",
+    "time": "밤 10시 30분 콘퍼런스콜 (장전)",
+    "why": "3군 원전. 소형모듈원자로(SMR) 개발 진행 상황과 영업손실·현금 보유액이 발표됩니다. 회사 공지(10/23): 현지 11/6(금) 미국 장 개장 전 발표, 콘퍼런스콜 오전 8시 30분 ET(한국시간 밤 10시 30분). 같은 시각에 10월 고용보고서가 발표됩니다.",
+    "watch": "EPS vs 컨센서스, 현금 보유액",
+    "stocks": [
+     [
+      "오클로",
+      1
+     ],
+     [
+      "원전",
+      0
+     ]
+    ],
+    "src": [
+     {
+      "name": "Oklo 공지(10/23)",
+      "url": "https://oklo.com/newsroom/oklo-announces-date-for-third-quarter-2026-financial-results-and-business-update-call"
+     },
+     {
+      "name": "StockTitan(10/23)",
+      "url": "https://www.stocktitan.net/news/OKLO/oklo-announces-date-for-third-quarter-2026-financial-results-and-wz2lqlmb4pxc.html"
+     },
+     {
+      "name": "Nasdaq 실적 캘린더",
+      "url": "https://www.nasdaq.com/market-activity/earnings"
+     }
+    ]
    }
   ],
   "2026-11-07": [
@@ -1650,35 +1732,6 @@
       "name": "Rocket Lab 공지(GlobeNewswire 10/20)",
       "url": "https://www.globenewswire.com/news-release/2026/10/20/3385004/0/en/rocket-lab-announces-date-of-third-quarter-2026-financial-results.html"
      },
-     {
-      "name": "Nasdaq 실적 캘린더",
-      "url": "https://www.nasdaq.com/market-activity/earnings"
-     }
-    ]
-   }
-  ],
-  "2026-11-11": [
-   {
-    "t": "earn",
-    "n": "Oklo 3분기 실적",
-    "imp": 1,
-    "tier": 3,
-    "ticker": "OKLO",
-    "time": "새벽 6시 (현지 11/10 장후)",
-    "est": true,
-    "why": "3군 원전. 소형모듈원자로(SMR) 개발 진행 상황과 영업손실·현금 보유액이 발표됩니다. 발표일은 Nasdaq 캘린더 기준 예상일이며 회사 공식 확정 전입니다.",
-    "watch": "EPS vs 컨센서스, 현금 보유액",
-    "stocks": [
-     [
-      "오클로",
-      1
-     ],
-     [
-      "원전",
-      0
-     ]
-    ],
-    "src": [
      {
       "name": "Nasdaq 실적 캘린더",
       "url": "https://www.nasdaq.com/market-activity/earnings"
@@ -2295,6 +2348,35 @@
      {
       "name": "financecalendar.com",
       "url": "https://www.financecalendar.com/?p=1312"
+     }
+    ]
+   }
+  ],
+  "2026-12-25": [
+   {
+    "t": "hol",
+    "n": "미국·한국 증시 휴장(크리스마스)",
+    "imp": 1,
+    "time": "현지 12/25(금)",
+    "why": "크리스마스로 미국 증시(NYSE·나스닥)와 한국 증시(KRX)가 휴장합니다. 12/24(목)은 미국 증시 현지 오후 1시 조기 폐장(한국시간 12/25 새벽 3시)입니다.",
+    "watch": "",
+    "stocks": [],
+    "src": [
+     {
+      "name": "NYSE 휴장일",
+      "url": "https://www.nyse.com/markets/hours-calendars"
+     },
+     {
+      "name": "Kiplinger(2026 휴장일)",
+      "url": "https://www.kiplinger.com/investing/stock-market-holidays"
+     },
+     {
+      "name": "GuruFocus(2026 휴장일)",
+      "url": "https://gurufocus.com/stock-market-holidays"
+     },
+     {
+      "name": "KRX 휴장일",
+      "url": "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
      }
     ]
    }
