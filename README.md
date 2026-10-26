@@ -8,7 +8,7 @@
 - 투쓰의 한마디 — US INSIGHT 클럽(https://us-insight.com/club/67/contents?type=all)으로 가는 링크 카드.
 - `data/voices.json` — 주요 인물의 한마디: 2026년 공개 발언 아카이브(수동 관리, 날짜·요약·짧은 인용·출처).
 - `data/liq.json` — 비트코인 청산맵(OKX·Bitget·Hyperliquid·Kraken 공개 데이터로 자체 추정, 매시간). `data/people.json` — 인물 목록·사진 출처.
-- 매시간 파일(liq)은 GitHub Actions(`.github/workflows/hourly.yml`)가 `live` 브랜치에만 올리고 페이지가 raw.githubusercontent 에서 직접 읽습니다(Netlify 재배포 없음). main 의 사본은 예약 작업이 하루 3회 갱신.
+- 매시간 파일(liq)은 GitHub Actions(`.github/workflows/hourly.yml`)가 `live` 브랜치에만 올리고 페이지가 raw.githubusercontent 에서 직접 읽습니다(Netlify 재배포 없음). main 의 사본은 예약 작업이 하루 2회(미국·한국 장 마감 16분 후) 갱신.
 - `netlify/functions/yf.js` — 브라우저용 실시간 시세 프록시(Yahoo·CBOE).
 - `heatmap.js` 트리맵 · `liq.js` 청산맵 캔버스.
 - `data/terms.json` — 용어 풀이. `data/config.json` — 학습기업·기준선 설정.
