@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-27 18:40 KST",
+ "updated": "2026-10-28 05:30 KST",
  "chart_no": "2026-W44 실적 위크",
  "period_label": "10/28(수)~11/4(화) 발표분 · 한국시간",
  "period_end_label": "11/5(목) 종료",
@@ -284,7 +284,38 @@
     "순입금",
     "고객 자산(AUC)"
    ],
-   "theme": "핀테크·디지털자산"
+   "theme": "핀테크·디지털자산",
+   "result": {
+    "rows": [
+     [
+      "거래 기반 매출",
+      "8.67억 달러",
+      "전년비 +19% · 암호화폐 1.20억(-55%)·옵션 3.99억(+31%)·주식 1.21억(+41%)"
+     ],
+     [
+      "순입금",
+      "157억 달러",
+      "플랫폼 자산 3,960억 달러(전년비 +19%)"
+     ],
+     [
+      "순매출",
+      "14.2억 달러",
+      "전년비 +12% · 순이자수익 4.15억(-9%)"
+     ]
+    ],
+    "src": [
+     {
+      "name": "Robinhood 보도자료(GlobeNewswire)",
+      "date": "2026-10-27",
+      "url": "https://www.globenewswire.com/news-release/2026/10/27/3389611/0/en/robinhood-reports-third-quarter-2026-results.html"
+     },
+     {
+      "name": "StockTitan",
+      "date": "2026-10-27",
+      "url": "https://www.stocktitan.net/news/HOOD/robinhood-reports-third-quarter-2026-4ko5a7g5094n.html"
+     }
+    ]
+   }
   },
   "COIN": {
    "code": "COIN",
