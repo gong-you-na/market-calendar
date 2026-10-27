@@ -42,6 +42,21 @@ git add data && git commit -m "data: YYYY-MM-DD HH:MM KST 자동 갱신 — <변
 - **주요 인물의 한마디(2026년 발언 아카이브, 수동)**: 자동 수집하지 않는다. 운영자가 인물·날짜·발언·출처를 주면 `data/voices.json.items`에 `{"id":<md5 10자>,"person":"<people.json id>","date":"YYYY-MM-DD","text":"한국어 요약 1~2문장('~라고 말했다')","quote":"원문 짧은 인용(25단어 이내, 없으면 \"\")","context":"발언 장소·형식","src":"매체","url":"...","topic":"주제"}`를 추가하고 `updated`·`people[].n/latest`를 갱신. 발언 요약은 보도 내용 그대로, 평가·해석을 덧붙이지 않는다. `src`·`url`은 계속 기록하되 2026-10-21부터 화면에는 출처를 표시하지 않는다(app.js에서 제거). 새 인물은 `data/people.json`에 `{id,name,en,role,wiki,x}` 추가 후 `photos.yml` 워크플로(수동 실행)로 사진을 받는다. 이창용은 2026-04-20 퇴임(후임 신현송), 팀 쿡은 2026-09-01부로 이사회 의장(후임 CEO 존 터너스) — 역할 문구는 `people.json.role`.
 - 둘 다 `python3 -c "import json;json.load(open(...))"` 검증 후 바로 커밋·푸시(Netlify 자동 배포). changelog에는 적지 않는다(일정 변경이 아님).
 
+## 기간 한정: 실적 위크 짝 지도 (2026-10-27 ~ 2026-11-05 KST, 이후 삭제)
+- 파일: `pairmap.js`·`pairmap.css`·`data/pairmap.json` + `index.html`의 pairmap 두 줄(주석 "실적 위크 짝 지도"). 노출 기간은 `pairmap.js` 맨 위 `PM_START`·`PM_END`이고, 기간 밖에서는 스크립트가 아무 일도 하지 않는다(섹션·메뉴·데이터 요청 없음). 페이지 코드는 예약 작업이 수정하지 않는다.
+- 미국 기업의 EPS·예상·다음 거래일 반응은 `earnings.json`에서 자동으로 읽는다. 별도 입력 없음.
+- 한국 기업 종가 반응은 `market.json`의 `spark`에서 자동 계산한다(발표일 종가 ÷ 전 거래일 종가). 입력하지 않는다.
+- **한국 장 마감 갱신(15:46 KST)이 할 일**: `data/pairmap.json`의 `companies` 중 `mkt:"kr"`이고 `when` 날짜가 오늘 이전·오늘이며 `result`가 없는 기업 → 발표 수치를 공시(DART)·IR 1곳 + 언론 1곳, 또는 언론 2곳으로 교차 확인해 아래 형식으로 입력. 확인이 안 되면 비워 둔다(화면에는 "발표 완료"로 남음).
+  ```
+  "result": {"rows": [["영업이익", "x조 x,xxx억 원", "전년비 +x.x% · 컨센 x조 x,xxx억"], ["매출", "...", "..."], ["사업부/항목", "...", "..."]],
+             "src": [{"name": "매체·기관", "date": "YYYY-MM-DD", "url": "..."}]}
+  ```
+  행은 2~4개, `checks`에 적힌 항목을 우선. 비교 칸에는 전년비·전분기비·컨센서스 같은 숫자만. "어닝쇼크", "서프라이즈", "호조", "부진" 같은 평가 단어는 쓰지 않는다.
+- **미국 장 마감 갱신(05:16/06:16 KST)이 할 일(선택)**: 전날·당일 발표한 미국 기업에 매출·가이던스 등 EPS 외 사실을 같은 `result.rows` 형식으로 1~3행 추가할 수 있다(EPS 행은 자동이므로 넣지 않음).
+- 발표 시각이 바뀌면 `companies[티커].when`(ISO, `+09:00`)을 고친다. 짝(`groups[].edges`)과 연결 근거(`basis`·`src`)는 운영자 확인 없이 바꾸지 않는다.
+- `pairmap.json`을 바꿨으면 `updated`를 현재 KST로. 검증: `python3 -c "import json;json.load(open('data/pairmap.json'))"`.
+- **종료 후 삭제(운영자 요청 시 — 정기 갱신 작업은 페이지 코드를 건드리지 않으므로 삭제하지 않는다)**: `git rm pairmap.js pairmap.css data/pairmap.json` + `index.html`의 pairmap 두 줄 삭제 + 이 절 삭제 → 커밋 "remove: 실적 위크 짝 지도(기간 종료)". 기간이 지나면 화면에서는 이미 사라진 상태이므로 급하지 않다.
+
 ## 매시간 자동 갱신 (GitHub Actions, 사람 개입 없음)
 - `.github/workflows/hourly.yml` → `scripts/run_hourly.sh`(`update_liq.py`) → `live` 브랜치에 orphan 커밋으로 force-push. main 은 건드리지 않으므로 Netlify 배포가 일어나지 않고, 페이지(`app.js`)는 `https://raw.githubusercontent.com/gong-you-na/market-calendar/live/data/*.json` 을 먼저 읽고 실패하면 배포본 `data/` 를 쓴다.
 - (뉴스 헤드라인 수집·데일리 브리핑·인물 발언 자동 수집은 2026-10-20 운영자 결정으로 폐지. 인물 발언은 수동 아카이브.)

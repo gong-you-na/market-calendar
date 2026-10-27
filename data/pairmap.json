@@ -1,0 +1,1564 @@
+{
+ "updated": "2026-10-27 18:40 KST",
+ "chart_no": "2026-W44 실적 위크",
+ "period_label": "10/28(수)~11/4(화) 발표분 · 한국시간",
+ "period_end_label": "11/5(목) 종료",
+ "cadence": "발표 시각이 지나면 자동으로 '발표 완료'로 바뀝니다 · 미국 기업 EPS·첫날 반응은 하루 2회 정기 갱신(05:16·15:46 KST) 때 자동 입력 · 한국 기업 결과는 발표 당일 입력",
+ "lead": "「미래를 바꿀 기업들」 리스트 중 이 기간에 실적을 발표하는 기업을, 돈이 실제로 오가는 상대와 짝지어 놓았습니다. 짝은 업종이 아니라 공개된 거래·점유율·공통 변수 자료로 연결했고, 선을 누르면 그 근거와 출처가 열립니다.",
+ "disclaimer": "짝 지도는 공개 자료로 확인된 거래·경쟁·공통 변수 관계를 정리한 학습 자료이며 투자 추천이 아닙니다. 연결 근거와 결과 수치의 출처는 각 항목에 표시됩니다. 실적 위크가 끝나면(11/5) 이 섹션은 사라집니다.",
+ "result_since": "2026-10-15",
+ "companies": {
+  "CAPEX": {
+   "kind": "hub",
+   "code": "CAPEX",
+   "name": "AI 데이터센터 투자",
+   "short": "하이퍼스케일러 설비투자(capex)",
+   "desc": "알파벳·아마존·마이크로소프트를 비롯한 AI 데이터센터 설비투자(capex)를 한 줄기로 묶었습니다. 막대는 세 발주처 가운데 실적을 발표한 회사 수만큼 채워집니다."
+  },
+  "GOOGL": {
+   "code": "GOOGL",
+   "name": "알파벳",
+   "mkt": "us",
+   "tier": 1,
+   "when": "2026-10-29T05:00:00+09:00",
+   "form": "현지 10/28 장 마감 후",
+   "checks": [
+    "2026년 설비투자(capex) 가이던스",
+    "구글 클라우드 매출·성장률",
+    "클라우드 수주잔고"
+   ],
+   "theme": "하이퍼스케일러"
+  },
+  "AMZN": {
+   "code": "AMZN",
+   "name": "아마존",
+   "mkt": "us",
+   "tier": 1,
+   "when": "2026-10-30T05:00:00+09:00",
+   "form": "현지 10/29 장 마감 후",
+   "checks": [
+    "AWS 매출·성장률",
+    "분기 설비투자(capex)",
+    "4분기 매출 가이던스"
+   ],
+   "theme": "하이퍼스케일러"
+  },
+  "MSFT": {
+   "code": "MSFT",
+   "name": "마이크로소프트",
+   "mkt": "us",
+   "tier": null,
+   "when": "2026-10-29T05:00:00+09:00",
+   "form": "FY27 1분기 · 현지 10/28 장 마감 후, 웹캐스트 06:30 KST",
+   "checks": [
+    "애저(Azure) 성장률",
+    "분기 설비투자(capex)"
+   ],
+   "theme": "하이퍼스케일러",
+   "list": false
+  },
+  "000660": {
+   "code": "000660",
+   "name": "SK하이닉스",
+   "mkt": "kr",
+   "tier": 1,
+   "when": "2026-10-28T09:00:00+09:00",
+   "form": "3분기 경영실적 · 보도자료 09:00 이전 배포, 컨퍼런스콜 09:00",
+   "checks": [
+    "영업이익·매출",
+    "HBM 매출 비중",
+    "주주환원 발표 내용",
+    "낸드(솔리다임 포함) 실적"
+   ],
+   "theme": "반도체",
+   "consensus": {
+    "text": "영업이익 75조 9,712억 원 · 매출 96조 6,633억 원 (에프앤가이드, 10/27 보도) — 집계 기관·시점별 영업이익 75.97조~77.17조",
+    "src": [
+     {
+      "name": "이투데이",
+      "date": "2026-10-27",
+      "url": "https://www.etoday.co.kr/news/view/2640432"
+     },
+     {
+      "name": "조세금융신문",
+      "date": "2026-10-27",
+      "url": "https://www.tfmedia.co.kr/news/article.html?no=208376"
+     }
+    ]
+   },
+   "when_src": [
+    {
+     "name": "SK하이닉스 뉴스룸",
+     "date": "2026-10-21",
+     "url": "https://news.skhynix.com/en/?p=13734"
+    }
+   ]
+  },
+  "005930": {
+   "code": "005930",
+   "name": "삼성전자",
+   "mkt": "kr",
+   "tier": 1,
+   "when": "2026-10-29T10:00:00+09:00",
+   "form": "3분기 확정실적 · 컨퍼런스콜 10:00",
+   "checks": [
+    "부문별 영업이익(DS 반도체)",
+    "HBM 판매 관련 언급",
+    "파운드리 실적",
+    "주주환원"
+   ],
+   "theme": "반도체",
+   "when_note": "10/8 잠정실적 공시: 영업이익 107조 4,000억 원 · 매출 195조 원. 확정실적에서는 부문별(DS·DX) 수치가 나옵니다.",
+   "consensus": {
+    "text": "잠정 발표 전 컨센서스 영업이익 106조 6,401억 원 · 매출 200조 6,417억 원 (에프앤가이드)",
+    "src": [
+     {
+      "name": "삼성전자 뉴스룸(잠정)",
+      "date": "2026-10-08",
+      "url": "https://news.samsung.com/global/samsung-electronics-announces-earnings-guidance-for-third-quarter-2026"
+     },
+     {
+      "name": "CBS노컷뉴스",
+      "date": "2026-10-08",
+      "url": "https://www.nocutnews.co.kr/news/6588602"
+     }
+    ]
+   }
+  },
+  "009150": {
+   "code": "009150",
+   "name": "삼성전기",
+   "mkt": "kr",
+   "tier": 1,
+   "when": "2026-10-28T13:00:00+09:00",
+   "form": "3분기 경영실적 · 컨퍼런스콜",
+   "checks": [
+    "컴포넌트(MLCC) 부문 매출·영업이익",
+    "패키지솔루션(기판) 부문 매출·영업이익"
+   ],
+   "theme": "전력·전기 인프라",
+   "when_note": "발표 시각 13:00은 실적 일정 집계 사이트 3곳 기준이며 회사 공시 원문은 확인하지 못했습니다.",
+   "consensus": {
+    "text": "영업이익 약 6,453억 원 · 매출 3조 8,264억 원 (10/26 보도 기준)",
+    "src": [
+     {
+      "name": "데일리안",
+      "date": "2026-10-26",
+      "url": "https://www.dailian.co.kr/news/view/1706160/%EB%B0%98%EB%8F%84%EC%B2%B4-%EC%B4%88%ED%98%B8%ED%99%A9-%EA%B0%80%EC%A0%84-%EC%9B%90%EA%B0%80-%EB%B6%80%EB%8B%B4%EC%A0%84%EC%9E%90%EC%97%85%EA%B3%84-2026"
+     }
+    ]
+   }
+  },
+  "066570": {
+   "code": "066570",
+   "name": "LG전자",
+   "mkt": "kr",
+   "tier": 1,
+   "when": "2026-10-28T16:00:00+09:00",
+   "form": "3분기 확정실적 · 컨퍼런스콜 16:00",
+   "checks": [
+    "사업부별 영업이익(VS 전장 · ES 냉난방공조)"
+   ],
+   "theme": "피지컬 AI",
+   "when_note": "10/7 잠정실적 공시: 매출 23조 8,270억 원(전년비 +8.9%) · 영업이익 7,818억 원(전년비 +13.5%). 확정실적에서는 사업본부별 수치가 나옵니다.",
+   "consensus": {
+    "text": "영업이익 1조 301억 원 (에프앤가이드, 잠정실적 발표 당시 기준)",
+    "src": [
+     {
+      "name": "데일리안",
+      "date": "2026-10-26",
+      "url": "https://www.dailian.co.kr/news/view/1706160/%EB%B0%98%EB%8F%84%EC%B2%B4-%EC%B4%88%ED%98%B8%ED%99%A9-%EA%B0%80%EC%A0%84-%EC%9B%90%EA%B0%80-%EB%B6%80%EB%8B%B4%EC%A0%84%EC%9E%90%EC%97%85%EA%B3%84-2026"
+     },
+     {
+      "name": "LG전자 뉴스룸(잠정)",
+      "date": "2026-10-07",
+      "url": "https://www.lge.co.kr/story/newsroom/236203"
+     }
+    ]
+   }
+  },
+  "005380": {
+   "code": "005380",
+   "name": "현대차",
+   "mkt": "kr",
+   "tier": 1,
+   "when": "2026-10-29T14:10:00+09:00",
+   "form": "3분기 경영실적 · 컨퍼런스콜",
+   "checks": [
+    "영업이익·매출",
+    "관세 비용 반영액",
+    "미국 판매 대수"
+   ],
+   "theme": "피지컬 AI",
+   "when_note": "발표 시각 14:10은 집계 사이트 기준(최근 4개 분기 동일)이며, 회사 IR 페이지에는 날짜만 있습니다.",
+   "consensus": {
+    "text": "영업이익 2조 4,365억 원 · 매출 44조 7,859억 원 (에프앤가이드, 10/27 보도)",
+    "src": [
+     {
+      "name": "디지털데일리",
+      "date": "2026-10-27",
+      "url": "https://www.ddaily.co.kr/page/view/2026102708253229134"
+     }
+    ]
+   }
+  },
+  "GEV": {
+   "code": "GEV",
+   "name": "GE버노바",
+   "mkt": "us",
+   "tier": 1,
+   "when": "2026-10-28T20:00:00+09:00",
+   "form": "현지 10/28 장 시작 전",
+   "checks": [
+    "수주·수주잔고",
+    "가스터빈 수주·예약 슬롯",
+    "전력망(Electrification) 부문 매출"
+   ],
+   "theme": "전력·전기 인프라"
+  },
+  "ETN": {
+   "code": "ETN",
+   "name": "이튼",
+   "mkt": "us",
+   "tier": 1,
+   "when": "2026-11-03T22:30:00+09:00",
+   "form": "현지 11/3 장 시작 전",
+   "checks": [
+    "데이터센터 관련 매출·수주",
+    "수주잔고",
+    "전기 부문 영업이익률"
+   ],
+   "theme": "전력·전기 인프라"
+  },
+  "AMD": {
+   "code": "AMD",
+   "name": "AMD",
+   "mkt": "us",
+   "tier": 1,
+   "when": "2026-11-04T06:00:00+09:00",
+   "form": "현지 11/3 장 마감 후",
+   "checks": [
+    "데이터센터 부문 매출",
+    "Instinct GPU 관련 언급",
+    "4분기 매출 가이던스"
+   ],
+   "theme": "반도체"
+  },
+  "SNDK": {
+   "code": "SNDK",
+   "name": "샌디스크",
+   "mkt": "us",
+   "tier": 1,
+   "when": "2026-10-30T05:00:00+09:00",
+   "form": "현지 10/29 장 마감 후 · FY27 1분기",
+   "checks": [
+    "매출·총이익률",
+    "데이터센터 매출",
+    "다음 분기 가이던스"
+   ],
+   "theme": "반도체"
+  },
+  "INTC": {
+   "code": "INTC",
+   "name": "인텔",
+   "mkt": "us",
+   "tier": 3,
+   "when": "2026-10-30T05:00:00+09:00",
+   "form": "현지 10/29 장 마감 후",
+   "checks": [
+    "파운드리 부문 매출·영업손익",
+    "파운드리 외부 고객 언급",
+    "4분기 가이던스"
+   ],
+   "theme": "반도체(고변동)"
+  },
+  "HOOD": {
+   "code": "HOOD",
+   "name": "로빈후드",
+   "mkt": "us",
+   "tier": 3,
+   "when": "2026-10-28T05:00:00+09:00",
+   "form": "현지 10/27 장 마감 후",
+   "checks": [
+    "거래 기반 매출(크립토·옵션·주식)",
+    "순입금",
+    "고객 자산(AUC)"
+   ],
+   "theme": "핀테크·디지털자산"
+  },
+  "COIN": {
+   "code": "COIN",
+   "name": "코인베이스",
+   "mkt": "us",
+   "tier": null,
+   "when": "2026-10-30T05:00:00+09:00",
+   "form": "현지 10/29 장 마감 후, 라이브 Q&A 06:00 KST",
+   "checks": [
+    "거래 수익",
+    "크립토 거래"
+   ],
+   "theme": "디지털자산",
+   "list": false
+  },
+  "TSLA": {
+   "code": "TSLA",
+   "name": "테슬라",
+   "mkt": "us",
+   "tier": 1,
+   "when": "2026-10-22T05:00:00+09:00",
+   "form": "현지 10/21 장 마감 후 · 발표 완료",
+   "checks": [
+    "자동차 매출총이익률",
+    "잉여현금흐름"
+   ],
+   "theme": "피지컬 AI·로봇",
+   "in_period": false
+  },
+  "LLY": {
+   "code": "LLY",
+   "name": "일라이 릴리",
+   "mkt": "us",
+   "tier": 2,
+   "when": "2026-10-29T20:00:00+09:00",
+   "form": "현지 10/29 장 시작 전",
+   "checks": [
+    "매출",
+    "연간 매출 가이던스",
+    "마운자로·젭바운드 매출"
+   ],
+   "theme": "헬스케어"
+  },
+  "TEM": {
+   "code": "TEM",
+   "name": "템퍼스AI",
+   "mkt": "us",
+   "tier": 3,
+   "when": "2026-11-02T22:00:00+09:00",
+   "form": "현지 11/2 장 시작 전",
+   "checks": [
+    "매출(유전체·데이터)",
+    "연간 매출 가이던스"
+   ],
+   "theme": "AI 소프트웨어·데이터"
+  },
+  "PLTR": {
+   "code": "PLTR",
+   "name": "팔란티어",
+   "mkt": "us",
+   "tier": 1,
+   "when": "2026-11-03T06:00:00+09:00",
+   "form": "현지 11/2 장 마감 후",
+   "checks": [
+    "미국 상업 부문 매출 성장률",
+    "연간 매출 가이던스"
+   ],
+   "theme": "AI 소프트웨어·데이터"
+  },
+  "034020": {
+   "code": "034020",
+   "name": "두산에너빌리티",
+   "mkt": "kr",
+   "tier": null,
+   "when": "",
+   "form": "리스트 밖 · 참고",
+   "checks": [
+    "가스터빈 수주"
+   ],
+   "theme": "",
+   "list": false
+  },
+  "267260": {
+   "code": "267260",
+   "name": "HD현대일렉트릭",
+   "mkt": "kr",
+   "tier": null,
+   "when": "2026-10-27T13:25:00+09:00",
+   "form": "3분기 실적 · 발표 완료",
+   "checks": [
+    "수주·수주잔고"
+   ],
+   "theme": "",
+   "list": false,
+   "result": {
+    "rows": [
+     [
+      "영업이익",
+      "2,845억 원",
+      "전년비 +15.1%"
+     ],
+     [
+      "매출",
+      "1조 1,799억 원",
+      "전년비 +18.5%"
+     ],
+     [
+      "3분기 수주",
+      "9.8억 달러",
+      "전년비 -19.1%"
+     ],
+     [
+      "수주잔고",
+      "88.4억 달러",
+      "전년비 +4.2%"
+     ]
+    ],
+    "src": [
+     {
+      "name": "디지털투데이(공시)",
+      "date": "2026-10-27",
+      "url": "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=710272"
+     },
+     {
+      "name": "뉴스핌",
+      "date": "2026-10-27",
+      "url": "https://www.newspim.com/news/view/20261027000936"
+     }
+    ]
+   }
+  },
+  "010120": {
+   "code": "010120",
+   "name": "LS ELECTRIC",
+   "mkt": "kr",
+   "tier": null,
+   "when": "",
+   "form": "리스트 밖 · 참고",
+   "checks": [
+    "북미 데이터센터 배전 수주"
+   ],
+   "theme": "",
+   "list": false
+  },
+  "012330": {
+   "code": "012330",
+   "name": "현대모비스",
+   "mkt": "kr",
+   "tier": 1,
+   "theme": "피지컬 AI",
+   "when": "2026-10-30T10:10:00+09:00",
+   "form": "3분기 경영실적 · 자료 10:00 공개, 컨퍼런스콜 10:10",
+   "checks": [
+    "영업이익·매출",
+    "모듈·핵심부품 부문 매출",
+    "A/S 부품 부문 영업이익"
+   ],
+   "consensus": {
+    "text": "영업이익 9,433억 원 · 매출 16.0조 원 (시장 기대치, 키움증권 리포트 인용)",
+    "src": [
+     {
+      "name": "키움증권",
+      "date": "2026-10-13",
+      "url": "https://bbn.kiwoom.com/rfCR12362"
+     }
+    ]
+   }
+  }
+ },
+ "groups": [
+  {
+   "id": "g1",
+   "title": "① 고객 → 공급자 · AI 데이터센터 투자 사슬",
+   "desc": "왼쪽 발주처의 설비투자가 가운데 줄기를 지나 공급사의 매출로 이어집니다. 오른쪽은 공급사가 다시 사는 부품입니다.",
+   "w": 840,
+   "h": 484,
+   "nodes": [
+    {
+     "id": "g",
+     "co": "GOOGL",
+     "x": 0,
+     "y": 110,
+     "w": 168,
+     "h": 58
+    },
+    {
+     "id": "a",
+     "co": "AMZN",
+     "x": 0,
+     "y": 200,
+     "w": 168,
+     "h": 58
+    },
+    {
+     "id": "m",
+     "co": "MSFT",
+     "x": 0,
+     "y": 290,
+     "w": 168,
+     "h": 58
+    },
+    {
+     "id": "hub",
+     "co": "CAPEX",
+     "x": 214,
+     "y": 10,
+     "w": 44,
+     "h": 448
+    },
+    {
+     "id": "hx",
+     "co": "000660",
+     "x": 360,
+     "y": 0,
+     "w": 176,
+     "h": 58
+    },
+    {
+     "id": "ss",
+     "co": "005930",
+     "x": 360,
+     "y": 80,
+     "w": 176,
+     "h": 58
+    },
+    {
+     "id": "amd",
+     "co": "AMD",
+     "x": 360,
+     "y": 160,
+     "w": 176,
+     "h": 58
+    },
+    {
+     "id": "gev",
+     "co": "GEV",
+     "x": 360,
+     "y": 240,
+     "w": 176,
+     "h": 58
+    },
+    {
+     "id": "etn",
+     "co": "ETN",
+     "x": 360,
+     "y": 320,
+     "w": 176,
+     "h": 58
+    },
+    {
+     "id": "lg",
+     "co": "066570",
+     "x": 360,
+     "y": 400,
+     "w": 176,
+     "h": 58
+    },
+    {
+     "id": "ss2",
+     "co": "005930",
+     "x": 664,
+     "y": 120,
+     "w": 176,
+     "h": 58,
+     "label": "삼성전자",
+     "sub": "HBM"
+    },
+    {
+     "id": "sem",
+     "co": "009150",
+     "x": 664,
+     "y": 200,
+     "w": 176,
+     "h": 58
+    }
+   ],
+   "edges": [
+    {
+     "id": "g-hub",
+     "from": "g",
+     "to": "hub",
+     "type": 1,
+     "label": "capex",
+     "lt": 0.5,
+     "basis": "알파벳 2026년 capex 가이던스 1,950억~2,050억 달러 (2분기 실적 발표, 2026-07-22)",
+     "bases": [
+      "알파벳 2026년 capex 가이던스 1,950억~2,050억 달러 (2분기 실적 발표, 2026-07-22)",
+      "알파벳 2026년 2분기 capex 449억 달러 (2분기 실적 발표, 2026-07-22)"
+     ],
+     "src": [
+      {
+       "name": "W.Media",
+       "date": "2026-07-23",
+       "url": "https://w.media/ai-infrastructure-demand-pushes-alphabets-2026-capex-guidance-to-us-205-billion/"
+      },
+      {
+       "name": "The Edge Malaysia",
+       "date": "2026-07-23",
+       "url": "https://theedgemalaysia.com/node/811728"
+      }
+     ],
+     "level": "확인",
+     "verified": true,
+     "note": "직전 가이던스 표기가 매체마다 다릅니다. 10/29 3분기 발표에서 갱신될 수 있습니다."
+    },
+    {
+     "id": "a-hub",
+     "from": "a",
+     "to": "hub",
+     "type": 1,
+     "label": "capex",
+     "lt": 0.5,
+     "basis": "아마존 2026년 현금 capex 계획 약 2,200억 달러 (2분기 실적 발표, 2026-07-30; 직전 약 2,000억 달러)",
+     "bases": [
+      "아마존 2026년 현금 capex 계획 약 2,200억 달러 (2분기 실적 발표, 2026-07-30; 직전 약 2,000억 달러)",
+      "아마존 2026년 2분기 현금 capex 531억 달러 (2분기 실적 발표, 2026-07-30)"
+     ],
+     "src": [
+      {
+       "name": "Fortune",
+       "date": "2026-07-30",
+       "url": "https://fortune.com/2026/07/30/andy-jassy-amazon-capex-demand-aws-pga-tour/"
+      },
+      {
+       "name": "Nasdaq",
+       "date": "2026-07-30",
+       "url": "https://www.nasdaq.com/articles/amazoncom-q2-earnings-call-highlights"
+      }
+     ],
+     "level": "확인",
+     "verified": true,
+     "note": "2,200억 달러는 컨퍼런스콜 발언 수치입니다."
+    },
+    {
+     "id": "m-hub",
+     "from": "m",
+     "to": "hub",
+     "type": 1,
+     "label": "capex",
+     "lt": 0.5,
+     "basis": "마이크로소프트 FY26 4분기(2026년 4~6월) capex 410억 달러, 2026년(캘린더) capex 약 1,750억 달러 (FY26 4분기 실적 발표, 2026-07-29)",
+     "bases": [
+      "마이크로소프트 FY26 4분기(2026년 4~6월) capex 410억 달러, 2026년(캘린더) capex 약 1,750억 달러 (FY26 4분기 실적 발표, 2026-07-29)",
+      "마이크로소프트 FY27 1분기 capex 가이던스 500억 달러 이상 (FY26 4분기 실적 발표, 2026-07-29)"
+     ],
+     "src": [
+      {
+       "name": "Investing.com",
+       "date": "2026-07-29",
+       "url": "https://www.investing.com/news/earnings/microsoft-beats-on-profit-and-revenue-shares-rise-after-hours-4821565"
+      },
+      {
+       "name": "CFO Dive",
+       "date": "2026-07-30",
+       "url": "https://www.cfodive.com/news/microsoft-holds-line-ai-spending-plans/826648/"
+      },
+      {
+       "name": "Directions on Microsoft",
+       "date": "2026-07-30",
+       "url": "https://www.directionsonmicrosoft.com/microsoft-expect-capacity-constraints-capex-acceleration-to-continue/"
+      },
+      {
+       "name": "The Edge Malaysia",
+       "date": "2026-07-30",
+       "url": "https://theedgemalaysia.com/node/812556"
+      },
+      {
+       "name": "Nasdaq(MarketBeat)",
+       "date": "2026-07-29",
+       "url": "https://www.nasdaq.com/articles/microsoft-q4-earnings-call-highlights"
+      }
+     ],
+     "level": "확인",
+     "verified": true,
+     "note": "2026년 약 1,750억 달러는 리스 회계 변경 영향이 반영된 수치이며, 회사는 이를 빼면 계획 변동이 없다고 밝혔습니다."
+    },
+    {
+     "id": "hub-hx",
+     "from": "hub",
+     "to": "hx",
+     "type": 1,
+     "label": "HBM",
+     "lt": 0.55,
+     "basis": "한국경제(2025-07-04)가 인용한 UBS 보고서: SK하이닉스가 구글 TPU v7p용 HBM3E 8단의 제1 공급사이고, TPU v7e에는 SK하이닉스 HBM3E 12단만 탑재.",
+     "bases": [
+      "한국경제(2025-07-04)가 인용한 UBS 보고서: SK하이닉스가 구글 TPU v7p용 HBM3E 8단의 제1 공급사이고, TPU v7e에는 SK하이닉스 HBM3E 12단만 탑재.",
+      "한국경제(2025-07-04)가 인용한 UBS 보고서: SK하이닉스가 AWS 트레이니엄 2.5·트레이니엄3에 들어가는 HBM3E 8단 물량의 100%를 확보."
+     ],
+     "src": [
+      {
+       "name": "한국경제",
+       "date": "2025-07-04",
+       "url": "https://www.hankyung.com/article/2025070492011"
+      },
+      {
+       "name": "뉴시스",
+       "date": "2026-04-29",
+       "url": "https://www.newsis.com/view/NISX20260429_0003611265"
+      },
+      {
+       "name": "TrendForce",
+       "date": "2026-01-05",
+       "url": "https://www.trendforce.com/news/?p=51096"
+      },
+      {
+       "name": "SemiAnalysis",
+       "date": "2025-12-04",
+       "url": "https://newsletter.semianalysis.com/p/aws-trainium3-deep-dive-a-potential"
+      },
+      {
+       "name": "토요경제",
+       "date": "2025-06-18",
+       "url": "https://sateconomy.co.kr/news/view/1065603865109033"
+      }
+     ],
+     "level": "부분확인",
+     "verified": true,
+     "note": "구글·아마존·SK하이닉스의 공식 확인은 없는 증권사(UBS)·업계 자료입니다. TPU는 브로드컴이 설계해 HBM 구매 주체가 구글이 아닐 수 있습니다."
+    },
+    {
+     "id": "hub-ss",
+     "from": "hub",
+     "to": "ss",
+     "type": 1,
+     "label": "HBM",
+     "lt": 0.55,
+     "basis": "TrendForce(2025-12-01, 한국경제 인용): 삼성전자가 2025년 브로드컴을 통한 구글 HBM 출하량의 60% 이상을 공급.",
+     "bases": [
+      "TrendForce(2025-12-01, 한국경제 인용): 삼성전자가 2025년 브로드컴을 통한 구글 HBM 출하량의 60% 이상을 공급.",
+      "뉴시스(2026-04-29) 업계 추정: 삼성전자와 SK하이닉스가 구글 TPU용 HBM3E를 약 5대 5 비중으로 공급."
+     ],
+     "src": [
+      {
+       "name": "TrendForce",
+       "date": "2025-12-01",
+       "url": "https://www.trendforce.com/news/2025/12/01/news-samsung-reportedly-supplies-60-of-google-tpu-hbm3e-set-to-remain-primary-supplier-in-2026/"
+      },
+      {
+       "name": "뉴시스",
+       "date": "2026-04-29",
+       "url": "https://www.newsis.com/view/NISX20260429_0003611265"
+      },
+      {
+       "name": "헤럴드경제",
+       "date": "2026-06-12",
+       "url": "https://biz.heraldcorp.com/article/10780481"
+      }
+     ],
+     "level": "부분확인",
+     "verified": true,
+     "note": "회사 공식 확인은 없는 조사기관·업계 자료입니다. 2025년 비중(60% 이상)과 2026년 추정(5대 5)이 다릅니다."
+    },
+    {
+     "id": "hub-amd",
+     "from": "hub",
+     "to": "amd",
+     "type": 1,
+     "label": "GPU 도입",
+     "lt": 0.55,
+     "basis": "AMD 발표(2026-07-20): 마이크로소프트가 MI455X GPU와 EPYC 'Venice' CPU로 구성된 AMD Helios 랙 솔루션을 Azure에 도입하며, AMD는 2026년 하반기부터 마이크로소프트를 포함한 고객에게 Helios를 출하.",
+     "bases": [
+      "AMD 발표(2026-07-20): 마이크로소프트가 MI455X GPU와 EPYC 'Venice' CPU로 구성된 AMD Helios 랙 솔루션을 Azure에 도입하며, AMD는 2026년 하반기부터 마이크로소프트를 포함한 고객에게 Helios를 출하.",
+      "TechWire Asia(2026-07-21): Azure ND MI455X v7 가상머신 출시 예정이며, Helios 기준 설계는 랙당 MI455X 72개(Azure 도입 수량과 출시일은 미공개)."
+     ],
+     "src": [
+      {
+       "name": "AMD Newsroom",
+       "date": "2026-07-20",
+       "url": "https://newsroom.amd.com/news/microsoft-azure-ai-infrastructure/"
+      },
+      {
+       "name": "TechWire Asia",
+       "date": "2026-07-21",
+       "url": "https://techwireasia.com/2026/07/microsoft-deploys-amd-helios-ai-systems-azure/"
+      }
+     ],
+     "level": "확인",
+     "verified": true,
+     "note": "도입 규모는 공개되지 않았습니다. 알파벳·아마존의 AMD GPU 도입 공개 사례는 확인하지 못했습니다."
+    },
+    {
+     "id": "hub-gev",
+     "from": "hub",
+     "to": "gev",
+     "type": 1,
+     "label": "가스터빈",
+     "lt": 0.55,
+     "basis": "GE버노바 2026년 2분기 실적(2026-07-22): 2026년 상반기 데이터센터 수주가 50억 달러를 넘어 2025년 연간의 2배 이상이고, 2분기 전력화(Electrification) 부문 데이터센터 수주는 27억 달러.",
+     "bases": [
+      "GE버노바 2026년 2분기 실적(2026-07-22): 2026년 상반기 데이터센터 수주가 50억 달러를 넘어 2025년 연간의 2배 이상이고, 2분기 전력화(Electrification) 부문 데이터센터 수주는 27억 달러.",
+      "셰브론이 GE버노바 가스터빈 7기를 주문했고(Fortune 2026-04-01), 이후 마이크로소프트와 서텍사스 데이터센터용 약 2.67GW 규모 가스발전 20년 전력구매계약을 체결했으며, 발전용량의 대부분을 GE버노바 가스터빈으로 구성(Oil & Gas 360, 2026-06-22)."
+     ],
+     "src": [
+      {
+       "name": "GE Vernova 8-K(2분기 실적 보도자료)",
+       "date": "2026-07-22",
+       "url": "https://www.sec.gov/Archives/edgar/data/0001996810/000199681026000147/gevpressrelease2q26.htm"
+      },
+      {
+       "name": "GE Vernova 2분기 컨퍼런스콜 녹취록",
+       "date": "2026-07-22",
+       "url": "https://www.gevernova.com/sites/default/files/gev_webcast_transcript_07222026.pdf"
+      },
+      {
+       "name": "Fortune",
+       "date": "2026-04-01",
+       "url": "https://fortune.com/2026/04/01/microsoft-chevron-exclusivity-powering-west-texas-data-center-complex"
+      },
+      {
+       "name": "Oil & Gas 360",
+       "date": "2026-06-22",
+       "url": "https://www.oilandgas360.com/chevron-signs-20-year-microsoft-power-deal-for-west-texas-ai-project/"
+      }
+     ],
+     "level": "부분확인",
+     "verified": true,
+     "note": "GE버노바는 하이퍼스케일러 고객명을 밝히지 않습니다. 마이크로소프트와의 연결은 셰브론(발주처)을 거친 간접 관계입니다."
+    },
+    {
+     "id": "hub-etn",
+     "from": "hub",
+     "to": "etn",
+     "type": 1,
+     "label": "전기설비",
+     "lt": 0.55,
+     "basis": "이튼 2026년 2분기 실적(2026-07-31 보도): 데이터센터 매출 유기적 성장률 약 65%, Electrical Americas 유기적 매출 +18%, 같은 부문 수주 +41%(12개월 누적 기준).",
+     "bases": [
+      "이튼 2026년 2분기 실적(2026-07-31 보도): 데이터센터 매출 유기적 성장률 약 65%, Electrical Americas 유기적 매출 +18%, 같은 부문 수주 +41%(12개월 누적 기준).",
+      "이튼이 인수한 Boyd Thermal: 2026년 2분기 매출 4억3,200만 달러(MarketBeat), 열관리 사업의 80%가 데이터센터 시장용(memoori 2026-03-23)."
+     ],
+     "src": [
+      {
+       "name": "MarketBeat",
+       "date": "2026-07-31",
+       "url": "https://www.marketbeat.com/instant-alerts/eaton-q2-earnings-call-highlights-2026-07-31/"
+      },
+      {
+       "name": "Electrical Trends",
+       "date": "2026-08-26",
+       "url": "https://electricaltrends.com/?p=3698226"
+      },
+      {
+       "name": "memoori",
+       "date": "2026-03-23",
+       "url": "https://memoori.com/eaton-11b-acquisition-spree-data-center-growth-2026/"
+      },
+      {
+       "name": "Eaton 10-K(FY2025)",
+       "date": "2026-02-26",
+       "url": "https://www.sec.gov/Archives/edgar/data/1551182/000155118226000007/etn-20251231.htm"
+      }
+     ],
+     "level": "부분확인",
+     "verified": true,
+     "note": "이튼은 데이터센터 고객명과 매출 비중을 공시하지 않습니다(10-K: 전기 부문 매출의 22%가 대형 고객 6곳)."
+    },
+    {
+     "id": "hub-lg",
+     "from": "hub",
+     "to": "lg",
+     "type": 1,
+     "label": "칠러",
+     "lt": 0.55,
+     "basis": "LG전자 북미법인은 2026-10-05 북미 데이터센터 인프라 기업 AIR Control Concepts와 총 5GW 규모 AI 데이터센터용 칠러 장기공급계약을 체결(계약 금액 비공개, 업계 추정 3~5조원).",
+     "bases": [
+      "LG전자 북미법인은 2026-10-05 북미 데이터센터 인프라 기업 AIR Control Concepts와 총 5GW 규모 AI 데이터센터용 칠러 장기공급계약을 체결(계약 금액 비공개, 업계 추정 3~5조원).",
+      "LG전자의 2026년 상반기 AI 데이터센터 냉각 솔루션 수주액은 약 6,000억원(MTN 2026-10-06)이며, 2026-10-01 보도자료에서 인도네시아 시나르마스 그룹의 자카르타 AI 데이터센터 공급을 공개."
+     ],
+     "src": [
+      {
+       "name": "MTN(머니투데이방송)",
+       "date": "2026-10-06",
+       "url": "https://news.mtn.co.kr/news-detail/2026100607562235447"
+      },
+      {
+       "name": "뉴스토마토",
+       "date": "2026-10-06",
+       "url": "https://www.newstomato.com/ReadNews.aspx?no=1315737"
+      },
+      {
+       "name": "LG 보도자료",
+       "date": "2026-10-01",
+       "url": "https://www.lg.co.kr/media/release/30623"
+      }
+     ],
+     "level": "부분확인",
+     "verified": true,
+     "note": "공개된 고객은 데이터센터 인프라 기업이며 최종 사용자와 계약 금액은 공개되지 않았습니다."
+    },
+    {
+     "id": "amd-ss",
+     "from": "amd",
+     "to": "ss2",
+     "type": 1,
+     "label": "HBM",
+     "lt": 0.5,
+     "basis": "AMD·삼성전자 공동 발표(2026-03-18, MOU): 삼성전자가 AMD 차세대 가속기 MI455X의 주(primary) HBM4 공급사가 되며, MI350X·MI355X에는 이미 삼성전자 HBM3E가 쓰였다고 명시.",
+     "bases": [
+      "AMD·삼성전자 공동 발표(2026-03-18, MOU): 삼성전자가 AMD 차세대 가속기 MI455X의 주(primary) HBM4 공급사가 되며, MI350X·MI355X에는 이미 삼성전자 HBM3E가 쓰였다고 명시.",
+      "AMD는 2025-06-12 MI350 시리즈의 288GB HBM3E를 삼성전자와 마이크론이 공급한다고 공식 발표(KED Global 2025-06-13, Digitimes)."
+     ],
+     "src": [
+      {
+       "name": "AMD Newsroom",
+       "date": "2026-03-18",
+       "url": "https://newsroom.amd.com/news/samsung-and-amd-expand-strategic-collaboratio/"
+      },
+      {
+       "name": "KED Global",
+       "date": "2025-06-13",
+       "url": "https://m.kedglobal.com/korean-chipmakers/newsView/ked202506130004"
+      },
+      {
+       "name": "Digitimes",
+       "date": "2025-06-13",
+       "url": "https://www.digitimes.com/news/a20250613VL205.html"
+      }
+     ],
+     "level": "확인",
+     "verified": true,
+     "note": "2026-03-18 발표는 양해각서(MOU)로 물량·금액이 공개되지 않았습니다."
+    },
+    {
+     "id": "amd-sem",
+     "from": "amd",
+     "to": "sem",
+     "type": 1,
+     "label": "FC-BGA 기판",
+     "lt": 0.5,
+     "basis": "삼성전기는 2024-07-22 AMD에 하이퍼스케일 데이터센터용 고성능 FC-BGA 기판을 공급하는 계약을 발표.",
+     "bases": [
+      "삼성전기는 2024-07-22 AMD에 하이퍼스케일 데이터센터용 고성능 FC-BGA 기판을 공급하는 계약을 발표.",
+      "삼성전기 2026년 2분기 실적(2026-07-30): AI 가속기·서버 CPU용 FC-BGA 공급 확대로 패키지솔루션 매출이 전년 대비 37% 증가했고, AI 서버용 MLCC 장기공급계약 고객은 약 10곳(하이퍼스케일러·반도체사, 고객명 비공개)."
+     ],
+     "src": [
+      {
+       "name": "중앙일보(다음 게재)",
+       "date": "2024-07-23",
+       "url": "https://v.daum.net/v/20240723000335650"
+      },
+      {
+       "name": "이데일리(영문)",
+       "date": "2026-07-30",
+       "url": "https://en.edaily.co.kr/news/eda202607305596/"
+      },
+      {
+       "name": "TrendForce(조선비즈 인용)",
+       "date": "2026-08-27",
+       "url": "https://www.trendforce.com/news/2026/08/27/news-samsung-electro-mechanics-lg-innotek-ramp-up-ai-substrate-capacity-as-1h-utilization-reportedly-nears-90/"
+      },
+      {
+       "name": "뉴스프리존(Supple 게재)",
+       "date": "2026-10-22",
+       "url": "https://supple.kr/news/cmvirqbkf0089gnzgepy4g73d"
+      }
+     ],
+     "level": "확인",
+     "verified": true,
+     "note": "AMD 공급 발표는 2024년 자료입니다."
+    }
+   ]
+  },
+  {
+   "id": "g4",
+   "title": "① 고객 → 공급자 · 그 밖의 거래",
+   "desc": "한쪽의 매입·계약이 다른 쪽의 매출이 되는 관계입니다.",
+   "w": 840,
+   "h": 248,
+   "nodes": [
+    {
+     "id": "hy",
+     "co": "005380",
+     "x": 0,
+     "y": 10,
+     "w": 160,
+     "h": 58
+    },
+    {
+     "id": "mb",
+     "co": "012330",
+     "x": 250,
+     "y": 10,
+     "w": 160,
+     "h": 58
+    },
+    {
+     "id": "lly",
+     "co": "LLY",
+     "x": 440,
+     "y": 10,
+     "w": 160,
+     "h": 58
+    },
+    {
+     "id": "tem",
+     "co": "TEM",
+     "x": 680,
+     "y": 10,
+     "w": 160,
+     "h": 58
+    },
+    {
+     "id": "pl",
+     "co": "PLTR",
+     "x": 0,
+     "y": 128,
+     "w": 160,
+     "h": 58
+    },
+    {
+     "id": "aws",
+     "co": "AMZN",
+     "x": 250,
+     "y": 92,
+     "w": 160,
+     "h": 58,
+     "label": "아마존",
+     "sub": "AWS"
+    },
+    {
+     "id": "az",
+     "co": "MSFT",
+     "x": 250,
+     "y": 164,
+     "w": 160,
+     "h": 58,
+     "label": "마이크로소프트",
+     "sub": "Azure"
+    }
+   ],
+   "edges": [
+    {
+     "id": "hy-mb",
+     "from": "hy",
+     "to": "mb",
+     "type": 1,
+     "label": "부품 매입",
+     "lt": 0.5,
+     "basis": "현대모비스 2025년 사업보고서: 매출 61조 1,100억 원 중 현대차 24조 600억 원(39.4%) · 기아 21조 8,500억 원(35.8%).",
+     "bases": [
+      "현대모비스 2025년 사업보고서: 매출 61조 1,100억 원 중 현대차 24조 600억 원(39.4%) · 기아 21조 8,500억 원(35.8%)."
+     ],
+     "src": [
+      {
+       "name": "SBS Biz (현대모비스 사업보고서 인용)",
+       "date": "2026-03-11",
+       "url": "https://biz.sbs.co.kr/amp/article/20000296598"
+      }
+     ],
+     "level": "확인",
+     "verified": true
+    },
+    {
+     "id": "lly-tem",
+     "from": "lly",
+     "to": "tem",
+     "type": 1,
+     "label": "데이터",
+     "lt": 0.5,
+     "basis": "템퍼스AI 8-K(2026-01-12 제출, 1월 11일 보도자료): 2025년 70곳 이상의 고객과 데이터 계약을 체결했고 고객 명단에 일라이 릴리가 포함되며, 2025년 말 총계약가치(TCV)는 11억 달러 초과.",
+     "bases": [
+      "템퍼스AI 8-K(2026-01-12 제출, 1월 11일 보도자료): 2025년 70곳 이상의 고객과 데이터 계약을 체결했고 고객 명단에 일라이 릴리가 포함되며, 2025년 말 총계약가치(TCV)는 11억 달러 초과."
+     ],
+     "src": [
+      {
+       "name": "Tempus AI 8-K Ex.99.2(SEC)",
+       "date": "2026-01-12",
+       "url": "https://www.sec.gov/Archives/edgar/data/1717115/000119312526009650/d38597dex992.htm"
+      },
+      {
+       "name": "Tempus 보도자료",
+       "date": "2026-01-11",
+       "url": "https://www.tempus.com/news/pr/tempus-achieves-record-total-contract-value-exceeding-1-1-billion/"
+      }
+     ],
+     "level": "확인",
+     "verified": true,
+     "note": "릴리와의 개별 계약 금액·기간은 공개되지 않았고, 템퍼스AI 측 발표만 있습니다."
+    },
+    {
+     "id": "pl-aws",
+     "from": "pl",
+     "to": "aws",
+     "type": 1,
+     "label": "클라우드",
+     "lt": 0.5,
+     "basis": "팔란티어 2025년 10-K(2026-02-17 제출): 클라우드 서비스 호스팅을 AWS와 마이크로소프트 Azure 등 제3자 인프라에 의존하며 최소 사용 약정이 있다고 기재했고, 2025년 매출원가 중 제3자 클라우드 호스팅 비용은 9,460만 달러 증가.",
+     "bases": [
+      "팔란티어 2025년 10-K(2026-02-17 제출): 클라우드 서비스 호스팅을 AWS와 마이크로소프트 Azure 등 제3자 인프라에 의존하며 최소 사용 약정이 있다고 기재했고, 2025년 매출원가 중 제3자 클라우드 호스팅 비용은 9,460만 달러 증가.",
+      "같은 10-K: 해지 불가 구매약정은 17억5,900만 달러(주로 클라우드 호스팅)이며, 그중 한 클라우드 계약은 2033-09-30까지 10년간 최소 19억5,000만 달러를 지출하는 약정(상대방은 기재 안 됨)."
+     ],
+     "src": [
+      {
+       "name": "Palantir 10-K(FY2025)",
+       "date": "2026-02-17",
+       "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000011/pltr-20251231.htm"
+      },
+      {
+       "name": "MarketBeat",
+       "date": "2026-06-19",
+       "url": "https://www.marketbeat.com/originals/why-palantirs-google-cloud-deal-could-change-the-debate/"
+      },
+      {
+       "name": "Teleborsa",
+       "date": "2026-06-04",
+       "url": "https://www.teleborsa.it/News/2026/06/04/palantir-technologies-partnership-con-google-cloud-229.html"
+      }
+     ],
+     "level": "부분확인",
+     "verified": true,
+     "note": "공급자별 지출액은 공개되지 않았습니다(단일 공시 근거)."
+    },
+    {
+     "id": "pl-az",
+     "from": "pl",
+     "to": "az",
+     "type": 1,
+     "label": "클라우드",
+     "lt": 0.5,
+     "basis": "팔란티어 2025년 10-K(2026-02-17 제출): 클라우드 서비스 호스팅을 AWS와 마이크로소프트 Azure 등 제3자 인프라에 의존하며 최소 사용 약정이 있다고 기재했고, 2025년 매출원가 중 제3자 클라우드 호스팅 비용은 9,460만 달러 증가.",
+     "bases": [
+      "팔란티어 2025년 10-K(2026-02-17 제출): 클라우드 서비스 호스팅을 AWS와 마이크로소프트 Azure 등 제3자 인프라에 의존하며 최소 사용 약정이 있다고 기재했고, 2025년 매출원가 중 제3자 클라우드 호스팅 비용은 9,460만 달러 증가.",
+      "같은 10-K: 해지 불가 구매약정은 17억5,900만 달러(주로 클라우드 호스팅)이며, 그중 한 클라우드 계약은 2033-09-30까지 10년간 최소 19억5,000만 달러를 지출하는 약정(상대방은 기재 안 됨)."
+     ],
+     "src": [
+      {
+       "name": "Palantir 10-K(FY2025)",
+       "date": "2026-02-17",
+       "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000011/pltr-20251231.htm"
+      },
+      {
+       "name": "MarketBeat",
+       "date": "2026-06-19",
+       "url": "https://www.marketbeat.com/originals/why-palantirs-google-cloud-deal-could-change-the-debate/"
+      },
+      {
+       "name": "Teleborsa",
+       "date": "2026-06-04",
+       "url": "https://www.teleborsa.it/News/2026/06/04/palantir-technologies-partnership-con-google-cloud-229.html"
+      }
+     ],
+     "level": "부분확인",
+     "verified": true,
+     "note": "공급자별 지출액은 공개되지 않았습니다(단일 공시 근거)."
+    }
+   ]
+  },
+  {
+   "id": "g2",
+   "title": "② 경쟁 · 같은 제품을 같은 시장에 파는 짝",
+   "desc": "조사기관 점유율이나 각 사의 수주·매출 공시로 확인했습니다.",
+   "w": 840,
+   "h": 274,
+   "nodes": [
+    {
+     "id": "ds",
+     "co": "034020",
+     "x": 0,
+     "y": 10,
+     "w": 162,
+     "h": 58,
+     "sub": ""
+    },
+    {
+     "id": "gev",
+     "co": "GEV",
+     "x": 226,
+     "y": 10,
+     "w": 162,
+     "h": 58
+    },
+    {
+     "id": "hde",
+     "co": "267260",
+     "x": 452,
+     "y": 10,
+     "w": 162,
+     "h": 58,
+     "sub": ""
+    },
+    {
+     "id": "sd",
+     "co": "SNDK",
+     "x": 0,
+     "y": 100,
+     "w": 162,
+     "h": 58
+    },
+    {
+     "id": "hx",
+     "co": "000660",
+     "x": 226,
+     "y": 100,
+     "w": 162,
+     "h": 58
+    },
+    {
+     "id": "ss",
+     "co": "005930",
+     "x": 452,
+     "y": 100,
+     "w": 162,
+     "h": 58
+    },
+    {
+     "id": "it",
+     "co": "INTC",
+     "x": 678,
+     "y": 100,
+     "w": 162,
+     "h": 58
+    },
+    {
+     "id": "etn",
+     "co": "ETN",
+     "x": 0,
+     "y": 190,
+     "w": 162,
+     "h": 58
+    },
+    {
+     "id": "ls",
+     "co": "010120",
+     "x": 226,
+     "y": 190,
+     "w": 162,
+     "h": 58,
+     "sub": ""
+    },
+    {
+     "id": "ts",
+     "co": "TSLA",
+     "x": 452,
+     "y": 190,
+     "w": 162,
+     "h": 58
+    },
+    {
+     "id": "hy",
+     "co": "005380",
+     "x": 678,
+     "y": 190,
+     "w": 162,
+     "h": 58
+    }
+   ],
+   "edges": [
+    {
+     "id": "ds-gev",
+     "from": "ds",
+     "to": "gev",
+     "type": 2,
+     "label": "가스터빈",
+     "lt": 0.5,
+     "basis": "GE버노바 2026년 2분기 컨콜(2026-07-22): 계약된 가스 장비 GW 중 약 20%가 데이터센터용이며, 가스터빈 수주잔고와 슬롯예약 합계는 100GW에서 116GW로 증가.",
+     "bases": [
+      "GE버노바 2026년 2분기 컨콜(2026-07-22): 계약된 가스 장비 GW 중 약 20%가 데이터센터용이며, 가스터빈 수주잔고와 슬롯예약 합계는 100GW에서 116GW로 증가.",
+      "두산에너빌리티: xAI 데이터센터용 380MW급 가스터빈 5기 공급(토요경제 2026-01-07, 첫 2기는 2026년 말 납품), 2026년 3월 380MW급 7기 추가 수주(딜사이트 2026-05-28, 고객명 비공개)."
+     ],
+     "src": [
+      {
+       "name": "GE Vernova 2분기 컨퍼런스콜 녹취록",
+       "date": "2026-07-22",
+       "url": "https://www.gevernova.com/sites/default/files/gev_webcast_transcript_07222026.pdf"
+      },
+      {
+       "name": "토요경제",
+       "date": "2026-01-07",
+       "url": "https://sateconomy.co.kr/news/view/1065601901370817"
+      },
+      {
+       "name": "딜사이트",
+       "date": "2026-05-28",
+       "url": "https://dealsite.co.kr/articles/162496"
+      },
+      {
+       "name": "Turbomachinery Magazine",
+       "date": "2025-04-25",
+       "url": "https://www.turbomachinerymag.com/view/gas-turbine-market-report-2024-posts-highest-units-mws-in-22-years"
+      }
+     ],
+     "level": "부분확인",
+     "verified": true,
+     "note": "미국 데이터센터용 가스터빈 점유율이나 두 회사가 같은 건에 입찰한 사례는 확인하지 못했습니다. xAI 고객명은 회사 공시가 아닌 머스크의 SNS 답변으로 확인됐습니다."
+    },
+    {
+     "id": "gev-hde",
+     "from": "gev",
+     "to": "hde",
+     "type": 2,
+     "label": "변압기",
+     "lt": 0.5,
+     "basis": "GE버노바는 2026-02-02 변압기 제조사 프롤렉GE의 잔여지분 50%를 52억7,500만 달러에 인수 완료했고, 프롤렉GE의 2026년 2분기 매출은 8억5,900만 달러(미주 7개 공장, 그중 미국 5곳).",
+     "bases": [
+      "GE버노바는 2026-02-02 변압기 제조사 프롤렉GE의 잔여지분 50%를 52억7,500만 달러에 인수 완료했고, 프롤렉GE의 2026년 2분기 매출은 8억5,900만 달러(미주 7개 공장, 그중 미국 5곳).",
+      "굴든리포트 기준 미국 100MVA 이상 초고압 변압기 시장 점유율에서 HD현대일렉트릭은 2025년 25.7%(2024년 17.2%)로 2년 연속 1위(코리아헤럴드·코리아중앙데일리 2026-08-02)."
+     ],
+     "src": [
+      {
+       "name": "GE Vernova 보도자료",
+       "date": "2026-02-02",
+       "url": "https://www.gevernova.com/news/articles/ge-vernova-completes-prolec-ge-acquisition-26b-senior-notes"
+      },
+      {
+       "name": "GE Vernova 10-Q(2026년 2분기)",
+       "date": "2026-07-22",
+       "url": "https://www.sec.gov/Archives/edgar/data/0001996810/000199681026000148/gev-20260630.htm"
+      },
+      {
+       "name": "The Korea Herald",
+       "date": "2026-08-02",
+       "url": "https://www.koreaherald.com/article/10828092"
+      },
+      {
+       "name": "Korea JoongAng Daily",
+       "date": "2026-08-02",
+       "url": "https://www.koreajoongangdaily.com/business/hd-hyundai-electric-hits-1000th-transformer-milestone-at-us-plant/12803570"
+      }
+     ],
+     "level": "부분확인",
+     "verified": true,
+     "note": "같은 조사(굴든리포트)의 GE버노바(프롤렉GE) 점유율은 확인하지 못했습니다."
+    },
+    {
+     "id": "sd-hx",
+     "from": "sd",
+     "to": "hx",
+     "type": 2,
+     "label": "낸드",
+     "lt": 0.5,
+     "basis": "TrendForce 2026년 2분기 낸드 브랜드 매출: SK그룹(SK하이닉스+솔리다임)이 142억7천만 달러 이상으로 2위, 샌디스크는 약 89억7천만 달러로 5위.",
+     "bases": [
+      "TrendForce 2026년 2분기 낸드 브랜드 매출: SK그룹(SK하이닉스+솔리다임)이 142억7천만 달러 이상으로 2위, 샌디스크는 약 89억7천만 달러로 5위.",
+      "카운터포인트 2026년 2분기 낸드 매출 점유율: SK하이닉스 19%(2위), 샌디스크 11%(5위)(MTN 2026-09-04)."
+     ],
+     "src": [
+      {
+       "name": "TrendForce",
+       "date": "2026-08-18",
+       "url": "https://www.trendforce.com/presscenter/news/20260818-13186.html"
+      },
+      {
+       "name": "MTN(머니투데이방송)",
+       "date": "2026-09-04",
+       "url": "https://news.mtn.co.kr/news-detail/2026090412570215588"
+      },
+      {
+       "name": "Evertiq",
+       "date": "2026-08-18",
+       "url": "https://evertiq.com/news/2026-08-18-top-five-nand-flash-brands-post-77-revenue-surge-in-q2"
+      }
+     ],
+     "level": "확인",
+     "verified": true,
+     "note": "조사기관마다 점유율 수치가 다릅니다."
+    },
+    {
+     "id": "hx-ss",
+     "from": "hx",
+     "to": "ss",
+     "type": 2,
+     "label": "HBM",
+     "lt": 0.5,
+     "basis": "카운터포인트 2026년 2분기 HBM 매출 점유율: SK하이닉스 50%, 삼성전자 33%, 마이크론 18%(1분기는 각각 58%, 21%, 21%).",
+     "bases": [
+      "카운터포인트 2026년 2분기 HBM 매출 점유율: SK하이닉스 50%, 삼성전자 33%, 마이크론 18%(1분기는 각각 58%, 21%, 21%).",
+      "SK하이닉스 미국 상장 투자설명서(424B4, 2026-07-09)가 인용한 IDC 자료: 2026년 1분기 SK하이닉스 HBM 매출 점유율 56.4%로 1위."
+     ],
+     "src": [
+      {
+       "name": "SBS Biz",
+       "date": "2026-09-03",
+       "url": "https://biz.sbs.co.kr/amp/article/20000332618"
+      },
+      {
+       "name": "Korea JoongAng Daily",
+       "date": "2026-09-03",
+       "url": "https://www.koreajoongangdaily.com/business/samsung-narrows-gap-with-no-1-sk-hynix-in-hbm-market-revenue-in-q2/12859060"
+      },
+      {
+       "name": "SK hynix 424B4(SEC)",
+       "date": "2026-07-09",
+       "url": "https://www.sec.gov/Archives/edgar/data/0002120882/000119312526299963/d32785d424b4.htm"
+      }
+     ],
+     "level": "확인",
+     "verified": true,
+     "note": "1분기 SK하이닉스 점유율이 조사기관마다 다릅니다(카운터포인트 58%, IDC 56.4%)."
+    },
+    {
+     "id": "ss-it",
+     "from": "ss",
+     "to": "it",
+     "type": 2,
+     "label": "파운드리",
+     "lt": 0.5,
+     "basis": "TrendForce 2026년 2분기 파운드리 매출 순위: 삼성전자는 32억6천만 달러, 점유율 5.9%로 2위(TSMC 72.5%)이며, 인텔은 상위 10곳 집계에 들어 있지 않음.",
+     "bases": [
+      "TrendForce 2026년 2분기 파운드리 매출 순위: 삼성전자는 32억6천만 달러, 점유율 5.9%로 2위(TSMC 72.5%)이며, 인텔은 상위 10곳 집계에 들어 있지 않음.",
+      "인텔 2026년 2분기 10-Q: 인텔 파운드리의 외부 고객 대상 파운드리·조립·테스트 매출은 2억9,300만 달러(부문 매출 약 58억 달러의 대부분은 내부 거래)."
+     ],
+     "src": [
+      {
+       "name": "TrendForce",
+       "date": "2026-09-09",
+       "url": "https://www.trendforce.com/presscenter/news/20260909-13225.html"
+      },
+      {
+       "name": "Evertiq",
+       "date": "2026-09-10",
+       "url": "https://evertiq.com/design/2026-09-10-smic-narrows-gap-with-samsung-as-global-foundry-revenue-hits-record-5349-billion"
+      },
+      {
+       "name": "Intel 10-Q(2026년 2분기)",
+       "date": "2026-07-24",
+       "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000157/intc-20260627.htm"
+      },
+      {
+       "name": "Mark LaPedus(Substack)",
+       "date": "2026-07-24",
+       "url": "https://marklapedus.substack.com/p/intel-posts-results-losses-mount"
+      }
+     ],
+     "level": "부분확인",
+     "verified": true,
+     "note": "인텔은 조사기관 파운드리 순위에 없어 같은 기준으로 점유율을 비교할 수 없습니다."
+    },
+    {
+     "id": "etn-ls",
+     "from": "etn",
+     "to": "ls",
+     "type": 2,
+     "label": "배전",
+     "lt": 0.5,
+     "basis": "이튼 2026년 2분기 데이터센터 매출 유기적 성장률 약 65%(MarketBeat 2026-07-31, Electrical Trends 2026-08-26).",
+     "bases": [
+      "이튼 2026년 2분기 데이터센터 매출 유기적 성장률 약 65%(MarketBeat 2026-07-31, Electrical Trends 2026-08-26).",
+      "LS ELECTRIC의 2026년 북미 빅테크 데이터센터 배전 수주 누적 약 1조2,000억원(뉴스토마토 2026-06-17, 38kV 고압 배전 시스템 1,064억원 포함), 블룸에너지와 뉴멕시코 하이퍼스케일 데이터센터용 배전 솔루션 약 3,190억원 계약(아시아경제 2026-04-29)."
+     ],
+     "src": [
+      {
+       "name": "MarketBeat",
+       "date": "2026-07-31",
+       "url": "https://www.marketbeat.com/instant-alerts/eaton-q2-earnings-call-highlights-2026-07-31/"
+      },
+      {
+       "name": "Electrical Trends",
+       "date": "2026-08-26",
+       "url": "https://electricaltrends.com/?p=3698226"
+      },
+      {
+       "name": "뉴스토마토",
+       "date": "2026-06-17",
+       "url": "https://newstomato.com/ReadNews.aspx?no=1304235"
+      },
+      {
+       "name": "아시아경제",
+       "date": "2026-04-29",
+       "url": "https://view.asiae.co.kr/article/2026042909433117590"
+      }
+     ],
+     "level": "부분확인",
+     "verified": true,
+     "note": "두 회사를 함께 담은 북미 배전 시장 점유율은 확인하지 못했습니다. LS ELECTRIC의 빅테크 고객명은 비공개입니다."
+    },
+    {
+     "id": "ts-hy",
+     "from": "ts",
+     "to": "hy",
+     "type": 2,
+     "label": "미국 EV",
+     "lt": 0.5,
+     "basis": "콕스오토모티브(KBB) 2026년 3분기 미국 전기차 판매 추정: 테슬라 144,094대(점유율 54.0%), 현대 브랜드 12,185대(4.6%), 기아 9,575대(3.6%), 제네시스 494대(0.2%).",
+     "bases": [
+      "콕스오토모티브(KBB) 2026년 3분기 미국 전기차 판매 추정: 테슬라 144,094대(점유율 54.0%), 현대 브랜드 12,185대(4.6%), 기아 9,575대(3.6%), 제네시스 494대(0.2%).",
+      "머니투데이(2026-07-24): 미국은 한국산 자동차에 15% 관세를 적용하며, 현대차의 관세 비용은 2026년 1분기와 2분기에 각각 약 9,000억원."
+     ],
+     "src": [
+      {
+       "name": "Cox Automotive(KBB EV Sales Report)",
+       "date": "2026-10-12",
+       "url": "https://www.coxautoinc.com/wp-content/uploads/2026/10/Q3-2026-Kelley-Blue-Book-EV-Sales-Report-updated-as-of-10-12-26.pdf"
+      },
+      {
+       "name": "EVwire",
+       "date": "2026-10-15",
+       "url": "https://evwire.com/p/tesla-outsells-all-other-ev-brands-combined-us-q3-2026-cox-automotive"
+      },
+      {
+       "name": "머니투데이",
+       "date": "2026-07-24",
+       "url": "https://www.mt.co.kr/industry/2026/07/24/2026072417164361288"
+      },
+      {
+       "name": "Electrek",
+       "date": "2026-10-21",
+       "url": "https://electrek.co/2026/10/21/tesla-tsla-q3-2026-financial-results/"
+      }
+     ],
+     "level": "확인",
+     "verified": true,
+     "note": "한국산 15% 관세는 현대차에만 적용됩니다. 현대차그룹 합산 점유율(약 8.4%)은 브랜드별 수치를 더한 값입니다."
+    }
+   ]
+  },
+  {
+   "id": "g3",
+   "title": "③ 같은 변수 · 직접 거래는 없지만 같은 숫자가 함께 들어가는 짝",
+   "desc": "두 회사 실적에 공통으로 들어가는 외부 숫자를 근거로 적었습니다.",
+   "w": 840,
+   "h": 94,
+   "nodes": [
+    {
+     "id": "hood",
+     "co": "HOOD",
+     "x": 0,
+     "y": 10,
+     "w": 170,
+     "h": 58
+    },
+    {
+     "id": "coin",
+     "co": "COIN",
+     "x": 280,
+     "y": 10,
+     "w": 170,
+     "h": 58
+    }
+   ],
+   "edges": [
+    {
+     "id": "hood-coin",
+     "from": "hood",
+     "to": "coin",
+     "type": 3,
+     "label": "크립토 거래",
+     "lt": 0.5,
+     "basis": "2026년 2분기 크립토 거래 매출: 로빈후드 1억 달러(전년 대비 -38%), 코인베이스 거래 매출 5억9,900만 달러(전년 대비 -22%, 전분기 대비 -21%).",
+     "bases": [
+      "2026년 2분기 크립토 거래 매출: 로빈후드 1억 달러(전년 대비 -38%), 코인베이스 거래 매출 5억9,900만 달러(전년 대비 -22%, 전분기 대비 -21%).",
+      "같은 분기 중앙화거래소 현물 거래량: CryptoRank 기준 3.0조 달러(1분기 3.7조 달러 대비 -18.9%), CoinGecko 기준 1.95조 달러(CryptoBriefing 2026-07-22)."
+     ],
+     "src": [
+      {
+       "name": "Cointelegraph",
+       "date": "2026-07-29",
+       "url": "https://cointelegraph.com/markets/robinhood-record-quarter-crypto-revenue-slides"
+      },
+      {
+       "name": "Pulse 2.0",
+       "date": "2026-07-30",
+       "url": "https://pulse2.com/robinhood-reports-revenues-up-32-to-record-1-31-billion-for-q2-2026/amp/"
+      },
+      {
+       "name": "Coinbase 2분기 실적 자료(SEC 8-K)",
+       "date": "2026-07-30",
+       "url": "https://www.sec.gov/Archives/edgar/data/0001679788/000167978826000087/q226earningsdeck_sec.htm"
+      },
+      {
+       "name": "SiliconANGLE",
+       "date": "2026-07-30",
+       "url": "https://siliconangle.com/?p=799397"
+      },
+      {
+       "name": "CryptoRank",
+       "date": "2026-07-06",
+       "url": "https://cryptorank.io/insights/reports/crypto-exchange-q2-2026"
+      }
+     ],
+     "level": "확인",
+     "verified": true,
+     "note": "현물 거래량은 집계기관마다 차이가 큽니다(3.0조 달러 vs 1.95조 달러)."
+    }
+   ]
+  }
+ ]
+}
