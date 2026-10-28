@@ -1,7 +1,19 @@
 {
- "updated": "2026-10-28 05:30 KST",
+ "updated": "2026-10-29 05:30 KST",
  "note": "날짜는 한국시간 기준. ★ 예상일은 공식 일정 확정 전. 숫자 출처는 각 항목의 src 참조.",
  "changelog": [
+  {
+   "at": "2026-10-29 05:30",
+   "msg": "10월 FOMC(현지 10/28) result 추가 — 3.75~4.00% 동결, 표결 10-2(쿡·해맥 0.25%p 인상 선호), 성명서 경제활동 solid→strong·'추가 정보 축적' 문장 추가·timelier→timely, 다음 회의 12/8~9, 12월 인상 확률 약 85%(블룸버그 선물)·84%(FedWatch 결정 전), 10/28 종가(Fox Business·Yahoo Finance·Fortune·PBS/AP 일치)"
+  },
+  {
+   "at": "2026-10-29 05:30",
+   "msg": "GEV 3분기 실적(현지 10/28 장전) why에 매출 126억·수주 293억·RPO 1,970억 달러·가스 122GW·2026 가이던스 상향(매출 465~475억·FCF 160~170억)·자사주 200억·트렌치그룹 90억 인수 사실 추가(GEV IR·Yahoo Finance 일치). pairmap.json GEV result 3행 추가"
+  },
+  {
+   "at": "2026-10-29 05:30",
+   "msg": "10/28 미국 종가 반영(S&P500 7,744 +0.28%·나스닥 26,550 +0.27%·VIX 16.6·10년물 5.05%·WTI 101.44). Yahoo가 코스피·코스닥 10/28 종가를 아직 내지 않아 10/27값(5638·744) 유지. 실적 next.date 20종목 대조 — 날짜 변경 없음. 미시간대 11/6 예비치는 financecalendar 1곳만 확인돼 ★ 유지(11/20 확정치는 확정 표기). 알파벳·MSFT 장후 실적은 16:16 ET 기준 미발표 — 한국 장 마감 갱신에서 반영"
+  },
   {
    "at": "2026-10-28 05:30",
    "msg": "로빈후드 3분기 실적(현지 10/27 장후) why에 매출·부문별 거래 매출·순예치금·비용 전망 사실 추가(GlobeNewswire 보도자료·StockTitan 일치). EPS·주가 반응은 earnings.json 자동"
@@ -109,18 +121,6 @@
   {
    "at": "2026-10-22 22:40",
    "msg": "MU FY27 1분기 실적 12/17(현지 12/16 장후) ★예상일 추가 — earnings.json next 12/16(Nasdaq) 기준, 60일 창에 진입. 회사 공식 일정 미공지. 9/30 가이던스(매출 615억±15억 달러·EPS 38.15±1.00달러)를 why에 기재"
-  },
-  {
-   "at": "2026-10-22 22:40",
-   "msg": "실적 일정 대조(earnings.json next 23종목 vs events) MU 외 전부 일치, 변경 없음. 10/22 미국 8:30 ET 주요 지표 없음(result 대상 없음). 미시간대 11/7·11/21·12/5·12/19는 공식 일정 미확인으로 ★예상일 유지"
-  },
-  {
-   "at": "2026-10-22 07:15",
-   "msg": "TSLA 3분기 실적 10/22(현지 10/21 장후) 발표 완료 — 매출 280.5억 달러(보합)·GAAP 순이익 7.87억 달러(-43%)·총마진 19.6%·FCF 15.3억 달러·자본지출 가이던스 250억 달러 이상 유지 등 EPS 외 사실을 why에 추가(Electrek·Drive Tesla Canada 2곳 일치). EPS·주가 반응은 earnings.json 자동 공급"
-  },
-  {
-   "at": "2026-10-22 07:15",
-   "msg": "10/21(수)~10/22(목) 새벽 미국 주요 지표 발표 없음(fedratecalc 확인) — result 입력 대상 없음. 금통위(10/22 오전 10시)는 발표 전"
   }
  ],
  "days": {
@@ -1060,7 +1060,7 @@
     "tier": 1,
     "ticker": "GEV",
     "time": "밤 8시 (장전)",
-    "why": "1군 전력 인프라. 가스터빈·전력망 부문 수주잔고와 매출, 연간 가이던스가 발표됩니다. GE버노바는 현지 10/28 장전 발표·오전 7시 30분(ET) 웹캐스트를 공지했습니다.",
+    "why": "1군 전력 인프라. 가스터빈·전력망 부문 수주잔고와 매출, 연간 가이던스가 발표됩니다. GE버노바는 현지 10/28 장전 발표·오전 7시 30분(ET) 웹캐스트를 공지했습니다. 발표 수치(현지 10/28 장전): 매출 126억 달러(전년比 +27%, 유기적 +18%, 컨센서스 약 120억 달러), 수주 293억 달러(유기적 +96%), 수주잔고(RPO) 1,970억 달러(전분기比 +200억 달러), 가스발전 수주잔고·슬롯 예약 122GW(전분기 116GW, 연말 130GW 이상 예상). 순이익 13억 달러(순이익률 10.2%), 조정 EBITDA 19억 달러(마진 15.4%), 영업현금흐름 61억 달러, 잉여현금흐름 54억 달러, 현금 168억 달러. 전력망(Electrification) 매출 39억 달러(+51%), 부문 장비 수주잔고 422억 달러(+60%). 2026년 가이던스 상향: 매출 465억~475억 달러(기존 455억~465억), 잉여현금흐름 160억~170억 달러(기존 115억~125억). 자사주 매입 한도 100억→200억 달러. 고전압 전력망 장비 업체 트렌치그룹(Trench Group) 90억 달러 인수 합의(2027년 말 완료 예정).",
     "watch": "EPS·매출 vs 컨센서스, 전력 부문 수주잔고, 가이던스",
     "stocks": [
      [
@@ -1080,6 +1080,14 @@
      {
       "name": "GE Vernova IR 공지",
       "url": "https://www.gevernova.com/news/press-releases/ge-vernova-announce-third-quarter-2026-financial-results-october-28"
+     },
+     {
+      "name": "GE Vernova 3분기 실적 보도자료(IR)",
+      "url": "https://www.gevernova.com/news/ge-vernova-reports-strong-third-quarter-2026-financial-performance"
+     },
+     {
+      "name": "Yahoo Finance/Barron's(10/28)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ge-vernova-beats-raises-guidance-131326911.html"
      }
     ]
    },
@@ -1200,8 +1208,86 @@
      {
       "name": "Newsquawk 프리뷰(10/27)",
       "url": "https://www.newsquawk.com/headlines/preview-federal-reserve-rate-decision-due-wednesday-october-28th-at-1800gmt1400edt"
+     },
+     {
+      "name": "Fox Business(10/28 결정)",
+      "url": "https://www.foxbusiness.com/economy/federal-reserve-interest-rate-decision-october-28-2026"
+     },
+     {
+      "name": "Yahoo Finance 라이브(10/28, 성명서 변화)",
+      "url": "https://finance.yahoo.com/economy/policy/live/fed-meeting-live-updates-federal-reserve-october-meeting-kevin-warsh-161129201.html"
+     },
+     {
+      "name": "Fortune(10/28, 반대표·성명서)",
+      "url": "https://fortune.com/2026/10/28/fed-rates-steady-midterms-october-3-75-to-4-percent-cook-hammack-dissent/"
+     },
+     {
+      "name": "PBS/AP(10/28)",
+      "url": "https://www.pbs.org/newshour/economy/watch-live-fed-chair-warsh-holds-briefing-after-latest-interest-rate-decision"
+     },
+     {
+      "name": "StockTitan 라이브(10/28, 기자회견)",
+      "url": "https://www.stocktitan.net/articles/stock-market-today-live-october-28-2026"
+     },
+     {
+      "name": "CNBC(10/28 기자회견 요약)",
+      "url": "https://www.cnbc.com/2026/10/28/fed-meeting-today-live-updates.html"
+     },
+     {
+      "name": "Benzinga(10/28, 12월 인상 미확약)",
+      "url": "https://benzinga.com/markets/macro-economic-events/26/10/62672193/warsh-december-hike-bond-market-tightening-credit-spreads"
+     },
+     {
+      "name": "Yahoo Finance 마감(10/28)",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-28-dow-sp-500-nasdaq-fed-meeting-decision-big-tech-earnings-130508769.html"
      }
-    ]
+    ],
+    "result": {
+     "actual": "3.75~4.00% 동결",
+     "est": "동결",
+     "prev": "3.75~4.00%",
+     "dir": "flat",
+     "head": "기준금리 3.75~4.00% 동결(10-2, 쿡·해맥 0.25%p 인상 선호) · 성명서 경제활동 'solid'→'strong' · 다음 회의 12/8~9",
+     "note": "연준은 현지 10/28 기준금리를 3.75~4.00%로 동결했습니다(컨센서스 동결, CME FedWatch 동결 90.6%). 표결 10-2: 리사 쿡 이사와 베스 해맥 클리블랜드 연은 총재가 0.25%p 인상을 선호해 반대(쿡은 2022년 취임 후 첫 반대표). 성명서 변화(9월 대비): 경제활동이 'solid'에서 'strong'한 속도로 확대 중으로 변경, '인플레이션은 여전히 높은 수준(remains elevated)' 유지, '추가 정보의 축적이 위원회가 적절한 정책 기조를 판단하는 데 도움이 될 것'이라는 문장 추가, 9월의 '2% 목표로의 더 신속한(timelier) 복귀를 지지' 문장은 삭제되고 'timely'로 바뀜, '위원회는 물가안정을 달성할 것' 문장 유지. 워시 의장 기자회견: 정치는 결정에 '아무 역할도 하지 않았다'고 말했고(Yahoo Finance), 12월 인상 여부는 확약하지 않았으며(Benzinga), 2027년 8회 회의 중 1회는 금리 표결 없이 장기 전략을 논의하는 회의로 운영한다고 밝혔습니다(StockTitan·CNBC). 다음 회의 12/8~9(경제전망 요약·점도표 포함). 12월 0.25%p 인상 확률: 블룸버그 연방기금 선물 데이터 약 85%(Yahoo Finance 마감 기준), CME FedWatch 84%(결정 전). 발표일(10/28) 종가: S&P500 7,744.28(+0.28%)·나스닥 26,549.85(+0.27%)·다우 52,479.62(+0.19%)·10년물 5.05%(전일 4.99%)·VIX 16.6·달러 인덱스 102.1.",
+     "rows": [
+      [
+       "기준금리",
+       "3.75~4.00%(동결)",
+       "동결",
+       "9월 +0.25%p 후 동결"
+      ],
+      [
+       "표결",
+       "10-2",
+       "—",
+       "쿡·해맥 0.25%p 인상 선호"
+      ],
+      [
+       "경제활동 문구",
+       "strong",
+       "—",
+       "9월 solid"
+      ],
+      [
+       "인플레이션 문구",
+       "remains elevated",
+       "—",
+       "변경 없음"
+      ],
+      [
+       "12월 인상 확률",
+       "약 85%",
+       "—",
+       "블룸버그 선물 데이터(10/28 마감) · FedWatch 84%(결정 전)"
+      ],
+      [
+       "다음 회의",
+       "12/8~9",
+       "—",
+       "점도표 포함"
+      ]
+     ]
+    }
    },
    {
     "t": "econ",

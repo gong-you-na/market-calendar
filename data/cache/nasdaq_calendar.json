@@ -3580,5 +3580,18 @@
    "epsForecast": "$0.56",
    "noOfEsts": "5"
   }
+ ],
+ "2026-10-27": [
+  {
+   "eps": "$0.60",
+   "surprise": "7.14",
+   "time": "time-not-supplied",
+   "symbol": "HOOD",
+   "name": "Robinhood Markets, Inc.",
+   "marketCap": "$85,017,223,000",
+   "fiscalQuarterEnding": "Sep/2026",
+   "epsForecast": "$0.56",
+   "noOfEsts": "8"
+  }
  ]
 }

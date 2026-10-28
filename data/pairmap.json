@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28 15:50 KST",
+ "updated": "2026-10-29 05:30 KST",
  "chart_no": "2026-W44 실적 위크",
  "period_label": "10/28(수)~11/4(화) 발표분 · 한국시간",
  "period_end_label": "11/5(목) 종료",
@@ -291,7 +291,38 @@
     "가스터빈 수주·예약 슬롯",
     "전력망(Electrification) 부문 매출"
    ],
-   "theme": "전력·전기 인프라"
+   "theme": "전력·전기 인프라",
+   "result": {
+    "rows": [
+     [
+      "수주·수주잔고",
+      "수주 293억 달러 · RPO 1,970억 달러",
+      "수주 유기적 +96% · RPO 전분기比 +200억"
+     ],
+     [
+      "가스터빈 수주잔고·슬롯",
+      "122GW",
+      "전분기 116GW · 연말 130GW 이상 예상"
+     ],
+     [
+      "전력망(Electrification) 매출",
+      "39억 달러",
+      "전년비 +51% · 장비 수주잔고 422억(+60%)"
+     ]
+    ],
+    "src": [
+     {
+      "name": "GE Vernova 보도자료(IR)",
+      "date": "2026-10-28",
+      "url": "https://www.gevernova.com/news/ge-vernova-reports-strong-third-quarter-2026-financial-performance"
+     },
+     {
+      "name": "Yahoo Finance/Barron's",
+      "date": "2026-10-28",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ge-vernova-beats-raises-guidance-131326911.html"
+     }
+    ]
+   }
   },
   "ETN": {
    "code": "ETN",
