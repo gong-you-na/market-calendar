@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28 05:18 KST",
+ "updated": "2026-10-28 15:48 KST",
  "companies": {
   "GOOGL": {
    "name": "구글",
@@ -23206,16 +23206,7 @@
    "tier": 3,
    "theme": "핀테크·디지털자산",
    "mkt": "us",
-   "next": {
-    "date": "2026-10-27",
-    "rt": "post",
-    "est_eps": 0.56,
-    "n_est": "8",
-    "fq": "Sep/2026",
-    "last_year_date": "11/05/2025",
-    "last_year_eps": 0.61,
-    "source": "Nasdaq"
-   },
+   "next": null,
    "history": [
     {
      "date": "2026-07-29",
