@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29 16:40 KST",
+ "updated": "2026-10-29 17:20 KST",
  "mode": "manual",
  "period": "2026-01-01~2026-10-22",
  "note": "2026년 1월~10월 공개 발언 아카이브. 요약은 공개된 발언을 바탕으로 작성. 이후 발언은 운영자가 전달하면 Claude가 추가(수동).",
@@ -18,8 +18,8 @@
     "artist": "Daniel Torok",
     "url": "https://commons.wikimedia.org/wiki/File:Official_Presidential_Portrait_of_President_Donald_J._Trump_(2025).jpg"
    },
-   "n": 16,
-   "latest": "2026-10-22"
+   "n": 17,
+   "latest": "2026-10-28"
   },
   {
    "id": "warsh",
@@ -1929,6 +1929,17 @@
    "url": "https://www.yahoo.com/news/world/articles/zelenskyy-explains-why-ukraine-does-170400597.html",
    "topic": "지정학·유가",
    "id": "0d51deb267"
+  },
+  {
+   "person": "trump",
+   "date": "2026-10-28",
+   "text": "트럼프 대통령은 외교가 실패할 경우 11/3 중간선거 직후 이란에 대한 군사 공격 재개를 진지하게 검토하고 있으며, 미국은 이와 별도로 이란과의 임시 평화 합의 협상을 계속하고 있다. 미국은 걸프 국가들에 선거 이후 공습 가능성에 대비하라고 알렸고, 트럼프는 앞서 중간선거 전에는 공격하지 않겠다고 말했다.",
+   "quote": "",
+   "context": "미 행정부 관계자 전언(본인 직접 발언 아님)",
+   "src": "Business Standard(WSJ 인용)·CBS News",
+   "url": "https://www.business-standard.com/world-news/trump-admin-warns-gulf-states-of-likely-renewed-iran-war-after-us-midterms-126102900329_1.html",
+   "topic": "지정학·유가",
+   "id": "761338db1d"
   }
  ]
 }
