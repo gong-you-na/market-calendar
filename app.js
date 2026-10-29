@@ -158,7 +158,7 @@
       </div>`;
     }).join("");
     const asof = items.map((i) => i.asof).sort().pop();
-    $("#tempAsof").textContent = `종가·현재가 기준 ${asof || ""} · 전일 대비 · 출처 Yahoo Finance${tempTab === "kr" ? "·업비트" : ""}${MK.live ? " · 실시간 갱신" : ""}`;
+    $("#tempAsof").textContent = `종가·현재가 기준 ${asof || ""} · 전일 대비${MK.live ? " · 실시간 갱신" : ""}`;
   }
   $("#tempTab").addEventListener("click", (e) => { const b = e.target.closest("button[data-t]"); if (!b) return; tempTab = b.dataset.t; document.querySelectorAll("#tempTab button").forEach((c) => c.classList.toggle("on", c === b)); renderTemp(); });
 
@@ -275,7 +275,7 @@
       </div>`;
     }
     const s = c.stats || {};
-    h += `<h4>최근 ${s.n || 0}분기 실적 반응 <span style="font-weight:600;color:var(--grey2)">(출처 Nasdaq·Yahoo Finance)</span></h4>
+    h += `<h4>최근 ${s.n || 0}분기 실적 반응</h4>
       <div class="co-stats">
         <div class="cs"><div class="l">EPS 상회</div><div class="v">${s.beats ?? "—"}<small>/${s.n_beats ?? "—"}</small></div></div>
         <div class="cs"><div class="l">반응일 상승</div><div class="v">${s.ups ?? "—"}<small>/${s.n_ups ?? "—"}</small></div></div>
@@ -314,7 +314,6 @@
         ${e.why ? `<h4>무엇이 발표되나</h4><p>${termify(esc(e.why))}</p>` : ""}
         ${e.watch ? `<h4>발표 항목</h4><p>${termify(esc(e.watch))}</p>` : ""}
         ${e.stocks && e.stocks.length ? `<h4>연결되는 종목·테마 <span style="font-weight:600;color:var(--grey2)">(금색 = 클리닉에서 다룬 항목)</span></h4><div class="stocks">${e.stocks.map((s) => `<span class="stock ${s[1] ? "core" : ""}">${esc(s[0])}</span>`).join("")}</div>` : ""}
-        ${e.src && e.src.length ? `<div class="src">출처 ${e.src.map((s) => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>`).join("")}</div>` : ""}
       </div>`;
     }).join("");
   }
@@ -334,15 +333,15 @@
       const s = c.stats || {}, n = c.next, kr = c.mkt === "kr";
       const px = (v) => kr ? `${fmtN(v, 0)}원` : `$${fmtN(v, 2)}`;
       let nextTxt = "";
-      if (kr) nextTxt = `<span>실적 반응 히스토리는 <b>미국 상장 기업만</b> 제공됩니다(출처 Nasdaq). 한국 종목은 현재가·50일선·히트맵 군 표시만 제공합니다.</span>`;
-      else if (!s.n && !(n && n.date)) nextTxt = `<span>Nasdaq 실적 데이터 <b>수집 대기 중</b> — 다음 갱신 때 자동으로 채워집니다.</span>`;
+      if (kr) nextTxt = `<span>실적 반응 히스토리는 <b>미국 상장 기업만</b> 제공됩니다. 한국 종목은 현재가·50일선·히트맵 군 표시만 제공합니다.</span>`;
+      else if (!s.n && !(n && n.date)) nextTxt = `<span>실적 데이터 <b>수집 대기 중</b> — 다음 갱신 때 자동으로 채워집니다.</span>`;
       else if (n && n.date) nextTxt = `<span>다음 발표 <b>${esc(n.date)}</b> 현지 ${n.rt === "pre" ? "장전" : "장후"}${n.rt === "post" ? " (한국시간 다음 날 새벽)" : " (한국시간 당일 밤)"}</span><span>컨센서스 EPS <b>${n.est_eps !== null && n.est_eps !== undefined ? "$" + fmtN(n.est_eps, 2) : "—"}</b></span><span>전년 동기 <b>${n.last_year_eps !== null && n.last_year_eps !== undefined ? "$" + fmtN(n.last_year_eps, 2) : "—"}</b></span>`;
       else {
         const last = c.history[0];
         nextTxt = `<span>최근 발표 <b>${esc(last ? last.date : "—")}</b></span><span>다음 발표일 <b>미확정</b> (통상 ${last ? (parse(last.date).getMonth() + 4) % 12 || 12 : "—"}월 중순)</span>`;
       }
       const summary = s.n ? `${s.n}분기 중 EPS 컨센서스 상회 ${s.beats}회 · 반응일 상승 ${s.ups}회 · 상회했는데 하락 ${s.beat_and_down}회 · 반응일 평균 변동폭 ±${fmtN(s.avg_abs_move, 1)}%` : "";
-      const link = kr ? `<a href="https://finance.naver.com/item/main.naver?code=${esc(tk)}" target="_blank" rel="noopener">네이버 금융</a>` : `<a href="https://www.nasdaq.com/market-activity/stocks/${tk.toLowerCase()}/earnings" target="_blank" rel="noopener">Nasdaq</a>`;
+      const link = "";
       return `<div class="co" id="co-${tk}">
         <div class="co-h">
           <div class="nm">${esc(c.name)} <small>${esc(c.en)} · ${esc(tk)}</small><span class="badge t${c.tier}">${esc(tierLabel(c.tier))}</span></div>
@@ -391,7 +390,7 @@
     const names = hmMarket === "kr" ? [["^KS11", "코스피"], ["^KQ11", "코스닥"]] : [["^GSPC", "S&P 500"], ["^IXIC", "나스닥"], ["^DJI", "다우"], ["^RUT", "러셀 2000"]];
     $("#hmIdx").innerHTML = names.map(([k, lb]) => { const v = idx[k]; if (!v) return ""; return `<span>${lb}<b>${fmtN(v.p, 0)}</b><b class="${ud(v.d1)}">${sign(v.d1, 2)}%</b></span>`; }).join("")
       + `<span>${hmMarket === "us" ? "S&P 500" : hmMarket === "kr" ? "코스피 상위" : "ETF"} ${data.stocks.length}종목 · ${data.sectors.length}${hmMarket === "etf" ? "그룹" : "섹터"}</span>`;
-    $("#hmLegendNote").textContent = hmMarket === "etf" ? "타일 크기 = 운용자산(AUM, 제곱근 비례) · 그룹 구성 finviz ETF 맵 기준 + 한국·대만·일본·브라질·반도체 레버리지 · 출처 Yahoo Finance·StockAnalysis" : "타일 크기 = 시가총액 · 출처 Yahoo Finance · S&P 500 구성 Wikipedia/StockAnalysis";
+    $("#hmLegendNote").textContent = hmMarket === "etf" ? "타일 크기 = 운용자산(AUM, 제곱근 비례) · 섹터·테마별 그룹 + 한국·대만·일본·브라질·반도체 레버리지" : "타일 크기 = 시가총액";
     $("#hmAsof").textContent = `${esc(HM.updated)} 기준 · 1일 등락은 장외 시간엔 프리·애프터마켓 가격이 반영될 수 있음`;
   }
   $("#hmMarket").addEventListener("click", (e) => { const b = e.target.closest("button[data-m]"); if (!b) return; hmMarket = b.dataset.m; document.querySelectorAll("#hmMarket button").forEach((c) => c.classList.toggle("on", c === b)); renderHM(); });
@@ -404,14 +403,14 @@
     if (!LIQ || !LIQ.grid || !window.LiqMap) { $("#liqTop").innerHTML = `<div class="nm">청산맵 데이터를 불러오지 못했습니다.</div>`; return; }
     const U = window.liqFmt.usd;
     const chg = LIQ.prev24 ? (LIQ.price / LIQ.prev24 - 1) * 100 : 0;
-    $("#liqTop").innerHTML = `<div class="nm">비트코인 <small>BTC 무기한 선물 · ${(LIQ.sources || []).join("·")} 합산</small>${LIQ.live ? `<span class="live">LIVE</span>` : ""}</div>
+    $("#liqTop").innerHTML = `<div class="nm">비트코인 <small>BTC 무기한 선물 · 주요 거래소 합산</small>${LIQ.live ? `<span class="live">LIVE</span>` : ""}</div>
       <div class="px"><b>$${fmtN(LIQ.price, 0)}</b><span class="${ud(chg)}">${sign(chg, 2)}% <small>24h</small></span></div>`;
     if (!liqMap) liqMap = new LiqMap($("#liqCanvas"), $("#liqTip"), LIQ, { days: liqDays }); else { liqMap.update(LIQ); liqMap.set({ days: liqDays }); }
     const l24 = LIQ.liq24h || {}, tot = (l24.long_usd || 0) + (l24.short_usd || 0);
     const above = (LIQ.levels || []).filter((l) => l.p > LIQ.price).sort((a, b) => b.usd - a.usd).slice(0, 3).sort((a, b) => a.p - b.p);
     const below = (LIQ.levels || []).filter((l) => l.p < LIQ.price).sort((a, b) => b.usd - a.usd).slice(0, 3).sort((a, b) => b.p - a.p);
     $("#liqSide").innerHTML = `
-      <div class="ls-card"><div class="ls-l">24시간 실제 청산 <small>${esc(l24.src || "")}</small></div>
+      <div class="ls-card"><div class="ls-l">24시간 실제 청산 <small>공개 청산 체결 표본</small></div>
         <div class="ls-bar"><i class="long" style="width:${tot ? (l24.long_usd / tot * 100).toFixed(1) : 50}%"></i></div>
         <div class="ls-row"><span class="long">롱 ${U(l24.long_usd || 0)}</span><span class="short">숏 ${U(l24.short_usd || 0)}</span></div><div class="ls-sub">${l24.n || 0}건 체결</div></div>
       <div class="ls-card"><div class="ls-l">추정 청산 밀집 구간 <small>현재가 기준</small></div>
@@ -420,9 +419,9 @@
         ${below.map((l) => `<div class="ls-row lv"><span>$${fmtN(l.p, 0)} <em>롱 청산</em></span><b class="long">${U(l.usd)}</b></div>`).join("")}</div>
       <div class="ls-card stocks"><div class="ls-l">비트코인 관련주 <small>${(MK && MK.btc_stocks && MK.btc_stocks[0]) ? esc(MK.btc_stocks[0].asof) + " 종가" : ""}${MK && MK.liveStocks ? " · 5분 보정" : ""}</small></div>
         ${((MK && MK.btc_stocks) || []).map((b) => `<div class="ls-row st"><span><b>${esc(b.t)}</b><small>${esc(b.n)}</small></span><span class="px">$${fmtN(b.p, 2)}</span><b class="${ud(b.d1)}">${sign(b.d1, 2)}%</b><small class="w ${ud(b.w1)}">1주 ${sign(b.w1, 1)}%</small></div>`).join("") || `<div class="ls-sub">관련주 데이터 없음</div>`}
-        <div class="ls-sub">출처 Yahoo Finance · 종가 기준 1일·1주 등락 · 구성은 config.json btc_stocks</div></div>`;
-    $("#liqAsof").textContent = `${esc(LIQ.updated)} 갱신 · OI 합계 ${window.liqFmt.usd(LIQ.oi_total_usd || 0)} · 평균 펀딩 ${LIQ.funding_avg !== null && LIQ.funding_avg !== undefined ? sign(LIQ.funding_avg, 4) + "%" : "—"} · 바이낸스·바이비트는 미국 서버 접근 제한으로 제외`;
-    $("#liqMethod").textContent = LIQ.method || "";
+        <div class="ls-sub">종가 기준 1일·1주 등락</div></div>`;
+    $("#liqAsof").textContent = `${esc(LIQ.updated)} 갱신 · OI 합계 ${window.liqFmt.usd(LIQ.oi_total_usd || 0)} · 평균 펀딩 ${LIQ.funding_avg !== null && LIQ.funding_avg !== undefined ? sign(LIQ.funding_avg, 4) + "%" : "—"}`;
+    $("#liqMethod").textContent = (LIQ.method || "").replace(/\s*Coinglass[^.]*\./, " 자체 추정치입니다.");
   }
   $("#liqRange").addEventListener("click", (e) => { const b = e.target.closest("button[data-r]"); if (!b) return; liqDays = +b.dataset.r; document.querySelectorAll("#liqRange button").forEach((c) => c.classList.toggle("on", c === b)); if (liqMap) liqMap.set({ days: liqDays }); });
 

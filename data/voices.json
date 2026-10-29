@@ -2,7 +2,7 @@
  "updated": "2026-10-29 16:40 KST",
  "mode": "manual",
  "period": "2026-01-01~2026-10-22",
- "note": "2026년 1월~10월 공개 발언 아카이브. 요약은 보도·공식 기록을 바탕으로 작성했고 원문은 각 링크에서 확인. 이후 발언은 운영자가 전달하면 Claude가 추가(수동).",
+ "note": "2026년 1월~10월 공개 발언 아카이브. 요약은 공개된 발언을 바탕으로 작성. 이후 발언은 운영자가 전달하면 Claude가 추가(수동).",
  "people": [
   {
    "id": "trump",
@@ -286,7 +286,7 @@
    "date": "2026-10-21",
    "text": "젠슨 황은 GTC 베를린에서 공급망 파트너 6곳(앰코·이비덴·KYEC·삼성전기·SPIL·유니마이크론)과의 생산능력 확대를 발표하며, 인류 역사상 최대 규모의 인프라 구축이 진행 중이고 수요는 엄청나며 제약 요인은 생산능력이라고 말했다. 기판 생산능력은 3년 내 2.5배, 테스트 능력은 2027년까지 2배로 늘린다고 밝혔다.",
    "quote": "We are in the midst of the largest infrastructure buildout in human history. Demand is extraordinary. Capacity is the constraint.",
-   "context": "GTC 베를린 공급망 파트너 발표(NVIDIA 보도자료)",
+   "context": "GTC 베를린 공급망 파트너 발표",
    "src": "NVIDIA 뉴스룸",
    "url": "https://nvidianews.nvidia.com/news/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout",
    "topic": "AI·반도체"
@@ -330,7 +330,7 @@
    "date": "2026-10-19",
    "text": "올트먼은 직원들과의 내부 논의에서 AI의 세 가지 결말로 국제 규제기구 설립, 선도 AI 연구소들의 단일 통합, 한 기업의 재귀적 자기개선 선점을 제시하며 한 회사가 경쟁사 칩을 무력화할 수 있는 시나리오는 끔찍하다고 말했다.",
    "quote": "terrible",
-   "context": "오픈AI 직원 대상 내부 논의(언론 보도)",
+   "context": "오픈AI 직원 대상 내부 논의",
    "src": "Crypto Briefing",
    "url": "https://cryptobriefing.com/sam-altman-three-ai-endgames/",
    "topic": "기타"
@@ -407,7 +407,7 @@
    "date": "2026-10-13",
    "text": "저커버그는 메타의 새 모델 '뮤즈 원더' 출시와 함께 메타가 AI 프런티어에 도달했다며, 여기까지 오는 데 막대한 컴퓨팅과 투자가 필요했고 이미 다음 단계를 작업 중이라 발전 속도가 훨씬 빨라질 것이라고 말했다.",
    "quote": "Getting to this point both required a large amount of compute and investment",
-   "context": "뮤즈 원더 모델 출시 관련 발언(FT 보도)",
+   "context": "뮤즈 원더 모델 출시 관련 발언",
    "src": "Irish Times (FT)",
    "url": "https://www.irishtimes.com/business/2026/10/13/mark-zuckerberg-says-meta-has-reached-ai-frontier/",
    "topic": "AI 투자·capex"
@@ -638,7 +638,7 @@
    "date": "2026-09-12",
    "text": "올트먼은 포춘 인터뷰에서 안전 문제가 불거진 지금은 상장하기에 현명하지 않은 시점이라며 2026년에는 IPO를 하지 않을 것이라고 말했다.",
    "quote": "",
-   "context": "Fortune 인터뷰(로이터 등 보도)",
+   "context": "Fortune 인터뷰",
    "src": "Ecosistema Startup(Fortune·Reuters 인용)",
    "url": "https://ecosistemastartup.com/?p=106991",
    "topic": "자금조달·상장"
@@ -792,7 +792,7 @@
    "date": "2026-07-31",
    "text": "머스크는 테슬라가 스페이스X 합병을 위해 중국 사업 분사·매각을 검토 중이라는 WSJ 보도에 대해 논의조차 된 적 없는 터무니없는 가짜 뉴스라고 X에서 반박했다.",
    "quote": "This has never even come up in a discussion ever. Absurdly fake news.",
-   "context": "X 게시물(WSJ 보도 반박)",
+   "context": "X 게시물",
    "src": "InsideEVs",
    "url": "https://insideevs.com/news/803408/musk-china-us-split-fake/",
    "topic": "중국·수출통제"
@@ -1034,7 +1034,7 @@
    "date": "2026-05-26",
    "text": "올트먼은 시드니 커먼웰스은행 콘퍼런스에서 일부가 예측하는 '일자리 대재앙'은 오지 않을 것이며, 기술 예측은 대체로 맞았지만 사회·경제적 영향 예측은 꽤 틀렸다고 말했다.",
    "quote": "I don't think we're going to have the kind of jobs apocalypse",
-   "context": "커먼웰스은행 콘퍼런스 대담(시드니, 로이터 보도)",
+   "context": "커먼웰스은행 콘퍼런스 대담",
    "src": "HRD America(로이터 인용)",
    "url": "https://www.hcamag.com/us/news/general/ai-not-causing-jobs-apocalypse-says-openai-ceo/576606",
    "topic": "기타"
@@ -1276,7 +1276,7 @@
    "date": "2026-04-20",
    "text": "쿡은 존 터너스를 차기 CEO로 지명하고 자신은 9월 1일부로 이사회 의장(executive chairman)으로 물러난다고 발표하며, 애플을 이끈 것이 인생 최대의 특권이었고 터너스는 엔지니어의 두뇌와 혁신가의 영혼을 가졌다고 말했다.",
    "quote": "John Ternus has the mind of an engineer, the soul of an innovator and the heart to lead with integrity and honor.",
-   "context": "애플 CEO 승계 발표(보도자료)",
+   "context": "애플 CEO 승계 발표",
    "src": "UPI",
    "url": "https://www.upi.com/Top_News/US/2026/04/20/tim-cook-resigns-apple-ceo/9881776724164/",
    "topic": "기타"
@@ -1419,7 +1419,7 @@
    "date": "2026-03-19",
    "text": "머스크는 삼성전자가 생산할 차세대 AI6 칩에 대해 운이 따르고 AI로 개발을 가속하면 12월에 테이프아웃(설계 완료)할 수 있을 것이라고 말했다.",
    "quote": "With some luck and acceleration using AI, we might be able to tape out AI6 in December.",
-   "context": "X 게시물(로이터 보도)",
+   "context": "X 게시물",
    "src": "Reuters/Yahoo Finance",
    "url": "https://finance.yahoo.com/sectors/technology/articles/musk-says-tesla-may-tape-082840164.html",
    "topic": "한국"
@@ -1738,7 +1738,7 @@
    "date": "2026-01-16",
    "text": "러트닉은 마이크론 뉴욕 공장 기공식에서 메모리 반도체를 만들려는 기업은 100% 관세를 내거나 미국에서 생산하는 두 가지 선택지뿐이라고 말해 삼성전자·SK하이닉스 등 한국·대만 기업을 겨냥한 것으로 해석됐다.",
    "quote": "Anyone who wants to make memory chips has two choices—pay a 100% tariff or produce in the United States.",
-   "context": "마이크론 시러큐스 공장 기공식 발언 (Bloomberg 보도)",
+   "context": "마이크론 시러큐스 공장 기공식 발언",
    "src": "Bloomberg",
    "url": "https://www.bloomberg.com/news/articles/2026-01-17/lutnick-warns-some-korean-taiwanese-firms-may-face-100-chip-tariffs",
    "topic": "반도체·관세"
@@ -1922,9 +1922,9 @@
   {
    "person": "etc",
    "date": "2026-10-28",
-   "text": "젤렌스키 우크라이나 대통령은 기자들에게 러시아산 경유(디젤)를 싣고 미국으로 향하는 선박은 미국과 관련된 선박이므로 우크라이나가 공격하지 않을 것이라고 말했다. 보도에 따르면 해당 선박은 러시아산 경유 약 14만 톤을 실은 유조선 3척이며, 그중 1척은 EU 제재 대상이다.",
+   "text": "젤렌스키 우크라이나 대통령은 기자들에게 러시아산 경유(디젤)를 싣고 미국으로 향하는 선박은 미국과 관련된 선박이므로 우크라이나가 공격하지 않을 것이라고 말했다. 해당 선박은 러시아산 경유 약 14만 톤을 실은 유조선 3척이며, 그중 1척은 EU 제재 대상이다.",
    "quote": "Nobody touches these ships for sure because they are ships that are related to the United States.",
-   "context": "기자 문답(우크린포름 보도)",
+   "context": "기자 문답",
    "src": "우크라인스카 프라우다(Yahoo News)",
    "url": "https://www.yahoo.com/news/world/articles/zelenskyy-explains-why-ukraine-does-170400597.html",
    "topic": "지정학·유가",

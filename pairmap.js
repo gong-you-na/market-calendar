@@ -297,7 +297,6 @@
 
     /* ── 패널 ── */
     const body = sec.querySelector("#pmBody"), no = sec.querySelector("#pmNo");
-    const srcLinks = (src) => (src || []).map((s) => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}${s.date ? " · " + esc(s.date) : ""}</a>`).join("");
     const tierBadge = (c) => c.list === false ? `<span class="badge">리스트 밖 · 참고</span>` : c.tier ? `<span class="badge t${c.tier}">${esc((TIERS[c.tier] && TIERS[c.tier].name) || c.tier + "군")}</span>` : "";
     const stBadge = (s, cid) => {
       if (cid && CO[cid] && CO[cid].kind === "hub") { const ins = hubInputs(cid), k = ins.filter((x) => reported(state(x))).length; return `<span class="pm-st ${k ? "out" : "pending"}">${k}/${ins.length} 발표</span>`; }
@@ -319,7 +318,7 @@
           ${up ? `<div class="pm-h4">다가오는 발표</div><ul class="pm-up">${up}</ul>` : ""}
           <div class="pm-h4">짝을 짓는 기준</div>
           <ul class="pm-types">${[1, 2, 3].map((t) => `<li><span class="pm-tb pm-t${t}">${TYPE_KO[t]}</span>${esc(TYPE_DEF[t])}</li>`).join("")}</ul>
-          <p class="pm-tip">기업을 누르면 발표 일시·확인 항목·결과가, 선을 누르면 두 기업을 연결한 근거와 출처가 열립니다.</p>
+          <p class="pm-tip">기업을 누르면 발표 일시·확인 항목·결과가, 선을 누르면 두 기업을 연결한 근거가 열립니다.</p>
         </div>`;
     }
 
@@ -333,15 +332,14 @@
           <div class="pm-kv"><span>예상 대비</span><b class="${ud(h.surprise_pct)}">${sgn(h.surprise_pct, 1)}</b></div>
           <div class="pm-kv"><span>다음 거래일 종가 반응</span><b class="${r.pct === undefined ? "" : ud(r.pct)}">${r.pct === undefined ? "집계 전" : sgn(r.pct)}</b></div>
           ${r.pct5 !== undefined ? `<div class="pm-kv"><span>5거래일 누적</span><b class="${ud(r.pct5)}">${sgn(r.pct5)}</b></div>` : ""}
-        </div><div class="pm-src">EPS·반응: ${esc(h.src || "Nasdaq")} · Yahoo Finance (위즈뷰 실적 데이터, 자동)${r.react_d ? " · 반응 기준일 " + esc(r.react_d) : ""}</div>`;
+        </div>${r.react_d ? `<div class="pm-src">반응 기준일 ${esc(r.react_d)}</div>` : ""}`;
       }
       if (c.result && c.result.rows && c.result.rows.length) {
         out += `<table class="pm-tbl"><thead><tr><th>항목</th><th>발표</th><th>비교</th></tr></thead><tbody>${c.result.rows.map((r) => `<tr><td>${esc(r[0])}</td><td><b>${esc(r[1])}</b></td><td>${esc(r[2] || "")}</td></tr>`).join("")}</tbody></table>`;
         if (c.result.note) out += `<p class="pm-note">${esc(c.result.note)}</p>`;
-        if (c.result.src) out += `<div class="pm-src">출처 ${srcLinks(c.result.src)}</div>`;
       }
       const kr = krReact(c);
-      if (kr) out += `<div class="pm-res"><div class="pm-kv"><span>${esc(kr.d.slice(5).replace("-", "/"))} 종가 반응</span><b class="${ud(kr.pct)}">${sgn(kr.pct)}</b></div></div><div class="pm-src">종가: Yahoo Finance (위즈뷰 시세 데이터, 자동)</div>`;
+      if (kr) out += `<div class="pm-res"><div class="pm-kv"><span>${esc(kr.d.slice(5).replace("-", "/"))} 종가 반응</span><b class="${ud(kr.pct)}">${sgn(kr.pct)}</b></div></div>`;
       return out;
     }
 
@@ -373,8 +371,8 @@
         <div class="pm-tags">${tierBadge(c)}${c.theme ? `<span class="badge">${esc(c.theme)}</span>` : ""}</div>
         <div class="pm-when">${c.when ? `<b>${esc(fmtWhen(c.when, true))}</b> KST` : `<b>일정 확인 중</b>`}<span>${esc(c.form || "")}${c.when ? " · " + esc(rel(c.when)) : ""}</span></div>
         ${c.when_note ? `<p class="pm-note">${esc(c.when_note)}</p>` : ""}
-        ${(us && us.est_eps !== undefined && s === "pending") ? `<div class="pm-kv1"><span>EPS 컨센서스</span><b>$${num(us.est_eps)}</b><em>Nasdaq 집계 ${esc(us.n_est || "")}명 · 전년 동기 $${num(us.last_year_eps)}</em></div>` : ""}
-        ${c.consensus ? `<div class="pm-kv1"><span>컨센서스</span><b>${esc(c.consensus.text)}</b><em>${srcLinks(c.consensus.src)}</em></div>` : ""}
+        ${(us && us.est_eps !== undefined && s === "pending") ? `<div class="pm-kv1"><span>EPS 컨센서스</span><b>$${num(us.est_eps)}</b><em>집계 ${esc(us.n_est || "")}명 · 전년 동기 $${num(us.last_year_eps)}</em></div>` : ""}
+        ${c.consensus ? `<div class="pm-kv1"><span>컨센서스</span><b>${esc(c.consensus.text)}</b></div>` : ""}
         ${c.checks && c.checks.length ? `<div class="pm-h4">확인 항목</div><ul class="pm-checks">${c.checks.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}
         <div class="pm-h4">결과</div>
         ${res || `<p class="pm-empty">${s === "pending" ? "발표 전입니다." : c.mkt === "us" ? "발표 완료 · EPS와 반응은 다음 정기 갱신(05:16·15:46 KST) 때 자동 입력됩니다." : "발표 완료 · 결과 수치를 입력하는 중입니다."}</p>`}
@@ -401,7 +399,6 @@
         <div class="pm-tags"><span class="pm-tb pm-t${e.type}">${TYPE_KO[e.type]}</span>${e.label ? `<span class="badge">${esc(e.label)}</span>` : ""}<span class="pm-lv ${e.level === "확인" ? "ok" : "part"}">${e.level === "확인" ? "근거 확인" : "근거 일부 확인"}</span></div>
         <div class="pm-h4">왜 짝인가 — 연결 근거</div>
         <ul class="pm-basis">${(e.bases && e.bases.length ? e.bases : [e.basis]).map((b) => `<li>${esc(b)}</li>`).join("")}</ul>
-        <div class="pm-src">출처 ${srcLinks(e.src)}</div>
         ${e.note ? `<p class="pm-caveat"><b>${e.level === "확인" ? "참고" : "주의"}</b>${esc(e.note)}</p>` : ""}
         <p class="pm-def">${esc(TYPE_DEF[e.type])}</p>
         <div class="pm-h4">두 기업의 발표 상태</div>
