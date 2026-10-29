@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23 09:56 KST",
+ "updated": "2026-10-29 16:40 KST",
  "mode": "manual",
  "period": "2026-01-01~2026-10-22",
  "note": "2026년 1월~10월 공개 발언 아카이브. 요약은 보도·공식 기록을 바탕으로 작성했고 원문은 각 링크에서 확인. 이후 발언은 운영자가 전달하면 Claude가 추가(수동).",
@@ -52,8 +52,8 @@
     "artist": "U.S. Department of the Treasury",
     "url": "https://commons.wikimedia.org/wiki/File:Official_portrait_of_Treasury_Secretary_Scott_Bessent_(borderless)_(cropped).jpg"
    },
-   "n": 10,
-   "latest": "2026-09-27"
+   "n": 12,
+   "latest": "2026-10-28"
   },
   {
    "id": "lutnick",
@@ -264,8 +264,8 @@
    "truth": null,
    "img": null,
    "img_credit": null,
-   "n": 2,
-   "latest": "2026-10-22"
+   "n": 3,
+   "latest": "2026-10-28"
   }
  ],
  "items": [
@@ -1896,6 +1896,39 @@
    "url": "https://uk.finance.yahoo.com/news/jensen-huang-says-neocloud-demand-124427377.html",
    "topic": "AI·반도체",
    "id": "d72764252c"
+  },
+  {
+   "person": "bessent",
+   "date": "2026-10-28",
+   "text": "베선트 재무장관은 CNBC 인터뷰에서 워시 연준 의장이 모든 공급 충격의 일시성에 대해 열린 자세를 가져야 한다고 말했다. 트럼프 대통령은 워시가 책무를 수행하는 데 큰 신뢰를 갖고 있고, 연준은 물가상승률이 장기간 목표치를 웃돌고 있는 상황을 매우 주의 깊게 보고 있으며, 워시는 훌륭한 출발을 보이고 있다고 덧붙였다.",
+   "quote": "",
+   "context": "CNBC 인터뷰",
+   "src": "Newsquawk·Rallies.ai(CNBC 인터뷰 인용)",
+   "url": "https://www.newsquawk.com/headlines/us-treasury-secretary-bessent-says-fed-chair-warsh-should-have-an-open-mind-on-the-transitory-nature-of-any-supply-shocks-speaking-to-cnbc",
+   "topic": "연준",
+   "id": "11897820a4"
+  },
+  {
+   "person": "bessent",
+   "date": "2026-10-28",
+   "text": "베선트 재무장관은 같은 CNBC 인터뷰에서 이란이 달러를 확보하지 못하고 있고 대리 세력에 대한 자금 지원도 줄고 있다며, 대이란 금융 제재인 '아웃캐스트 작전(Operation Outcast)'이 성공을 거두고 있다고 말했다.",
+   "quote": "",
+   "context": "CNBC 인터뷰",
+   "src": "Crypto Briefing(CNBC 인터뷰 인용)",
+   "url": "https://cryptobriefing.com/us-treasury-secretary-operation-outcast-on-iran-is-succeeding/",
+   "topic": "지정학·유가",
+   "id": "ee3d22114e"
+  },
+  {
+   "person": "etc",
+   "date": "2026-10-28",
+   "text": "젤렌스키 우크라이나 대통령은 기자들에게 러시아산 경유(디젤)를 싣고 미국으로 향하는 선박은 미국과 관련된 선박이므로 우크라이나가 공격하지 않을 것이라고 말했다. 보도에 따르면 해당 선박은 러시아산 경유 약 14만 톤을 실은 유조선 3척이며, 그중 1척은 EU 제재 대상이다.",
+   "quote": "Nobody touches these ships for sure because they are ships that are related to the United States.",
+   "context": "기자 문답(우크린포름 보도)",
+   "src": "우크라인스카 프라우다(Yahoo News)",
+   "url": "https://www.yahoo.com/news/world/articles/zelenskyy-explains-why-ukraine-does-170400597.html",
+   "topic": "지정학·유가",
+   "id": "0d51deb267"
   }
  ]
 }
