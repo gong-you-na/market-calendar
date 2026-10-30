@@ -1,7 +1,31 @@
 {
- "updated": "2026-10-29 05:30 KST",
+ "updated": "2026-10-31 05:25 KST",
  "note": "날짜는 한국시간 기준. ★ 예상일은 공식 일정 확정 전.",
  "changelog": [
+  {
+   "at": "2026-10-31 05:25",
+   "msg": "미국 3분기 GDP 속보치(현지 10/29) result 추가 — 연율 +3.4%(컨센서스 3.2%·2분기 2.2%), 개인소비 기여 +2.52%p·재고 +1.61%p·순수출 -3.32%p, 3분기 PCE 물가 연율 2.1%·근원 2.5%(BEA·StockTitan 일치)"
+  },
+  {
+   "at": "2026-10-31 05:25",
+   "msg": "미국 9월 PCE 물가(현지 10/29) result 추가 — 헤드라인 전월比 +0.5%·전년比 3.6%(8월 3.4%), 근원 +0.3%·3.1%(8월 3.0%), 실질 소비지출 0.0%, 저축률 3.8%(BEA·Fattail/CNBC 인용 일치)"
+  },
+  {
+   "at": "2026-10-31 05:25",
+   "msg": "미국 3분기 고용비용지수(현지 10/30) result 추가 — 전기比 +0.8%(컨센서스 +0.8%·2분기 +0.9%), 임금 +0.7%·복리후생 +0.9%, 전년比 3.4%(BLS·MT Newswires 일치)"
+  },
+  {
+   "at": "2026-10-31 05:25",
+   "msg": "NVDA 11/19 → 11/18 변경·★예상일 해제 — 회사 공지(10/28) 현지 11/17 장 마감 후 발표·콘퍼런스콜 2시 PT, Nasdaq 캘린더(11/17 장후)·Investing.com·StockTitan 일치"
+  },
+  {
+   "at": "2026-10-31 05:25",
+   "msg": "알파벳(현지 10/28 장후)·릴리(10/29 장전)·아마존·인텔·샌디스크(10/29 장후) 실적 사실을 why에 추가 — 매출·부문·가이던스·설비투자(각 회사 보도자료 + 언론 1곳 일치). EPS·주가 반응은 earnings.json 자동. pairmap.json GOOGL·AMZN·SNDK·INTC·LLY result 행 추가"
+  },
+  {
+   "at": "2026-10-31 05:25",
+   "msg": "10/30 미국 종가 반영(S&P500 7,580 -1.82%·나스닥 25,437 -2.86%·VIX 20.5·10년물 4.93%·금 3,884·WTI 104.43). 10/29·10/30 한국 장 마감 갱신이 실행되지 않아 10/29 발표분(GDP·PCE·릴리·알파벳)까지 이번에 반영. 실적 next.date 14종목 대조 — NVDA 외 변경 없음. BLS(11·12월 고용·CPI·PPI·JOLTS·수출입물가)·BEA(11/25·12/23) 일정 공식 일정과 일치 확인. 미시간대 11/6·11/20·12/4·12/18은 financecalendar 1곳만 확인돼 ★ 유지"
+  },
   {
    "at": "2026-10-29 05:30",
    "msg": "10월 FOMC(현지 10/28) result 추가 — 3.75~4.00% 동결, 표결 10-2(쿡·해맥 0.25%p 인상 선호), 성명서 경제활동 solid→strong·'추가 정보 축적' 문장 추가·timelier→timely, 다음 회의 12/8~9, 12월 인상 확률 약 85%(블룸버그 선물)·84%(FedWatch 결정 전), 10/28 종가(Fox Business·Yahoo Finance·Fortune·PBS/AP 일치)"
@@ -97,30 +121,6 @@
   {
    "at": "2026-10-23 23:40",
    "msg": "10/23(금) 미국 8:30 ET 주요 지표 발표 없음. 실적 일정 대조(earnings.json next 22종목 vs events) 전부 일치, 변경 없음"
-  },
-  {
-   "at": "2026-10-23 23:40",
-   "msg": "★예상일 점검: NVDA FY27 3분기(11/18) 회사 미공지(cmelitegroup 10/21 기준 미확정), IREN(11/5)·OKLO(11/10) 회사 미공지 — est 유지. NYSE 2026 조기폐장(11/27·12/24 오후 1시 ET) NYSE 보도자료·Fidelity 2곳 확인, 11/26 추수감사절 항목에 기재돼 있어 추가 없음. 체온계·히트맵·실적 히스토리·청산맵 갱신"
-  },
-  {
-   "at": "2026-10-23 07:20",
-   "msg": "BE 3분기 실적 10/23(현지 10/22 장후) 발표 완료 — 매출 12.358억 달러(+138%)·비GAAP EPS 0.94달러·GAAP 총마진 33.8%·연간 매출 가이던스 44억~46억 달러로 상향(기존 39억~42억) 등 EPS 외 사실을 why에 추가(회사 IR 보도자료·Benzinga 2곳 일치). EPS·주가 반응은 earnings.json 자동 공급"
-  },
-  {
-   "at": "2026-10-23 07:20",
-   "msg": "10/22(목)~10/23(금) 새벽 미국 8:30 ET 주요 지표 발표 없음 — result 입력 대상 없음. 미시간대 10월 확정치(10/23 밤 11시)는 발표 전"
-  },
-  {
-   "at": "2026-10-23 07:20",
-   "msg": "실적 일정 대조(earnings.json next 22종목 vs events) 전부 일치, 변경 없음. BEA 공식 일정 재확인: 3분기 GDP 속보치·9월 PCE 10/29, GDP 잠정치·10월 PCE 11/25, 11월 PCE 12/23 — 기존 기재와 일치. 미시간대 11/6·11/20 발표일은 공식 데이터 사이트 점검(10/20~22 오프라인)으로 미확인, ★예상일 유지"
-  },
-  {
-   "at": "2026-10-22 22:40",
-   "msg": "한국은행 10월 금통위(10/22) 결과 입력 — 기준금리 3.00% 동결·만장일치, 2026·27년 성장 전망 8월 전망(3.3%·2.9%) 상당폭 상회·2027년 물가 전망 상회 명시, 다음 회의 11/26 (한국금융신문·뉴스1·이투데이 3곳 일치)"
-  },
-  {
-   "at": "2026-10-22 22:40",
-   "msg": "MU FY27 1분기 실적 12/17(현지 12/16 장후) ★예상일 추가 — earnings.json next 12/16(Nasdaq) 기준, 60일 창에 진입. 회사 공식 일정 미공지. 9/30 가이던스(매출 615억±15억 달러·EPS 38.15±1.00달러)를 why에 기재"
   }
  ],
  "days": {
@@ -1322,8 +1322,62 @@
      {
       "name": "Investing.com(10/26)",
       "url": "https://www.investing.com/news/stock-market-news/fed-hold-expected-this-week-as-markets-watch-for-december-hike-signals-93CH-4973447"
+     },
+     {
+      "name": "BEA 보도자료(10/29)",
+      "url": "https://www.bea.gov/news/2026/gdp-advance-estimate-3rd-quarter-2026"
+     },
+     {
+      "name": "StockTitan(10/29)",
+      "url": "https://www.stocktitan.net/articles/q3-2026-gdp-growth-advance-estimate"
      }
-    ]
+    ],
+    "result": {
+     "actual": "연율 +3.4%",
+     "est": "+3.2%",
+     "prev": "+2.2%(2분기 확정)",
+     "dir": "up",
+     "head": "3분기 GDP 연율 +3.4%(컨센서스 3.2%·2분기 2.2%) · 민간 국내 최종판매 +4.9% · PCE 물가 연율 2.1%(근원 2.5%)",
+     "note": "BEA 10/29 속보치: 3분기 실질 GDP 연율 +3.4%(전기比 0.8%, 2분기 확정 +2.2%, 컨센서스 3.2%, 애틀랜타 연준 GDPNow 10/28 3.3%). 성장 기여도: 개인소비 +2.52%p, 기업·주택 투자 +1.66%p, 재고 +1.61%p, 정부지출 +0.90%p(연방지출 연율 +15.8%), 순수출 -3.32%p(수입 연율 +19.7%로 -2.64%p, 수출 감소 -0.68%p). 민간 국내 최종판매 +4.9%(2분기 +4.6%), 재고 제외 최종판매 +1.7%. 명목 GDP 연율 +5.6%. 3분기 PCE 물가 연율 2.1%(2분기 5.0%), 근원 PCE 2.5%(2분기 3.3%). 잠정치는 11/25 발표. 발표일(10/29) S&P500 7,720.39(-0.30%)·나스닥 26,184.72(-1.38%)·10년물 4.99%(-5.6bp).",
+     "rows": [
+      [
+       "실질 GDP(연율)",
+       "+3.4%",
+       "+3.2%",
+       "2분기 +2.2%"
+      ],
+      [
+       "개인소비 기여도",
+       "+2.52%p",
+       "—",
+       "민간 국내 최종판매 +4.9%"
+      ],
+      [
+       "기업·주택 투자 기여도",
+       "+1.66%p",
+       "—",
+       "재고 +1.61%p"
+      ],
+      [
+       "정부지출 기여도",
+       "+0.90%p",
+       "—",
+       "연방지출 연율 +15.8%"
+      ],
+      [
+       "순수출 기여도",
+       "-3.32%p",
+       "—",
+       "수입 연율 +19.7%"
+      ],
+      [
+       "PCE 물가(연율)",
+       "2.1%",
+       "—",
+       "근원 2.5% · 2분기 5.0%"
+      ]
+     ]
+    }
    },
    {
     "t": "econ",
@@ -1362,8 +1416,66 @@
      {
       "name": "Yardeni QuickTakes(10/26)",
       "url": "https://www.yardeniquicktakes.com/economic-week-ahead-october-26-30/"
+     },
+     {
+      "name": "BEA 보도자료(10/29)",
+      "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026"
+     },
+     {
+      "name": "Fattail(10/29, CNBC·Regions·BofA 인용)",
+      "url": "https://fattail.ai/september-pce-inflation-2026/"
+     },
+     {
+      "name": "StockTitan(10/29)",
+      "url": "https://www.stocktitan.net/articles/stock-market-today-live-october-29-2026"
      }
-    ]
+    ],
+    "result": {
+     "actual": "전년比 3.6%",
+     "est": "3.6%",
+     "prev": "3.4%(8월)",
+     "dir": "up",
+     "head": "헤드라인 전년比 3.6%(8월 3.4%, 컨센서스 3.6%) · 전월比 +0.5% · 근원 전년比 3.1%(8월 3.0%)·전월比 +0.3%",
+     "note": "BEA 10/29: 9월 PCE 물가 전월比 +0.5%(컨센서스 +0.5%, 8월 +0.3%), 전년比 3.6%(8월 3.4%). 근원 PCE 전월比 +0.3%(컨센서스 +0.3%, 8월 +0.2%→+0.3% 수정), 전년比 3.1%(컨센서스 3.1%, 8월 3.0%). 개인소득 전월比 +0.2%(8월 +0.3%), 가처분소득 +0.2%, 실질 가처분소득 -0.3%. 명목 개인소비지출 +0.5%(8월 +0.9%), 실질 소비지출 0.0%(8월 +0.5%). 저축률 3.8%. 발표일(10/29) S&P500 7,720.39(-0.30%)·나스닥 26,184.72(-1.38%)·10년물 4.99%(-5.6bp).",
+     "rows": [
+      [
+       "헤드라인 전년比",
+       "3.6%",
+       "3.6%",
+       "8월 3.4%"
+      ],
+      [
+       "헤드라인 전월比",
+       "+0.5%",
+       "+0.5%",
+       "8월 +0.3%"
+      ],
+      [
+       "근원 전년比",
+       "3.1%",
+       "3.1%",
+       "8월 3.0%"
+      ],
+      [
+       "근원 전월比",
+       "+0.3%",
+       "+0.3%",
+       "8월 +0.2%→+0.3% 수정"
+      ],
+      [
+       "실질 소비지출 전월比",
+       "0.0%",
+       "—",
+       "8월 +0.5%"
+      ],
+      [
+       "저축률",
+       "3.8%",
+       "—",
+       "가처분소득 전월比 +0.2%"
+      ]
+     ]
+    }
    },
    {
     "t": "earn",
@@ -1372,7 +1484,7 @@
     "tier": 2,
     "ticker": "LLY",
     "time": "밤 8시 (장전)",
-    "why": "2군 헬스케어. 비만·당뇨 치료제(마운자로·젭바운드) 매출과 연간 매출 가이던스가 발표됩니다. 릴리는 현지 10/29 실적 발표와 컨퍼런스콜 일정을 공지했습니다.",
+    "why": "2군 헬스케어. 비만·당뇨 치료제(마운자로·젭바운드) 매출과 연간 매출 가이던스가 발표됩니다. 릴리는 현지 10/29 실적 발표와 컨퍼런스콜 일정을 공지했습니다. 발표 내용: 매출 244억 달러(전년비 +39%), 마운자로 107억(+65%)·젭바운드 54억(+49%). 2026년 매출 가이던스 910~920억 달러로 상향(종전 850~870억), 비GAAP EPS 가이던스 35.00~36.00달러(종전 35.50~36.50, 3분기 인수 IPR&D 비용 주당 4.57달러 반영).",
     "watch": "EPS·매출 vs 컨센서스, 마운자로·젭바운드 매출, 가이던스",
     "stocks": [
      [
@@ -1392,6 +1504,14 @@
      {
       "name": "Lilly IR 공지(StockTitan)",
       "url": "https://www.stocktitan.net/news/LLY/lilly-confirms-date-and-conference-call-for-third-quarter-2026-lnv6qkcsz5rp.html"
+     },
+     {
+      "name": "Lilly 보도자료(IR, 10/29)",
+      "url": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-third-quarter-2026-financial-results-raises-full"
+     },
+     {
+      "name": "StockTitan(10/29)",
+      "url": "https://www.stocktitan.net/articles/eli-lilly-q3-2026-earnings-mounjaro-zepbound"
      }
     ]
    },
@@ -1402,7 +1522,7 @@
     "tier": 1,
     "ticker": "GOOGL",
     "time": "새벽 5시 (현지 10/28 장후)",
-    "why": "1군 하이퍼스케일러. 검색·유튜브 광고 매출, 구글 클라우드 매출·영업이익, 자본지출이 발표됩니다. 현지 10/28 장 마감 후 발표.",
+    "why": "1군 하이퍼스케일러. 검색·유튜브 광고 매출, 구글 클라우드 매출·영업이익, 자본지출이 발표됩니다. 현지 10/28 장 마감 후 발표. 발표 내용: 매출 1,276억 달러(전년비 +25%), 검색 매출 634억(+12%, 2분기 +17%), 구글 클라우드 매출 307억(전년비 2배 이상, 영업이익률 36.2%), 3분기 설비투자 514억(전년 240억), 2026년 설비투자 2,000억 달러 유지·2027년 약 3,000억 달러 예상, 잉여현금흐름 -91억 달러.",
     "watch": "EPS·매출 vs 컨센서스, 클라우드 성장률, 자본지출",
     "stocks": [
      [
@@ -1418,6 +1538,14 @@
      {
       "name": "Nasdaq 실적 캘린더",
       "url": "https://www.nasdaq.com/market-activity/earnings"
+     },
+     {
+      "name": "Fortune(10/28)",
+      "url": "https://fortune.com/2026/10/28/alphabet-google-stock-drops-cloud-revenue-doubles-free-cash-flow-negative/"
+     },
+     {
+      "name": "StockTitan(10/29)",
+      "url": "https://www.stocktitan.net/articles/stock-market-today-live-october-29-2026"
      }
     ]
    }
@@ -1443,8 +1571,72 @@
      {
       "name": "Investing.com(10/26)",
       "url": "https://www.investing.com/news/stock-market-news/fed-hold-expected-this-week-as-markets-watch-for-december-hike-signals-93CH-4973447"
+     },
+     {
+      "name": "BLS 보도자료(10/30)",
+      "url": "https://www.bls.gov/news.release/eci.nr0.htm"
+     },
+     {
+      "name": "MarketScreener/MT Newswires(10/30)",
+      "url": "https://www.marketscreener.com/news/q3-us-employment-cost-index-rise-as-expected-wages-and-benefits-growth-both-slow-ce785fdbdc89f721"
      }
-    ]
+    ],
+    "result": {
+     "actual": "+0.8%",
+     "est": "+0.8%",
+     "prev": "+0.9%(2분기)",
+     "dir": "down",
+     "head": "3분기 고용비용지수 전기比 +0.8%(컨센서스 +0.8%, 2분기 +0.9%) · 임금 +0.7%·복리후생 +0.9% · 전년比 3.4%",
+     "note": "BLS 10/30: 3분기 고용비용지수(전체 근로자) 전기比 +0.8%(계절조정, 컨센서스 +0.8%, 2분기 +0.9%). 임금·급여 +0.7%(2분기 +0.9%), 복리후생 +0.9%(2분기 +1.0%). 전년比 3.4%(2분기 3.4%), 임금 3.1%(2분기 3.2%), 복리후생 3.9%(2분기 3.8%). 민간 부문 전기比 +0.8%(임금 +0.8%·복리후생 +0.9%), 전년比 3.4%(2분기 3.3%). 물가 반영 실질 임금 전년比 -0.6%. 발표일(10/30) S&P500 7,580.07(-1.82%)·나스닥 25,437.00(-2.86%)·10년물 4.93%(-6.2bp)·VIX 20.54.",
+     "rows": [
+      [
+       "전체 보상(전기比)",
+       "+0.8%",
+       "+0.8%",
+       "2분기 +0.9%"
+      ],
+      [
+       "임금·급여(전기比)",
+       "+0.7%",
+       "—",
+       "2분기 +0.9%"
+      ],
+      [
+       "복리후생(전기比)",
+       "+0.9%",
+       "—",
+       "2분기 +1.0%"
+      ],
+      [
+       "전체 보상(전년比)",
+       "3.4%",
+       "—",
+       "2분기 3.4%"
+      ],
+      [
+       "민간 부문(전기比)",
+       "+0.8%",
+       "—",
+       "전년比 3.4%"
+      ],
+      [
+       "실질 임금(전년比)",
+       "-0.6%",
+       "—",
+       "물가 반영"
+      ]
+     ],
+     "trend": [
+      {
+       "l": "26.2Q",
+       "v": 0.9
+      },
+      {
+       "l": "26.3Q",
+       "v": 0.8
+      }
+     ]
+    }
    },
    {
     "t": "earn",
@@ -1453,7 +1645,7 @@
     "tier": 1,
     "ticker": "AMZN",
     "time": "새벽 5시 (현지 10/29 장후)",
-    "why": "1군 하이퍼스케일러. AWS 매출·영업이익, 북미·해외 리테일 영업이익, 4분기 매출·영업이익 가이던스가 발표됩니다. 현지 10/29 장 마감 후 발표.",
+    "why": "1군 하이퍼스케일러. AWS 매출·영업이익, 북미·해외 리테일 영업이익, 4분기 매출·영업이익 가이던스가 발표됩니다. 현지 10/29 장 마감 후 발표. 발표 내용: 매출 2,019억 달러(전년비 +12%), AWS 매출 460억(+39%)·영업이익 178억, 전체 영업이익 281억(회사 전망 225~265억), 순이익 207억(전년 212억). 4분기 가이던스 매출 2,400~2,470억 달러(+12~16%)·영업이익 285~335억. 3분기 설비투자 773억 달러, 2026년 현금 설비투자 약 2,200억 달러 유지, 최근 12개월 잉여현금흐름 -424억 달러.",
     "watch": "EPS·매출 vs 컨센서스, AWS 성장률, 4분기 가이던스",
     "stocks": [
      [
@@ -1469,6 +1661,14 @@
      {
       "name": "Nasdaq 실적 캘린더",
       "url": "https://www.nasdaq.com/market-activity/earnings"
+     },
+     {
+      "name": "Amazon 보도자료(Business Wire, 10/29)",
+      "url": "https://www.businesswire.com/news/home/20261028373648/en/Amazon.com-Announces-Third-Quarter-Results"
+     },
+     {
+      "name": "StockTitan(10/29)",
+      "url": "https://www.stocktitan.net/articles/amazon-q3-2026-earnings-aws-cloud-growth"
      }
     ]
    },
@@ -1479,7 +1679,7 @@
     "tier": 1,
     "ticker": "SNDK",
     "time": "새벽 5시 (현지 10/29 장후)",
-    "why": "1군 반도체(낸드). 낸드 플래시 출하·평균판매가격과 다음 분기 가이던스가 발표됩니다. 현지 10/29 장 마감 후 발표.",
+    "why": "1군 반도체(낸드). 낸드 플래시 출하·평균판매가격과 다음 분기 가이던스가 발표됩니다. 현지 10/29 장 마감 후 발표. 발표 내용: 매출 110.3억 달러(전분기比 +23%, 회사 전망 103~108억), 데이터센터 48.0억(전분기比 +61%)·엣지 58.3억·컨슈머 4.0억, 비GAAP 총이익률 85.1%. FY27 2분기 가이던스 매출 122~126억 달러·비GAAP EPS 55~57달러(분할 전 기준). 8대 1 주식분할(기준일 11/9, 분할 후 거래 11/20 시작).",
     "watch": "EPS·매출 vs 컨센서스, 낸드 가격, 다음 분기 가이던스",
     "stocks": [
      [
@@ -1495,6 +1695,14 @@
      {
       "name": "Nasdaq 실적 캘린더",
       "url": "https://www.nasdaq.com/market-activity/earnings"
+     },
+     {
+      "name": "Sandisk 보도자료(IR, 10/29)",
+      "url": "https://investor.sandisk.com/news-releases/news-release-details/sandisk-reports-fiscal-first-quarter-2027-financial-results"
+     },
+     {
+      "name": "StockTitan(10/29)",
+      "url": "https://www.stocktitan.net/articles/sandisk-q1-fiscal-2027-earnings-data-centers-stock-split"
      }
     ]
    },
@@ -1505,7 +1713,7 @@
     "tier": 3,
     "ticker": "INTC",
     "time": "새벽 5시 (현지 10/29 장후)",
-    "why": "3군 반도체(고변동). 클라이언트·데이터센터 매출, 파운드리 부문 손익, 4분기 가이던스가 발표됩니다. 현지 10/29 장 마감 후 발표.",
+    "why": "3군 반도체(고변동). 클라이언트·데이터센터 매출, 파운드리 부문 손익, 4분기 가이던스가 발표됩니다. 현지 10/29 장 마감 후 발표. 발표 내용: 매출 165억 달러(전년비 +21%), 데이터센터·AI 부문 73억(+78%), 비GAAP 총이익률 44.1%. 4분기 가이던스 매출 150~160억 달러·비GAAP EPS 0.25달러·비GAAP 총이익률 38.0%. CFO는 PC 수요 둔화가 내년 상반기까지 이어질 것으로 본다고 말했습니다.",
     "watch": "EPS·매출 vs 컨센서스, 파운드리 손익, 4분기 가이던스",
     "stocks": [
      [
@@ -1521,6 +1729,14 @@
      {
       "name": "Nasdaq 실적 캘린더",
       "url": "https://www.nasdaq.com/market-activity/earnings"
+     },
+     {
+      "name": "Intel 보도자료(StockTitan, 10/29)",
+      "url": "https://www.stocktitan.net/news/INTC/intel-reports-third-quarter-2026-financial-45kjlqvhkaar.html"
+     },
+     {
+      "name": "TradingKey(10/30)",
+      "url": "https://www.tradingkey.com/news/presentation/262260039-"
      }
     ]
    }
@@ -1987,31 +2203,15 @@
     ]
    }
   ],
-  "2026-11-19": [
-   {
-    "t": "fomc",
-    "n": "10월 FOMC 의사록 공개",
-    "imp": 1,
-    "time": "새벽 4시",
-    "why": "10/27~28 회의의 의사록. 현지 11/18 오후 2시 공개(한국시간 11/19 새벽 4시). 위원들의 논의 내용이 요약돼 있습니다.",
-    "watch": "추가 인상·동결 관련 논의",
-    "stocks": [],
-    "src": [
-     {
-      "name": "연준(FOMC 일정)",
-      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
-     }
-    ]
-   },
+  "2026-11-18": [
    {
     "t": "earn",
     "n": "NVIDIA FY27 3분기 실적",
     "imp": 3,
     "tier": 1,
     "ticker": "NVDA",
-    "time": "새벽 6시 (현지 11/18 장후)",
-    "est": true,
-    "why": "1군 반도체. 데이터센터 매출과 다음 분기 매출 가이던스가 발표됩니다. 발표일은 예상일이며 회사 공식 확정 전입니다.",
+    "time": "새벽 6시 (현지 11/17 장후)",
+    "why": "1군 반도체. 데이터센터 매출과 다음 분기 매출 가이던스가 발표됩니다. 회사 공지(10/28): 현지 11/17 장 마감 후 발표, 콘퍼런스콜 오후 2시 PT(한국시간 11/18 오전 7시).",
     "watch": "EPS·매출 vs 컨센서스, 데이터센터 매출, 다음 분기 가이던스",
     "stocks": [
      [
@@ -2027,6 +2227,31 @@
      {
       "name": "Nasdaq 실적 캘린더",
       "url": "https://www.nasdaq.com/market-activity/earnings"
+     },
+     {
+      "name": "NVIDIA 보도자료(StockTitan, 10/28)",
+      "url": "https://www.stocktitan.net/news/NVDA/nvidia-sets-conference-call-for-third-quarter-financial-rgdf7hquxgar.html"
+     },
+     {
+      "name": "Investing.com(10/28)",
+      "url": "https://www.investing.com/news/company-news/nvidia-schedules-q3-fiscal-2027-earnings-call-for-nov-17-93CH-4980909"
+     }
+    ]
+   }
+  ],
+  "2026-11-19": [
+   {
+    "t": "fomc",
+    "n": "10월 FOMC 의사록 공개",
+    "imp": 1,
+    "time": "새벽 4시",
+    "why": "10/27~28 회의의 의사록. 현지 11/18 오후 2시 공개(한국시간 11/19 새벽 4시). 위원들의 논의 내용이 요약돼 있습니다.",
+    "watch": "추가 인상·동결 관련 논의",
+    "stocks": [],
+    "src": [
+     {
+      "name": "연준(FOMC 일정)",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
      }
     ]
    }

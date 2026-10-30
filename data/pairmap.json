@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29 10:40 KST",
+ "updated": "2026-10-31 05:25 KST",
  "chart_no": "2026-W44 실적 위크",
  "period_label": "10/28(수)~11/4(화) 발표분 · 한국시간",
  "period_end_label": "11/5(목) 종료",
@@ -27,7 +27,38 @@
     "구글 클라우드 매출·성장률",
     "클라우드 수주잔고"
    ],
-   "theme": "하이퍼스케일러"
+   "theme": "하이퍼스케일러",
+   "result": {
+    "rows": [
+     [
+      "2026년 설비투자 가이던스",
+      "2,000억 달러 유지",
+      "2027년 약 3,000억 달러 예상 · 3분기 514억"
+     ],
+     [
+      "구글 클라우드 매출",
+      "307억 달러",
+      "전년비 2배 이상 · 영업이익률 36.2%"
+     ],
+     [
+      "검색 매출",
+      "634억 달러",
+      "전년비 +12% · 2분기 +17%"
+     ]
+    ],
+    "src": [
+     {
+      "name": "Fortune",
+      "date": "2026-10-28",
+      "url": "https://fortune.com/2026/10/28/alphabet-google-stock-drops-cloud-revenue-doubles-free-cash-flow-negative/"
+     },
+     {
+      "name": "StockTitan",
+      "date": "2026-10-29",
+      "url": "https://www.stocktitan.net/articles/stock-market-today-live-october-29-2026"
+     }
+    ]
+   }
   },
   "AMZN": {
    "code": "AMZN",
@@ -41,7 +72,38 @@
     "분기 설비투자(capex)",
     "4분기 매출 가이던스"
    ],
-   "theme": "하이퍼스케일러"
+   "theme": "하이퍼스케일러",
+   "result": {
+    "rows": [
+     [
+      "AWS 매출",
+      "460억 달러",
+      "전년비 +39% · 영업이익 178억"
+     ],
+     [
+      "분기 설비투자",
+      "773억 달러",
+      "전년 350억 · 2026년 약 2,200억 유지"
+     ],
+     [
+      "4분기 매출 가이던스",
+      "2,400~2,470억 달러",
+      "전년비 +12~16% · 영업이익 285~335억"
+     ]
+    ],
+    "src": [
+     {
+      "name": "Amazon 보도자료(Business Wire)",
+      "date": "2026-10-29",
+      "url": "https://www.businesswire.com/news/home/20261028373648/en/Amazon.com-Announces-Third-Quarter-Results"
+     },
+     {
+      "name": "StockTitan",
+      "date": "2026-10-29",
+      "url": "https://www.stocktitan.net/articles/amazon-q3-2026-earnings-aws-cloud-growth"
+     }
+    ]
+   }
   },
   "MSFT": {
    "code": "MSFT",
@@ -420,7 +482,38 @@
     "데이터센터 매출",
     "다음 분기 가이던스"
    ],
-   "theme": "반도체"
+   "theme": "반도체",
+   "result": {
+    "rows": [
+     [
+      "매출·총이익률",
+      "110.3억 달러 · 85.1%",
+      "전분기比 +23% · 회사 전망 103~108억"
+     ],
+     [
+      "데이터센터 매출",
+      "48.0억 달러",
+      "전분기比 +61% · 매출 비중 44%"
+     ],
+     [
+      "다음 분기 가이던스",
+      "매출 122~126억 달러",
+      "비GAAP EPS 55~57달러(분할 전) · 8대 1 분할"
+     ]
+    ],
+    "src": [
+     {
+      "name": "Sandisk 보도자료(IR)",
+      "date": "2026-10-29",
+      "url": "https://investor.sandisk.com/news-releases/news-release-details/sandisk-reports-fiscal-first-quarter-2027-financial-results"
+     },
+     {
+      "name": "StockTitan",
+      "date": "2026-10-29",
+      "url": "https://www.stocktitan.net/articles/sandisk-q1-fiscal-2027-earnings-data-centers-stock-split"
+     }
+    ]
+   }
   },
   "INTC": {
    "code": "INTC",
@@ -434,7 +527,33 @@
     "파운드리 외부 고객 언급",
     "4분기 가이던스"
    ],
-   "theme": "반도체(고변동)"
+   "theme": "반도체(고변동)",
+   "result": {
+    "rows": [
+     [
+      "매출",
+      "165억 달러",
+      "전년비 +21% · 데이터센터·AI 73억(+78%)"
+     ],
+     [
+      "4분기 가이던스",
+      "매출 150~160억 달러",
+      "비GAAP EPS 0.25달러 · 총이익률 38.0%"
+     ]
+    ],
+    "src": [
+     {
+      "name": "Intel 보도자료(StockTitan)",
+      "date": "2026-10-29",
+      "url": "https://www.stocktitan.net/news/INTC/intel-reports-third-quarter-2026-financial-45kjlqvhkaar.html"
+     },
+     {
+      "name": "TradingKey",
+      "date": "2026-10-30",
+      "url": "https://www.tradingkey.com/news/presentation/262260039-"
+     }
+    ]
+   }
   },
   "HOOD": {
    "code": "HOOD",
@@ -521,7 +640,38 @@
     "연간 매출 가이던스",
     "마운자로·젭바운드 매출"
    ],
-   "theme": "헬스케어"
+   "theme": "헬스케어",
+   "result": {
+    "rows": [
+     [
+      "매출",
+      "244억 달러",
+      "전년비 +39%"
+     ],
+     [
+      "연간 매출 가이던스",
+      "910~920억 달러",
+      "종전 850~870억에서 상향"
+     ],
+     [
+      "마운자로·젭바운드 매출",
+      "107억 · 54억 달러",
+      "전년비 +65% · +49%"
+     ]
+    ],
+    "src": [
+     {
+      "name": "Lilly 보도자료(IR)",
+      "date": "2026-10-29",
+      "url": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-third-quarter-2026-financial-results-raises-full"
+     },
+     {
+      "name": "StockTitan",
+      "date": "2026-10-29",
+      "url": "https://www.stocktitan.net/articles/eli-lilly-q3-2026-earnings-mounjaro-zepbound"
+     }
+    ]
+   }
   },
   "TEM": {
    "code": "TEM",
