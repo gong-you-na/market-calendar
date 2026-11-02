@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02 15:52 KST",
+ "updated": "2026-11-03 06:16 KST",
  "chart_no": "2026-W44 실적 위크",
  "period_label": "10/28(수)~11/4(화) 발표분 · 한국시간",
  "period_end_label": "11/5(목) 종료",
@@ -766,7 +766,43 @@
     "매출(유전체·데이터)",
     "연간 매출 가이던스"
    ],
-   "theme": "AI 소프트웨어·데이터"
+   "theme": "AI 소프트웨어·데이터",
+   "result": {
+    "rows": [
+     [
+      "매출(진단·데이터)",
+      "4억 1,150만 달러 (진단 3억 350만 · 데이터 1억 810만)",
+      "전년비 +23% (+20% · +33%)"
+     ],
+     [
+      "연간 매출 가이던스",
+      "16억~16억 500만 달러",
+      "상향 · 조정 EBITDA 약 6,500만 달러 유지"
+     ],
+     [
+      "조정 EBITDA",
+      "2,560만 달러",
+      "전년 150만 달러"
+     ]
+    ],
+    "src": [
+     {
+      "name": "Tempus 보도자료(Business Wire)",
+      "date": "2026-11-02",
+      "url": "https://www.financialcontent.com/article/bizwire-2026-11-2-tempus-reports-third-quarter-2026-results"
+     },
+     {
+      "name": "BigGo Finance",
+      "date": "2026-11-02",
+      "url": "https://finance.biggo.com/news/US_TEM_2026-11-02"
+     },
+     {
+      "name": "Grafa",
+      "date": "2026-11-02",
+      "url": "https://grafa.com/en/news/united-states/tempus-ai-q3-2026-revenue-rises-23-percent-raises-guidance"
+     }
+    ]
+   }
   },
   "PLTR": {
    "code": "PLTR",
@@ -779,7 +815,38 @@
     "미국 상업 부문 매출 성장률",
     "연간 매출 가이던스"
    ],
-   "theme": "AI 소프트웨어·데이터"
+   "theme": "AI 소프트웨어·데이터",
+   "result": {
+    "rows": [
+     [
+      "미국 상업 부문 매출",
+      "9억 8,400만 달러",
+      "전년비 +148% · 전체 매출 23억 1,300만(+96%)"
+     ],
+     [
+      "연간 매출 가이던스",
+      "85억 3,000만~85억 3,400만 달러",
+      "상향 · 미국 상업 35억 5,900만 이상(+143%)"
+     ],
+     [
+      "조정 영업이익률",
+      "62%",
+      "GAAP 순이익 11억 2,800만 달러"
+     ]
+    ],
+    "src": [
+     {
+      "name": "Palantir 보도자료(Business Wire, StockTitan 게재)",
+      "date": "2026-11-02",
+      "url": "https://www.stocktitan.net/news/PLTR/palantir-reports-q3-2026-u-s-comm-revenue-growth-of-148-y-y-and-quyw16dj59bm.html"
+     },
+     {
+      "name": "FinancialContent(Business Wire)",
+      "date": "2026-11-02",
+      "url": "https://www.financialcontent.com/article/bizwire-2026-11-2-palantir-reports-q3-2026-us-comm-revenue-growth-of-148-yy-and-revenue-growth-of-96-yy-raises-fy-2026-revenue-guidance-to-91-yy-growth-and-us-comm-revenue-guidance-to-143-yy-crushing-consensus-expectations"
+     }
+    ]
+   }
   },
   "034020": {
    "code": "034020",
