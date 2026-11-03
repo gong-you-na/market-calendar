@@ -1,7 +1,23 @@
 {
- "updated": "2026-11-03 14:15 KST",
+ "updated": "2026-11-04 06:30 KST",
  "note": "날짜는 한국시간 기준. ★ 예상일은 공식 일정 확정 전.",
  "changelog": [
+  {
+   "at": "2026-11-04 06:30",
+   "msg": "9월 구인건수(JOLTS, 현지 11/3) result 추가 — 752만 건(컨센서스 710만·8월 719만으로 상향 수정), 채용 540만·자발적 이직 337만(이직률 2.1%)·해고 164만(Trading Economics·VerifiedInvesting·Helious 일치)"
+  },
+  {
+   "at": "2026-11-04 06:30",
+   "msg": "이튼(11/3 장전)·AMD(현지 11/3 장후) 실적 사실을 why에 추가 — 매출·부문·가이던스(각 회사 보도자료 + 언론 1곳). EPS·주가 반응은 earnings.json 자동. pairmap.json ETN·AMD result 행 추가"
+  },
+  {
+   "at": "2026-11-04 06:30",
+   "msg": "미시간대 소비자심리 11/7(예비)·11/21(확정)·12/5(예비)·12/19(확정) ★예상일 해제 — 미시간대 공식 2026년 발표 일정(11/6·11/20·12/4·12/18) 확인"
+  },
+  {
+   "at": "2026-11-04 06:30",
+   "msg": "향후 60일 거시 일정 교차 확인(BLS 2026 일정·fedratecalc): 고용보고서 11/6·12/4, CPI 11/10·12/10, PPI 11/13·12/15, 수출입물가 11/17·12/17, 소매판매 11/17·12/16, JOLTS 12/1, GDP·PCE 11/25·12/23, FOMC 의사록 11/18·12월 FOMC 12/9 모두 기존 일정과 일치 — 변경 없음. earnings.json next.date와 실적 이벤트 날짜 13종 일치"
+  },
   {
    "at": "2026-11-03 14:15",
    "msg": "학습기업 개편(11/1 「미래를 바꿀 기업들」 2026.10.31 업데이트): 1·2·3군 → 주도·방어·탐색, 섹터 9개로 재분류. 추가 MSFT·META(주도), CRWD·PANW(탐색), 제외 INTC. 실적 일정 추가 PANW 11/19(현지 11/18 장후)·CRWD 12/2(현지 12/1 장후) ★예상일. 기존 실적 이벤트 why 첫머리 군 표기를 역할·섹터로 교체"
@@ -105,22 +121,6 @@
   {
    "at": "2026-10-27 05:25",
    "msg": "10월 FOMC(10/29) why에 10/26 기준 확률 추가 — 인상 9~10%·동결 90~91%, 12월 인상 84~87%(Yardeni·Investing.com·Newsquawk)"
-  },
-  {
-   "at": "2026-10-27 05:25",
-   "msg": "한국 3분기 GDP 속보치(10/27) why에 한은 8월 전망 +0.3%·언론 0%대 후반 전망(한국경제·서울경제 10/25) 추가"
-  },
-  {
-   "at": "2026-10-24 07:20",
-   "msg": "미시간대 10월 확정치 note에 발표일(10/23) 지수 변화 추가 — S&P500 -0.52%·나스닥 -0.21%·다우 -1.23%·10년물 4.99%(+3.5bp)(Yahoo Finance 마감)"
-  },
-  {
-   "at": "2026-10-24 07:20",
-   "msg": "10월 FOMC(10/29) why에 10/23 기준 확률 추가 — 동결 93~94%·인상 5~7%(블룸버그 선물·Kalshi/Polymarket·QSG CME 3곳), 12월 인상 확률 72~76%"
-  },
-  {
-   "at": "2026-10-24 07:20",
-   "msg": "미국 3분기 GDP 속보치(10/29) why GDPNow 3.5%(10/20 기준)로 갱신(애틀랜타 연준 공식·Trading Economics 일치)"
   }
  ],
  "days": {
@@ -1938,7 +1938,7 @@
     "tier": 1,
     "ticker": "ETN",
     "time": "밤 10시 30분 전후 (장전)",
-    "why": "주도 · 전력·에너지 인프라. 전기 부문(미주·글로벌) 매출·수주잔고와 연간 EPS 가이던스가 발표됩니다. 회사 공지(10/20): 현지 11/3(화) NYSE 개장 전 발표, 콘퍼런스콜 오전 11시 ET(한국시간 11/4 새벽 1시).",
+    "why": "주도 · 전력·에너지 인프라. 전기 부문(미주·글로벌) 매출·수주잔고와 연간 EPS 가이던스가 발표됩니다. 회사 공지(10/20): 현지 11/3(화) NYSE 개장 전 발표, 콘퍼런스콜 오전 11시 ET(한국시간 11/4 새벽 1시). 발표(11/3): 3분기 매출 89억 4,700만 달러(전년比 +28%, 유기적 성장 +19%), 부문 영업이익률 25.3%. 전기 미주 부문 매출 41억 7,200만 달러(유기적 +22%, 영업이익률 29.8%), 12개월 누적 수주 +39%, 수주잔고 전년比 +33%. 2026년 유기적 성장 가이던스 13~15%(기존 11~13%)로 상향, 조정 EPS 가이던스 13.70~13.80달러, 4분기 유기적 성장 13~15%.",
     "watch": "EPS·매출 vs 컨센서스, 전기 부문 수주, 가이던스",
     "stocks": [
      [
@@ -1958,6 +1958,14 @@
      {
       "name": "Nasdaq 실적 캘린더",
       "url": "https://www.nasdaq.com/market-activity/earnings"
+     },
+     {
+      "name": "Eaton 보도자료(BusinessWire 11/3, 01net 게재)",
+      "url": "https://www.01net.it/eaton-reports-record-third-quarter-2026-results-with-strong-organic-growth-accelerating-record-orders-and-backlog-raises-organic-growth-guidance/"
+     },
+     {
+      "name": "Investing.com 11/3",
+      "url": "https://za.investing.com/news/stock-market-news/eaton-q3-2026-slides-record-results-drive-third-guidance-raise-93CH-4547105"
      }
     ]
    }
@@ -1979,8 +1987,64 @@
      {
       "name": "fedratecalc 경제캘린더",
       "url": "https://fedratecalc.com/us-economic-calendar/"
+     },
+     {
+      "name": "Trading Economics 11/3",
+      "url": "https://tradingeconomics.com/united-states/job-offers"
+     },
+     {
+      "name": "VerifiedInvesting 11/3",
+      "url": "https://verifiedinvesting.com/blogs/us-economic-metrics/jolts-september-2026"
+     },
+     {
+      "name": "Helious 11/3",
+      "url": "https://helious.io/news/rel-ev-1a7b104f233025a0/jolts-job-openings-7-52m"
      }
-    ]
+    ],
+    "result": {
+     "actual": "752만",
+     "est": "710만",
+     "prev": "719만",
+     "dir": "up",
+     "head": "9월 구인 752만 건(컨센서스 710만·8월 719만으로 상향 수정) · 채용 540만 · 자발적 이직 337만(이직률 2.1%) · 해고 164만",
+     "note": "BLS 11/3: 9월 구인 752만 3,000건(컨센서스 710만 건). 8월 구인은 707만 9,000건에서 719만 건으로 11만 1,000건 상향 수정. 채용 540만 2,000건, 자발적 이직 336만 5,000건(이직률 2.1%, 8월 1.9%), 해고·감원 164만 1,000건. 발표일(11/3) S&P500 7,569(+0.36%)·나스닥 25,372(+0.83%)·10년물 4.95%(+6bp).",
+     "rows": [
+      [
+       "구인 건수",
+       "752만",
+       "710만",
+       "8월 719만(707만 9,000에서 상향 수정)"
+      ],
+      [
+       "채용",
+       "540만",
+       "—",
+       "채용률 3.4%"
+      ],
+      [
+       "자발적 이직",
+       "337만",
+       "—",
+       "이직률 2.1%(8월 1.9%)"
+      ],
+      [
+       "해고·감원",
+       "164만",
+       "—",
+       "8월 164만"
+      ]
+     ],
+     "trend": [
+      {
+       "l": "8월",
+       "v": 719
+      },
+      {
+       "l": "9월",
+       "v": 752
+      }
+     ]
+    }
    },
    {
     "t": "earn",
@@ -1989,7 +2053,7 @@
     "tier": 1,
     "ticker": "AMD",
     "time": "새벽 6시 (현지 11/3 장후)",
-    "why": "주도 · 반도체. 데이터센터(인스팅트 GPU·에픽 CPU) 매출과 4분기 매출 가이던스가 발표됩니다. 현지 11/3 장 마감 후 발표.",
+    "why": "주도 · 반도체. 데이터센터(인스팅트 GPU·에픽 CPU) 매출과 4분기 매출 가이던스가 발표됩니다. 현지 11/3 장 마감 후 발표. 발표(현지 11/3 장후): 3분기 매출 133억 7,700만 달러(전년比 +45%, 전분기比 +16%), 비GAAP 매출총이익률 56%. 데이터센터 매출 85억 달러(+97%), 클라이언트·게이밍 37억 달러(-8%, 클라이언트 29억 달러 +7%·게이밍 7억 7,300만 달러 -40%), 임베디드 11억 달러(+29%). 4분기 매출 가이던스 약 170억 달러(±3%), 비GAAP 매출총이익률 약 55%.",
     "watch": "EPS·매출 vs 컨센서스, 데이터센터 매출, 4분기 가이던스",
     "stocks": [
      [
@@ -2005,6 +2069,14 @@
      {
       "name": "Nasdaq 실적 캘린더",
       "url": "https://www.nasdaq.com/market-activity/earnings"
+     },
+     {
+      "name": "AMD 보도자료(GlobeNewswire 11/3)",
+      "url": "https://www.globenewswire.com/news-release/2026/11/03/3394824/0/en/amd-reports-third-quarter-2026-financial-results.html"
+     },
+     {
+      "name": "StockTitan 11/3",
+      "url": "https://www.stocktitan.net/news/AMD/amd-reports-third-quarter-2026-financial-7j6jzo29buqw.html"
      }
     ]
    }
@@ -2160,14 +2232,17 @@
     "n": "미시간대 소비자심리·기대인플레이션(예비치)",
     "imp": 1,
     "time": "새벽 0시",
-    "est": true,
-    "why": "11월 예비치. 소비자 심리 지수와 1년·5년 기대인플레이션이 발표됩니다. 현지 11/6 오전 10시 발표 예정(한국시간 11/7 0시). 미시간대 공식 일정 확정 전입니다.",
+    "why": "11월 예비치. 소비자 심리 지수와 1년·5년 기대인플레이션이 발표됩니다. 현지 11/6 오전 10시 발표(한국시간 11/7 0시). 미시간대 공식 2026년 일정으로 확정. 10월 확정치는 48.0이었습니다.",
     "watch": "기대인플레이션 1년·5년",
     "stocks": [],
     "src": [
      {
       "name": "미시간대",
       "url": "https://data.sca.isr.umich.edu/"
+     },
+     {
+      "name": "미시간대 2026년 발표 일정(공식)",
+      "url": "https://data.sca.isr.umich.edu/fetchdoc.php?docid=79628"
      },
      {
       "name": "financecalendar",
@@ -2380,14 +2455,17 @@
     "n": "미시간대 소비자심리·기대인플레이션(확정치)",
     "imp": 1,
     "time": "새벽 0시",
-    "est": true,
-    "why": "11월 확정치. 현지 11/20 오전 10시 발표 예정(한국시간 11/21 0시). 미시간대 공식 일정 미게시로 예상일입니다. thetrading.tools 경제캘린더(FRED 릴리스 91 기준)도 같은 날짜로 표기.",
+    "why": "11월 확정치. 현지 11/20 오전 10시 발표(한국시간 11/21 0시). 미시간대 공식 2026년 일정으로 확정.",
     "watch": "기대인플레이션 1년·5년",
     "stocks": [],
     "src": [
      {
       "name": "미시간대",
       "url": "https://data.sca.isr.umich.edu/"
+     },
+     {
+      "name": "미시간대 2026년 발표 일정(공식)",
+      "url": "https://data.sca.isr.umich.edu/fetchdoc.php?docid=79628"
      },
      {
       "name": "financecalendar.com",
@@ -2699,14 +2777,17 @@
     "n": "미시간대 소비자심리·기대인플레이션(예비치)",
     "imp": 1,
     "time": "새벽 0시",
-    "est": true,
-    "why": "12월 예비치. 현지 12/4 오전 10시 발표 예정(한국시간 12/5 0시, 11월 고용보고서 발표 후 1시간 30분 뒤). 미시간대 공식 일정 미게시로 예상일입니다.",
+    "why": "12월 예비치. 현지 12/4 오전 10시 발표(한국시간 12/5 0시, 11월 고용보고서 발표 후 1시간 30분 뒤). 미시간대 공식 2026년 일정으로 확정.",
     "watch": "기대인플레이션 1년·5년",
     "stocks": [],
     "src": [
      {
       "name": "미시간대",
       "url": "https://data.sca.isr.umich.edu/"
+     },
+     {
+      "name": "미시간대 2026년 발표 일정(공식)",
+      "url": "https://data.sca.isr.umich.edu/fetchdoc.php?docid=79628"
      },
      {
       "name": "financecalendar.com",
@@ -2899,14 +2980,17 @@
     "n": "미시간대 소비자심리·기대인플레이션(확정치)",
     "imp": 1,
     "time": "새벽 0시",
-    "est": true,
-    "why": "12월 확정치. 현지 12/18 오전 10시 발표 예정(한국시간 12/19 0시). 미시간대 공식 일정 미게시로 예상일입니다(financecalendar 표기). thetrading.tools 경제캘린더(FRED 릴리스 91 기준)도 같은 날짜로 표기.",
+    "why": "12월 확정치. 현지 12/18 오전 10시 발표(한국시간 12/19 0시). 미시간대 공식 2026년 일정으로 확정.",
     "watch": "기대인플레이션 1년·5년",
     "stocks": [],
     "src": [
      {
       "name": "미시간대",
       "url": "https://data.sca.isr.umich.edu/"
+     },
+     {
+      "name": "미시간대 2026년 발표 일정(공식)",
+      "url": "https://data.sca.isr.umich.edu/fetchdoc.php?docid=79628"
      },
      {
       "name": "financecalendar.com",

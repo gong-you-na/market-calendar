@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03 06:16 KST",
+ "updated": "2026-11-04 06:30 KST",
  "chart_no": "2026-W44 실적 위크",
  "period_label": "10/28(수)~11/4(화) 발표분 · 한국시간",
  "period_end_label": "11/5(목) 종료",
@@ -536,7 +536,43 @@
     "수주잔고",
     "전기 부문 영업이익률"
    ],
-   "theme": "전력·전기 인프라"
+   "theme": "전력·전기 인프라",
+   "result": {
+    "rows": [
+     [
+      "매출",
+      "89억 4,700만 달러",
+      "전년비 +28% · 유기적 +19%"
+     ],
+     [
+      "수주잔고",
+      "전년비 +33%",
+      "전기 미주 12개월 누적 수주 +39%"
+     ],
+     [
+      "전기 미주 영업이익률",
+      "29.8%",
+      "부문 전체 25.3%"
+     ],
+     [
+      "2026년 유기적 성장 가이던스",
+      "13~15%",
+      "기존 11~13% · 조정 EPS 13.70~13.80달러"
+     ]
+    ],
+    "src": [
+     {
+      "name": "Eaton 보도자료(BusinessWire 11/3, 01net 게재)",
+      "date": "2026-11-03",
+      "url": "https://www.01net.it/eaton-reports-record-third-quarter-2026-results-with-strong-organic-growth-accelerating-record-orders-and-backlog-raises-organic-growth-guidance/"
+     },
+     {
+      "name": "Investing.com",
+      "date": "2026-11-03",
+      "url": "https://za.investing.com/news/stock-market-news/eaton-q3-2026-slides-record-results-drive-third-guidance-raise-93CH-4547105"
+     }
+    ]
+   }
   },
   "AMD": {
    "code": "AMD",
@@ -550,7 +586,38 @@
     "Instinct GPU 관련 언급",
     "4분기 매출 가이던스"
    ],
-   "theme": "반도체"
+   "theme": "반도체",
+   "result": {
+    "rows": [
+     [
+      "데이터센터 부문 매출",
+      "85억 달러",
+      "전년비 +97% · 전체 매출 133억 7,700만(+45%)"
+     ],
+     [
+      "4분기 매출 가이던스",
+      "약 170억 달러(±3%)",
+      "비GAAP 매출총이익률 약 55%"
+     ],
+     [
+      "클라이언트·게이밍 / 임베디드",
+      "37억 / 11억 달러",
+      "전년비 -8% / +29%"
+     ]
+    ],
+    "src": [
+     {
+      "name": "AMD 보도자료(GlobeNewswire)",
+      "date": "2026-11-03",
+      "url": "https://www.globenewswire.com/news-release/2026/11/03/3394824/0/en/amd-reports-third-quarter-2026-financial-results.html"
+     },
+     {
+      "name": "StockTitan",
+      "date": "2026-11-03",
+      "url": "https://www.stocktitan.net/news/AMD/amd-reports-third-quarter-2026-financial-7j6jzo29buqw.html"
+     }
+    ]
+   }
   },
   "SNDK": {
    "code": "SNDK",
