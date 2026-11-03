@@ -4,68 +4,32 @@
  "tz": "Asia/Seoul",
  "tiers": {
   "1": {
-   "label": "1군 Core",
-   "short": "1군"
+   "label": "주도",
+   "short": "주도",
+   "name": "주도",
+   "desc": "포트폴리오의 중심 — 성장을 이끄는 기업"
   },
   "2": {
-   "label": "2군 Steady",
-   "short": "2군"
+   "label": "방어",
+   "short": "방어",
+   "name": "방어",
+   "desc": "시장이 흔들릴 때 버팀목 — 금융·헬스케어·배당"
   },
   "3": {
-   "label": "3군 Challenge",
-   "short": "3군"
+   "label": "탐색",
+   "short": "탐색",
+   "name": "탐색",
+   "desc": "잃어도 괜찮은 소액으로 가능성을 지켜보는 기업"
   }
  },
  "companies": [
   {
-   "ticker": "GOOGL",
-   "name": "구글",
-   "en": "Alphabet",
-   "tier": 1,
-   "theme": "하이퍼스케일러",
-   "rt": "post"
-  },
-  {
-   "ticker": "AMZN",
-   "name": "아마존",
-   "en": "Amazon",
-   "tier": 1,
-   "theme": "하이퍼스케일러",
-   "rt": "post"
-  },
-  {
-   "ticker": "AMD",
-   "name": "AMD",
-   "en": "AMD",
+   "ticker": "MRVL",
+   "name": "마벨 테크",
+   "en": "Marvell Technology",
    "tier": 1,
    "theme": "반도체",
    "rt": "post"
-  },
-  {
-   "ticker": "NVDA",
-   "name": "엔비디아",
-   "en": "NVIDIA",
-   "tier": 1,
-   "theme": "반도체",
-   "rt": "post"
-  },
-  {
-   "ticker": "005930",
-   "name": "삼성전자",
-   "en": "Samsung Electronics",
-   "tier": 1,
-   "theme": "반도체",
-   "mkt": "kr",
-   "yf": "005930.KS"
-  },
-  {
-   "ticker": "000660",
-   "name": "SK하이닉스",
-   "en": "SK hynix",
-   "tier": 1,
-   "theme": "반도체",
-   "mkt": "kr",
-   "yf": "000660.KS"
   },
   {
    "ticker": "MU",
@@ -84,12 +48,13 @@
    "rt": "post"
   },
   {
-   "ticker": "MRVL",
-   "name": "마벨 테크",
-   "en": "Marvell Technology",
+   "ticker": "005930",
+   "name": "삼성전자",
+   "en": "Samsung Electronics",
    "tier": 1,
    "theme": "반도체",
-   "rt": "post"
+   "mkt": "kr",
+   "yf": "005930.KS"
   },
   {
    "ticker": "SNDK",
@@ -100,112 +65,68 @@
    "rt": "post"
   },
   {
-   "ticker": "GEV",
-   "name": "GE버노바",
-   "en": "GE Vernova",
+   "ticker": "NVDA",
+   "name": "엔비디아",
+   "en": "NVIDIA",
    "tier": 1,
-   "theme": "전력·전기 인프라",
-   "rt": "pre"
+   "theme": "반도체",
+   "rt": "post"
   },
   {
-   "ticker": "ETN",
-   "name": "이튼",
-   "en": "Eaton",
+   "ticker": "AMD",
+   "name": "AMD",
+   "en": "AMD",
    "tier": 1,
-   "theme": "전력·전기 인프라",
-   "rt": "pre"
+   "theme": "반도체",
+   "rt": "post"
   },
   {
-   "ticker": "009150",
-   "name": "삼성전기",
-   "en": "Samsung Electro-Mechanics",
+   "ticker": "000660",
+   "name": "SK하이닉스",
+   "en": "SK hynix",
    "tier": 1,
-   "theme": "전력·전기 인프라",
+   "theme": "반도체",
    "mkt": "kr",
-   "yf": "009150.KS"
+   "yf": "000660.KS"
+  },
+  {
+   "ticker": "GOOGL",
+   "name": "구글",
+   "en": "Alphabet",
+   "tier": 1,
+   "theme": "빅테크·하이퍼스케일러",
+   "rt": "post"
+  },
+  {
+   "ticker": "MSFT",
+   "name": "마이크로소프트",
+   "en": "Microsoft",
+   "tier": 1,
+   "theme": "빅테크·하이퍼스케일러",
+   "rt": "post"
+  },
+  {
+   "ticker": "META",
+   "name": "메타",
+   "en": "Meta Platforms",
+   "tier": 1,
+   "theme": "빅테크·하이퍼스케일러",
+   "rt": "post"
+  },
+  {
+   "ticker": "AMZN",
+   "name": "아마존",
+   "en": "Amazon",
+   "tier": 1,
+   "theme": "빅테크·하이퍼스케일러",
+   "rt": "post"
   },
   {
    "ticker": "PLTR",
    "name": "팔란티어",
    "en": "Palantir",
    "tier": 1,
-   "theme": "AI 소프트웨어·데이터",
-   "rt": "post"
-  },
-  {
-   "ticker": "017670",
-   "name": "SK텔레콤",
-   "en": "SK Telecom",
-   "tier": 1,
-   "theme": "AI 인프라",
-   "mkt": "kr",
-   "yf": "017670.KS"
-  },
-  {
-   "ticker": "DELL",
-   "name": "델 테크놀로지",
-   "en": "Dell Technologies",
-   "tier": 1,
-   "theme": "AI 인프라",
-   "rt": "post"
-  },
-  {
-   "ticker": "005380",
-   "name": "현대차",
-   "en": "Hyundai Motor",
-   "tier": 1,
-   "theme": "피지컬 AI",
-   "mkt": "kr",
-   "yf": "005380.KS"
-  },
-  {
-   "ticker": "012330",
-   "name": "현대모비스",
-   "en": "Hyundai Mobis",
-   "tier": 1,
-   "theme": "피지컬 AI",
-   "mkt": "kr",
-   "yf": "012330.KS"
-  },
-  {
-   "ticker": "066570",
-   "name": "LG전자",
-   "en": "LG Electronics",
-   "tier": 1,
-   "theme": "피지컬 AI",
-   "mkt": "kr",
-   "yf": "066570.KS"
-  },
-  {
-   "ticker": "TSLA",
-   "name": "테슬라",
-   "en": "Tesla",
-   "tier": 1,
-   "theme": "피지컬 AI·로봇",
-   "rt": "post"
-  },
-  {
-   "ticker": "JPM",
-   "name": "JP모건",
-   "en": "JPMorgan",
-   "tier": 2,
-   "theme": "금융",
-   "rt": "pre"
-  },
-  {
-   "ticker": "LLY",
-   "name": "일라이 릴리",
-   "en": "Eli Lilly",
-   "tier": 2,
-   "theme": "헬스케어",
-   "rt": "pre"
-  },
-  {
-   "ticker": "INTC",
-   "name": "인텔",
-   "en": "Intel",
-   "tier": 3,
-   "theme": "반도체(고변동)",
+   "theme": "AI 소프트웨어·보안",
    "rt": "post"
   },
   {
@@ -213,7 +134,7 @@
    "name": "네이버",
    "en": "NAVER",
    "tier": 3,
-   "theme": "AI 소프트웨어·데이터",
+   "theme": "AI 소프트웨어·보안",
    "mkt": "kr",
    "yf": "035420.KS"
   },
@@ -222,7 +143,15 @@
    "name": "세일즈포스",
    "en": "Salesforce",
    "tier": 3,
-   "theme": "AI 소프트웨어·데이터",
+   "theme": "AI 소프트웨어·보안",
+   "rt": "post"
+  },
+  {
+   "ticker": "CRWD",
+   "name": "크라우드스트라이크",
+   "en": "CrowdStrike",
+   "tier": 3,
+   "theme": "AI 소프트웨어·보안",
    "rt": "post"
   },
   {
@@ -230,8 +159,125 @@
    "name": "템퍼스AI",
    "en": "Tempus AI",
    "tier": 3,
-   "theme": "AI 소프트웨어·데이터",
+   "theme": "AI 소프트웨어·보안",
    "rt": "post"
+  },
+  {
+   "ticker": "PANW",
+   "name": "팔로알토",
+   "en": "Palo Alto Networks",
+   "tier": 3,
+   "theme": "AI 소프트웨어·보안",
+   "rt": "post"
+  },
+  {
+   "ticker": "009150",
+   "name": "삼성전기",
+   "en": "Samsung Electro-Mechanics",
+   "tier": 1,
+   "theme": "전력·에너지 인프라",
+   "mkt": "kr",
+   "yf": "009150.KS"
+  },
+  {
+   "ticker": "ETN",
+   "name": "이튼",
+   "en": "Eaton",
+   "tier": 1,
+   "theme": "전력·에너지 인프라",
+   "rt": "pre"
+  },
+  {
+   "ticker": "GEV",
+   "name": "GE버노바",
+   "en": "GE Vernova",
+   "tier": 1,
+   "theme": "전력·에너지 인프라",
+   "rt": "pre"
+  },
+  {
+   "ticker": "BE",
+   "name": "블룸 에너지",
+   "en": "Bloom Energy",
+   "tier": 3,
+   "theme": "전력·에너지 인프라",
+   "rt": "post"
+  },
+  {
+   "ticker": "OKLO",
+   "name": "오클로",
+   "en": "Oklo",
+   "tier": 3,
+   "theme": "전력·에너지 인프라",
+   "rt": "post"
+  },
+  {
+   "ticker": "DELL",
+   "name": "델 테크놀로지",
+   "en": "Dell Technologies",
+   "tier": 1,
+   "theme": "AI 인프라·통신",
+   "rt": "post"
+  },
+  {
+   "ticker": "017670",
+   "name": "SK텔레콤",
+   "en": "SK Telecom",
+   "tier": 1,
+   "theme": "AI 인프라·통신",
+   "mkt": "kr",
+   "yf": "017670.KS"
+  },
+  {
+   "ticker": "LITE",
+   "name": "루멘텀",
+   "en": "Lumentum",
+   "tier": 3,
+   "theme": "AI 인프라·통신",
+   "rt": "post"
+  },
+  {
+   "ticker": "IREN",
+   "name": "아이렌",
+   "en": "IREN",
+   "tier": 3,
+   "theme": "AI 인프라·통신",
+   "rt": "post"
+  },
+  {
+   "ticker": "TSLA",
+   "name": "테슬라",
+   "en": "Tesla",
+   "tier": 1,
+   "theme": "피지컬 AI·모빌리티",
+   "rt": "post"
+  },
+  {
+   "ticker": "012330",
+   "name": "현대모비스",
+   "en": "Hyundai Mobis",
+   "tier": 1,
+   "theme": "피지컬 AI·모빌리티",
+   "mkt": "kr",
+   "yf": "012330.KS"
+  },
+  {
+   "ticker": "005380",
+   "name": "현대차",
+   "en": "Hyundai Motor",
+   "tier": 1,
+   "theme": "피지컬 AI·모빌리티",
+   "mkt": "kr",
+   "yf": "005380.KS"
+  },
+  {
+   "ticker": "066570",
+   "name": "LG전자",
+   "en": "LG Electronics",
+   "tier": 1,
+   "theme": "피지컬 AI·모빌리티",
+   "mkt": "kr",
+   "yf": "066570.KS"
   },
   {
    "ticker": "RKLB",
@@ -251,44 +297,28 @@
    "next_date": "2026-10-20"
   },
   {
+   "ticker": "JPM",
+   "name": "JP모건",
+   "en": "JPMorgan",
+   "tier": 2,
+   "theme": "금융·핀테크",
+   "rt": "pre"
+  },
+  {
    "ticker": "HOOD",
    "name": "로빈후드",
    "en": "Robinhood",
    "tier": 3,
-   "theme": "핀테크·디지털자산",
+   "theme": "금융·핀테크",
    "rt": "post"
   },
   {
-   "ticker": "IREN",
-   "name": "아이렌",
-   "en": "IREN",
-   "tier": 3,
-   "theme": "AI 인프라",
-   "rt": "post"
-  },
-  {
-   "ticker": "BE",
-   "name": "블룸 에너지",
-   "en": "Bloom Energy",
-   "tier": 3,
-   "theme": "전력",
-   "rt": "post"
-  },
-  {
-   "ticker": "OKLO",
-   "name": "오클로",
-   "en": "Oklo",
-   "tier": 3,
-   "theme": "원전",
-   "rt": "post"
-  },
-  {
-   "ticker": "LITE",
-   "name": "루멘텀",
-   "en": "Lumentum",
-   "tier": 3,
-   "theme": "광통신",
-   "rt": "post"
+   "ticker": "LLY",
+   "name": "일라이 릴리",
+   "en": "Eli Lilly",
+   "tier": 2,
+   "theme": "헬스케어",
+   "rt": "pre"
   }
  ],
  "market": [

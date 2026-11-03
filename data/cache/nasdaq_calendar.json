@@ -5,20 +5,23 @@
   "AVGO",
   "BE",
   "CRM",
+  "CRWD",
   "DELL",
   "ETN",
   "GEV",
   "GOOGL",
   "HOOD",
-  "INTC",
   "IREN",
   "JPM",
   "LITE",
   "LLY",
+  "META",
   "MRVL",
+  "MSFT",
   "MU",
   "NVDA",
   "OKLO",
+  "PANW",
   "PLTR",
   "RKLB",
   "SNDK",
@@ -26,7 +29,166 @@
   "TEM",
   "TSLA"
  ],
- "2026-10-20": [],
+ "2026-11-02": [
+  {
+   "eps": "$0.18",
+   "surprise": "N/A",
+   "time": "time-after-hours",
+   "symbol": "PLTR",
+   "name": "Palantir Technologies Inc.",
+   "marketCap": "$442,242,073,000",
+   "fiscalQuarterEnding": "Sep/2026",
+   "epsForecast": "$0.32",
+   "noOfEsts": "10"
+  },
+  {
+   "eps": "($0.31)",
+   "surprise": "N/A",
+   "time": "time-pre-market",
+   "symbol": "TEM",
+   "name": "Tempus AI, Inc.",
+   "marketCap": "$13,111,985,200",
+   "fiscalQuarterEnding": "Sep/2026",
+   "epsForecast": "($0.32)",
+   "noOfEsts": "4"
+  }
+ ],
+ "2026-10-30": [],
+ "2026-10-29": [
+  {
+   "eps": "$1.89",
+   "surprise": "-5.97",
+   "time": "time-not-supplied",
+   "symbol": "AMZN",
+   "name": "Amazon.com, Inc.",
+   "marketCap": "$2,592,490,390,000",
+   "fiscalQuarterEnding": "Sep/2026",
+   "epsForecast": "$2.01",
+   "noOfEsts": "14"
+  },
+  {
+   "eps": "$7.48",
+   "surprise": "39.03",
+   "time": "time-not-supplied",
+   "symbol": "LLY",
+   "name": "Eli Lilly and Company",
+   "marketCap": "$1,333,543,700,000",
+   "fiscalQuarterEnding": "Sep/2026",
+   "epsForecast": "$5.38",
+   "noOfEsts": "3"
+  },
+  {
+   "eps": "$48.92",
+   "surprise": "5.91",
+   "time": "time-not-supplied",
+   "symbol": "SNDK",
+   "name": "Sandisk Corporation",
+   "marketCap": "$167,256,179,000",
+   "fiscalQuarterEnding": "Sep/2026",
+   "epsForecast": "$46.19",
+   "noOfEsts": "4"
+  }
+ ],
+ "2026-10-28": [
+  {
+   "eps": "$4.89",
+   "surprise": "3.82",
+   "time": "time-not-supplied",
+   "symbol": "MSFT",
+   "name": "Microsoft Corporation",
+   "marketCap": "$3,875,805,070,000",
+   "fiscalQuarterEnding": "Sep/2026",
+   "epsForecast": "$4.71",
+   "noOfEsts": "14"
+  },
+  {
+   "eps": "$2.12",
+   "surprise": "-27.89",
+   "time": "time-not-supplied",
+   "symbol": "GOOGL",
+   "name": "Alphabet Inc.",
+   "marketCap": "$3,440,352,950,000",
+   "fiscalQuarterEnding": "Sep/2026",
+   "epsForecast": "$2.94",
+   "noOfEsts": "14"
+  },
+  {
+   "eps": "$4.81",
+   "surprise": "19.35",
+   "time": "time-not-supplied",
+   "symbol": "GEV",
+   "name": "GE Vernova Inc.",
+   "marketCap": "$227,058,516,000",
+   "fiscalQuarterEnding": "Sep/2026",
+   "epsForecast": "$4.03",
+   "noOfEsts": "7"
+  }
+ ],
+ "2026-10-27": [
+  {
+   "eps": "$0.60",
+   "surprise": "7.14",
+   "time": "time-not-supplied",
+   "symbol": "HOOD",
+   "name": "Robinhood Markets, Inc.",
+   "marketCap": "$76,532,752,000",
+   "fiscalQuarterEnding": "Sep/2026",
+   "epsForecast": "$0.56",
+   "noOfEsts": "8"
+  }
+ ],
+ "2026-10-26": [],
+ "2026-10-23": [],
+ "2026-10-22": [
+  {
+   "eps": "$0.76",
+   "surprise": "35.71",
+   "time": "time-not-supplied",
+   "symbol": "BE",
+   "name": "Bloom Energy Corporation",
+   "marketCap": "$60,068,569,000",
+   "fiscalQuarterEnding": "Sep/2026",
+   "epsForecast": "$0.56",
+   "noOfEsts": "5"
+  }
+ ],
+ "2026-10-21": [
+  {
+   "eps": "$0.20",
+   "surprise": "-9.09",
+   "time": "time-not-supplied",
+   "symbol": "TSLA",
+   "name": "Tesla, Inc. ",
+   "marketCap": "$1,580,352,140,000",
+   "fiscalQuarterEnding": "Sep/2026",
+   "epsForecast": "$0.22",
+   "noOfEsts": "10"
+  },
+  {
+   "eps": "$7.40",
+   "surprise": "13.5",
+   "time": "time-not-supplied",
+   "symbol": "META",
+   "name": "Meta Platforms, Inc.",
+   "marketCap": "$1,572,062,760,000",
+   "fiscalQuarterEnding": "Sep/2026",
+   "epsForecast": "$6.52",
+   "noOfEsts": "6"
+  }
+ ],
+ "2026-10-20": [
+  {
+   "eps": "$0.35",
+   "surprise": "250",
+   "time": "time-not-supplied",
+   "symbol": "SPCX",
+   "name": "Space Exploration Technologies Corp.",
+   "marketCap": "$1,829,640,860,000",
+   "fiscalQuarterEnding": "Sep/2026",
+   "epsForecast": "$0.10",
+   "noOfEsts": "9"
+  }
+ ],
  "2026-10-19": [],
  "2026-10-16": [],
  "2026-10-15": [],
@@ -38,7 +200,7 @@
    "time": "time-not-supplied",
    "symbol": "JPM",
    "name": "J P Morgan Chase & Co",
-   "marketCap": "$886,584,840,000",
+   "marketCap": "$895,915,070,000",
    "fiscalQuarterEnding": "Sep/2026",
    "epsForecast": "$5.94",
    "noOfEsts": "6"
@@ -59,7 +221,7 @@
    "time": "time-not-supplied",
    "symbol": "MU",
    "name": "Micron Technology, Inc.",
-   "marketCap": "$1,023,824,890,000",
+   "marketCap": "$1,001,015,350,000",
    "fiscalQuarterEnding": "Aug/2026",
    "epsForecast": "$31.41",
    "noOfEsts": "10"
@@ -91,7 +253,7 @@
    "time": "time-not-supplied",
    "symbol": "AVGO",
    "name": "Broadcom Inc.",
-   "marketCap": "$1,597,208,790,000",
+   "marketCap": "$1,556,585,250,000",
    "fiscalQuarterEnding": "Jul/2026",
    "epsForecast": "$2.83",
    "noOfEsts": "8"
@@ -99,12 +261,23 @@
  ],
  "2026-09-01": [
   {
+   "eps": "$0.53",
+   "surprise": "3.92",
+   "time": "time-not-supplied",
+   "symbol": "PANW",
+   "name": "Palo Alto Networks, Inc.",
+   "marketCap": "$299,443,782,000",
+   "fiscalQuarterEnding": "Jul/2026",
+   "epsForecast": "$0.51",
+   "noOfEsts": "14"
+  },
+  {
    "eps": "$6.76",
    "surprise": "43.22",
    "time": "time-not-supplied",
    "symbol": "DELL",
    "name": "Dell Technologies Inc.",
-   "marketCap": "$289,574,552,000",
+   "marketCap": "$269,775,356,000",
    "fiscalQuarterEnding": "Jul/2026",
    "epsForecast": "$4.72",
    "noOfEsts": "5"
@@ -119,7 +292,7 @@
    "time": "time-not-supplied",
    "symbol": "MRVL",
    "name": "Marvell Technology, Inc.",
-   "marketCap": "$207,904,227,000",
+   "marketCap": "$172,223,152,000",
    "fiscalQuarterEnding": "Jul/2026",
    "epsForecast": "$0.65",
    "noOfEsts": "8"
@@ -130,7 +303,7 @@
    "time": "time-not-supplied",
    "symbol": "IREN",
    "name": "IREN Limited",
-   "marketCap": "$11,219,933,200",
+   "marketCap": "$9,690,494,000",
    "fiscalQuarterEnding": "Jun/2026",
    "epsForecast": "($0.50)",
    "noOfEsts": "3"
@@ -143,9 +316,20 @@
    "time": "time-not-supplied",
    "symbol": "NVDA",
    "name": "NVIDIA Corporation",
-   "marketCap": "$5,231,868,900,000",
+   "marketCap": "$4,931,824,100,000",
    "fiscalQuarterEnding": "Jul/2026",
    "epsForecast": "$2.09",
+   "noOfEsts": "12"
+  },
+  {
+   "eps": "$0.01",
+   "surprise": "-80",
+   "time": "time-not-supplied",
+   "symbol": "CRWD",
+   "name": "CrowdStrike Holdings, Inc.",
+   "marketCap": "$256,424,002,000",
+   "fiscalQuarterEnding": "Jul/2026",
+   "epsForecast": "$0.05",
    "noOfEsts": "12"
   },
   {
@@ -154,7 +338,7 @@
    "time": "time-not-supplied",
    "symbol": "CRM",
    "name": "Salesforce, Inc.",
-   "marketCap": "$199,536,345,000",
+   "marketCap": "$188,606,906,000",
    "fiscalQuarterEnding": "Jul/2026",
    "epsForecast": "$2.35",
    "noOfEsts": "13"
@@ -177,7 +361,7 @@
    "time": "time-not-supplied",
    "symbol": "LITE",
    "name": "Lumentum Holdings Inc.",
-   "marketCap": "$75,592,303,000",
+   "marketCap": "$76,153,004,000",
    "fiscalQuarterEnding": "Jun/2026",
    "epsForecast": "$2.62",
    "noOfEsts": "5"
@@ -190,7 +374,7 @@
    "time": "time-not-supplied",
    "symbol": "RKLB",
    "name": "Rocket Lab Corporation",
-   "marketCap": "$32,241,739,800",
+   "marketCap": "$34,357,291,000",
    "fiscalQuarterEnding": "Jun/2026",
    "epsForecast": "($0.07)",
    "noOfEsts": "1"
@@ -203,7 +387,7 @@
    "time": "time-not-supplied",
    "symbol": "OKLO",
    "name": "Oklo Inc.",
-   "marketCap": "$5,067,120,600",
+   "marketCap": "$4,696,945,700",
    "fiscalQuarterEnding": "Jun/2026",
    "epsForecast": "($0.17)",
    "noOfEsts": "6"
@@ -217,7 +401,7 @@
    "time": "time-not-supplied",
    "symbol": "LLY",
    "name": "Eli Lilly and Company",
-   "marketCap": "$1,167,602,880,000",
+   "marketCap": "$1,333,543,700,000",
    "fiscalQuarterEnding": "Jun/2026",
    "epsForecast": "$6.01",
    "noOfEsts": "3"
@@ -228,7 +412,7 @@
    "time": "time-not-supplied",
    "symbol": "SNDK",
    "name": "Sandisk Corporation",
-   "marketCap": "$199,261,684,000",
+   "marketCap": "$167,256,179,000",
    "fiscalQuarterEnding": "Jun/2026",
    "epsForecast": "$33.28",
    "noOfEsts": "4"
@@ -241,7 +425,7 @@
    "time": "time-not-supplied",
    "symbol": "SPCX",
    "name": "Space Exploration Technologies Corp.",
-   "marketCap": "$2,008,234,720,000",
+   "marketCap": "$1,829,640,860,000",
    "fiscalQuarterEnding": "Jun/2026",
    "epsForecast": "($0.26)",
    "noOfEsts": "9"
@@ -252,7 +436,7 @@
    "time": "time-not-supplied",
    "symbol": "AMD",
    "name": "Advanced Micro Devices, Inc.",
-   "marketCap": "$878,353,190,000",
+   "marketCap": "$824,073,390,000",
    "fiscalQuarterEnding": "Jun/2026",
    "epsForecast": "$1.35",
    "noOfEsts": "13"
@@ -265,7 +449,7 @@
    "time": "time-not-supplied",
    "symbol": "PLTR",
    "name": "Palantir Technologies Inc.",
-   "marketCap": "$466,358,698,000",
+   "marketCap": "$442,242,073,000",
    "fiscalQuarterEnding": "Jun/2026",
    "epsForecast": "$0.28",
    "noOfEsts": "10"
@@ -278,7 +462,7 @@
    "time": "time-not-supplied",
    "symbol": "ETN",
    "name": "Eaton Corporation, PLC",
-   "marketCap": "$152,058,593,000",
+   "marketCap": "$143,696,347,000",
    "fiscalQuarterEnding": "Jun/2026",
    "epsForecast": "$3.08",
    "noOfEsts": "9"
@@ -291,7 +475,7 @@
    "time": "time-not-supplied",
    "symbol": "AMZN",
    "name": "Amazon.com, Inc.",
-   "marketCap": "$2,830,867,890,000",
+   "marketCap": "$2,592,490,390,000",
    "fiscalQuarterEnding": "Jun/2026",
    "epsForecast": "$1.83",
    "noOfEsts": "13"
@@ -302,7 +486,7 @@
    "time": "time-not-supplied",
    "symbol": "TEM",
    "name": "Tempus AI, Inc.",
-   "marketCap": "$11,681,323,000",
+   "marketCap": "$13,111,985,200",
    "fiscalQuarterEnding": "Jun/2026",
    "epsForecast": "($0.41)",
    "noOfEsts": "4"
@@ -310,12 +494,34 @@
  ],
  "2026-07-29": [
   {
+   "eps": "$4.74",
+   "surprise": "12.59",
+   "time": "time-not-supplied",
+   "symbol": "MSFT",
+   "name": "Microsoft Corporation",
+   "marketCap": "$3,875,805,070,000",
+   "fiscalQuarterEnding": "Jun/2026",
+   "epsForecast": "$4.21",
+   "noOfEsts": "15"
+  },
+  {
+   "eps": "$6.18",
+   "surprise": "-12.96",
+   "time": "time-not-supplied",
+   "symbol": "META",
+   "name": "Meta Platforms, Inc.",
+   "marketCap": "$1,572,062,760,000",
+   "fiscalQuarterEnding": "Jun/2026",
+   "epsForecast": "$7.10",
+   "noOfEsts": "13"
+  },
+  {
    "eps": "$0.62",
    "surprise": "40.91",
    "time": "time-not-supplied",
    "symbol": "HOOD",
    "name": "Robinhood Markets, Inc.",
-   "marketCap": "$86,779,421,000",
+   "marketCap": "$76,532,752,000",
    "fiscalQuarterEnding": "Jun/2026",
    "epsForecast": "$0.44",
    "noOfEsts": "6"
@@ -328,7 +534,7 @@
    "time": "time-not-supplied",
    "symbol": "BE",
    "name": "Bloom Energy Corporation",
-   "marketCap": "$66,627,977,000",
+   "marketCap": "$60,068,569,000",
    "fiscalQuarterEnding": "Jun/2026",
    "epsForecast": "$0.23",
    "noOfEsts": "3"
@@ -336,19 +542,7 @@
  ],
  "2026-07-27": [],
  "2026-07-24": [],
- "2026-07-23": [
-  {
-   "eps": "$0.30",
-   "surprise": "200",
-   "time": "time-not-supplied",
-   "symbol": "INTC",
-   "name": "Intel Corporation",
-   "marketCap": "$486,384,959,000",
-   "fiscalQuarterEnding": "Jun/2026",
-   "epsForecast": "$0.10",
-   "noOfEsts": "10"
-  }
- ],
+ "2026-07-23": [],
  "2026-07-22": [
   {
    "eps": "$9.11",
@@ -356,7 +550,7 @@
    "time": "time-not-supplied",
    "symbol": "GOOGL",
    "name": "Alphabet Inc.",
-   "marketCap": "$4,209,321,440,000",
+   "marketCap": "$3,440,352,950,000",
    "fiscalQuarterEnding": "Jun/2026",
    "epsForecast": "$2.88",
    "noOfEsts": "12"
@@ -367,7 +561,7 @@
    "time": "time-not-supplied",
    "symbol": "TSLA",
    "name": "Tesla, Inc. ",
-   "marketCap": "$1,453,670,400,000",
+   "marketCap": "$1,580,352,140,000",
    "fiscalQuarterEnding": "Jun/2026",
    "epsForecast": "$0.32",
    "noOfEsts": "10"
@@ -378,7 +572,7 @@
    "time": "time-not-supplied",
    "symbol": "GEV",
    "name": "GE Vernova Inc.",
-   "marketCap": "$241,948,082,000",
+   "marketCap": "$227,058,516,000",
    "fiscalQuarterEnding": "Jun/2026",
    "epsForecast": "$3.17",
    "noOfEsts": "8"
@@ -396,7 +590,7 @@
    "time": "time-not-supplied",
    "symbol": "JPM",
    "name": "J P Morgan Chase & Co",
-   "marketCap": "$886,584,840,000",
+   "marketCap": "$895,915,070,000",
    "fiscalQuarterEnding": "Jun/2026",
    "epsForecast": "$5.59",
    "noOfEsts": "5"
@@ -422,7 +616,7 @@
    "time": "time-not-supplied",
    "symbol": "MU",
    "name": "Micron Technology, Inc.",
-   "marketCap": "$1,023,824,890,000",
+   "marketCap": "$1,001,015,350,000",
    "fiscalQuarterEnding": "May/2026",
    "epsForecast": "$20.98",
    "noOfEsts": "8"
@@ -449,13 +643,36 @@
    "time": "time-not-supplied",
    "symbol": "AVGO",
    "name": "Broadcom Inc.",
-   "marketCap": "$1,597,208,790,000",
+   "marketCap": "$1,556,585,250,000",
    "fiscalQuarterEnding": "Apr/2026",
    "epsForecast": "$2.02",
    "noOfEsts": "10"
+  },
+  {
+   "eps": "$0.17",
+   "surprise": "30.77",
+   "time": "time-not-supplied",
+   "symbol": "CRWD",
+   "name": "CrowdStrike Holdings, Inc.",
+   "marketCap": "$256,424,002,000",
+   "fiscalQuarterEnding": "Apr/2026",
+   "epsForecast": "$0.13",
+   "noOfEsts": "14"
   }
  ],
- "2026-06-02": [],
+ "2026-06-02": [
+  {
+   "eps": "$0.32",
+   "surprise": "-25.58",
+   "time": "time-not-supplied",
+   "symbol": "PANW",
+   "name": "Palo Alto Networks, Inc.",
+   "marketCap": "$299,443,782,000",
+   "fiscalQuarterEnding": "Apr/2026",
+   "epsForecast": "$0.43",
+   "noOfEsts": "15"
+  }
+ ],
  "2026-06-01": [],
  "2026-05-29": [],
  "2026-05-28": [
@@ -465,7 +682,7 @@
    "time": "time-not-supplied",
    "symbol": "DELL",
    "name": "Dell Technologies Inc.",
-   "marketCap": "$289,574,552,000",
+   "marketCap": "$269,775,356,000",
    "fiscalQuarterEnding": "Apr/2026",
    "epsForecast": "$2.79",
    "noOfEsts": "5"
@@ -473,26 +690,26 @@
  ],
  "2026-05-27": [
   {
-   "eps": "$0.59",
-   "surprise": "-3.28",
-   "time": "time-not-supplied",
-   "symbol": "MRVL",
-   "name": "Marvell Technology, Inc.",
-   "marketCap": "$207,904,227,000",
-   "fiscalQuarterEnding": "Apr/2026",
-   "epsForecast": "$0.61",
-   "noOfEsts": "12"
-  },
-  {
    "eps": "$3.05",
    "surprise": "32.61",
    "time": "time-not-supplied",
    "symbol": "CRM",
    "name": "Salesforce, Inc.",
-   "marketCap": "$199,536,345,000",
+   "marketCap": "$188,606,906,000",
    "fiscalQuarterEnding": "Apr/2026",
    "epsForecast": "$2.30",
    "noOfEsts": "13"
+  },
+  {
+   "eps": "$0.59",
+   "surprise": "-3.28",
+   "time": "time-not-supplied",
+   "symbol": "MRVL",
+   "name": "Marvell Technology, Inc.",
+   "marketCap": "$172,223,152,000",
+   "fiscalQuarterEnding": "Apr/2026",
+   "epsForecast": "$0.61",
+   "noOfEsts": "12"
   }
  ],
  "2026-05-26": [],
@@ -506,7 +723,7 @@
    "time": "time-not-supplied",
    "symbol": "NVDA",
    "name": "NVIDIA Corporation",
-   "marketCap": "$5,231,868,900,000",
+   "marketCap": "$4,931,824,100,000",
    "fiscalQuarterEnding": "Apr/2026",
    "epsForecast": "",
    "noOfEsts": "N/A"
@@ -524,7 +741,7 @@
    "time": "time-not-supplied",
    "symbol": "OKLO",
    "name": "Oklo Inc.",
-   "marketCap": "$5,067,120,600",
+   "marketCap": "$4,696,945,700",
    "fiscalQuarterEnding": "Mar/2026",
    "epsForecast": "($0.20)",
    "noOfEsts": "5"
@@ -539,7 +756,7 @@
    "time": "time-not-supplied",
    "symbol": "RKLB",
    "name": "Rocket Lab Corporation",
-   "marketCap": "$32,241,739,800",
+   "marketCap": "$34,357,291,000",
    "fiscalQuarterEnding": "Mar/2026",
    "epsForecast": "($0.07)",
    "noOfEsts": "3"
@@ -550,7 +767,7 @@
    "time": "time-not-supplied",
    "symbol": "IREN",
    "name": "IREN Limited",
-   "marketCap": "$11,219,933,200",
+   "marketCap": "$9,690,494,000",
    "fiscalQuarterEnding": "Mar/2026",
    "epsForecast": "($0.18)",
    "noOfEsts": "3"
@@ -564,7 +781,7 @@
    "time": "time-not-supplied",
    "symbol": "AMD",
    "name": "Advanced Micro Devices, Inc.",
-   "marketCap": "$878,353,190,000",
+   "marketCap": "$824,073,390,000",
    "fiscalQuarterEnding": "Mar/2026",
    "epsForecast": "$1.06",
    "noOfEsts": "11"
@@ -575,7 +792,7 @@
    "time": "time-not-supplied",
    "symbol": "ETN",
    "name": "Eaton Corporation, PLC",
-   "marketCap": "$152,058,593,000",
+   "marketCap": "$143,696,347,000",
    "fiscalQuarterEnding": "Mar/2026",
    "epsForecast": "$2.74",
    "noOfEsts": "9"
@@ -586,7 +803,7 @@
    "time": "time-not-supplied",
    "symbol": "LITE",
    "name": "Lumentum Holdings Inc.",
-   "marketCap": "$75,592,303,000",
+   "marketCap": "$76,153,004,000",
    "fiscalQuarterEnding": "Mar/2026",
    "epsForecast": "$1.81",
    "noOfEsts": "6"
@@ -597,7 +814,7 @@
    "time": "time-not-supplied",
    "symbol": "TEM",
    "name": "Tempus AI, Inc.",
-   "marketCap": "$11,681,323,000",
+   "marketCap": "$13,111,985,200",
    "fiscalQuarterEnding": "Mar/2026",
    "epsForecast": "($0.47)",
    "noOfEsts": "5"
@@ -610,7 +827,7 @@
    "time": "time-not-supplied",
    "symbol": "PLTR",
    "name": "Palantir Technologies Inc.",
-   "marketCap": "$466,358,698,000",
+   "marketCap": "$442,242,073,000",
    "fiscalQuarterEnding": "Mar/2026",
    "epsForecast": "$0.22",
    "noOfEsts": "9"
@@ -624,7 +841,7 @@
    "time": "time-not-supplied",
    "symbol": "LLY",
    "name": "Eli Lilly and Company",
-   "marketCap": "$1,167,602,880,000",
+   "marketCap": "$1,333,543,700,000",
    "fiscalQuarterEnding": "Mar/2026",
    "epsForecast": "$7.06",
    "noOfEsts": "6"
@@ -635,7 +852,7 @@
    "time": "time-not-supplied",
    "symbol": "SNDK",
    "name": "Sandisk Corporation",
-   "marketCap": "$199,261,684,000",
+   "marketCap": "$167,256,179,000",
    "fiscalQuarterEnding": "Mar/2026",
    "epsForecast": "$14.17",
    "noOfEsts": "3"
@@ -643,12 +860,23 @@
  ],
  "2026-04-29": [
   {
+   "eps": "$4.27",
+   "surprise": "4.91",
+   "time": "time-not-supplied",
+   "symbol": "MSFT",
+   "name": "Microsoft Corporation",
+   "marketCap": "$3,875,805,070,000",
+   "fiscalQuarterEnding": "Mar/2026",
+   "epsForecast": "$4.07",
+   "noOfEsts": "14"
+  },
+  {
    "eps": "$5.11",
    "surprise": "93.56",
    "time": "time-not-supplied",
    "symbol": "GOOGL",
    "name": "Alphabet Inc.",
-   "marketCap": "$4,209,321,440,000",
+   "marketCap": "$3,440,352,950,000",
    "fiscalQuarterEnding": "Mar/2026",
    "epsForecast": "$2.64",
    "noOfEsts": "13"
@@ -659,10 +887,21 @@
    "time": "time-not-supplied",
    "symbol": "AMZN",
    "name": "Amazon.com, Inc.",
-   "marketCap": "$2,830,867,890,000",
+   "marketCap": "$2,592,490,390,000",
    "fiscalQuarterEnding": "Mar/2026",
    "epsForecast": "$1.60",
    "noOfEsts": "13"
+  },
+  {
+   "eps": "$7.31",
+   "surprise": "8.94",
+   "time": "time-not-supplied",
+   "symbol": "META",
+   "name": "Meta Platforms, Inc.",
+   "marketCap": "$1,572,062,760,000",
+   "fiscalQuarterEnding": "Mar/2026",
+   "epsForecast": "$6.71",
+   "noOfEsts": "15"
   }
  ],
  "2026-04-28": [
@@ -672,7 +911,7 @@
    "time": "time-not-supplied",
    "symbol": "HOOD",
    "name": "Robinhood Markets, Inc.",
-   "marketCap": "$86,779,421,000",
+   "marketCap": "$76,532,752,000",
    "fiscalQuarterEnding": "Mar/2026",
    "epsForecast": "$0.40",
    "noOfEsts": "7"
@@ -683,7 +922,7 @@
    "time": "time-not-supplied",
    "symbol": "BE",
    "name": "Bloom Energy Corporation",
-   "marketCap": "$66,627,977,000",
+   "marketCap": "$60,068,569,000",
    "fiscalQuarterEnding": "Mar/2026",
    "epsForecast": "($0.02)",
    "noOfEsts": "5"
@@ -691,19 +930,7 @@
  ],
  "2026-04-27": [],
  "2026-04-24": [],
- "2026-04-23": [
-  {
-   "eps": "$0.17",
-   "surprise": "270",
-   "time": "time-not-supplied",
-   "symbol": "INTC",
-   "name": "Intel Corporation",
-   "marketCap": "$486,384,959,000",
-   "fiscalQuarterEnding": "Mar/2026",
-   "epsForecast": "($0.10)",
-   "noOfEsts": "13"
-  }
- ],
+ "2026-04-23": [],
  "2026-04-22": [
   {
    "eps": "$0.18",
@@ -711,7 +938,7 @@
    "time": "time-not-supplied",
    "symbol": "TSLA",
    "name": "Tesla, Inc. ",
-   "marketCap": "$1,453,670,400,000",
+   "marketCap": "$1,580,352,140,000",
    "fiscalQuarterEnding": "Mar/2026",
    "epsForecast": "$0.21",
    "noOfEsts": "10"
@@ -722,7 +949,7 @@
    "time": "time-not-supplied",
    "symbol": "GEV",
    "name": "GE Vernova Inc.",
-   "marketCap": "$241,948,082,000",
+   "marketCap": "$227,058,516,000",
    "fiscalQuarterEnding": "Mar/2026",
    "epsForecast": "$1.84",
    "noOfEsts": "8"
@@ -740,7 +967,7 @@
    "time": "time-not-supplied",
    "symbol": "JPM",
    "name": "J P Morgan Chase & Co",
-   "marketCap": "$886,584,840,000",
+   "marketCap": "$895,915,070,000",
    "fiscalQuarterEnding": "Mar/2026",
    "epsForecast": "$5.49",
    "noOfEsts": "6"
@@ -771,7 +998,7 @@
    "time": "time-not-supplied",
    "symbol": "MU",
    "name": "Micron Technology, Inc.",
-   "marketCap": "$1,023,824,890,000",
+   "marketCap": "$1,001,015,350,000",
    "fiscalQuarterEnding": "Feb/2026",
    "epsForecast": "$8.64",
    "noOfEsts": "8"
@@ -784,7 +1011,7 @@
    "time": "time-not-supplied",
    "symbol": "OKLO",
    "name": "Oklo Inc.",
-   "marketCap": "$5,067,120,600",
+   "marketCap": "$4,696,945,700",
    "fiscalQuarterEnding": "Dec/2025",
    "epsForecast": "($0.18)",
    "noOfEsts": "6"
@@ -804,7 +1031,7 @@
    "time": "time-not-supplied",
    "symbol": "MRVL",
    "name": "Marvell Technology, Inc.",
-   "marketCap": "$207,904,227,000",
+   "marketCap": "$172,223,152,000",
    "fiscalQuarterEnding": "Jan/2026",
    "epsForecast": "$0.62",
    "noOfEsts": "12"
@@ -817,13 +1044,25 @@
    "time": "time-not-supplied",
    "symbol": "AVGO",
    "name": "Broadcom Inc.",
-   "marketCap": "$1,597,208,790,000",
+   "marketCap": "$1,556,585,250,000",
    "fiscalQuarterEnding": "Jan/2026",
    "epsForecast": "$1.67",
    "noOfEsts": "12"
   }
  ],
- "2026-03-03": [],
+ "2026-03-03": [
+  {
+   "eps": "$0.23",
+   "surprise": "15",
+   "time": "time-not-supplied",
+   "symbol": "CRWD",
+   "name": "CrowdStrike Holdings, Inc.",
+   "marketCap": "$256,424,002,000",
+   "fiscalQuarterEnding": "Jan/2026",
+   "epsForecast": "$0.20",
+   "noOfEsts": "14"
+  }
+ ],
  "2026-03-02": [],
  "2026-02-27": [],
  "2026-02-26": [
@@ -833,7 +1072,7 @@
    "time": "time-not-supplied",
    "symbol": "DELL",
    "name": "Dell Technologies Inc.",
-   "marketCap": "$289,574,552,000",
+   "marketCap": "$269,775,356,000",
    "fiscalQuarterEnding": "Jan/2026",
    "epsForecast": "$3.32",
    "noOfEsts": "7"
@@ -844,7 +1083,7 @@
    "time": "time-not-supplied",
    "symbol": "RKLB",
    "name": "Rocket Lab Corporation",
-   "marketCap": "$32,241,739,800",
+   "marketCap": "$34,357,291,000",
    "fiscalQuarterEnding": "Dec/2025",
    "epsForecast": "($0.08)",
    "noOfEsts": "4"
@@ -857,7 +1096,7 @@
    "time": "time-not-supplied",
    "symbol": "NVDA",
    "name": "NVIDIA Corporation",
-   "marketCap": "$5,231,868,900,000",
+   "marketCap": "$4,931,824,100,000",
    "fiscalQuarterEnding": "Jan/2026",
    "epsForecast": "$1.45",
    "noOfEsts": "15"
@@ -868,7 +1107,7 @@
    "time": "time-not-supplied",
    "symbol": "CRM",
    "name": "Salesforce, Inc.",
-   "marketCap": "$199,536,345,000",
+   "marketCap": "$188,606,906,000",
    "fiscalQuarterEnding": "Jan/2026",
    "epsForecast": "$2.14",
    "noOfEsts": "14"
@@ -881,7 +1120,7 @@
    "time": "time-not-supplied",
    "symbol": "TEM",
    "name": "Tempus AI, Inc.",
-   "marketCap": "$11,681,323,000",
+   "marketCap": "$13,111,985,200",
    "fiscalQuarterEnding": "Dec/2025",
    "epsForecast": "($0.27)",
    "noOfEsts": "4"
@@ -891,7 +1130,19 @@
  "2026-02-20": [],
  "2026-02-19": [],
  "2026-02-18": [],
- "2026-02-17": [],
+ "2026-02-17": [
+  {
+   "lastYearRptDt": "2/13/2025",
+   "lastYearEPS": "$0.43",
+   "time": "time-after-hours",
+   "symbol": "PANW",
+   "name": "Palo Alto Networks, Inc.",
+   "marketCap": "$113,478,570,000",
+   "fiscalQuarterEnding": "Jan/2026",
+   "epsForecast": "$0.49",
+   "noOfEsts": "14"
+  }
+ ],
  "2026-02-16": [],
  "2026-02-13": [],
  "2026-02-12": [],
@@ -918,7 +1169,7 @@
    "time": "time-not-supplied",
    "symbol": "AMZN",
    "name": "Amazon.com, Inc.",
-   "marketCap": "$2,830,867,890,000",
+   "marketCap": "$2,592,490,390,000",
    "fiscalQuarterEnding": "Dec/2025",
    "epsForecast": "$1.98",
    "noOfEsts": "16"
@@ -929,7 +1180,7 @@
    "time": "time-not-supplied",
    "symbol": "BE",
    "name": "Bloom Energy Corporation",
-   "marketCap": "$66,627,977,000",
+   "marketCap": "$60,068,569,000",
    "fiscalQuarterEnding": "Dec/2025",
    "epsForecast": "$0.15",
    "noOfEsts": "4"
@@ -940,7 +1191,7 @@
    "time": "time-not-supplied",
    "symbol": "IREN",
    "name": "IREN Limited",
-   "marketCap": "$11,219,933,200",
+   "marketCap": "$9,690,494,000",
    "fiscalQuarterEnding": "Dec/2025",
    "epsForecast": "($0.09)",
    "noOfEsts": "3"
@@ -953,7 +1204,7 @@
    "time": "time-not-supplied",
    "symbol": "GOOGL",
    "name": "Alphabet Inc.",
-   "marketCap": "$4,209,321,440,000",
+   "marketCap": "$3,440,352,950,000",
    "fiscalQuarterEnding": "Dec/2025",
    "epsForecast": "$2.57",
    "noOfEsts": "16"
@@ -964,7 +1215,7 @@
    "time": "time-not-supplied",
    "symbol": "LLY",
    "name": "Eli Lilly and Company",
-   "marketCap": "$1,167,602,880,000",
+   "marketCap": "$1,333,543,700,000",
    "fiscalQuarterEnding": "Dec/2025",
    "epsForecast": "$6.99",
    "noOfEsts": "9"
@@ -977,7 +1228,7 @@
    "time": "time-not-supplied",
    "symbol": "AMD",
    "name": "Advanced Micro Devices, Inc.",
-   "marketCap": "$878,353,190,000",
+   "marketCap": "$824,073,390,000",
    "fiscalQuarterEnding": "Dec/2025",
    "epsForecast": "$1.11",
    "noOfEsts": "15"
@@ -988,7 +1239,7 @@
    "time": "time-not-supplied",
    "symbol": "ETN",
    "name": "Eaton Corporation, PLC",
-   "marketCap": "$152,058,593,000",
+   "marketCap": "$143,696,347,000",
    "fiscalQuarterEnding": "Dec/2025",
    "epsForecast": "$3.33",
    "noOfEsts": "10"
@@ -999,7 +1250,7 @@
    "time": "time-not-supplied",
    "symbol": "LITE",
    "name": "Lumentum Holdings Inc.",
-   "marketCap": "$75,592,303,000",
+   "marketCap": "$76,153,004,000",
    "fiscalQuarterEnding": "Dec/2025",
    "epsForecast": "$0.97",
    "noOfEsts": "5"
@@ -1012,7 +1263,7 @@
    "time": "time-not-supplied",
    "symbol": "PLTR",
    "name": "Palantir Technologies Inc.",
-   "marketCap": "$466,358,698,000",
+   "marketCap": "$442,242,073,000",
    "fiscalQuarterEnding": "Dec/2025",
    "epsForecast": "$0.17",
    "noOfEsts": "8"
@@ -1026,7 +1277,7 @@
    "time": "time-not-supplied",
    "symbol": "SNDK",
    "name": "Sandisk Corporation",
-   "marketCap": "$199,261,684,000",
+   "marketCap": "$167,256,179,000",
    "fiscalQuarterEnding": "Dec/2025",
    "epsForecast": "$3.31",
    "noOfEsts": "3"
@@ -1034,15 +1285,37 @@
  ],
  "2026-01-28": [
   {
+   "eps": "$4.14",
+   "surprise": "6.7",
+   "time": "time-not-supplied",
+   "symbol": "MSFT",
+   "name": "Microsoft Corporation",
+   "marketCap": "$3,875,805,070,000",
+   "fiscalQuarterEnding": "Dec/2025",
+   "epsForecast": "$3.88",
+   "noOfEsts": "16"
+  },
+  {
    "eps": "$0.31",
    "surprise": "-8.82",
    "time": "time-not-supplied",
    "symbol": "TSLA",
    "name": "Tesla, Inc. ",
-   "marketCap": "$1,453,670,400,000",
+   "marketCap": "$1,580,352,140,000",
    "fiscalQuarterEnding": "Dec/2025",
    "epsForecast": "$0.34",
    "noOfEsts": "12"
+  },
+  {
+   "eps": "$8.88",
+   "surprise": "8.16",
+   "time": "time-not-supplied",
+   "symbol": "META",
+   "name": "Meta Platforms, Inc.",
+   "marketCap": "$1,572,062,760,000",
+   "fiscalQuarterEnding": "Dec/2025",
+   "epsForecast": "$8.21",
+   "noOfEsts": "16"
   },
   {
    "eps": "$13.39",
@@ -1050,7 +1323,7 @@
    "time": "time-not-supplied",
    "symbol": "GEV",
    "name": "GE Vernova Inc.",
-   "marketCap": "$241,948,082,000",
+   "marketCap": "$227,058,516,000",
    "fiscalQuarterEnding": "Dec/2025",
    "epsForecast": "$3.05",
    "noOfEsts": "9"
@@ -1059,19 +1332,7 @@
  "2026-01-27": [],
  "2026-01-26": [],
  "2026-01-23": [],
- "2026-01-22": [
-  {
-   "eps": "$0.04",
-   "surprise": "300",
-   "time": "time-not-supplied",
-   "symbol": "INTC",
-   "name": "Intel Corporation",
-   "marketCap": "$486,384,959,000",
-   "fiscalQuarterEnding": "Dec/2025",
-   "epsForecast": "($0.02)",
-   "noOfEsts": "15"
-  }
- ],
+ "2026-01-22": [],
  "2026-01-21": [],
  "2026-01-20": [],
  "2026-01-19": [],
@@ -1085,7 +1346,7 @@
    "time": "time-not-supplied",
    "symbol": "JPM",
    "name": "J P Morgan Chase & Co",
-   "marketCap": "$886,584,840,000",
+   "marketCap": "$895,915,070,000",
    "fiscalQuarterEnding": "Dec/2025",
    "epsForecast": "$4.87",
    "noOfEsts": "9"
@@ -1116,7 +1377,7 @@
    "time": "time-not-supplied",
    "symbol": "MU",
    "name": "Micron Technology, Inc.",
-   "marketCap": "$1,023,824,890,000",
+   "marketCap": "$1,001,015,350,000",
    "fiscalQuarterEnding": "Nov/2025",
    "epsForecast": "$3.67",
    "noOfEsts": "7"
@@ -1132,7 +1393,7 @@
    "time": "time-not-supplied",
    "symbol": "AVGO",
    "name": "Broadcom Inc.",
-   "marketCap": "$1,597,208,790,000",
+   "marketCap": "$1,556,585,250,000",
    "fiscalQuarterEnding": "Oct/2025",
    "epsForecast": "$1.49",
    "noOfEsts": "11"
@@ -1150,7 +1411,7 @@
    "time": "time-not-supplied",
    "symbol": "CRM",
    "name": "Salesforce, Inc.",
-   "marketCap": "$199,536,345,000",
+   "marketCap": "$188,606,906,000",
    "fiscalQuarterEnding": "Oct/2025",
    "epsForecast": "$2.15",
    "noOfEsts": "15"
@@ -1158,12 +1419,23 @@
  ],
  "2025-12-02": [
   {
+   "eps": "($0.02)",
+   "surprise": "-128.57",
+   "time": "time-not-supplied",
+   "symbol": "CRWD",
+   "name": "CrowdStrike Holdings, Inc.",
+   "marketCap": "$256,424,002,000",
+   "fiscalQuarterEnding": "Oct/2025",
+   "epsForecast": "$0.07",
+   "noOfEsts": "13"
+  },
+  {
    "eps": "$0.62",
    "surprise": "6.9",
    "time": "time-not-supplied",
    "symbol": "MRVL",
    "name": "Marvell Technology, Inc.",
-   "marketCap": "$207,904,227,000",
+   "marketCap": "$172,223,152,000",
    "fiscalQuarterEnding": "Oct/2025",
    "epsForecast": "$0.58",
    "noOfEsts": "12"
@@ -1180,7 +1452,7 @@
    "time": "time-not-supplied",
    "symbol": "DELL",
    "name": "Dell Technologies Inc.",
-   "marketCap": "$289,574,552,000",
+   "marketCap": "$269,775,356,000",
    "fiscalQuarterEnding": "Oct/2025",
    "epsForecast": "$2.26",
    "noOfEsts": "6"
@@ -1196,10 +1468,21 @@
    "time": "time-not-supplied",
    "symbol": "NVDA",
    "name": "NVIDIA Corporation",
-   "marketCap": "$5,231,868,900,000",
+   "marketCap": "$4,931,824,100,000",
    "fiscalQuarterEnding": "Oct/2025",
    "epsForecast": "$1.18",
    "noOfEsts": "13"
+  },
+  {
+   "eps": "$0.53",
+   "surprise": "6",
+   "time": "time-not-supplied",
+   "symbol": "PANW",
+   "name": "Palo Alto Networks, Inc.",
+   "marketCap": "$299,443,782,000",
+   "fiscalQuarterEnding": "Oct/2025",
+   "epsForecast": "$0.50",
+   "noOfEsts": "15"
   }
  ],
  "2025-11-18": [],
@@ -1214,7 +1497,7 @@
    "time": "time-not-supplied",
    "symbol": "OKLO",
    "name": "Oklo Inc.",
-   "marketCap": "$5,067,120,600",
+   "marketCap": "$4,696,945,700",
    "fiscalQuarterEnding": "Sep/2025",
    "epsForecast": "($0.13)",
    "noOfEsts": "6"
@@ -1227,7 +1510,7 @@
    "time": "time-not-supplied",
    "symbol": "RKLB",
    "name": "Rocket Lab Corporation",
-   "marketCap": "$32,241,739,800",
+   "marketCap": "$34,357,291,000",
    "fiscalQuarterEnding": "Sep/2025",
    "epsForecast": "($0.09)",
    "noOfEsts": "3"
@@ -1241,7 +1524,7 @@
    "time": "time-not-supplied",
    "symbol": "SNDK",
    "name": "Sandisk Corporation",
-   "marketCap": "$199,261,684,000",
+   "marketCap": "$167,256,179,000",
    "fiscalQuarterEnding": "Sep/2025",
    "epsForecast": "$0.58",
    "noOfEsts": "1"
@@ -1252,7 +1535,7 @@
    "time": "time-not-supplied",
    "symbol": "IREN",
    "name": "IREN Limited",
-   "marketCap": "$11,219,933,200",
+   "marketCap": "$9,690,494,000",
    "fiscalQuarterEnding": "Sep/2025",
    "epsForecast": "$0.14",
    "noOfEsts": "3"
@@ -1265,7 +1548,7 @@
    "time": "time-not-supplied",
    "symbol": "HOOD",
    "name": "Robinhood Markets, Inc.",
-   "marketCap": "$86,779,421,000",
+   "marketCap": "$76,532,752,000",
    "fiscalQuarterEnding": "Sep/2025",
    "epsForecast": "$0.51",
    "noOfEsts": "6"
@@ -1278,7 +1561,7 @@
    "time": "time-not-supplied",
    "symbol": "AMD",
    "name": "Advanced Micro Devices, Inc.",
-   "marketCap": "$878,353,190,000",
+   "marketCap": "$824,073,390,000",
    "fiscalQuarterEnding": "Sep/2025",
    "epsForecast": "$0.97",
    "noOfEsts": "13"
@@ -1289,7 +1572,7 @@
    "time": "time-not-supplied",
    "symbol": "ETN",
    "name": "Eaton Corporation, PLC",
-   "marketCap": "$152,058,593,000",
+   "marketCap": "$143,696,347,000",
    "fiscalQuarterEnding": "Sep/2025",
    "epsForecast": "$3.06",
    "noOfEsts": "9"
@@ -1300,7 +1583,7 @@
    "time": "time-not-supplied",
    "symbol": "LITE",
    "name": "Lumentum Holdings Inc.",
-   "marketCap": "$75,592,303,000",
+   "marketCap": "$76,153,004,000",
    "fiscalQuarterEnding": "Sep/2025",
    "epsForecast": "$0.59",
    "noOfEsts": "5"
@@ -1311,7 +1594,7 @@
    "time": "time-not-supplied",
    "symbol": "TEM",
    "name": "Tempus AI, Inc.",
-   "marketCap": "$11,681,323,000",
+   "marketCap": "$13,111,985,200",
    "fiscalQuarterEnding": "Sep/2025",
    "epsForecast": "($0.37)",
    "noOfEsts": "3"
@@ -1324,7 +1607,7 @@
    "time": "time-not-supplied",
    "symbol": "PLTR",
    "name": "Palantir Technologies Inc.",
-   "marketCap": "$466,358,698,000",
+   "marketCap": "$442,242,073,000",
    "fiscalQuarterEnding": "Sep/2025",
    "epsForecast": "$0.12",
    "noOfEsts": "8"
@@ -1338,7 +1621,7 @@
    "time": "time-not-supplied",
    "symbol": "AMZN",
    "name": "Amazon.com, Inc.",
-   "marketCap": "$2,830,867,890,000",
+   "marketCap": "$2,592,490,390,000",
    "fiscalQuarterEnding": "Sep/2025",
    "epsForecast": "$1.58",
    "noOfEsts": "17"
@@ -1349,7 +1632,7 @@
    "time": "time-not-supplied",
    "symbol": "LLY",
    "name": "Eli Lilly and Company",
-   "marketCap": "$1,167,602,880,000",
+   "marketCap": "$1,333,543,700,000",
    "fiscalQuarterEnding": "Sep/2025",
    "epsForecast": "$6.02",
    "noOfEsts": "8"
@@ -1357,14 +1640,36 @@
  ],
  "2025-10-29": [
   {
+   "eps": "$4.13",
+   "surprise": "13.15",
+   "time": "time-not-supplied",
+   "symbol": "MSFT",
+   "name": "Microsoft Corporation",
+   "marketCap": "$3,875,805,070,000",
+   "fiscalQuarterEnding": "Sep/2025",
+   "epsForecast": "$3.65",
+   "noOfEsts": "16"
+  },
+  {
    "eps": "$2.87",
    "surprise": "26.99",
    "time": "time-not-supplied",
    "symbol": "GOOGL",
    "name": "Alphabet Inc.",
-   "marketCap": "$4,209,321,440,000",
+   "marketCap": "$3,440,352,950,000",
    "fiscalQuarterEnding": "Sep/2025",
    "epsForecast": "$2.26",
+   "noOfEsts": "16"
+  },
+  {
+   "eps": "$7.25",
+   "surprise": "9.68",
+   "time": "time-not-supplied",
+   "symbol": "META",
+   "name": "Meta Platforms, Inc.",
+   "marketCap": "$1,572,062,760,000",
+   "fiscalQuarterEnding": "Sep/2025",
+   "epsForecast": "$6.61",
    "noOfEsts": "16"
   }
  ],
@@ -1375,7 +1680,7 @@
    "time": "time-not-supplied",
    "symbol": "BE",
    "name": "Bloom Energy Corporation",
-   "marketCap": "$66,627,977,000",
+   "marketCap": "$60,068,569,000",
    "fiscalQuarterEnding": "Sep/2025",
    "epsForecast": "($0.03)",
    "noOfEsts": "4"
@@ -1383,19 +1688,7 @@
  ],
  "2025-10-27": [],
  "2025-10-24": [],
- "2025-10-23": [
-  {
-   "eps": "$0.11",
-   "surprise": "200",
-   "time": "time-not-supplied",
-   "symbol": "INTC",
-   "name": "Intel Corporation",
-   "marketCap": "$486,384,959,000",
-   "fiscalQuarterEnding": "Sep/2025",
-   "epsForecast": "($0.11)",
-   "noOfEsts": "12"
-  }
- ],
+ "2025-10-23": [],
  "2025-10-22": [
   {
    "eps": "$0.37",
@@ -1403,7 +1696,7 @@
    "time": "time-not-supplied",
    "symbol": "TSLA",
    "name": "Tesla, Inc. ",
-   "marketCap": "$1,453,670,400,000",
+   "marketCap": "$1,580,352,140,000",
    "fiscalQuarterEnding": "Sep/2025",
    "epsForecast": "$0.41",
    "noOfEsts": "11"
@@ -1414,7 +1707,7 @@
    "time": "time-not-supplied",
    "symbol": "GEV",
    "name": "GE Vernova Inc.",
-   "marketCap": "$241,948,082,000",
+   "marketCap": "$227,058,516,000",
    "fiscalQuarterEnding": "Sep/2025",
    "epsForecast": "$1.78",
    "noOfEsts": "7"
@@ -1432,7 +1725,7 @@
    "time": "time-not-supplied",
    "symbol": "JPM",
    "name": "J P Morgan Chase & Co",
-   "marketCap": "$886,584,840,000",
+   "marketCap": "$895,915,070,000",
    "fiscalQuarterEnding": "Sep/2025",
    "epsForecast": "$4.83",
    "noOfEsts": "9"
@@ -1459,7 +1752,7 @@
    "time": "time-not-supplied",
    "symbol": "MU",
    "name": "Micron Technology, Inc.",
-   "marketCap": "$1,023,824,890,000",
+   "marketCap": "$1,001,015,350,000",
    "fiscalQuarterEnding": "Aug/2025",
    "epsForecast": "$2.67",
    "noOfEsts": "6"
@@ -1484,7 +1777,7 @@
    "time": "time-not-supplied",
    "symbol": "AVGO",
    "name": "Broadcom Inc.",
-   "marketCap": "$1,597,208,790,000",
+   "marketCap": "$1,556,585,250,000",
    "fiscalQuarterEnding": "Jul/2025",
    "epsForecast": "$1.35",
    "noOfEsts": "11"
@@ -1497,7 +1790,7 @@
    "time": "time-not-supplied",
    "symbol": "CRM",
    "name": "Salesforce, Inc.",
-   "marketCap": "$199,536,345,000",
+   "marketCap": "$188,606,906,000",
    "fiscalQuarterEnding": "Jul/2025",
    "epsForecast": "$2.12",
    "noOfEsts": "16"
@@ -1513,7 +1806,7 @@
    "time": "time-not-supplied",
    "symbol": "DELL",
    "name": "Dell Technologies Inc.",
-   "marketCap": "$289,574,552,000",
+   "marketCap": "$269,775,356,000",
    "fiscalQuarterEnding": "Jul/2025",
    "epsForecast": "$2.09",
    "noOfEsts": "5"
@@ -1524,7 +1817,7 @@
    "time": "time-not-supplied",
    "symbol": "MRVL",
    "name": "Marvell Technology, Inc.",
-   "marketCap": "$207,904,227,000",
+   "marketCap": "$172,223,152,000",
    "fiscalQuarterEnding": "Jul/2025",
    "epsForecast": "$0.51",
    "noOfEsts": "12"
@@ -1535,7 +1828,7 @@
    "time": "time-not-supplied",
    "symbol": "IREN",
    "name": "IREN Limited",
-   "marketCap": "$11,219,933,200",
+   "marketCap": "$9,690,494,000",
    "fiscalQuarterEnding": "Jun/2025",
    "epsForecast": "$0.17",
    "noOfEsts": "3"
@@ -1548,9 +1841,20 @@
    "time": "time-not-supplied",
    "symbol": "NVDA",
    "name": "NVIDIA Corporation",
-   "marketCap": "$5,231,868,900,000",
+   "marketCap": "$4,931,824,100,000",
    "fiscalQuarterEnding": "Jul/2025",
    "epsForecast": "$0.94",
+   "noOfEsts": "14"
+  },
+  {
+   "eps": "($0.02)",
+   "surprise": "89.47",
+   "time": "time-not-supplied",
+   "symbol": "CRWD",
+   "name": "CrowdStrike Holdings, Inc.",
+   "marketCap": "$256,424,002,000",
+   "fiscalQuarterEnding": "Jul/2025",
+   "epsForecast": "($0.19)",
    "noOfEsts": "14"
   }
  ],
@@ -1560,7 +1864,19 @@
  "2025-08-21": [],
  "2025-08-20": [],
  "2025-08-19": [],
- "2025-08-18": [],
+ "2025-08-18": [
+  {
+   "eps": "$0.42",
+   "surprise": "-16",
+   "time": "time-not-supplied",
+   "symbol": "PANW",
+   "name": "Palo Alto Networks, Inc.",
+   "marketCap": "$299,443,782,000",
+   "fiscalQuarterEnding": "Jul/2025",
+   "epsForecast": "$0.50",
+   "noOfEsts": "16"
+  }
+ ],
  "2025-08-15": [],
  "2025-08-14": [
   {
@@ -1569,7 +1885,7 @@
    "time": "time-not-supplied",
    "symbol": "SNDK",
    "name": "Sandisk Corporation",
-   "marketCap": "$199,261,684,000",
+   "marketCap": "$167,256,179,000",
    "fiscalQuarterEnding": "Jun/2025",
    "epsForecast": "($0.34)",
    "noOfEsts": "2"
@@ -1583,7 +1899,7 @@
    "time": "time-not-supplied",
    "symbol": "LITE",
    "name": "Lumentum Holdings Inc.",
-   "marketCap": "$75,592,303,000",
+   "marketCap": "$76,153,004,000",
    "fiscalQuarterEnding": "Jun/2025",
    "epsForecast": "$0.10",
    "noOfEsts": "6"
@@ -1596,7 +1912,7 @@
    "time": "time-not-supplied",
    "symbol": "OKLO",
    "name": "Oklo Inc.",
-   "marketCap": "$5,067,120,600",
+   "marketCap": "$4,696,945,700",
    "fiscalQuarterEnding": "Jun/2025",
    "epsForecast": "($0.12)",
    "noOfEsts": "5"
@@ -1609,7 +1925,7 @@
    "time": "time-not-supplied",
    "symbol": "TEM",
    "name": "Tempus AI, Inc.",
-   "marketCap": "$11,681,323,000",
+   "marketCap": "$13,111,985,200",
    "fiscalQuarterEnding": "Jun/2025",
    "epsForecast": "($0.47)",
    "noOfEsts": "3"
@@ -1622,7 +1938,7 @@
    "time": "time-not-supplied",
    "symbol": "LLY",
    "name": "Eli Lilly and Company",
-   "marketCap": "$1,167,602,880,000",
+   "marketCap": "$1,333,543,700,000",
    "fiscalQuarterEnding": "Jun/2025",
    "epsForecast": "$5.61",
    "noOfEsts": "9"
@@ -1633,7 +1949,7 @@
    "time": "time-not-supplied",
    "symbol": "RKLB",
    "name": "Rocket Lab Corporation",
-   "marketCap": "$32,241,739,800",
+   "marketCap": "$34,357,291,000",
    "fiscalQuarterEnding": "Jun/2025",
    "epsForecast": "($0.11)",
    "noOfEsts": "1"
@@ -1647,7 +1963,7 @@
    "time": "time-not-supplied",
    "symbol": "AMD",
    "name": "Advanced Micro Devices, Inc.",
-   "marketCap": "$878,353,190,000",
+   "marketCap": "$824,073,390,000",
    "fiscalQuarterEnding": "Jun/2025",
    "epsForecast": "$0.28",
    "noOfEsts": "15"
@@ -1658,7 +1974,7 @@
    "time": "time-not-supplied",
    "symbol": "ETN",
    "name": "Eaton Corporation, PLC",
-   "marketCap": "$152,058,593,000",
+   "marketCap": "$143,696,347,000",
    "fiscalQuarterEnding": "Jun/2025",
    "epsForecast": "$2.92",
    "noOfEsts": "10"
@@ -1671,7 +1987,7 @@
    "time": "time-not-supplied",
    "symbol": "PLTR",
    "name": "Palantir Technologies Inc.",
-   "marketCap": "$466,358,698,000",
+   "marketCap": "$442,242,073,000",
    "fiscalQuarterEnding": "Jun/2025",
    "epsForecast": "$0.08",
    "noOfEsts": "9"
@@ -1685,7 +2001,7 @@
    "time": "time-not-supplied",
    "symbol": "AMZN",
    "name": "Amazon.com, Inc.",
-   "marketCap": "$2,830,867,890,000",
+   "marketCap": "$2,592,490,390,000",
    "fiscalQuarterEnding": "Jun/2025",
    "epsForecast": "$1.33",
    "noOfEsts": "16"
@@ -1696,7 +2012,7 @@
    "time": "time-not-supplied",
    "symbol": "BE",
    "name": "Bloom Energy Corporation",
-   "marketCap": "$66,627,977,000",
+   "marketCap": "$60,068,569,000",
    "fiscalQuarterEnding": "Jun/2025",
    "epsForecast": "($0.13)",
    "noOfEsts": "5"
@@ -1704,12 +2020,34 @@
  ],
  "2025-07-30": [
   {
+   "eps": "$3.65",
+   "surprise": "8.96",
+   "time": "time-not-supplied",
+   "symbol": "MSFT",
+   "name": "Microsoft Corporation",
+   "marketCap": "$3,875,805,070,000",
+   "fiscalQuarterEnding": "Jun/2025",
+   "epsForecast": "$3.35",
+   "noOfEsts": "16"
+  },
+  {
+   "eps": "$7.14",
+   "surprise": "22.47",
+   "time": "time-not-supplied",
+   "symbol": "META",
+   "name": "Meta Platforms, Inc.",
+   "marketCap": "$1,572,062,760,000",
+   "fiscalQuarterEnding": "Jun/2025",
+   "epsForecast": "$5.83",
+   "noOfEsts": "17"
+  },
+  {
    "eps": "$0.42",
    "surprise": "35.48",
    "time": "time-not-supplied",
    "symbol": "HOOD",
    "name": "Robinhood Markets, Inc.",
-   "marketCap": "$86,779,421,000",
+   "marketCap": "$76,532,752,000",
    "fiscalQuarterEnding": "Jun/2025",
    "epsForecast": "$0.31",
    "noOfEsts": "6"
@@ -1718,19 +2056,7 @@
  "2025-07-29": [],
  "2025-07-28": [],
  "2025-07-25": [],
- "2025-07-24": [
-  {
-   "eps": "($0.26)",
-   "surprise": "-85.71",
-   "time": "time-not-supplied",
-   "symbol": "INTC",
-   "name": "Intel Corporation",
-   "marketCap": "$486,384,959,000",
-   "fiscalQuarterEnding": "Jun/2025",
-   "epsForecast": "($0.14)",
-   "noOfEsts": "14"
-  }
- ],
+ "2025-07-24": [],
  "2025-07-23": [
   {
    "eps": "$2.31",
@@ -1738,7 +2064,7 @@
    "time": "time-not-supplied",
    "symbol": "GOOGL",
    "name": "Alphabet Inc.",
-   "marketCap": "$4,209,321,440,000",
+   "marketCap": "$3,440,352,950,000",
    "fiscalQuarterEnding": "Jun/2025",
    "epsForecast": "$2.15",
    "noOfEsts": "17"
@@ -1749,7 +2075,7 @@
    "time": "time-not-supplied",
    "symbol": "TSLA",
    "name": "Tesla, Inc. ",
-   "marketCap": "$1,453,670,400,000",
+   "marketCap": "$1,580,352,140,000",
    "fiscalQuarterEnding": "Jun/2025",
    "epsForecast": "$0.29",
    "noOfEsts": "11"
@@ -1760,7 +2086,7 @@
    "time": "time-not-supplied",
    "symbol": "GEV",
    "name": "GE Vernova Inc.",
-   "marketCap": "$241,948,082,000",
+   "marketCap": "$227,058,516,000",
    "fiscalQuarterEnding": "Jun/2025",
    "epsForecast": "$1.60",
    "noOfEsts": "7"
@@ -1778,7 +2104,7 @@
    "time": "time-not-supplied",
    "symbol": "JPM",
    "name": "J P Morgan Chase & Co",
-   "marketCap": "$886,584,840,000",
+   "marketCap": "$895,915,070,000",
    "fiscalQuarterEnding": "Jun/2025",
    "epsForecast": "$4.51",
    "noOfEsts": "10"
@@ -1804,7 +2130,7 @@
    "time": "time-not-supplied",
    "symbol": "MU",
    "name": "Micron Technology, Inc.",
-   "marketCap": "$1,023,824,890,000",
+   "marketCap": "$1,001,015,350,000",
    "fiscalQuarterEnding": "May/2025",
    "epsForecast": "$1.43",
    "noOfEsts": "6"
@@ -1830,14 +2156,26 @@
    "time": "time-not-supplied",
    "symbol": "AVGO",
    "name": "Broadcom Inc.",
-   "marketCap": "$1,597,208,790,000",
+   "marketCap": "$1,556,585,250,000",
    "fiscalQuarterEnding": "Apr/2025",
    "epsForecast": "$1.35",
    "noOfEsts": "12"
   }
  ],
  "2025-06-04": [],
- "2025-06-03": [],
+ "2025-06-03": [
+  {
+   "eps": "($0.23)",
+   "surprise": "17.86",
+   "time": "time-not-supplied",
+   "symbol": "CRWD",
+   "name": "CrowdStrike Holdings, Inc.",
+   "marketCap": "$256,424,002,000",
+   "fiscalQuarterEnding": "Apr/2025",
+   "epsForecast": "($0.28)",
+   "noOfEsts": "14"
+  }
+ ],
  "2025-06-02": [],
  "2025-05-30": [],
  "2025-05-29": [
@@ -1847,7 +2185,7 @@
    "time": "time-not-supplied",
    "symbol": "DELL",
    "name": "Dell Technologies Inc.",
-   "marketCap": "$289,574,552,000",
+   "marketCap": "$269,775,356,000",
    "fiscalQuarterEnding": "Apr/2025",
    "epsForecast": "$1.50",
    "noOfEsts": "5"
@@ -1858,7 +2196,7 @@
    "time": "time-not-supplied",
    "symbol": "MRVL",
    "name": "Marvell Technology, Inc.",
-   "marketCap": "$207,904,227,000",
+   "marketCap": "$172,223,152,000",
    "fiscalQuarterEnding": "Apr/2025",
    "epsForecast": "$0.44",
    "noOfEsts": "13"
@@ -1871,7 +2209,7 @@
    "time": "time-not-supplied",
    "symbol": "NVDA",
    "name": "NVIDIA Corporation",
-   "marketCap": "$5,231,868,900,000",
+   "marketCap": "$4,931,824,100,000",
    "fiscalQuarterEnding": "Apr/2025",
    "epsForecast": "$0.80",
    "noOfEsts": "15"
@@ -1882,7 +2220,7 @@
    "time": "time-not-supplied",
    "symbol": "CRM",
    "name": "Salesforce, Inc.",
-   "marketCap": "$199,536,345,000",
+   "marketCap": "$188,606,906,000",
    "fiscalQuarterEnding": "Apr/2025",
    "epsForecast": "$1.87",
    "noOfEsts": "16"
@@ -1893,7 +2231,19 @@
  "2025-05-23": [],
  "2025-05-22": [],
  "2025-05-21": [],
- "2025-05-20": [],
+ "2025-05-20": [
+  {
+   "eps": "$0.43",
+   "surprise": "4.88",
+   "time": "time-not-supplied",
+   "symbol": "PANW",
+   "name": "Palo Alto Networks, Inc.",
+   "marketCap": "$299,443,782,000",
+   "fiscalQuarterEnding": "Apr/2025",
+   "epsForecast": "$0.41",
+   "noOfEsts": "15"
+  }
+ ],
  "2025-05-19": [],
  "2025-05-16": [],
  "2025-05-15": [],
@@ -1904,7 +2254,7 @@
    "time": "time-not-supplied",
    "symbol": "IREN",
    "name": "IREN Limited",
-   "marketCap": "$11,219,933,200",
+   "marketCap": "$9,690,494,000",
    "fiscalQuarterEnding": "Mar/2025",
    "epsForecast": "$0.17",
    "noOfEsts": "3"
@@ -1917,7 +2267,7 @@
    "time": "time-not-supplied",
    "symbol": "OKLO",
    "name": "Oklo Inc.",
-   "marketCap": "$5,067,120,600",
+   "marketCap": "$4,696,945,700",
    "fiscalQuarterEnding": "Mar/2025",
    "epsForecast": "($0.11)",
    "noOfEsts": "4"
@@ -1932,7 +2282,7 @@
    "time": "time-not-supplied",
    "symbol": "RKLB",
    "name": "Rocket Lab Corporation",
-   "marketCap": "$32,241,739,800",
+   "marketCap": "$34,357,291,000",
    "fiscalQuarterEnding": "Mar/2025",
    "epsForecast": "($0.10)",
    "noOfEsts": "4"
@@ -1945,7 +2295,7 @@
    "time": "time-not-supplied",
    "symbol": "SNDK",
    "name": "Sandisk Corporation",
-   "marketCap": "$199,261,684,000",
+   "marketCap": "$167,256,179,000",
    "fiscalQuarterEnding": "Mar/2025",
    "epsForecast": "($0.39)",
    "noOfEsts": "3"
@@ -1958,7 +2308,7 @@
    "time": "time-not-supplied",
    "symbol": "AMD",
    "name": "Advanced Micro Devices, Inc.",
-   "marketCap": "$878,353,190,000",
+   "marketCap": "$824,073,390,000",
    "fiscalQuarterEnding": "Mar/2025",
    "epsForecast": "$0.75",
    "noOfEsts": "15"
@@ -1969,7 +2319,7 @@
    "time": "time-not-supplied",
    "symbol": "LITE",
    "name": "Lumentum Holdings Inc.",
-   "marketCap": "$75,592,303,000",
+   "marketCap": "$76,153,004,000",
    "fiscalQuarterEnding": "Mar/2025",
    "epsForecast": "$0.06",
    "noOfEsts": "6"
@@ -1980,7 +2330,7 @@
    "time": "time-not-supplied",
    "symbol": "TEM",
    "name": "Tempus AI, Inc.",
-   "marketCap": "$11,681,323,000",
+   "marketCap": "$13,111,985,200",
    "fiscalQuarterEnding": "Mar/2025",
    "epsForecast": "($0.47)",
    "noOfEsts": "3"
@@ -1993,7 +2343,7 @@
    "time": "time-not-supplied",
    "symbol": "PLTR",
    "name": "Palantir Technologies Inc.",
-   "marketCap": "$466,358,698,000",
+   "marketCap": "$442,242,073,000",
    "fiscalQuarterEnding": "Mar/2025",
    "epsForecast": "$0.08",
    "noOfEsts": "8"
@@ -2006,7 +2356,7 @@
    "time": "time-not-supplied",
    "symbol": "ETN",
    "name": "Eaton Corporation, PLC",
-   "marketCap": "$152,058,593,000",
+   "marketCap": "$143,696,347,000",
    "fiscalQuarterEnding": "Mar/2025",
    "epsForecast": "$2.70",
    "noOfEsts": "11"
@@ -2019,7 +2369,7 @@
    "time": "time-not-supplied",
    "symbol": "AMZN",
    "name": "Amazon.com, Inc.",
-   "marketCap": "$2,830,867,890,000",
+   "marketCap": "$2,592,490,390,000",
    "fiscalQuarterEnding": "Mar/2025",
    "epsForecast": "$1.35",
    "noOfEsts": "15"
@@ -2030,7 +2380,7 @@
    "time": "time-not-supplied",
    "symbol": "LLY",
    "name": "Eli Lilly and Company",
-   "marketCap": "$1,167,602,880,000",
+   "marketCap": "$1,333,543,700,000",
    "fiscalQuarterEnding": "Mar/2025",
    "epsForecast": "$3.52",
    "noOfEsts": "9"
@@ -2038,12 +2388,34 @@
  ],
  "2025-04-30": [
   {
+   "eps": "$3.46",
+   "surprise": "8.13",
+   "time": "time-not-supplied",
+   "symbol": "MSFT",
+   "name": "Microsoft Corporation",
+   "marketCap": "$3,875,805,070,000",
+   "fiscalQuarterEnding": "Mar/2025",
+   "epsForecast": "$3.20",
+   "noOfEsts": "15"
+  },
+  {
+   "eps": "$6.43",
+   "surprise": "23.18",
+   "time": "time-not-supplied",
+   "symbol": "META",
+   "name": "Meta Platforms, Inc.",
+   "marketCap": "$1,572,062,760,000",
+   "fiscalQuarterEnding": "Mar/2025",
+   "epsForecast": "$5.22",
+   "noOfEsts": "16"
+  },
+  {
    "eps": "$0.37",
    "surprise": "19.35",
    "time": "time-not-supplied",
    "symbol": "HOOD",
    "name": "Robinhood Markets, Inc.",
-   "marketCap": "$86,779,421,000",
+   "marketCap": "$76,532,752,000",
    "fiscalQuarterEnding": "Mar/2025",
    "epsForecast": "$0.31",
    "noOfEsts": "6"
@@ -2054,7 +2426,7 @@
    "time": "time-not-supplied",
    "symbol": "BE",
    "name": "Bloom Energy Corporation",
-   "marketCap": "$66,627,977,000",
+   "marketCap": "$60,068,569,000",
    "fiscalQuarterEnding": "Mar/2025",
    "epsForecast": "($0.15)",
    "noOfEsts": "9"
@@ -2070,21 +2442,10 @@
    "time": "time-not-supplied",
    "symbol": "GOOGL",
    "name": "Alphabet Inc.",
-   "marketCap": "$4,209,321,440,000",
+   "marketCap": "$3,440,352,950,000",
    "fiscalQuarterEnding": "Mar/2025",
    "epsForecast": "$2.02",
    "noOfEsts": "17"
-  },
-  {
-   "eps": "($0.02)",
-   "surprise": "85.71",
-   "time": "time-not-supplied",
-   "symbol": "INTC",
-   "name": "Intel Corporation",
-   "marketCap": "$486,384,959,000",
-   "fiscalQuarterEnding": "Mar/2025",
-   "epsForecast": "($0.14)",
-   "noOfEsts": "14"
   }
  ],
  "2025-04-23": [
@@ -2094,7 +2455,7 @@
    "time": "time-not-supplied",
    "symbol": "GEV",
    "name": "GE Vernova Inc.",
-   "marketCap": "$241,948,082,000",
+   "marketCap": "$227,058,516,000",
    "fiscalQuarterEnding": "Mar/2025",
    "epsForecast": "$0.45",
    "noOfEsts": "8"
@@ -2107,7 +2468,7 @@
    "time": "time-not-supplied",
    "symbol": "TSLA",
    "name": "Tesla, Inc. ",
-   "marketCap": "$1,453,670,400,000",
+   "marketCap": "$1,580,352,140,000",
    "fiscalQuarterEnding": "Mar/2025",
    "epsForecast": "$0.35",
    "noOfEsts": "7"
@@ -2126,7 +2487,7 @@
    "time": "time-not-supplied",
    "symbol": "JPM",
    "name": "J P Morgan Chase & Co",
-   "marketCap": "$886,584,840,000",
+   "marketCap": "$895,915,070,000",
    "fiscalQuarterEnding": "Mar/2025",
    "epsForecast": "$4.62",
    "noOfEsts": "9"
@@ -2152,7 +2513,7 @@
    "time": "time-not-supplied",
    "symbol": "OKLO",
    "name": "Oklo Inc.",
-   "marketCap": "$5,067,120,600",
+   "marketCap": "$4,696,945,700",
    "fiscalQuarterEnding": "Dec/2024",
    "epsForecast": "($0.08)",
    "noOfEsts": "3"
@@ -2166,7 +2527,7 @@
    "time": "time-not-supplied",
    "symbol": "MU",
    "name": "Micron Technology, Inc.",
-   "marketCap": "$1,023,824,890,000",
+   "marketCap": "$1,001,015,350,000",
    "fiscalQuarterEnding": "Feb/2025",
    "epsForecast": "$1.29",
    "noOfEsts": "6"
@@ -2188,7 +2549,7 @@
    "time": "time-not-supplied",
    "symbol": "AVGO",
    "name": "Broadcom Inc.",
-   "marketCap": "$1,597,208,790,000",
+   "marketCap": "$1,556,585,250,000",
    "fiscalQuarterEnding": "Jan/2025",
    "epsForecast": "$1.27",
    "noOfEsts": "11"
@@ -2201,13 +2562,25 @@
    "time": "time-not-supplied",
    "symbol": "MRVL",
    "name": "Marvell Technology, Inc.",
-   "marketCap": "$207,904,227,000",
+   "marketCap": "$172,223,152,000",
    "fiscalQuarterEnding": "Jan/2025",
    "epsForecast": "$0.42",
    "noOfEsts": "13"
   }
  ],
- "2025-03-04": [],
+ "2025-03-04": [
+  {
+   "eps": "($0.05)",
+   "surprise": "-600",
+   "time": "time-not-supplied",
+   "symbol": "CRWD",
+   "name": "CrowdStrike Holdings, Inc.",
+   "marketCap": "$256,424,002,000",
+   "fiscalQuarterEnding": "Jan/2025",
+   "epsForecast": "$0.01",
+   "noOfEsts": "13"
+  }
+ ],
  "2025-03-03": [],
  "2025-02-28": [],
  "2025-02-27": [
@@ -2217,7 +2590,7 @@
    "time": "time-not-supplied",
    "symbol": "DELL",
    "name": "Dell Technologies Inc.",
-   "marketCap": "$289,574,552,000",
+   "marketCap": "$269,775,356,000",
    "fiscalQuarterEnding": "Jan/2025",
    "epsForecast": "$2.31",
    "noOfEsts": "5"
@@ -2228,7 +2601,7 @@
    "time": "time-not-supplied",
    "symbol": "BE",
    "name": "Bloom Energy Corporation",
-   "marketCap": "$66,627,977,000",
+   "marketCap": "$60,068,569,000",
    "fiscalQuarterEnding": "Dec/2024",
    "epsForecast": "$0.23",
    "noOfEsts": "9"
@@ -2239,7 +2612,7 @@
    "time": "time-not-supplied",
    "symbol": "RKLB",
    "name": "Rocket Lab Corporation",
-   "marketCap": "$32,241,739,800",
+   "marketCap": "$34,357,291,000",
    "fiscalQuarterEnding": "Dec/2024",
    "epsForecast": "($0.09)",
    "noOfEsts": "4"
@@ -2252,7 +2625,7 @@
    "time": "time-not-supplied",
    "symbol": "NVDA",
    "name": "NVIDIA Corporation",
-   "marketCap": "$5,231,868,900,000",
+   "marketCap": "$4,931,824,100,000",
    "fiscalQuarterEnding": "Jan/2025",
    "epsForecast": "$0.79",
    "noOfEsts": "14"
@@ -2263,7 +2636,7 @@
    "time": "time-not-supplied",
    "symbol": "CRM",
    "name": "Salesforce, Inc.",
-   "marketCap": "$199,536,345,000",
+   "marketCap": "$188,606,906,000",
    "fiscalQuarterEnding": "Jan/2025",
    "epsForecast": "$1.95",
    "noOfEsts": "16"
@@ -2277,7 +2650,7 @@
    "time": "time-not-supplied",
    "symbol": "TEM",
    "name": "Tempus AI, Inc.",
-   "marketCap": "$11,681,323,000",
+   "marketCap": "$13,111,985,200",
    "fiscalQuarterEnding": "Dec/2024",
    "epsForecast": "($0.31)",
    "noOfEsts": "3"
@@ -2289,7 +2662,19 @@
  "2025-02-18": [],
  "2025-02-17": [],
  "2025-02-14": [],
- "2025-02-13": [],
+ "2025-02-13": [
+  {
+   "eps": "$0.43",
+   "surprise": "2.38",
+   "time": "time-not-supplied",
+   "symbol": "PANW",
+   "name": "Palo Alto Networks, Inc.",
+   "marketCap": "$299,443,782,000",
+   "fiscalQuarterEnding": "Jan/2025",
+   "epsForecast": "$0.42",
+   "noOfEsts": "15"
+  }
+ ],
  "2025-02-12": [
   {
    "eps": "$0.54",
@@ -2297,7 +2682,7 @@
    "time": "time-not-supplied",
    "symbol": "HOOD",
    "name": "Robinhood Markets, Inc.",
-   "marketCap": "$86,779,421,000",
+   "marketCap": "$76,532,752,000",
    "fiscalQuarterEnding": "Dec/2024",
    "epsForecast": "$0.42",
    "noOfEsts": "6"
@@ -2308,7 +2693,7 @@
    "time": "time-not-supplied",
    "symbol": "IREN",
    "name": "IREN Limited",
-   "marketCap": "$11,219,933,200",
+   "marketCap": "$9,690,494,000",
    "fiscalQuarterEnding": "Dec/2024",
    "epsForecast": "($0.04)",
    "noOfEsts": "3"
@@ -2324,7 +2709,7 @@
    "time": "time-not-supplied",
    "symbol": "AMZN",
    "name": "Amazon.com, Inc.",
-   "marketCap": "$2,830,867,890,000",
+   "marketCap": "$2,592,490,390,000",
    "fiscalQuarterEnding": "Dec/2024",
    "epsForecast": "$1.52",
    "noOfEsts": "16"
@@ -2335,7 +2720,7 @@
    "time": "time-not-supplied",
    "symbol": "LLY",
    "name": "Eli Lilly and Company",
-   "marketCap": "$1,167,602,880,000",
+   "marketCap": "$1,333,543,700,000",
    "fiscalQuarterEnding": "Dec/2024",
    "epsForecast": "$5.03",
    "noOfEsts": "8"
@@ -2346,7 +2731,7 @@
    "time": "time-not-supplied",
    "symbol": "LITE",
    "name": "Lumentum Holdings Inc.",
-   "marketCap": "$75,592,303,000",
+   "marketCap": "$76,153,004,000",
    "fiscalQuarterEnding": "Dec/2024",
    "epsForecast": "($0.06)",
    "noOfEsts": "7"
@@ -2360,7 +2745,7 @@
    "time": "time-not-supplied",
    "symbol": "GOOGL",
    "name": "Alphabet Inc.",
-   "marketCap": "$4,209,321,440,000",
+   "marketCap": "$3,440,352,950,000",
    "fiscalQuarterEnding": "Dec/2024",
    "epsForecast": "$2.12",
    "noOfEsts": "17"
@@ -2371,7 +2756,7 @@
    "time": "time-not-supplied",
    "symbol": "AMD",
    "name": "Advanced Micro Devices, Inc.",
-   "marketCap": "$878,353,190,000",
+   "marketCap": "$824,073,390,000",
    "fiscalQuarterEnding": "Dec/2024",
    "epsForecast": "$0.88",
    "noOfEsts": "14"
@@ -2384,7 +2769,7 @@
    "time": "time-not-supplied",
    "symbol": "PLTR",
    "name": "Palantir Technologies Inc.",
-   "marketCap": "$466,358,698,000",
+   "marketCap": "$442,242,073,000",
    "fiscalQuarterEnding": "Dec/2024",
    "epsForecast": "$0.05",
    "noOfEsts": "8"
@@ -2397,36 +2782,46 @@
    "time": "time-not-supplied",
    "symbol": "ETN",
    "name": "Eaton Corporation, PLC",
-   "marketCap": "$152,058,593,000",
+   "marketCap": "$143,696,347,000",
    "fiscalQuarterEnding": "Dec/2024",
    "epsForecast": "$2.81",
    "noOfEsts": "10"
   }
  ],
- "2025-01-30": [
-  {
-   "eps": "($0.02)",
-   "surprise": "50",
-   "time": "time-not-supplied",
-   "symbol": "INTC",
-   "name": "Intel Corporation",
-   "marketCap": "$486,384,959,000",
-   "fiscalQuarterEnding": "Dec/2024",
-   "epsForecast": "($0.04)",
-   "noOfEsts": "13"
-  }
- ],
+ "2025-01-30": [],
  "2025-01-29": [
+  {
+   "eps": "$3.23",
+   "surprise": "3.86",
+   "time": "time-not-supplied",
+   "symbol": "MSFT",
+   "name": "Microsoft Corporation",
+   "marketCap": "$3,875,805,070,000",
+   "fiscalQuarterEnding": "Dec/2024",
+   "epsForecast": "$3.11",
+   "noOfEsts": "16"
+  },
   {
    "eps": "$0.66",
    "surprise": "6.45",
    "time": "time-not-supplied",
    "symbol": "TSLA",
    "name": "Tesla, Inc. ",
-   "marketCap": "$1,453,670,400,000",
+   "marketCap": "$1,580,352,140,000",
    "fiscalQuarterEnding": "Dec/2024",
    "epsForecast": "$0.62",
    "noOfEsts": "8"
+  },
+  {
+   "eps": "$8.02",
+   "surprise": "20.06",
+   "time": "time-not-supplied",
+   "symbol": "META",
+   "name": "Meta Platforms, Inc.",
+   "marketCap": "$1,572,062,760,000",
+   "fiscalQuarterEnding": "Dec/2024",
+   "epsForecast": "$6.68",
+   "noOfEsts": "17"
   }
  ],
  "2025-01-28": [],
@@ -2440,7 +2835,7 @@
    "time": "time-not-supplied",
    "symbol": "GEV",
    "name": "GE Vernova Inc.",
-   "marketCap": "$241,948,082,000",
+   "marketCap": "$227,058,516,000",
    "fiscalQuarterEnding": "Dec/2024",
    "epsForecast": "$2.32",
    "noOfEsts": "5"
@@ -2457,7 +2852,7 @@
    "time": "time-not-supplied",
    "symbol": "JPM",
    "name": "J P Morgan Chase & Co",
-   "marketCap": "$886,584,840,000",
+   "marketCap": "$895,915,070,000",
    "fiscalQuarterEnding": "Dec/2024",
    "epsForecast": "$4.03",
    "noOfEsts": "8"
@@ -2489,7 +2884,7 @@
    "time": "time-not-supplied",
    "symbol": "MU",
    "name": "Micron Technology, Inc.",
-   "marketCap": "$1,023,824,890,000",
+   "marketCap": "$1,001,015,350,000",
    "fiscalQuarterEnding": "Nov/2024",
    "epsForecast": "$1.60",
    "noOfEsts": "6"
@@ -2505,7 +2900,7 @@
    "time": "time-not-supplied",
    "symbol": "AVGO",
    "name": "Broadcom Inc.",
-   "marketCap": "$1,597,208,790,000",
+   "marketCap": "$1,556,585,250,000",
    "fiscalQuarterEnding": "Oct/2024",
    "epsForecast": "$1.13",
    "noOfEsts": "11"
@@ -2519,26 +2914,26 @@
  "2024-12-04": [],
  "2024-12-03": [
   {
-   "eps": "$0.26",
-   "surprise": "13.04",
-   "time": "time-not-supplied",
-   "symbol": "MRVL",
-   "name": "Marvell Technology, Inc.",
-   "marketCap": "$207,904,227,000",
-   "fiscalQuarterEnding": "Oct/2024",
-   "epsForecast": "$0.23",
-   "noOfEsts": "11"
-  },
-  {
    "eps": "$1.86",
    "surprise": "4.49",
    "time": "time-not-supplied",
    "symbol": "CRM",
    "name": "Salesforce, Inc.",
-   "marketCap": "$199,536,345,000",
+   "marketCap": "$188,606,906,000",
    "fiscalQuarterEnding": "Oct/2024",
    "epsForecast": "$1.78",
    "noOfEsts": "16"
+  },
+  {
+   "eps": "$0.26",
+   "surprise": "13.04",
+   "time": "time-not-supplied",
+   "symbol": "MRVL",
+   "name": "Marvell Technology, Inc.",
+   "marketCap": "$172,223,152,000",
+   "fiscalQuarterEnding": "Oct/2024",
+   "epsForecast": "$0.23",
+   "noOfEsts": "11"
   }
  ],
  "2024-12-02": [],
@@ -2552,10 +2947,21 @@
    "time": "time-not-supplied",
    "symbol": "DELL",
    "name": "Dell Technologies Inc.",
-   "marketCap": "$289,574,552,000",
+   "marketCap": "$269,775,356,000",
    "fiscalQuarterEnding": "Oct/2024",
    "epsForecast": "$1.84",
    "noOfEsts": "5"
+  },
+  {
+   "eps": "$0.08",
+   "surprise": "700",
+   "time": "time-not-supplied",
+   "symbol": "CRWD",
+   "name": "CrowdStrike Holdings, Inc.",
+   "marketCap": "$256,424,002,000",
+   "fiscalQuarterEnding": "Oct/2024",
+   "epsForecast": "$0.01",
+   "noOfEsts": "13"
   },
   {
    "eps": "($0.22)",
@@ -2563,7 +2969,7 @@
    "time": "time-not-supplied",
    "symbol": "IREN",
    "name": "IREN Limited",
-   "marketCap": "$11,219,933,200",
+   "marketCap": "$9,690,494,000",
    "fiscalQuarterEnding": "Sep/2024",
    "epsForecast": "($0.11)",
    "noOfEsts": "3"
@@ -2579,10 +2985,21 @@
    "time": "time-not-supplied",
    "symbol": "NVDA",
    "name": "NVIDIA Corporation",
-   "marketCap": "$5,231,868,900,000",
+   "marketCap": "$4,931,824,100,000",
    "fiscalQuarterEnding": "Oct/2024",
    "epsForecast": "$0.70",
    "noOfEsts": "14"
+  },
+  {
+   "eps": "$0.83",
+   "surprise": "N/A",
+   "time": "time-not-supplied",
+   "symbol": "PANW",
+   "name": "Palo Alto Networks, Inc.",
+   "marketCap": "$299,443,782,000",
+   "fiscalQuarterEnding": "Oct/2024",
+   "epsForecast": "$0.83",
+   "noOfEsts": "13"
   }
  ],
  "2024-11-19": [],
@@ -2595,7 +3012,7 @@
    "time": "time-not-supplied",
    "symbol": "OKLO",
    "name": "Oklo Inc.",
-   "marketCap": "$5,067,120,600",
+   "marketCap": "$4,696,945,700",
    "fiscalQuarterEnding": "Sep/2024",
    "epsForecast": "($0.08)",
    "noOfEsts": "2"
@@ -2609,7 +3026,7 @@
    "time": "time-not-supplied",
    "symbol": "RKLB",
    "name": "Rocket Lab Corporation",
-   "marketCap": "$32,241,739,800",
+   "marketCap": "$34,357,291,000",
    "fiscalQuarterEnding": "Sep/2024",
    "epsForecast": "($0.11)",
    "noOfEsts": "4"
@@ -2624,7 +3041,7 @@
    "time": "time-not-supplied",
    "symbol": "LITE",
    "name": "Lumentum Holdings Inc.",
-   "marketCap": "$75,592,303,000",
+   "marketCap": "$76,153,004,000",
    "fiscalQuarterEnding": "Sep/2024",
    "epsForecast": "($0.25)",
    "noOfEsts": "6"
@@ -2635,7 +3052,7 @@
    "time": "time-not-supplied",
    "symbol": "BE",
    "name": "Bloom Energy Corporation",
-   "marketCap": "$66,627,977,000",
+   "marketCap": "$60,068,569,000",
    "fiscalQuarterEnding": "Sep/2024",
    "epsForecast": "($0.02)",
    "noOfEsts": "9"
@@ -2650,7 +3067,7 @@
    "time": "time-not-supplied",
    "symbol": "PLTR",
    "name": "Palantir Technologies Inc.",
-   "marketCap": "$466,358,698,000",
+   "marketCap": "$442,242,073,000",
    "fiscalQuarterEnding": "Sep/2024",
    "epsForecast": "$0.05",
    "noOfEsts": "8"
@@ -2661,7 +3078,7 @@
    "time": "time-not-supplied",
    "symbol": "TEM",
    "name": "Tempus AI, Inc.",
-   "marketCap": "$11,681,323,000",
+   "marketCap": "$13,111,985,200",
    "fiscalQuarterEnding": "Sep/2024",
    "epsForecast": "($0.40)",
    "noOfEsts": "2"
@@ -2675,21 +3092,10 @@
    "time": "time-not-supplied",
    "symbol": "AMZN",
    "name": "Amazon.com, Inc.",
-   "marketCap": "$2,830,867,890,000",
+   "marketCap": "$2,592,490,390,000",
    "fiscalQuarterEnding": "Sep/2024",
    "epsForecast": "$1.14",
    "noOfEsts": "16"
-  },
-  {
-   "eps": "($0.63)",
-   "surprise": "-215",
-   "time": "time-not-supplied",
-   "symbol": "INTC",
-   "name": "Intel Corporation",
-   "marketCap": "$486,384,959,000",
-   "fiscalQuarterEnding": "Sep/2024",
-   "epsForecast": "($0.20)",
-   "noOfEsts": "13"
   },
   {
    "eps": "$2.84",
@@ -2697,7 +3103,7 @@
    "time": "time-not-supplied",
    "symbol": "ETN",
    "name": "Eaton Corporation, PLC",
-   "marketCap": "$152,058,593,000",
+   "marketCap": "$143,696,347,000",
    "fiscalQuarterEnding": "Sep/2024",
    "epsForecast": "$2.80",
    "noOfEsts": "9"
@@ -2705,12 +3111,34 @@
  ],
  "2024-10-30": [
   {
+   "eps": "$3.30",
+   "surprise": "7.14",
+   "time": "time-not-supplied",
+   "symbol": "MSFT",
+   "name": "Microsoft Corporation",
+   "marketCap": "$3,875,805,070,000",
+   "fiscalQuarterEnding": "Sep/2024",
+   "epsForecast": "$3.08",
+   "noOfEsts": "16"
+  },
+  {
+   "eps": "$6.03",
+   "surprise": "16.18",
+   "time": "time-not-supplied",
+   "symbol": "META",
+   "name": "Meta Platforms, Inc.",
+   "marketCap": "$1,572,062,760,000",
+   "fiscalQuarterEnding": "Sep/2024",
+   "epsForecast": "$5.19",
+   "noOfEsts": "17"
+  },
+  {
    "eps": "$1.18",
    "surprise": "-22.37",
    "time": "time-not-supplied",
    "symbol": "LLY",
    "name": "Eli Lilly and Company",
-   "marketCap": "$1,167,602,880,000",
+   "marketCap": "$1,333,543,700,000",
    "fiscalQuarterEnding": "Sep/2024",
    "epsForecast": "$1.52",
    "noOfEsts": "7"
@@ -2721,7 +3149,7 @@
    "time": "time-not-supplied",
    "symbol": "HOOD",
    "name": "Robinhood Markets, Inc.",
-   "marketCap": "$86,779,421,000",
+   "marketCap": "$76,532,752,000",
    "fiscalQuarterEnding": "Sep/2024",
    "epsForecast": "$0.18",
    "noOfEsts": "4"
@@ -2734,7 +3162,7 @@
    "time": "time-not-supplied",
    "symbol": "GOOGL",
    "name": "Alphabet Inc.",
-   "marketCap": "$4,209,321,440,000",
+   "marketCap": "$3,440,352,950,000",
    "fiscalQuarterEnding": "Sep/2024",
    "epsForecast": "$1.83",
    "noOfEsts": "17"
@@ -2745,7 +3173,7 @@
    "time": "time-not-supplied",
    "symbol": "AMD",
    "name": "Advanced Micro Devices, Inc.",
-   "marketCap": "$878,353,190,000",
+   "marketCap": "$824,073,390,000",
    "fiscalQuarterEnding": "Sep/2024",
    "epsForecast": "$0.71",
    "noOfEsts": "14"
@@ -2754,50 +3182,6 @@
  "2024-10-28": [],
  "2024-10-25": [],
  "2024-10-24": [],
- "2024-10-23": [
-  {
-   "eps": "$0.62",
-   "surprise": "34.78",
-   "time": "time-not-supplied",
-   "symbol": "TSLA",
-   "name": "Tesla, Inc. ",
-   "marketCap": "$1,453,670,400,000",
-   "fiscalQuarterEnding": "Sep/2024",
-   "epsForecast": "$0.46",
-   "noOfEsts": "9"
-  },
-  {
-   "eps": "$0.35",
-   "surprise": "59.09",
-   "time": "time-not-supplied",
-   "symbol": "GEV",
-   "name": "GE Vernova Inc.",
-   "marketCap": "$241,948,082,000",
-   "fiscalQuarterEnding": "Sep/2024",
-   "epsForecast": "$0.22",
-   "noOfEsts": "8"
-  }
- ],
- "2024-10-22": [],
- "2024-10-21": [],
- "2024-10-18": [],
- "2024-10-17": [],
- "2024-10-16": [],
- "2024-10-15": [],
- "2024-10-14": [],
- "2024-10-11": [
-  {
-   "eps": "$4.37",
-   "surprise": "8.71",
-   "time": "time-not-supplied",
-   "symbol": "JPM",
-   "name": "J P Morgan Chase & Co",
-   "marketCap": "$886,584,840,000",
-   "fiscalQuarterEnding": "Sep/2024",
-   "epsForecast": "$4.02",
-   "noOfEsts": "8"
-  }
- ],
  "2024-08-15": [],
  "2024-08-16": [],
  "2024-08-14": [
@@ -2807,7 +3191,7 @@
    "time": "time-not-supplied",
    "symbol": "LITE",
    "name": "Lumentum Holdings Inc.",
-   "marketCap": "$75,592,303,000",
+   "marketCap": "$76,153,004,000",
    "fiscalQuarterEnding": "Jun/2024",
    "epsForecast": "($0.31)",
    "noOfEsts": "7"
@@ -2820,14 +3204,26 @@
    "time": "time-not-supplied",
    "symbol": "OKLO",
    "name": "Oklo Inc.",
-   "marketCap": "$5,067,120,600",
+   "marketCap": "$4,696,945,700",
    "fiscalQuarterEnding": "Jun/2024",
    "epsForecast": "",
    "noOfEsts": "N/A"
   }
  ],
  "2024-08-12": [],
- "2024-08-19": [],
+ "2024-08-19": [
+  {
+   "eps": "$0.85",
+   "surprise": "10.39",
+   "time": "time-not-supplied",
+   "symbol": "PANW",
+   "name": "Palo Alto Networks, Inc.",
+   "marketCap": "$299,443,782,000",
+   "fiscalQuarterEnding": "Jul/2024",
+   "epsForecast": "$0.77",
+   "noOfEsts": "13"
+  }
+ ],
  "2024-08-20": [],
  "2024-08-21": [],
  "2024-08-09": [],
@@ -2839,7 +3235,7 @@
    "time": "time-not-supplied",
    "symbol": "LLY",
    "name": "Eli Lilly and Company",
-   "marketCap": "$1,167,602,880,000",
+   "marketCap": "$1,333,543,700,000",
    "fiscalQuarterEnding": "Jun/2024",
    "epsForecast": "$2.64",
    "noOfEsts": "9"
@@ -2850,7 +3246,7 @@
    "time": "time-not-supplied",
    "symbol": "BE",
    "name": "Bloom Energy Corporation",
-   "marketCap": "$66,627,977,000",
+   "marketCap": "$60,068,569,000",
    "fiscalQuarterEnding": "Jun/2024",
    "epsForecast": "($0.16)",
    "noOfEsts": "9"
@@ -2861,7 +3257,7 @@
    "time": "time-not-supplied",
    "symbol": "RKLB",
    "name": "Rocket Lab Corporation",
-   "marketCap": "$32,241,739,800",
+   "marketCap": "$34,357,291,000",
    "fiscalQuarterEnding": "Jun/2024",
    "epsForecast": "($0.10)",
    "noOfEsts": "4"
@@ -2874,7 +3270,7 @@
    "time": "time-not-supplied",
    "symbol": "HOOD",
    "name": "Robinhood Markets, Inc.",
-   "marketCap": "$86,779,421,000",
+   "marketCap": "$76,532,752,000",
    "fiscalQuarterEnding": "Mar/2024",
    "epsForecast": "$0.05",
    "noOfEsts": "4"
@@ -2887,7 +3283,7 @@
    "time": "time-not-supplied",
    "symbol": "BE",
    "name": "Bloom Energy Corporation",
-   "marketCap": "$66,627,977,000",
+   "marketCap": "$60,068,569,000",
    "fiscalQuarterEnding": "Mar/2024",
    "epsForecast": "($0.16)",
    "noOfEsts": "8"
@@ -2902,7 +3298,7 @@
    "time": "time-not-supplied",
    "symbol": "PLTR",
    "name": "Palantir Technologies Inc.",
-   "marketCap": "$466,358,698,000",
+   "marketCap": "$442,242,073,000",
    "fiscalQuarterEnding": "Mar/2024",
    "epsForecast": "$0.04",
    "noOfEsts": "7"
@@ -2913,7 +3309,7 @@
    "time": "time-not-supplied",
    "symbol": "LITE",
    "name": "Lumentum Holdings Inc.",
-   "marketCap": "$75,592,303,000",
+   "marketCap": "$76,153,004,000",
    "fiscalQuarterEnding": "Mar/2024",
    "epsForecast": "($0.18)",
    "noOfEsts": "6"
@@ -2924,7 +3320,7 @@
    "time": "time-not-supplied",
    "symbol": "RKLB",
    "name": "Rocket Lab Corporation",
-   "marketCap": "$32,241,739,800",
+   "marketCap": "$34,357,291,000",
    "fiscalQuarterEnding": "Mar/2024",
    "epsForecast": "($0.11)",
    "noOfEsts": "4"
@@ -2937,7 +3333,7 @@
    "time": "time-not-supplied",
    "symbol": "OKLO",
    "name": "Oklo Inc.",
-   "marketCap": "$5,067,120,600",
+   "marketCap": "$4,696,945,700",
    "fiscalQuarterEnding": "Mar/2024",
    "epsForecast": "",
    "noOfEsts": "N/A"
@@ -2953,715 +3349,24 @@
    "time": "time-not-supplied",
    "symbol": "IREN",
    "name": "IREN Limited",
-   "marketCap": "$11,219,933,200",
+   "marketCap": "$9,690,494,000",
    "fiscalQuarterEnding": "Mar/2024",
    "epsForecast": "$0.12",
    "noOfEsts": "2"
   }
  ],
  "2024-05-01": [],
- "2024-08-05": [
+ "2024-05-20": [
   {
-   "eps": "$0.03",
-   "surprise": "-25",
+   "eps": "$0.89",
+   "surprise": "56.14",
    "time": "time-not-supplied",
-   "symbol": "PLTR",
-   "name": "Palantir Technologies Inc.",
-   "marketCap": "$466,358,698,000",
-   "fiscalQuarterEnding": "Jun/2024",
-   "epsForecast": "$0.04",
-   "noOfEsts": "6"
-  }
- ],
- "2024-08-06": [
-  {
-   "eps": "($6.77)",
-   "surprise": "-53.51",
-   "time": "time-not-supplied",
-   "symbol": "TEM",
-   "name": "Tempus AI, Inc.",
-   "marketCap": "$11,681,323,000",
-   "fiscalQuarterEnding": "Jun/2024",
-   "epsForecast": "($4.41)",
-   "noOfEsts": "3"
-  }
- ],
- "2024-04-30": [
-  {
-   "eps": "$1.13",
-   "surprise": "36.14",
-   "time": "time-not-supplied",
-   "symbol": "AMZN",
-   "name": "Amazon.com, Inc.",
-   "marketCap": "$2,830,867,890,000",
-   "fiscalQuarterEnding": "Mar/2024",
-   "epsForecast": "$0.83",
-   "noOfEsts": "15"
-  },
-  {
-   "eps": "$2.58",
-   "surprise": "1.98",
-   "time": "time-not-supplied",
-   "symbol": "LLY",
-   "name": "Eli Lilly and Company",
-   "marketCap": "$1,167,602,880,000",
-   "fiscalQuarterEnding": "Mar/2024",
-   "epsForecast": "$2.53",
-   "noOfEsts": "9"
-  },
-  {
-   "eps": "$0.43",
-   "surprise": "4.88",
-   "time": "time-not-supplied",
-   "symbol": "AMD",
-   "name": "Advanced Micro Devices, Inc.",
-   "marketCap": "$878,353,190,000",
-   "fiscalQuarterEnding": "Mar/2024",
-   "epsForecast": "$0.41",
-   "noOfEsts": "14"
-  },
-  {
-   "eps": "$2.40",
-   "surprise": "5.26",
-   "time": "time-not-supplied",
-   "symbol": "ETN",
-   "name": "Eaton Corporation, PLC",
-   "marketCap": "$152,058,593,000",
-   "fiscalQuarterEnding": "Mar/2024",
-   "epsForecast": "$2.28",
-   "noOfEsts": "7"
-  }
- ],
- "2024-04-29": [],
- "2024-05-16": [],
- "2024-05-17": [],
- "2024-04-26": [],
- "2024-04-25": [
-  {
-   "eps": "$1.89",
-   "surprise": "26.85",
-   "time": "time-not-supplied",
-   "symbol": "GOOGL",
-   "name": "Alphabet Inc.",
-   "marketCap": "$4,209,321,440,000",
-   "fiscalQuarterEnding": "Mar/2024",
-   "epsForecast": "$1.49",
-   "noOfEsts": "16"
-  },
-  {
-   "eps": "($0.06)",
-   "surprise": "-100",
-   "time": "time-not-supplied",
-   "symbol": "INTC",
-   "name": "Intel Corporation",
-   "marketCap": "$486,384,959,000",
-   "fiscalQuarterEnding": "Mar/2024",
-   "epsForecast": "($0.03)",
-   "noOfEsts": "13"
-  },
-  {
-   "eps": "($0.41)",
-   "surprise": "-70.83",
-   "time": "time-not-supplied",
-   "symbol": "GEV",
-   "name": "GE Vernova Inc.",
-   "marketCap": "$241,948,082,000",
-   "fiscalQuarterEnding": "Mar/2024",
-   "epsForecast": "($0.24)",
-   "noOfEsts": "3"
-  }
- ],
- "2024-02-06": [
-  {
-   "eps": "$2.49",
-   "surprise": "0.81",
-   "time": "time-not-supplied",
-   "symbol": "LLY",
-   "name": "Eli Lilly and Company",
-   "marketCap": "$1,167,602,880,000",
-   "fiscalQuarterEnding": "Dec/2023",
-   "epsForecast": "$2.47",
-   "noOfEsts": "9"
-  }
- ],
- "2024-02-05": [
-  {
-   "eps": "$0.03",
-   "surprise": "-25",
-   "time": "time-not-supplied",
-   "symbol": "PLTR",
-   "name": "Palantir Technologies Inc.",
-   "marketCap": "$466,358,698,000",
-   "fiscalQuarterEnding": "Dec/2023",
-   "epsForecast": "$0.04",
-   "noOfEsts": "7"
-  }
- ],
- "2024-02-07": [],
- "2024-02-08": [
-  {
-   "eps": "($0.17)",
-   "surprise": "-70",
-   "time": "time-not-supplied",
-   "symbol": "LITE",
-   "name": "Lumentum Holdings Inc.",
-   "marketCap": "$75,592,303,000",
-   "fiscalQuarterEnding": "Dec/2023",
-   "epsForecast": "($0.10)",
-   "noOfEsts": "7"
-  }
- ],
- "2024-02-09": [],
- "2024-02-02": [],
- "2024-02-01": [
-  {
-   "eps": "$1.01",
-   "surprise": "24.69",
-   "time": "time-not-supplied",
-   "symbol": "AMZN",
-   "name": "Amazon.com, Inc.",
-   "marketCap": "$2,830,867,890,000",
-   "fiscalQuarterEnding": "Dec/2023",
-   "epsForecast": "$0.81",
-   "noOfEsts": "15"
-  },
-  {
-   "eps": "$2.55",
-   "surprise": "3.24",
-   "time": "time-not-supplied",
-   "symbol": "ETN",
-   "name": "Eaton Corporation, PLC",
-   "marketCap": "$152,058,593,000",
-   "fiscalQuarterEnding": "Dec/2023",
-   "epsForecast": "$2.47",
-   "noOfEsts": "8"
-  }
- ],
- "2024-01-31": [],
- "2024-02-12": [],
- "2024-01-30": [
-  {
-   "eps": "$1.64",
-   "surprise": "2.5",
-   "time": "time-not-supplied",
-   "symbol": "GOOGL",
-   "name": "Alphabet Inc.",
-   "marketCap": "$4,209,321,440,000",
-   "fiscalQuarterEnding": "Dec/2023",
-   "epsForecast": "$1.60",
-   "noOfEsts": "16"
-  },
-  {
-   "eps": "$0.59",
-   "surprise": "1.72",
-   "time": "time-not-supplied",
-   "symbol": "AMD",
-   "name": "Advanced Micro Devices, Inc.",
-   "marketCap": "$878,353,190,000",
-   "fiscalQuarterEnding": "Dec/2023",
-   "epsForecast": "$0.58",
-   "noOfEsts": "15"
-  }
- ],
- "2024-02-13": [
-  {
-   "eps": "$0.03",
-   "surprise": "400",
-   "time": "time-not-supplied",
-   "symbol": "HOOD",
-   "name": "Robinhood Markets, Inc.",
-   "marketCap": "$86,779,421,000",
-   "fiscalQuarterEnding": "Dec/2023",
-   "epsForecast": "($0.01)",
-   "noOfEsts": "4"
-  }
- ],
- "2024-01-29": [],
- "2024-02-14": [],
- "2024-02-15": [
-  {
-   "eps": "$0.05",
-   "surprise": "183.33",
-   "time": "time-not-supplied",
-   "symbol": "BE",
-   "name": "Bloom Energy Corporation",
-   "marketCap": "$66,627,977,000",
-   "fiscalQuarterEnding": "Dec/2023",
-   "epsForecast": "($0.06)",
-   "noOfEsts": "10"
-  },
-  {
-   "eps": "($0.07)",
-   "surprise": "N/A",
-   "time": "time-not-supplied",
-   "symbol": "IREN",
-   "name": "IREN Limited",
-   "marketCap": "$11,219,933,200",
-   "fiscalQuarterEnding": "Dec/2023",
-   "epsForecast": "$0",
-   "noOfEsts": "2"
-  }
- ],
- "2024-02-16": [],
- "2024-01-26": [],
- "2024-01-25": [
-  {
-   "eps": "$0.38",
-   "surprise": "40.74",
-   "time": "time-not-supplied",
-   "symbol": "INTC",
-   "name": "Intel Corporation",
-   "marketCap": "$486,384,959,000",
-   "fiscalQuarterEnding": "Dec/2023",
-   "epsForecast": "$0.27",
-   "noOfEsts": "14"
-  }
- ],
- "2023-11-06": [],
- "2023-11-07": [
-  {
-   "eps": "($0.09)",
-   "surprise": "10",
-   "time": "time-not-supplied",
-   "symbol": "HOOD",
-   "name": "Robinhood Markets, Inc.",
-   "marketCap": "$86,779,421,000",
-   "fiscalQuarterEnding": "Sep/2023",
-   "epsForecast": "($0.10)",
-   "noOfEsts": "4"
-  }
- ],
- "2023-11-08": [
-  {
-   "eps": "($0.10)",
-   "surprise": "28.57",
-   "time": "time-not-supplied",
-   "symbol": "LITE",
-   "name": "Lumentum Holdings Inc.",
-   "marketCap": "$75,592,303,000",
-   "fiscalQuarterEnding": "Sep/2023",
-   "epsForecast": "($0.14)",
-   "noOfEsts": "6"
-  },
-  {
-   "eps": "$0.05",
-   "surprise": "129.41",
-   "time": "time-not-supplied",
-   "symbol": "BE",
-   "name": "Bloom Energy Corporation",
-   "marketCap": "$66,627,977,000",
-   "fiscalQuarterEnding": "Sep/2023",
-   "epsForecast": "($0.17)",
-   "noOfEsts": "9"
-  },
-  {
-   "eps": "($0.08)",
-   "surprise": "11.11",
-   "time": "time-not-supplied",
-   "symbol": "RKLB",
-   "name": "Rocket Lab Corporation",
-   "marketCap": "$32,241,739,800",
-   "fiscalQuarterEnding": "Sep/2023",
-   "epsForecast": "($0.09)",
-   "noOfEsts": "5"
-  }
- ],
- "2023-11-09": [],
- "2023-11-03": [],
- "2023-11-10": [],
- "2023-11-02": [
-  {
-   "eps": "$0.10",
-   "surprise": "225",
-   "time": "time-not-supplied",
-   "symbol": "LLY",
-   "name": "Eli Lilly and Company",
-   "marketCap": "$1,167,602,880,000",
-   "fiscalQuarterEnding": "Sep/2023",
-   "epsForecast": "($0.08)",
-   "noOfEsts": "5"
-  },
-  {
-   "eps": "$0.03",
-   "surprise": "50",
-   "time": "time-not-supplied",
-   "symbol": "PLTR",
-   "name": "Palantir Technologies Inc.",
-   "marketCap": "$466,358,698,000",
-   "fiscalQuarterEnding": "Sep/2023",
-   "epsForecast": "$0.02",
-   "noOfEsts": "7"
-  }
- ],
- "2023-11-01": [],
- "2023-10-31": [
-  {
-   "eps": "$0.53",
-   "surprise": "8.16",
-   "time": "time-not-supplied",
-   "symbol": "AMD",
-   "name": "Advanced Micro Devices, Inc.",
-   "marketCap": "$878,353,190,000",
-   "fiscalQuarterEnding": "Sep/2023",
-   "epsForecast": "$0.49",
-   "noOfEsts": "14"
-  },
-  {
-   "eps": "$2.47",
-   "surprise": "5.56",
-   "time": "time-not-supplied",
-   "symbol": "ETN",
-   "name": "Eaton Corporation, PLC",
-   "marketCap": "$152,058,593,000",
-   "fiscalQuarterEnding": "Sep/2023",
-   "epsForecast": "$2.34",
-   "noOfEsts": "7"
-  }
- ],
- "2023-11-13": [],
- "2023-10-30": [],
- "2023-08-08": [
-  {
-   "eps": "$2.11",
-   "surprise": "6.57",
-   "time": "time-not-supplied",
-   "symbol": "LLY",
-   "name": "Eli Lilly and Company",
-   "marketCap": "$1,167,602,880,000",
-   "fiscalQuarterEnding": "Jun/2023",
-   "epsForecast": "$1.98",
-   "noOfEsts": "8"
-  },
-  {
-   "eps": "($0.10)",
-   "surprise": "N/A",
-   "time": "time-not-supplied",
-   "symbol": "RKLB",
-   "name": "Rocket Lab Corporation",
-   "marketCap": "$32,241,739,800",
-   "fiscalQuarterEnding": "Jun/2023",
-   "epsForecast": "($0.10)",
-   "noOfEsts": "5"
-  }
- ],
- "2023-08-09": [],
- "2023-08-07": [
-  {
-   "eps": "$0.01",
-   "surprise": "N/A",
-   "time": "time-not-supplied",
-   "symbol": "PLTR",
-   "name": "Palantir Technologies Inc.",
-   "marketCap": "$466,358,698,000",
-   "fiscalQuarterEnding": "Jun/2023",
-   "epsForecast": "$0.01",
-   "noOfEsts": "7"
-  }
- ],
- "2023-08-10": [],
- "2023-08-11": [],
- "2023-08-04": [],
- "2023-08-03": [
-  {
-   "eps": "$0.63",
-   "surprise": "85.29",
-   "time": "time-not-supplied",
-   "symbol": "AMZN",
-   "name": "Amazon.com, Inc.",
-   "marketCap": "$2,830,867,890,000",
-   "fiscalQuarterEnding": "Jun/2023",
-   "epsForecast": "$0.34",
+   "symbol": "PANW",
+   "name": "Palo Alto Networks, Inc.",
+   "marketCap": "$299,443,782,000",
+   "fiscalQuarterEnding": "Apr/2024",
+   "epsForecast": "$0.57",
    "noOfEsts": "12"
-  },
-  {
-   "eps": "($0.32)",
-   "surprise": "-14.29",
-   "time": "time-not-supplied",
-   "symbol": "BE",
-   "name": "Bloom Energy Corporation",
-   "marketCap": "$66,627,977,000",
-   "fiscalQuarterEnding": "Jun/2023",
-   "epsForecast": "($0.28)",
-   "noOfEsts": "9"
-  }
- ],
- "2023-08-14": [],
- "2023-08-02": [
-  {
-   "eps": "$0.03",
-   "surprise": "250",
-   "time": "time-not-supplied",
-   "symbol": "HOOD",
-   "name": "Robinhood Markets, Inc.",
-   "marketCap": "$86,779,421,000",
-   "fiscalQuarterEnding": "Jun/2023",
-   "epsForecast": "($0.02)",
-   "noOfEsts": "5"
-  }
- ],
- "2023-08-15": [],
- "2023-08-01": [
-  {
-   "eps": "$0.40",
-   "surprise": "N/A",
-   "time": "time-not-supplied",
-   "symbol": "AMD",
-   "name": "Advanced Micro Devices, Inc.",
-   "marketCap": "$878,353,190,000",
-   "fiscalQuarterEnding": "Jun/2023",
-   "epsForecast": "$0.40",
-   "noOfEsts": "14"
-  },
-  {
-   "eps": "$2.21",
-   "surprise": "4.74",
-   "time": "time-not-supplied",
-   "symbol": "ETN",
-   "name": "Eaton Corporation, PLC",
-   "marketCap": "$152,058,593,000",
-   "fiscalQuarterEnding": "Jun/2023",
-   "epsForecast": "$2.11",
-   "noOfEsts": "8"
-  }
- ],
- "2024-07-31": [],
- "2024-07-30": [
-  {
-   "eps": "$0.50",
-   "surprise": "6.38",
-   "time": "time-not-supplied",
-   "symbol": "AMD",
-   "name": "Advanced Micro Devices, Inc.",
-   "marketCap": "$878,353,190,000",
-   "fiscalQuarterEnding": "Jun/2024",
-   "epsForecast": "$0.47",
-   "noOfEsts": "14"
-  }
- ],
- "2024-08-01": [
-  {
-   "eps": "$1.23",
-   "surprise": "17.14",
-   "time": "time-not-supplied",
-   "symbol": "AMZN",
-   "name": "Amazon.com, Inc.",
-   "marketCap": "$2,830,867,890,000",
-   "fiscalQuarterEnding": "Jun/2024",
-   "epsForecast": "$1.05",
-   "noOfEsts": "15"
-  },
-  {
-   "eps": "($0.14)",
-   "surprise": "-27.27",
-   "time": "time-not-supplied",
-   "symbol": "INTC",
-   "name": "Intel Corporation",
-   "marketCap": "$486,384,959,000",
-   "fiscalQuarterEnding": "Jun/2024",
-   "epsForecast": "($0.11)",
-   "noOfEsts": "13"
-  },
-  {
-   "eps": "$2.73",
-   "surprise": "4.6",
-   "time": "time-not-supplied",
-   "symbol": "ETN",
-   "name": "Eaton Corporation, PLC",
-   "marketCap": "$152,058,593,000",
-   "fiscalQuarterEnding": "Jun/2024",
-   "epsForecast": "$2.61",
-   "noOfEsts": "7"
-  }
- ],
- "2024-07-29": [],
- "2024-08-02": [],
- "2024-07-26": [],
- "2024-07-25": [],
- "2024-07-24": [
-  {
-   "eps": "$0.71",
-   "surprise": "2.9",
-   "time": "time-not-supplied",
-   "symbol": "GEV",
-   "name": "GE Vernova Inc.",
-   "marketCap": "$241,948,082,000",
-   "fiscalQuarterEnding": "Jun/2024",
-   "epsForecast": "$0.69",
-   "noOfEsts": "4"
-  }
- ],
- "2024-08-07": [
-  {
-   "eps": "$0.21",
-   "surprise": "40",
-   "time": "time-not-supplied",
-   "symbol": "HOOD",
-   "name": "Robinhood Markets, Inc.",
-   "marketCap": "$86,779,421,000",
-   "fiscalQuarterEnding": "Jun/2024",
-   "epsForecast": "$0.15",
-   "noOfEsts": "5"
-  }
- ],
- "2024-08-23": [],
- "2024-08-26": [],
- "2023-05-17": [],
- "2023-05-18": [],
- "2023-05-16": [],
- "2023-05-19": [],
- "2023-05-15": [],
- "2023-05-22": [],
- "2023-05-12": [],
- "2023-05-23": [],
- "2023-05-11": [],
- "2023-05-24": [
-  {
-   "eps": "$0.88",
-   "surprise": "44.26",
-   "time": "time-not-supplied",
-   "symbol": "NVDA",
-   "name": "NVIDIA Corporation",
-   "marketCap": "$5,231,868,900,000",
-   "fiscalQuarterEnding": "Apr/2023",
-   "epsForecast": "$0.61",
-   "noOfEsts": "12"
-  }
- ],
- "2023-05-10": [
-  {
-   "eps": "($0.57)",
-   "surprise": "6.56",
-   "time": "time-not-supplied",
-   "symbol": "HOOD",
-   "name": "Robinhood Markets, Inc.",
-   "marketCap": "$86,779,421,000",
-   "fiscalQuarterEnding": "Mar/2023",
-   "epsForecast": "($0.61)",
-   "noOfEsts": "3"
-  }
- ],
- "2023-02-16": [],
- "2023-02-17": [],
- "2023-02-15": [
-  {
-   "eps": "($0.73)",
-   "surprise": "-563.64",
-   "time": "time-not-supplied",
-   "symbol": "IREN",
-   "name": "IREN Limited",
-   "marketCap": "$11,219,933,200",
-   "fiscalQuarterEnding": "Dec/2022",
-   "epsForecast": "($0.11)",
-   "noOfEsts": "2"
-  }
- ],
- "2026-10-21": [
-  {
-   "eps": "$0.20",
-   "surprise": "-9.09",
-   "time": "time-not-supplied",
-   "symbol": "TSLA",
-   "name": "Tesla, Inc. ",
-   "marketCap": "$1,477,144,350,000",
-   "fiscalQuarterEnding": "Sep/2026",
-   "epsForecast": "$0.22",
-   "noOfEsts": "10"
-  }
- ],
- "2026-10-22": [
-  {
-   "eps": "$0.76",
-   "surprise": "35.71",
-   "time": "time-not-supplied",
-   "symbol": "BE",
-   "name": "Bloom Energy Corporation",
-   "marketCap": "$70,253,609,000",
-   "fiscalQuarterEnding": "Sep/2026",
-   "epsForecast": "$0.56",
-   "noOfEsts": "5"
-  }
- ],
- "2026-10-27": [
-  {
-   "eps": "$0.60",
-   "surprise": "7.14",
-   "time": "time-not-supplied",
-   "symbol": "HOOD",
-   "name": "Robinhood Markets, Inc.",
-   "marketCap": "$85,017,223,000",
-   "fiscalQuarterEnding": "Sep/2026",
-   "epsForecast": "$0.56",
-   "noOfEsts": "8"
-  }
- ],
- "2026-10-28": [
-  {
-   "eps": "$2.12",
-   "surprise": "-27.89",
-   "time": "time-not-supplied",
-   "symbol": "GOOGL",
-   "name": "Alphabet Inc.",
-   "marketCap": "$3,489,283,180,000",
-   "fiscalQuarterEnding": "Sep/2026",
-   "epsForecast": "$2.94",
-   "noOfEsts": "14"
-  },
-  {
-   "eps": "$4.81",
-   "surprise": "19.35",
-   "time": "time-not-supplied",
-   "symbol": "GEV",
-   "name": "GE Vernova Inc.",
-   "marketCap": "$234,993,533,000",
-   "fiscalQuarterEnding": "Sep/2026",
-   "epsForecast": "$4.03",
-   "noOfEsts": "7"
-  }
- ],
- "2026-10-29": [
-  {
-   "eps": "$1.89",
-   "surprise": "-5.97",
-   "time": "time-not-supplied",
-   "symbol": "AMZN",
-   "name": "Amazon.com, Inc.",
-   "marketCap": "$2,629,595,300,000",
-   "fiscalQuarterEnding": "Sep/2026",
-   "epsForecast": "$2.01",
-   "noOfEsts": "14"
-  },
-  {
-   "eps": "$7.48",
-   "surprise": "39.03",
-   "time": "time-not-supplied",
-   "symbol": "LLY",
-   "name": "Eli Lilly and Company",
-   "marketCap": "$1,293,142,200,000",
-   "fiscalQuarterEnding": "Sep/2026",
-   "epsForecast": "$5.38",
-   "noOfEsts": "3"
-  },
-  {
-   "eps": "$0.41",
-   "surprise": "46.43",
-   "time": "time-not-supplied",
-   "symbol": "INTC",
-   "name": "Intel Corporation",
-   "marketCap": "$486,596,346,000",
-   "fiscalQuarterEnding": "Sep/2026",
-   "epsForecast": "$0.28",
-   "noOfEsts": "13"
-  },
-  {
-   "eps": "$48.92",
-   "surprise": "5.91",
-   "time": "time-not-supplied",
-   "symbol": "SNDK",
-   "name": "Sandisk Corporation",
-   "marketCap": "$193,293,091,000",
-   "fiscalQuarterEnding": "Sep/2026",
-   "epsForecast": "$46.19",
-   "noOfEsts": "4"
   }
  ]
 }

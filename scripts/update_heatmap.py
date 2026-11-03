@@ -10,7 +10,7 @@ from common import load, save, get_json, now_kst, UA
 REFRESH = "--refresh-universe" in sys.argv
 cfg = load("config.json", {})
 TIER = {c["ticker"]: c["tier"] for c in cfg["companies"]}
-WATCH = {"PANW"}  # 관심 종목(테두리 없음, 툴팁만). 군 표시는 config.json companies 기준
+WATCH = set()  # 관심 종목(테두리 없음, 툴팁만). 군 표시는 config.json companies 기준
 
 SECTOR_KO = {
     "Information Technology": "기술", "Financials": "금융", "Health Care": "헬스케어", "Consumer Discretionary": "임의소비재",

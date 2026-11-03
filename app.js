@@ -333,7 +333,7 @@
       const s = c.stats || {}, n = c.next, kr = c.mkt === "kr";
       const px = (v) => kr ? `${fmtN(v, 0)}원` : `$${fmtN(v, 2)}`;
       let nextTxt = "";
-      if (kr) nextTxt = `<span>실적 반응 히스토리는 <b>미국 상장 기업만</b> 제공됩니다. 한국 종목은 현재가·50일선·히트맵 군 표시만 제공합니다.</span>`;
+      if (kr) nextTxt = `<span>실적 반응 히스토리는 <b>미국 상장 기업만</b> 제공됩니다. 한국 종목은 현재가·50일선·히트맵 역할 표시만 제공합니다.</span>`;
       else if (!s.n && !(n && n.date)) nextTxt = `<span>실적 데이터 <b>수집 대기 중</b> — 다음 갱신 때 자동으로 채워집니다.</span>`;
       else if (n && n.date) nextTxt = `<span>다음 발표 <b>${esc(n.date)}</b> 현지 ${n.rt === "pre" ? "장전" : "장후"}${n.rt === "post" ? " (한국시간 다음 날 새벽)" : " (한국시간 당일 밤)"}</span><span>컨센서스 EPS <b>${n.est_eps !== null && n.est_eps !== undefined ? "$" + fmtN(n.est_eps, 2) : "—"}</b></span><span>전년 동기 <b>${n.last_year_eps !== null && n.last_year_eps !== undefined ? "$" + fmtN(n.last_year_eps, 2) : "—"}</b></span>`;
       else {

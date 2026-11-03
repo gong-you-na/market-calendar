@@ -353,9 +353,9 @@ svg.spark{display:block;width:100%;height:110px}
 .hm-tile.tier.t1{box-shadow:inset 0 0 0 3px var(--gold), 0 0 0 1.5px var(--gold)}
 .hm-tile.tier.t2{box-shadow:inset 0 0 0 2.5px var(--t2)}
 .hm-tile.tier.t3{box-shadow:inset 0 0 0 2.5px var(--t3)}
-.hm-tile.tier.t1::after{content:"1군";position:absolute;top:3px;left:4px;font-size:.56rem;font-weight:900;background:var(--gold);color:#fff;border-radius:4px;padding:0 4px;text-shadow:none;line-height:1.5}
-.hm-tile.tier.t2::after{content:"2군";position:absolute;top:3px;left:4px;font-size:.56rem;font-weight:900;background:var(--t2);color:#fff;border-radius:4px;padding:0 4px;text-shadow:none;line-height:1.5}
-.hm-tile.tier.t3::after{content:"3군";position:absolute;top:3px;left:4px;font-size:.56rem;font-weight:900;background:var(--t3);color:#fff;border-radius:4px;padding:0 4px;text-shadow:none;line-height:1.5}
+.hm-tile.tier.t1::after{content:"주도";position:absolute;top:3px;left:4px;font-size:.56rem;font-weight:900;background:var(--gold);color:#fff;border-radius:4px;padding:0 4px;text-shadow:none;line-height:1.5}
+.hm-tile.tier.t2::after{content:"방어";position:absolute;top:3px;left:4px;font-size:.56rem;font-weight:900;background:var(--t2);color:#fff;border-radius:4px;padding:0 4px;text-shadow:none;line-height:1.5}
+.hm-tile.tier.t3::after{content:"탐색";position:absolute;top:3px;left:4px;font-size:.56rem;font-weight:900;background:var(--t3);color:#fff;border-radius:4px;padding:0 4px;text-shadow:none;line-height:1.5}
 .hm-tile.watch{box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.55)}
 .hm-tip{display:none;position:absolute;z-index:5;background:var(--card);border:1px solid var(--line2);border-radius:var(--r2);padding:10px 12px;width:240px;box-shadow:0 10px 30px rgba(0,0,0,.18);pointer-events:none;font-size:.78rem}
 .hm-tip .tt-h{display:flex;flex-direction:column;margin-bottom:6px}.hm-tip .tt-h b{font-size:.9rem}.hm-tip .tt-h span{color:var(--grey2);font-size:.7rem}
