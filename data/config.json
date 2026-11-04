@@ -212,6 +212,14 @@
    "rt": "post"
   },
   {
+   "ticker": "NEE",
+   "name": "넥스트에라 에너지",
+   "en": "NextEra Energy",
+   "tier": 3,
+   "theme": "전력·에너지 인프라",
+   "rt": "pre"
+  },
+  {
    "ticker": "DELL",
    "name": "델 테크놀로지",
    "en": "Dell Technologies",

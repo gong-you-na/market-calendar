@@ -84,7 +84,7 @@ git add data && git commit -m "data: YYYY-MM-DD HH:MM KST 자동 갱신 — <변
 
 ## 학습기업 추가·변경
 `data/config.json`의 `companies`에 `{ticker, name, en, tier, theme, rt(pre|post)}`를 추가하고 `run_numbers.sh`를 실행하면 히스토리가 자동 수집됩니다. 히트맵 테두리는 tier로, 관심종목은 `update_heatmap.py`의 `WATCH`로 관리합니다.
-- 2026-11-03부터 학습기업은 "미래를 바꿀 기업들" 2026.10.31 업데이트 이미지의 개별 기업 36종목(ETF·현금성 자산 제외). 역할은 `tier` 1=주도(포트 중심·성장), 2=방어(금융·헬스케어), 3=탐색(소액 가능성)이고 화면 표기는 `config.json.tiers.label`. `theme`은 이미지의 섹터 9개(반도체 / 빅테크·하이퍼스케일러 / AI 소프트웨어·보안 / 전력·에너지 인프라 / AI 인프라·통신 / 피지컬 AI·모빌리티 / 우주·방산 / 금융·핀테크 / 헬스케어). 실적 이벤트 `why`는 "주도 · 반도체." 형식으로 시작. 한국 종목은 `{ticker:"005930", mkt:"kr", yf:"005930.KS"}`처럼 6자리 코드를 ticker로 쓰고 `rt`는 생략. 실적 히스토리는 Nasdaq 데이터라 미국 상장 기업만 수집되며, 한국 종목 카드는 현재가·50일선만 표시한다.
+- 2026-11-03부터 학습기업은 "미래를 바꿀 기업들" 2026.10.31 업데이트 이미지의 개별 기업 36종목 + 2026-11-04 운영자 추가 NEE(탐색) = 37종목(ETF·현금성 자산 제외). 역할은 `tier` 1=주도(포트 중심·성장), 2=방어(금융·헬스케어), 3=탐색(소액 가능성)이고 화면 표기는 `config.json.tiers.label`. `theme`은 이미지의 섹터 9개(반도체 / 빅테크·하이퍼스케일러 / AI 소프트웨어·보안 / 전력·에너지 인프라 / AI 인프라·통신 / 피지컬 AI·모빌리티 / 우주·방산 / 금융·핀테크 / 헬스케어). 실적 이벤트 `why`는 "주도 · 반도체." 형식으로 시작. 한국 종목은 `{ticker:"005930", mkt:"kr", yf:"005930.KS"}`처럼 6자리 코드를 ticker로 쓰고 `rt`는 생략. 실적 히스토리는 Nasdaq 데이터라 미국 상장 기업만 수집되며, 한국 종목 카드는 현재가·50일선만 표시한다.
 - 학습기업 목록이 바뀌면 `update_earnings.py`가 Nasdaq 캘린더 캐시(`cache/nasdaq_calendar.json`)를 비우고 최근 2년치를 병렬로 다시 받는다(한 번만 3~5분 소요). Nasdaq `earnings-surprise` API가 비어 있어도 캘린더를 분기 간격으로 거슬러 8분기를 채운다.
 - Nasdaq 캘린더 날짜가 회사 IR 공지와 다르면 `config.json` 해당 기업에 `next_date:"YYYY-MM-DD"`(미국 날짜)를 넣어 IR 공지를 우선시킨다(지난 날짜면 다음 발표일 미확정 처리). Nasdaq이 갱신되면 제거.
 - 새 학습기업의 실적 일정은 `earnings.json.next`(Nasdaq)를 보고 `events.json`에 `t:"earn"` 이벤트로 추가한다. Nasdaq `time`이 `time-not-supplied`인 날짜는 `est:true`로 두고 회사 IR 공지가 확인되면 제거한다.
