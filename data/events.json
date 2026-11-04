@@ -1,7 +1,19 @@
 {
- "updated": "2026-11-04 06:30 KST",
+ "updated": "2026-11-05 06:20 KST",
  "note": "날짜는 한국시간 기준. ★ 예상일은 공식 일정 확정 전.",
  "changelog": [
+  {
+   "at": "2026-11-05 06:20",
+   "msg": "10월 ISM 서비스업 PMI(현지 11/4) result 추가 — 54.5(컨센서스 54.8·9월 54.9), 사업활동 53.8·신규주문 55.9·고용 51.4·가격 73.0, 15개 업종 확장(ISM 보도자료·Reuters·Helious 일치)"
+  },
+  {
+   "at": "2026-11-05 06:20",
+   "msg": "PANW 11/19(현지 11/18 장후) ★예상일 해제 — 회사 공지(11/3) 확인, 콘퍼런스콜 1:30 PT(한국시간 06:30)로 time 수정"
+  },
+  {
+   "at": "2026-11-05 06:20",
+   "msg": "10월 고용보고서(11/6) 컨센서스 11/4 기준으로 갱신 — 비농업 +6.5만·실업률 4.2%·임금 전년比 +2.9%, ADP 10월 +8.6만 사실 추가(Reuters·FinancialJuice 일치). earnings.json next.date와 실적 이벤트 날짜 일치, DELL·MRVL·CRWD·CRM·AVGO·MU는 회사 공지 미확인으로 ★예상일 유지"
+  },
   {
    "at": "2026-11-04 06:30",
    "msg": "9월 구인건수(JOLTS, 현지 11/3) result 추가 — 752만 건(컨센서스 710만·8월 719만으로 상향 수정), 채용 540만·자발적 이직 337만(이직률 2.1%)·해고 164만(Trading Economics·VerifiedInvesting·Helious 일치)"
@@ -109,18 +121,6 @@
   {
    "at": "2026-10-27 05:25",
    "msg": "미국 3분기 GDP 속보치(10/29) why에 컨센서스 3.0~3.2% 추가(Newsquawk·Investing.com 10/26)"
-  },
-  {
-   "at": "2026-10-27 05:25",
-   "msg": "미국 9월 PCE(10/29) why에 컨센서스 헤드라인 3.6%·근원 3.1%(전월比 +0.5%/+0.3%) 추가(Newsquawk·Investing.com 10/26)"
-  },
-  {
-   "at": "2026-10-27 05:25",
-   "msg": "미국 3분기 고용비용지수(10/30) why에 2분기 +0.9%·전년比 3.4%(BLS)·컨센서스 +0.8%(Investing.com) 추가"
-  },
-  {
-   "at": "2026-10-27 05:25",
-   "msg": "10월 FOMC(10/29) why에 10/26 기준 확률 추가 — 인상 9~10%·동결 90~91%, 12월 인상 84~87%(Yardeni·Investing.com·Newsquawk)"
   }
  ],
  "days": {
@@ -2092,10 +2092,74 @@
     "stocks": [],
     "src": [
      {
-      "name": "ISM",
-      "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/"
+      "name": "ISM 보도자료(PR Newswire 11/4)",
+      "url": "https://www.prnewswire.com/news-releases/services-pmi-at-54-5-october-2026-ism-services-pmi-report-302928112.html"
+     },
+     {
+      "name": "Reuters 11/4",
+      "url": "https://www.933thedrive.com/2026/11/04/us-services-sector-activity-cools-slightly-in-october-inflation-remains-elevated/"
+     },
+     {
+      "name": "Helious 11/4",
+      "url": "https://helious.io/news/rel-ev-c2285aa8a49476c7/ism-services-pmi-54-5"
      }
-    ]
+    ],
+    "result": {
+     "actual": "54.5",
+     "est": "54.8",
+     "prev": "54.9",
+     "dir": "down",
+     "head": "10월 ISM 서비스업 PMI 54.5(컨센서스 54.8·9월 54.9) · 사업활동 53.8 · 신규주문 55.9 · 고용 51.4 · 가격 73.0(9월 74.0)",
+     "note": "ISM 11/4: 10월 서비스업 PMI 54.5(9월 54.9, 컨센서스 54.8). 사업활동 53.8(9월 56.5), 신규주문 55.9(59.8), 고용 51.4(50.1), 공급자 배송 56.7(53.2), 가격 73.0(74.0), 재고 55.4(57.8), 수주잔고 58.0(56.6), 신규 수출주문 55.2(46.9), 수입 54.2(52.9). 18개 서비스 업종 중 15개 업종 확장(9월 13개). 발표일(11/4) S&P500 7,689(+1.58%)·나스닥 25,737(+1.44%)·10년물 4.89%(-6bp).",
+     "rows": [
+      [
+       "서비스업 PMI",
+       "54.5",
+       "54.8",
+       "9월 54.9"
+      ],
+      [
+       "사업활동",
+       "53.8",
+       "—",
+       "9월 56.5"
+      ],
+      [
+       "신규주문",
+       "55.9",
+       "—",
+       "9월 59.8"
+      ],
+      [
+       "고용",
+       "51.4",
+       "—",
+       "9월 50.1"
+      ],
+      [
+       "가격",
+       "73.0",
+       "—",
+       "9월 74.0"
+      ],
+      [
+       "수주잔고",
+       "58.0",
+       "—",
+       "9월 56.6"
+      ]
+     ],
+     "trend": [
+      {
+       "l": "9월",
+       "v": 54.9
+      },
+      {
+       "l": "10월",
+       "v": 54.5
+      }
+     ]
+    }
    }
   ],
   "2026-11-06": [
@@ -2104,7 +2168,7 @@
     "n": "10월 고용보고서",
     "imp": 3,
     "time": "밤 10시 30분",
-    "why": "BLS 월간 고용 통계. 9월은 비농업 고용 +2.9만 명, 실업률 4.2%, 시간당 임금 전년比 +3.0%였습니다. 컨센서스 비농업 +5.5만~6.5만 명·실업률 4.2%·시간당 임금 전월比 +0.3%(11/2 기준).",
+    "why": "BLS 월간 고용 통계. 9월은 비농업 고용 +2.9만 명, 실업률 4.2%, 시간당 임금 전년比 +3.0%였습니다. 컨센서스 비농업 +6.5만 명·실업률 4.2%·시간당 임금 전월比 +0.3%·전년比 +2.9%(11/4 기준). 10월 ADP 민간고용은 +8만 6,000명(현지 11/4 발표, 9월 +8만 6,000명으로 하향 수정).",
     "watch": "비농업 고용, 실업률, 시간당 임금, 9월 수정치",
     "stocks": [
      [
@@ -2120,6 +2184,14 @@
      {
       "name": "fedratecalc 경제캘린더",
       "url": "https://fedratecalc.com/us-economic-calendar/"
+     },
+     {
+      "name": "Reuters 11/4(ADP·컨센서스)",
+      "url": "https://finance.yahoo.com/economy/articles/us-private-payrolls-rise-october-132734884.html"
+     },
+     {
+      "name": "FinancialJuice NFP 프리뷰",
+      "url": "https://features.financialjuice.com/2026/11/02/us-nfp-prep-6th-november/"
      }
     ]
    },
@@ -2427,9 +2499,8 @@
     "imp": 2,
     "tier": 3,
     "ticker": "PANW",
-    "time": "새벽 6시 (현지 11/18 장후)",
-    "est": true,
-    "why": "탐색 · AI 소프트웨어·보안. 차세대 보안(NGS) 연간반복매출(ARR), 남은 계약 가치(RPO), 연간 가이던스가 발표됩니다. 발표일은 예상일이며 회사 공식 확정 전입니다.",
+    "time": "새벽 6시 30분 (현지 11/18 장후)",
+    "why": "탐색 · AI 소프트웨어·보안. 차세대 보안(NGS) 연간반복매출(ARR), 남은 계약 가치(RPO), 연간 가이던스가 발표됩니다. 회사 공지(11/3): 현지 11/18(수) 미국 장 마감 후 발표, 콘퍼런스콜 오후 1시 30분 PT(한국시간 11/19 오전 6시 30분). 10월 FOMC 의사록 공개(새벽 4시)와 같은 날입니다.",
     "watch": "EPS·매출 vs 컨센서스, NGS ARR, RPO, 연간 가이던스",
     "stocks": [
      [
@@ -2442,6 +2513,14 @@
      ]
     ],
     "src": [
+     {
+      "name": "Palo Alto Networks 공지(11/3)",
+      "url": "https://www.paloaltonetworks.com/company/press/2026/palo-alto-networks-to-announce-fiscal-first-quarter-2027-financial-results-on-wednesday--november-18--2026"
+     },
+     {
+      "name": "StockTitan 11/3",
+      "url": "https://www.stocktitan.net/news/PANW/palo-alto-networks-to-announce-fiscal-first-quarter-2027-financial-aacwxauxyi2w.html"
+     },
      {
       "name": "Nasdaq 실적 캘린더",
       "url": "https://www.nasdaq.com/market-activity/earnings"
