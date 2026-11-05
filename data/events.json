@@ -1,7 +1,31 @@
 {
- "updated": "2026-11-05 06:20 KST",
+ "updated": "2026-11-06 06:29 KST",
  "note": "날짜는 한국시간 기준. ★ 예상일은 공식 일정 확정 전.",
  "changelog": [
+  {
+   "at": "2026-11-06 06:29",
+   "msg": "LITE 11/6 → 11/2 변경 — 실적 보도자료가 공지(현지 11/5 장후)와 달리 현지 11/2 장전에 발표됨(Lumentum IR 보도자료 11/2·8-K 11/2 07:12 ET 접수·MarketBeat 일치, earnings.json 히스토리 11/2와 일치). 매출 12억 6,260만 달러·부문·2분기 가이던스 사실을 why에 추가"
+  },
+  {
+   "at": "2026-11-06 06:29",
+   "msg": "IREN(현지 11/5 장후) 실적 사실을 why에 추가 — 매출 2억 2,800만 달러·AI 클라우드 2억 달러·수주잔고 203억 달러·ARR 40억 달러 목표 시점 2027년 1월로 변경(회사 보도자료 + 언론 1곳). EPS·주가 반응은 earnings.json 자동"
+  },
+  {
+   "at": "2026-11-06 06:29",
+   "msg": "CRWD 12/2(현지 12/1 장후) ★예상일 해제 — 회사 공지(11/4)·IR 일정 확인, 콘퍼런스콜 2:00 PM PT(한국시간 12/2 07:00)"
+  },
+  {
+   "at": "2026-11-06 06:29",
+   "msg": "11/19 한국 증시 거래시간 변경(수능일) 추가 — 정규장 10:00~16:30(한국거래소 11/5 발표, 뉴스웨이·아주경제 일치)"
+  },
+  {
+   "at": "2026-11-06 06:29",
+   "msg": "12/31 12월 FOMC 의사록 공개(현지 12/30 14:00) 추가 — 연준 12월 일정·fedratecalc 일치"
+  },
+  {
+   "at": "2026-11-06 06:29",
+   "msg": "향후 60일 일정 교차 확인(fedratecalc·연준·ISM 공식 일정): 고용보고서 11/6·12/4, CPI 11/10·12/10, PPI 11/13·12/15, 소매판매 11/17·12/16, GDP·PCE 11/25·12/23, JOLTS 12/1, ISM 12/1·12/3, FOMC 12/9 기존과 일치. 오늘(현지 11/5) 대상 지표 없음. 고용보고서 컨센서스 +6.5만·4.2% 유지(FactSet 11/5 중간값 일치, 다른 집계 +5.9만). earnings.json next.date와 실적 이벤트 날짜 일치, DELL·MRVL·CRM·AVGO·MU는 회사 공지 미확인으로 ★예상일 유지"
+  },
   {
    "at": "2026-11-05 06:20",
    "msg": "10월 ISM 서비스업 PMI(현지 11/4) result 추가 — 54.5(컨센서스 54.8·9월 54.9), 사업활동 53.8·신규주문 55.9·고용 51.4·가격 73.0, 15개 업종 확장(ISM 보도자료·Reuters·Helious 일치)"
@@ -97,30 +121,6 @@
   {
    "at": "2026-10-28 05:30",
    "msg": "로빈후드 3분기 실적(현지 10/27 장후) why에 매출·부문별 거래 매출·순예치금·비용 전망 사실 추가(GlobeNewswire 보도자료·StockTitan 일치). EPS·주가 반응은 earnings.json 자동"
-  },
-  {
-   "at": "2026-10-28 05:30",
-   "msg": "10월 FOMC(10/29 새벽 3시) why에 10/27 기준 CME FedWatch 동결 90.6%·12월 인상 73~80%와 10/27 미국 종가 추가(Kiplinger·Newsquawk)"
-  },
-  {
-   "at": "2026-10-28 05:30",
-   "msg": "10/27 미국 종가 반영(S&P500 7,723 +0.60%·나스닥 26,478 +1.18%·VIX 17.6·10년물 4.99%). Yahoo가 코스피·코스닥 10/27 종가를 아직 내지 않아 한국 장 마감 갱신값(5638·744) 유지. 실적 next.date 33종목 대조 — 날짜 변경 없음. NVDA 11/18·미시간대 11/6 일정은 공식 확정 미확인으로 ★ 유지"
-  },
-  {
-   "at": "2026-10-27 15:50",
-   "msg": "한국 3분기 GDP 속보치(10/27) result 추가 — 전기比 +1.0%·전년比 +3.4%(한은 8월 전망 +0.3%), 설비투자 +4.1%·수출 +2.3%·민간소비 -0.2%, GDI 전년比 +18.8%(이투데이·코리아헤럴드·머니투데이 일치)"
-  },
-  {
-   "at": "2026-10-27 05:25",
-   "msg": "OKLO 11/11(장후 예상) → 11/06(장전) 변경·★예상일 해제 — 회사 공지(10/23) 현지 11/6 개장 전 발표·콘퍼런스콜 8:30 ET, StockTitan·Nasdaq 캘린더(11/6 장전) 일치"
-  },
-  {
-   "at": "2026-10-27 05:25",
-   "msg": "12/25 미국·한국 증시 휴장(크리스마스)·12/24 미국 오후 1시 조기 폐장 추가(Kiplinger·GuruFocus 2곳 일치, 60일 범위 진입)"
-  },
-  {
-   "at": "2026-10-27 05:25",
-   "msg": "미국 3분기 GDP 속보치(10/29) why에 컨센서스 3.0~3.2% 추가(Newsquawk·Investing.com 10/26)"
   }
  ],
  "days": {
@@ -1794,6 +1794,56 @@
       "url": "https://grafa.com/en/news/united-states/tempus-ai-q3-2026-revenue-rises-23-percent-raises-guidance"
      }
     ]
+   },
+   {
+    "t": "earn",
+    "n": "Lumentum FY27 1분기 실적",
+    "imp": 1,
+    "tier": 3,
+    "ticker": "LITE",
+    "time": "밤 9시 전후 (현지 11/2 장전)",
+    "why": "탐색 · AI 인프라·통신. 클라우드·AI향 광모듈 매출과 다음 분기 가이던스가 발표됩니다. 회사 공지는 현지 11/5 장 마감 후 발표였으나, 실적 보도자료는 현지 11/2 미국 장 개장 전에 나왔습니다(마벨 인수 합의 발표와 같은 날). 발표(11/2): FY27 1분기(9/26 마감) 매출 12억 6,260만 달러(전년比 +136.5%, 전분기比 +25.5%), 비GAAP 매출총이익률 53.2%·영업이익률 42.3%. 부품 매출 7억 5,420만 달러(+98.9%), 시스템 매출 5억 840만 달러(+228.8%). 2분기 가이던스 매출 15억 7,500만~16억 2,500만 달러, 비GAAP 영업이익률 45.0~46.0%. 현지 11/2 마벨 테크놀로지가 루멘텀을 전량 주식교환(루멘텀 1주당 마벨 4.5주, 기업가치 약 1,150억 달러)으로 인수하기로 합의했다고 발표. 발표일 루멘텀 -17.6%·마벨 -13%.",
+    "watch": "EPS·매출 vs 컨센서스, 다음 분기 가이던스",
+    "stocks": [
+     [
+      "루멘텀",
+      1
+     ],
+     [
+      "광통신",
+      0
+     ]
+    ],
+    "src": [
+     {
+      "name": "Nasdaq 실적 캘린더",
+      "url": "https://www.nasdaq.com/market-activity/earnings"
+     },
+     {
+      "name": "Lumentum 공지(IR PDF)",
+      "url": "https://s21.q4cdn.com/377324469/files/doc_news/Lumentum-Announces-Reporting-Date-for-Fiscal-First-Quarter-2027-Financial-Results-2026.pdf"
+     },
+     {
+      "name": "AP 11/2",
+      "url": "https://www.2news.com/news/national/us-stocks-erase-a-morning-rally-as-tech-stocks-swing-following-last-weeks-sell-off/article_08b4d682-41f5-557c-9c38-d260dbb23f2e.html"
+     },
+     {
+      "name": "TheStreet 11/2",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-02-2026"
+     },
+     {
+      "name": "Lumentum 보도자료(IR 11/2)",
+      "url": "https://investor.lumentum.com/financial-news-releases/news-details/2026/Lumentum-Announces-First-Quarter-of-Fiscal-Year-2027-Financial-Results/default.aspx"
+     },
+     {
+      "name": "Lumentum 8-K(11/2 07:12 ET 접수, StockTitan 게재)",
+      "url": "https://www.stocktitan.net/sec-filings/LITE/8-k-lumentum-holdings-inc-reports-material-event-b6c0173c3a18.html"
+     },
+     {
+      "name": "MarketBeat(11/2 장전 발표)",
+      "url": "https://www.marketbeat.com/earnings/reports/2026-11-2-lumentum-holdings-inc-stock/"
+     }
+    ]
    }
   ],
   "2026-11-03": [
@@ -2197,50 +2247,12 @@
    },
    {
     "t": "earn",
-    "n": "Lumentum FY27 1분기 실적",
-    "imp": 1,
-    "tier": 3,
-    "ticker": "LITE",
-    "time": "새벽 6시 (현지 11/5 장후)",
-    "why": "탐색 · AI 인프라·통신. 클라우드·AI향 광모듈 매출과 다음 분기 가이던스가 발표됩니다. 회사 공지: 현지 11/5 장 마감 후 발표, 콘퍼런스콜 오후 2시 PT(한국시간 11/6 오전 7시). 현지 11/2 마벨 테크놀로지가 루멘텀을 전량 주식교환(루멘텀 1주당 마벨 4.5주, 기업가치 약 1,150억 달러)으로 인수하기로 합의했다고 발표. 발표일 루멘텀 -17.6%·마벨 -13%.",
-    "watch": "EPS·매출 vs 컨센서스, 다음 분기 가이던스",
-    "stocks": [
-     [
-      "루멘텀",
-      1
-     ],
-     [
-      "광통신",
-      0
-     ]
-    ],
-    "src": [
-     {
-      "name": "Nasdaq 실적 캘린더",
-      "url": "https://www.nasdaq.com/market-activity/earnings"
-     },
-     {
-      "name": "Lumentum 공지(IR PDF)",
-      "url": "https://s21.q4cdn.com/377324469/files/doc_news/Lumentum-Announces-Reporting-Date-for-Fiscal-First-Quarter-2027-Financial-Results-2026.pdf"
-     },
-     {
-      "name": "AP 11/2",
-      "url": "https://www.2news.com/news/national/us-stocks-erase-a-morning-rally-as-tech-stocks-swing-following-last-weeks-sell-off/article_08b4d682-41f5-557c-9c38-d260dbb23f2e.html"
-     },
-     {
-      "name": "TheStreet 11/2",
-      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-02-2026"
-     }
-    ]
-   },
-   {
-    "t": "earn",
     "n": "IREN FY27 1분기 실적",
     "imp": 1,
     "tier": 3,
     "ticker": "IREN",
     "time": "새벽 6시 (현지 11/5 장후)",
-    "why": "탐색 · AI 인프라·통신. AI 클라우드(GPU) 매출과 비트코인 채굴 매출, 전력 용량이 발표됩니다. 회사 공지(10/22): 현지 11/5(목) 발표, 콘퍼런스콜 오후 5시 ET(한국시간 11/6 오전 7시).",
+    "why": "탐색 · AI 인프라·통신. AI 클라우드(GPU) 매출과 비트코인 채굴 매출, 전력 용량이 발표됩니다. 회사 공지(10/22): 현지 11/5(목) 발표, 콘퍼런스콜 오후 5시 ET(한국시간 11/6 오전 7시). 발표(현지 11/5 16:01 ET 보도자료): FY27 1분기(9/30 마감) 매출 2억 2,800만 달러(전분기 1억 3,700만 달러, +66%), AI 클라우드 매출 2억 달러(전분기 7,100만 달러, +182%), 비트코인 채굴 매출 2,800만 달러(전분기 6,700만 달러). 순손실 2억 6,300만 달러, 조정 EBITDA 6,600만 달러, 매출 수주잔고 203억 달러(전분기比 +22%). 연환산 매출(ARR) 40억 달러 이상 목표 시점은 2026년 말에서 2027년 1월(2월까지 늦어질 수 있음)로 변경.",
     "watch": "EPS·매출 vs 컨센서스, AI 클라우드 매출",
     "stocks": [
      [
@@ -2260,6 +2272,14 @@
      {
       "name": "Nasdaq 실적 캘린더",
       "url": "https://www.nasdaq.com/market-activity/earnings"
+     },
+     {
+      "name": "IREN 보도자료(GlobeNewswire 11/5)",
+      "url": "https://www.globenewswire.com/news-release/2026/11/05/3397020/0/en/iren-reports-q1-fy27-results.html"
+     },
+     {
+      "name": "The Energy Mag 11/5",
+      "url": "https://www.theenergymag.com/news/market-news/iren-reports-q1-fy27-revenue-growth-ai-cloud-200"
      }
     ]
    },
@@ -2526,6 +2546,25 @@
       "url": "https://www.nasdaq.com/market-activity/earnings"
      }
     ]
+   },
+   {
+    "t": "hol",
+    "n": "한국 증시 거래시간 변경(수능일)",
+    "imp": 1,
+    "time": "11/19(목) 오전 10시 개장",
+    "why": "대학수학능력시험일로 한국 증시 정규장이 1시간 늦은 오전 10시에 열리고 오후 4시 30분에 마감합니다(평소 오전 9시~오후 3시 30분). 유가증권·코스닥·코넥스 시장 공통이며, 코스피200·코스닥150 선물·옵션 등 주식 파생상품은 오전 9시 45분~오후 4시 45분입니다. 한국거래소 11/5 발표.",
+    "watch": "",
+    "stocks": [],
+    "src": [
+     {
+      "name": "뉴스웨이 11/5",
+      "url": "https://www.newsway.co.kr/news/view?ud=2026110510420017540"
+     },
+     {
+      "name": "아주경제 11/5",
+      "url": "https://www.ajunews.com/view/20261105102210300"
+     }
+    ]
    }
   ],
   "2026-11-21": [
@@ -2754,8 +2793,7 @@
     "tier": 3,
     "ticker": "CRWD",
     "time": "새벽 6시 (현지 12/1 장후)",
-    "est": true,
-    "why": "탐색 · AI 소프트웨어·보안. 연간반복매출(ARR)·순신규 ARR, 구독 매출총이익률, 4분기·연간 가이던스가 발표됩니다. 발표일은 예상일이며 회사 공식 확정 전입니다.",
+    "why": "탐색 · AI 소프트웨어·보안. 연간반복매출(ARR)·순신규 ARR, 구독 매출총이익률, 4분기·연간 가이던스가 발표됩니다. 회사 공지(11/4): 현지 12/1(화) 미국 장 마감 후 발표, 콘퍼런스콜 오후 2시 PT(5시 ET, 한국시간 12/2 오전 7시).",
     "watch": "EPS·매출 vs 컨센서스, 순신규 ARR, 가이던스",
     "stocks": [
      [
@@ -2768,6 +2806,14 @@
      ]
     ],
     "src": [
+     {
+      "name": "CrowdStrike IR 일정",
+      "url": "https://ir.crowdstrike.com/events/event-details/crowdstrike-fiscal-third-quarter-2027-results-conference-call"
+     },
+     {
+      "name": "StockTitan 11/4",
+      "url": "https://www.stocktitan.net/news/CRWD/crowd-strike-announces-date-of-fiscal-third-quarter-2027-financial-xevbrnvzx9k4.html"
+     },
      {
       "name": "Nasdaq 실적 캘린더",
       "url": "https://www.nasdaq.com/market-activity/earnings"
@@ -3163,6 +3209,25 @@
    }
   ],
   "2026-12-31": [
+   {
+    "t": "fomc",
+    "n": "12월 FOMC 의사록 공개",
+    "imp": 1,
+    "time": "새벽 4시",
+    "why": "12/8~9 회의의 의사록. 현지 12/30 오후 2시 공개(한국시간 12/31 새벽 4시). 위원들의 논의 내용이 요약돼 있습니다. 한국 증시는 12/31 연말 휴장입니다.",
+    "watch": "위원들의 금리 경로 논의",
+    "stocks": [],
+    "src": [
+     {
+      "name": "연준 2026년 12월 일정",
+      "url": "https://www.federalreserve.gov/newsevents/2026-december.htm"
+     },
+     {
+      "name": "fedratecalc FOMC 의사록 일정",
+      "url": "https://fedratecalc.com/fomc-minutes-release-schedule/"
+     }
+    ]
+   },
    {
     "t": "hol",
     "n": "한국 증시 휴장(연말)",
