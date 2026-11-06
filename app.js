@@ -323,37 +323,65 @@
     $("#panelBody").innerHTML = `<div class="p-date">${mdLabel(selected)}<small>${WEEK_KO[dow]}요일${selected === TODAY ? " · 오늘" : ""}</small></div>` + detailHTML(selected);
   }
 
-  /* ── 학습기업 카드 ── */
+  /* ── 학습기업 실적 반응 히스토리: 분야 탭 → 기업 탭 → 한 기업 카드 ── */
+  let cosCat = null, cosTk = null;
+  const dDay = (d) => { if (!d) return null; const n = Math.round((parse(d) - parse(TODAY)) / 86400000); return n; };
+  function coCard(tk, c) {
+    const mc = MK && MK.companies && MK.companies.find((x) => x.ticker === tk);
+    const s = c.stats || {}, n = c.next, kr = c.mkt === "kr";
+    const px = (v) => kr ? `${fmtN(v, 0)}원` : `$${fmtN(v, 2)}`;
+    let nextTxt = "";
+    if (kr) nextTxt = `<span>실적 반응 히스토리는 <b>미국 상장 기업만</b> 제공됩니다. 한국 종목은 현재가·50일선·히트맵 역할 표시만 제공합니다.</span>`;
+    else if (!s.n && !(n && n.date)) nextTxt = `<span>실적 데이터 <b>수집 대기 중</b> — 다음 갱신 때 자동으로 채워집니다.</span>`;
+    else if (n && n.date) nextTxt = `<span>다음 발표 <b>${esc(n.date)}</b> 현지 ${n.rt === "pre" ? "장전" : "장후"}${n.rt === "post" ? " (한국시간 다음 날 새벽)" : " (한국시간 당일 밤)"}</span><span>컨센서스 EPS <b>${n.est_eps !== null && n.est_eps !== undefined ? "$" + fmtN(n.est_eps, 2) : "—"}</b></span><span>전년 동기 <b>${n.last_year_eps !== null && n.last_year_eps !== undefined ? "$" + fmtN(n.last_year_eps, 2) : "—"}</b></span>`;
+    else {
+      const last = c.history[0];
+      nextTxt = `<span>최근 발표 <b>${esc(last ? last.date : "—")}</b></span><span>다음 발표일 <b>미확정</b> (통상 ${last ? (parse(last.date).getMonth() + 4) % 12 || 12 : "—"}월 중순)</span>`;
+    }
+    const summary = s.n ? `${s.n}분기 중 EPS 컨센서스 상회 ${s.beats}회 · 반응일 상승 ${s.ups}회 · 상회했는데 하락 ${s.beat_and_down}회 · 반응일 평균 변동폭 ±${fmtN(s.avg_abs_move, 1)}%` : "";
+    return `<div class="co" id="co-${tk}" role="tabpanel" aria-labelledby="cot-${tk}">
+      <div class="co-h">
+        <div class="nm">${esc(c.name)} <small>${esc(c.en)} · ${esc(tk)}</small><span class="badge t${c.tier}">${esc(tierLabel(c.tier))}</span></div>
+        ${mc ? `<div class="px"><div class="pv">${px(mc.price)}</div><div class="pc ${ud(mc.pct1d)}">${sign(mc.pct1d, 2)}% <span style="color:var(--grey2);font-weight:600">· 50일선 ${sign(mc.gap50, 1)}%</span></div></div>` : ""}
+      </div>
+      <div class="co-next">${nextTxt}</div>
+      ${summary ? `<div class="co-sum">${esc(summary)}</div>` : ""}
+      ${s.n ? `<div class="qgrid">${c.history.slice(0, 8).map(qCard).join("")}</div>` : ""}
+      <div class="co-foot"><span>${s.n ? "차트: 발표 전 종가=100, 회색=발표 전 5일, 색=반응일 이후 5일 · 장전 발표는 당일, 장후 발표는 다음 거래일이 반응일" : esc(c.theme || "")}</span></div>
+    </div>`;
+  }
   function renderCos() {
     const box = $("#cos");
     if (!ER || !ER.companies) { box.innerHTML = ""; return; }
-    const list = Object.entries(ER.companies).sort((a, b) => (a[1].tier - b[1].tier) || a[0].localeCompare(b[0]));
-    box.innerHTML = list.map(([tk, c]) => {
-      const mc = MK && MK.companies && MK.companies.find((x) => x.ticker === tk);
-      const s = c.stats || {}, n = c.next, kr = c.mkt === "kr";
-      const px = (v) => kr ? `${fmtN(v, 0)}원` : `$${fmtN(v, 2)}`;
-      let nextTxt = "";
-      if (kr) nextTxt = `<span>실적 반응 히스토리는 <b>미국 상장 기업만</b> 제공됩니다. 한국 종목은 현재가·50일선·히트맵 역할 표시만 제공합니다.</span>`;
-      else if (!s.n && !(n && n.date)) nextTxt = `<span>실적 데이터 <b>수집 대기 중</b> — 다음 갱신 때 자동으로 채워집니다.</span>`;
-      else if (n && n.date) nextTxt = `<span>다음 발표 <b>${esc(n.date)}</b> 현지 ${n.rt === "pre" ? "장전" : "장후"}${n.rt === "post" ? " (한국시간 다음 날 새벽)" : " (한국시간 당일 밤)"}</span><span>컨센서스 EPS <b>${n.est_eps !== null && n.est_eps !== undefined ? "$" + fmtN(n.est_eps, 2) : "—"}</b></span><span>전년 동기 <b>${n.last_year_eps !== null && n.last_year_eps !== undefined ? "$" + fmtN(n.last_year_eps, 2) : "—"}</b></span>`;
-      else {
-        const last = c.history[0];
-        nextTxt = `<span>최근 발표 <b>${esc(last ? last.date : "—")}</b></span><span>다음 발표일 <b>미확정</b> (통상 ${last ? (parse(last.date).getMonth() + 4) % 12 || 12 : "—"}월 중순)</span>`;
-      }
-      const summary = s.n ? `${s.n}분기 중 EPS 컨센서스 상회 ${s.beats}회 · 반응일 상승 ${s.ups}회 · 상회했는데 하락 ${s.beat_and_down}회 · 반응일 평균 변동폭 ±${fmtN(s.avg_abs_move, 1)}%` : "";
-      const link = "";
-      return `<div class="co" id="co-${tk}">
-        <div class="co-h">
-          <div class="nm">${esc(c.name)} <small>${esc(c.en)} · ${esc(tk)}</small><span class="badge t${c.tier}">${esc(tierLabel(c.tier))}</span></div>
-          ${mc ? `<div class="px"><div class="pv">${px(mc.price)}</div><div class="pc ${ud(mc.pct1d)}">${sign(mc.pct1d, 2)}% <span style="color:var(--grey2);font-weight:600">· 50일선 ${sign(mc.gap50, 1)}%</span></div></div>` : ""}
-        </div>
-        <div class="co-next">${nextTxt}</div>
-        ${summary ? `<div class="co-sum">${esc(summary)}</div>` : ""}
-        ${s.n ? `<div class="qgrid">${c.history.slice(0, 8).map(qCard).join("")}</div>` : ""}
-        <div class="co-foot"><span>${s.n ? "차트: 발표 전 종가=100, 회색=발표 전 5일, 색=반응일 이후 5일 · 장전 발표는 당일, 장후 발표는 다음 거래일이 반응일" : esc(c.theme || "")}</span>${link}</div>
-      </div>`;
+    const all = Object.entries(ER.companies).sort((a, b) => (a[1].tier - b[1].tier) || a[0].localeCompare(b[0]));
+    // 분야 순서 = config.json 학습기업 목록에 처음 나오는 순서
+    const cats = [];
+    ((CFG && CFG.companies) || []).forEach((x) => { if (x.theme && !cats.includes(x.theme)) cats.push(x.theme); });
+    all.forEach(([, c]) => { if (c.theme && !cats.includes(c.theme)) cats.push(c.theme); });
+    const inCat = (cat) => all.filter(([, c]) => c.theme === cat);
+    // 처음 열 때: 발표가 가장 가까운(오늘 이후) 미국 기업
+    if (!cosTk || !ER.companies[cosTk]) {
+      const soon = all.filter(([, c]) => c.next && c.next.date && dDay(c.next.date) >= 0).sort((a, b) => a[1].next.date.localeCompare(b[1].next.date))[0];
+      cosTk = (soon || all.find(([, c]) => c.mkt !== "kr") || all[0])[0];
+    }
+    if (!cosCat || !cats.includes(cosCat)) cosCat = ER.companies[cosTk].theme;
+    const list = inCat(cosCat);
+    if (!list.some(([tk]) => tk === cosTk)) cosTk = (list.find(([, c]) => c.mkt !== "kr") || list[0])[0];
+    const catTabs = cats.map((cat) => `<button role="tab" aria-selected="${cat === cosCat}" class="${cat === cosCat ? "on" : ""}" data-cat="${esc(cat)}">${esc(cat)}<small>${inCat(cat).length}</small></button>`).join("");
+    const coTabs = list.map(([tk, c]) => {
+      const dd = c.next && c.next.date ? dDay(c.next.date) : null;
+      const hint = c.mkt === "kr" ? `<em class="kr">국내</em>` : dd !== null && dd >= 0 && dd <= 14 ? `<em class="soon">${dd === 0 ? "오늘" : "D-" + dd}</em>` : "";
+      return `<button role="tab" id="cot-${tk}" aria-selected="${tk === cosTk}" aria-controls="co-${tk}" class="${tk === cosTk ? "on" : ""}" data-tk="${esc(tk)}"><span>${esc(c.name)}</span><small>${esc(tk)}</small>${hint}</button>`;
     }).join("");
+    box.innerHTML = `<div class="cos-cats" role="tablist" aria-label="분야">${catTabs}</div>
+      <div class="cos-tabs" role="tablist" aria-label="기업">${coTabs}</div>
+      <div class="cos-view">${coCard(cosTk, ER.companies[cosTk])}</div>`;
   }
+  $("#cos").addEventListener("click", (e) => {
+    const cb = e.target.closest("button[data-cat]"), tb = e.target.closest("button[data-tk]");
+    if (cb) { if (cb.dataset.cat === cosCat) return; cosCat = cb.dataset.cat; cosTk = null; const l = Object.entries(ER.companies).filter(([, c]) => c.theme === cosCat).sort((a, b) => (a[1].tier - b[1].tier) || a[0].localeCompare(b[0])); cosTk = (l.find(([, c]) => c.mkt !== "kr") || l[0])[0]; renderCos(); }
+    else if (tb) { if (tb.dataset.tk === cosTk) return; cosTk = tb.dataset.tk; renderCos(); }
+  });
 
   /* ── 인터랙션 ── */
   window.__pick = (k) => {

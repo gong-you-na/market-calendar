@@ -450,3 +450,27 @@ html{scroll-padding-top:110px}
 .bb-t{font-size:.92rem;line-height:1.55;margin-top:5px;color:var(--ink);word-break:keep-all;white-space:pre-line}
 .bb-l{display:inline-block;margin-top:6px;font-size:.72rem;font-weight:700;color:var(--gold-deep);text-decoration:none;border-bottom:1px solid var(--gold-line)}
 .v-empty{color:var(--grey2);font-size:.9rem;padding:20px;text-align:center;background:var(--card);border:1px solid var(--line);border-radius:var(--r)}
+
+/* ───────── 실적 반응 히스토리: 분야 탭 → 기업 탭 → 한 기업 ───────── */
+.cos{display:block}
+.cos-cats{display:flex;gap:22px;overflow-x:auto;scrollbar-width:none;border-bottom:1px solid var(--line);margin:0 2px 14px;padding:0 2px}
+.cos-cats::-webkit-scrollbar{display:none}
+.cos-cats button{flex:none;display:inline-flex;align-items:baseline;gap:5px;padding:10px 0 11px;font-size:.92rem;font-weight:600;color:var(--grey2);border-bottom:2px solid transparent;margin-bottom:-1px;white-space:nowrap;transition:color .2s}
+.cos-cats button small{font-size:.7rem;font-weight:600;color:var(--grey3);font-variant-numeric:tabular-nums}
+.cos-cats button:hover{color:var(--ink)}
+.cos-cats button.on{color:var(--ink);border-bottom-color:var(--ink)}
+.cos-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:0 2px 16px}
+.cos-tabs button{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:999px;background:var(--card);border:1px solid var(--line);font-size:.86rem;font-weight:700;color:var(--ink2);transition:background .2s,color .2s,border-color .2s}
+.cos-tabs button small{font-size:.68rem;font-weight:600;color:var(--grey2)}
+.cos-tabs button em{font-style:normal;font-size:.62rem;font-weight:800;border-radius:6px;padding:1px 6px}
+.cos-tabs button em.soon{background:var(--up-soft);color:var(--up)}
+.cos-tabs button em.kr{background:var(--hol-soft);color:var(--grey)}
+.cos-tabs button:hover{border-color:var(--line2)}
+.cos-tabs button.on{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.cos-tabs button.on small{color:var(--bg);opacity:.65}
+.cos-cats button:focus-visible,.cos-tabs button:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.cos-view .co{animation:co-in .45s cubic-bezier(.2,.7,.2,1)}
+@keyframes co-in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media (min-width:1100px){.cos-view .qgrid{grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.cos-view .q svg{height:56px}}
+@media (prefers-reduced-motion: reduce){.cos-view .co{animation:none}}
+@media (max-width:760px){.cos-cats{-webkit-mask-image:linear-gradient(90deg,#000 85%,transparent);mask-image:linear-gradient(90deg,#000 85%,transparent);padding-right:28px}}
