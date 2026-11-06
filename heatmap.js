@@ -3,10 +3,10 @@
   const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   // 등락률 → 색 (국내 관행: 상승 빨강, 하락 파랑). 단계: 0 / 1 / 2 / 3+%
   function color(p, dark) {
-    if (p === null || p === undefined) return dark ? "#2A2D34" : "#E9E6DF";
+    if (p === null || p === undefined) return dark ? "#232326" : "#E8E8ED";
     const a = Math.min(1, Math.abs(p) / 3);
     const t = 0.18 + a * 0.82;
-    const base = dark ? [38, 40, 46] : [236, 233, 226];
+    const base = dark ? [35, 35, 38] : [232, 232, 237];
     const up = dark ? [230, 70, 85] : [240, 68, 82], dn = dark ? [60, 130, 240] : [49, 130, 246];
     const c = p >= 0 ? up : dn;
     const mix = c.map((v, i) => Math.round(base[i] + (v - base[i]) * t));

@@ -45,11 +45,11 @@
       const L = this.layout(), ctx = this.ctx, g = this.g, dark = this.dark();
       this.L = L;
       ctx.clearRect(0, 0, L.W, L.H);
-      ctx.fillStyle = dark ? "#0f1020" : "#f3f1ec"; ctx.fillRect(L.PL, L.PT, L.W - L.PL - L.PR, L.H - L.PT - L.PB);
+      ctx.fillStyle = dark ? "#0f1020" : "#f5f5f7"; ctx.fillRect(L.PL, L.PT, L.W - L.PL - L.PR, L.H - L.PT - L.PB);
       // 격자: 보이는 가격 구간만. 행 높이(px)만큼 셀 병합 없이 그대로 그림
       const bLo = Math.max(0, Math.floor((L.lo - g.p0) / g.dp)), bHi = Math.min(g.bins - 1, Math.ceil((L.hi - g.p0) / g.dp));
       const rowH = (L.H - L.PT - L.PB) / ((L.hi - L.lo) / g.dp);
-      const bg = dark ? [15, 16, 32] : [243, 241, 236];
+      const bg = dark ? [15, 16, 32] : [245, 245, 247];
       for (let i = L.c0; i < g.cols; i++) {
         const x = L.x(i), w = Math.max(1, L.cw + 0.6);
         const row = i * g.bins;
@@ -67,9 +67,9 @@
       ctx.stroke();
       // 현재가 점선 + 라벨
       const px = this.d.price, ypx = L.y(px);
-      ctx.setLineDash([4, 4]); ctx.strokeStyle = "#D4AE5A"; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(L.PL, ypx); ctx.lineTo(L.W - L.PR, ypx); ctx.stroke(); ctx.setLineDash([]);
-      ctx.fillStyle = "#B8923A"; ctx.fillRect(L.W - L.PR + 2, ypx - 9, L.PR - 4, 18);
-      ctx.fillStyle = "#fff"; ctx.font = "700 11px Pretendard, sans-serif"; ctx.textAlign = "center"; ctx.textBaseline = "middle"; ctx.fillText("$" + fmt(px), L.W - L.PR / 2, ypx);
+      ctx.setLineDash([4, 4]); ctx.strokeStyle = dark ? "#F5F5F7" : "#1D1D1F"; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(L.PL, ypx); ctx.lineTo(L.W - L.PR, ypx); ctx.stroke(); ctx.setLineDash([]);
+      ctx.fillStyle = dark ? "#F5F5F7" : "#1D1D1F"; ctx.fillRect(L.W - L.PR + 2, ypx - 9, L.PR - 4, 18);
+      ctx.fillStyle = dark ? "#000" : "#fff"; ctx.font = "700 11px Pretendard, sans-serif"; ctx.textAlign = "center"; ctx.textBaseline = "middle"; ctx.fillText("$" + fmt(px), L.W - L.PR / 2, ypx);
       // 가격 축
       ctx.fillStyle = dark ? "#8B919B" : "#6B7684"; ctx.font = "600 10.5px Pretendard, sans-serif"; ctx.textAlign = "left";
       const step = niceStep((L.hi - L.lo) / 7);
