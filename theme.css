@@ -154,3 +154,6 @@ html.mo .rv.in #temp .tile:hover{transform:translateY(-4px)}
   #sec-temp.stage{padding:64px calc(50vw - 50%) 56px}
   #sec-temp .tile .v{font-size:1.55rem}
 }
+
+/* 공포·탐욕 게이지(검은 무대 위) */
+#sec-temp .gauge.fg{background:linear-gradient(90deg,rgba(255,122,134,.38) 0 25%,rgba(240,160,90,.35) 25% 45%,rgba(255,255,255,.22) 45% 55%,rgba(79,203,151,.35) 55%)}

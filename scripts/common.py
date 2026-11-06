@@ -74,3 +74,36 @@ def yahoo_daily(symbol, start=None, end=None, range_=None):
 
 def now_kst():
     return dt.datetime.now(dt.timezone(dt.timedelta(hours=9)))
+
+
+def get_text(url, headers=None, retries=3, timeout=25):
+    h = {"User-Agent": UA}
+    if headers:
+        h.update(headers)
+    last = None
+    for i in range(retries):
+        try:
+            req = urllib.request.Request(url, headers=h)
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                return r.read().decode("utf-8", "replace")
+        except Exception as e:  # noqa
+            last = e
+            time.sleep(1.5 * (i + 1))
+    print(f"[warn] fetch failed {url}: {last}", file=sys.stderr)
+    return None
+
+
+def fred_series(series_id):
+    """FRED 공개 CSV → [{d:'YYYY-MM-DD', v:float}] (빈 값 '.' 제외)."""
+    # FRED는 브라우저를 흉내 낸 UA를 거절하므로 갱신 스크립트임을 그대로 밝힌다.
+    t = get_text(f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={urllib.parse.quote(series_id)}",
+                 headers={"User-Agent": "WizView-data-updater/1.0"})
+    out = []
+    for line in (t or "").splitlines()[1:]:
+        parts = line.split(",")
+        if len(parts) == 2 and parts[1] not in ("", "."):
+            try:
+                out.append({"d": parts[0], "v": float(parts[1])})
+            except ValueError:
+                pass
+    return out

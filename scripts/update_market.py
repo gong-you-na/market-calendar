@@ -3,11 +3,14 @@
 """
 import datetime as dt
 from common import load, save, yahoo_daily, now_kst, get_json
+import sentiment
 
 cfg = load("config.json", {})
 out = {"updated": now_kst().strftime("%Y-%m-%d %H:%M KST"), "items": []}
 
 for m in cfg["market"]:
+    if m.get("src"):  # Yahoo가 아닌 지표(공포·탐욕 자체 산출, FRED 하이일드)는 아래 sentiment에서
+        continue
     rows = yahoo_daily(m["symbol"], range_="3mo")
     if len(rows) < 2:
         print(f"[warn] no data for {m['symbol']}")
@@ -52,6 +55,12 @@ for m in cfg["market"]:
         except Exception:
             pass
     out["items"].append(item)
+
+# VIX 옆 보조 지표: 위즈뷰 공포·탐욕(자체 산출) + 하이일드 스프레드(FRED). 실패해도 나머지는 그대로 저장.
+try:
+    out["items"].extend(sentiment.build())
+except Exception as e:  # noqa
+    print(f"[warn] sentiment: {e}")
 
 # 학습기업 현재가 + 50일선 이격도
 out["companies"] = []

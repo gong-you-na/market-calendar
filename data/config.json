@@ -361,6 +361,28 @@
    "tab": "us"
   },
   {
+   "key": "fg",
+   "symbol": "WIZVIEW-FG",
+   "src": "calc",
+   "label": "공포·탐욕 지수",
+   "unit": "",
+   "baseline": null,
+   "baseline_label": "",
+   "decimals": 0,
+   "tab": "us"
+  },
+  {
+   "key": "hy",
+   "symbol": "BAMLH0A0HYM2",
+   "src": "fred",
+   "label": "하이일드 스프레드",
+   "unit": "%",
+   "baseline": null,
+   "baseline_label": "",
+   "decimals": 2,
+   "tab": "us"
+  },
+  {
    "key": "tnx",
    "symbol": "^TNX",
    "label": "미국 10년물",

@@ -7,6 +7,7 @@
 1. **사실만 기록한다.** 무엇이·언제·이전치·컨센서스·발표 수치·발표일 시장 지수 변화. 전망·해석·권유 문장("우호적", "안도 랠리", "주목", "관건" 등) 금지.
 2. **숫자는 출처 2개 이상으로 교차 확인한다.** 일치하지 않으면 공식 출처(BLS·BEA·연준·ISM·한국은행·기업 IR)를 우선하고, 확인이 안 되면 `est: true`(★ 예상일) 또는 "—"로 남긴다. 지어내지 않는다.
 2-1. **화면에는 출처를 표시하지 않는다(2026-10-29 운영자 결정, 저작권).** 출처 링크·매체명·조사기관명·"○○ 보도/인용/집계 기준"·"N곳 일치" 같은 문구를 화면에 나오는 필드(`why`·`watch`·`result.head/note/rows`·짝 지도 `consensus.text`·`when_note`·`basis`·`bases`·`note`·`result.rows`·인물 발언 `text`·`context`)에 쓰지 않는다. 교차 확인 기록은 화면에 나오지 않는 `src`·`url` 필드와 `changelog`에만 남긴다(페이지 코드는 `src`를 렌더링하지 않음). 발언 장소(예: "CNBC 인터뷰", "블룸버그TV 인터뷰")와 기업 자신의 공시·실적 발표(10-K, 사업보고서, IR 발표)는 사실이므로 써도 된다. 컨센서스는 집계 기관명 없이 "컨센서스 x.x%(MM/DD 기준)"로 쓴다.
+2-2. **예외: 증권사 목표주가(2026-11-06 운영자 결정).** 학습기업 카드의 목표주가 표는 증권사 이름이 곧 데이터(누가 낸 숫자인지)이므로 증권사명·발행일·목표주가·변경(상향/하향/유지/신규)을 화면에 쓴다. 리포트 링크·본문 문장은 쓰지 않는다. 평균·상승여력 같은 위즈뷰 계산과 해석 문장은 덧붙이지 않는다. 미국 종목은 집계(최저·평균·최고, 매수/보유/매도 수)만.
 3. **날짜는 한국시간 기준.** 미국 8:30 ET 발표 = 밤 9:30(서머타임) / 밤 10:30(11/1 이후). 2:00 PM ET(FOMC) = 새벽 3시 / 4시. 장후(after-hours) 실적은 **미국 날짜 +1일**에 기록하고 `time`에 "현지 M/D 장후"를 적는다. 장전 실적은 미국 날짜 그대로.
 4. **변경은 changelog에 남긴다.** 날짜 변경, 결과 추가, 일정 추가·삭제를 `events.json.changelog`에 한 줄씩(`at`, `msg`).
 
@@ -77,7 +78,7 @@ git add data && git commit -m "data: YYYY-MM-DD HH:MM KST 자동 갱신 — <변
 - `events.json` 일정·결과(Claude가 편집) · `earnings.json` 8분기 실적·반응 · `market.json` 체온계·VIX
 - `heatmap.json` S&P500 전 종목 + 코스피 상위 60 (1D/1W/1M, 시총, 섹터). 유니버스 캐시 `cache/universe_*.json`은 7일마다 자동 갱신(`--refresh-universe`로 강제).
 - `heatmap.json.etf` ETF 79종(finviz ETF 맵 그룹 + 해외 EWY·EWT·EWJ·EWZ·FXI·INDA·EEM·EFA + 레버리지 SOXS·SOXL·TQQQ·SQQQ·TSLL + 원자재·코인). 타일 크기는 운용자산(AUM) 제곱근, 캐시 `cache/universe_etf.json` 7일.
-- `market.json` 항목: 미국 탭(S&P500·나스닥·VIX·10년물·달러·금·WTI) / 한국 탭(코스피·코스닥·원/달러·비트코인+업비트 원화·김치프리미엄). 순서·탭은 `config.json.market[].tab`.
+- `market.json` 항목: 미국 탭(S&P500·나스닥·VIX·공포·탐욕·하이일드 스프레드·10년물·달러·금·WTI) / 한국 탭(코스피·코스닥·원/달러·비트코인+업비트 원화·김치프리미엄). 순서·탭은 `config.json.market[].tab`.
 - `voices.json`(수동 아카이브) / `liq.json`(매시간) / `people.json` / `market.json.btc_stocks`(청산맵 옆 비트코인 관련주, `config.json.btc_stocks`) — 위 "매시간 자동 갱신"·"운영자가 채팅으로 전달하는 것" 참고.
 - 페이지 순서: 투쓰의 한마디(링크) → 체온계 → 히트맵 → 마켓 캘린더(다음 7일·달력) → 청산맵 → 실적 → 인물의 한마디. (변경 이력 섹션은 2026-10-21 페이지에서 제거. `events.json.changelog`는 작업 기록용으로 계속 기록하되 화면에는 표시하지 않는다.) 각 섹션 머리에 갱신 주기를 표시하므로 주기를 바꾸면 `index.html`의 `.sec-cad` 문구도 같이 고친다.
 - 브라우저는 `/.netlify/functions/yf`(Yahoo·CBOE 중계)로 5분마다 실시간 보정하고, 매시간 파일은 30분마다 다시 읽으므로, 예약 작업은 "기준 스냅샷"을 만드는 역할입니다.
@@ -88,3 +89,7 @@ git add data && git commit -m "data: YYYY-MM-DD HH:MM KST 자동 갱신 — <변
 - 학습기업 목록이 바뀌면 `update_earnings.py`가 Nasdaq 캘린더 캐시(`cache/nasdaq_calendar.json`)를 비우고 최근 2년치를 병렬로 다시 받는다(한 번만 3~5분 소요). Nasdaq `earnings-surprise` API가 비어 있어도 캘린더를 분기 간격으로 거슬러 8분기를 채운다.
 - Nasdaq 캘린더 날짜가 회사 IR 공지와 다르면 `config.json` 해당 기업에 `next_date:"YYYY-MM-DD"`(미국 날짜)를 넣어 IR 공지를 우선시킨다(지난 날짜면 다음 발표일 미확정 처리). Nasdaq이 갱신되면 제거.
 - 새 학습기업의 실적 일정은 `earnings.json.next`(Nasdaq)를 보고 `events.json`에 `t:"earn"` 이벤트로 추가한다. Nasdaq `time`이 `time-not-supplied`인 날짜는 `est:true`로 두고 회사 IR 공지가 확인되면 제거한다.
+- `market.json`의 `fg`(공포·탐욕)·`hy`(하이일드 스프레드)는 `scripts/sentiment.py`가 만든다(`src` 필드가 있어 브라우저 5분 실시간 보정 대상이 아님).
+  - `hy`: FRED `BAMLH0A0HYM2`(ICE BofA US High Yield OAS, %), 하루 늦게 공표되어 기준일이 미국 종가보다 하루 이를 수 있다. FRED는 브라우저 UA를 거절하므로 `WizView-data-updater/1.0` UA로 받는다.
+  - `fg`: 위즈뷰 자체 산출(CNN 지수 아님 — CNN은 자동 수집을 막고 있어 쓰지 않는다). 모멘텀(S&P500÷125일선)·변동성(VIX÷50일 평균, 뒤집음)·정크본드(하이일드 스프레드, 뒤집음)·안전자산(S&P500−IEF 20일 수익률 차) 4개를 최근 252거래일 백분위(0~100)로 바꿔 평균. 구간: <25 극단적 공포 · <45 공포 · <55 중립 · <75 탐욕 · 그 이상 극단적 탐욕.
+- `targets.json` 증권사 목표주가(`scripts/update_targets.py`, run_numbers.sh에서 자동). 국내 학습기업: 네이버페이 증권 종목 리포트 최근 5건 → 요약문, 없으면 첨부 PDF 첫 페이지(`pdftotext`)에서 목표주가·변경 표기를 찾는다. 못 찾으면 `tp:null`(화면 "—"). 읽은 리포트는 `id`로 캐시. 미국 학습기업: Nasdaq 공개 컨센서스. 손으로 고치지 않는다.
