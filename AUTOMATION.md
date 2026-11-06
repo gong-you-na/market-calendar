@@ -1,6 +1,6 @@
 # WizView 자동 갱신 런북 (예약 작업이 매 실행마다 따르는 절차)
 
-이 저장소는 Netlify가 그대로 배포하는 정적 사이트입니다. 페이지(`index.html`, `app.js`, `style.css`, `theme.css`, `motion.js`)는 건드리지 않고
+이 저장소는 Netlify가 그대로 배포하는 정적 사이트입니다. 페이지(`index.html`, `app.js`, `style.css`, `theme.css`, `motion.js`, `crash.js`, `crash.css`)는 건드리지 않고
 `data/*.json`만 갱신해 커밋·푸시하면 Netlify가 자동 재배포합니다.
 
 ## 원칙
@@ -93,3 +93,6 @@ git add data && git commit -m "data: YYYY-MM-DD HH:MM KST 자동 갱신 — <변
   - `hy`: FRED `BAMLH0A0HYM2`(ICE BofA US High Yield OAS, %), 하루 늦게 공표되어 기준일이 미국 종가보다 하루 이를 수 있다. FRED는 브라우저 UA를 거절하므로 `WizView-data-updater/1.0` UA로 받는다.
   - `fg`: 위즈뷰 자체 산출(CNN 지수 아님 — CNN은 자동 수집을 막고 있어 쓰지 않는다). 모멘텀(S&P500÷125일선)·변동성(VIX÷50일 평균, 뒤집음)·정크본드(하이일드 스프레드, 뒤집음)·안전자산(S&P500−IEF 20일 수익률 차) 4개를 최근 252거래일 백분위(0~100)로 바꿔 평균. 구간: <25 극단적 공포 · <45 공포 · <55 중립 · <75 탐욕 · 그 이상 극단적 탐욕.
 - `targets.json` 증권사 목표주가(`scripts/update_targets.py`, run_numbers.sh에서 자동). 국내 학습기업: 네이버페이 증권 종목 리포트 최근 5건 → 요약문, 없으면 첨부 PDF 첫 페이지(`pdftotext`)에서 목표주가·변경 표기를 찾는다. 못 찾으면 `tp:null`(화면 "—"). 읽은 리포트는 `id`로 캐시. 미국 학습기업: Nasdaq 공개 컨센서스. 손으로 고치지 않는다.
+- `crash.json` 코스피 급락 진료 기록부(투쓰의 한마디 바로 아래 섹션). `scripts/update_crash.py`가 숫자(`series`·각 구간 `calc`·`marks.sc_unk`)만 덮어쓰고, 손으로 쓰는 부분(`episodes[].tag/name/start/end/live/cause/turn/vk/summary`, `marks.cb/sc`, `facts`)은 그대로 둔다.
+  - 정기 갱신 작업은 손으로 쓰는 부분을 바꾸지 않는다. 새 급락(서킷브레이커·매도 사이드카)이 나오면 운영자 요청 시 Claude가 `episodes`에 구간을 추가하고(진행 중이면 `live:true`, 이전 진행 중 구간은 `live` 제거 후 `end` 확정), `marks.cb`·`marks.sc`·`facts`를 고친다. 원인·전환점 문장은 사실만, 숫자는 2곳 교차 확인, 출처 URL은 화면에 안 나오는 `src`에만.
+  - 출처(화면 비표시): 코스피·원/달러·필라델피아 반도체 Yahoo 일봉 / 투자자별 순매수 네이버페이 증권 `m.stock.naver.com/api/index/{KOSPI|FUT}/trend?bizdate=` (최근 3거래일과 빈 날만 다시 받음) / 신용융자·반대매매·예탁금 금융투자협회 FreeSIS `STATSCU0100000070BO`·`STATSCU0100000060BO` / 발동 미확인(빈 삼각형) 날은 코스피200 장중 −5% 이상인 날 자동.

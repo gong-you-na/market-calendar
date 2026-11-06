@@ -7,10 +7,11 @@ python3 scripts/update_market.py   || { echo "[err] market"; fail=1; }
 python3 scripts/update_heatmap.py  || { echo "[err] heatmap"; fail=1; }
 python3 scripts/update_earnings.py || { echo "[err] earnings"; fail=1; }
 python3 scripts/update_targets.py  || { echo "[err] targets"; fail=1; }
+python3 scripts/update_crash.py    || { echo "[err] crash"; fail=1; }
 bash scripts/run_hourly.sh         || { echo "[err] hourly(liq)"; fail=1; }
 python3 - <<'PY'
 import json
-for f in ["data/market.json","data/heatmap.json","data/earnings.json","data/events.json","data/terms.json","data/config.json","data/voices.json","data/liq.json","data/targets.json"]:
+for f in ["data/market.json","data/heatmap.json","data/earnings.json","data/events.json","data/terms.json","data/config.json","data/voices.json","data/liq.json","data/targets.json","data/crash.json"]:
     json.load(open(f, encoding="utf-8"))
 print("[ok] all data files valid JSON")
 PY
