@@ -190,7 +190,7 @@
     if (c.rec && !e.live) { const ri = idx(c.rec) - a; if (ri < n) { el("line", { x1: x(ri), x2: x(ri), y1: m.t, y2: H - m.b, stroke: css("--up"), "stroke-width": 1.2 }, svg); el("circle", { cx: x(ri), cy: y(S[idx(c.rec)][1]), r: 3.6, fill: css("--up") }, svg); } }
     rows.forEach((r, i) => { if (CB.includes(r[0])) { const cx = x(i), cy = m.t + 4; el("path", { d: `M${cx} ${cy - 4.5} L${cx + 4.5} ${cy} L${cx} ${cy + 4.5} L${cx - 4.5} ${cy}Z`, fill: css("--ink") }, svg); } });
     const every = Math.ceil(n / 7);
-    rows.forEach((r, i) => { if (i % every === 0 || i === ti) { const t = el("text", { x: x(i), y: H - 6, "text-anchor": "middle" }, g); t.textContent = md(r[0]); } });
+    rows.forEach((r, i) => { if ((i % every === 0 && Math.abs(i - ti) * step > 34) || i === ti) { const t = el("text", { x: x(i), y: H - 6, "text-anchor": "middle" }, g); t.textContent = md(r[0]); } });
   }
 
   /* ── 비교표 ── */
