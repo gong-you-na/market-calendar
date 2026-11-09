@@ -1,7 +1,23 @@
 {
- "updated": "2026-11-07 06:41 KST",
+ "updated": "2026-11-10 06:30 KST",
  "note": "날짜는 한국시간 기준. ★ 예상일은 공식 일정 확정 전.",
  "changelog": [
+  {
+   "at": "2026-11-10 06:30",
+   "msg": "10월 CPI(현지 11/10) 컨센서스 갱신 — 헤드라인 전월比 +0.3%·근원 +0.2%(11/9 기준), 2025년 10월 미수집으로 전년比 미발표(Kiplinger·FinancialJuice 일치)"
+  },
+  {
+   "at": "2026-11-10 06:30",
+   "msg": "RKLB(현지 11/9 장후) 실적 사실을 why에 추가 — 매출 2억 6,800만 달러(+73%)·수주잔고 35억 7,000만 달러(+52% QoQ)·4분기 매출 가이던스 2.7억~2.9억 달러(보도자료·24/7 Wall St·TipRanks 일치). EPS·주가 반응은 earnings.json 자동"
+  },
+  {
+   "at": "2026-11-10 06:30",
+   "msg": "11/11 미국 채권시장 휴장(재향군인의 날, 주식시장 정상 거래) 추가(SIFMA·fedratecalc 일치)"
+  },
+  {
+   "at": "2026-11-10 06:30",
+   "msg": "2027-01-08 12월 고용보고서 추가(BLS 1월 일정·financecalendar 일치)"
+  },
   {
    "at": "2026-11-07 06:41",
    "msg": "10월 고용보고서(현지 11/6) result 추가 — 비농업 +16.5만(컨센서스 +6.5만)·실업률 4.1%·시간당 임금 전월比 +0.4%·전년比 +3.1%, 8·9월 합계 +8.4만 상향 수정(BLS 보도자료·Reuters 일치)"
@@ -105,22 +121,6 @@
   {
    "at": "2026-10-31 05:25",
    "msg": "미국 3분기 GDP 속보치(현지 10/29) result 추가 — 연율 +3.4%(컨센서스 3.2%·2분기 2.2%), 개인소비 기여 +2.52%p·재고 +1.61%p·순수출 -3.32%p, 3분기 PCE 물가 연율 2.1%·근원 2.5%(BEA·StockTitan 일치)"
-  },
-  {
-   "at": "2026-10-31 05:25",
-   "msg": "미국 9월 PCE 물가(현지 10/29) result 추가 — 헤드라인 전월比 +0.5%·전년比 3.6%(8월 3.4%), 근원 +0.3%·3.1%(8월 3.0%), 실질 소비지출 0.0%, 저축률 3.8%(BEA·Fattail/CNBC 인용 일치)"
-  },
-  {
-   "at": "2026-10-31 05:25",
-   "msg": "미국 3분기 고용비용지수(현지 10/30) result 추가 — 전기比 +0.8%(컨센서스 +0.8%·2분기 +0.9%), 임금 +0.7%·복리후생 +0.9%, 전년比 3.4%(BLS·MT Newswires 일치)"
-  },
-  {
-   "at": "2026-10-31 05:25",
-   "msg": "NVDA 11/19 → 11/18 변경·★예상일 해제 — 회사 공지(10/28) 현지 11/17 장 마감 후 발표·콘퍼런스콜 2시 PT, Nasdaq 캘린더(11/17 장후)·Investing.com·StockTitan 일치"
-  },
-  {
-   "at": "2026-10-31 05:25",
-   "msg": "알파벳(현지 10/28 장후)·릴리(10/29 장전)·아마존·인텔·샌디스크(10/29 장후) 실적 사실을 why에 추가 — 매출·부문·가이던스·설비투자(각 회사 보도자료 + 언론 1곳 일치). EPS·주가 반응은 earnings.json 자동. pairmap.json GOOGL·AMZN·SNDK·INTC·LLY result 행 추가"
   }
  ],
  "days": {
@@ -2461,7 +2461,7 @@
     "n": "미국 10월 CPI",
     "imp": 3,
     "time": "밤 10시 30분",
-    "why": "미국 소비자물가지수. 9월은 전월比 +0.6%, 전년比 3.7%, 근원 전월比 +0.3%·전년比 2.6%였습니다. 컨센서스 근원 전월比 +0.2%(11/6 기준).",
+    "why": "미국 소비자물가지수. 9월은 전월比 +0.6%, 전년比 3.7%, 근원 전월比 +0.3%·전년比 2.6%였습니다. 컨센서스 헤드라인 전월比 +0.3%·근원 전월比 +0.2%(11/9 기준). 2025년 10월 물가 자료가 수집되지 않아 10월치 전년比는 공식 발표되지 않습니다.",
     "watch": "헤드라인·근원 전월比, 주거비, 에너지",
     "stocks": [
      [
@@ -2493,6 +2493,14 @@
      {
       "name": "Seeking Alpha(컨센서스)",
       "url": "https://seekingalpha.com/article/4964304-october-cpi-inflation-is-likely-to-be-hot-but-focus-on-ai-bubble-burst"
+     },
+     {
+      "name": "Kiplinger CPI 프리뷰 11/9",
+      "url": "https://www.kiplinger.com/investing/economy/october-2026-cpi-report-what-to-expect"
+     },
+     {
+      "name": "FinancialJuice CPI prep 11/9",
+      "url": "https://features.financialjuice.com/2026/11/09/us-cpi-prep-november-10th/"
      }
     ]
    },
@@ -2503,7 +2511,7 @@
     "tier": 3,
     "ticker": "RKLB",
     "time": "새벽 6시 (현지 11/9 장후)",
-    "why": "탐색 · 우주·방산. 발사 서비스·우주 시스템 매출, 수주잔고, 4분기 가이던스가 발표됩니다. 회사 공지(10/20): 현지 11/9(월) 미국 장 마감 후 발표, 콘퍼런스콜 오후 2시 PT(5시 ET, 한국시간 11/10 오전 7시).",
+    "why": "탐색 · 우주·방산. 발사 서비스·우주 시스템 매출, 수주잔고, 4분기 가이던스가 발표됩니다. 회사 공지(10/20): 현지 11/9(월) 미국 장 마감 후 발표, 콘퍼런스콜 오후 2시 PT(5시 ET, 한국시간 11/10 오전 7시). 발표(현지 11/9 16:06 ET): 3분기 매출 2억 6,800만 달러(전년比 +73%), 수주잔고 35억 7,000만 달러(전분기比 +52%), 영업현금흐름 +720만 달러. 4분기 가이던스 매출 2억 7,000만~2억 9,000만 달러·조정 EBITDA −1,400만~−2,000만 달러. 뉴트론 첫 발사는 2027년 이후.",
     "watch": "EPS·매출 vs 컨센서스, 수주잔고, 가이던스",
     "stocks": [
      [
@@ -2523,6 +2531,39 @@
      {
       "name": "Nasdaq 실적 캘린더",
       "url": "https://www.nasdaq.com/market-activity/earnings"
+     },
+     {
+      "name": "Rocket Lab 보도자료(GlobeNewswire 11/9)",
+      "url": "https://www.globenewswire.com/news-release/2026/11/09/3398954/0/en/"
+     },
+     {
+      "name": "24/7 Wall St · TipRanks 11/9",
+      "url": "https://www.tipranks.com/news/rocket-lab-stock-slips-after-mixed-q3-results"
+     }
+    ]
+   }
+  ],
+  "2026-11-11": [
+   {
+    "t": "hol",
+    "n": "미국 채권시장 휴장(재향군인의 날)",
+    "imp": 1,
+    "time": "현지 11/11(수)",
+    "why": "재향군인의 날로 미국 채권시장이 휴장합니다. 뉴욕 주식시장은 정상 거래합니다. BLS 지표 발표도 없습니다.",
+    "watch": "",
+    "stocks": [],
+    "src": [
+     {
+      "name": "SIFMA 휴장 권고 2026",
+      "url": "https://www.sifma.org/news/press-releases/sifma-fixed-income-market-close-recommendation-in-the-u-s-the-u-k-and-japan-for-the-u-s-veterans-day-holiday-2026"
+     },
+     {
+      "name": "fedratecalc",
+      "url": "https://fedratecalc.com/is-the-stock-market-open-on-veterans-day/"
+     },
+     {
+      "name": "BLS 11월 일정",
+      "url": "https://www.bls.gov/schedule/2026/11_sched_list.htm"
      }
     ]
    }
@@ -3401,6 +3442,36 @@
      {
       "name": "KRX 휴장일",
       "url": "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp"
+     }
+    ]
+   }
+  ],
+  "2027-01-08": [
+   {
+    "t": "econ",
+    "n": "12월 고용보고서",
+    "imp": 3,
+    "time": "밤 10시 30분",
+    "why": "미국 12월 비농업 고용·실업률·시간당 임금이 발표됩니다. 현지 1/8(금) 8:30 ET.",
+    "watch": "비농업 고용 증감, 실업률, 시간당 임금 전월比, 전월 수정치",
+    "stocks": [
+     [
+      "성장주 전반",
+      0
+     ],
+     [
+      "금융 섹터",
+      0
+     ]
+    ],
+    "src": [
+     {
+      "name": "BLS 2027년 1월 일정",
+      "url": "https://www.bls.gov/schedule/2027/01_sched_list.htm"
+     },
+     {
+      "name": "financecalendar",
+      "url": "https://www.financecalendar.com/us-jobs-report/"
      }
     ]
    }
