@@ -10,9 +10,9 @@
     try { const r = await fetch(LIVE + f + "?v=" + Math.floor(V / 300000), { cache: "no-store" }); if (r.ok) { const j = await r.json(); if (j && j.updated) return j; } } catch (e) { }
     return get(f);
   };
-  const [CFG, EV, ER, MK, TERMS, HM, VOICES, LIQ, PEOPLE, TG] = await Promise.all([
+  const [CFG, EV, ER, MK, TERMS, HM, VOICES, LIQ, PEOPLE] = await Promise.all([
     get("config.json"), get("events.json"), get("earnings.json"), get("market.json"), get("terms.json"), get("heatmap.json"),
-    get("voices.json"), getLive("liq.json"), get("people.json"), get("targets.json")]);
+    get("voices.json"), getLive("liq.json"), get("people.json")]);
   // 인물 사진·크레딧은 배포본 people.json 기준(live 브랜치 사본이 오래됐을 수 있음)
   if (VOICES && VOICES.people && PEOPLE && PEOPLE.people) { const by = {}; PEOPLE.people.forEach((p) => (by[p.id] = p)); VOICES.people.forEach((p) => { const q = by[p.id]; if (q) { if (q.img) p.img = q.img; if (q.img_credit) p.img_credit = q.img_credit; } }); }
   const DAYS = (EV && EV.days) || {};
@@ -370,28 +370,9 @@
       </div>
       <div class="co-next">${nextTxt}</div>
       ${summary ? `<div class="co-sum">${esc(summary)}</div>` : ""}
-      ${tpBlock(tk, kr)}
       ${s.n ? `<div class="qgrid">${c.history.slice(0, 8).map(qCard).join("")}</div>` : ""}
       <div class="co-foot"><span>${s.n ? "차트: 발표 전 종가=100, 회색=발표 전 5일, 색=반응일 이후 5일 · 장전 발표는 당일, 장후 발표는 다음 거래일이 반응일" : esc(c.theme || "")}</span></div>
     </div>`;
-  }
-  // 증권사 목표주가: 증권사가 공표한 숫자를 날짜순으로 옮길 뿐, 평균·상승여력 계산이나 해석을 덧붙이지 않는다.
-  function tpBlock(tk, kr) {
-    if (!TG) return "";
-    const upd = `업데이트 ${esc(TG.updated || "")}`;
-    const md = (d) => d ? `${+d.slice(5, 7)}/${+d.slice(8, 10)}` : "—";
-    if (kr) {
-      const k = TG.kr && TG.kr[tk]; if (!k || !k.items || !k.items.length) return "";
-      const rows = k.items.map((i) => `<tr><td class="d">${md(i.date)}</td><td class="b">${esc(i.broker || "")}</td><td class="p">${i.tp ? fmtN(i.tp, 0) + "원" : "—"}</td><td>${i.chg ? `<em class="chg c-${esc(i.chg)}">${esc(i.chg)}</em>` : ""}</td></tr>`).join("");
-      return `<div class="co-tp"><div class="tp-h"><b>증권사 목표주가</b><small>최근 리포트 ${k.items.length}건 · ${upd}</small></div>
-        <table class="tp-t"><thead><tr><th>발행일</th><th>증권사</th><th>목표주가</th><th>변경</th></tr></thead><tbody>${rows}</tbody></table>
-        <p class="tp-note">증권사가 리포트에 적은 목표주가를 발행일순으로 옮긴 것입니다. 위즈덤투스의 의견이나 매수·매도 권유가 아닙니다. '—'는 리포트에서 숫자를 찾지 못한 경우입니다.</p></div>`;
-    }
-    const u = TG.us && TG.us[tk]; if (!u) return "";
-    const n = (u.buy || 0) + (u.hold || 0) + (u.sell || 0);
-    return `<div class="co-tp"><div class="tp-h"><b>증권사 목표주가 컨센서스</b><small>${n}곳 · ${esc(u.asof || "")} 기준 · ${upd}</small></div>
-      <div class="tp-us"><span>최저 <b>$${fmtN(u.low, 2)}</b></span><span>평균 <b>$${fmtN(u.avg, 2)}</b></span><span>최고 <b>$${fmtN(u.high, 2)}</b></span><span>매수 ${u.buy ?? 0} · 보유 ${u.hold ?? 0} · 매도 ${u.sell ?? 0}</span></div>
-      <p class="tp-note">미국 종목은 개별 증권사 목록을 공개 자료로 받을 수 없어 증권사 목표주가 집계(최저·평균·최고)만 보여줍니다. 위즈덤투스의 의견이나 매수·매도 권유가 아닙니다.</p></div>`;
   }
   function renderCos() {
     const box = $("#cos");
