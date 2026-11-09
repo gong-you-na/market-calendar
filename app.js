@@ -510,46 +510,7 @@
   // 테마 바뀌면 캔버스·히트맵 다시 그림
   new MutationObserver(() => { if (liqMap) liqMap.draw(); renderHM(); }).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
 
-  /* ══════════ 실시간 (Netlify Function 프록시, 있으면) ══════════ */
-  async function liveRefresh() {
-    if (!liveRefresh.ok) {  // 함수 존재 확인은 처음 한 번만
-      try {
-        const ping = await fetch("/.netlify/functions/yf?ping=1", { cache: "no-store" }); if (!ping.ok) return;
-        liveRefresh.ok = true;
-      } catch (e) { return; }
-    }
-    // 2) 체온계 현재가
-    if (MK && MK.items) {
-      try {
-        const syms = MK.items.filter((i) => !i.src).map((i) => i.symbol).join(",");  // 자체 산출·FRED 지표는 실시간 보정 대상 아님
-        const r = await fetch(`/.netlify/functions/yf?kind=spark&symbols=${encodeURIComponent(syms)}`, { cache: "no-store" });
-        if (r.ok) { const j = await r.json(); let touched = false; for (const it of MK.items) { if (it.src) continue; const v = j[it.symbol]; if (!v || v.fulldayPrice == null) continue; const dec = ({ tnx: 2, dxy: 1, krw: 0, gold: 0, vix: 1, wti: 2 })[it.key] ?? 0; it.value = +v.fulldayPrice.toFixed(dec); it.prev = +(v.chartPreviousClose ?? it.prev).toFixed(dec); it.chg = +(it.value - it.prev).toFixed(dec); it.pct = +((it.value / it.prev - 1) * 100).toFixed(2); touched = true; if (it.key === "btc" && LIQ && LIQ.grid) { LIQ.price = Math.round(it.value); LIQ.live = true; } } if (touched) { MK.live = true; renderTemp(); if (LIQ && LIQ.live) renderLiq(); } }
-      } catch (e) { }
-    }
-    // 2-1) 비트코인 관련주
-    if (MK && MK.btc_stocks && MK.btc_stocks.length) {
-      try {
-        const r = await fetch(`/.netlify/functions/yf?kind=spark&symbols=${encodeURIComponent(MK.btc_stocks.map((b) => b.t).join(","))}`, { cache: "no-store" });
-        if (r.ok) { const j = await r.json(); let t = false; for (const b of MK.btc_stocks) { const v = j[b.t]; if (v && v.fulldayPrice != null) { b.p = +v.fulldayPrice.toFixed(2); if (v.fulldayChangePercent != null) b.d1 = +v.fulldayChangePercent.toFixed(2); t = true; } } if (t) { MK.liveStocks = true; renderLiq(); } }
-      } catch (e) { }
-    }
-    // 3) 히트맵 1일 등락률 (미장·국장 현재 탭만, 20개씩) — 호출이 많아(미장 26회) 15분에 한 번만
-    if (HM && (!liveRefresh.hmAt || Date.now() - liveRefresh.hmAt >= 15 * 60 * 1000)) {
-      liveRefresh.hmAt = Date.now();
-      try {
-        const data = HM[hmMarket]; const syms = data.stocks.map((s) => s.t); let touched = false;
-        for (let i = 0; i < syms.length; i += 20) {
-          const r = await fetch(`/.netlify/functions/yf?kind=spark&symbols=${encodeURIComponent(syms.slice(i, i + 20).join(","))}`, { cache: "no-store" }); if (!r.ok) continue;
-          const j = await r.json(); for (const s of data.stocks) { const v = j[s.t]; if (v && v.fulldayChangePercent != null) { s.d1 = +v.fulldayChangePercent.toFixed(2); s.p = v.fulldayPrice ?? s.p; touched = true; } }
-        }
-        if (touched) { renderHM(); $("#hmAsof").textContent = "실시간(지연 시세) 갱신 · " + new Date().toLocaleTimeString("ko-KR", { hour: "2-digit", minute: "2-digit" }); }
-      } catch (e) { }
-    }
-  }
-
   renderHM(); renderLiq(); renderVoices();
-  // 체온계·비트코인 관련주는 5분, 히트맵은 15분 간격. 탭이 숨겨져 있으면(백그라운드) 호출하지 않는다.
-  liveRefresh(); setInterval(() => { if (!document.hidden) liveRefresh(); }, 5 * 60 * 1000);
   // 매시간 파일(이슈·인물·청산맵)은 30분마다 다시 읽음
   setInterval(async () => { const l = await getLive("liq.json"); if (l && LIQ && l.updated !== LIQ.updated) { Object.assign(LIQ, l); renderLiq(); } }, 30 * 60 * 1000);
 
