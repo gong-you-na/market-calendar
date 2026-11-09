@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09 15:53 KST",
+ "updated": "2026-11-09 18:26 KST",
  "asof": "20261109",
  "note": "episodes·marks.cb·marks.sc는 수동(운영자 요청 시 Claude가 편집). series·calc·marks.sc_unk는 scripts/update_crash.py가 덮어씀. src는 화면에 표시하지 않음(런북 2-1).",
  "facts": {
@@ -821,7 +821,7 @@
     "dep_rec": 90.3,
     "fx_pre": 1342.9,
     "fx_max": 1356.3,
-    "fx_rec": 1347.1
+    "fx_rec": 1350.1
    }
   }
  ],
@@ -3958,7 +3958,7 @@
    null,
    null,
    null,
-   1347.1,
+   1350.1,
    4.21
   ]
  ]

@@ -3,7 +3,7 @@
   이 스크립트는 숫자(series·calc·sc_unk)만 다시 계산해 덮어쓴다.
 - series 한 줄: [날짜, 코스피 종가, 장중 저가, 외국인, 외국인 코스피200 선물, 기관, 개인(이상 억원),
                  신용거래융자 잔고(조), 실제 반대매매(억), 반대매매 비중(%), 투자자예탁금(조), 원/달러, 필라델피아 반도체지수 전일%]
-- 출처(화면 비표시): 코스피·원/달러·SOX Yahoo 일봉 / 투자자별 순매수 네이버페이 증권(거래소 집계) / 신용·반대매매·예탁금 금융투자협회 FreeSIS
+- 출처(화면 비표시): 코스피·원/달러·SOX Yahoo 일봉 / 투자자별 순매수 네이버페이 증권(거래소 집계, 2026-11-09 수집 중단 — 기존 값만 유지) / 신용·반대매매·예탁금 금융투자협회 FreeSIS
 실행: python3 scripts/update_crash.py
 """
 import datetime as dt, json, time, urllib.request
@@ -29,6 +29,7 @@ if len(days) < 30:
     raise SystemExit("[err] 코스피 일봉을 받지 못함")
 
 # 2) 투자자별 순매수: 기존 값 재사용, 최근 3거래일과 빈 날만 새로 받음
+NAVER_OFF = True  # 대체 수집처(공식 경로)가 정해지면 교체
 old = {r[0]: r for r in C.get("series", [])}
 def num(s):
     try: return int(str(s).replace(",", "").replace("+", ""))
@@ -36,6 +37,8 @@ def num(s):
 flows = {}
 for i, d in enumerate(days):
     o = old.get(ymd(d))
+    if NAVER_OFF:  # 2026-11-09 운영자 결정: 네이버 내부 API 수집 중단 — 기존 값만 유지, 새 날짜는 빈 값
+        flows[d] = o[3:7] if o else [None] * 4; continue
     if o and o[3] is not None and i < len(days) - 3:
         flows[d] = o[3:7]; continue
     k = get_json(f"https://m.stock.naver.com/api/index/KOSPI/trend?bizdate={ymd(d)}") or {}
@@ -72,8 +75,9 @@ for d in days:
     series.append(row)
 D = [r[0] for r in series]; R = {r[0]: r for r in series}
 
-# 4) 코스피200 장중 −5% 이상(발동 보도 미확인) 자동 표시
+# 4) 코스피200 장중 −5% 이상(발동 보도 미확인) 자동 표시 — 네이버 수집 중단으로 정지
 try:
+    if NAVER_OFF: raise RuntimeError("naver off")
     k2 = []
     for p in range(1, 8):
         rr = get_json(f"https://m.stock.naver.com/api/index/KPI200/price?pageSize=60&page={p}") or []
