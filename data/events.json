@@ -1,7 +1,19 @@
 {
- "updated": "2026-11-10 06:30 KST",
+ "updated": "2026-11-11 06:40 KST",
  "note": "날짜는 한국시간 기준. ★ 예상일은 공식 일정 확정 전.",
  "changelog": [
+  {
+   "at": "2026-11-11 06:40",
+   "msg": "10월 CPI(현지 11/10) result 추가 — 전월比 +0.4%(컨센서스 +0.3%)·근원 +0.3%(컨센서스 +0.2%), 주거비 +0.3%·에너지 +0.7%·식품 +0.5%, 전년比 미발표(BLS 보도자료·TheStreet·StockTitan 일치). 발표일 S&P500 -0.4%·나스닥 -0.7%·10년물 4.98%"
+  },
+  {
+   "at": "2026-11-11 06:40",
+   "msg": "MRVL FY27 3분기 실적 12/1 장후(현지 4:30pm ET) 확정 — 회사 IR 11/6 공지로 ★예상 표시 제거"
+  },
+  {
+   "at": "2026-11-11 06:40",
+   "msg": "Nasdaq 실적 API 403으로 earnings.json next 미갱신 — 이전 발표일 유지(MRVL·MU·AVGO·NVDA·CRM·CRWD·PANW·DELL). Yahoo 코스피·코스닥 11/10 일봉 누락으로 체온계 코스피·코스닥은 한국 장 마감 값 유지, 급락 기록부는 갱신 보류"
+  },
   {
    "at": "2026-11-10 06:30",
    "msg": "10월 CPI(현지 11/10) 컨센서스 갱신 — 헤드라인 전월比 +0.3%·근원 +0.2%(11/9 기준), 2025년 10월 미수집으로 전년比 미발표(Kiplinger·FinancialJuice 일치)"
@@ -109,18 +121,6 @@
   {
    "at": "2026-11-03 06:16",
    "msg": "IREN 11/6 ★예상일 해제 — 회사 공지(10/22) 현지 11/5 발표·콘퍼런스콜 5시 ET, Nasdaq 캘린더(11/5 장후) 일치"
-  },
-  {
-   "at": "2026-11-03 06:16",
-   "msg": "10월 고용보고서(11/6) why에 컨센서스 추가 — 비농업 +5.5만~6.5만 명·실업률 4.2%·시간당 임금 +0.3%(Tech-Insider/CNBC 집계·FinancialJuice)"
-  },
-  {
-   "at": "2026-11-03 06:16",
-   "msg": "휴장·조기폐장 추가 — 11/27 미국 조기 폐장(오후 1시 ET), 12/24 미국 조기 폐장, 12/31 한국 연말 휴장(마지막 거래일 12/30), 2027-01-01 미국·한국 휴장(NYSE 공지·Fidelity / atsview·etfshopping 일치)"
-  },
-  {
-   "at": "2026-10-31 05:25",
-   "msg": "미국 3분기 GDP 속보치(현지 10/29) result 추가 — 연율 +3.4%(컨센서스 3.2%·2분기 2.2%), 개인소비 기여 +2.52%p·재고 +1.61%p·순수출 -3.32%p, 3분기 PCE 물가 연율 2.1%·근원 2.5%(BEA·StockTitan 일치)"
   }
  ],
  "days": {
@@ -2501,8 +2501,74 @@
      {
       "name": "FinancialJuice CPI prep 11/9",
       "url": "https://features.financialjuice.com/2026/11/09/us-cpi-prep-november-10th/"
+     },
+     {
+      "name": "BLS CPI 10월 보도자료",
+      "url": "https://www.bls.gov/news.release/archives/cpi_11102026.htm"
+     },
+     {
+      "name": "TheStreet 11/10",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-10-2026"
+     },
+     {
+      "name": "StockTitan 11/10",
+      "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-10-2026"
      }
-    ]
+    ],
+    "result": {
+     "actual": "+0.4%",
+     "est": "+0.3%",
+     "prev": "+0.6%",
+     "dir": "down",
+     "head": "전월比 +0.4%(컨센서스 +0.3%·9월 +0.6%) · 근원 전월比 +0.3%(컨센서스 +0.2%) · 전년比 미발표",
+     "note": "10월 CPI 전월比 +0.4%(9월 +0.6%), 근원 CPI 전월比 +0.3%(8·9월과 같은 폭). 주거비 +0.3%(자가주거비 +0.3%·임대료 +0.2%), 에너지 +0.7%(휘발유 +1.0%, 9월 +5.2%), 식품 +0.5%(가정식 +0.4%·외식 +0.5%). 2025년 10월 자료 미수집으로 전년比는 발표되지 않았습니다. 발표일 S&P500 -0.4%, 나스닥 -0.7%, 10년물 4.98%(+0.12%p).",
+     "rows": [
+      [
+       "헤드라인 전월比",
+       "+0.4%",
+       "+0.3%",
+       "9월 +0.6%"
+      ],
+      [
+       "근원 전월比",
+       "+0.3%",
+       "+0.2%",
+       "9월 +0.3%"
+      ],
+      [
+       "주거비 전월比",
+       "+0.3%",
+       "—",
+       "9월 +0.4%"
+      ],
+      [
+       "에너지 전월比",
+       "+0.7%",
+       "—",
+       "9월 +5.2%"
+      ],
+      [
+       "식품 전월比",
+       "+0.5%",
+       "—",
+       "9월 보합"
+      ]
+     ],
+     "trend": [
+      {
+       "l": "8월",
+       "v": 0.4
+      },
+      {
+       "l": "9월",
+       "v": 0.6
+      },
+      {
+       "l": "10월",
+       "v": 0.4
+      }
+     ]
+    }
    },
    {
     "t": "earn",
@@ -2922,8 +2988,7 @@
     "imp": 2,
     "tier": 1,
     "ticker": "MRVL",
-    "time": "새벽 6시 (현지 12/1 장후)",
-    "est": true,
+    "time": "새벽 6시 30분 (현지 12/1 장후)",
     "why": "주도 · 반도체. 데이터센터(맞춤형 AI 칩·광통신) 매출과 다음 분기 가이던스가 발표됩니다. 발표일은 예상일이며 회사 공식 확정 전입니다. 현지 11/2 루멘텀을 전량 주식교환(루멘텀 1주당 마벨 4.5주, 기업가치 약 1,150억 달러)으로 인수하기로 합의했다고 발표.",
     "watch": "EPS·매출 vs 컨센서스, 데이터센터 매출, 가이던스",
     "stocks": [
@@ -2948,6 +3013,10 @@
      {
       "name": "TheStreet 11/2",
       "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-02-2026"
+     },
+     {
+      "name": "Marvell IR 11/6 공지",
+      "url": "https://investor.marvell.com/news-events/press-releases/detail/1041/marvell-technology-inc-announces-conference-call-to-review-third-quarter-of-fiscal-year-2027-financial-results"
      }
     ]
    },
