@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10 06:23 KST",
+ "updated": "2026-11-10 15:50 KST",
  "companies": {
   "MRVL": {
    "name": "마벨 테크",
@@ -28863,16 +28863,7 @@
    "tier": 3,
    "theme": "우주·방산",
    "mkt": "us",
-   "next": {
-    "date": "2026-11-09",
-    "rt": "post",
-    "est_eps": -0.05,
-    "n_est": "2",
-    "fq": "Sep/2026",
-    "last_year_date": "11/10/2025",
-    "last_year_eps": -0.01,
-    "source": "Nasdaq"
-   },
+   "next": null,
    "history": [
     {
      "date": "2026-08-10",
