@@ -1,7 +1,27 @@
 {
- "updated": "2026-11-11 06:40 KST",
+ "updated": "2026-11-12 06:30 KST",
  "note": "날짜는 한국시간 기준. ★ 예상일은 공식 일정 확정 전.",
  "changelog": [
+  {
+   "at": "2026-11-12 06:30",
+   "msg": "DELL FY27 3분기 실적 11/24 장후(콜 3:30pm CT, 한국시간 11/25 06:30) 확정 — 회사 IR 11/10 공지로 ★예상 표시 제거(Dell IR·Yahoo Finance 일치)"
+  },
+  {
+   "at": "2026-11-12 06:30",
+   "msg": "CRM FY27 3분기 실적 12/2 장후(웹캐스트 2pm PT, 한국시간 12/3 07:00) 확정 — 회사 IR 11/10 공지로 ★예상 표시 제거(Salesforce IR·Yahoo Finance 일치)"
+  },
+  {
+   "at": "2026-11-12 06:30",
+   "msg": "10월 PPI(현지 11/13) 컨센서스 추가 — 전월比 +0.4%·근원 +0.3%·전년比 6.6%(financecalendar·StockTitan·cryptonews 일치)"
+  },
+  {
+   "at": "2026-11-12 06:30",
+   "msg": "10월 소매판매(현지 11/17) 컨센서스 추가 — 전월比 +0.6%(financecalendar·cryptonews 일치)"
+  },
+  {
+   "at": "2026-11-12 06:30",
+   "msg": "11/11(재향군인의 날) 미국 지표 발표 없음 — result 처리 대상 없음. Nasdaq 실적 API 403으로 earnings.json next가 비어 이전 발표일 복원(MRVL·MU·AVGO·NVDA·CRM·CRWD·PANW·DELL). Yahoo 코스피·코스닥 11/11 일봉 누락으로 체온계 코스피 5,375(+2.60%)·코스닥 705(+5.62%)를 기사 확인값으로 수기 반영(서울경제·SEN 일치), 급락 기록부 11/11 행 유지"
+  },
   {
    "at": "2026-11-11 06:40",
    "msg": "10월 CPI(현지 11/10) result 추가 — 전월比 +0.4%(컨센서스 +0.3%)·근원 +0.3%(컨센서스 +0.2%), 주거비 +0.3%·에너지 +0.7%·식품 +0.5%, 전년比 미발표(BLS 보도자료·TheStreet·StockTitan 일치). 발표일 S&P500 -0.4%·나스닥 -0.7%·10년물 4.98%"
@@ -101,26 +121,6 @@
   {
    "at": "2026-11-04 06:30",
    "msg": "향후 60일 거시 일정 교차 확인(BLS 2026 일정·fedratecalc): 고용보고서 11/6·12/4, CPI 11/10·12/10, PPI 11/13·12/15, 수출입물가 11/17·12/17, 소매판매 11/17·12/16, JOLTS 12/1, GDP·PCE 11/25·12/23, FOMC 의사록 11/18·12월 FOMC 12/9 모두 기존 일정과 일치 — 변경 없음. earnings.json next.date와 실적 이벤트 날짜 13종 일치"
-  },
-  {
-   "at": "2026-11-03 14:15",
-   "msg": "학습기업 개편(11/1 「미래를 바꿀 기업들」 2026.10.31 업데이트): 1·2·3군 → 주도·방어·탐색, 섹터 9개로 재분류. 추가 MSFT·META(주도), CRWD·PANW(탐색), 제외 INTC. 실적 일정 추가 PANW 11/19(현지 11/18 장후)·CRWD 12/2(현지 12/1 장후) ★예상일. 기존 실적 이벤트 why 첫머리 군 표기를 역할·섹터로 교체"
-  },
-  {
-   "at": "2026-11-03 06:16",
-   "msg": "10월 ISM 제조업 PMI(현지 11/2) result 추가 — 55.5(컨센서스 54.6·9월 54.5), 생산 59.0·신규주문 55.5·고용 52.4·물가지불 75.2(9월 77.9)·재고 51.4, 12개 업종 확장(ISM 보도자료·VerifiedInvesting·StockTitan 일치)"
-  },
-  {
-   "at": "2026-11-03 06:16",
-   "msg": "템퍼스AI(11/2 장전)·팔란티어(현지 11/2 장후) 실적 사실을 why에 추가 — 매출·부문·가이던스(각 회사 보도자료 + 언론 1곳). EPS·주가 반응은 earnings.json 자동. pairmap.json TEM·PLTR result 행 추가"
-  },
-  {
-   "at": "2026-11-03 06:16",
-   "msg": "LITE(11/6)·MRVL(12/2) why에 마벨의 루멘텀 인수 합의(현지 11/2, 전량 주식교환 1:4.5, 기업가치 약 1,150억 달러) 사실 추가(AP·TheStreet·StockTitan 일치). LITE 발표 시각 회사 공지(11/5 장후, 콘퍼런스콜 2시 PT) 확인"
-  },
-  {
-   "at": "2026-11-03 06:16",
-   "msg": "IREN 11/6 ★예상일 해제 — 회사 공지(10/22) 현지 11/5 발표·콘퍼런스콜 5시 ET, Nasdaq 캘린더(11/5 장후) 일치"
   }
  ],
  "days": {
@@ -2640,7 +2640,7 @@
     "n": "미국 10월 PPI",
     "imp": 2,
     "time": "밤 10시 30분",
-    "why": "미국 생산자물가지수. 기업이 받는 판매 가격의 변화를 집계합니다.",
+    "why": "미국 생산자물가지수. 기업이 받는 판매 가격의 변화를 집계합니다. 컨센서스 전월比 +0.4%·근원 +0.3%, 전년比 6.6%(11/11 기준). 9월은 전월比 +1.3%·근원 +0.7%·전년比 6.3%.",
     "watch": "근원 PPI 전월比",
     "stocks": [],
     "src": [
@@ -2651,6 +2651,14 @@
      {
       "name": "fedratecalc 경제캘린더",
       "url": "https://fedratecalc.com/us-economic-calendar/"
+     },
+     {
+      "name": "financecalendar.com",
+      "url": "https://www.financecalendar.com/event/us-producer-price-index-november-2026/"
+     },
+     {
+      "name": "StockTitan PPI 프리뷰(11/11)",
+      "url": "https://stocktitan.net/articles/october-2026-ppi-preview-yearly-rate"
      }
     ]
    }
@@ -2661,7 +2669,7 @@
     "n": "미국 10월 소매판매",
     "imp": 2,
     "time": "밤 10시 30분",
-    "why": "미국 소매판매 월간 통계. 자동차·휘발유를 제외한 수치가 함께 발표됩니다.",
+    "why": "미국 소매판매 월간 통계. 자동차·휘발유를 제외한 수치가 함께 발표됩니다. 컨센서스 전월比 +0.6%(11/11 기준). 9월은 +0.8%.",
     "watch": "자동차 제외 소매판매 전월比",
     "stocks": [
      [
@@ -2673,6 +2681,14 @@
      {
       "name": "fedratecalc 경제캘린더",
       "url": "https://fedratecalc.com/us-economic-calendar/"
+     },
+     {
+      "name": "financecalendar.com",
+      "url": "https://www.financecalendar.com/event/us-retail-sales-november-2026/"
+     },
+     {
+      "name": "cryptonews.net 주간 일정",
+      "url": "https://cryptonews.net/news/analytics/33737258/"
      }
     ]
    },
@@ -2859,8 +2875,7 @@
     "tier": 1,
     "ticker": "DELL",
     "time": "새벽 6시 (현지 11/24 장후)",
-    "est": true,
-    "why": "주도 · AI 인프라·통신. AI 서버 수주·출하와 연간 가이던스가 발표됩니다. 발표일은 예상일이며 회사 공식 확정 전입니다.",
+    "why": "주도 · AI 인프라·통신. AI 서버 수주·출하와 연간 가이던스가 발표됩니다. 회사 공지(11/10): 현지 11/24 콘퍼런스콜 오후 3시 30분 CT(한국시간 11/25 오전 6시 30분), 실적은 콜 시작 전 발표.",
     "watch": "EPS·매출 vs 컨센서스, AI 서버 수주잔고",
     "stocks": [
      [
@@ -2876,6 +2891,14 @@
      {
       "name": "Nasdaq 실적 캘린더",
       "url": "https://www.nasdaq.com/market-activity/earnings"
+     },
+     {
+      "name": "Dell IR 보도자료(11/10)",
+      "url": "https://investors.delltechnologies.com/news-events/press-releases/detail/1661/dell-technologies-to-hold-conference-call-nov-24-to-discuss-third-quarter-fiscal-2027-financial-results"
+     },
+     {
+      "name": "Yahoo Finance(11/10)",
+      "url": "https://finance.yahoo.com/technology/articles/dell-technologies-hold-conference-call-210500341.html"
      }
     ]
    }
@@ -3063,8 +3086,7 @@
     "tier": 3,
     "ticker": "CRM",
     "time": "새벽 6시 (현지 12/2 장후)",
-    "est": true,
-    "why": "탐색 · AI 소프트웨어·보안. 구독 매출, 남은 계약 가치(cRPO), 연간 가이던스가 발표됩니다. 발표일은 예상일이며 회사 공식 확정 전입니다.",
+    "why": "탐색 · AI 소프트웨어·보안. 구독 매출, 남은 계약 가치(cRPO), 연간 가이던스가 발표됩니다. 회사 공지(11/10): 현지 12/2 장 마감 후 발표, 웹캐스트 오후 2시 PT(한국시간 12/3 오전 7시).",
     "watch": "EPS·매출 vs 컨센서스, cRPO, 가이던스",
     "stocks": [
      [
@@ -3080,6 +3102,14 @@
      {
       "name": "Nasdaq 실적 캘린더",
       "url": "https://www.nasdaq.com/market-activity/earnings"
+     },
+     {
+      "name": "Salesforce IR 보도자료(11/10)",
+      "url": "https://investor.salesforce.com/news/news-details/2026/Salesforce-Announces-Date-of-Third-Quarter-Fiscal-2027-Earnings-Release-and-Webcast/default.aspx"
+     },
+     {
+      "name": "Yahoo Finance(11/10)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/salesforce-announces-date-third-quarter-213000861.html"
      }
     ]
    }
