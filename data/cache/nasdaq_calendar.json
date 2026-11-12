@@ -3520,5 +3520,18 @@
    "epsForecast": "($0.29)",
    "noOfEsts": "6"
   }
+ ],
+ "2026-11-09": [
+  {
+   "eps": "($0.09)",
+   "surprise": "-50",
+   "time": "time-not-supplied",
+   "symbol": "RKLB",
+   "name": "Rocket Lab Corporation",
+   "marketCap": "$41,808,183,000",
+   "fiscalQuarterEnding": "Sep/2026",
+   "epsForecast": "($0.06)",
+   "noOfEsts": "2"
+  }
  ]
 }
