@@ -1,7 +1,39 @@
 {
- "updated": "2026-11-16 15:46 KST",
+ "updated": "2026-11-17 06:16 KST",
  "note": "날짜는 한국시간 기준. ★ 예상일은 공식 일정 확정 전.",
  "changelog": [
+  {
+   "at": "2026-11-17 06:16",
+   "msg": "11/16(월) 미국 지표 발표 없음 — result 처리 대상 없음. 11/16 종가 S&P500 7,417(-1.92%)·나스닥 24,510(-2.49%)·10년물 5.12%·VIX 23.3·금 $3,852(-0.87%)·WTI $85.46(-3.5%) 반영. Yahoo 코스피·코스닥 11/16 일봉 누락으로 체온계 코스피 5,082(-3.93%)·코스닥 666(-4.86%)은 한국 장 마감 갱신값 유지. 11/16 장전·장후 학습기업 실적 없음. earnings.json next 날짜(NVDA 11/17·PANW 11/18·DELL 11/24·MRVL·CRWD 12/1·CRM 12/2·AVGO 12/9·MU 12/16 ★)와 events 일치"
+  },
+  {
+   "at": "2026-11-17 06:16",
+   "msg": "10월 소매판매(현지 11/17) 컨센서스 +0.6%(11/11 기준) → +0.2%(11/16 기준)로 갱신 — forexuro·viewstorys 프리뷰 일치, 센서스국 일정 11/17 8:30 ET 확인"
+  },
+  {
+   "at": "2026-11-17 06:16",
+   "msg": "12월 CPI(현지 1/13 8:30 ET, 한국시간 1/13 밤 10:30) 추가 — BLS CPI 일정·chartwatch 일치"
+  },
+  {
+   "at": "2026-11-17 06:16",
+   "msg": "12월 PPI(현지 1/14 8:30 ET, 한국시간 1/14 밤 10:30) 추가 — BLS PPI 일정·smartcalendars 일치"
+  },
+  {
+   "at": "2026-11-17 06:16",
+   "msg": "12월 소매판매(현지 1/15 8:30 ET, 한국시간 1/15 밤 10:30) 추가 — 센서스국 일정·financecalendar 일치"
+  },
+  {
+   "at": "2026-11-17 06:16",
+   "msg": "1월 미시간대 예비치(현지 1/8 10:00 ET, 한국시간 1/9 0시) 추가 — 미시간대 2027년 공식 일정·kairotick 일치"
+  },
+  {
+   "at": "2026-11-17 06:16",
+   "msg": "2027년 1월 금통위(1/14) 추가 — 한국은행 10/29 발표 2027년 회의 일정(SBS Biz·서울경제 일치)"
+  },
+  {
+   "at": "2026-11-17 06:16",
+   "msg": "12월 ISM 제조업(1/5)·서비스업(1/7) ★예상 유지 — ISM 2027년 공식 일정 미게시(therighttrader도 추정 표시). 3분기 GDP 잠정치·10월 PCE 11/25, 3분기 GDP 확정치·11월 PCE 12/23은 BEA 전체 일정으로 재확인"
+  },
   {
    "at": "2026-11-16 15:46",
    "msg": "10월 PPI(현지 11/13) result 추가 — 전월比 +0.3%(컨센서스 +0.4%)·전년比 6.5%·근원 +0.3%·9월 +1.3%→+1.4% 수정(BLS·Trading Economics·joltjournal 일치). 11/13 종가 S&P500 7,562(-0.4%)·나스닥 25,136(-0.91%)·10년물 5.15% 반영. 코스피 11/16 종가 5,082(-3.93%)·코스닥 666(-4.86%)·원/달러 1,335 반영. 11/13 미국 장후 학습기업 실적 없음. earnings.json next 날짜(NVDA 11/17·PANW 11/18·DELL 11/24·MRVL·CRWD 12/1·CRM 12/2·AVGO 12/9·MU 12/16)와 events 일치"
@@ -89,38 +121,6 @@
   {
    "at": "2026-11-07 06:41",
    "msg": "향후 60일 일정 교차 확인(BLS 2026·2027 일정·fedratecalc 12월): CPI 11/10·12/10, PPI 11/13·12/15, 소매판매 12/16, 고용보고서 12/4, JOLTS 12/1, GDP·PCE 12/23, FOMC 12/9 기존과 일치, 추가·변경 없음. 12월 고용보고서는 현지 1/8(60일 밖), 1월 ISM 일정은 공식 확인 안 되어 미추가. earnings.json next.date와 실적 이벤트 날짜 일치, DELL·MRVL·CRM·AVGO·MU는 회사 공지 미확인으로 ★예상일 유지"
-  },
-  {
-   "at": "2026-11-06 06:29",
-   "msg": "LITE 11/6 → 11/2 변경 — 실적 보도자료가 공지(현지 11/5 장후)와 달리 현지 11/2 장전에 발표됨(Lumentum IR 보도자료 11/2·8-K 11/2 07:12 ET 접수·MarketBeat 일치, earnings.json 히스토리 11/2와 일치). 매출 12억 6,260만 달러·부문·2분기 가이던스 사실을 why에 추가"
-  },
-  {
-   "at": "2026-11-06 06:29",
-   "msg": "IREN(현지 11/5 장후) 실적 사실을 why에 추가 — 매출 2억 2,800만 달러·AI 클라우드 2억 달러·수주잔고 203억 달러·ARR 40억 달러 목표 시점 2027년 1월로 변경(회사 보도자료 + 언론 1곳). EPS·주가 반응은 earnings.json 자동"
-  },
-  {
-   "at": "2026-11-06 06:29",
-   "msg": "CRWD 12/2(현지 12/1 장후) ★예상일 해제 — 회사 공지(11/4)·IR 일정 확인, 콘퍼런스콜 2:00 PM PT(한국시간 12/2 07:00)"
-  },
-  {
-   "at": "2026-11-06 06:29",
-   "msg": "11/19 한국 증시 거래시간 변경(수능일) 추가 — 정규장 10:00~16:30(한국거래소 11/5 발표, 뉴스웨이·아주경제 일치)"
-  },
-  {
-   "at": "2026-11-06 06:29",
-   "msg": "12/31 12월 FOMC 의사록 공개(현지 12/30 14:00) 추가 — 연준 12월 일정·fedratecalc 일치"
-  },
-  {
-   "at": "2026-11-06 06:29",
-   "msg": "향후 60일 일정 교차 확인(fedratecalc·연준·ISM 공식 일정): 고용보고서 11/6·12/4, CPI 11/10·12/10, PPI 11/13·12/15, 소매판매 11/17·12/16, GDP·PCE 11/25·12/23, JOLTS 12/1, ISM 12/1·12/3, FOMC 12/9 기존과 일치. 오늘(현지 11/5) 대상 지표 없음. 고용보고서 컨센서스 +6.5만·4.2% 유지(FactSet 11/5 중간값 일치, 다른 집계 +5.9만). earnings.json next.date와 실적 이벤트 날짜 일치, DELL·MRVL·CRM·AVGO·MU는 회사 공지 미확인으로 ★예상일 유지"
-  },
-  {
-   "at": "2026-11-05 06:20",
-   "msg": "10월 ISM 서비스업 PMI(현지 11/4) result 추가 — 54.5(컨센서스 54.8·9월 54.9), 사업활동 53.8·신규주문 55.9·고용 51.4·가격 73.0, 15개 업종 확장(ISM 보도자료·Reuters·Helious 일치)"
-  },
-  {
-   "at": "2026-11-05 06:20",
-   "msg": "PANW 11/19(현지 11/18 장후) ★예상일 해제 — 회사 공지(11/3) 확인, 콘퍼런스콜 1:30 PT(한국시간 06:30)로 time 수정"
   }
  ],
  "days": {
@@ -2717,7 +2717,7 @@
     "n": "미국 10월 소매판매",
     "imp": 2,
     "time": "밤 10시 30분",
-    "why": "미국 소매판매 월간 통계. 자동차·휘발유를 제외한 수치가 함께 발표됩니다. 컨센서스 전월比 +0.6%(11/11 기준). 9월은 +0.8%.",
+    "why": "미국 소매판매 월간 통계. 자동차·휘발유를 제외한 수치가 함께 발표됩니다. 현지 11/17 오전 8시 30분 발표(센서스국 공식 일정). 컨센서스 전월比 +0.2%(11/16 기준). 9월은 +0.8%(자동차 제외 +0.9%).",
     "watch": "자동차 제외 소매판매 전월比",
     "stocks": [
      [
@@ -2727,16 +2727,20 @@
     ],
     "src": [
      {
+      "name": "센서스국 일정",
+      "url": "https://www.census.gov/retail/release_schedule.html"
+     },
+     {
       "name": "fedratecalc 경제캘린더",
-      "url": "https://fedratecalc.com/us-economic-calendar/"
+      "url": "https://fedratecalc.com/retail-sales-release-date/"
      },
      {
-      "name": "financecalendar.com",
-      "url": "https://www.financecalendar.com/event/us-retail-sales-november-2026/"
+      "name": "forexuro 프리뷰(컨센서스, 11/16)",
+      "url": "https://forexuro.com/articles/us-retail-sales-october-2026-preview"
      },
      {
-      "name": "cryptonews.net 주간 일정",
-      "url": "https://cryptonews.net/news/analytics/33737258/"
+      "name": "viewstorys 프리뷰(컨센서스, 11/16)",
+      "url": "https://www.viewstorys.com/2026/11/october-retail-sales-november-2026-what.html"
      }
     ]
    },
@@ -3691,6 +3695,128 @@
      {
       "name": "financecalendar",
       "url": "https://www.financecalendar.com/us-jobs-report/"
+     }
+    ]
+   }
+  ],
+  "2027-01-09": [
+   {
+    "t": "econ",
+    "n": "미시간대 소비자심리·기대인플레이션(예비치)",
+    "imp": 1,
+    "time": "새벽 0시",
+    "why": "1월 예비치. 현지 1/8(금) 오전 10시 발표(한국시간 1/9 0시, 12월 고용보고서 발표 후 1시간 30분 뒤). 미시간대 공식 2027년 일정으로 확정.",
+    "watch": "기대인플레이션 1년·5년",
+    "stocks": [],
+    "src": [
+     {
+      "name": "미시간대 2027년 발표 일정(공식)",
+      "url": "https://data.sca.isr.umich.edu/fetchdoc.php?docid=81621"
+     },
+     {
+      "name": "kairotick 캘린더",
+      "url": "https://kairotick.com/calendar/consumer-sentiment.html"
+     }
+    ]
+   }
+  ],
+  "2027-01-13": [
+   {
+    "t": "econ",
+    "n": "미국 12월 CPI",
+    "imp": 3,
+    "time": "밤 10시 30분",
+    "why": "미국 소비자물가지수 12월치. 현지 1/13(수) 오전 8시 30분 발표(BLS 공식 일정).",
+    "watch": "헤드라인·근원 전월比",
+    "stocks": [
+     [
+      "성장주 전반",
+      0
+     ]
+    ],
+    "src": [
+     {
+      "name": "BLS CPI 일정",
+      "url": "https://www.bls.gov/schedule/news_release/cpi.htm"
+     },
+     {
+      "name": "chartwatch CPI·NFP 일정",
+      "url": "https://chartwatch.tv/cpi-nfp-release-dates"
+     }
+    ]
+   }
+  ],
+  "2027-01-14": [
+   {
+    "t": "econ",
+    "n": "한국은행 금통위 기준금리 결정",
+    "imp": 2,
+    "time": "오전 10시 전후",
+    "why": "2027년 첫(8회 중 1번째) 통화정책방향 결정회의입니다. 한국은행이 10/29 발표한 2027년 회의 일정(1/14·2/25·4/9·5/27·7/15·8/26·10/15·11/25)에 따릅니다.",
+    "watch": "기준금리 결정, 결정문 문구 변화",
+    "stocks": [
+     [
+      "코스피 전반",
+      1
+     ]
+    ],
+    "src": [
+     {
+      "name": "한국은행",
+      "url": "https://www.bok.or.kr/portal/singl/crncyPolicyMtg/listYear.do"
+     },
+     {
+      "name": "SBS Biz(10/29)",
+      "url": "https://biz.sbs.co.kr/article/20000343023"
+     },
+     {
+      "name": "서울경제(10/29)",
+      "url": "https://www.sedaily.com/article/20107758"
+     }
+    ]
+   },
+   {
+    "t": "econ",
+    "n": "미국 12월 PPI",
+    "imp": 2,
+    "time": "밤 10시 30분",
+    "why": "미국 생산자물가지수 12월치. 현지 1/14(목) 오전 8시 30분 발표(BLS 공식 일정).",
+    "watch": "근원 PPI 전월比",
+    "stocks": [],
+    "src": [
+     {
+      "name": "BLS PPI 일정",
+      "url": "https://www.bls.gov/schedule/news_release/ppi.htm"
+     },
+     {
+      "name": "smartcalendars PPI 일정",
+      "url": "https://www.smartcalendars.ai/en/feeds/ppi-release-calendar"
+     }
+    ]
+   }
+  ],
+  "2027-01-15": [
+   {
+    "t": "econ",
+    "n": "미국 12월 소매판매",
+    "imp": 2,
+    "time": "밤 10시 30분",
+    "why": "미국 소매판매 12월치. 자동차·휘발유를 제외한 수치가 함께 발표됩니다. 현지 1/15(금) 오전 8시 30분 발표(센서스국 공식 일정).",
+    "watch": "자동차 제외 소매판매 전월比",
+    "stocks": [
+     [
+      "소비·빅테크 전반",
+      0
+     ]
+    ],
+    "src": [
+     {
+      "name": "센서스국 일정",
+      "url": "https://www.census.gov/retail/release_schedule.html"
+     },
+     {
+      "name": "financecalendar.com",
+      "url": "https://www.financecalendar.com/us-retail-sales/"
      }
     ]
    }
