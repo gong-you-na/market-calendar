@@ -18,7 +18,12 @@ def ymd(d): return d.replace("-", "")
 
 # 1) 지수·환율·반도체
 ks = {r["d"]: r for r in yahoo_daily("^KS11", range_="2y") if r["d"] >= START}
-fx = {r["d"]: r["c"] for r in yahoo_daily("KRW=X", range_="2y")}
+# Yahoo 일봉이 빠진 거래일 보정(거래소 공식 종가·저가, 언론 2곳 일치 확인). 빠진 날만 채우고 Yahoo에 생기면 Yahoo 우선.
+MANUAL_KS = {"2026-11-16": {"c": 5100.50, "l": 5069.83}}  # 11/16 종가 −3.59%, 장중 저가(Yahoo ^KS11 11/16 일봉 누락)
+for d_, r_ in MANUAL_KS.items():
+    if d_ not in ks and d_ >= START:
+        ks[d_] = dict(d=d_, **r_)
+fx ={r["d"]: r["c"] for r in yahoo_daily("KRW=X", range_="2y")}
 sox = yahoo_daily("^SOX", range_="2y"); soxd = [r["d"] for r in sox]
 def sox_for(d):  # 한국 d일 직전 미국 거래일의 등락률
     p = [i for i, x in enumerate(soxd) if x < d]
