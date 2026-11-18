@@ -1,7 +1,35 @@
 {
- "updated": "2026-11-18 15:50 KST",
+ "updated": "2026-11-19 06:16 KST",
  "note": "날짜는 한국시간 기준. ★ 예상일은 공식 일정 확정 전.",
  "changelog": [
+  {
+   "at": "2026-11-19 06:16",
+   "msg": "10월 FOMC 의사록(현지 11/18) result 입력 — '거의 모든' 참석자 추가 인상 적절 판단, '일부' 10월 인상 선호, '소수' 0.25%p 초과 인상 검토 언급, 표결 10-2. 연준 의사록·FinanceFeeds·XTB·RTTNews 일치"
+  },
+  {
+   "at": "2026-11-19 06:16",
+   "msg": "PANW FY27 1분기 실적(현지 11/18 장후) 매출·가이던스 사실을 why에 추가 — 매출 34.45억 달러(+39%), NGS ARR 97.3억 달러(+66%), FY27 매출 가이던스 145.2억~145.7억 달러로 상향(이전 141억~142억). 회사 보도자료·rallies.ai·StockTitan 일치. EPS·반응은 earnings.json 자동 수집"
+  },
+  {
+   "at": "2026-11-19 06:16",
+   "msg": "3분기 GDP 잠정치·10월 PCE(현지 11/25 8:30 ET) why에 BEA 일정 확정·속보치(연율 +3.4%)·9월 PCE(3.6%/근원 3.1%) 추가 — BEA·financecalendar 일치. 컨센서스 미게시"
+  },
+  {
+   "at": "2026-11-19 06:16",
+   "msg": "11/26 금통위 why에 현재 기준금리 연 3.00%(10/22 동결) 사실 추가"
+  },
+  {
+   "at": "2026-11-19 06:16",
+   "msg": "미국 증시 휴장(마틴 루터 킹 데이, 현지 2027-01-18) 추가 — NYSE 공지·fedratecalc·financecalendar 일치"
+  },
+  {
+   "at": "2026-11-19 06:16",
+   "msg": "JPM 4분기 실적(현지 2027-01-14 장전) 추가 — 회사 IR 공지·Wall Street Horizon 1/14 일치, Nasdaq 캘린더 1/12와 달라 config.json next_date=2027-01-14로 IR 우선 적용(earnings.json next 1/12 → 1/14)"
+  },
+  {
+   "at": "2026-11-19 06:16",
+   "msg": "11/18 종가 S&P500 7,324(-0.23%)·나스닥 24,430(+0.42%)·10년물 5.07%·VIX 24.7·금 $3,727(-3.55%)·WTI $81.90(-4.78%)·달러 103.8·비트코인 $62,424(-3.81%) 반영. NVDA FY27 3분기 EPS 2.68(예상 2.47)·다음날 -2.89% earnings.json 자동 반영. Yahoo 코스피·코스닥 11/18 일봉 미수신으로 체온계 한국 지수는 한국 장 마감 갱신값(코스피 5,063·코스닥 662) 유지. earnings.json next(PANW 11/18·DELL 11/24·MRVL·CRWD 12/1·CRM 12/2·AVGO 12/9·MU 12/16 ★·JPM 1/14)와 events 일치. FRED 하이일드 스프레드 수신 시간 초과(기존 값 없음)"
+  },
   {
    "at": "2026-11-18 15:50",
    "msg": "NVDA FY27 3분기 실적(현지 11/17 장후) 매출·가이던스 사실을 why에 추가 — 매출 1,158억 달러(+103%), 데이터센터 1,076억 달러(+110%), 4분기 가이던스 1,300억 달러 ±3%. NVIDIA 보도자료·BigGo Finance 일치. EPS·반응은 Nasdaq 미반영(earnings.json next null 전환) → 다음 갱신에서 자동 수집. 코스피 5,063(+1.90%)·코스닥 662(+1.88%)·원/달러 1,333원 11/18 종가 반영"
@@ -93,34 +121,6 @@
   {
    "at": "2026-11-11 06:40",
    "msg": "10월 CPI(현지 11/10) result 추가 — 전월比 +0.4%(컨센서스 +0.3%)·근원 +0.3%(컨센서스 +0.2%), 주거비 +0.3%·에너지 +0.7%·식품 +0.5%, 전년比 미발표(BLS 보도자료·TheStreet·StockTitan 일치). 발표일 S&P500 -0.4%·나스닥 -0.7%·10년물 4.98%"
-  },
-  {
-   "at": "2026-11-11 06:40",
-   "msg": "MRVL FY27 3분기 실적 12/1 장후(현지 4:30pm ET) 확정 — 회사 IR 11/6 공지로 ★예상 표시 제거"
-  },
-  {
-   "at": "2026-11-11 06:40",
-   "msg": "Nasdaq 실적 API 403으로 earnings.json next 미갱신 — 이전 발표일 유지(MRVL·MU·AVGO·NVDA·CRM·CRWD·PANW·DELL). Yahoo 코스피·코스닥 11/10 일봉 누락으로 체온계 코스피·코스닥은 한국 장 마감 값 유지, 급락 기록부는 갱신 보류"
-  },
-  {
-   "at": "2026-11-10 06:30",
-   "msg": "10월 CPI(현지 11/10) 컨센서스 갱신 — 헤드라인 전월比 +0.3%·근원 +0.2%(11/9 기준), 2025년 10월 미수집으로 전년比 미발표(Kiplinger·FinancialJuice 일치)"
-  },
-  {
-   "at": "2026-11-10 06:30",
-   "msg": "RKLB(현지 11/9 장후) 실적 사실을 why에 추가 — 매출 2억 6,800만 달러(+73%)·수주잔고 35억 7,000만 달러(+52% QoQ)·4분기 매출 가이던스 2.7억~2.9억 달러(보도자료·24/7 Wall St·TipRanks 일치). EPS·주가 반응은 earnings.json 자동"
-  },
-  {
-   "at": "2026-11-10 06:30",
-   "msg": "11/11 미국 채권시장 휴장(재향군인의 날, 주식시장 정상 거래) 추가(SIFMA·fedratecalc 일치)"
-  },
-  {
-   "at": "2026-11-10 06:30",
-   "msg": "2027-01-08 12월 고용보고서 추가(BLS 1월 일정·financecalendar 일치)"
-  },
-  {
-   "at": "2026-11-07 06:41",
-   "msg": "10월 고용보고서(현지 11/6) result 추가 — 비농업 +16.5만(컨센서스 +6.5만)·실업률 4.1%·시간당 임금 전월比 +0.4%·전년比 +3.1%, 8·9월 합계 +8.4만 상향 수정(BLS 보도자료·Reuters 일치)"
   }
  ],
  "days": {
@@ -2915,8 +2915,74 @@
      {
       "name": "연준(FOMC 일정)",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+     },
+     {
+      "name": "연준 의사록(11/18)",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
+     },
+     {
+      "name": "FinanceFeeds 11/18",
+      "url": "https://financefeeds.com/fomc-minutes-reveal-how-close-the-fed-came/"
+     },
+     {
+      "name": "XTB 11/18",
+      "url": "https://www.xtb.com/int/market-analysis/news-and-research/fed-minutes-virtually-everyone-in-favor-of-further-rate-hikes-is-there-a-chance-for-50-basis-points-in-december"
+     },
+     {
+      "name": "RTTNews 11/18",
+      "url": "https://www.rttnews.com/story.aspx?Id=3716010"
+     },
+     {
+      "name": "StockTitan 장중·마감(11/18)",
+      "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-18-2026"
      }
-    ]
+    ],
+    "result": {
+     "actual": "'거의 모든' 참석자 추가 인상 적절",
+     "est": "—",
+     "prev": "10/28 3.75~4.00% 동결(10-2)",
+     "dir": "up",
+     "head": "'거의 모든(almost all)' 참석자가 추가 인상이 적절할 것으로 판단 · '일부(some)'는 10월 인상 선호 · '소수(a few)'는 물가 지표 부진 시 0.25%p 초과 인상 검토 언급",
+     "note": "10/27~28 회의 의사록(현지 11/18 오후 2시 공개). 표결 10-2(쿡 이사·해맥 클리블랜드 연은 총재 0.25%p 인상 선호 반대). '거의 모든(almost all)' 참석자는 물가를 2% 목표로 적시에 되돌리기 위해 추가 금리 인상이 적절할 가능성이 높다고 판단. '일부(some)' 참석자는 10월 회의에서 0.25%p 인상을 선호했고, 동결에 표를 던진 '소수(a few)'는 결정이 '근소한 차이(close call)'였다고 언급. '소수(a few)' 참석자는 다음 회의 전 물가 지표가 부진하면 0.25%p보다 큰 폭의 인상도 검토할 수 있다고 언급. AI 투자 확대는 물가 상방 위험과 금융안정(장부 외 리스 약정·순환 금융 구조) 관점에서 논의됨. 연방기금 선물은 12/8~9 회의 0.25%p 인상을 대부분 반영(의사록 공개 전후 변화 없음). 발표일(11/18) 종가 S&P500 7,324(-0.23%)·나스닥 24,430(+0.42%)·다우 -1.11%·10년물 5.07%(전일 5.10%)·VIX 24.7·달러 인덱스 103.8·금 $3,727(-3.55%, 1년여 만의 $3,800 하회)·WTI $81.90(-4.78%).",
+     "rows": [
+      [
+       "추가 인상",
+       "'거의 모든' 참석자 적절 판단",
+       "—",
+       "2% 목표로 적시 복귀 목적"
+      ],
+      [
+       "10월 인상 선호",
+       "'일부(some)'",
+       "—",
+       "동결 표 '소수(a few)'는 close call"
+      ],
+      [
+       "0.25%p 초과 인상",
+       "'소수(a few)' 검토 언급",
+       "—",
+       "물가 지표 부진 시"
+      ],
+      [
+       "표결",
+       "10-2",
+       "—",
+       "쿡·해맥 0.25%p 인상 선호"
+      ],
+      [
+       "AI 투자",
+       "물가·금융안정 위험으로 논의",
+       "—",
+       "장부 외 리스·순환 금융 구조"
+      ],
+      [
+       "다음 회의",
+       "12/8~9",
+       "—",
+       "선물 0.25%p 인상 대부분 반영"
+      ]
+     ]
+    }
    },
    {
     "t": "earn",
@@ -2925,7 +2991,7 @@
     "tier": 3,
     "ticker": "PANW",
     "time": "새벽 6시 30분 (현지 11/18 장후)",
-    "why": "탐색 · AI 소프트웨어·보안. 차세대 보안(NGS) 연간반복매출(ARR), 남은 계약 가치(RPO), 연간 가이던스가 발표됩니다. 회사 공지(11/3): 현지 11/18(수) 미국 장 마감 후 발표, 콘퍼런스콜 오후 1시 30분 PT(한국시간 11/19 오전 6시 30분). 10월 FOMC 의사록 공개(새벽 4시)와 같은 날입니다.",
+    "why": "탐색 · AI 소프트웨어·보안. 차세대 보안(NGS) 연간반복매출(ARR), 남은 계약 가치(RPO), 연간 가이던스가 발표됩니다. 회사 공지(11/3): 현지 11/18(수) 미국 장 마감 후 발표, 콘퍼런스콜 오후 1시 30분 PT(한국시간 11/19 오전 6시 30분). 10월 FOMC 의사록 공개(새벽 4시)와 같은 날입니다. 실적 발표(현지 11/18 장후): 매출 34억 4,500만 달러(+39%), 차세대 보안(NGS) ARR 97억 3,000만 달러(+66%), RPO 210억 달러(+35%), GAAP EPS 0.57달러. FY27 연간 가이던스 상향 — 매출 145억 2,000만~145억 7,000만 달러(이전 141억~142억 달러), 비GAAP EPS 4.26~4.30달러(이전 4.16~4.19달러), NGS ARR 114억 7,500만~115억 2,500만 달러. 2분기 매출 가이던스 35억 3,000만~35억 5,000만 달러. Applied Compute 인수 계획 발표.",
     "watch": "EPS·매출 vs 컨센서스, NGS ARR, RPO, 연간 가이던스",
     "stocks": [
      [
@@ -2949,6 +3015,22 @@
      {
       "name": "Nasdaq 실적 캘린더",
       "url": "https://www.nasdaq.com/market-activity/earnings"
+     },
+     {
+      "name": "Palo Alto Networks 보도자료(11/18, StockTitan 전재)",
+      "url": "https://www.stocktitan.net/news/PANW/palo-alto-networks-reports-fiscal-first-quarter-2027-financial-z0ztbt5rypny.html"
+     },
+     {
+      "name": "rallies.ai 11/18",
+      "url": "https://rallies.ai/news/palo-alto-networks-q1-eps-057-9387793bbc019d5d"
+     },
+     {
+      "name": "StockTitan 장중·마감(11/18)",
+      "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-18-2026"
+     },
+     {
+      "name": "BigGo Finance(9/1, 이전 FY27 가이던스)",
+      "url": "https://finance.biggo.com/news/b83b4808-d3b3-4e0f-90d3-9a32059d3c3d"
      }
     ]
    },
@@ -3007,7 +3089,7 @@
     "n": "미국 3분기 GDP 잠정치·10월 PCE 물가",
     "imp": 2,
     "time": "밤 10시 30분",
-    "why": "3분기 GDP 두 번째 추정치와 10월 PCE 물가가 같은 날 발표됩니다. 추수감사절 전날이라 지표가 몰려 있습니다.",
+    "why": "3분기 GDP 두 번째 추정치와 10월 PCE 물가가 같은 날 발표됩니다. 현지 11/25(수) 오전 8시 30분(BEA 공식 일정), 추수감사절 전날이라 지표가 몰려 있습니다. 3분기 GDP 속보치는 연율 +3.4%(컨센서스 3.2%), 9월 PCE 물가는 전년比 3.6%·근원 3.1%(전월比 +0.5%·+0.3%)였습니다.",
     "watch": "GDP 수정폭, 근원 PCE 전월比·전년比",
     "stocks": [
      [
@@ -3023,6 +3105,14 @@
      {
       "name": "fedratecalc 경제캘린더",
       "url": "https://fedratecalc.com/us-economic-calendar/"
+     },
+     {
+      "name": "BEA 일정",
+      "url": "https://www.bea.gov/news/schedule"
+     },
+     {
+      "name": "financecalendar.com PCE 11/25",
+      "url": "https://www.financecalendar.com/event/us-personal-income-and-outlays-pce-november-2026/"
      }
     ]
    },
@@ -3067,7 +3157,7 @@
     "n": "한국은행 금통위 기준금리 결정",
     "imp": 2,
     "time": "오전 10시 전후",
-    "why": "올해 마지막(8번째) 금통위 회의입니다. 수정 경제전망이 함께 발표됩니다.",
+    "why": "올해 마지막(8번째) 금통위 회의입니다. 수정 경제전망이 함께 발표됩니다. 현재 기준금리는 연 3.00%(7·8월 연속 인상 후 10/22 만장일치 동결)입니다.",
     "watch": "기준금리 결정, 성장률·물가 전망 수정",
     "stocks": [
      [
@@ -3899,6 +3989,40 @@
       "url": "https://www.smartcalendars.ai/en/feeds/ppi-release-calendar"
      }
     ]
+   },
+   {
+    "t": "earn",
+    "n": "JPMorgan 4분기 실적",
+    "imp": 2,
+    "tier": 2,
+    "ticker": "JPM",
+    "time": "밤 8시 45분 (장전)",
+    "why": "방어 · 금융·핀테크. 미국 {{어닝시즌}}의 첫 대형은행 실적입니다. 순이자이익(NII), 대손충당금, 투자은행 수수료, 2027년 연간 가이던스가 함께 공개됩니다. 회사 공지: 현지 1/14(목) 오전 6시 45분 발표, 콘퍼런스콜 오전 8시 30분 ET(한국시간 1/14 밤 10시 30분). 12월 PPI 발표(밤 10시 30분)·금통위(오전)와 같은 날입니다.",
+    "watch": "EPS·매출 vs 컨센서스, NII 연간 가이던스, 대손충당금",
+    "stocks": [
+     [
+      "JP모건",
+      1
+     ],
+     [
+      "금융 섹터",
+      0
+     ]
+    ],
+    "src": [
+     {
+      "name": "JPMorganChase 공지(2025-05-21)",
+      "url": "https://jpmorganchaseco.gcs-web.com/news-releases/news-release-details/jpmorganchase-announces-conference-calls-review-first-quarter"
+     },
+     {
+      "name": "Wall Street Horizon",
+      "url": "https://www.wallstreethorizon.com/jpmorgan-earnings-calendar"
+     },
+     {
+      "name": "Nasdaq 실적 캘린더(1/12 표기, IR 우선)",
+      "url": "https://www.nasdaq.com/market-activity/earnings"
+     }
+    ]
    }
   ],
   "2027-01-15": [
@@ -3923,6 +4047,31 @@
      {
       "name": "financecalendar.com",
       "url": "https://www.financecalendar.com/us-retail-sales/"
+     }
+    ]
+   }
+  ],
+  "2027-01-18": [
+   {
+    "t": "hol",
+    "n": "미국 증시 휴장(마틴 루터 킹 데이)",
+    "imp": 1,
+    "time": "현지 1/18(월)",
+    "why": "마틴 루터 킹 주니어 데이로 미국 증시(NYSE·나스닥)가 휴장합니다. 한국 증시는 정상 거래.",
+    "watch": "",
+    "stocks": [],
+    "src": [
+     {
+      "name": "NYSE 휴장일 공지",
+      "url": "https://www.marketscreener.com/quote/stock/INTERCONTINENTAL-EXCHANGE-14931198/news/NYSE-Group-Announces-2025-2026-and-2027-Holiday-and-Early-Closings-Calendar-48322083/"
+     },
+     {
+      "name": "fedratecalc 휴장일",
+      "url": "https://fedratecalc.com/stock-market-holidays/"
+     },
+     {
+      "name": "financecalendar.com 1/18",
+      "url": "https://www.financecalendar.com/events/2027-01-18/"
      }
     ]
    }

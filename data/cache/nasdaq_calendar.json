@@ -3533,5 +3533,18 @@
    "epsForecast": "($0.06)",
    "noOfEsts": "2"
   }
+ ],
+ "2026-11-17": [
+  {
+   "eps": "$2.68",
+   "surprise": "8.5",
+   "time": "time-not-supplied",
+   "symbol": "NVDA",
+   "name": "NVIDIA Corporation",
+   "marketCap": "$3,746,585,900,000",
+   "fiscalQuarterEnding": "Oct/2026",
+   "epsForecast": "$2.47",
+   "noOfEsts": "14"
+  }
  ]
 }
