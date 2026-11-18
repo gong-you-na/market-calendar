@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29 17:20 KST",
+ "updated": "2026-11-18 19:15 KST",
  "mode": "manual",
  "period": "2026-01-01~2026-10-22",
  "note": "2026년 1월~10월 공개 발언 아카이브. 요약은 공개된 발언을 바탕으로 작성. 이후 발언은 운영자가 전달하면 Claude가 추가(수동).",
@@ -37,6 +37,16 @@
    },
    "n": 13,
    "latest": "2026-10-16"
+  },
+  {
+   "id": "williams",
+   "name": "존 윌리엄스",
+   "en": "John Williams",
+   "role": "뉴욕 연은 총재·FOMC 부의장",
+   "x": "",
+   "truth": null,
+   "n": 1,
+   "latest": "2026-11-17"
   },
   {
    "id": "bessent",
@@ -1940,6 +1950,17 @@
    "url": "https://www.business-standard.com/world-news/trump-admin-warns-gulf-states-of-likely-renewed-iran-war-after-us-midterms-126102900329_1.html",
    "topic": "지정학·유가",
    "id": "761338db1d"
+  },
+  {
+   "person": "williams",
+   "date": "2026-11-17",
+   "text": "윌리엄스 뉴욕 연은 총재는 뉴욕의 한 콘퍼런스에서 경제는 견조하고 더 강해지고 있지만 인플레이션은 바람직한 방향으로 움직이지 않고 있으며 '끈질기게 높은' 수준이라고 말했다. 충격이 더 광범위한 물가 지표로 번지는 징후가 보이고 관세와 에너지 충격이 여전히 물가 지표에 부담을 주고 있지만, 현 상황이 과감한 정책 조치를 정당화하지는 않는다고 했다. 금융 여건은 성장에 상당히 우호적이고 금융시장은 매우 원활하게 작동하고 있으며, AI로 인한 금융 안정 리스크는 아직 보이지 않고 사이버 보안은 여전히 우려 사항이라고 덧붙였다. 연준은 인플레이션을 2%로 적시에 되돌릴 것이라고 말했다.",
+   "quote": "I don't think the situation calls for dramatic policy action.",
+   "context": "Axios BFD 서밋 대담(뉴욕)",
+   "src": "Newsquawk·Investing.com",
+   "url": "https://www.newsquawk.com/headlines/feds-williams-says-the-economy-is-strong-and-strengthening-but-inflation-isnt-heading-in-the-right-direction-the-fed-still-has-more-to-do-to-return-inflation-to-2",
+   "topic": "연준",
+   "id": "5dd41b61c4"
   }
  ]
 }

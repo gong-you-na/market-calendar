@@ -33,6 +33,14 @@
    "img": "assets/people/warsh.jpg"
   },
   {
+   "id": "williams",
+   "name": "존 윌리엄스",
+   "en": "John Williams",
+   "role": "뉴욕 연은 총재·FOMC 부의장",
+   "wiki": "John C. Williams (economist)",
+   "x": ""
+  },
+  {
    "id": "bessent",
    "name": "스콧 베센트",
    "en": "Scott Bessent",
