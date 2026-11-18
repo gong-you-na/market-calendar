@@ -53,7 +53,14 @@
    "en": "Christopher Waller",
    "role": "연준 이사",
    "wiki": "Christopher Waller",
-   "x": ""
+   "x": "",
+   "img_credit": {
+    "file": "Christopher_J._Waller,_Federal_Reserve_Governor_2.jpg",
+    "license": "Public domain",
+    "artist": "Federalreserve",
+    "url": "https://commons.wikimedia.org/wiki/File:Christopher_J._Waller,_Federal_Reserve_Governor_2.jpg"
+   },
+   "img": "assets/people/waller.jpg"
   },
   {
    "id": "barr",
@@ -61,7 +68,14 @@
    "en": "Michael Barr",
    "role": "연준 이사",
    "wiki": "Michael Barr (Treasury official)",
-   "x": ""
+   "x": "",
+   "img_credit": {
+    "file": "Michael_S._Barr,_Federal_Reserve_Member.jpg",
+    "license": "Public domain",
+    "artist": "Federalreserve",
+    "url": "https://commons.wikimedia.org/wiki/File:Michael_S._Barr,_Federal_Reserve_Member.jpg"
+   },
+   "img": "assets/people/barr.jpg"
   },
   {
    "id": "daly",
@@ -69,7 +83,14 @@
    "en": "Mary Daly",
    "role": "샌프란시스코 연은 총재",
    "wiki": "Mary C. Daly",
-   "x": ""
+   "x": "",
+   "img_credit": {
+    "file": "Mary_C._Daly_2024-10-09.jpg",
+    "license": "CC0",
+    "artist": "Nigel-Q-Nigel",
+    "url": "https://commons.wikimedia.org/wiki/File:Mary_C._Daly_2024-10-09.jpg"
+   },
+   "img": "assets/people/daly.jpg"
   },
   {
    "id": "kashkari",
@@ -77,7 +98,14 @@
    "en": "Neel Kashkari",
    "role": "미니애폴리스 연은 총재",
    "wiki": "Neel Kashkari",
-   "x": ""
+   "x": "",
+   "img_credit": {
+    "file": "Neel-kashkari.jpg",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "url": "https://commons.wikimedia.org/wiki/File:Neel-kashkari.jpg"
+   },
+   "img": "assets/people/kashkari.jpg"
   },
   {
    "id": "bessent",
