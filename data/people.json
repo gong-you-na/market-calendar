@@ -48,6 +48,38 @@
    "img": "assets/people/williams.jpg"
   },
   {
+   "id": "waller",
+   "name": "크리스토퍼 월러",
+   "en": "Christopher Waller",
+   "role": "연준 이사",
+   "wiki": "Christopher Waller",
+   "x": ""
+  },
+  {
+   "id": "barr",
+   "name": "마이클 바",
+   "en": "Michael Barr",
+   "role": "연준 이사",
+   "wiki": "Michael Barr (Treasury official)",
+   "x": ""
+  },
+  {
+   "id": "daly",
+   "name": "메리 데일리",
+   "en": "Mary Daly",
+   "role": "샌프란시스코 연은 총재",
+   "wiki": "Mary C. Daly",
+   "x": ""
+  },
+  {
+   "id": "kashkari",
+   "name": "닐 카슈카리",
+   "en": "Neel Kashkari",
+   "role": "미니애폴리스 연은 총재",
+   "wiki": "Neel Kashkari",
+   "x": ""
+  },
+  {
    "id": "bessent",
    "name": "스콧 베센트",
    "en": "Scott Bessent",
