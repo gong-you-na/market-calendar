@@ -38,7 +38,14 @@
    "en": "John Williams",
    "role": "뉴욕 연은 총재·FOMC 부의장",
    "wiki": "John C. Williams (economist)",
-   "x": ""
+   "x": "",
+   "img_credit": {
+    "file": "John_C._Williams_(cropped).jpg",
+    "license": "Public domain",
+    "artist": "Federal Reserve Bank of New York",
+    "url": "https://commons.wikimedia.org/wiki/File:John_C._Williams_(cropped).jpg"
+   },
+   "img": "assets/people/williams.jpg"
   },
   {
    "id": "bessent",
@@ -108,10 +115,10 @@
    "wiki": "Elon Musk",
    "x": "elonmusk",
    "img_credit": {
-    "file": "Elon_Musk_-_54820081119_(cropped).jpg",
+    "file": "Elon_Musk_-_54820081119_(3x4_cropped,_Rule_of_thirds).jpg",
     "license": "CC BY-SA 4.0",
     "artist": "Gage Skidmore",
-    "url": "https://commons.wikimedia.org/wiki/File:Elon_Musk_-_54820081119_(cropped).jpg"
+    "url": "https://commons.wikimedia.org/wiki/File:Elon_Musk_-_54820081119_(3x4_cropped,_Rule_of_thirds).jpg"
    },
    "img": "assets/people/musk.jpg"
   },
@@ -123,10 +130,10 @@
    "wiki": "Jensen Huang",
    "x": "",
    "img_credit": {
-    "file": "Jen-Hsun_Huang_2025.jpg",
-    "license": "Public domain",
-    "artist": "The White House",
-    "url": "https://commons.wikimedia.org/wiki/File:Jen-Hsun_Huang_2025.jpg"
+    "file": "Jensen_Huang_Stanford_2026-04-30_010_(cropped).jpg",
+    "license": "CC BY-SA 4.0",
+    "artist": "Anderseidesvik",
+    "url": "https://commons.wikimedia.org/wiki/File:Jensen_Huang_Stanford_2026-04-30_010_(cropped).jpg"
    },
    "img": "assets/people/huang.jpg"
   },
