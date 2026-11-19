@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18 19:40 KST",
+ "updated": "2026-11-19 10:05 KST",
  "mode": "manual",
  "period": "2026-01-01~2026-10-22",
  "note": "2026년 1월~10월 공개 발언 아카이브. 요약은 공개된 발언을 바탕으로 작성. 이후 발언은 운영자가 전달하면 Claude가 추가(수동).",
@@ -18,8 +18,8 @@
     "artist": "Daniel Torok",
     "url": "https://commons.wikimedia.org/wiki/File:Official_Presidential_Portrait_of_President_Donald_J._Trump_(2025).jpg"
    },
-   "n": 17,
-   "latest": "2026-10-28"
+   "n": 19,
+   "latest": "2026-11-19"
   },
   {
    "id": "warsh",
@@ -2045,6 +2045,28 @@
    "url": "https://www.newsquawk.com/headlines/feds-kashkari-2026-voter-says-interest-rates-can-affect-investment-levels-markets-believe-the-fed-will-need-to-raise-rates-more-than-fed-officials-currently-expect",
    "topic": "연준",
    "id": "74365c632b"
+  },
+  {
+   "person": "trump",
+   "date": "2026-11-19",
+   "text": "트럼프 대통령은 중국 방문 중 시진핑 주석과 푸틴 대통령이 협력하고 있으니 두 사람을 모두 만나는 것이 타당하며 두 정상 모두 자신을 좋아한다고 말했다. 러시아-우크라이나 분쟁 해결을 원한다며 푸틴과 젤렌스키 사이의 반감을 언급했다. 이란에 대해서는 지속 가능한 합의를 원하고, 봉쇄는 미국이 한 조치 중 가장 효과적이며, 양해각서(MoU)로 일이 지연됐지만 실수는 아니었다고 했다. 이란이 가스·생물무기를 살펴보고 있지만 당황할 필요는 없고, 이란 격퇴에 시 주석이나 푸틴의 지원을 요청하지 않을 것이라고 말했다. 중국과의 관계는 매우 훌륭하며 서로를 감시하고 있고, 중국이 새 핵무기를 만들지 않기를 바란다고 덧붙였다.",
+   "quote": "",
+   "context": "중국 방문(APEC·시진핑-푸틴 3자 회담 전) 중 기자 문답",
+   "src": "운영자 제공 헤드라인(원문 기사 미확인)",
+   "url": "",
+   "topic": "지정학·유가",
+   "id": "2c74ff6264"
+  },
+  {
+   "person": "trump",
+   "date": "2026-11-19",
+   "text": "트럼프 대통령은 시진핑 주석과 반도체·AI를 논의했지만 젠슨 황은 언급하지 않았다며, 황 관련 사안은 안보 문제가 아니고 관련 인물이 스파이라는 말은 들은 적이 없으며 사업가라고 말했다. 일부 인재는 대체 불가능하다며 젠슨 황과 일론 머스크 같은 인재를 돌봐야 한다고 했다. 국내 현안으로는 민주당이 원하는 법안은 무엇이든 보내도 되며 백악관에서 민주당 인사들을 만나겠다고 했고, 엔터테인먼트·영화 산업 관련 법안도 추진하겠다고 밝혔다.",
+   "quote": "",
+   "context": "중국 방문(APEC·시진핑-푸틴 3자 회담 전) 중 기자 문답",
+   "src": "운영자 제공 헤드라인(원문 기사 미확인)",
+   "url": "",
+   "topic": "AI·반도체",
+   "id": "60aa10fb12"
   }
  ]
 }
