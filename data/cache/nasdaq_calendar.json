@@ -3546,5 +3546,18 @@
    "epsForecast": "$2.47",
    "noOfEsts": "14"
   }
+ ],
+ "2026-11-18": [
+  {
+   "eps": "$0.46",
+   "surprise": "-11.54",
+   "time": "time-not-supplied",
+   "symbol": "PANW",
+   "name": "Palo Alto Networks, Inc.",
+   "marketCap": "$278,205,170,000",
+   "fiscalQuarterEnding": "Oct/2026",
+   "epsForecast": "$0.52",
+   "noOfEsts": "16"
+  }
  ]
 }
