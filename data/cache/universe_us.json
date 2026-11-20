@@ -1,1797 +1,1741 @@
 {
- "asof": "2026-11-13",
+ "asof": "2026-11-20",
  "items": [
   {
    "t": "AAPL",
    "n": "Apple Inc.",
    "sector": "기술",
    "ind": "Technology Hardware, Storage & Peripherals",
-   "cap": 5160000000000.0
-  },
-  {
-   "t": "NVDA",
-   "n": "Nvidia",
-   "sector": "기술",
-   "ind": "Semiconductors",
-   "cap": 4010000000000.0
+   "cap": 5070000000000.0
   },
   {
    "t": "MSFT",
    "n": "Microsoft",
    "sector": "기술",
    "ind": "Systems Software",
-   "cap": 3880000000000.0
+   "cap": 3700000000000.0
+  },
+  {
+   "t": "NVDA",
+   "n": "Nvidia",
+   "sector": "기술",
+   "ind": "Semiconductors",
+   "cap": 3520000000000.0
   },
   {
    "t": "AMZN",
    "n": "Amazon",
    "sector": "임의소비재",
    "ind": "Broadline Retail",
-   "cap": 2890000000000.0
-  },
-  {
-   "t": "GOOGL",
-   "n": "Alphabet Inc. (Class A)",
-   "sector": "커뮤니케이션",
-   "ind": "Interactive Media & Services",
-   "cap": 3670000000000.0
+   "cap": 2780000000000.0
   },
   {
    "t": "AVGO",
    "n": "Broadcom",
    "sector": "기술",
    "ind": "Semiconductors",
-   "cap": 1740000000000.0
+   "cap": 1650000000000.0
   },
   {
-   "t": "GOOG",
-   "n": "Alphabet Inc. (Class C)",
+   "t": "GOOGL",
+   "n": "Alphabet Inc. (Class A)",
    "sector": "커뮤니케이션",
    "ind": "Interactive Media & Services",
-   "cap": 3650000000000.0
+   "cap": 3350000000000.0
   },
   {
    "t": "META",
    "n": "Meta Platforms",
    "sector": "커뮤니케이션",
    "ind": "Interactive Media & Services",
-   "cap": 1590000000000.0
+   "cap": 1520000000000.0
+  },
+  {
+   "t": "GOOG",
+   "n": "Alphabet Inc. (Class C)",
+   "sector": "커뮤니케이션",
+   "ind": "Interactive Media & Services",
+   "cap": 3340000000000.0
   },
   {
    "t": "LLY",
    "n": "Lilly (Eli)",
    "sector": "헬스케어",
    "ind": "Pharmaceuticals",
-   "cap": 1270000000000.0
-  },
-  {
-   "t": "TSLA",
-   "n": "Tesla, Inc.",
-   "sector": "임의소비재",
-   "ind": "Automobile Manufacturers",
-   "cap": 1570000000000.0
+   "cap": 1200000000000.0
   },
   {
    "t": "BRK-B",
    "n": "Berkshire Hathaway",
    "sector": "금융",
    "ind": "Multi-Sector Holdings",
-   "cap": 1250000000000.0
+   "cap": 1220000000000.0
   },
   {
-   "t": "AMD",
-   "n": "Advanced Micro Devices",
-   "sector": "기술",
-   "ind": "Semiconductors",
-   "cap": 959940000000.0
+   "t": "TSLA",
+   "n": "Tesla, Inc.",
+   "sector": "임의소비재",
+   "ind": "Automobile Manufacturers",
+   "cap": 1480000000000.0
   },
   {
    "t": "JPM",
    "n": "JPMorgan Chase",
    "sector": "금융",
    "ind": "Diversified Banks",
-   "cap": 910400000000.0
+   "cap": 850380000000.0
+  },
+  {
+   "t": "AMD",
+   "n": "Advanced Micro Devices",
+   "sector": "기술",
+   "ind": "Semiconductors",
+   "cap": 809640000000.0
   },
   {
    "t": "MU",
    "n": "Micron Technology",
    "sector": "기술",
    "ind": "Semiconductors",
-   "cap": 903370000000.0
+   "cap": 781180000000.0
   },
   {
    "t": "V",
    "n": "Visa Inc.",
    "sector": "금융",
    "ind": "Transaction & Payment Processing Services",
-   "cap": 792830000000.0
+   "cap": 758770000000.0
   },
   {
    "t": "XOM",
    "n": "ExxonMobil",
    "sector": "에너지",
    "ind": "Integrated Oil & Gas",
-   "cap": 692570000000.0
+   "cap": 648310000000.0
   },
   {
    "t": "JNJ",
    "n": "Johnson & Johnson",
    "sector": "헬스케어",
    "ind": "Pharmaceuticals",
-   "cap": 682520000000.0
+   "cap": 643090000000.0
   },
   {
    "t": "WMT",
    "n": "Walmart",
    "sector": "필수소비재",
    "ind": "Consumer Staples Merchandise Retail",
-   "cap": 1000000000000.0
+   "cap": 999970000000.0
   },
   {
    "t": "MA",
    "n": "Mastercard",
    "sector": "금융",
    "ind": "Transaction & Payment Processing Services",
-   "cap": 568530000000.0
+   "cap": 545789999999.99994
   },
   {
    "t": "ABBV",
    "n": "AbbVie",
    "sector": "헬스케어",
    "ind": "Biotechnology",
-   "cap": 520470000000.0
+   "cap": 501190000000.0
   },
   {
    "t": "COST",
    "n": "Costco",
    "sector": "필수소비재",
    "ind": "Consumer Staples Merchandise Retail",
-   "cap": 483990000000.0
+   "cap": 484710000000.0
   },
   {
    "t": "CVX",
    "n": "Chevron Corporation",
    "sector": "에너지",
    "ind": "Integrated Oil & Gas",
-   "cap": 422150000000.0
-  },
-  {
-   "t": "CSCO",
-   "n": "Cisco",
-   "sector": "기술",
-   "ind": "Communications Equipment",
-   "cap": 401610000000.0
-  },
-  {
-   "t": "PLTR",
-   "n": "Palantir Technologies",
-   "sector": "기술",
-   "ind": "Application Software",
-   "cap": 413420000000.0
+   "cap": 402930000000.0
   },
   {
    "t": "PG",
    "n": "Procter & Gamble",
    "sector": "필수소비재",
    "ind": "Personal Care Products",
-   "cap": 389460000000.0
+   "cap": 389040000000.0
+  },
+  {
+   "t": "CSCO",
+   "n": "Cisco",
+   "sector": "기술",
+   "ind": "Communications Equipment",
+   "cap": 373350000000.0
   },
   {
    "t": "KO",
    "n": "Coca-Cola Company (The)",
    "sector": "필수소비재",
    "ind": "Soft Drinks & Non-alcoholic Beverages",
-   "cap": 419180000000.0
+   "cap": 413370000000.0
   },
   {
-   "t": "UNH",
-   "n": "UnitedHealth Group",
-   "sector": "헬스케어",
-   "ind": "Managed Health Care",
-   "cap": 363010000000.0
-  },
-  {
-   "t": "MRK",
-   "n": "Merck & Co.",
-   "sector": "헬스케어",
-   "ind": "Pharmaceuticals",
-   "cap": 362270000000.0
+   "t": "PLTR",
+   "n": "Palantir Technologies",
+   "sector": "기술",
+   "ind": "Application Software",
+   "cap": 370290000000.0
   },
   {
    "t": "HD",
    "n": "Home Depot (The)",
    "sector": "임의소비재",
    "ind": "Home Improvement Retail",
-   "cap": 347460000000.0
+   "cap": 335900000000.0
   },
   {
    "t": "GE",
    "n": "GE Aerospace",
    "sector": "산업재",
    "ind": "Aerospace & Defense",
-   "cap": 341890000000.0
+   "cap": 329520000000.0
+  },
+  {
+   "t": "MRK",
+   "n": "Merck & Co.",
+   "sector": "헬스케어",
+   "ind": "Pharmaceuticals",
+   "cap": 327410000000.0
   },
   {
    "t": "BAC",
    "n": "Bank of America",
    "sector": "금융",
    "ind": "Diversified Banks",
-   "cap": 348530000000.0
+   "cap": 335140000000.0
   },
   {
-   "t": "PM",
-   "n": "Philip Morris International",
-   "sector": "필수소비재",
-   "ind": "Tobacco",
-   "cap": 306530000000.0
-  },
-  {
-   "t": "INTC",
-   "n": "Intel",
-   "sector": "기술",
-   "ind": "Semiconductors",
-   "cap": 325280000000.0
-  },
-  {
-   "t": "AMAT",
-   "n": "Applied Materials",
-   "sector": "기술",
-   "ind": "Semiconductor Materials & Equipment",
-   "cap": 302320000000.0
-  },
-  {
-   "t": "LRCX",
-   "n": "Lam Research",
-   "sector": "기술",
-   "ind": "Semiconductor Materials & Equipment",
-   "cap": 292030000000.0
-  },
-  {
-   "t": "TXN",
-   "n": "Texas Instruments",
-   "sector": "기술",
-   "ind": "Semiconductors",
-   "cap": 285530000000.0
-  },
-  {
-   "t": "CAT",
-   "n": "Caterpillar Inc.",
-   "sector": "산업재",
-   "ind": "Construction Machinery & Heavy Transportation Equipment",
-   "cap": 276730000000.0
-  },
-  {
-   "t": "RTX",
-   "n": "RTX Corporation",
-   "sector": "산업재",
-   "ind": "Aerospace & Defense",
-   "cap": 267680000000.0
-  },
-  {
-   "t": "GS",
-   "n": "Goldman Sachs",
-   "sector": "금융",
-   "ind": "Investment Banking & Brokerage",
-   "cap": 274110000000.0
+   "t": "UNH",
+   "n": "UnitedHealth Group",
+   "sector": "헬스케어",
+   "ind": "Managed Health Care",
+   "cap": 296120000000.0
   },
   {
    "t": "PANW",
    "n": "Palo Alto Networks",
    "sector": "기술",
    "ind": "Systems Software",
-   "cap": 263519999999.99997
+   "cap": 296980000000.0
   },
   {
-   "t": "NFLX",
-   "n": "Netflix",
-   "sector": "커뮤니케이션",
-   "ind": "Movies & Entertainment",
-   "cap": 257430000000.0
+   "t": "PM",
+   "n": "Philip Morris International",
+   "sector": "필수소비재",
+   "ind": "Tobacco",
+   "cap": 290580000000.0
   },
   {
-   "t": "WFC",
-   "n": "Wells Fargo",
-   "sector": "금융",
-   "ind": "Diversified Banks",
-   "cap": 257440000000.0
+   "t": "INTC",
+   "n": "Intel",
+   "sector": "기술",
+   "ind": "Semiconductors",
+   "cap": 296150000000.0
+  },
+  {
+   "t": "AMAT",
+   "n": "Applied Materials",
+   "sector": "기술",
+   "ind": "Semiconductor Materials & Equipment",
+   "cap": 268970000000.00003
+  },
+  {
+   "t": "TXN",
+   "n": "Texas Instruments",
+   "sector": "기술",
+   "ind": "Semiconductors",
+   "cap": 261110000000.0
+  },
+  {
+   "t": "RTX",
+   "n": "RTX Corporation",
+   "sector": "산업재",
+   "ind": "Aerospace & Defense",
+   "cap": 261040000000.00003
+  },
+  {
+   "t": "LRCX",
+   "n": "Lam Research",
+   "sector": "기술",
+   "ind": "Semiconductor Materials & Equipment",
+   "cap": 254430000000.0
   },
   {
    "t": "TMO",
    "n": "Thermo Fisher Scientific",
    "sector": "헬스케어",
    "ind": "Life Sciences Tools & Services",
-   "cap": 259149999999.99997
-  },
-  {
-   "t": "AMGN",
-   "n": "Amgen",
-   "sector": "헬스케어",
-   "ind": "Biotechnology",
-   "cap": 252640000000.0
-  },
-  {
-   "t": "ORCL",
-   "n": "Oracle Corporation",
-   "sector": "기술",
-   "ind": "Application Software",
-   "cap": 396290000000.0
-  },
-  {
-   "t": "LIN",
-   "n": "Linde plc",
-   "sector": "소재",
-   "ind": "Industrial Gases",
-   "cap": 239870000000.0
+   "cap": 255190000000.0
   },
   {
    "t": "CRWD",
    "n": "CrowdStrike",
    "sector": "기술",
    "ind": "Systems Software",
-   "cap": 235880000000.0
+   "cap": 249820000000.0
+  },
+  {
+   "t": "CAT",
+   "n": "Caterpillar Inc.",
+   "sector": "산업재",
+   "ind": "Construction Machinery & Heavy Transportation Equipment",
+   "cap": 245680000000.0
+  },
+  {
+   "t": "GS",
+   "n": "Goldman Sachs",
+   "sector": "금융",
+   "ind": "Investment Banking & Brokerage",
+   "cap": 254280000000.0
+  },
+  {
+   "t": "WFC",
+   "n": "Wells Fargo",
+   "sector": "금융",
+   "ind": "Diversified Banks",
+   "cap": 241980000000.0
+  },
+  {
+   "t": "NFLX",
+   "n": "Netflix",
+   "sector": "커뮤니케이션",
+   "ind": "Movies & Entertainment",
+   "cap": 240060000000.0
+  },
+  {
+   "t": "AMGN",
+   "n": "Amgen",
+   "sector": "헬스케어",
+   "ind": "Biotechnology",
+   "cap": 237360000000.0
+  },
+  {
+   "t": "LIN",
+   "n": "Linde plc",
+   "sector": "소재",
+   "ind": "Industrial Gases",
+   "cap": 234230000000.0
+  },
+  {
+   "t": "ORCL",
+   "n": "Oracle Corporation",
+   "sector": "기술",
+   "ind": "Application Software",
+   "cap": 344720000000.0
   },
   {
    "t": "IBM",
    "n": "IBM",
    "sector": "기술",
    "ind": "IT Consulting & Other Services",
-   "cap": 231240000000.0
+   "cap": 211590000000.0
   },
   {
    "t": "MS",
    "n": "Morgan Stanley",
    "sector": "금융",
    "ind": "Investment Banking & Brokerage",
-   "cap": 295680000000.0
-  },
-  {
-   "t": "GEV",
-   "n": "GE Vernova",
-   "sector": "산업재",
-   "ind": "Heavy Electrical Equipment",
-   "cap": 215490000000.0
-  },
-  {
-   "t": "ANET",
-   "n": "Arista Networks",
-   "sector": "기술",
-   "ind": "Communications Equipment",
-   "cap": 261060000000.0
-  },
-  {
-   "t": "GILD",
-   "n": "Gilead Sciences",
-   "sector": "헬스케어",
-   "ind": "Biotechnology",
-   "cap": 208310000000.0
-  },
-  {
-   "t": "C",
-   "n": "Citigroup",
-   "sector": "금융",
-   "ind": "Diversified Banks",
-   "cap": 205340000000.0
-  },
-  {
-   "t": "KLAC",
-   "n": "KLA Corporation",
-   "sector": "기술",
-   "ind": "Semiconductor Materials & Equipment",
-   "cap": 204960000000.0
+   "cap": 273500000000.0
   },
   {
    "t": "DIS",
    "n": "Walt Disney Company (The)",
    "sector": "커뮤니케이션",
    "ind": "Movies & Entertainment",
-   "cap": 204150000000.0
+   "cap": 205390000000.0
   },
   {
-   "t": "ADI",
-   "n": "Analog Devices",
+   "t": "GILD",
+   "n": "Gilead Sciences",
+   "sector": "헬스케어",
+   "ind": "Biotechnology",
+   "cap": 206550000000.0
+  },
+  {
+   "t": "GEV",
+   "n": "GE Vernova",
+   "sector": "산업재",
+   "ind": "Heavy Electrical Equipment",
+   "cap": 199110000000.0
+  },
+  {
+   "t": "ANET",
+   "n": "Arista Networks",
    "sector": "기술",
-   "ind": "Semiconductors",
-   "cap": 198330000000.0
+   "ind": "Communications Equipment",
+   "cap": 239530000000.0
   },
   {
-   "t": "APH",
-   "n": "Amphenol",
-   "sector": "기술",
-   "ind": "Electronic Components",
-   "cap": 196600000000.0
-  },
-  {
-   "t": "PEP",
-   "n": "PepsiCo",
-   "sector": "필수소비재",
-   "ind": "Soft Drinks & Non-alcoholic Beverages",
-   "cap": 193860000000.0
+   "t": "C",
+   "n": "Citigroup",
+   "sector": "금융",
+   "ind": "Diversified Banks",
+   "cap": 190810000000.0
   },
   {
    "t": "MCD",
    "n": "McDonald's",
    "sector": "임의소비재",
    "ind": "Restaurants",
-   "cap": 193120000000.0
+   "cap": 192220000000.0
   },
   {
    "t": "VZ",
    "n": "Verizon",
    "sector": "커뮤니케이션",
    "ind": "Integrated Telecommunication Services",
-   "cap": 192930000000.0
+   "cap": 189570000000.0
   },
   {
-   "t": "QCOM",
-   "n": "Qualcomm",
+   "t": "PEP",
+   "n": "PepsiCo",
+   "sector": "필수소비재",
+   "ind": "Soft Drinks & Non-alcoholic Beverages",
+   "cap": 189420000000.0
+  },
+  {
+   "t": "APH",
+   "n": "Amphenol",
+   "sector": "기술",
+   "ind": "Electronic Components",
+   "cap": 186700000000.0
+  },
+  {
+   "t": "KLAC",
+   "n": "KLA Corporation",
+   "sector": "기술",
+   "ind": "Semiconductor Materials & Equipment",
+   "cap": 184340000000.0
+  },
+  {
+   "t": "ADI",
+   "n": "Analog Devices",
    "sector": "기술",
    "ind": "Semiconductors",
-   "cap": 189540000000.0
+   "cap": 182890000000.0
   },
   {
    "t": "ABT",
    "n": "Abbott Laboratories",
    "sector": "헬스케어",
    "ind": "Health Care Equipment",
-   "cap": 185750000000.0
-  },
-  {
-   "t": "UNP",
-   "n": "Union Pacific Corporation",
-   "sector": "산업재",
-   "ind": "Rail Transportation",
-   "cap": 180770000000.0
-  },
-  {
-   "t": "CRM",
-   "n": "Salesforce",
-   "sector": "기술",
-   "ind": "Application Software",
-   "cap": 179060000000.0
-  },
-  {
-   "t": "NEE",
-   "n": "NextEra Energy",
-   "sector": "유틸리티",
-   "ind": "Multi-Utilities",
-   "cap": 178880000000.0
+   "cap": 179900000000.0
   },
   {
    "t": "WELL",
    "n": "Welltower",
    "sector": "부동산",
    "ind": "Health Care REITs",
-   "cap": 179680000000.0
+   "cap": 178410000000.0
   },
   {
-   "t": "BLK",
-   "n": "BlackRock",
-   "sector": "금융",
-   "ind": "Asset Management & Custody Banks",
-   "cap": 197130000000.0
+   "t": "NEE",
+   "n": "NextEra Energy",
+   "sector": "유틸리티",
+   "ind": "Multi-Utilities",
+   "cap": 175730000000.0
   },
   {
-   "t": "DE",
-   "n": "Deere & Company",
+   "t": "QCOM",
+   "n": "Qualcomm",
+   "sector": "기술",
+   "ind": "Semiconductors",
+   "cap": 173350000000.0
+  },
+  {
+   "t": "UNP",
+   "n": "Union Pacific Corporation",
    "sector": "산업재",
-   "ind": "Agricultural & Farm Machinery",
-   "cap": 183020000000.0
-  },
-  {
-   "t": "COP",
-   "n": "ConocoPhillips",
-   "sector": "에너지",
-   "ind": "Oil & Gas Exploration & Production",
-   "cap": 165600000000.0
+   "ind": "Rail Transportation",
+   "cap": 172710000000.0
   },
   {
    "t": "AXP",
    "n": "American Express",
    "sector": "금융",
    "ind": "Consumer Finance",
-   "cap": 213280000000.0
+   "cap": 208620000000.0
+  },
+  {
+   "t": "BLK",
+   "n": "BlackRock",
+   "sector": "금융",
+   "ind": "Asset Management & Custody Banks",
+   "cap": 184040000000.0
+  },
+  {
+   "t": "COP",
+   "n": "ConocoPhillips",
+   "sector": "에너지",
+   "ind": "Oil & Gas Exploration & Production",
+   "cap": 159600000000.0
   },
   {
    "t": "PFE",
    "n": "Pfizer",
    "sector": "헬스케어",
    "ind": "Pharmaceuticals",
-   "cap": 164330000000.0
+   "cap": 156970000000.0
   },
   {
-   "t": "ISRG",
-   "n": "Intuitive Surgical",
-   "sector": "헬스케어",
-   "ind": "Health Care Equipment",
-   "cap": 152490000000.0
-  },
-  {
-   "t": "ACN",
-   "n": "Accenture",
-   "sector": "기술",
-   "ind": "IT Consulting & Other Services",
-   "cap": 147650000000.0
-  },
-  {
-   "t": "T",
-   "n": "AT&T",
-   "sector": "커뮤니케이션",
-   "ind": "Integrated Telecommunication Services",
-   "cap": 149410000000.0
+   "t": "DE",
+   "n": "Deere & Company",
+   "sector": "산업재",
+   "ind": "Agricultural & Farm Machinery",
+   "cap": 168490000000.0
   },
   {
    "t": "TJX",
    "n": "TJX Companies",
    "sector": "임의소비재",
    "ind": "Apparel Retail",
-   "cap": 149570000000.0
+   "cap": 153350000000.0
+  },
+  {
+   "t": "CRM",
+   "n": "Salesforce",
+   "sector": "기술",
+   "ind": "Application Software",
+   "cap": 150860000000.0
   },
   {
    "t": "SCHW",
    "n": "Charles Schwab Corporation",
    "sector": "금융",
    "ind": "Investment Banking & Brokerage",
-   "cap": 158310000000.0
+   "cap": 159000000000.0
+  },
+  {
+   "t": "T",
+   "n": "AT&T",
+   "sector": "커뮤니케이션",
+   "ind": "Integrated Telecommunication Services",
+   "cap": 147190000000.0
+  },
+  {
+   "t": "ISRG",
+   "n": "Intuitive Surgical",
+   "sector": "헬스케어",
+   "ind": "Health Care Equipment",
+   "cap": 141170000000.0
   },
   {
    "t": "DHR",
    "n": "Danaher Corporation",
    "sector": "헬스케어",
    "ind": "Life Sciences Tools & Services",
-   "cap": 163330000000.0
-  },
-  {
-   "t": "MRVL",
-   "n": "Marvell Technology",
-   "sector": "기술",
-   "ind": "Semiconductors",
-   "cap": 144390000000.0
-  },
-  {
-   "t": "SPGI",
-   "n": "S&P Global",
-   "sector": "금융",
-   "ind": "Financial Exchanges & Data",
-   "cap": 135820000000.0
+   "cap": 160100000000.0
   },
   {
    "t": "UBER",
    "n": "Uber",
    "sector": "산업재",
    "ind": "Passenger Ground Transportation",
-   "cap": 141140000000.0
+   "cap": 133949999999.99998
   },
   {
-   "t": "ETN",
-   "n": "Eaton Corporation",
-   "sector": "산업재",
-   "ind": "Electrical Components & Equipment",
-   "cap": 139490000000.0
-  },
-  {
-   "t": "VRTX",
-   "n": "Vertex Pharmaceuticals",
-   "sector": "헬스케어",
-   "ind": "Biotechnology",
-   "cap": 137570000000.0
+   "t": "ACN",
+   "n": "Accenture",
+   "sector": "기술",
+   "ind": "IT Consulting & Other Services",
+   "cap": 129120000000.0
   },
   {
    "t": "PGR",
    "n": "Progressive Corporation",
    "sector": "금융",
    "ind": "Property & Casualty Insurance",
-   "cap": 136430000000.0
+   "cap": 133229999999.99998
   },
   {
-   "t": "SNDK",
-   "n": "Sandisk",
-   "sector": "기술",
-   "ind": "Technology Hardware, Storage & Peripherals",
-   "cap": 133389999999.99998
+   "t": "SPGI",
+   "n": "S&P Global",
+   "sector": "금융",
+   "ind": "Financial Exchanges & Data",
+   "cap": 128330000000.00002
   },
   {
-   "t": "BA",
-   "n": "Boeing",
-   "sector": "산업재",
-   "ind": "Aerospace & Defense",
-   "cap": 135940000000.0
+   "t": "VRTX",
+   "n": "Vertex Pharmaceuticals",
+   "sector": "헬스케어",
+   "ind": "Biotechnology",
+   "cap": 132009999999.99998
   },
   {
    "t": "CB",
    "n": "Chubb Limited",
    "sector": "금융",
    "ind": "Property & Casualty Insurance",
-   "cap": 142040000000.0
+   "cap": 141410000000.0
+  },
+  {
+   "t": "ETN",
+   "n": "Eaton Corporation",
+   "sector": "산업재",
+   "ind": "Electrical Components & Equipment",
+   "cap": 128430000000.0
+  },
+  {
+   "t": "BA",
+   "n": "Boeing",
+   "sector": "산업재",
+   "ind": "Aerospace & Defense",
+   "cap": 127200000000.0
   },
   {
    "t": "MO",
    "n": "Altria",
    "sector": "필수소비재",
    "ind": "Tobacco",
-   "cap": 129620000000.0
-  },
-  {
-   "t": "LOW",
-   "n": "Lowe's",
-   "sector": "임의소비재",
-   "ind": "Home Improvement Retail",
-   "cap": 127620000000.0
-  },
-  {
-   "t": "BMY",
-   "n": "Bristol Myers Squibb",
-   "sector": "헬스케어",
-   "ind": "Pharmaceuticals",
-   "cap": 127390000000.0
+   "cap": 124230000000.0
   },
   {
    "t": "MCK",
    "n": "McKesson",
    "sector": "헬스케어",
    "ind": "Health Care Distributors",
-   "cap": 124350000000.0
-  },
-  {
-   "t": "STX",
-   "n": "Seagate Technology",
-   "sector": "기술",
-   "ind": "Technology Hardware, Storage & Peripherals",
-   "cap": 125140000000.0
+   "cap": 122630000000.0
   },
   {
    "t": "MDT",
    "n": "Medtronic",
    "sector": "헬스케어",
    "ind": "Health Care Equipment",
-   "cap": 123630000000.0
+   "cap": 123160000000.0
   },
   {
-   "t": "LMT",
-   "n": "Lockheed Martin",
-   "sector": "산업재",
-   "ind": "Aerospace & Defense",
-   "cap": 139550000000.0
+   "t": "LOW",
+   "n": "Lowe's",
+   "sector": "임의소비재",
+   "ind": "Home Improvement Retail",
+   "cap": 122950000000.0
+  },
+  {
+   "t": "MRVL",
+   "n": "Marvell Technology",
+   "sector": "기술",
+   "ind": "Semiconductors",
+   "cap": 121570000000.0
   },
   {
    "t": "ADP",
    "n": "Automatic Data Processing",
    "sector": "산업재",
    "ind": "Human Resource & Employment Services",
-   "cap": 121550000000.0
+   "cap": 118900000000.0
+  },
+  {
+   "t": "BMY",
+   "n": "Bristol Myers Squibb",
+   "sector": "헬스케어",
+   "ind": "Pharmaceuticals",
+   "cap": 119250000000.0
   },
   {
    "t": "SBUX",
    "n": "Starbucks",
    "sector": "임의소비재",
    "ind": "Restaurants",
-   "cap": 122290000000.0
+   "cap": 119110000000.0
+  },
+  {
+   "t": "STX",
+   "n": "Seagate Technology",
+   "sector": "기술",
+   "ind": "Technology Hardware, Storage & Peripherals",
+   "cap": 119690000000.0
   },
   {
    "t": "PLD",
    "n": "Prologis",
    "sector": "부동산",
    "ind": "Industrial REITs",
-   "cap": 124680000000.0
+   "cap": 119650000000.0
   },
   {
-   "t": "BKNG",
-   "n": "Booking Holdings",
-   "sector": "임의소비재",
-   "ind": "Hotels, Resorts & Cruise Lines",
-   "cap": 119880000000.0
+   "t": "LMT",
+   "n": "Lockheed Martin",
+   "sector": "산업재",
+   "ind": "Aerospace & Defense",
+   "cap": 132100000000.0
   },
   {
    "t": "PH",
    "n": "Parker Hannifin",
    "sector": "산업재",
    "ind": "Industrial Machinery & Supplies & Components",
-   "cap": 120800000000.0
+   "cap": 114260000000.0
   },
   {
    "t": "COF",
    "n": "Capital One",
    "sector": "금융",
    "ind": "Consumer Finance",
-   "cap": 116460000000.0
+   "cap": 109330000000.0
   },
   {
-   "t": "NEM",
-   "n": "Newmont",
-   "sector": "소재",
-   "ind": "Gold",
-   "cap": 116770000000.0
+   "t": "BKNG",
+   "n": "Booking Holdings",
+   "sector": "임의소비재",
+   "ind": "Hotels, Resorts & Cruise Lines",
+   "cap": 109560000000.0
   },
   {
-   "t": "MPC",
-   "n": "Marathon Petroleum",
-   "sector": "에너지",
-   "ind": "Oil & Gas Refining & Marketing",
-   "cap": 112410000000.0
-  },
-  {
-   "t": "CVS",
-   "n": "CVS Health",
-   "sector": "헬스케어",
-   "ind": "Health Care Services",
-   "cap": 114880000000.0
+   "t": "SNDK",
+   "n": "Sandisk",
+   "sector": "기술",
+   "ind": "Technology Hardware, Storage & Peripherals",
+   "cap": 107450000000.0
   },
   {
    "t": "CME",
    "n": "CME Group",
    "sector": "금융",
    "ind": "Financial Exchanges & Data",
-   "cap": 112930000000.0
-  },
-  {
-   "t": "DELL",
-   "n": "Dell Technologies",
-   "sector": "기술",
-   "ind": "Technology Hardware, Storage & Peripherals",
-   "cap": 235990000000.0
-  },
-  {
-   "t": "WDC",
-   "n": "Western Digital",
-   "sector": "기술",
-   "ind": "Technology Hardware, Storage & Peripherals",
-   "cap": 116490000000.0
+   "cap": 109640000000.0
   },
   {
    "t": "SYK",
    "n": "Stryker Corporation",
    "sector": "헬스케어",
    "ind": "Health Care Equipment",
-   "cap": 118920000000.0
-  },
-  {
-   "t": "VLO",
-   "n": "Valero Energy",
-   "sector": "에너지",
-   "ind": "Oil & Gas Refining & Marketing",
-   "cap": 104570000000.0
-  },
-  {
-   "t": "APP",
-   "n": "AppLovin",
-   "sector": "커뮤니케이션",
-   "ind": "Advertising",
-   "cap": 130430000000.0
+   "cap": 119190000000.0
   },
   {
    "t": "SO",
    "n": "Southern Company",
    "sector": "유틸리티",
    "ind": "Electric Utilities",
-   "cap": 107660000000.0
+   "cap": 112350000000.0
   },
   {
-   "t": "EQIX",
-   "n": "Equinix",
-   "sector": "부동산",
-   "ind": "Data Center REITs",
-   "cap": 106190000000.0
+   "t": "WDC",
+   "n": "Western Digital",
+   "sector": "기술",
+   "ind": "Technology Hardware, Storage & Peripherals",
+   "cap": 111090000000.0
   },
   {
-   "t": "PSX",
-   "n": "Phillips 66",
+   "t": "NEM",
+   "n": "Newmont",
+   "sector": "소재",
+   "ind": "Gold",
+   "cap": 103720000000.0
+  },
+  {
+   "t": "MPC",
+   "n": "Marathon Petroleum",
    "sector": "에너지",
    "ind": "Oil & Gas Refining & Marketing",
-   "cap": 102550000000.0
+   "cap": 100180000000.0
   },
   {
-   "t": "NOW",
-   "n": "ServiceNow",
-   "sector": "기술",
-   "ind": "Systems Software",
-   "cap": 104480000000.0
+   "t": "APP",
+   "n": "AppLovin",
+   "sector": "커뮤니케이션",
+   "ind": "Advertising",
+   "cap": 125580000000.0
   },
   {
-   "t": "BNY",
-   "n": "BNY Mellon",
-   "sector": "금융",
-   "ind": "Asset Management & Custody Banks",
-   "cap": 102810000000.0
+   "t": "CVS",
+   "n": "CVS Health",
+   "sector": "헬스케어",
+   "ind": "Health Care Services",
+   "cap": 102410000000.0
   },
   {
    "t": "DUK",
    "n": "Duke Energy",
    "sector": "유틸리티",
    "ind": "Electric Utilities",
-   "cap": 100260000000.0
+   "cap": 100470000000.0
   },
   {
-   "t": "ICE",
-   "n": "Intercontinental Exchange",
+   "t": "EQIX",
+   "n": "Equinix",
+   "sector": "부동산",
+   "ind": "Data Center REITs",
+   "cap": 100780000000.0
+  },
+  {
+   "t": "BNY",
+   "n": "BNY Mellon",
    "sector": "금융",
-   "ind": "Financial Exchanges & Data",
-   "cap": 99400000000.0
+   "ind": "Asset Management & Custody Banks",
+   "cap": 97460000000.0
   },
   {
    "t": "MRSH",
    "n": "Marsh McLennan",
    "sector": "금융",
    "ind": "Insurance Brokers",
-   "cap": 97810000000.0
+   "cap": 97320000000.0
+  },
+  {
+   "t": "VLO",
+   "n": "Valero Energy",
+   "sector": "에너지",
+   "ind": "Oil & Gas Refining & Marketing",
+   "cap": 94390000000.0
+  },
+  {
+   "t": "PSX",
+   "n": "Phillips 66",
+   "sector": "에너지",
+   "ind": "Oil & Gas Refining & Marketing",
+   "cap": 94670000000.0
+  },
+  {
+   "t": "ICE",
+   "n": "Intercontinental Exchange",
+   "sector": "금융",
+   "ind": "Financial Exchanges & Data",
+   "cap": 95500000000.0
+  },
+  {
+   "t": "DELL",
+   "n": "Dell Technologies",
+   "sector": "기술",
+   "ind": "Technology Hardware, Storage & Peripherals",
+   "cap": 198720000000.0
   },
   {
    "t": "CSX",
    "n": "CSX Corporation",
    "sector": "산업재",
    "ind": "Rail Transportation",
-   "cap": 96530000000.0
+   "cap": 92070000000.0
   },
   {
    "t": "MMM",
    "n": "3M",
    "sector": "산업재",
    "ind": "Industrial Conglomerates",
-   "cap": 96240000000.0
+   "cap": 92220000000.0
   },
   {
-   "t": "ADBE",
-   "n": "Adobe Inc.",
+   "t": "NOW",
+   "n": "ServiceNow",
    "sector": "기술",
-   "ind": "Application Software",
-   "cap": 92840000000.0
-  },
-  {
-   "t": "GLW",
-   "n": "Corning Inc.",
-   "sector": "기술",
-   "ind": "Electronic Components",
-   "cap": 102940000000.0
-  },
-  {
-   "t": "USB",
-   "n": "U.S. Bancorp",
-   "sector": "금융",
-   "ind": "Diversified Banks",
-   "cap": 94220000000.0
-  },
-  {
-   "t": "TT",
-   "n": "Trane Technologies",
-   "sector": "산업재",
-   "ind": "Building Products",
-   "cap": 92820000000.0
-  },
-  {
-   "t": "ELV",
-   "n": "Elevance Health",
-   "sector": "헬스케어",
-   "ind": "Managed Health Care",
-   "cap": 92880000000.0
+   "ind": "Systems Software",
+   "cap": 92240000000.0
   },
   {
    "t": "REGN",
    "n": "Regeneron Pharmaceuticals",
    "sector": "헬스케어",
    "ind": "Biotechnology",
-   "cap": 95450000000.0
+   "cap": 92660000000.0
   },
   {
-   "t": "CEG",
-   "n": "Constellation Energy",
-   "sector": "유틸리티",
-   "ind": "Electric Utilities",
-   "cap": 99290000000.0
-  },
-  {
-   "t": "EMR",
-   "n": "Emerson Electric",
-   "sector": "산업재",
-   "ind": "Electrical Components & Equipment",
-   "cap": 91570000000.0
-  },
-  {
-   "t": "INTU",
-   "n": "Intuit",
-   "sector": "기술",
-   "ind": "Application Software",
-   "cap": 90910000000.0
-  },
-  {
-   "t": "PNC",
-   "n": "PNC Financial Services",
+   "t": "USB",
+   "n": "U.S. Bancorp",
    "sector": "금융",
    "ind": "Diversified Banks",
-   "cap": 91670000000.0
-  },
-  {
-   "t": "GD",
-   "n": "General Dynamics",
-   "sector": "산업재",
-   "ind": "Aerospace & Defense",
-   "cap": 97960000000.0
-  },
-  {
-   "t": "CDNS",
-   "n": "Cadence Design Systems",
-   "sector": "기술",
-   "ind": "Application Software",
-   "cap": 91460000000.0
-  },
-  {
-   "t": "PWR",
-   "n": "Quanta Services",
-   "sector": "산업재",
-   "ind": "Construction & Engineering",
-   "cap": 91330000000.0
+   "cap": 89220000000.0
   },
   {
    "t": "WM",
    "n": "Waste Management",
    "sector": "산업재",
    "ind": "Environmental & Facilities Services",
-   "cap": 97070000000.0
+   "cap": 94900000000.0
   },
   {
    "t": "MAR",
    "n": "Marriott International",
    "sector": "임의소비재",
    "ind": "Hotels, Resorts & Cruise Lines",
-   "cap": 109350000000.0
+   "cap": 106620000000.0
   },
   {
-   "t": "BX",
-   "n": "Blackstone Inc.",
-   "sector": "금융",
-   "ind": "Asset Management & Custody Banks",
-   "cap": 147390000000.0
+   "t": "TT",
+   "n": "Trane Technologies",
+   "sector": "산업재",
+   "ind": "Building Products",
+   "cap": 87960000000.0
   },
   {
-   "t": "HWM",
-   "n": "Howmet Aerospace",
+   "t": "PWR",
+   "n": "Quanta Services",
+   "sector": "산업재",
+   "ind": "Construction & Engineering",
+   "cap": 88510000000.0
+  },
+  {
+   "t": "GD",
+   "n": "General Dynamics",
    "sector": "산업재",
    "ind": "Aerospace & Defense",
-   "cap": 88720000000.0
+   "cap": 93720000000.0
   },
   {
-   "t": "SNPS",
-   "n": "Synopsys",
+   "t": "ADBE",
+   "n": "Adobe Inc.",
    "sector": "기술",
    "ind": "Application Software",
-   "cap": 88670000000.0
-  },
-  {
-   "t": "AMT",
-   "n": "American Tower",
-   "sector": "부동산",
-   "ind": "Telecom Tower REITs",
-   "cap": 88020000000.0
+   "cap": 86280000000.0
   },
   {
    "t": "CMCSA",
    "n": "Comcast",
    "sector": "커뮤니케이션",
    "ind": "Cable & Satellite",
-   "cap": 88060000000.0
+   "cap": 88280000000.0
+  },
+  {
+   "t": "EMR",
+   "n": "Emerson Electric",
+   "sector": "산업재",
+   "ind": "Electrical Components & Equipment",
+   "cap": 86460000000.0
+  },
+  {
+   "t": "BX",
+   "n": "Blackstone Inc.",
+   "sector": "금융",
+   "ind": "Asset Management & Custody Banks",
+   "cap": 144220000000.0
+  },
+  {
+   "t": "PNC",
+   "n": "PNC Financial Services",
+   "sector": "금융",
+   "ind": "Diversified Banks",
+   "cap": 86500000000.0
+  },
+  {
+   "t": "HWM",
+   "n": "Howmet Aerospace",
+   "sector": "산업재",
+   "ind": "Aerospace & Defense",
+   "cap": 86760000000.0
   },
   {
    "t": "MSI",
    "n": "Motorola Solutions",
    "sector": "기술",
    "ind": "Communications Equipment",
-   "cap": 87690000000.0
+   "cap": 86290000000.0
   },
   {
-   "t": "FCX",
-   "n": "Freeport-McMoRan",
-   "sector": "소재",
-   "ind": "Copper",
-   "cap": 86740000000.0
+   "t": "INTU",
+   "n": "Intuit",
+   "sector": "기술",
+   "ind": "Application Software",
+   "cap": 82850000000.0
   },
   {
-   "t": "JCI",
-   "n": "Johnson Controls",
-   "sector": "산업재",
-   "ind": "Building Products",
-   "cap": 86350000000.0
-  },
-  {
-   "t": "MRNA",
-   "n": "Moderna",
+   "t": "ELV",
+   "n": "Elevance Health",
    "sector": "헬스케어",
-   "ind": "Biotechnology",
-   "cap": 93610000000.0
+   "ind": "Managed Health Care",
+   "cap": 84300000000.0
   },
   {
-   "t": "WMB",
-   "n": "Williams Companies",
-   "sector": "에너지",
-   "ind": "Oil & Gas Storage & Transportation",
-   "cap": 86810000000.0
+   "t": "AMT",
+   "n": "American Tower",
+   "sector": "부동산",
+   "ind": "Telecom Tower REITs",
+   "cap": 84010000000.0
+  },
+  {
+   "t": "CDNS",
+   "n": "Cadence Design Systems",
+   "sector": "기술",
+   "ind": "Application Software",
+   "cap": 83650000000.0
+  },
+  {
+   "t": "GLW",
+   "n": "Corning Inc.",
+   "sector": "기술",
+   "ind": "Electronic Components",
+   "cap": 91280000000.0
   },
   {
    "t": "MDLZ",
    "n": "Mondelez International",
    "sector": "필수소비재",
    "ind": "Packaged Foods & Meats",
-   "cap": 84250000000.0
+   "cap": 83150000000.0
   },
   {
-   "t": "TRV",
-   "n": "Travelers Companies (The)",
-   "sector": "금융",
-   "ind": "Property & Casualty Insurance",
-   "cap": 82630000000.0
+   "t": "CEG",
+   "n": "Constellation Energy",
+   "sector": "유틸리티",
+   "ind": "Electric Utilities",
+   "cap": 88620000000.0
   },
   {
-   "t": "HLT",
-   "n": "Hilton Worldwide",
-   "sector": "임의소비재",
-   "ind": "Hotels, Resorts & Cruise Lines",
-   "cap": 82930000000.0
+   "t": "SNPS",
+   "n": "Synopsys",
+   "sector": "기술",
+   "ind": "Application Software",
+   "cap": 82580000000.0
+  },
+  {
+   "t": "JCI",
+   "n": "Johnson Controls",
+   "sector": "산업재",
+   "ind": "Building Products",
+   "cap": 81630000000.0
   },
   {
    "t": "UPS",
    "n": "United Parcel Service",
    "sector": "산업재",
    "ind": "Air Freight & Logistics",
-   "cap": 93990000000.0
+   "cap": 92900000000.0
   },
   {
-   "t": "TMUS",
-   "n": "T-Mobile US",
-   "sector": "커뮤니케이션",
-   "ind": "Wireless Telecommunication Services",
-   "cap": 181170000000.0
-  },
-  {
-   "t": "EOG",
-   "n": "EOG Resources",
-   "sector": "에너지",
-   "ind": "Oil & Gas Exploration & Production",
-   "cap": 80690000000.0
-  },
-  {
-   "t": "VRT",
-   "n": "Vertiv",
-   "sector": "산업재",
-   "ind": "Electrical Components & Equipment",
-   "cap": 80720000000.0
-  },
-  {
-   "t": "SHW",
-   "n": "Sherwin-Williams",
-   "sector": "소재",
-   "ind": "Specialty Chemicals",
-   "cap": 84390000000.0
-  },
-  {
-   "t": "RCL",
-   "n": "Royal Caribbean Group",
+   "t": "HLT",
+   "n": "Hilton Worldwide",
    "sector": "임의소비재",
    "ind": "Hotels, Resorts & Cruise Lines",
-   "cap": 86120000000.0
+   "cap": 80610000000.0
+  },
+  {
+   "t": "TRV",
+   "n": "Travelers Companies (The)",
+   "sector": "금융",
+   "ind": "Property & Casualty Insurance",
+   "cap": 80050000000.0
   },
   {
    "t": "FTNT",
    "n": "Fortinet",
    "sector": "기술",
    "ind": "Systems Software",
-   "cap": 95170000000.0
+   "cap": 96580000000.0
   },
   {
-   "t": "CI",
-   "n": "Cigna",
-   "sector": "헬스케어",
-   "ind": "Health Care Services",
-   "cap": 78070000000.0
+   "t": "WMB",
+   "n": "Williams Companies",
+   "sector": "에너지",
+   "ind": "Oil & Gas Storage & Transportation",
+   "cap": 82680000000.0
   },
   {
-   "t": "CTAS",
-   "n": "Cintas",
-   "sector": "산업재",
-   "ind": "Diversified Support Services",
-   "cap": 90340000000.0
+   "t": "TMUS",
+   "n": "T-Mobile US",
+   "sector": "커뮤니케이션",
+   "ind": "Wireless Telecommunication Services",
+   "cap": 172160000000.0
+  },
+  {
+   "t": "EOG",
+   "n": "EOG Resources",
+   "sector": "에너지",
+   "ind": "Oil & Gas Exploration & Production",
+   "cap": 77510000000.0
+  },
+  {
+   "t": "SHW",
+   "n": "Sherwin-Williams",
+   "sector": "소재",
+   "ind": "Specialty Chemicals",
+   "cap": 81610000000.0
   },
   {
    "t": "CL",
    "n": "Colgate-Palmolive",
    "sector": "필수소비재",
    "ind": "Household Products",
-   "cap": 77820000000.0
-  },
-  {
-   "t": "ECL",
-   "n": "Ecolab",
-   "sector": "소재",
-   "ind": "Specialty Chemicals",
-   "cap": 85380000000.0
-  },
-  {
-   "t": "ROST",
-   "n": "Ross Stores",
-   "sector": "임의소비재",
-   "ind": "Apparel Retail",
-   "cap": 75790000000.0
-  },
-  {
-   "t": "ABNB",
-   "n": "Airbnb",
-   "sector": "임의소비재",
-   "ind": "Hotels, Resorts & Cruise Lines",
-   "cap": 106420000000.0
-  },
-  {
-   "t": "GM",
-   "n": "General Motors",
-   "sector": "임의소비재",
-   "ind": "Automobile Manufacturers",
-   "cap": 72760000000.0
-  },
-  {
-   "t": "SPG",
-   "n": "Simon Property Group",
-   "sector": "부동산",
-   "ind": "Retail REITs",
-   "cap": 88360000000.0
-  },
-  {
-   "t": "MCO",
-   "n": "Moody's Corporation",
-   "sector": "금융",
-   "ind": "Financial Exchanges & Data",
-   "cap": 87340000000.0
-  },
-  {
-   "t": "SLB",
-   "n": "Schlumberger",
-   "sector": "에너지",
-   "ind": "Oil & Gas Equipment & Services",
-   "cap": 75140000000.0
-  },
-  {
-   "t": "NSC",
-   "n": "Norfolk Southern",
-   "sector": "산업재",
-   "ind": "Rail Transportation",
-   "cap": 74850000000.0
-  },
-  {
-   "t": "ITW",
-   "n": "Illinois Tool Works",
-   "sector": "산업재",
-   "ind": "Industrial Machinery & Supplies & Components",
-   "cap": 81490000000.0
-  },
-  {
-   "t": "ORLY",
-   "n": "O'Reilly Automotive",
-   "sector": "임의소비재",
-   "ind": "Automotive Retail",
-   "cap": 73440000000.0
-  },
-  {
-   "t": "HCA",
-   "n": "HCA Healthcare",
-   "sector": "헬스케어",
-   "ind": "Health Care Facilities",
-   "cap": 104580000000.0
-  },
-  {
-   "t": "NOC",
-   "n": "Northrop Grumman",
-   "sector": "산업재",
-   "ind": "Aerospace & Defense",
-   "cap": 78010000000.0
+   "cap": 77010000000.0
   },
   {
    "t": "TGT",
    "n": "Target Corporation",
    "sector": "필수소비재",
    "ind": "Consumer Staples Merchandise Retail",
-   "cap": 73100000000.0
+   "cap": 75810000000.0
   },
   {
-   "t": "MPWR",
-   "n": "Monolithic Power Systems",
-   "sector": "기술",
-   "ind": "Semiconductors",
-   "cap": 70590000000.0
+   "t": "CTAS",
+   "n": "Cintas",
+   "sector": "산업재",
+   "ind": "Diversified Support Services",
+   "cap": 86930000000.0
+  },
+  {
+   "t": "RCL",
+   "n": "Royal Caribbean Group",
+   "sector": "임의소비재",
+   "ind": "Hotels, Resorts & Cruise Lines",
+   "cap": 81080000000.0
+  },
+  {
+   "t": "ORLY",
+   "n": "O'Reilly Automotive",
+   "sector": "임의소비재",
+   "ind": "Automotive Retail",
+   "cap": 74280000000.0
+  },
+  {
+   "t": "ECL",
+   "n": "Ecolab",
+   "sector": "소재",
+   "ind": "Specialty Chemicals",
+   "cap": 83390000000.0
+  },
+  {
+   "t": "MRNA",
+   "n": "Moderna",
+   "sector": "헬스케어",
+   "ind": "Biotechnology",
+   "cap": 80650000000.0
+  },
+  {
+   "t": "SPG",
+   "n": "Simon Property Group",
+   "sector": "부동산",
+   "ind": "Retail REITs",
+   "cap": 85180000000.0
+  },
+  {
+   "t": "ABNB",
+   "n": "Airbnb",
+   "sector": "임의소비재",
+   "ind": "Hotels, Resorts & Cruise Lines",
+   "cap": 101520000000.0
+  },
+  {
+   "t": "NOC",
+   "n": "Northrop Grumman",
+   "sector": "산업재",
+   "ind": "Aerospace & Defense",
+   "cap": 77040000000.0
+  },
+  {
+   "t": "CI",
+   "n": "Cigna",
+   "sector": "헬스케어",
+   "ind": "Health Care Services",
+   "cap": 71950000000.0
+  },
+  {
+   "t": "ITW",
+   "n": "Illinois Tool Works",
+   "sector": "산업재",
+   "ind": "Industrial Machinery & Supplies & Components",
+   "cap": 78690000000.0
+  },
+  {
+   "t": "GM",
+   "n": "General Motors",
+   "sector": "임의소비재",
+   "ind": "Automobile Manufacturers",
+   "cap": 68960000000.0
+  },
+  {
+   "t": "VRT",
+   "n": "Vertiv",
+   "sector": "산업재",
+   "ind": "Electrical Components & Equipment",
+   "cap": 71230000000.0
   },
   {
    "t": "AJG",
    "n": "Arthur J. Gallagher & Co.",
    "sector": "금융",
    "ind": "Insurance Brokers",
-   "cap": 71100000000.0
+   "cap": 71190000000.0
   },
   {
-   "t": "URI",
-   "n": "United Rentals",
+   "t": "NSC",
+   "n": "Norfolk Southern",
    "sector": "산업재",
-   "ind": "Trading Companies & Distributors",
-   "cap": 70530000000.0
+   "ind": "Rail Transportation",
+   "cap": 71160000000.0
   },
   {
-   "t": "HON",
-   "n": "Honeywell Technologies",
-   "sector": "산업재",
-   "ind": "Industrial Conglomerates",
-   "cap": 70910000000.0
+   "t": "SLB",
+   "n": "Schlumberger",
+   "sector": "에너지",
+   "ind": "Oil & Gas Equipment & Services",
+   "cap": 70700000000.0
+  },
+  {
+   "t": "FCX",
+   "n": "Freeport-McMoRan",
+   "sector": "소재",
+   "ind": "Copper",
+   "cap": 70480000000.0
+  },
+  {
+   "t": "ROST",
+   "n": "Ross Stores",
+   "sector": "임의소비재",
+   "ind": "Apparel Retail",
+   "cap": 70240000000.0
+  },
+  {
+   "t": "MCO",
+   "n": "Moody's Corporation",
+   "sector": "금융",
+   "ind": "Financial Exchanges & Data",
+   "cap": 81360000000.0
   },
   {
    "t": "AON",
    "n": "Aon plc",
    "sector": "금융",
    "ind": "Insurance Brokers",
-   "cap": 70740000000.0
-  },
-  {
-   "t": "AEP",
-   "n": "American Electric Power",
-   "sector": "유틸리티",
-   "ind": "Electric Utilities",
-   "cap": 70190000000.0
-  },
-  {
-   "t": "APD",
-   "n": "Air Products",
-   "sector": "소재",
-   "ind": "Industrial Gases",
-   "cap": 70410000000.0
+   "cap": 70230000000.0
   },
   {
    "t": "FDX",
    "n": "FedEx",
    "sector": "산업재",
    "ind": "Air Freight & Logistics",
-   "cap": 74780000000.0
+   "cap": 73690000000.0
   },
   {
-   "t": "NXPI",
-   "n": "NXP Semiconductors",
-   "sector": "기술",
-   "ind": "Semiconductors",
-   "cap": 67370000000.00001
+   "t": "HON",
+   "n": "Honeywell Technologies",
+   "sector": "산업재",
+   "ind": "Industrial Conglomerates",
+   "cap": 69130000000.0
+  },
+  {
+   "t": "AEP",
+   "n": "American Electric Power",
+   "sector": "유틸리티",
+   "ind": "Electric Utilities",
+   "cap": 68050000000.0
+  },
+  {
+   "t": "HCA",
+   "n": "HCA Healthcare",
+   "sector": "헬스케어",
+   "ind": "Health Care Facilities",
+   "cap": 96160000000.0
+  },
+  {
+   "t": "APD",
+   "n": "Air Products",
+   "sector": "소재",
+   "ind": "Industrial Gases",
+   "cap": 67660000000.0
   },
   {
    "t": "ALL",
    "n": "Allstate",
    "sector": "금융",
    "ind": "Property & Casualty Insurance",
-   "cap": 65989999999.99999
+   "cap": 66010000000.00001
   },
   {
-   "t": "KKR",
-   "n": "KKR & Co.",
-   "sector": "금융",
-   "ind": "Asset Management & Custody Banks",
-   "cap": 86720000000.0
+   "t": "URI",
+   "n": "United Rentals",
+   "sector": "산업재",
+   "ind": "Trading Companies & Distributors",
+   "cap": 65599999999.99999
   },
   {
    "t": "COR",
    "n": "Cencora",
    "sector": "헬스케어",
    "ind": "Health Care Distributors",
-   "cap": 66670000000.0
-  },
-  {
-   "t": "HPE",
-   "n": "Hewlett Packard Enterprise",
-   "sector": "기술",
-   "ind": "Technology Hardware, Storage & Peripherals",
-   "cap": 66590000000.0
-  },
-  {
-   "t": "TDG",
-   "n": "TransDigm Group",
-   "sector": "산업재",
-   "ind": "Aerospace & Defense",
-   "cap": 65670000000.0
+   "cap": 65120000000.00001
   },
   {
    "t": "KMB",
    "n": "Kimberly-Clark",
    "sector": "필수소비재",
    "ind": "Household Products",
-   "cap": 65780000000.0
+   "cap": 64590000000.0
   },
   {
-   "t": "MNST",
-   "n": "Monster Beverage",
-   "sector": "필수소비재",
-   "ind": "Soft Drinks & Non-alcoholic Beverages",
-   "cap": 89200000000.0
-  },
-  {
-   "t": "GWW",
-   "n": "W. W. Grainger",
+   "t": "TDG",
+   "n": "TransDigm Group",
    "sector": "산업재",
-   "ind": "Industrial Machinery & Supplies & Components",
-   "cap": 70340000000.0
+   "ind": "Aerospace & Defense",
+   "cap": 63250000000.0
   },
   {
-   "t": "DASH",
-   "n": "DoorDash",
-   "sector": "임의소비재",
-   "ind": "Specialized Consumer Services",
-   "cap": 75240000000.0
+   "t": "MPWR",
+   "n": "Monolithic Power Systems",
+   "sector": "기술",
+   "ind": "Semiconductors",
+   "cap": 63200000000.0
+  },
+  {
+   "t": "KKR",
+   "n": "KKR & Co.",
+   "sector": "금융",
+   "ind": "Asset Management & Custody Banks",
+   "cap": 82190000000.0
+  },
+  {
+   "t": "NXPI",
+   "n": "NXP Semiconductors",
+   "sector": "기술",
+   "ind": "Semiconductors",
+   "cap": 63460000000.0
   },
   {
    "t": "CAH",
    "n": "Cardinal Health",
    "sector": "헬스케어",
    "ind": "Health Care Distributors",
-   "cap": 64290000000.00001
+   "cap": 62950000000.0
   },
   {
-   "t": "DLR",
-   "n": "Digital Realty",
-   "sector": "부동산",
-   "ind": "Data Center REITs",
-   "cap": 70630000000.0
-  },
-  {
-   "t": "HOOD",
-   "n": "Robinhood Markets",
-   "sector": "금융",
-   "ind": "Investment Banking & Brokerage",
-   "cap": 73250000000.0
+   "t": "MNST",
+   "n": "Monster Beverage",
+   "sector": "필수소비재",
+   "ind": "Soft Drinks & Non-alcoholic Beverages",
+   "cap": 86010000000.0
   },
   {
    "t": "BSX",
    "n": "Boston Scientific",
    "sector": "헬스케어",
    "ind": "Health Care Equipment",
-   "cap": 64069999999.99999
+   "cap": 62310000000.0
   },
   {
-   "t": "FAST",
-   "n": "Fastenal",
+   "t": "GWW",
+   "n": "W. W. Grainger",
    "sector": "산업재",
-   "ind": "Trading Companies & Distributors",
-   "cap": 63730000000.0
+   "ind": "Industrial Machinery & Supplies & Components",
+   "cap": 66660000000.0
   },
   {
    "t": "TRGP",
    "n": "Targa Resources",
    "sector": "에너지",
    "ind": "Oil & Gas Storage & Transportation",
-   "cap": 63570000000.0
+   "cap": 61240000000.0
+  },
+  {
+   "t": "DLR",
+   "n": "Digital Realty",
+   "sector": "부동산",
+   "ind": "Data Center REITs",
+   "cap": 66989999999.99999
   },
   {
    "t": "TEL",
    "n": "TE Connectivity",
    "sector": "기술",
    "ind": "Electronic Manufacturing Services",
-   "cap": 62450000000.0
+   "cap": 60550000000.0
   },
   {
    "t": "KMI",
    "n": "Kinder Morgan",
    "sector": "에너지",
    "ind": "Oil & Gas Storage & Transportation",
-   "cap": 71310000000.0
+   "cap": 69260000000.0
   },
   {
-   "t": "CMI",
-   "n": "Cummins",
+   "t": "HPE",
+   "n": "Hewlett Packard Enterprise",
+   "sector": "기술",
+   "ind": "Technology Hardware, Storage & Peripherals",
+   "cap": 60390000000.0
+  },
+  {
+   "t": "FAST",
+   "n": "Fastenal",
    "sector": "산업재",
-   "ind": "Construction Machinery & Heavy Transportation Equipment",
-   "cap": 62430000000.0
+   "ind": "Trading Companies & Distributors",
+   "cap": 60440000000.0
   },
   {
    "t": "CRH",
    "n": "CRH plc",
    "sector": "소재",
    "ind": "Construction Materials",
-   "cap": 62480000000.0
-  },
-  {
-   "t": "DDOG",
-   "n": "Datadog",
-   "sector": "기술",
-   "ind": "Application Software",
-   "cap": 66599999999.99999
+   "cap": 60230000000.0
   },
   {
    "t": "EW",
    "n": "Edwards Lifesciences",
    "sector": "헬스케어",
    "ind": "Health Care Equipment",
-   "cap": 60840000000.0
+   "cap": 59730000000.0
   },
   {
-   "t": "TFC",
-   "n": "Truist Financial",
-   "sector": "금융",
-   "ind": "Diversified Banks",
-   "cap": 59790000000.0
-  },
-  {
-   "t": "BE",
-   "n": "Bloom Energy",
-   "sector": "산업재",
-   "ind": "Electrical Components & Equipment",
-   "cap": 59700000000.0
+   "t": "DASH",
+   "n": "DoorDash",
+   "sector": "임의소비재",
+   "ind": "Specialized Consumer Services",
+   "cap": 68500000000.0
   },
   {
    "t": "D",
    "n": "Dominion Energy",
    "sector": "유틸리티",
    "ind": "Multi-Utilities",
-   "cap": 59380000000.0
+   "cap": 58620000000.0
   },
   {
-   "t": "NUE",
-   "n": "Nucor",
-   "sector": "소재",
-   "ind": "Steel",
-   "cap": 58650000000.0
+   "t": "CMI",
+   "n": "Cummins",
+   "sector": "산업재",
+   "ind": "Construction Machinery & Heavy Transportation Equipment",
+   "cap": 57740000000.0
   },
   {
    "t": "BDX",
    "n": "Becton Dickinson",
    "sector": "헬스케어",
    "ind": "Health Care Equipment",
-   "cap": 58760000000.0
+   "cap": 57930000000.0
   },
   {
-   "t": "APO",
-   "n": "Apollo Global Management",
+   "t": "TFC",
+   "n": "Truist Financial",
    "sector": "금융",
-   "ind": "Asset Management & Custody Banks",
-   "cap": 71650000000.0
+   "ind": "Diversified Banks",
+   "cap": 55930000000.0
+  },
+  {
+   "t": "NUE",
+   "n": "Nucor",
+   "sector": "소재",
+   "ind": "Steel",
+   "cap": 55660000000.0
+  },
+  {
+   "t": "DDOG",
+   "n": "Datadog",
+   "sector": "기술",
+   "ind": "Application Software",
+   "cap": 60100000000.0
   },
   {
    "t": "AFL",
    "n": "Aflac",
    "sector": "금융",
    "ind": "Life & Health Insurance",
-   "cap": 62570000000.0
+   "cap": 61710000000.0
   },
   {
-   "t": "OKE",
-   "n": "Oneok",
-   "sector": "에너지",
-   "ind": "Oil & Gas Storage & Transportation",
-   "cap": 56020000000.0
+   "t": "APO",
+   "n": "Apollo Global Management",
+   "sector": "금융",
+   "ind": "Asset Management & Custody Banks",
+   "cap": 68660000000.0
   },
   {
    "t": "PCAR",
    "n": "Paccar",
    "sector": "산업재",
    "ind": "Construction Machinery & Heavy Transportation Equipment",
-   "cap": 55980000000.0
-  },
-  {
-   "t": "O",
-   "n": "Realty Income",
-   "sector": "부동산",
-   "ind": "Retail REITs",
-   "cap": 56520000000.0
+   "cap": 54840000000.0
   },
   {
    "t": "PSA",
    "n": "Public Storage",
    "sector": "부동산",
    "ind": "Self-Storage REITs",
-   "cap": 64730000000.00001
+   "cap": 63440000000.0
   },
   {
-   "t": "AME",
-   "n": "Ametek",
-   "sector": "산업재",
-   "ind": "Electrical Components & Equipment",
-   "cap": 55270000000.0
+   "t": "OKE",
+   "n": "Oneok",
+   "sector": "에너지",
+   "ind": "Oil & Gas Storage & Transportation",
+   "cap": 54550000000.0
   },
   {
-   "t": "LITE",
-   "n": "Lumentum",
-   "sector": "기술",
-   "ind": "Communications Equipment",
-   "cap": 56650000000.0
+   "t": "O",
+   "n": "Realty Income",
+   "sector": "부동산",
+   "ind": "Retail REITs",
+   "cap": 54990000000.0
+  },
+  {
+   "t": "HOOD",
+   "n": "Robinhood Markets",
+   "sector": "금융",
+   "ind": "Investment Banking & Brokerage",
+   "cap": 61820000000.0
   },
   {
    "t": "IDXX",
    "n": "Idexx Laboratories",
    "sector": "헬스케어",
    "ind": "Health Care Equipment",
-   "cap": 54990000000.0
-  },
-  {
-   "t": "ADSK",
-   "n": "Autodesk",
-   "sector": "기술",
-   "ind": "Application Software",
-   "cap": 54230000000.0
-  },
-  {
-   "t": "MET",
-   "n": "MetLife",
-   "sector": "금융",
-   "ind": "Life & Health Insurance",
-   "cap": 64019999999.99999
-  },
-  {
-   "t": "HUM",
-   "n": "Humana",
-   "sector": "헬스케어",
-   "ind": "Managed Health Care",
-   "cap": 53290000000.0
+   "cap": 54330000000.0
   },
   {
    "t": "AZO",
    "n": "AutoZone",
    "sector": "임의소비재",
    "ind": "Automotive Retail",
-   "cap": 52340000000.0
+   "cap": 52750000000.0
   },
   {
-   "t": "HONA",
-   "n": "Honeywell Aerospace",
+   "t": "AME",
+   "n": "Ametek",
    "sector": "산업재",
-   "ind": "Aerospace & Defense",
-   "cap": 52700000000.0
+   "ind": "Electrical Components & Equipment",
+   "cap": 53010000000.0
   },
   {
-   "t": "ETR",
-   "n": "Entergy",
-   "sector": "유틸리티",
-   "ind": "Electric Utilities",
-   "cap": 53490000000.0
+   "t": "MET",
+   "n": "MetLife",
+   "sector": "금융",
+   "ind": "Life & Health Insurance",
+   "cap": 61340000000.0
   },
   {
-   "t": "KEYS",
-   "n": "Keysight Technologies",
+   "t": "ADSK",
+   "n": "Autodesk",
    "sector": "기술",
-   "ind": "Electronic Equipment & Instruments",
-   "cap": 51790000000.0
+   "ind": "Application Software",
+   "cap": 50880000000.0
   },
   {
    "t": "SRE",
    "n": "Sempra",
    "sector": "유틸리티",
    "ind": "Multi-Utilities",
-   "cap": 51660000000.0
-  },
-  {
-   "t": "DAL",
-   "n": "Delta Air Lines",
-   "sector": "산업재",
-   "ind": "Passenger Airlines",
-   "cap": 56630000000.0
+   "cap": 49900000000.0
   },
   {
    "t": "XEL",
    "n": "Xcel Energy",
    "sector": "유틸리티",
    "ind": "Multi-Utilities",
-   "cap": 52310000000.0
+   "cap": 51000000000.0
   },
   {
-   "t": "CVNA",
-   "n": "Carvana",
-   "sector": "임의소비재",
-   "ind": "Automotive Retail",
-   "cap": 79050000000.0
-  },
-  {
-   "t": "DVN",
-   "n": "Devon Energy",
-   "sector": "에너지",
-   "ind": "Oil & Gas Exploration & Production",
-   "cap": 52690000000.0
-  },
-  {
-   "t": "WAB",
-   "n": "Wabtec",
+   "t": "BE",
+   "n": "Bloom Energy",
    "sector": "산업재",
-   "ind": "Construction Machinery & Heavy Transportation Equipment",
-   "cap": 50430000000.0
+   "ind": "Electrical Components & Equipment",
+   "cap": 49700000000.0
   },
   {
-   "t": "LHX",
-   "n": "L3Harris",
+   "t": "ETR",
+   "n": "Entergy",
+   "sector": "유틸리티",
+   "ind": "Electric Utilities",
+   "cap": 50740000000.0
+  },
+  {
+   "t": "HONA",
+   "n": "Honeywell Aerospace",
    "sector": "산업재",
    "ind": "Aerospace & Defense",
-   "cap": 50620000000.0
-  },
-  {
-   "t": "PYPL",
-   "n": "PayPal",
-   "sector": "금융",
-   "ind": "Transaction & Payment Processing Services",
-   "cap": 48430000000.0
-  },
-  {
-   "t": "RSG",
-   "n": "Republic Services",
-   "sector": "산업재",
-   "ind": "Environmental & Facilities Services",
-   "cap": 77070000000.0
-  },
-  {
-   "t": "FERG",
-   "n": "Ferguson Enterprises",
-   "sector": "산업재",
-   "ind": "Trading Companies & Distributors",
-   "cap": 49360000000.0
-  },
-  {
-   "t": "FITB",
-   "n": "Fifth Third Bancorp",
-   "sector": "금융",
-   "ind": "Regional Banks",
-   "cap": 48710000000.0
+   "cap": 49410000000.0
   },
   {
    "t": "A",
    "n": "Agilent Technologies",
    "sector": "헬스케어",
    "ind": "Life Sciences Tools & Services",
-   "cap": 48780000000.0
+   "cap": 49430000000.0
   },
   {
-   "t": "BKR",
-   "n": "Baker Hughes",
-   "sector": "에너지",
-   "ind": "Oil & Gas Equipment & Services",
-   "cap": 48520000000.0
+   "t": "DAL",
+   "n": "Delta Air Lines",
+   "sector": "산업재",
+   "ind": "Passenger Airlines",
+   "cap": 54420000000.0
+  },
+  {
+   "t": "CVNA",
+   "n": "Carvana",
+   "sector": "임의소비재",
+   "ind": "Automotive Retail",
+   "cap": 75880000000.0
   },
   {
    "t": "KDP",
    "n": "Keurig Dr Pepper",
    "sector": "필수소비재",
    "ind": "Soft Drinks & Non-alcoholic Beverages",
-   "cap": 48200000000.0
+   "cap": 49120000000.0
+  },
+  {
+   "t": "RSG",
+   "n": "Republic Services",
+   "sector": "산업재",
+   "ind": "Environmental & Facilities Services",
+   "cap": 75090000000.0
+  },
+  {
+   "t": "PYPL",
+   "n": "PayPal",
+   "sector": "금융",
+   "ind": "Transaction & Payment Processing Services",
+   "cap": 46820000000.0
+  },
+  {
+   "t": "KEYS",
+   "n": "Keysight Technologies",
+   "sector": "기술",
+   "ind": "Electronic Equipment & Instruments",
+   "cap": 47910000000.0
+  },
+  {
+   "t": "FERG",
+   "n": "Ferguson Enterprises",
+   "sector": "산업재",
+   "ind": "Trading Companies & Distributors",
+   "cap": 47910000000.0
+  },
+  {
+   "t": "LHX",
+   "n": "L3Harris",
+   "sector": "산업재",
+   "ind": "Aerospace & Defense",
+   "cap": 47770000000.0
+  },
+  {
+   "t": "LITE",
+   "n": "Lumentum",
+   "sector": "기술",
+   "ind": "Communications Equipment",
+   "cap": 48530000000.0
+  },
+  {
+   "t": "WAB",
+   "n": "Wabtec",
+   "sector": "산업재",
+   "ind": "Construction Machinery & Heavy Transportation Equipment",
+   "cap": 47110000000.0
   },
   {
    "t": "EBAY",
    "n": "eBay Inc.",
    "sector": "임의소비재",
    "ind": "Broadline Retail",
-   "cap": 52740000000.0
-  },
-  {
-   "t": "NDAQ",
-   "n": "Nasdaq, Inc.",
-   "sector": "금융",
-   "ind": "Financial Exchanges & Data",
-   "cap": 60300000000.0
-  },
-  {
-   "t": "VYLR",
-   "n": "Vylor",
-   "sector": "필수소비재",
-   "ind": "Agricultural Products & Services",
-   "cap": 48090000000.0
-  },
-  {
-   "t": "STT",
-   "n": "State Street Corporation",
-   "sector": "금융",
-   "ind": "Asset Management & Custody Banks",
-   "cap": 47260000000.0
-  },
-  {
-   "t": "GRMN",
-   "n": "Garmin",
-   "sector": "임의소비재",
-   "ind": "Consumer Electronics",
-   "cap": 55150000000.0
-  },
-  {
-   "t": "MSCI",
-   "n": "MSCI",
-   "sector": "금융",
-   "ind": "Financial Exchanges & Data",
-   "cap": 46580000000.0
-  },
-  {
-   "t": "ROP",
-   "n": "Roper Technologies",
-   "sector": "기술",
-   "ind": "Electronic Equipment & Instruments",
-   "cap": 47330000000.0
+   "cap": 51460000000.0
   },
   {
    "t": "EXC",
    "n": "Exelon",
    "sector": "유틸리티",
    "ind": "Electric Utilities",
-   "cap": 47220000000.0
+   "cap": 47010000000.0
   },
   {
-   "t": "F",
-   "n": "Ford Motor Company",
-   "sector": "임의소비재",
-   "ind": "Automobile Manufacturers",
-   "cap": 47520000000.0
+   "t": "BKR",
+   "n": "Baker Hughes",
+   "sector": "에너지",
+   "ind": "Oil & Gas Equipment & Services",
+   "cap": 46350000000.0
   },
   {
-   "t": "VTR",
-   "n": "Ventas",
-   "sector": "부동산",
-   "ind": "Health Care REITs",
-   "cap": 47720000000.0
+   "t": "DVN",
+   "n": "Devon Energy",
+   "sector": "에너지",
+   "ind": "Oil & Gas Exploration & Production",
+   "cap": 47920000000.0
   },
   {
-   "t": "VMRK",
-   "n": "Vivmark Residential",
-   "sector": "부동산",
-   "ind": "Multi-Family Residential REITs",
-   "cap": 49530000000.0
-  },
-  {
-   "t": "COHR",
-   "n": "Coherent Corp.",
-   "sector": "기술",
-   "ind": "Electronic Components",
-   "cap": 45710000000.0
-  },
-  {
-   "t": "WAT",
-   "n": "Waters Corporation",
-   "sector": "헬스케어",
-   "ind": "Life Sciences Tools & Services",
-   "cap": 45430000000.0
-  },
-  {
-   "t": "NKE",
-   "n": "Nike, Inc.",
-   "sector": "임의소비재",
-   "ind": "Apparel, Accessories & Luxury Goods",
-   "cap": 56090000000.0
-  },
-  {
-   "t": "AMP",
-   "n": "Ameriprise Financial",
+   "t": "FITB",
+   "n": "Fifth Third Bancorp",
    "sector": "금융",
-   "ind": "Asset Management & Custody Banks",
-   "cap": 44580000000.0
+   "ind": "Regional Banks",
+   "cap": 45950000000.0
   },
   {
-   "t": "VEEV",
-   "n": "Veeva Systems",
-   "sector": "헬스케어",
-   "ind": "Health Care Technology",
-   "cap": 48960000000.0
-  },
-  {
-   "t": "CARR",
-   "n": "Carrier Global",
-   "sector": "산업재",
-   "ind": "Building Products",
-   "cap": 44480000000.0
-  },
-  {
-   "t": "ROK",
-   "n": "Rockwell Automation",
-   "sector": "산업재",
-   "ind": "Electrical Components & Equipment",
-   "cap": 44890000000.0
-  },
-  {
-   "t": "IQV",
-   "n": "IQVIA",
-   "sector": "헬스케어",
-   "ind": "Life Sciences Tools & Services",
-   "cap": 44680000000.0
-  },
-  {
-   "t": "XYZ",
-   "n": "Block, Inc.",
+   "t": "NDAQ",
+   "n": "Nasdaq, Inc.",
    "sector": "금융",
-   "ind": "Transaction & Payment Processing Services",
-   "cap": 49730000000.0
+   "ind": "Financial Exchanges & Data",
+   "cap": 57690000000.0
   },
   {
    "t": "CMG",
    "n": "Chipotle Mexican Grill",
    "sector": "임의소비재",
    "ind": "Restaurants",
-   "cap": 44490000000.0
+   "cap": 45920000000.0
+  },
+  {
+   "t": "HUM",
+   "n": "Humana",
+   "sector": "헬스케어",
+   "ind": "Managed Health Care",
+   "cap": 45640000000.0
+  },
+  {
+   "t": "ROP",
+   "n": "Roper Technologies",
+   "sector": "기술",
+   "ind": "Electronic Equipment & Instruments",
+   "cap": 45850000000.0
+  },
+  {
+   "t": "MSCI",
+   "n": "MSCI",
+   "sector": "금융",
+   "ind": "Financial Exchanges & Data",
+   "cap": 44640000000.0
+  },
+  {
+   "t": "GRMN",
+   "n": "Garmin",
+   "sector": "임의소비재",
+   "ind": "Consumer Electronics",
+   "cap": 52370000000.0
+  },
+  {
+   "t": "VYLR",
+   "n": "Vylor",
+   "sector": "필수소비재",
+   "ind": "Agricultural Products & Services",
+   "cap": 45220000000.0
+  },
+  {
+   "t": "VMRK",
+   "n": "Vivmark Residential",
+   "sector": "부동산",
+   "ind": "Multi-Family Residential REITs",
+   "cap": 48560000000.0
+  },
+  {
+   "t": "WAT",
+   "n": "Waters Corporation",
+   "sector": "헬스케어",
+   "ind": "Life Sciences Tools & Services",
+   "cap": 44870000000.0
+  },
+  {
+   "t": "VTR",
+   "n": "Ventas",
+   "sector": "부동산",
+   "ind": "Health Care REITs",
+   "cap": 46310000000.0
+  },
+  {
+   "t": "STT",
+   "n": "State Street Corporation",
+   "sector": "금융",
+   "ind": "Asset Management & Custody Banks",
+   "cap": 43870000000.0
+  },
+  {
+   "t": "F",
+   "n": "Ford Motor Company",
+   "sector": "임의소비재",
+   "ind": "Automobile Manufacturers",
+   "cap": 44880000000.0
   },
   {
    "t": "ED",
    "n": "Consolidated Edison",
    "sector": "유틸리티",
    "ind": "Multi-Utilities",
-   "cap": 44290000000.0
+   "cap": 44200000000.0
   },
   {
    "t": "YUM",
@@ -1801,1579 +1745,1614 @@
    "cap": 42740000000.0
   },
   {
+   "t": "AMP",
+   "n": "Ameriprise Financial",
+   "sector": "금융",
+   "ind": "Asset Management & Custody Banks",
+   "cap": 42740000000.0
+  },
+  {
+   "t": "CARR",
+   "n": "Carrier Global",
+   "sector": "산업재",
+   "ind": "Building Products",
+   "cap": 42150000000.0
+  },
+  {
+   "t": "ROK",
+   "n": "Rockwell Automation",
+   "sector": "산업재",
+   "ind": "Electrical Components & Equipment",
+   "cap": 42050000000.0
+  },
+  {
+   "t": "COHR",
+   "n": "Coherent Corp.",
+   "sector": "기술",
+   "ind": "Electronic Components",
+   "cap": 42330000000.0
+  },
+  {
    "t": "AIG",
    "n": "American International Group",
    "sector": "금융",
    "ind": "Multi-line Insurance",
-   "cap": 42810000000.0
-  },
-  {
-   "t": "OXY",
-   "n": "Occidental Petroleum",
-   "sector": "에너지",
-   "ind": "Oil & Gas Exploration & Production",
-   "cap": 58390000000.0
-  },
-  {
-   "t": "VST",
-   "n": "Vistra Corp.",
-   "sector": "유틸리티",
-   "ind": "Electric Utilities",
-   "cap": 45650000000.0
+   "cap": 41220000000.0
   },
   {
    "t": "PRU",
    "n": "Prudential Financial",
    "sector": "금융",
    "ind": "Life & Health Insurance",
-   "cap": 41990000000.0
+   "cap": 41260000000.0
   },
   {
-   "t": "CIEN",
-   "n": "Ciena",
-   "sector": "기술",
-   "ind": "Communications Equipment",
-   "cap": 41690000000.0
+   "t": "NKE",
+   "n": "Nike, Inc.",
+   "sector": "임의소비재",
+   "ind": "Apparel, Accessories & Luxury Goods",
+   "cap": 50990000000.0
   },
   {
-   "t": "TER",
-   "n": "Teradyne",
-   "sector": "기술",
-   "ind": "Semiconductor Materials & Equipment",
-   "cap": 41180000000.0
+   "t": "IQV",
+   "n": "IQVIA",
+   "sector": "헬스케어",
+   "ind": "Life Sciences Tools & Services",
+   "cap": 41290000000.0
   },
   {
-   "t": "TTWO",
-   "n": "Take-Two Interactive",
-   "sector": "커뮤니케이션",
-   "ind": "Interactive Home Entertainment",
-   "cap": 42490000000.0
+   "t": "XYZ",
+   "n": "Block, Inc.",
+   "sector": "금융",
+   "ind": "Transaction & Payment Processing Services",
+   "cap": 44870000000.0
   },
   {
    "t": "FIX",
    "n": "Comfort Systems USA",
    "sector": "산업재",
    "ind": "Construction & Engineering",
-   "cap": 39400000000.0
+   "cap": 38910000000.0
+  },
+  {
+   "t": "VEEV",
+   "n": "Veeva Systems",
+   "sector": "헬스케어",
+   "ind": "Health Care Technology",
+   "cap": 42570000000.0
+  },
+  {
+   "t": "OXY",
+   "n": "Occidental Petroleum",
+   "sector": "에너지",
+   "ind": "Oil & Gas Exploration & Production",
+   "cap": 53800000000.0
+  },
+  {
+   "t": "VST",
+   "n": "Vistra Corp.",
+   "sector": "유틸리티",
+   "ind": "Electric Utilities",
+   "cap": 42140000000.0
   },
   {
    "t": "KR",
    "n": "Kroger",
    "sector": "필수소비재",
    "ind": "Food Retail",
-   "cap": 41230000000.0
-  },
-  {
-   "t": "CBOE",
-   "n": "Cboe Global Markets",
-   "sector": "금융",
-   "ind": "Financial Exchanges & Data",
-   "cap": 38490000000.0
+   "cap": 40120000000.0
   },
   {
    "t": "WEC",
    "n": "WEC Energy Group",
    "sector": "유틸리티",
    "ind": "Electric Utilities",
-   "cap": 38650000000.0
-  },
-  {
-   "t": "WDAY",
-   "n": "Workday, Inc.",
-   "sector": "기술",
-   "ind": "Application Software",
-   "cap": 45940000000.0
-  },
-  {
-   "t": "CCI",
-   "n": "Crown Castle",
-   "sector": "부동산",
-   "ind": "Telecom Tower REITs",
-   "cap": 38160000000.0
-  },
-  {
-   "t": "CBRE",
-   "n": "CBRE Group",
-   "sector": "부동산",
-   "ind": "Real Estate Services",
    "cap": 38200000000.0
   },
   {
-   "t": "CCL",
-   "n": "Carnival Corporation",
-   "sector": "임의소비재",
-   "ind": "Hotels, Resorts & Cruise Lines",
-   "cap": 39450000000.0
+   "t": "CBOE",
+   "n": "Cboe Global Markets",
+   "sector": "금융",
+   "ind": "Financial Exchanges & Data",
+   "cap": 37320000000.0
+  },
+  {
+   "t": "CIEN",
+   "n": "Ciena",
+   "sector": "기술",
+   "ind": "Communications Equipment",
+   "cap": 37240000000.0
   },
   {
    "t": "PEG",
    "n": "Public Service Enterprise Group",
    "sector": "유틸리티",
    "ind": "Electric Utilities",
-   "cap": 37290000000.0
-  },
-  {
-   "t": "FANG",
-   "n": "Diamondback Energy",
-   "sector": "에너지",
-   "ind": "Oil & Gas Exploration & Production",
-   "cap": 50860000000.0
-  },
-  {
-   "t": "BIIB",
-   "n": "Biogen",
-   "sector": "헬스케어",
-   "ind": "Biotechnology",
-   "cap": 37030000000.0
-  },
-  {
-   "t": "ACGL",
-   "n": "Arch Capital Group",
-   "sector": "금융",
-   "ind": "Property & Casualty Insurance",
-   "cap": 35410000000.0
+   "cap": 36940000000.0
   },
   {
    "t": "GEHC",
    "n": "GE HealthCare",
    "sector": "헬스케어",
    "ind": "Health Care Equipment",
-   "cap": 37000000000.0
-  },
-  {
-   "t": "HIG",
-   "n": "Hartford (The)",
-   "sector": "금융",
-   "ind": "Property & Casualty Insurance",
-   "cap": 36610000000.0
-  },
-  {
-   "t": "IBKR",
-   "n": "Interactive Brokers",
-   "sector": "금융",
-   "ind": "Investment Banking & Brokerage",
-   "cap": 36850000000.0
-  },
-  {
-   "t": "PAYX",
-   "n": "Paychex",
-   "sector": "산업재",
-   "ind": "Human Resource & Employment Services",
-   "cap": 41000000000.0
-  },
-  {
-   "t": "DHI",
-   "n": "D. R. Horton",
-   "sector": "임의소비재",
-   "ind": "Homebuilding",
-   "cap": 39210000000.0
-  },
-  {
-   "t": "P",
-   "n": "Everpure",
-   "sector": "기술",
-   "ind": "Technology Hardware, Storage & Peripherals",
-   "cap": 36690000000.0
+   "cap": 37030000000.0
   },
   {
    "t": "SYY",
    "n": "Sysco",
    "sector": "필수소비재",
    "ind": "Food Distributors",
-   "cap": 37530000000.0
+   "cap": 37980000000.0
   },
   {
-   "t": "NTAP",
-   "n": "NetApp",
+   "t": "BIIB",
+   "n": "Biogen",
+   "sector": "헬스케어",
+   "ind": "Biotechnology",
+   "cap": 36530000000.0
+  },
+  {
+   "t": "TTWO",
+   "n": "Take-Two Interactive",
+   "sector": "커뮤니케이션",
+   "ind": "Interactive Home Entertainment",
+   "cap": 39060000000.0
+  },
+  {
+   "t": "ACGL",
+   "n": "Arch Capital Group",
+   "sector": "금융",
+   "ind": "Property & Casualty Insurance",
+   "cap": 35060000000.0
+  },
+  {
+   "t": "HIG",
+   "n": "Hartford (The)",
+   "sector": "금융",
+   "ind": "Property & Casualty Insurance",
+   "cap": 36260000000.0
+  },
+  {
+   "t": "CBRE",
+   "n": "CBRE Group",
+   "sector": "부동산",
+   "ind": "Real Estate Services",
+   "cap": 36980000000.0
+  },
+  {
+   "t": "DHI",
+   "n": "D. R. Horton",
+   "sector": "임의소비재",
+   "ind": "Homebuilding",
+   "cap": 38170000000.0
+  },
+  {
+   "t": "FANG",
+   "n": "Diamondback Energy",
+   "sector": "에너지",
+   "ind": "Oil & Gas Exploration & Production",
+   "cap": 49350000000.0
+  },
+  {
+   "t": "TER",
+   "n": "Teradyne",
    "sector": "기술",
-   "ind": "Technology Hardware, Storage & Peripherals",
-   "cap": 36550000000.0
+   "ind": "Semiconductor Materials & Equipment",
+   "cap": 35510000000.0
   },
   {
    "t": "VMC",
    "n": "Vulcan Materials Company",
    "sector": "소재",
    "ind": "Construction Materials",
-   "cap": 35960000000.0
+   "cap": 35190000000.0
+  },
+  {
+   "t": "PAYX",
+   "n": "Paychex",
+   "sector": "산업재",
+   "ind": "Human Resource & Employment Services",
+   "cap": 39660000000.0
+  },
+  {
+   "t": "CCL",
+   "n": "Carnival Corporation",
+   "sector": "임의소비재",
+   "ind": "Hotels, Resorts & Cruise Lines",
+   "cap": 37070000000.0
+  },
+  {
+   "t": "P",
+   "n": "Everpure",
+   "sector": "기술",
+   "ind": "Technology Hardware, Storage & Peripherals",
+   "cap": 35160000000.0
+  },
+  {
+   "t": "CCI",
+   "n": "Crown Castle",
+   "sector": "부동산",
+   "ind": "Telecom Tower REITs",
+   "cap": 34860000000.0
+  },
+  {
+   "t": "WDAY",
+   "n": "Workday, Inc.",
+   "sector": "기술",
+   "ind": "Application Software",
+   "cap": 41780000000.0
   },
   {
    "t": "UAL",
    "n": "United Airlines Holdings",
    "sector": "산업재",
    "ind": "Passenger Airlines",
-   "cap": 36140000000.0
-  },
-  {
-   "t": "CNC",
-   "n": "Centene Corporation",
-   "sector": "헬스케어",
-   "ind": "Managed Health Care",
-   "cap": 34790000000.0
-  },
-  {
-   "t": "MTD",
-   "n": "Mettler Toledo",
-   "sector": "헬스케어",
-   "ind": "Life Sciences Tools & Services",
-   "cap": 34430000000.0
-  },
-  {
-   "t": "RMD",
-   "n": "ResMed",
-   "sector": "헬스케어",
-   "ind": "Health Care Equipment",
-   "cap": 33600000000.0
-  },
-  {
-   "t": "ADM",
-   "n": "Archer Daniels Midland",
-   "sector": "필수소비재",
-   "ind": "Agricultural Products & Services",
-   "cap": 33780000000.0
-  },
-  {
-   "t": "ZTS",
-   "n": "Zoetis",
-   "sector": "헬스케어",
-   "ind": "Pharmaceuticals",
-   "cap": 33710000000.0
-  },
-  {
-   "t": "IRM",
-   "n": "Iron Mountain",
-   "sector": "부동산",
-   "ind": "Other Specialized REITs",
-   "cap": 34130000000.000004
-  },
-  {
-   "t": "MCHP",
-   "n": "Microchip Technology",
-   "sector": "기술",
-   "ind": "Semiconductors",
-   "cap": 33790000000.0
-  },
-  {
-   "t": "EXR",
-   "n": "Extra Space Storage",
-   "sector": "부동산",
-   "ind": "Self-Storage REITs",
-   "cap": 34500000000.0
-  },
-  {
-   "t": "EQT",
-   "n": "EQT Corporation",
-   "sector": "에너지",
-   "ind": "Oil & Gas Exploration & Production",
-   "cap": 32750000000.0
-  },
-  {
-   "t": "FISV",
-   "n": "Fiserv",
-   "sector": "금융",
-   "ind": "Transaction & Payment Processing Services",
-   "cap": 32720000000.0
-  },
-  {
-   "t": "NTRS",
-   "n": "Northern Trust",
-   "sector": "금융",
-   "ind": "Asset Management & Custody Banks",
-   "cap": 32180000000.0
-  },
-  {
-   "t": "TWLO",
-   "n": "Twilio",
-   "sector": "기술",
-   "ind": "Systems Software",
-   "cap": 32840000000.000004
-  },
-  {
-   "t": "ODFL",
-   "n": "Old Dominion",
-   "sector": "산업재",
-   "ind": "Cargo Ground Transportation",
-   "cap": 35370000000.0
-  },
-  {
-   "t": "STLD",
-   "n": "Steel Dynamics",
-   "sector": "소재",
-   "ind": "Steel",
-   "cap": 33720000000.0
-  },
-  {
-   "t": "HBAN",
-   "n": "Huntington Bancshares",
-   "sector": "금융",
-   "ind": "Regional Banks",
-   "cap": 31700000000.0
-  },
-  {
-   "t": "ILMN",
-   "n": "Illumina, Inc.",
-   "sector": "헬스케어",
-   "ind": "Life Sciences Tools & Services",
-   "cap": 31680000000.0
-  },
-  {
-   "t": "MTB",
-   "n": "M&T Bank",
-   "sector": "금융",
-   "ind": "Regional Banks",
-   "cap": 31520000000.0
-  },
-  {
-   "t": "AEE",
-   "n": "Ameren",
-   "sector": "유틸리티",
-   "ind": "Multi-Utilities",
-   "cap": 31440000000.0
-  },
-  {
-   "t": "MLM",
-   "n": "Martin Marietta Materials",
-   "sector": "소재",
-   "ind": "Construction Materials",
-   "cap": 36790000000.0
-  },
-  {
-   "t": "DXCM",
-   "n": "Dexcom",
-   "sector": "헬스케어",
-   "ind": "Health Care Equipment",
-   "cap": 30350000000.0
-  },
-  {
-   "t": "WTW",
-   "n": "Willis Towers Watson",
-   "sector": "금융",
-   "ind": "Insurance Brokers",
-   "cap": 30320000000.0
+   "cap": 34290000000.0
   },
   {
    "t": "OKTA",
    "n": "Okta, Inc.",
    "sector": "기술",
    "ind": "Application Software",
-   "cap": 31910000000.0
+   "cap": 36160000000.0
   },
   {
-   "t": "TDY",
-   "n": "Teledyne Technologies",
-   "sector": "기술",
-   "ind": "Electronic Equipment & Instruments",
-   "cap": 29810000000.0
-  },
-  {
-   "t": "LH",
-   "n": "Labcorp",
-   "sector": "헬스케어",
-   "ind": "Health Care Services",
-   "cap": 30230000000.0
-  },
-  {
-   "t": "EXPE",
-   "n": "Expedia Group",
-   "sector": "임의소비재",
-   "ind": "Hotels, Resorts & Cruise Lines",
-   "cap": 30950000000.0
-  },
-  {
-   "t": "CPAY",
-   "n": "Corpay",
-   "sector": "금융",
-   "ind": "Transaction & Payment Processing Services",
-   "cap": 29170000000.0
-  },
-  {
-   "t": "ARES",
-   "n": "Ares Management",
-   "sector": "금융",
-   "ind": "Asset Management & Custody Banks",
-   "cap": 44030000000.0
-  },
-  {
-   "t": "DG",
-   "n": "Dollar General",
-   "sector": "필수소비재",
-   "ind": "Consumer Staples Merchandise Retail",
-   "cap": 29700000000.0
-  },
-  {
-   "t": "ATO",
-   "n": "Atmos Energy",
-   "sector": "유틸리티",
-   "ind": "Gas Utilities",
-   "cap": 29730000000.0
-  },
-  {
-   "t": "WSM",
-   "n": "Williams-Sonoma, Inc.",
-   "sector": "임의소비재",
-   "ind": "Homefurnishing Retail",
-   "cap": 29490000000.0
-  },
-  {
-   "t": "OTIS",
-   "n": "Otis Worldwide",
-   "sector": "산업재",
-   "ind": "Industrial Machinery & Supplies & Components",
-   "cap": 29370000000.0
-  },
-  {
-   "t": "AWK",
-   "n": "American Water Works",
-   "sector": "유틸리티",
-   "ind": "Water Utilities",
-   "cap": 29380000000.0
-  },
-  {
-   "t": "IR",
-   "n": "Ingersoll Rand",
-   "sector": "산업재",
-   "ind": "Industrial Machinery & Supplies & Components",
-   "cap": 32759999999.999996
-  },
-  {
-   "t": "CINF",
-   "n": "Cincinnati Financial",
-   "sector": "금융",
-   "ind": "Property & Casualty Insurance",
-   "cap": 29210000000.0
-  },
-  {
-   "t": "EME",
-   "n": "Emcor",
-   "sector": "산업재",
-   "ind": "Construction & Engineering",
-   "cap": 29020000000.0
-  },
-  {
-   "t": "COIN",
-   "n": "Coinbase",
-   "sector": "금융",
-   "ind": "Financial Exchanges & Data",
-   "cap": 34600000000.0
-  },
-  {
-   "t": "RJF",
-   "n": "Raymond James Financial",
+   "t": "IBKR",
+   "n": "Interactive Brokers",
    "sector": "금융",
    "ind": "Investment Banking & Brokerage",
-   "cap": 32180000000.0
+   "cap": 34280000000.0
   },
   {
-   "t": "DTE",
-   "n": "DTE Energy",
-   "sector": "유틸리티",
-   "ind": "Multi-Utilities",
-   "cap": 28980000000.0
-  },
-  {
-   "t": "DGX",
-   "n": "Quest Diagnostics",
+   "t": "RMD",
+   "n": "ResMed",
    "sector": "헬스케어",
-   "ind": "Health Care Services",
-   "cap": 28570000000.0
+   "ind": "Health Care Equipment",
+   "cap": 33320000000.0
   },
   {
-   "t": "FLEX",
-   "n": "Flex Ltd.",
-   "sector": "기술",
-   "ind": "Electronic Manufacturing Services",
-   "cap": 28860000000.0
-  },
-  {
-   "t": "WST",
-   "n": "West Pharmaceutical Services",
+   "t": "MTD",
+   "n": "Mettler Toledo",
    "sector": "헬스케어",
-   "ind": "Health Care Supplies",
-   "cap": 28650000000.0
+   "ind": "Life Sciences Tools & Services",
+   "cap": 33930000000.0
   },
   {
-   "t": "CTSH",
-   "n": "Cognizant",
+   "t": "NTAP",
+   "n": "NetApp",
    "sector": "기술",
-   "ind": "IT Consulting & Other Services",
-   "cap": 28500000000.0
+   "ind": "Technology Hardware, Storage & Peripherals",
+   "cap": 33430000000.0
   },
   {
-   "t": "ON",
-   "n": "ON Semiconductor",
+   "t": "ZTS",
+   "n": "Zoetis",
+   "sector": "헬스케어",
+   "ind": "Pharmaceuticals",
+   "cap": 32830000000.0
+  },
+  {
+   "t": "EXR",
+   "n": "Extra Space Storage",
+   "sector": "부동산",
+   "ind": "Self-Storage REITs",
+   "cap": 34009999999.999996
+  },
+  {
+   "t": "ADM",
+   "n": "Archer Daniels Midland",
+   "sector": "필수소비재",
+   "ind": "Agricultural Products & Services",
+   "cap": 31950000000.0
+  },
+  {
+   "t": "IRM",
+   "n": "Iron Mountain",
+   "sector": "부동산",
+   "ind": "Other Specialized REITs",
+   "cap": 32400000000.0
+  },
+  {
+   "t": "ODFL",
+   "n": "Old Dominion",
+   "sector": "산업재",
+   "ind": "Cargo Ground Transportation",
+   "cap": 35820000000.0
+  },
+  {
+   "t": "CNC",
+   "n": "Centene Corporation",
+   "sector": "헬스케어",
+   "ind": "Managed Health Care",
+   "cap": 32470000000.0
+  },
+  {
+   "t": "MCHP",
+   "n": "Microchip Technology",
    "sector": "기술",
    "ind": "Semiconductors",
-   "cap": 28700000000.0
+   "cap": 31820000000.0
+  },
+  {
+   "t": "AEE",
+   "n": "Ameren",
+   "sector": "유틸리티",
+   "ind": "Multi-Utilities",
+   "cap": 30890000000.0
+  },
+  {
+   "t": "EQT",
+   "n": "EQT Corporation",
+   "sector": "에너지",
+   "ind": "Oil & Gas Exploration & Production",
+   "cap": 30840000000.0
   },
   {
    "t": "PCG",
    "n": "PG&E Corporation",
    "sector": "유틸리티",
    "ind": "Multi-Utilities",
-   "cap": 28570000000.0
+   "cap": 30700000000.0
   },
   {
-   "t": "VLTO",
-   "n": "Veralto",
+   "t": "WTW",
+   "n": "Willis Towers Watson",
+   "sector": "금융",
+   "ind": "Insurance Brokers",
+   "cap": 30550000000.0
+  },
+  {
+   "t": "MLM",
+   "n": "Martin Marietta Materials",
+   "sector": "소재",
+   "ind": "Construction Materials",
+   "cap": 36040000000.0
+  },
+  {
+   "t": "NTRS",
+   "n": "Northern Trust",
+   "sector": "금융",
+   "ind": "Asset Management & Custody Banks",
+   "cap": 30190000000.0
+  },
+  {
+   "t": "ILMN",
+   "n": "Illumina, Inc.",
+   "sector": "헬스케어",
+   "ind": "Life Sciences Tools & Services",
+   "cap": 30340000000.0
+  },
+  {
+   "t": "MTB",
+   "n": "M&T Bank",
+   "sector": "금융",
+   "ind": "Regional Banks",
+   "cap": 30230000000.0
+  },
+  {
+   "t": "DXCM",
+   "n": "Dexcom",
+   "sector": "헬스케어",
+   "ind": "Health Care Equipment",
+   "cap": 29910000000.0
+  },
+  {
+   "t": "FISV",
+   "n": "Fiserv",
+   "sector": "금융",
+   "ind": "Transaction & Payment Processing Services",
+   "cap": 30120000000.0
+  },
+  {
+   "t": "LH",
+   "n": "Labcorp",
+   "sector": "헬스케어",
+   "ind": "Health Care Services",
+   "cap": 29950000000.0
+  },
+  {
+   "t": "HBAN",
+   "n": "Huntington Bancshares",
+   "sector": "금융",
+   "ind": "Regional Banks",
+   "cap": 29650000000.0
+  },
+  {
+   "t": "AWK",
+   "n": "American Water Works",
+   "sector": "유틸리티",
+   "ind": "Water Utilities",
+   "cap": 29520000000.0
+  },
+  {
+   "t": "DG",
+   "n": "Dollar General",
+   "sector": "필수소비재",
+   "ind": "Consumer Staples Merchandise Retail",
+   "cap": 29450000000.0
+  },
+  {
+   "t": "STLD",
+   "n": "Steel Dynamics",
+   "sector": "소재",
+   "ind": "Steel",
+   "cap": 31040000000.0
+  },
+  {
+   "t": "OTIS",
+   "n": "Otis Worldwide",
    "sector": "산업재",
-   "ind": "Environmental & Facilities Services",
-   "cap": 28570000000.0
+   "ind": "Industrial Machinery & Supplies & Components",
+   "cap": 28910000000.0
+  },
+  {
+   "t": "CINF",
+   "n": "Cincinnati Financial",
+   "sector": "금융",
+   "ind": "Property & Casualty Insurance",
+   "cap": 28870000000.0
+  },
+  {
+   "t": "TDY",
+   "n": "Teledyne Technologies",
+   "sector": "기술",
+   "ind": "Electronic Equipment & Instruments",
+   "cap": 28630000000.0
+  },
+  {
+   "t": "DGX",
+   "n": "Quest Diagnostics",
+   "sector": "헬스케어",
+   "ind": "Health Care Services",
+   "cap": 28500000000.0
+  },
+  {
+   "t": "ATO",
+   "n": "Atmos Energy",
+   "sector": "유틸리티",
+   "ind": "Gas Utilities",
+   "cap": 28710000000.0
+  },
+  {
+   "t": "CPAY",
+   "n": "Corpay",
+   "sector": "금융",
+   "ind": "Transaction & Payment Processing Services",
+   "cap": 27780000000.0
   },
   {
    "t": "LYV",
    "n": "Live Nation Entertainment",
    "sector": "커뮤니케이션",
    "ind": "Movies & Entertainment",
-   "cap": 42020000000.0
+   "cap": 41790000000.0
+  },
+  {
+   "t": "DTE",
+   "n": "DTE Energy",
+   "sector": "유틸리티",
+   "ind": "Multi-Utilities",
+   "cap": 28340000000.0
+  },
+  {
+   "t": "VLTO",
+   "n": "Veralto",
+   "sector": "산업재",
+   "ind": "Environmental & Facilities Services",
+   "cap": 28220000000.0
+  },
+  {
+   "t": "EME",
+   "n": "Emcor",
+   "sector": "산업재",
+   "ind": "Construction & Engineering",
+   "cap": 27850000000.0
+  },
+  {
+   "t": "ARES",
+   "n": "Ares Management",
+   "sector": "금융",
+   "ind": "Asset Management & Custody Banks",
+   "cap": 41100000000.0
+  },
+  {
+   "t": "WST",
+   "n": "West Pharmaceutical Services",
+   "sector": "헬스케어",
+   "ind": "Health Care Supplies",
+   "cap": 27630000000.0
+  },
+  {
+   "t": "IR",
+   "n": "Ingersoll Rand",
+   "sector": "산업재",
+   "ind": "Industrial Machinery & Supplies & Components",
+   "cap": 30930000000.0
+  },
+  {
+   "t": "RJF",
+   "n": "Raymond James Financial",
+   "sector": "금융",
+   "ind": "Investment Banking & Brokerage",
+   "cap": 30560000000.0
+  },
+  {
+   "t": "EXPE",
+   "n": "Expedia Group",
+   "sector": "임의소비재",
+   "ind": "Hotels, Resorts & Cruise Lines",
+   "cap": 28360000000.0
+  },
+  {
+   "t": "FLEX",
+   "n": "Flex Ltd.",
+   "sector": "기술",
+   "ind": "Electronic Manufacturing Services",
+   "cap": 27420000000.0
+  },
+  {
+   "t": "TWLO",
+   "n": "Twilio",
+   "sector": "기술",
+   "ind": "Systems Software",
+   "cap": 27660000000.0
   },
   {
    "t": "DOV",
    "n": "Dover Corporation",
    "sector": "산업재",
    "ind": "Industrial Machinery & Supplies & Components",
-   "cap": 27860000000.0
-  },
-  {
-   "t": "ULTA",
-   "n": "Ulta Beauty",
-   "sector": "임의소비재",
-   "ind": "Other Specialty Retail",
-   "cap": 27830000000.0
-  },
-  {
-   "t": "HAL",
-   "n": "Halliburton",
-   "sector": "에너지",
-   "ind": "Oil & Gas Equipment & Services",
-   "cap": 27100000000.0
-  },
-  {
-   "t": "EL",
-   "n": "Estée Lauder Companies (The)",
-   "sector": "필수소비재",
-   "ind": "Personal Care Products",
-   "cap": 40040000000.0
-  },
-  {
-   "t": "PPG",
-   "n": "PPG Industries",
-   "sector": "소재",
-   "ind": "Specialty Chemicals",
-   "cap": 27030000000.0
-  },
-  {
-   "t": "VICI",
-   "n": "Vici Properties",
-   "sector": "부동산",
-   "ind": "Hotel & Resort REITs",
-   "cap": 27310000000.0
-  },
-  {
-   "t": "JBL",
-   "n": "Jabil",
-   "sector": "기술",
-   "ind": "Electronic Manufacturing Services",
-   "cap": 26770000000.0
-  },
-  {
-   "t": "CFG",
-   "n": "Citizens Financial Group",
-   "sector": "금융",
-   "ind": "Regional Banks",
-   "cap": 27190000000.0
+   "cap": 26590000000.0
   },
   {
    "t": "DLTR",
    "n": "Dollar Tree",
    "sector": "필수소비재",
    "ind": "Consumer Staples Merchandise Retail",
-   "cap": 26510000000.0
+   "cap": 26310000000.0
   },
   {
-   "t": "CNP",
-   "n": "CenterPoint Energy",
-   "sector": "유틸리티",
-   "ind": "Multi-Utilities",
-   "cap": 27140000000.0
+   "t": "ULTA",
+   "n": "Ulta Beauty",
+   "sector": "임의소비재",
+   "ind": "Other Specialty Retail",
+   "cap": 26910000000.0
   },
   {
-   "t": "CPRT",
-   "n": "Copart",
-   "sector": "산업재",
-   "ind": "Diversified Support Services",
-   "cap": 29640000000.0
+   "t": "VICI",
+   "n": "Vici Properties",
+   "sector": "부동산",
+   "ind": "Hotel & Resort REITs",
+   "cap": 26640000000.0
   },
   {
    "t": "ES",
    "n": "Eversource Energy",
    "sector": "유틸리티",
    "ind": "Electric Utilities",
-   "cap": 26830000000.0
+   "cap": 26640000000.0
   },
   {
-   "t": "VRSK",
-   "n": "Verisk Analytics",
-   "sector": "산업재",
-   "ind": "Research & Consulting Services",
-   "cap": 26470000000.0
+   "t": "HAL",
+   "n": "Halliburton",
+   "sector": "에너지",
+   "ind": "Oil & Gas Equipment & Services",
+   "cap": 26240000000.0
   },
   {
-   "t": "PPL",
-   "n": "PPL Corporation",
-   "sector": "유틸리티",
-   "ind": "Electric Utilities",
-   "cap": 26500000000.0
-  },
-  {
-   "t": "CHD",
-   "n": "Church & Dwight",
-   "sector": "필수소비재",
-   "ind": "Household Products",
-   "cap": 26370000000.0
-  },
-  {
-   "t": "HPQ",
-   "n": "HP Inc.",
-   "sector": "기술",
-   "ind": "Technology Hardware, Storage & Peripherals",
-   "cap": 26040000000.0
-  },
-  {
-   "t": "TPR",
-   "n": "Tapestry, Inc.",
-   "sector": "임의소비재",
-   "ind": "Apparel, Accessories & Luxury Goods",
-   "cap": 26060000000.0
-  },
-  {
-   "t": "CASY",
-   "n": "Casey's",
-   "sector": "필수소비재",
-   "ind": "Food Retail",
-   "cap": 26120000000.0
+   "t": "PPG",
+   "n": "PPG Industries",
+   "sector": "소재",
+   "ind": "Specialty Chemicals",
+   "cap": 26280000000.0
   },
   {
    "t": "DRI",
    "n": "Darden Restaurants",
    "sector": "임의소비재",
    "ind": "Restaurants",
-   "cap": 25790000000.0
+   "cap": 26180000000.0
   },
   {
-   "t": "Q",
-   "n": "Qnity Electronics",
-   "sector": "기술",
-   "ind": "Semiconductor Materials & Equipment",
-   "cap": 25650000000.0
+   "t": "PPL",
+   "n": "PPL Corporation",
+   "sector": "유틸리티",
+   "ind": "Electric Utilities",
+   "cap": 26130000000.0
   },
   {
-   "t": "VRSN",
-   "n": "Verisign",
-   "sector": "기술",
-   "ind": "Internet Services & Infrastructure",
-   "cap": 28030000000.0
+   "t": "WSM",
+   "n": "Williams-Sonoma, Inc.",
+   "sector": "임의소비재",
+   "ind": "Homefurnishing Retail",
+   "cap": 25990000000.0
   },
   {
-   "t": "EXPD",
-   "n": "Expeditors International",
+   "t": "CHD",
+   "n": "Church & Dwight",
+   "sector": "필수소비재",
+   "ind": "Household Products",
+   "cap": 25890000000.0
+  },
+  {
+   "t": "VRSK",
+   "n": "Verisk Analytics",
    "sector": "산업재",
-   "ind": "Air Freight & Logistics",
-   "cap": 25260000000.0
+   "ind": "Research & Consulting Services",
+   "cap": 25720000000.0
+  },
+  {
+   "t": "CPRT",
+   "n": "Copart",
+   "sector": "산업재",
+   "ind": "Diversified Support Services",
+   "cap": 28590000000.0
+  },
+  {
+   "t": "JBL",
+   "n": "Jabil",
+   "sector": "기술",
+   "ind": "Electronic Manufacturing Services",
+   "cap": 25380000000.0
+  },
+  {
+   "t": "CNP",
+   "n": "CenterPoint Energy",
+   "sector": "유틸리티",
+   "ind": "Multi-Utilities",
+   "cap": 25930000000.0
+  },
+  {
+   "t": "ON",
+   "n": "ON Semiconductor",
+   "sector": "기술",
+   "ind": "Semiconductors",
+   "cap": 25580000000.0
+  },
+  {
+   "t": "HPQ",
+   "n": "HP Inc.",
+   "sector": "기술",
+   "ind": "Technology Hardware, Storage & Peripherals",
+   "cap": 25090000000.0
+  },
+  {
+   "t": "CASY",
+   "n": "Casey's",
+   "sector": "필수소비재",
+   "ind": "Food Retail",
+   "cap": 25340000000.0
+  },
+  {
+   "t": "CFG",
+   "n": "Citizens Financial Group",
+   "sector": "금융",
+   "ind": "Regional Banks",
+   "cap": 25370000000.0
+  },
+  {
+   "t": "CTSH",
+   "n": "Cognizant",
+   "sector": "기술",
+   "ind": "IT Consulting & Other Services",
+   "cap": 25170000000.0
   },
   {
    "t": "HSY",
    "n": "Hershey Company (The)",
    "sector": "필수소비재",
    "ind": "Packaged Foods & Meats",
-   "cap": 34830000000.0
+   "cap": 34980000000.0
+  },
+  {
+   "t": "EL",
+   "n": "Estée Lauder Companies (The)",
+   "sector": "필수소비재",
+   "ind": "Personal Care Products",
+   "cap": 36870000000.0
+  },
+  {
+   "t": "EXPD",
+   "n": "Expeditors International",
+   "sector": "산업재",
+   "ind": "Air Freight & Logistics",
+   "cap": 24940000000.0
   },
   {
    "t": "AXON",
    "n": "Axon Enterprise",
    "sector": "산업재",
    "ind": "Aerospace & Defense",
-   "cap": 25010000000.0
+   "cap": 25000000000.0
+  },
+  {
+   "t": "VRSN",
+   "n": "Verisign",
+   "sector": "기술",
+   "ind": "Internet Services & Infrastructure",
+   "cap": 27490000000.0
   },
   {
    "t": "STE",
    "n": "Steris",
    "sector": "헬스케어",
    "ind": "Health Care Equipment",
-   "cap": 24610000000.0
-  },
-  {
-   "t": "RF",
-   "n": "Regions Financial Corporation",
-   "sector": "금융",
-   "ind": "Regional Banks",
-   "cap": 24200000000.0
+   "cap": 24740000000.0
   },
   {
    "t": "FE",
    "n": "FirstEnergy",
    "sector": "유틸리티",
    "ind": "Electric Utilities",
-   "cap": 26920000000.0
+   "cap": 27280000000.0
   },
   {
-   "t": "DOW",
-   "n": "Dow Inc.",
-   "sector": "소재",
-   "ind": "Commodity Chemicals",
-   "cap": 24090000000.0
-  },
-  {
-   "t": "OMC",
-   "n": "Omnicom Group",
-   "sector": "커뮤니케이션",
-   "ind": "Advertising",
-   "cap": 23690000000.0
-  },
-  {
-   "t": "PHM",
-   "n": "PulteGroup",
+   "t": "TPR",
+   "n": "Tapestry, Inc.",
    "sector": "임의소비재",
-   "ind": "Homebuilding",
-   "cap": 23360000000.0
+   "ind": "Apparel, Accessories & Luxury Goods",
+   "cap": 24310000000.0
   },
   {
-   "t": "VTRS",
-   "n": "Viatris",
-   "sector": "헬스케어",
-   "ind": "Pharmaceuticals",
-   "cap": 23700000000.0
-  },
-  {
-   "t": "HUBB",
-   "n": "Hubbell Incorporated",
-   "sector": "산업재",
-   "ind": "Industrial Machinery & Supplies & Components",
-   "cap": 23140000000.0
-  },
-  {
-   "t": "SYF",
-   "n": "Synchrony Financial",
+   "t": "COIN",
+   "n": "Coinbase",
    "sector": "금융",
-   "ind": "Consumer Finance",
-   "cap": 22320000000.0
-  },
-  {
-   "t": "TROW",
-   "n": "T. Rowe Price",
-   "sector": "금융",
-   "ind": "Asset Management & Custody Banks",
-   "cap": 23090000000.0
+   "ind": "Financial Exchanges & Data",
+   "cap": 28820000000.0
   },
   {
    "t": "EIX",
    "n": "Edison International",
    "sector": "유틸리티",
    "ind": "Electric Utilities",
-   "cap": 23080000000.0
+   "cap": 24250000000.0
   },
   {
-   "t": "SW",
-   "n": "Smurfit Westrock",
-   "sector": "소재",
-   "ind": "Paper & Plastic Packaging Products & Materials",
-   "cap": 22620000000.0
+   "t": "Q",
+   "n": "Qnity Electronics",
+   "sector": "기술",
+   "ind": "Semiconductor Materials & Equipment",
+   "cap": 23750000000.0
   },
   {
-   "t": "PKG",
-   "n": "Packaging Corporation of America",
-   "sector": "소재",
-   "ind": "Paper & Plastic Packaging Products & Materials",
-   "cap": 22190000000.0
+   "t": "OMC",
+   "n": "Omnicom Group",
+   "sector": "커뮤니케이션",
+   "ind": "Advertising",
+   "cap": 23350000000.0
+  },
+  {
+   "t": "RF",
+   "n": "Regions Financial Corporation",
+   "sector": "금융",
+   "ind": "Regional Banks",
+   "cap": 23170000000.0
+  },
+  {
+   "t": "PHM",
+   "n": "PulteGroup",
+   "sector": "임의소비재",
+   "ind": "Homebuilding",
+   "cap": 22550000000.0
+  },
+  {
+   "t": "VTRS",
+   "n": "Viatris",
+   "sector": "헬스케어",
+   "ind": "Pharmaceuticals",
+   "cap": 22790000000.0
+  },
+  {
+   "t": "TROW",
+   "n": "T. Rowe Price",
+   "sector": "금융",
+   "ind": "Asset Management & Custody Banks",
+   "cap": 22380000000.0
   },
   {
    "t": "LUV",
    "n": "Southwest Airlines",
    "sector": "산업재",
    "ind": "Passenger Airlines",
-   "cap": 22140000000.0
+   "cap": 22330000000.0
   },
   {
-   "t": "NI",
-   "n": "NiSource",
-   "sector": "유틸리티",
-   "ind": "Multi-Utilities",
-   "cap": 21970000000.0
-  },
-  {
-   "t": "PFG",
-   "n": "Principal Financial Group",
+   "t": "SYF",
+   "n": "Synchrony Financial",
    "sector": "금융",
-   "ind": "Life & Health Insurance",
-   "cap": 23990000000.0
+   "ind": "Consumer Finance",
+   "cap": 21470000000.0
   },
   {
    "t": "XYL",
    "n": "Xylem Inc.",
    "sector": "산업재",
    "ind": "Industrial Machinery & Supplies & Components",
-   "cap": 21560000000.0
+   "cap": 21840000000.0
   },
   {
-   "t": "EFX",
-   "n": "Equifax",
+   "t": "HUBB",
+   "n": "Hubbell Incorporated",
    "sector": "산업재",
-   "ind": "Research & Consulting Services",
-   "cap": 21860000000.0
-  },
-  {
-   "t": "BR",
-   "n": "Broadridge Financial Solutions",
-   "sector": "산업재",
-   "ind": "Data Processing & Outsourced Services",
-   "cap": 21660000000.0
+   "ind": "Industrial Machinery & Supplies & Components",
+   "cap": 22120000000.0
   },
   {
    "t": "CMS",
    "n": "CMS Energy",
    "sector": "유틸리티",
    "ind": "Multi-Utilities",
-   "cap": 21710000000.0
+   "cap": 21810000000.0
   },
   {
-   "t": "STZ",
-   "n": "Constellation Brands",
-   "sector": "필수소비재",
-   "ind": "Distillers & Vintners",
-   "cap": 24470000000.0
-  },
-  {
-   "t": "FOXA",
-   "n": "Fox Corporation (Class A)",
-   "sector": "커뮤니케이션",
-   "ind": "Broadcasting",
-   "cap": 37210000000.0
-  },
-  {
-   "t": "CDW",
-   "n": "CDW Corporation",
-   "sector": "기술",
-   "ind": "Technology Distributors",
-   "cap": 21570000000.0
+   "t": "DOW",
+   "n": "Dow Inc.",
+   "sector": "소재",
+   "ind": "Commodity Chemicals",
+   "cap": 21980000000.0
   },
   {
    "t": "KHC",
    "n": "Kraft Heinz",
    "sector": "필수소비재",
    "ind": "Packaged Foods & Meats",
-   "cap": 28980000000.0
+   "cap": 29500000000.0
+  },
+  {
+   "t": "NI",
+   "n": "NiSource",
+   "sector": "유틸리티",
+   "ind": "Multi-Utilities",
+   "cap": 21370000000.0
+  },
+  {
+   "t": "STZ",
+   "n": "Constellation Brands",
+   "sector": "필수소비재",
+   "ind": "Distillers & Vintners",
+   "cap": 23930000000.0
+  },
+  {
+   "t": "PKG",
+   "n": "Packaging Corporation of America",
+   "sector": "소재",
+   "ind": "Paper & Plastic Packaging Products & Materials",
+   "cap": 20990000000.0
   },
   {
    "t": "PTC",
    "n": "PTC Inc.",
    "sector": "기술",
    "ind": "Application Software",
-   "cap": 21290000000.0
+   "cap": 21230000000.0
   },
   {
-   "t": "DD",
-   "n": "DuPont",
-   "sector": "산업재",
-   "ind": "Industrial Conglomerates",
-   "cap": 20500000000.0
+   "t": "FOXA",
+   "n": "Fox Corporation (Class A)",
+   "sector": "커뮤니케이션",
+   "ind": "Broadcasting",
+   "cap": 36080000000.0
   },
   {
-   "t": "INCY",
-   "n": "Incyte",
-   "sector": "헬스케어",
-   "ind": "Biotechnology",
-   "cap": 24810000000.0
-  },
-  {
-   "t": "NRG",
-   "n": "NRG Energy",
-   "sector": "유틸리티",
-   "ind": "Independent Power Producers & Energy Traders",
-   "cap": 20590000000.0
-  },
-  {
-   "t": "IFF",
-   "n": "International Flavors & Fragrances",
-   "sector": "소재",
-   "ind": "Specialty Chemicals",
-   "cap": 20130000000.0
-  },
-  {
-   "t": "SWKS",
-   "n": "Skyworks Solutions",
-   "sector": "기술",
-   "ind": "Semiconductors",
-   "cap": 21140000000.0
-  },
-  {
-   "t": "BBY",
-   "n": "Best Buy",
-   "sector": "임의소비재",
-   "ind": "Computer & Electronics Retail",
-   "cap": 21690000000.0
-  },
-  {
-   "t": "EVRG",
-   "n": "Evergy",
-   "sector": "유틸리티",
-   "ind": "Electric Utilities",
-   "cap": 20700000000.0
-  },
-  {
-   "t": "FTV",
-   "n": "Fortive",
-   "sector": "산업재",
-   "ind": "Industrial Machinery & Supplies & Components",
-   "cap": 20200000000.0
+   "t": "PFG",
+   "n": "Principal Financial Group",
+   "sector": "금융",
+   "ind": "Life & Health Insurance",
+   "cap": 22750000000.0
   },
   {
    "t": "BRO",
    "n": "Brown & Brown",
    "sector": "금융",
    "ind": "Insurance Brokers",
-   "cap": 23400000000.0
+   "cap": 24000000000.0
   },
   {
-   "t": "EXE",
-   "n": "Expand Energy",
-   "sector": "에너지",
-   "ind": "Oil & Gas Exploration & Production",
-   "cap": 20280000000.0
+   "t": "CDW",
+   "n": "CDW Corporation",
+   "sector": "기술",
+   "ind": "Technology Distributors",
+   "cap": 20920000000.0
   },
   {
-   "t": "AMCR",
-   "n": "Amcor",
+   "t": "BR",
+   "n": "Broadridge Financial Solutions",
+   "sector": "산업재",
+   "ind": "Data Processing & Outsourced Services",
+   "cap": 20580000000.0
+  },
+  {
+   "t": "EFX",
+   "n": "Equifax",
+   "sector": "산업재",
+   "ind": "Research & Consulting Services",
+   "cap": 20650000000.0
+  },
+  {
+   "t": "DD",
+   "n": "DuPont",
+   "sector": "산업재",
+   "ind": "Industrial Conglomerates",
+   "cap": 19840000000.0
+  },
+  {
+   "t": "SW",
+   "n": "Smurfit Westrock",
    "sector": "소재",
    "ind": "Paper & Plastic Packaging Products & Materials",
-   "cap": 20200000000.0
+   "cap": 20240000000.0
   },
   {
-   "t": "ZBH",
-   "n": "Zimmer Biomet",
-   "sector": "헬스케어",
-   "ind": "Health Care Equipment",
-   "cap": 19790000000.0
-  },
-  {
-   "t": "SBAC",
-   "n": "SBA Communications",
-   "sector": "부동산",
-   "ind": "Telecom Tower REITs",
-   "cap": 19480000000.0
-  },
-  {
-   "t": "GPN",
-   "n": "Global Payments",
-   "sector": "금융",
-   "ind": "Transaction & Payment Processing Services",
-   "cap": 23340000000.0
-  },
-  {
-   "t": "KEY",
-   "n": "KeyCorp",
-   "sector": "금융",
-   "ind": "Regional Banks",
-   "cap": 22520000000.0
-  },
-  {
-   "t": "SNA",
-   "n": "Snap-on",
-   "sector": "산업재",
-   "ind": "Industrial Machinery & Supplies & Components",
-   "cap": 18980000000.0
+   "t": "IFF",
+   "n": "International Flavors & Fragrances",
+   "sector": "소재",
+   "ind": "Specialty Chemicals",
+   "cap": 19680000000.0
   },
   {
    "t": "TSCO",
    "n": "Tractor Supply",
    "sector": "임의소비재",
    "ind": "Other Specialty Retail",
-   "cap": 19000000000.0
+   "cap": 20090000000.0
   },
   {
-   "t": "CF",
-   "n": "CF Industries",
-   "sector": "소재",
-   "ind": "Fertilizers & Agricultural Chemicals",
-   "cap": 18270000000.0
-  },
-  {
-   "t": "LNT",
-   "n": "Alliant Energy",
+   "t": "EVRG",
+   "n": "Evergy",
    "sector": "유틸리티",
    "ind": "Electric Utilities",
-   "cap": 18950000000.0
+   "cap": 20280000000.0
   },
   {
-   "t": "FSLR",
-   "n": "First Solar",
-   "sector": "기술",
-   "ind": "Semiconductors",
-   "cap": 18520000000.0
+   "t": "NRG",
+   "n": "NRG Energy",
+   "sector": "유틸리티",
+   "ind": "Independent Power Producers & Energy Traders",
+   "cap": 19710000000.0
   },
   {
-   "t": "J",
-   "n": "Jacobs Solutions",
+   "t": "INCY",
+   "n": "Incyte",
+   "sector": "헬스케어",
+   "ind": "Biotechnology",
+   "cap": 23620000000.0
+  },
+  {
+   "t": "BBY",
+   "n": "Best Buy",
+   "sector": "임의소비재",
+   "ind": "Computer & Electronics Retail",
+   "cap": 20820000000.0
+  },
+  {
+   "t": "FTV",
+   "n": "Fortive",
    "sector": "산업재",
-   "ind": "Construction & Engineering",
-   "cap": 18570000000.0
+   "ind": "Industrial Machinery & Supplies & Components",
+   "cap": 19470000000.0
   },
   {
-   "t": "L",
-   "n": "Loews Corporation",
-   "sector": "금융",
-   "ind": "Multi-line Insurance",
-   "cap": 22610000000.0
-  },
-  {
-   "t": "IP",
-   "n": "International Paper",
+   "t": "AMCR",
+   "n": "Amcor",
    "sector": "소재",
    "ind": "Paper & Plastic Packaging Products & Materials",
-   "cap": 17970000000.0
+   "cap": 19610000000.0
   },
   {
-   "t": "FFIV",
-   "n": "F5, Inc.",
-   "sector": "기술",
-   "ind": "Communications Equipment",
-   "cap": 18050000000.0
+   "t": "ZBH",
+   "n": "Zimmer Biomet",
+   "sector": "헬스케어",
+   "ind": "Health Care Equipment",
+   "cap": 19200000000.0
+  },
+  {
+   "t": "EXE",
+   "n": "Expand Energy",
+   "sector": "에너지",
+   "ind": "Oil & Gas Exploration & Production",
+   "cap": 19040000000.0
+  },
+  {
+   "t": "GPN",
+   "n": "Global Payments",
+   "sector": "금융",
+   "ind": "Transaction & Payment Processing Services",
+   "cap": 22100000000.0
+  },
+  {
+   "t": "SNA",
+   "n": "Snap-on",
+   "sector": "산업재",
+   "ind": "Industrial Machinery & Supplies & Components",
+   "cap": 18430000000.0
   },
   {
    "t": "GIS",
    "n": "General Mills",
    "sector": "필수소비재",
    "ind": "Packaged Foods & Meats",
-   "cap": 17920000000.0
+   "cap": 18440000000.0
   },
   {
-   "t": "IEX",
-   "n": "IDEX Corporation",
-   "sector": "산업재",
-   "ind": "Industrial Machinery & Supplies & Components",
-   "cap": 17480000000.0
+   "t": "LNT",
+   "n": "Alliant Energy",
+   "sector": "유틸리티",
+   "ind": "Electric Utilities",
+   "cap": 18520000000.0
   },
   {
-   "t": "ESS",
-   "n": "Essex Property Trust",
-   "sector": "부동산",
-   "ind": "Multi-Family Residential REITs",
-   "cap": 18080000000.0
-  },
-  {
-   "t": "RVTY",
-   "n": "Revvity",
-   "sector": "헬스케어",
-   "ind": "Health Care Equipment",
-   "cap": 17530000000.0
-  },
-  {
-   "t": "HST",
-   "n": "Host Hotels & Resorts",
-   "sector": "부동산",
-   "ind": "Hotel & Resort REITs",
-   "cap": 17730000000.0
-  },
-  {
-   "t": "WRB",
-   "n": "W. R. Berkley Corporation",
+   "t": "KEY",
+   "n": "KeyCorp",
    "sector": "금융",
-   "ind": "Property & Casualty Insurance",
-   "cap": 30000000000.0
+   "ind": "Regional Banks",
+   "cap": 21150000000.0
   },
   {
-   "t": "BALL",
-   "n": "Ball Corporation",
-   "sector": "소재",
-   "ind": "Metal, Glass & Plastic Containers",
-   "cap": 16899999999.999998
+   "t": "L",
+   "n": "Loews Corporation",
+   "sector": "금융",
+   "ind": "Multi-line Insurance",
+   "cap": 22180000000.0
   },
   {
-   "t": "NDSN",
-   "n": "Nordson Corporation",
-   "sector": "산업재",
-   "ind": "Industrial Machinery & Supplies & Components",
-   "cap": 18190000000.0
-  },
-  {
-   "t": "KIM",
-   "n": "Kimco Realty",
+   "t": "SBAC",
+   "n": "SBA Communications",
    "sector": "부동산",
-   "ind": "Retail REITs",
-   "cap": 16960000000.0
-  },
-  {
-   "t": "HAS",
-   "n": "Hasbro",
-   "sector": "임의소비재",
-   "ind": "Leisure Products",
-   "cap": 16989999999.999998
-  },
-  {
-   "t": "JBHT",
-   "n": "J.B. Hunt",
-   "sector": "산업재",
-   "ind": "Cargo Ground Transportation",
-   "cap": 21220000000.0
-  },
-  {
-   "t": "GPC",
-   "n": "Genuine Parts Company",
-   "sector": "임의소비재",
-   "ind": "Distributors",
-   "cap": 16940000000.000002
-  },
-  {
-   "t": "SWK",
-   "n": "Stanley Black & Decker",
-   "sector": "산업재",
-   "ind": "Industrial Machinery & Supplies & Components",
-   "cap": 16809999999.999998
+   "ind": "Telecom Tower REITs",
+   "cap": 17720000000.0
   },
   {
    "t": "TSN",
    "n": "Tyson Foods",
    "sector": "필수소비재",
    "ind": "Packaged Foods & Meats",
-   "cap": 20790000000.0
+   "cap": 22000000000.0
   },
   {
-   "t": "LYB",
-   "n": "LyondellBasell",
-   "sector": "소재",
-   "ind": "Specialty Chemicals",
-   "cap": 20650000000.0
-  },
-  {
-   "t": "APA",
-   "n": "APA Corporation",
-   "sector": "에너지",
-   "ind": "Oil & Gas Exploration & Production",
-   "cap": 16000000000.0
-  },
-  {
-   "t": "LDOS",
-   "n": "Leidos",
-   "sector": "산업재",
-   "ind": "Diversified Support Services",
-   "cap": 15990000000.0
-  },
-  {
-   "t": "MAS",
-   "n": "Masco",
-   "sector": "산업재",
-   "ind": "Building Products",
-   "cap": 16290000000.0
-  },
-  {
-   "t": "TPL",
-   "n": "Texas Pacific Land Corporation",
-   "sector": "에너지",
-   "ind": "Oil & Gas Exploration & Production",
-   "cap": 19390000000.0
-  },
-  {
-   "t": "ALLE",
-   "n": "Allegion",
-   "sector": "산업재",
-   "ind": "Building Products",
-   "cap": 16030000000.000002
-  },
-  {
-   "t": "CRL",
-   "n": "Charles River Laboratories",
-   "sector": "헬스케어",
-   "ind": "Life Sciences Tools & Services",
-   "cap": 16329999999.999998
-  },
-  {
-   "t": "TYL",
-   "n": "Tyler Technologies",
+   "t": "FFIV",
+   "n": "F5, Inc.",
    "sector": "기술",
-   "ind": "Application Software",
-   "cap": 16840000000.0
+   "ind": "Communications Equipment",
+   "cap": 18110000000.0
   },
   {
-   "t": "LEN",
-   "n": "Lennar",
-   "sector": "임의소비재",
-   "ind": "Homebuilding",
-   "cap": 19880000000.0
+   "t": "SWKS",
+   "n": "Skyworks Solutions",
+   "sector": "기술",
+   "ind": "Semiconductors",
+   "cap": 18470000000.0
   },
   {
-   "t": "AIZ",
-   "n": "Assurant",
+   "t": "J",
+   "n": "Jacobs Solutions",
+   "sector": "산업재",
+   "ind": "Construction & Engineering",
+   "cap": 18090000000.0
+  },
+  {
+   "t": "CF",
+   "n": "CF Industries",
+   "sector": "소재",
+   "ind": "Fertilizers & Agricultural Chemicals",
+   "cap": 16930000000.0
+  },
+  {
+   "t": "WRB",
+   "n": "W. R. Berkley Corporation",
    "sector": "금융",
-   "ind": "Multi-line Insurance",
-   "cap": 15750000000.0
+   "ind": "Property & Casualty Insurance",
+   "cap": 30100000000.0
+  },
+  {
+   "t": "ESS",
+   "n": "Essex Property Trust",
+   "sector": "부동산",
+   "ind": "Multi-Family Residential REITs",
+   "cap": 17920000000.0
+  },
+  {
+   "t": "KIM",
+   "n": "Kimco Realty",
+   "sector": "부동산",
+   "ind": "Retail REITs",
+   "cap": 16879999999.999998
+  },
+  {
+   "t": "BALL",
+   "n": "Ball Corporation",
+   "sector": "소재",
+   "ind": "Metal, Glass & Plastic Containers",
+   "cap": 16530000000.000002
+  },
+  {
+   "t": "RVTY",
+   "n": "Revvity",
+   "sector": "헬스케어",
+   "ind": "Health Care Equipment",
+   "cap": 16920000000.000002
+  },
+  {
+   "t": "IEX",
+   "n": "IDEX Corporation",
+   "sector": "산업재",
+   "ind": "Industrial Machinery & Supplies & Components",
+   "cap": 16670000000.000002
+  },
+  {
+   "t": "JBHT",
+   "n": "J.B. Hunt",
+   "sector": "산업재",
+   "ind": "Cargo Ground Transportation",
+   "cap": 21010000000.0
+  },
+  {
+   "t": "NDSN",
+   "n": "Nordson Corporation",
+   "sector": "산업재",
+   "ind": "Industrial Machinery & Supplies & Components",
+   "cap": 17650000000.0
+  },
+  {
+   "t": "GPC",
+   "n": "Genuine Parts Company",
+   "sector": "임의소비재",
+   "ind": "Distributors",
+   "cap": 16760000000.000002
+  },
+  {
+   "t": "HST",
+   "n": "Host Hotels & Resorts",
+   "sector": "부동산",
+   "ind": "Hotel & Resort REITs",
+   "cap": 17010000000.000002
+  },
+  {
+   "t": "IP",
+   "n": "International Paper",
+   "sector": "소재",
+   "ind": "Paper & Plastic Packaging Products & Materials",
+   "cap": 16480000000.0
+  },
+  {
+   "t": "FSLR",
+   "n": "First Solar",
+   "sector": "기술",
+   "ind": "Semiconductors",
+   "cap": 16329999999.999998
   },
   {
    "t": "GEN",
    "n": "Gen Digital",
    "sector": "기술",
    "ind": "Systems Software",
-   "cap": 17610000000.0
+   "cap": 17890000000.0
+  },
+  {
+   "t": "TPL",
+   "n": "Texas Pacific Land Corporation",
+   "sector": "에너지",
+   "ind": "Oil & Gas Exploration & Production",
+   "cap": 19160000000.0
+  },
+  {
+   "t": "HAS",
+   "n": "Hasbro",
+   "sector": "임의소비재",
+   "ind": "Leisure Products",
+   "cap": 16040000000.0
+  },
+  {
+   "t": "MAS",
+   "n": "Masco",
+   "sector": "산업재",
+   "ind": "Building Products",
+   "cap": 15960000000.0
+  },
+  {
+   "t": "SWK",
+   "n": "Stanley Black & Decker",
+   "sector": "산업재",
+   "ind": "Industrial Machinery & Supplies & Components",
+   "cap": 16010000000.000002
   },
   {
    "t": "CHRW",
    "n": "C.H. Robinson",
    "sector": "산업재",
    "ind": "Air Freight & Logistics",
-   "cap": 15580000000.0
+   "cap": 15990000000.0
   },
   {
-   "t": "BG",
-   "n": "Bunge Global",
-   "sector": "필수소비재",
-   "ind": "Agricultural Products & Services",
-   "cap": 19210000000.0
+   "t": "ALLE",
+   "n": "Allegion",
+   "sector": "산업재",
+   "ind": "Building Products",
+   "cap": 15680000000.0
+  },
+  {
+   "t": "LDOS",
+   "n": "Leidos",
+   "sector": "산업재",
+   "ind": "Diversified Support Services",
+   "cap": 15220000000.0
+  },
+  {
+   "t": "AIZ",
+   "n": "Assurant",
+   "sector": "금융",
+   "ind": "Multi-line Insurance",
+   "cap": 15510000000.0
+  },
+  {
+   "t": "APA",
+   "n": "APA Corporation",
+   "sector": "에너지",
+   "ind": "Oil & Gas Exploration & Production",
+   "cap": 14980000000.0
+  },
+  {
+   "t": "CRL",
+   "n": "Charles River Laboratories",
+   "sector": "헬스케어",
+   "ind": "Life Sciences Tools & Services",
+   "cap": 15710000000.0
+  },
+  {
+   "t": "TYL",
+   "n": "Tyler Technologies",
+   "sector": "기술",
+   "ind": "Application Software",
+   "cap": 16070000000.0
+  },
+  {
+   "t": "LEN",
+   "n": "Lennar",
+   "sector": "임의소비재",
+   "ind": "Homebuilding",
+   "cap": 19020000000.0
   },
   {
    "t": "FDXF",
    "n": "FedEx Freight",
    "sector": "산업재",
    "ind": "Cargo Ground Transportation",
-   "cap": 19590000000.0
+   "cap": 18930000000.0
   },
   {
-   "t": "FICO",
-   "n": "Fair Isaac",
-   "sector": "기술",
-   "ind": "Application Software",
-   "cap": 15340000000.0
-  },
-  {
-   "t": "SMCI",
-   "n": "Supermicro",
-   "sector": "기술",
-   "ind": "Technology Hardware, Storage & Peripherals",
-   "cap": 17790000000.0
-  },
-  {
-   "t": "ZBRA",
-   "n": "Zebra Technologies",
-   "sector": "기술",
-   "ind": "Electronic Equipment & Instruments",
-   "cap": 14970000000.0
+   "t": "LYB",
+   "n": "LyondellBasell",
+   "sector": "소재",
+   "ind": "Specialty Chemicals",
+   "cap": 18810000000.0
   },
   {
    "t": "EG",
    "n": "Everest Group",
    "sector": "금융",
    "ind": "Reinsurance",
-   "cap": 15640000000.0
+   "cap": 15630000000.0
   },
   {
    "t": "CHTR",
    "n": "Charter Communications",
    "sector": "커뮤니케이션",
    "ind": "Cable & Satellite",
-   "cap": 21700000000.0
+   "cap": 21780000000.0
   },
   {
-   "t": "NVR",
-   "n": "NVR, Inc.",
-   "sector": "임의소비재",
-   "ind": "Homebuilding",
-   "cap": 15380000000.0
+   "t": "ZBRA",
+   "n": "Zebra Technologies",
+   "sector": "기술",
+   "ind": "Electronic Equipment & Instruments",
+   "cap": 14720000000.0
   },
   {
-   "t": "FIS",
-   "n": "Fidelity National Information Services",
-   "sector": "금융",
-   "ind": "Transaction & Payment Processing Services",
-   "cap": 14620000000.0
+   "t": "FICO",
+   "n": "Fair Isaac",
+   "sector": "기술",
+   "ind": "Application Software",
+   "cap": 14490000000.0
+  },
+  {
+   "t": "BG",
+   "n": "Bunge Global",
+   "sector": "필수소비재",
+   "ind": "Agricultural Products & Services",
+   "cap": 17630000000.0
   },
   {
    "t": "RL",
    "n": "Ralph Lauren Corporation",
    "sector": "임의소비재",
    "ind": "Apparel, Accessories & Luxury Goods",
-   "cap": 23100000000.0
+   "cap": 22280000000.0
   },
   {
    "t": "TXT",
    "n": "Textron",
    "sector": "산업재",
    "ind": "Aerospace & Defense",
-   "cap": 14280000000.0
-  },
-  {
-   "t": "WY",
-   "n": "Weyerhaeuser",
-   "sector": "부동산",
-   "ind": "Timber REITs",
-   "cap": 14740000000.0
-  },
-  {
-   "t": "RDDT",
-   "n": "Reddit",
-   "sector": "커뮤니케이션",
-   "ind": "Interactive Media & Services",
-   "cap": 19220000000.0
+   "cap": 13740000000.0
   },
   {
    "t": "AVY",
    "n": "Avery Dennison",
    "sector": "소재",
    "ind": "Paper & Plastic Packaging Products & Materials",
-   "cap": 14120000000.0
+   "cap": 13830000000.0
   },
   {
    "t": "INVH",
    "n": "Invitation Homes",
    "sector": "부동산",
    "ind": "Single-Family Residential REITs",
-   "cap": 15410000000.0
+   "cap": 15090000000.0
   },
   {
-   "t": "GDDY",
-   "n": "GoDaddy",
-   "sector": "기술",
-   "ind": "Internet Services & Infrastructure",
-   "cap": 13620000000.0
+   "t": "NVR",
+   "n": "NVR, Inc.",
+   "sector": "임의소비재",
+   "ind": "Homebuilding",
+   "cap": 14540000000.0
   },
   {
    "t": "SJM",
    "n": "J.M. Smucker Company (The)",
    "sector": "필수소비재",
    "ind": "Packaged Foods & Meats",
-   "cap": 14070000000.0
+   "cap": 14020000000.0
+  },
+  {
+   "t": "WY",
+   "n": "Weyerhaeuser",
+   "sector": "부동산",
+   "ind": "Timber REITs",
+   "cap": 14080000000.0
+  },
+  {
+   "t": "SMCI",
+   "n": "Supermicro",
+   "sector": "기술",
+   "ind": "Technology Hardware, Storage & Peripherals",
+   "cap": 15720000000.0
+  },
+  {
+   "t": "FIS",
+   "n": "Fidelity National Information Services",
+   "sector": "금융",
+   "ind": "Transaction & Payment Processing Services",
+   "cap": 13370000000.0
   },
   {
    "t": "DOC",
    "n": "Healthpeak Properties",
    "sector": "부동산",
    "ind": "Health Care REITs",
-   "cap": 14140000000.0
-  },
-  {
-   "t": "ECHO",
-   "n": "EchoStar",
-   "sector": "커뮤니케이션",
-   "ind": "Wireless Telecommunication Services",
-   "cap": 28550000000.0
-  },
-  {
-   "t": "MAA",
-   "n": "Mid-America Apartment Communities",
-   "sector": "부동산",
-   "ind": "Multi-Family Residential REITs",
-   "cap": 13860000000.0
+   "cap": 13480000000.0
   },
   {
    "t": "BAX",
    "n": "Baxter International",
    "sector": "헬스케어",
    "ind": "Health Care Equipment",
-   "cap": 13320000000.0
+   "cap": 13140000000.0
   },
   {
-   "t": "CLX",
-   "n": "Clorox",
-   "sector": "필수소비재",
-   "ind": "Household Products",
-   "cap": 13110000000.0
+   "t": "MAA",
+   "n": "Mid-America Apartment Communities",
+   "sector": "부동산",
+   "ind": "Multi-Family Residential REITs",
+   "cap": 13480000000.0
   },
   {
-   "t": "PNW",
-   "n": "Pinnacle West Capital",
-   "sector": "유틸리티",
-   "ind": "Multi-Utilities",
-   "cap": 12970000000.0
-  },
-  {
-   "t": "TRMB",
-   "n": "Trimble Inc.",
-   "sector": "기술",
-   "ind": "Application Software",
-   "cap": 12800000000.0
-  },
-  {
-   "t": "SOLV",
-   "n": "Solventum",
-   "sector": "헬스케어",
-   "ind": "Health Care Technology",
-   "cap": 15070000000.0
-  },
-  {
-   "t": "IVZ",
-   "n": "Invesco",
-   "sector": "금융",
-   "ind": "Asset Management & Custody Banks",
-   "cap": 12510000000.0
+   "t": "RDDT",
+   "n": "Reddit",
+   "sector": "커뮤니케이션",
+   "ind": "Interactive Media & Services",
+   "cap": 17360000000.0
   },
   {
    "t": "AKAM",
    "n": "Akamai Technologies",
    "sector": "기술",
    "ind": "Internet Services & Infrastructure",
-   "cap": 12480000000.0
+   "cap": 13230000000.0
   },
   {
-   "t": "JKHY",
-   "n": "Jack Henry & Associates",
+   "t": "GDDY",
+   "n": "GoDaddy",
+   "sector": "기술",
+   "ind": "Internet Services & Infrastructure",
+   "cap": 12390000000.0
+  },
+  {
+   "t": "CLX",
+   "n": "Clorox",
+   "sector": "필수소비재",
+   "ind": "Household Products",
+   "cap": 12710000000.0
+  },
+  {
+   "t": "ECHO",
+   "n": "EchoStar",
+   "sector": "커뮤니케이션",
+   "ind": "Wireless Telecommunication Services",
+   "cap": 26860000000.0
+  },
+  {
+   "t": "PNW",
+   "n": "Pinnacle West Capital",
+   "sector": "유틸리티",
+   "ind": "Multi-Utilities",
+   "cap": 12360000000.0
+  },
+  {
+   "t": "SOLV",
+   "n": "Solventum",
+   "sector": "헬스케어",
+   "ind": "Health Care Technology",
+   "cap": 14560000000.0
+  },
+  {
+   "t": "IVZ",
+   "n": "Invesco",
    "sector": "금융",
-   "ind": "Transaction & Payment Processing Services",
-   "cap": 12250000000.0
+   "ind": "Asset Management & Custody Banks",
+   "cap": 12210000000.0
   },
   {
    "t": "REG",
    "n": "Regency Centers",
    "sector": "부동산",
    "ind": "Retail REITs",
-   "cap": 14130000000.0
+   "cap": 13810000000.0
   },
   {
-   "t": "GL",
-   "n": "Globe Life",
-   "sector": "금융",
-   "ind": "Life & Health Insurance",
-   "cap": 12080000000.0
-  },
-  {
-   "t": "CSGP",
-   "n": "CoStar Group",
-   "sector": "부동산",
-   "ind": "Real Estate Services",
-   "cap": 12110000000.0
-  },
-  {
-   "t": "COO",
-   "n": "Cooper Companies (The)",
-   "sector": "헬스케어",
-   "ind": "Health Care Supplies",
-   "cap": 11830000000.0
-  },
-  {
-   "t": "HII",
-   "n": "Huntington Ingalls Industries",
-   "sector": "산업재",
-   "ind": "Aerospace & Defense",
-   "cap": 12150000000.0
-  },
-  {
-   "t": "IT",
-   "n": "Gartner",
+   "t": "TRMB",
+   "n": "Trimble Inc.",
    "sector": "기술",
-   "ind": "IT Consulting & Other Services",
-   "cap": 12040000000.0
+   "ind": "Application Software",
+   "cap": 11920000000.0
   },
   {
-   "t": "MKC",
-   "n": "McCormick & Company",
-   "sector": "필수소비재",
-   "ind": "Packaged Foods & Meats",
-   "cap": 12490000000.0
-  },
-  {
-   "t": "FDS",
-   "n": "FactSet",
+   "t": "JKHY",
+   "n": "Jack Henry & Associates",
    "sector": "금융",
-   "ind": "Financial Exchanges & Data",
-   "cap": 11690000000.0
-  },
-  {
-   "t": "TKO",
-   "n": "TKO Group Holdings",
-   "sector": "커뮤니케이션",
-   "ind": "Movies & Entertainment",
-   "cap": 36600000000.0
-  },
-  {
-   "t": "TECH",
-   "n": "Bio-Techne",
-   "sector": "헬스케어",
-   "ind": "Life Sciences Tools & Services",
-   "cap": 11440000000.0
-  },
-  {
-   "t": "DECK",
-   "n": "Deckers Brands",
-   "sector": "임의소비재",
-   "ind": "Footwear",
-   "cap": 11280000000.0
+   "ind": "Transaction & Payment Processing Services",
+   "cap": 11850000000.0
   },
   {
    "t": "GNRC",
    "n": "Generac",
    "sector": "산업재",
    "ind": "Heavy Electrical Equipment",
-   "cap": 11380000000.0
+   "cap": 12100000000.0
   },
   {
-   "t": "ALB",
-   "n": "Albemarle Corporation",
-   "sector": "소재",
-   "ind": "Specialty Chemicals",
-   "cap": 11190000000.0
+   "t": "GL",
+   "n": "Globe Life",
+   "sector": "금융",
+   "ind": "Life & Health Insurance",
+   "cap": 11590000000.0
   },
   {
-   "t": "ROL",
-   "n": "Rollins, Inc.",
-   "sector": "산업재",
-   "ind": "Environmental & Facilities Services",
-   "cap": 18120000000.0
-  },
-  {
-   "t": "ALGN",
-   "n": "Align Technology",
+   "t": "COO",
+   "n": "Cooper Companies (The)",
    "sector": "헬스케어",
    "ind": "Health Care Supplies",
-   "cap": 11770000000.0
+   "cap": 11470000000.0
   },
   {
-   "t": "LII",
-   "n": "Lennox International",
-   "sector": "산업재",
-   "ind": "Building Products",
-   "cap": 11910000000.0
+   "t": "CSGP",
+   "n": "CoStar Group",
+   "sector": "부동산",
+   "ind": "Real Estate Services",
+   "cap": 11550000000.0
   },
   {
-   "t": "PNR",
-   "n": "Pentair",
-   "sector": "산업재",
-   "ind": "Industrial Machinery & Supplies & Components",
-   "cap": 10880000000.0
+   "t": "MKC",
+   "n": "McCormick & Company",
+   "sector": "필수소비재",
+   "ind": "Packaged Foods & Meats",
+   "cap": 12330000000.0
   },
   {
    "t": "DPZ",
    "n": "Domino's",
    "sector": "임의소비재",
    "ind": "Restaurants",
-   "cap": 10960000000.0
+   "cap": 11590000000.0
+  },
+  {
+   "t": "TECH",
+   "n": "Bio-Techne",
+   "sector": "헬스케어",
+   "ind": "Life Sciences Tools & Services",
+   "cap": 11420000000.0
+  },
+  {
+   "t": "HII",
+   "n": "Huntington Ingalls Industries",
+   "sector": "산업재",
+   "ind": "Aerospace & Defense",
+   "cap": 11290000000.0
+  },
+  {
+   "t": "ROL",
+   "n": "Rollins, Inc.",
+   "sector": "산업재",
+   "ind": "Environmental & Facilities Services",
+   "cap": 18150000000.0
+  },
+  {
+   "t": "PNR",
+   "n": "Pentair",
+   "sector": "산업재",
+   "ind": "Industrial Machinery & Supplies & Components",
+   "cap": 10970000000.0
   },
   {
    "t": "LULU",
    "n": "Lululemon Athletica",
    "sector": "임의소비재",
    "ind": "Apparel, Accessories & Luxury Goods",
-   "cap": 11560000000.0
+   "cap": 11680000000.0
   },
   {
-   "t": "UDR",
-   "n": "UDR, Inc.",
-   "sector": "부동산",
-   "ind": "Multi-Family Residential REITs",
-   "cap": 12240000000.0
+   "t": "FDS",
+   "n": "FactSet",
+   "sector": "금융",
+   "ind": "Financial Exchanges & Data",
+   "cap": 10860000000.0
+  },
+  {
+   "t": "LII",
+   "n": "Lennox International",
+   "sector": "산업재",
+   "ind": "Building Products",
+   "cap": 11720000000.0
   },
   {
    "t": "AES",
    "n": "AES Corporation",
    "sector": "유틸리티",
    "ind": "Independent Power Producers & Energy Traders",
-   "cap": 10640000000.0
+   "cap": 10720000000.0
   },
   {
-   "t": "BEN",
-   "n": "Franklin Resources",
-   "sector": "금융",
-   "ind": "Asset Management & Custody Banks",
-   "cap": 18330000000.0
+   "t": "IT",
+   "n": "Gartner",
+   "sector": "기술",
+   "ind": "IT Consulting & Other Services",
+   "cap": 10870000000.0
   },
   {
-   "t": "PODD",
-   "n": "Insulet Corporation",
+   "t": "TKO",
+   "n": "TKO Group Holdings",
+   "sector": "커뮤니케이션",
+   "ind": "Movies & Entertainment",
+   "cap": 34229999999.999996
+  },
+  {
+   "t": "DECK",
+   "n": "Deckers Brands",
+   "sector": "임의소비재",
+   "ind": "Footwear",
+   "cap": 10540000000.0
+  },
+  {
+   "t": "ALGN",
+   "n": "Align Technology",
    "sector": "헬스케어",
-   "ind": "Health Care Equipment",
-   "cap": 10360000000.0
+   "ind": "Health Care Supplies",
+   "cap": 11260000000.0
+  },
+  {
+   "t": "UDR",
+   "n": "UDR, Inc.",
+   "sector": "부동산",
+   "ind": "Multi-Family Residential REITs",
+   "cap": 11970000000.0
   },
   {
    "t": "LVS",
@@ -3387,140 +3366,161 @@
    "n": "BXP, Inc.",
    "sector": "부동산",
    "ind": "Office REITs",
-   "cap": 11170000000.0
+   "cap": 11060000000.0
   },
   {
-   "t": "UHS",
-   "n": "Universal Health Services",
-   "sector": "헬스케어",
-   "ind": "Health Care Facilities",
-   "cap": 11180000000.0
+   "t": "ALB",
+   "n": "Albemarle Corporation",
+   "sector": "소재",
+   "ind": "Specialty Chemicals",
+   "cap": 9790000000.0
   },
   {
    "t": "CPT",
    "n": "Camden Property Trust",
    "sector": "부동산",
    "ind": "Multi-Family Residential REITs",
-   "cap": 10000000000.0
+   "cap": 9790000000.0
+  },
+  {
+   "t": "BEN",
+   "n": "Franklin Resources",
+   "sector": "금융",
+   "ind": "Asset Management & Custody Banks",
+   "cap": 17010000000.000002
+  },
+  {
+   "t": "PODD",
+   "n": "Insulet Corporation",
+   "sector": "헬스케어",
+   "ind": "Health Care Equipment",
+   "cap": 9520000000.0
   },
   {
    "t": "NWSA",
    "n": "News Corp (Class A)",
    "sector": "커뮤니케이션",
    "ind": "Publishing",
-   "cap": 14100000000.0
+   "cap": 13580000000.0
+  },
+  {
+   "t": "UHS",
+   "n": "Universal Health Services",
+   "sector": "헬스케어",
+   "ind": "Health Care Facilities",
+   "cap": 10090000000.0
   },
   {
    "t": "FRT",
    "n": "Federal Realty Investment Trust",
    "sector": "부동산",
    "ind": "Retail REITs",
-   "cap": 9740000000.0
+   "cap": 9560000000.0
   },
   {
    "t": "HSIC",
    "n": "Henry Schein",
    "sector": "헬스케어",
    "ind": "Health Care Distributors",
-   "cap": 9520000000.0
+   "cap": 9370000000.0
   },
   {
    "t": "NCLH",
    "n": "Norwegian Cruise Line Holdings",
    "sector": "임의소비재",
    "ind": "Hotels, Resorts & Cruise Lines",
-   "cap": 8289999999.999999
-  },
-  {
-   "t": "APTV",
-   "n": "Aptiv",
-   "sector": "임의소비재",
-   "ind": "Automotive Parts & Equipment",
-   "cap": 7860000000.0
+   "cap": 7840000000.0
   },
   {
    "t": "FOX",
    "n": "Fox Corporation (Class B)",
    "sector": "커뮤니케이션",
    "ind": "Broadcasting",
-   "cap": 35680000000.0
+   "cap": 34600000000.0
+  },
+  {
+   "t": "APTV",
+   "n": "Aptiv",
+   "sector": "임의소비재",
+   "ind": "Automotive Parts & Equipment",
+   "cap": 7560000000.0
   },
   {
    "t": "AOS",
    "n": "A. O. Smith",
    "sector": "산업재",
    "ind": "Building Products",
-   "cap": 8590000000.0
-  },
-  {
-   "t": "MOS",
-   "n": "Mosaic Company (The)",
-   "sector": "소재",
-   "ind": "Fertilizers & Agricultural Chemicals",
-   "cap": 6920000000.0
-  },
-  {
-   "t": "ARE",
-   "n": "Alexandria Real Estate Equities",
-   "sector": "부동산",
-   "ind": "Office REITs",
-   "cap": 7720000000.0
+   "cap": 8560000000.000001
   },
   {
    "t": "ERIE",
    "n": "Erie Indemnity",
    "sector": "금융",
    "ind": "Insurance Brokers",
-   "cap": 14120000000.0
+   "cap": 14060000000.0
   },
   {
    "t": "HRL",
    "n": "Hormel Foods",
    "sector": "필수소비재",
    "ind": "Packaged Foods & Meats",
-   "cap": 12010000000.0
+   "cap": 12690000000.0
   },
   {
-   "t": "WYNN",
-   "n": "Wynn Resorts",
-   "sector": "임의소비재",
-   "ind": "Casinos & Gaming",
-   "cap": 8390000000.000001
+   "t": "ARE",
+   "n": "Alexandria Real Estate Equities",
+   "sector": "부동산",
+   "ind": "Office REITs",
+   "cap": 7270000000.0
   },
   {
-   "t": "DVA",
-   "n": "DaVita",
-   "sector": "헬스케어",
-   "ind": "Health Care Services",
-   "cap": 10950000000.0
+   "t": "MOS",
+   "n": "Mosaic Company (The)",
+   "sector": "소재",
+   "ind": "Fertilizers & Agricultural Chemicals",
+   "cap": 6310000000.0
   },
   {
    "t": "MGM",
    "n": "MGM Resorts",
    "sector": "임의소비재",
    "ind": "Casinos & Gaming",
-   "cap": 8410000000.0
+   "cap": 8449999999.999999
+  },
+  {
+   "t": "WYNN",
+   "n": "Wynn Resorts",
+   "sector": "임의소비재",
+   "ind": "Casinos & Gaming",
+   "cap": 8300000000.000001
   },
   {
    "t": "BF-B",
    "n": "Brown–Forman",
    "sector": "필수소비재",
    "ind": "Distillers & Vintners",
-   "cap": 13780000000.0
+   "cap": 13820000000.0
   },
   {
-   "t": "SKYD",
-   "n": "Skydance",
-   "sector": "커뮤니케이션",
-   "ind": "Movies & Entertainment",
-   "cap": 38290000000.0
+   "t": "DVA",
+   "n": "DaVita",
+   "sector": "헬스케어",
+   "ind": "Health Care Services",
+   "cap": 9840000000.0
   },
   {
    "t": "NWS",
    "n": "News Corp (Class B)",
    "sector": "커뮤니케이션",
    "ind": "Publishing",
-   "cap": 14610000000.0
+   "cap": 14070000000.0
+  },
+  {
+   "t": "SKYD",
+   "n": "Skydance",
+   "sector": "커뮤니케이션",
+   "ind": "Movies & Entertainment",
+   "cap": 31980000000.0
   }
  ]
 }
