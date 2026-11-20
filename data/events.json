@@ -1,7 +1,15 @@
 {
- "updated": "2026-11-20 06:16 KST",
+ "updated": "2026-11-21 06:30 KST",
  "note": "날짜는 한국시간 기준. ★ 예상일은 공식 일정 확정 전.",
  "changelog": [
+  {
+   "at": "2026-11-21 06:30",
+   "msg": "미국 11/20 종가 반영 — S&P500 6,910(-3.70%)·나스닥 22,618(-5.28%)·VIX 39.8·10년물 4.91%·금 3,527달러(-4.3%)·비트코인 58,143달러. Yahoo ^KS11·^KQ11 3개월 일봉에서 11/20 봉이 누락되어 코스피 4,869·코스닥 646·한국 종목 11/20 종가는 15:46 갱신분을 유지(스크립트 재실행 시 11/19로 되돌아가는 현상, 사본 복원). earnings.json next(DELL 11/24·MRVL·CRWD 12/1·CRM 12/2·AVGO 12/9·MU 12/17·JPM 1/14)와 events 일치. 60일 거시·휴장 일정 추가 없음(ISM 2027 일정 미게시, 1/5·1/7 ★ 유지)"
+  },
+  {
+   "at": "2026-11-21 06:30",
+   "msg": "11월 미시간대 소비자심리 확정치(현지 11/20) result 입력 — 51.5(예비 51.0·10월 48.0), 1년 기대인플레 3.7%(10월 4.7%), 장기 3.3%(10월 3.5%). Yahoo Finance·Kitco·Finimize·Seeking Alpha 일치(컨센서스는 51.5/51.6로 집계 상이). 현재여건·기대지수 세부치는 미시간대 사이트 미갱신으로 미기재"
+  },
   {
    "at": "2026-11-20 06:16",
    "msg": "MU FY27 1분기 실적 12/17 → 12/18 변경·★ 제거 — 회사 공지(11/19) 현지 12/17(목) 오후 2시 30분 MT 콘퍼런스콜(Nasdaq 캘린더 12/16과 달라 config.json next_date 2026-12-17 지정). 회사 보도자료·GlobeNewswire 일치(Trefis 캘린더 12/15는 제3자 집계라 미채택)"
@@ -113,14 +121,6 @@
   {
    "at": "2026-11-13 06:20",
    "msg": "AVGO FY26 4분기 실적 12/11 → 12/10 변경(현지 12/9 장후, 콜 2pm PT) — 회사 IR 11/9 공지로 ★예상 표시 제거(Broadcom IR·Nasdaq 캘린더 12/9 일치)"
-  },
-  {
-   "at": "2026-11-12 06:30",
-   "msg": "DELL FY27 3분기 실적 11/24 장후(콜 3:30pm CT, 한국시간 11/25 06:30) 확정 — 회사 IR 11/10 공지로 ★예상 표시 제거(Dell IR·Yahoo Finance 일치)"
-  },
-  {
-   "at": "2026-11-12 06:30",
-   "msg": "CRM FY27 3분기 실적 12/2 장후(웹캐스트 2pm PT, 한국시간 12/3 07:00) 확정 — 회사 IR 11/10 공지로 ★예상 표시 제거(Salesforce IR·Yahoo Finance 일치)"
   }
  ],
  "days": {
@@ -3079,8 +3079,52 @@
      {
       "name": "thetrading.tools",
       "url": "https://www.thetrading.tools/economic-calendar/consumer-sentiment"
+     },
+     {
+      "name": "Yahoo Finance 11/20",
+      "url": "https://finance.yahoo.com/economy/article/consumer-sentiment-ticked-up-amid-post-election-optimism-152954161.html"
+     },
+     {
+      "name": "Kitco 11/20",
+      "url": "https://www.kitco.com/news/article/2026-11-20/gold-price-trades-near-3568oz-after-final-consumer-sentiment-rises-515"
+     },
+     {
+      "name": "Finimize 11/20",
+      "url": "https://finimize.com/content/michigan-consumer-sentiment-inched-up-in-november"
+     },
+     {
+      "name": "Seeking Alpha 11/20",
+      "url": "https://seekingalpha.com/news/4675184-consumer-sentiment-revised-slightly-higher-in-novembers-final-print"
      }
-    ]
+    ],
+    "result": {
+     "actual": "51.5",
+     "est": "51.5",
+     "prev": "51.0",
+     "dir": "up",
+     "head": "소비자심리 확정 51.5(예비 51.0, 컨센서스 51.5) · 1년 기대인플레 3.7% · 장기 3.3%",
+     "note": "11월 확정치 소비자심리지수 51.5(예비치 51.0, 컨센서스 51.5~51.6, 10월 확정 48.0). 1년 기대인플레이션 3.7%(예비 4.3%, 10월 4.7%), 장기(5년) 3.3%(예비 3.4%, 10월 3.5%). 조사 기간 10/20~11/16. 발표일(11/20) S&P500 6,910(-3.70%)·나스닥 22,618(-5.28%)·10년물 4.91%(-14bp)·VIX 39.8.",
+     "rows": [
+      [
+       "소비자심리지수",
+       "51.5",
+       "51.5",
+       "예비 51.0 · 10월 48.0"
+      ],
+      [
+       "1년 기대인플레",
+       "3.7%",
+       "—",
+       "예비 4.3% · 10월 4.7%"
+      ],
+      [
+       "5년 기대인플레",
+       "3.3%",
+       "—",
+       "예비 3.4% · 10월 3.5%"
+      ]
+     ]
+    }
    }
   ],
   "2026-11-25": [
