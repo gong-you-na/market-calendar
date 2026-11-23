@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-23 15:50 KST",
- "asof": "20261123",
+ "updated": "2026-11-24 06:20 KST",
+ "asof": "20261120",
  "note": "episodes·marks.cb·marks.sc는 수동(운영자 요청 시 Claude가 편집). series·calc·marks.sc_unk는 scripts/update_crash.py가 덮어씀. src는 화면에 표시하지 않음(런북 2-1).",
  "facts": {
   "cb": 11,
@@ -837,19 +837,19 @@
    "calc": {
     "pre": "20261104",
     "pre_close": 5683.8,
-    "trough": "20261123",
-    "trough_close": 4708.51,
-    "dd": -17.16,
-    "low_day": "20261123",
-    "low": 4586.8,
+    "trough": "20261120",
+    "trough_close": 4869.96,
+    "dd": -14.32,
+    "low_day": "20261120",
+    "low": 4831.69,
     "rec": null,
     "rec_td": null,
     "best": null,
     "best_close": null,
     "best_pct": null,
     "si": 206,
-    "ti": 218,
-    "ei": 218,
+    "ti": 217,
+    "ei": 217,
     "f_drop": -60625,
     "fut_drop": 28786,
     "inst_drop": 25911,
@@ -876,7 +876,7 @@
     "dep_rec": 83.0,
     "fx_pre": 1342.9,
     "fx_max": 1362.7,
-    "fx_rec": 1344.1
+    "fx_rec": 1334.8
    }
   }
  ],
@@ -4150,21 +4150,6 @@
    83.0,
    1334.8,
    -2.41
-  ],
-  [
-   "20261123",
-   4708.51,
-   4586.8,
-   null,
-   null,
-   null,
-   null,
-   null,
-   null,
-   null,
-   null,
-   1344.1,
-   -10.73
   ]
  ]
 }
