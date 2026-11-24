@@ -3559,5 +3559,18 @@
    "epsForecast": "$0.52",
    "noOfEsts": "16"
   }
+ ],
+ "2026-11-23": [
+  {
+   "eps": "$0.05",
+   "surprise": "N/A",
+   "time": "time-not-supplied",
+   "symbol": "CRWD",
+   "name": "CrowdStrike Holdings, Inc.",
+   "marketCap": "$213,971,665,000",
+   "fiscalQuarterEnding": "Oct/2026",
+   "epsForecast": "$0",
+   "noOfEsts": "13"
+  }
  ]
 }

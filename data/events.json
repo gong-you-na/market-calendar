@@ -1,7 +1,23 @@
 {
- "updated": "2026-11-24 06:16 KST",
+ "updated": "2026-11-25 06:16 KST",
  "note": "날짜는 한국시간 기준. ★ 예상일은 공식 일정 확정 전.",
  "changelog": [
+  {
+   "at": "2026-11-25 06:16",
+   "msg": "미국 11/24 종가 반영 — S&P500 7,201(-0.50%)·나스닥 23,734(-1.48%)·VIX 26.1·10년물 4.90%·달러 103.8·금 3,550달러(-2.8%)·WTI 81.43달러(+1.6%)·비트코인 59,696달러. Yahoo ^KS11·^KQ11에서 11/24 봉 누락이 재발해 코스피 5,006(+6.32%)·코스닥 666·급락 기록부 11/24 행은 15:47 갱신분 사본을 복원. 오늘 발표된 추적 지표 없음(result 입력 대상 없음). 공포·탐욕·하이일드 스프레드 미생성(이전 실행과 동일)"
+  },
+  {
+   "at": "2026-11-25 06:16",
+   "msg": "CRWD FY27 3분기 실적 12/2(현지 12/1 장후) → 11/23(현지 11/23 장전) 변경 — 회사가 11/4 공지한 12/1 발표를 취소하고 현지 11/23 오전 8시 ET 콜로 앞당겨 발표(IR 보도자료·SEC 8-K·Investing.com·Motley Fool 일치). 매출 15.8억 달러·ARR 62.6억 달러·순신규 ARR 4.19억 달러·FY27 가이던스 상향·지스케일러 전량 주식교환 인수(1.135주, 약 439억 달러) 합의를 why에 기록. earnings.json(Nasdaq)은 11/23 항목을 rt:post·EPS 0.05/예상 0.0으로 받아 실제(비GAAP 0.34, 장전 발표·당일 반응)와 다름 — config.json CRWD rt 또는 수동 보정은 운영자 결정 필요"
+  },
+  {
+   "at": "2026-11-25 06:16",
+   "msg": "DELL FY27 3분기 실적(현지 11/24 16:05 ET 발표) why에 매출 549.4억 달러(+103%)·ISG 419.7억·AI 서버 매출 220.3억·AI 수주 602억·수주잔고 1,323억 달러·FY27 매출 가이던스 2,020억 달러(이전 1,920억)·4분기 563억 달러·자사주 250억 달러 추가 승인 기록 — Business Wire 보도자료·Reuters 일치. EPS·주가 반응은 earnings.json 자동(다음 한국 장 마감 갱신에 반영)"
+  },
+  {
+   "at": "2026-11-25 06:16",
+   "msg": "60일 일정 점검 — earnings.json next(DELL 11/24·MRVL 12/1·CRM 12/2·AVGO 12/9·MU 12/17·JPM 1/14)와 events 일치(CRWD는 발표 완료로 next 없음). ISM 2027년 1월 일정은 ISM 캘린더 미게시로 1/5·1/7 ★ 유지. 거시·휴장 일정 추가 없음"
+  },
   {
    "at": "2026-11-24 06:16",
    "msg": "미국 11/23 종가 반영 — S&P500 7,237(+4.73%)·나스닥 24,090(+6.51%)·VIX 26.6·10년물 4.92%·금 3,636달러(+3.4%)·WTI 80.29달러(-4.4%)·비트코인 61,240달러. Yahoo ^KS11·^KQ11에서 11/23 봉 누락이 재발해 코스피 4,716·코스닥 636·한국 종목 11/23 종가는 15:47 갱신분 사본을 복원. 오늘 발표된 추적 지표 없음(result 입력 대상 없음). FRED 하이일드 스프레드는 타임아웃(공포·탐욕 미생성, 이전 실행과 동일)"
@@ -105,22 +121,6 @@
   {
    "at": "2026-11-17 06:16",
    "msg": "12월 소매판매(현지 1/15 8:30 ET, 한국시간 1/15 밤 10:30) 추가 — 센서스국 일정·financecalendar 일치"
-  },
-  {
-   "at": "2026-11-17 06:16",
-   "msg": "1월 미시간대 예비치(현지 1/8 10:00 ET, 한국시간 1/9 0시) 추가 — 미시간대 2027년 공식 일정·kairotick 일치"
-  },
-  {
-   "at": "2026-11-17 06:16",
-   "msg": "2027년 1월 금통위(1/14) 추가 — 한국은행 10/29 발표 2027년 회의 일정(SBS Biz·서울경제 일치)"
-  },
-  {
-   "at": "2026-11-17 06:16",
-   "msg": "12월 ISM 제조업(1/5)·서비스업(1/7) ★예상 유지 — ISM 2027년 공식 일정 미게시(therighttrader도 추정 표시). 3분기 GDP 잠정치·10월 PCE 11/25, 3분기 GDP 확정치·11월 PCE 12/23은 BEA 전체 일정으로 재확인"
-  },
-  {
-   "at": "2026-11-16 15:46",
-   "msg": "10월 PPI(현지 11/13) result 추가 — 전월比 +0.3%(컨센서스 +0.4%)·전년比 6.5%·근원 +0.3%·9월 +1.3%→+1.4% 수정(BLS·Trading Economics·joltjournal 일치). 11/13 종가 S&P500 7,562(-0.4%)·나스닥 25,136(-0.91%)·10년물 5.15% 반영. 코스피 11/16 종가 5,082(-3.93%)·코스닥 666(-4.86%)·원/달러 1,335 반영. 11/13 미국 장후 학습기업 실적 없음. earnings.json next 날짜(NVDA 11/17·PANW 11/18·DELL 11/24·MRVL·CRWD 12/1·CRM 12/2·AVGO 12/9·MU 12/16)와 events 일치"
   }
  ],
  "days": {
@@ -3175,7 +3175,7 @@
     "tier": 1,
     "ticker": "DELL",
     "time": "새벽 6시 (현지 11/24 장후)",
-    "why": "주도 · AI 인프라·통신. AI 서버 수주·출하와 연간 가이던스가 발표됩니다. 회사 공지(11/10): 현지 11/24 콘퍼런스콜 오후 3시 30분 CT(한국시간 11/25 오전 6시 30분), 실적은 콜 시작 전 발표.",
+    "why": "주도 · AI 인프라·통신. AI 서버 수주·출하와 연간 가이던스가 발표됩니다. 회사 공지(11/10): 현지 11/24 콘퍼런스콜 오후 3시 30분 CT(한국시간 11/25 오전 6시 30분), 실적은 콜 시작 전 발표. 발표 결과(현지 11/24 16:05 ET): 3분기 매출 549억 3,700만 달러(전년比 +103%), 인프라솔루션(ISG) 419억 7,400만 달러(+198%), AI 최적화 서버 매출 220억 3,100만 달러(+291%), 분기 AI 서버 수주 602억 달러·수주잔고 1,323억 달러. FY27 연간 매출 가이던스 1,920억 → 2,020억 달러, AI 서버 매출 740억 → 780억 달러로 상향, 4분기 매출 가이던스 563억 달러. 이사회가 250억 달러 자사주 매입 한도 추가 승인.",
     "watch": "EPS·매출 vs 컨센서스, AI 서버 수주잔고",
     "stocks": [
      [
@@ -3199,6 +3199,14 @@
      {
       "name": "Yahoo Finance(11/10)",
       "url": "https://finance.yahoo.com/technology/articles/dell-technologies-hold-conference-call-210500341.html"
+     },
+     {
+      "name": "Dell 보도자료(Business Wire 11/24)",
+      "url": "https://www.businesswire.com/news/home/20261124456824/en/"
+     },
+     {
+      "name": "Reuters 11/24",
+      "url": "https://www.933thedrive.com/2026/11/24/dell-lifts-annual-forecasts-after-record-quarter-on-surging-ai-server-demand/"
      }
     ]
    }
@@ -3348,40 +3356,6 @@
      {
       "name": "Marvell IR 11/6 공지",
       "url": "https://investor.marvell.com/news-events/press-releases/detail/1041/marvell-technology-inc-announces-conference-call-to-review-third-quarter-of-fiscal-year-2027-financial-results"
-     }
-    ]
-   },
-   {
-    "t": "earn",
-    "n": "CrowdStrike FY27 3분기 실적",
-    "imp": 2,
-    "tier": 3,
-    "ticker": "CRWD",
-    "time": "새벽 6시 (현지 12/1 장후)",
-    "why": "탐색 · AI 소프트웨어·보안. 연간반복매출(ARR)·순신규 ARR, 구독 매출총이익률, 4분기·연간 가이던스가 발표됩니다. 회사 공지(11/4): 현지 12/1(화) 미국 장 마감 후 발표, 콘퍼런스콜 오후 2시 PT(5시 ET, 한국시간 12/2 오전 7시).",
-    "watch": "EPS·매출 vs 컨센서스, 순신규 ARR, 가이던스",
-    "stocks": [
-     [
-      "크라우드스트라이크",
-      1
-     ],
-     [
-      "사이버보안",
-      0
-     ]
-    ],
-    "src": [
-     {
-      "name": "CrowdStrike IR 일정",
-      "url": "https://ir.crowdstrike.com/events/event-details/crowdstrike-fiscal-third-quarter-2027-results-conference-call"
-     },
-     {
-      "name": "StockTitan 11/4",
-      "url": "https://www.stocktitan.net/news/CRWD/crowd-strike-announces-date-of-fiscal-third-quarter-2027-financial-xevbrnvzx9k4.html"
-     },
-     {
-      "name": "Nasdaq 실적 캘린더",
-      "url": "https://www.nasdaq.com/market-activity/earnings"
      }
     ]
    }
@@ -4137,6 +4111,50 @@
      {
       "name": "financecalendar.com 1/18",
       "url": "https://www.financecalendar.com/events/2027-01-18/"
+     }
+    ]
+   }
+  ],
+  "2026-11-23": [
+   {
+    "t": "earn",
+    "n": "CrowdStrike FY27 3분기 실적",
+    "imp": 2,
+    "tier": 3,
+    "ticker": "CRWD",
+    "time": "밤 10시 (현지 11/23 장전)",
+    "why": "탐색 · AI 소프트웨어·보안. 연간반복매출(ARR)·순신규 ARR, 구독 매출총이익률, 4분기·연간 가이던스가 발표됩니다. 회사 발표(현지 11/23): 당초 12/1 장 마감 후로 공지했던 발표를 취소하고 11/23 오전 8시 ET(한국시간 밤 10시) 콘퍼런스콜로 앞당겨 발표. 3분기 매출 15억 8,000만 달러(전년比 +28%), ARR 62억 6,000만 달러(+27%), 순신규 ARR 4억 1,920만 달러. FY27 매출 가이던스 60억 7,810만~60억 8,410만 달러로 상향, 4분기 매출 가이던스 16억 3,810만~16억 4,410만 달러. 같은 날 지스케일러를 전량 주식교환(지스케일러 1주당 크라우드스트라이크 1.135주, 약 439억 달러)으로 인수하기로 합의했다고 발표, FY28 하반기 완료 예정(가이던스에는 미반영).",
+    "watch": "EPS·매출 vs 컨센서스, 순신규 ARR, 가이던스",
+    "stocks": [
+     [
+      "크라우드스트라이크",
+      1
+     ],
+     [
+      "사이버보안",
+      0
+     ]
+    ],
+    "src": [
+     {
+      "name": "CrowdStrike IR 보도자료(11/23)",
+      "url": "https://ir.crowdstrike.com/news-releases/news-release-details/crowdstrike-reports-third-quarter-fiscal-year-2027-financial"
+     },
+     {
+      "name": "SEC 8-K Ex.99.1(11/23)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001535527/000153552726000035/crwd-20261123xex991.htm"
+     },
+     {
+      "name": "Investing.com 11/23",
+      "url": "https://ca.investing.com/news/stock-market-news/earnings-call-transcript-crowdstrike-tops-q3-2026-estimates-shares-fall-on-zscaler-deal-93CH-4976196"
+     },
+     {
+      "name": "Motley Fool 콜 트랜스크립트(11/24)",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/11/24/crowdstrike-crwd-q3-2027-earnings-call-transcript/"
+     },
+     {
+      "name": "CrowdStrike 11/4 일정 공지(취소됨)",
+      "url": "https://www.nasdaq.com/press-release/crowdstrike-announces-date-fiscal-third-quarter-2027-financial-results-conference"
      }
     ]
    }
