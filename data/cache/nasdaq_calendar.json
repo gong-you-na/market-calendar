@@ -3572,5 +3572,18 @@
    "epsForecast": "$0",
    "noOfEsts": "13"
   }
+ ],
+ "2026-11-24": [
+  {
+   "eps": "$9.16",
+   "surprise": "39.85",
+   "time": "time-not-supplied",
+   "symbol": "DELL",
+   "name": "Dell Technologies Inc.",
+   "marketCap": "$187,742,781,000",
+   "fiscalQuarterEnding": "Oct/2026",
+   "epsForecast": "$6.55",
+   "noOfEsts": "8"
+  }
  ]
 }
